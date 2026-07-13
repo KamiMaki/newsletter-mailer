@@ -22,3 +22,6 @@ __pycache__/
 *.pyc
 .topics_tmp.json
 .tchunk*.json
+
+# SDD scratch (never commit)
+.superpowers/
