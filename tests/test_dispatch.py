@@ -46,6 +46,7 @@ class DispatchOrchestration(unittest.TestCase):
             self.assertEqual(self.calls, [])  # nothing sent
 
     def test_strategy_uses_to_override(self):
+        self.addCleanup(lambda: os.environ.pop("STRATEGY_RECIPIENT", None))
         os.environ["STRATEGY_RECIPIENT"] = "me@example.com"
         with tempfile.TemporaryDirectory() as td:
             self._repo(td, slug="strategy")
@@ -88,6 +89,42 @@ class DispatchOrchestration(unittest.TestCase):
             self.assertTrue(any("send" in a for a in self.calls))
             sent_htmls = [a for call in self.calls for a in call if str(a).endswith(".html")]
             self.assertTrue(all("weekly" not in s for s in sent_htmls))
+
+    def test_notion_failure_is_nonfatal(self):
+        # send succeeds (rc 0), notion-add fails (rc 1). Marker must still be written; run rc 0.
+        dispatch.run_cmd = lambda argv: (self.calls.append(argv) or (1 if "notion-add" in argv else 0))
+        with tempfile.TemporaryDirectory() as td:
+            self._repo(td, slug="news", with_md=True)
+            df = Path(td) / "diff.txt"
+            df.write_text("newsletters/2026-07-13-news.html\n", encoding="utf-8")
+            rc = dispatch.main(["--diff-file", str(df), "--repo", td])
+            self.assertEqual(rc, 0)
+            self.assertTrue((Path(td) / "sent/2026-07-13-news.ok").exists())
+            self.assertTrue(any("notion-add" in a for a in self.calls))
+
+    def test_dry_run_writes_no_marker(self):
+        with tempfile.TemporaryDirectory() as td:
+            self._repo(td)
+            df = Path(td) / "diff.txt"
+            df.write_text("newsletters/2026-07-13-news.html\n", encoding="utf-8")
+            rc = dispatch.main(["--diff-file", str(df), "--repo", td, "--dry-run"])
+            self.assertEqual(rc, 0)
+            self.assertFalse((Path(td) / "sent/2026-07-13-news.ok").exists())
+            send = [a for a in self.calls if "send" in a][0]
+            self.assertIn("--dry-run", send)
+
+    def test_strategy_missing_recipient_fails(self):
+        self.addCleanup(lambda: os.environ.pop("STRATEGY_RECIPIENT", None))
+        os.environ.pop("STRATEGY_RECIPIENT", None)
+        with tempfile.TemporaryDirectory() as td:
+            self._repo(td, slug="strategy")
+            df = Path(td) / "diff.txt"
+            df.write_text("newsletters/2026-07-13-strategy.html\n", encoding="utf-8")
+            rc = dispatch.main(["--diff-file", str(df), "--repo", td])
+            self.assertEqual(rc, 1)
+            self.assertFalse((Path(td) / "sent/2026-07-13-strategy.ok").exists())
+            # no send attempted for the misconfigured strategy target
+            self.assertFalse(any("send" in a for a in self.calls))
 
 if __name__ == "__main__":
     unittest.main()

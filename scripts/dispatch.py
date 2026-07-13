@@ -45,6 +45,15 @@ def _dispatch_one(repo, html_rel, args):
         return True
     meta = dispatch_lib.load_meta(str(Path(repo) / html_rel).replace(".html", ".json"))
 
+    # Strategy self-send guard: strategy goes ONLY to STRATEGY_RECIPIENT. If it is empty,
+    # sending with `--to "" --no-sync` would let gsuite_https fall through to the sheet's
+    # 策略學習報 subscribers — a real leak. Fail loudly (no send, no marker) so the
+    # misconfiguration is visible; do NOT silently skip.
+    is_self = dispatch_lib.SLUGS[slug].get("self") or meta.get("recipients") == "self"
+    if is_self and not os.environ.get("STRATEGY_RECIPIENT", "").strip():
+        print(f"[FAIL] strategy self-send requires STRATEGY_RECIPIENT but it is empty: {date}-{slug}")
+        return False
+
     rc = run_cmd(_build_send_argv(repo, html_rel, meta, slug, args.dry_run))
     if rc != 0:
         print(f"[FAIL] send {date}-{slug} exit {rc}")
