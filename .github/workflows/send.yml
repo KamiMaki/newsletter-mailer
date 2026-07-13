@@ -1,0 +1,74 @@
+name: send-newsletter
+on:
+  push:
+    paths: ["newsletters/**"]
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Dry run (no real send)"
+        type: boolean
+        default: true
+
+permissions:
+  contents: write
+
+concurrency:
+  group: send-newsletter
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2   # need HEAD^ for diff
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Compute changed newsletters
+        id: diff
+        run: |
+          if git rev-parse HEAD^ >/dev/null 2>&1; then
+            git diff --name-only HEAD^ HEAD > changed.txt
+          else
+            git diff --name-only --root HEAD > changed.txt
+          fi
+          echo "---changed---"; cat changed.txt
+
+      - name: Dispatch send
+        env:
+          GMAIL_CLIENT_ID: ${{ secrets.GMAIL_CLIENT_ID }}
+          GMAIL_CLIENT_SECRET: ${{ secrets.GMAIL_CLIENT_SECRET }}
+          GMAIL_REFRESH_TOKEN: ${{ secrets.GMAIL_REFRESH_TOKEN }}
+          GMAIL_SENDER: ${{ secrets.GMAIL_SENDER }}
+          NEWSLETTER_SENDER_NAME: ${{ secrets.NEWSLETTER_SENDER_NAME }}
+          NEWSLETTER_SPREADSHEET_ID: ${{ secrets.NEWSLETTER_SPREADSHEET_ID }}
+          NEWSLETTER_FORM_ID: ${{ secrets.NEWSLETTER_FORM_ID }}
+          NEWSLETTER_UNSUB_FORM_ID: ${{ secrets.NEWSLETTER_UNSUB_FORM_ID }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_NEWS_DB_ID: ${{ secrets.NOTION_NEWS_DB_ID }}
+          NOTION_JP_DB_ID: ${{ secrets.NOTION_JP_DB_ID }}
+          NOTION_STRATEGY_DB_ID: ${{ secrets.NOTION_STRATEGY_DB_ID }}
+          STRATEGY_RECIPIENT: ${{ secrets.STRATEGY_RECIPIENT }}
+        run: |
+          FLAG=""
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ] && [ "${{ inputs.dry_run }}" = "true" ]; then
+            FLAG="--dry-run"
+          fi
+          python scripts/dispatch.py --diff-file changed.txt --repo . $FLAG
+
+      - name: Commit sent markers
+        if: ${{ github.event_name == 'push' }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain sent/)" ]; then
+            git add sent/
+            git commit -m "chore(sent): record sent markers [skip ci]"
+            git push
+          else
+            echo "no new markers"
+          fi
