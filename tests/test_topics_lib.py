@@ -12,12 +12,20 @@ class TopicsLedger(unittest.TestCase):
             recent = t.recent_titles(led, days=14, today="2026-07-13")
             self.assertIn("C", recent)
             self.assertNotIn("A", recent)
-    def test_window_boundary(self):
+    def test_window_far_past(self):
         with tempfile.TemporaryDirectory() as td:
             led = str(Path(td) / "s.jsonl")
             t.append_topics(led, "2026-06-01", ["old"])
             t.append_topics(led, "2026-07-13", ["new"])
             self.assertEqual(t.recent_titles(led, days=14, today="2026-07-13"), ["new"])
+    def test_window_exact_boundary(self):
+        with tempfile.TemporaryDirectory() as td:
+            led = str(Path(td) / "b.jsonl")
+            t.append_topics(led, "2026-06-30", ["exactly14"])  # exactly 14 days old -> EXCLUDED (< days)
+            t.append_topics(led, "2026-07-01", ["thirteen"])   # 13 days old -> INCLUDED
+            recent = t.recent_titles(led, days=14, today="2026-07-14")
+            self.assertIn("thirteen", recent)
+            self.assertNotIn("exactly14", recent)
     def test_missing_file_is_empty(self):
         self.assertEqual(t.recent_titles("/no/such.jsonl", 14, "2026-07-13"), [])
 

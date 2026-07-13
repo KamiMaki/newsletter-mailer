@@ -23,9 +23,9 @@ def recent_titles(ledger_path, days, today):
             out.append(rec["title"])
     return out
 
-def append_topics(ledger_path, d, titles):
+def append_topics(ledger_path, date, titles):
     p = Path(ledger_path)
     p.parent.mkdir(parents=True, exist_ok=True)
     with p.open("a", encoding="utf-8") as f:
         for title in titles:
-            f.write(json.dumps({"date": d, "title": title}, ensure_ascii=False) + "\n")
+            f.write(json.dumps({"date": date, "title": title}, ensure_ascii=False) + "\n")
