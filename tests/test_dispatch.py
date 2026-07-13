@@ -126,5 +126,22 @@ class DispatchOrchestration(unittest.TestCase):
             # no send attempted for the misconfigured strategy target
             self.assertFalse(any("send" in a for a in self.calls))
 
+    def test_script_invocation_smoke(self):
+        # Reproduce CI's direct invocation (`python scripts/dispatch.py ...`), which puts
+        # scripts/ on sys.path[0] not the repo root. Without the sys.path fix this exits 1
+        # with ModuleNotFoundError: No module named 'scripts'. Empty diff => no send attempted,
+        # so no network/secrets are touched and run_cmd is NOT monkeypatched here.
+        import subprocess
+        repo_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+        with tempfile.TemporaryDirectory() as td:
+            empty_diff = Path(td) / "diff.txt"
+            empty_diff.write_text("", encoding="utf-8")
+            r = subprocess.run(
+                [sys.executable, "scripts/dispatch.py",
+                 "--diff-file", str(empty_diff), "--repo", "."],
+                cwd=repo_root, capture_output=True, text=True)
+            self.assertEqual(r.returncode, 0, msg=r.stderr)
+            self.assertIn("nothing to send", r.stdout)
+
 if __name__ == "__main__":
     unittest.main()

@@ -8,6 +8,11 @@ import subprocess
 import sys
 from pathlib import Path
 
+# Make the `scripts` package importable regardless of launch style. Direct invocation
+# (`python scripts/dispatch.py`) puts scripts/ on sys.path[0], not the repo root, so
+# `from scripts import dispatch_lib` would fail with ModuleNotFoundError. Prepend repo root.
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+
 from scripts import dispatch_lib
 
 ENGINE = "gsuite_https.py"
