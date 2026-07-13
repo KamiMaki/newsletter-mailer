@@ -94,6 +94,20 @@ def die(msg):
     sys.exit(1)
 
 
+def mask_email(e):
+    """遮蔽 email 供輸出用（避免公開 repo 的 Actions log 外洩訂閱者名單）。
+
+    'alice@example.com' -> 'a***@example.com'。本地部分為空或無 '@' 一律回傳 '***'。
+    僅供 LOG 輸出使用；實際寄送用的 MIME `To:` header 仍用真實 email。
+    """
+    if not e or "@" not in e:
+        return "***"
+    local, _, domain = e.partition("@")
+    if not local:
+        return "***"
+    return f"{local[0]}***@{domain}"
+
+
 # ──────────────────────────── HTTP 層 ────────────────────────────
 
 def http(method, url, *, token=None, json_body=None, form_data=None, extra_headers=None):
@@ -538,7 +552,10 @@ def cmd_send(args):
         die("請設定 GMAIL_SENDER（或 GMAIL_ADDRESS）作為寄件地址")
     sender_name = cfg("NEWSLETTER_SENDER_NAME", "AI每日電子報")
 
-    override = parse_to_override(getattr(args, "to", ""))
+    to_arg = getattr(args, "to", "") or ""
+    override = parse_to_override(to_arg)
+    if to_arg.strip() and not override:
+        die(f"--to 指定了收件人但無任何有效 email：{to_arg}")
     token = get_access_token()
 
     if override:
@@ -571,7 +588,7 @@ def cmd_send(args):
     print(f"主旨：{args.subject}")
     if args.dry_run:
         for name, email in recipients:
-            print(f"  [DRY RUN] 會寄給：{name} <{email}>")
+            print(f"  [DRY RUN] 會寄給：{name} <{mask_email(email)}>")
         print(f"\n[DRY RUN] 完成，共 {len(recipients)} 位（未實際寄出）")
         return
 
@@ -580,10 +597,10 @@ def cmd_send(args):
         raw = build_raw(sender, sender_name, name, email, args.subject, html_body)
         status, p = http("POST", GMAIL_SEND_URL, token=token, json_body={"raw": raw})
         if status == 200 and isinstance(p, dict) and p.get("id"):
-            print(f"  [OK] {name} <{email}>  (id={p['id']})")
+            print(f"  [OK] {name} <{mask_email(email)}>  (id={p['id']})")
             ok += 1
         else:
-            print(f"  [失敗] {email}：HTTP {status}: {p}")
+            print(f"  [失敗] {mask_email(email)}：HTTP {status}: {p}")
     print(f"\n完成：{ok}/{len(recipients)} 封成功寄出")
     sys.exit(0 if ok == len(recipients) and ok > 0 else 1)
 
