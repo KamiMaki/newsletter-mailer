@@ -592,13 +592,20 @@ def cmd_send(args):
 
 NOTION_API = "https://api.notion.com/v1"
 NOTION_VERSION = "2022-06-28"
-# 資料庫 ID（可用環境變數 NOTION_NEWS_DB_ID / NOTION_JP_DB_ID 覆寫）
+# 資料庫 ID（可用環境變數 NOTION_NEWS_DB_ID / NOTION_JP_DB_ID / NOTION_STRATEGY_DB_ID 覆寫）
 NOTION_DB_DEFAULT = {
     "AI新聞報": "23f4347d-eda7-4217-89bb-c1a268641b6a",
     "日文報": "a9fb68b5-d6fd-42f6-98ce-4fc8655195fb",
+    "策略學習報": "",   # 無硬編碼預設，必須由 NOTION_STRATEGY_DB_ID 提供
 }
-NOTION_SUMMARY_PROP = {"AI新聞報": "摘要", "日文報": "場景"}
-NOTION_DEFAULT_ICON = {"AI新聞報": "📰", "日文報": "🗾"}
+NOTION_SUMMARY_PROP = {"AI新聞報": "摘要", "日文報": "場景", "策略學習報": "摘要"}
+NOTION_DEFAULT_ICON = {"AI新聞報": "📰", "日文報": "🗾", "策略學習報": "📈"}
+NOTION_ENV_KEY = {"AI新聞報": "NOTION_NEWS_DB_ID", "日文報": "NOTION_JP_DB_ID",
+                  "策略學習報": "NOTION_STRATEGY_DB_ID"}
+
+
+def notion_env_key(typ):
+    return NOTION_ENV_KEY[typ]
 
 _NOTION_INLINE_RE = re.compile(r"\*\*(.+?)\*\*|\*(.+?)\*|\[([^\]]+)\]\(([^)]+)\)")
 
@@ -718,11 +725,13 @@ def cmd_notion_add(args):
         meta = {"type": args.type, "date": args.date, "title": args.title,
                 "summary": args.summary, "icon": args.icon}
     typ = (meta.get("type") or "").strip()
-    if typ not in NOTION_DB_DEFAULT:
+    if typ not in NOTION_ENV_KEY:
         print(f"[警告] 未知報別 {typ!r}，略過 Notion 上傳。")
         return
-    env_key = "NOTION_NEWS_DB_ID" if typ == "AI新聞報" else "NOTION_JP_DB_ID"
-    db_id = cfg(env_key) or NOTION_DB_DEFAULT[typ]
+    db_id = cfg(notion_env_key(typ)) or NOTION_DB_DEFAULT.get(typ, "")
+    if not db_id:
+        print(f"[警告] 報別 {typ!r} 未設定 {notion_env_key(typ)}，略過 Notion 上傳（不影響寄送）。")
+        return
     summary_prop = NOTION_SUMMARY_PROP[typ]
     date = (meta.get("date") or taipei_today()).strip()
     title = (meta.get("title") or "").strip() or date
