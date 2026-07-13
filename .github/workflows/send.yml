@@ -22,7 +22,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
         with:
-          fetch-depth: 2   # need HEAD^ for diff
+          fetch-depth: 0   # full history, so github.event.before is always resolvable
 
       - uses: actions/setup-python@v5
         with:
@@ -30,12 +30,29 @@ jobs:
 
       - name: Compute changed newsletters
         id: diff
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          BEFORE_SHA: ${{ github.event.before }}
         run: |
-          if git rev-parse HEAD^ >/dev/null 2>&1; then
-            git diff --name-only HEAD^ HEAD > changed.txt
+          ZERO="0000000000000000000000000000000000000000"
+          if [ "$EVENT_NAME" = "push" ]; then
+            # Use the FULL pushed range (github.event.before..sha), not just HEAD^..HEAD,
+            # so a push containing multiple commits doesn't silently skip non-tip newsletters.
+            if [ -n "$BEFORE_SHA" ] && [ "$BEFORE_SHA" != "$ZERO" ] && git cat-file -e "$BEFORE_SHA" 2>/dev/null; then
+              git diff --name-only "$BEFORE_SHA" "$GITHUB_SHA" > changed.txt
+            else
+              # First push to the branch (before is all-zeros) or the base commit isn't
+              # reachable: fall back to listing every file in the tip commit.
+              git diff-tree --no-commit-id --name-only -r --root "$GITHUB_SHA" > changed.txt
+            fi
           else
-            # root commit (no parent): --root is a no-op on `git diff`, so use diff-tree
-            git diff-tree --no-commit-id --name-only -r --root HEAD > changed.txt
+            # workflow_dispatch: no push range available, use HEAD^..HEAD as before.
+            if git rev-parse HEAD^ >/dev/null 2>&1; then
+              git diff --name-only HEAD^ HEAD > changed.txt
+            else
+              # root commit (no parent): --root is a no-op on `git diff`, so use diff-tree
+              git diff-tree --no-commit-id --name-only -r --root HEAD > changed.txt
+            fi
           fi
           echo "---changed---"; cat changed.txt
 
@@ -62,15 +79,24 @@ jobs:
           python scripts/dispatch.py --diff-file changed.txt --repo . $FLAG
 
       - name: Commit sent markers
-        # No event gate: the porcelain check below is the real guard. Dry-run
-        # writes no markers, so this no-ops for dry-run and commits back on both
-        # push and manual non-dry-run sends.
+        # if: always() — this MUST run even when the "Dispatch send" step above
+        # exited non-zero (one target failed). Without it, GitHub Actions' default
+        # `if: success()` skips this step whenever a prior step failed, so markers
+        # for the targets that DID send successfully are never committed — a re-run
+        # would then re-send them (double-send). The porcelain check below is the
+        # real content guard: dry-run writes no markers, so this no-ops for dry-run.
+        if: always()
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           if [ -n "$(git status --porcelain sent/)" ]; then
             git add sent/
             git commit -m "chore(sent): record sent markers [skip ci]"
+            # A concurrent cloud push (e.g. a newsletter push landing mid-run) can make
+            # our push non-fast-forward. Rebase onto the latest remote tip so our marker
+            # commit is replayed on top instead of being rejected/discarded. If the push
+            # still fails after that, let it fail loudly — do not swallow a real error.
+            git pull --rebase origin master
             git push
           else
             echo "no new markers"
