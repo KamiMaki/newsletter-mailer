@@ -362,6 +362,25 @@ def _parse_fallback(s):
     return out
 
 
+def parse_to_override(s):
+    """'姓名:email, email' → [(name,email)]，去除無效與重複（同 _parse_fallback 規則，但語意為強制收件人）。"""
+    out, seen = [], set()
+    for part in (s or "").split(","):
+        part = part.strip()
+        if not part:
+            continue
+        if ":" in part:
+            name, email = part.rsplit(":", 1)
+            name, email = name.strip(), email.strip()
+        else:
+            name, email = "", part
+        if not EMAIL_RE.match(email.lower()) or email.lower() in seen:
+            continue
+        seen.add(email.lower())
+        out.append((name, email))
+    return out
+
+
 def _parse_topics_file(text):
     """主題檔一行一則：「標題」或「標題<TAB>備註」→ [(標題, 備註)]。"""
     out = []
@@ -519,29 +538,34 @@ def cmd_send(args):
         die("請設定 GMAIL_SENDER（或 GMAIL_ADDRESS）作為寄件地址")
     sender_name = cfg("NEWSLETTER_SENDER_NAME", "AI每日電子報")
 
+    override = parse_to_override(getattr(args, "to", ""))
     token = get_access_token()
 
-    # 1) 同步表單訂閱/退訂（失敗不影響寄送）
-    if not args.no_sync:
-        try:
-            added, updated, unsubbed, skipped = sync_subscribers(token)
-            print(f"表單同步：新增 {added}、更新 {updated}（其中退訂 {unsubbed}）、略過無效 {skipped}")
-        except Exception as e:
-            print(f"[警告] 表單同步失敗（不影響寄送）：{e}")
+    if override:
+        recipients = override
+        print(f"[覆寫] 使用 --to 指定的 {len(recipients)} 位收件人，略過試算表與表單同步")
+    else:
+        # 1) 同步表單訂閱/退訂（失敗不影響寄送）
+        if not args.no_sync:
+            try:
+                added, updated, unsubbed, skipped = sync_subscribers(token)
+                print(f"表單同步：新增 {added}、更新 {updated}（其中退訂 {unsubbed}）、略過無效 {skipped}")
+            except Exception as e:
+                print(f"[警告] 表單同步失敗（不影響寄送）：{e}")
 
-    # 2) 取訂閱者名單；試算表讀不到時退備援名單，再不行只寄給寄件者本人
-    recipients = []
-    try:
-        recipients = _pick_subscribers(sheet_get(token, f"{SUBS_TAB}!A2:F"), args.type)
-    except Exception as e:
-        print(f"[警告] 讀取訂閱者工作表失敗：{e}")
-    if not recipients:
-        recipients = _parse_fallback(cfg("FALLBACK_RECIPIENTS"))
-        if recipients:
-            print(f"[警告] 試算表無可用名單，改用備援名單（{len(recipients)} 位）")
-        else:
-            recipients = [("", sender)]
-            print("[警告] 無備援名單，只寄給寄件者本人")
+        # 2) 取訂閱者名單；試算表讀不到時退備援名單，再不行只寄給寄件者本人
+        recipients = []
+        try:
+            recipients = _pick_subscribers(sheet_get(token, f"{SUBS_TAB}!A2:F"), args.type)
+        except Exception as e:
+            print(f"[警告] 讀取訂閱者工作表失敗：{e}")
+        if not recipients:
+            recipients = _parse_fallback(cfg("FALLBACK_RECIPIENTS"))
+            if recipients:
+                print(f"[警告] 試算表無可用名單，改用備援名單（{len(recipients)} 位）")
+            else:
+                recipients = [("", sender)]
+                print("[警告] 無備援名單，只寄給寄件者本人")
 
     print(f"寄送對象：{len(recipients)} 位")
     print(f"主旨：{args.subject}")
@@ -773,6 +797,7 @@ def main():
     p.add_argument("--type", required=True, help="報別（決定收件名單）")
     p.add_argument("--no-sync", action="store_true", help="跳過表單同步")
     p.add_argument("--dry-run", action="store_true")
+    p.add_argument("--to", default="", help="強制收件人（'姓名:email,email'），設定時略過試算表與表單同步")
     p.set_defaults(func=cmd_send)
 
     p = sub.add_parser("notion-add", help="把當期內容寫進 Notion 彙整資料庫")
