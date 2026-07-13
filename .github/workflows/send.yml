@@ -34,7 +34,8 @@ jobs:
           if git rev-parse HEAD^ >/dev/null 2>&1; then
             git diff --name-only HEAD^ HEAD > changed.txt
           else
-            git diff --name-only --root HEAD > changed.txt
+            # root commit (no parent): --root is a no-op on `git diff`, so use diff-tree
+            git diff-tree --no-commit-id --name-only -r --root HEAD > changed.txt
           fi
           echo "---changed---"; cat changed.txt
 
@@ -61,7 +62,9 @@ jobs:
           python scripts/dispatch.py --diff-file changed.txt --repo . $FLAG
 
       - name: Commit sent markers
-        if: ${{ github.event_name == 'push' }}
+        # No event gate: the porcelain check below is the real guard. Dry-run
+        # writes no markers, so this no-ops for dry-run and commits back on both
+        # push and manual non-dry-run sends.
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
