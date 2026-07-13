@@ -126,6 +126,39 @@ class DispatchOrchestration(unittest.TestCase):
             # no send attempted for the misconfigured strategy target
             self.assertFalse(any("send" in a for a in self.calls))
 
+    def test_strategy_invalid_recipient_fails(self):
+        # FIX 3: a malformed (non-empty) STRATEGY_RECIPIENT must fail the same way
+        # an empty one does — no send, no marker — instead of reaching gsuite_https
+        # with a garbage --to value that would fall through to the sheet.
+        self.addCleanup(lambda: os.environ.pop("STRATEGY_RECIPIENT", None))
+        os.environ["STRATEGY_RECIPIENT"] = "notanemail"
+        with tempfile.TemporaryDirectory() as td:
+            self._repo(td, slug="strategy")
+            df = Path(td) / "diff.txt"
+            df.write_text("newsletters/2026-07-13-strategy.html\n", encoding="utf-8")
+            rc = dispatch.main(["--diff-file", str(df), "--repo", td])
+            self.assertEqual(rc, 1)
+            self.assertFalse((Path(td) / "sent/2026-07-13-strategy.ok").exists())
+            self.assertFalse(any("send" in a for a in self.calls))
+
+    def test_known_slug_bad_meta_fails(self):
+        # FIX 5: a KNOWN slug (news) with broken/incomplete metadata must count as
+        # a real failure (rc=1, no marker, no send) — not the same silent skip as
+        # an unparseable path / unknown slug.
+        with tempfile.TemporaryDirectory() as td:
+            (Path(td) / "newsletters").mkdir()
+            (Path(td) / "sent").mkdir()
+            html = Path(td) / "newsletters/2026-07-13-news.html"
+            html.write_text("<html></html>", encoding="utf-8")
+            (Path(td) / "newsletters/2026-07-13-news.json").write_text(
+                json.dumps({"subject": "S"}), encoding="utf-8")  # missing type/recipients
+            df = Path(td) / "diff.txt"
+            df.write_text("newsletters/2026-07-13-news.html\n", encoding="utf-8")
+            rc = dispatch.main(["--diff-file", str(df), "--repo", td])
+            self.assertEqual(rc, 1)
+            self.assertFalse((Path(td) / "sent/2026-07-13-news.ok").exists())
+            self.assertEqual(self.calls, [])
+
     def test_script_invocation_smoke(self):
         # Reproduce CI's direct invocation (`python scripts/dispatch.py ...`), which puts
         # scripts/ on sys.path[0] not the repo root. Without the sys.path fix this exits 1
