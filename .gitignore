@@ -1,0 +1,24 @@
+# Secrets — never commit
+.env
+.env.*
+*.bak
+*.bak-*
+*.bak2-*
+client_secret*.json
+*secret*.json
+*_token*.json
+token*.json
+seed_payload.json
+
+# Recipient lists (PII) — never commit
+email_list.csv
+*_recipients.csv
+*.csv
+
+# Noise
+.omc/
+.claude/
+__pycache__/
+*.pyc
+.topics_tmp.json
+.tchunk*.json
