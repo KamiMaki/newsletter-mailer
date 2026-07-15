@@ -1,0 +1,153 @@
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;margin:0;padding:24px 12px;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<tr><td align="center">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;">
+
+<!-- Header -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px 16px 0 0;padding:28px 28px 24px;">
+<div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#c7d2fe;margin-top:10px;">2026 年 7 月 16 日（星期四）</div>
+</td></tr>
+
+<!-- 30秒重點 -->
+<tr><td style="background:#1a1a1a;padding:24px 28px;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>這 48 小時最大的變化不是又出了一個更聰明的封閉模型，而是「<strong style="color:#ffffff;">開放權重</strong>」這條線一口氣長到前沿等級——你第一次真的可以把一頭近千億參數的模型下載回自己家跑、改、鎖起來。</li>
+<li style="margin-bottom:10px;">前 OpenAI 技術長 Mira Murati 的 Thinking Machines 丟出首款模型 <strong style="color:#e2e8f0;">Inkling</strong>：975B 參數、多模態、開放權重直接放上 Hugging Face，還能在自家平台微調。</li>
+<li style="margin-bottom:10px;">同一天 NVIDIA 高調替「開放模型」站台，主張企業與<strong style="color:#e2e8f0;">國家</strong>都該擁有能自己掌控的 AI——並秀出 Harvey 用 Nemotron 微調後、以 1/10 成本追平封閉模型的實例。</li>
+<li style="margin-bottom:10px;">學術端也來背書：一篇論文把「純 RL、不靠人工標註」的訓練法推到 <strong style="color:#e2e8f0;">1 兆參數</strong>，開放路線的能力天花板還在往上頂。</li>
+<li style="margin-bottom:0;">其他快訊：Qwen 拿下中國版 Apple Intelligence、Claude Code v2.1.210、GitHub Copilot for JetBrains 開放自帶金鑰＋Claude agent、Anthropic 推教師版 Claude。</li>
+</ul>
+</td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="padding:22px 0 0;">
+<div style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;padding:1px;">
+<div style="background:#1a1a1a;border-radius:15px;padding:26px 26px 24px;">
+<div style="display:inline-block;background:rgba(99,102,241,0.18);color:#a5b4fc;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;margin-bottom:14px;">🎯 今天的主軸</div>
+<div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-bottom:18px;">從「租一個封閉 API」到「把前沿模型搬回自己家」——開放權重這週正式長大成人</div>
+
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 16px;">先講一個生活裡的畫面。過去兩年用 AI，比較像<strong style="color:#a5b4fc;">叫外送</strong>：你打開 app（呼叫 API），廚房在別人家，你付錢、拿到菜，但看不到食譜、控制不了火候，人家哪天改菜單或漲價你只能接受。這 48 小時發生的事，等於有人把「米其林等級的中央廚房」整套搬進你家後院——你能自己開火、改食譜、把門鎖上不讓外人看你煮什麼。技術上，這件事就叫<strong style="color:#a5b4fc;">開放權重（open weights）</strong>：模型的全部參數被打包下載到你自己的機器，你能在自家機房跑、微調、審查，資料完全不出門。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:20px 0 6px;">▍共同變化</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 14px;">這幾則消息乍看各自為政，其實共同指向一件事：<strong style="color:#ffffff;">開放權重不再是「便宜堪用的替代品」，這週它長到了前沿等級。</strong>一個由頂尖前研究者創辦的實驗室、一家最大的晶片公司、一篇學術論文，在同一天不約而同把籌碼押在「你可以自己擁有、自己掌控的模型」上。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:20px 0 6px;">▍為什麼放在一起看</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 12px;">因為三則消息剛好補齊了「自己養一頭模型」需要的三塊拼圖——<strong style="color:#a5b4fc;">好模型、會調校、能證明夠強</strong>。</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 12px;">拼圖一是<strong style="color:#e2e8f0;">「有沒有夠好的開放模型可下載」</strong>：前 OpenAI 技術長 Mira Murati 創辦的 Thinking Machines，7/15 丟出首款自研模型 <strong style="color:#a5b4fc;">Inkling</strong>——975B 總參數、只啟用 41B（用了 MoE 混合專家架構，所以「很大」但跑起來沒那麼貴）、支援 100 萬 token 上下文、吃了 45 兆 token 的文字圖像影音訓練，而且<strong style="color:#e2e8f0;">全部權重直接開在 Hugging Face</strong>，還附一個給 Blackwell 顯卡加速的 NVFP4 版本，能在自家 Tinker 平台微調。一家被視為「下一個 OpenAI」的明星實驗室，第一步不是關起來賣 API，而是把權重開出來，這個訊號本身就很重。</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 12px;">拼圖二是<strong style="color:#e2e8f0;">「拿回家後調不調得動、值不值得」</strong>：同一天 NVIDIA 替自家 Nemotron 開放模型站台，論點很直白——<strong style="color:#a5b4fc;">競爭優勢來自你怎麼用模型，而不是你選了哪一個</strong>。它秀的不是跑分，是實績：法律 AI 公司 Harvey 拿 Nemotron 微調後，在複雜法律任務上<strong style="color:#e2e8f0;">追平頂級封閉模型、每次執行成本卻低了至少 10 倍</strong>；H Company 微調出的 Holotron 3 Nano 在電腦操作測試 OSWorld 上拿到逾 76% 準確率；醫療的 Abridge 則拿它做出第一個專為臨床對話打造的基礎模型。</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 12px;">拼圖三是<strong style="color:#e2e8f0;">「開放路線的能力天花板到哪」</strong>：一篇 7/14 上 arXiv 的論文《Ring-Zero》把「純 RL、只用可驗證獎勵、完全不靠人工標註」的訓練法，一路推到 <strong style="color:#a5b4fc;">1 兆參數</strong>，回報規模愈大、樣本效率愈高，模型還自己長出自我驗證、平行推理等行為。它證明開放這條線在最前沿的推理研究上，一樣跑得動。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:20px 0 6px;">▍過去 vs. 現在</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 14px;">過去談「開源模型」，多半是退而求其次——為了省錢、為了資料合規，捏著鼻子用一個比 GPT 差一截的模型。現在的畫面反過來了：一個明星實驗室把近千億參數的多模態模型直接開給你下載，晶片龍頭替你證明「調過的開放模型能以 1/10 成本打平封閉旗艦」。開放不再是妥協，而是<strong style="color:#ffffff;">一個你可以認真押注的選項</strong>。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:20px 0 6px;">▍背後邏輯</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 14px;">為什麼大家突然一起往「開放＋自有」走？因為當模型能力逐漸商品化，企業真正焦慮的不再是「誰家模型聰明 0.5 分」，而是三件事：<strong style="color:#a5b4fc;">資料要不要送出門、成本能不能壓、供應商會不會綁死我</strong>。開放權重一次回答這三題——權重在你手上，資料不外流、想跑幾次跑幾次、不怕人家改 API 或漲價。NVIDIA 更把這套邏輯放大到「國家」層級：主權 AI（sovereign AI）就是一國能不能擁有、掌控、審查自己的模型。對賣鏟子的 NVIDIA 來說，每個想自建模型的企業與國家，都是它的顯卡買家。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:20px 0 6px;">▍對你的工作</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 14px;">如果你是<strong style="color:#e2e8f0;">工程師</strong>，選型時多了一條真實可比的路：把「自架開放模型＋微調」正式放進評估表，別再預設只能接封閉 API——尤其是資料敏感或呼叫量巨大的場景。如果你是<strong style="color:#e2e8f0;">主管</strong>，該問的問題從「我們要用哪家 API」變成「哪些工作負載值得自己養一頭模型、需要多少 GPU 與人力」，因為 Harvey 那個 10 倍成本差，攤到規模上就是真金白銀。如果你是<strong style="color:#e2e8f0;">知識工作者</strong>，這代表未來替你工作的模型，可能就跑在公司自己機房裡、由公司自己調過——它更懂你們的行話，也更不會把你的資料送到外面。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:20px 0 6px;">▍限制與待驗證</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 14px;">先別急著把封閉 API 全退掉。「開放權重」不等於「免費」也不等於「開源」——你拿到的是參數，不是訓練資料與完整授權，商用條款要逐條看。更現實的是，把一頭 975B 的模型跑起來需要一整櫃高階顯卡與能養活它的工程團隊，多數公司的總帳算下來，租封閉 API 仍然更划算。Inkling 的實測跑分也還沒被第三方廣泛複驗，NVIDIA 秀的都是它精挑過的成功案例。<strong style="color:#a5b4fc;">「能自己養」是一個新選項，不是所有人都該立刻自己養。</strong></p>
+
+<div style="background:#252525;border-radius:8px;padding:14px 16px;margin:18px 0;">
+<div style="color:#a5b4fc;font-size:12px;font-weight:700;margin-bottom:6px;">👤 人物觀點／延伸解讀（編輯分析）</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0;">Thinking Machines 一直對外強調「可客製、可理解、可自建」的路線。把這條理念放到 NVIDIA 同日的「開放模型給企業與國家」論述旁邊看，會發現一個共識正在成形：<strong style="color:#e2e8f0;">下一階段的差異化，不在模型本身，而在「誰能把模型變成自己的」</strong>。這是編輯的解讀，非任一家官方的正式主張。</p>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:20px 0 6px;">▍記住這句</div>
+<p style="color:#ffffff;font-size:15px;line-height:1.75;margin:0 0 16px;font-weight:600;">2026 下半年，關鍵問題正從「我要接哪家模型」，變成「哪些場景值得我自己養一頭模型」——開放權重這週給了你這個選擇權。</p>
+
+<p style="color:#94a3b8;font-size:13px;line-height:1.7;margin:0;">🔗 來源：<a href="https://thinkingmachines.ai/news/introducing-inkling/" style="color:#06b6d4;text-decoration:none;">Thinking Machines（Inkling）</a>、<a href="https://blogs.nvidia.com/blog/nemotron-open-models-ai-trust-control-customize/" style="color:#06b6d4;text-decoration:none;">NVIDIA 官方部落格（Nemotron）</a>、<a href="https://arxiv.org/abs/2607.12395" style="color:#06b6d4;text-decoration:none;">arXiv:2607.12395（Ring-Zero）</a></p>
+</div>
+</div>
+</td></tr>
+
+<!-- 主軸的衍生新聞 -->
+<tr><td style="padding:24px 0 0;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin:0 0 4px;padding:0 4px;">🔗 主軸的衍生新聞</div>
+</td></tr>
+
+<tr><td style="padding:14px 0 0;">
+<div style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="display:inline-block;background:rgba(6,182,212,0.15);color:#22d3ee;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:10px;line-height:1.5;">Qwen 拿下中國版 Apple Intelligence，「誰擁有模型」成了國家議題</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px;">7/15，中國網信辦（CAC）把 Apple Intelligence 列入核准的生成式 AI 服務名單，Alibaba 證實由旗下 <strong style="color:#e2e8f0;">Qwen</strong> 提供文字與圖像的理解生成能力（報導指 Baidu 也參與其中），消息一出 Alibaba 美股盤前一度漲約 4%。它和主軸是同一枚硬幣的另一面：當「擁有與掌控模型」變重要，<strong style="color:#a5b4fc;">一國要不要、由誰來提供在地模型，就升級成監管與主權問題</strong>——蘋果進中國，得先找一個當地能掌控、能過審的模型當引擎。官方未給上線時間。</p>
+<p style="color:#94a3b8;font-style:italic;font-size:13px;margin:0 0 10px;">💡 記住這句：模型的「所有權」不只是企業成本題，也是一國能不能自己說了算的主權題。</p>
+<p style="color:#94a3b8;font-size:13px;margin:0;">🔗 <a href="https://techcrunch.com/2026/07/15/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> ｜ 來源：中國網信辦核准名單＋Alibaba 對外證實（TechCrunch／CNBC 報導）</p>
+</div>
+</td></tr>
+
+<tr><td style="padding:14px 0 0;">
+<div style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="display:inline-block;background:rgba(6,182,212,0.15);color:#22d3ee;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:10px;line-height:1.5;">「純 RL 不靠人工標註」被推到 1 兆參數，開放推理研究還在頂天花板</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px;">7/14 上 arXiv 的《Ring-Zero》，把「zero RL」——<strong style="color:#e2e8f0;">只用能自動驗證對錯的獎勵、完全不做監督式暖身、不靠人工標註</strong>——的訓練規模一口氣拉到 1 兆參數，回報是規模愈大、樣本效率與能力上限愈高，模型還自發長出自我驗證、平行推理等行為。它替主軸補上研究面的證據：<strong style="color:#a5b4fc;">開放這條線不是只能做小模型，在最前沿的推理訓練上一樣站得住</strong>。這是論文主張，尚待第三方複驗。</p>
+<p style="color:#94a3b8;font-style:italic;font-size:13px;margin:0 0 10px;">💡 記住這句：把「對錯可自動驗證」的獎勵餵給夠大的模型，它會自己學會怎麼想——不用人一題題教。</p>
+<p style="color:#94a3b8;font-size:13px;margin:0;">🔗 <a href="https://arxiv.org/abs/2607.12395" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> ｜ 來源：arXiv:2607.12395（官方預印本）</p>
+</div>
+</td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="padding:24px 0 0;">
+<div style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:14px;line-height:1.7;">
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">🔄 後續追蹤：Claude Code v2.1.210 釋出。</strong>在前兩天的 v2.1.208/209 之後，7/14 又推 v2.1.210：折疊工具列多了即時計時、對過時權限語法會在啟動時警告，並修掉 worktree 子代理誤對主 repo 下 git 指令、以及外部 session 自動模式的預設模型問題。<a href="https://github.com/anthropics/claude-code/releases" style="color:#06b6d4;text-decoration:none;">🔗 GitHub Releases</a></li>
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">GitHub Copilot for JetBrains 開放「自帶金鑰」與 Claude agent。</strong>7/14 起，JetBrains 版 Copilot 可設定 OpenAI 相容的自訂端點、用自己的 API key，並新增 Claude agent 供應者（自訂 agent／skills／instructions）與本機沙箱設定。對想混用自有模型的團隊，等於把 IDE 的模型後端解綁了。<a href="https://github.blog/changelog/2026-07-14-github-copilot-for-jetbrains-expands-byok-capabilities/" style="color:#06b6d4;text-decoration:none;">🔗 GitHub Changelog</a></li>
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Anthropic 推出 Claude for Teachers（教師版）。</strong>7/14 上線，替通過驗證的美國 K-12 教師提供一年免費的進階 Claude、教學技能庫與對齊各州課綱的 Learning Commons，且資料不進模型訓練、受 FERPA 條款保護。這是各家把 AI 往教育場景鋪、搶下一代使用者習慣的一步。<a href="https://www.anthropic.com/news/claude-for-teachers" style="color:#06b6d4;text-decoration:none;">🔗 Anthropic 官方</a></li>
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">研究：LLM 當評審，或能取代人工替「深度研究」報告打分。</strong>7/14 的 FinResearchBench II 用自動流程生成 14,450 條評分準則、以 LLM judge 評比 10 套深度研究系統，結論是 LLM 評分與人類一致到足以在規模上取代人工。對要大量評估 AI 產出的團隊，這是一種可自動化的品管思路。<a href="https://arxiv.org/abs/2607.12252" style="color:#06b6d4;text-decoration:none;">🔗 arXiv:2607.12252</a></li>
+<li style="margin-bottom:0;"><strong style="color:#e2e8f0;">據報導：DeepSeek 傳將於本月推 V4 並啟動募資。</strong>多家財經媒體報導（傳、非官方發布）DeepSeek 計畫 7 月中發表新一代 V4、並傳出約 15 億美元募資與 IPO 規劃，但官方新聞頁至截稿仍只列 4 月的 V4 預覽版，正式與否待官方確認。若成真，開放陣營又多一名重量級玩家。<a href="https://api-docs.deepseek.com/news" style="color:#06b6d4;text-decoration:none;">🔗 DeepSeek 官方新聞頁</a></li>
+</ul>
+</div>
+</td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="padding:24px 0 0;">
+<div style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">📖 今日概念｜開放權重模型（Open-Weight Model）</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 12px;"><strong style="color:#a5b4fc;">一句定義：</strong>模型訓練完成後的全部參數（weights）被公開釋出，任何人都能下載到自己的機器上執行與微調。</p>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 12px;"><strong style="color:#a5b4fc;">生活化比喻：</strong>封閉 API 像去餐廳點菜——你吃得到成品，但廚房在別人家。開放權重像人家把「煮好調味的整鍋高湯」直接送到你家冰箱：你能加熱、加料、重新調味，甚至鎖進自己的廚房不讓外人碰。這鍋高湯就是「權重」——模型學到的所有數字。</p>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 12px;"><strong style="color:#a5b4fc;">工作中的例子：</strong>一家醫院不想把病歷送到外部 API，就下載一個開放權重模型放進自家機房，用院內資料微調，讓它更懂臨床用語——資料全程不出門（正是今天 Abridge 在做的事）。</p>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 12px;"><strong style="color:#a5b4fc;">常見誤解：</strong>「開放權重＝開源＝免費隨便用」。三件事都不一樣——開放的通常只有「權重」，不含訓練資料與完整訓練程式；授權可能限制商用；而且要跑起一頭近千億參數的模型，硬體與人力成本一點都不便宜。</p>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0;"><strong style="color:#a5b4fc;">與今天主軸的關係：</strong>今天 Inkling、Nemotron、Ring-Zero 之所以能串成一條線，正因為它們都走「把權重交到你手上」這條路——這也是「自己養一頭模型」這個新選項成立的前提。</p>
+</div>
+</td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="padding:24px 0 0;">
+<div style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;padding:1px;">
+<div style="background:#1a1a1a;border-radius:15px;padding:24px 26px;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+<ul style="margin:0 0 16px;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.75;">
+<li style="margin-bottom:12px;">如果「自己養一頭前沿模型」這週真的變成可行選項，你手上哪一個工作負載最值得算一筆帳——它的資料敏感度、呼叫量、與客製需求，撐不撐得起自建的硬體與人力成本？</li>
+<li style="margin-bottom:12px;">你目前的產品若完全押在單一封閉 API 上，一旦對方漲價、改條款或停用某個模型，你的備援是什麼？開放權重會不會該進到你的「Plan B」？</li>
+<li style="margin-bottom:0;">當模型能力逐漸拉平、差異化移到「誰能把模型變成自己的」，你的團隊真正稀缺的能力，是會寫 prompt，還是會微調、評估與治理一個屬於自己的模型？</li>
+</ul>
+<p style="color:#a5b4fc;font-weight:700;font-size:15px;line-height:1.7;margin:0;">🎒 今日帶走：這週開放權重長到了前沿等級，AI 的問題正從「接哪家模型」，變成「哪些場景值得自己養一頭模型」。</p>
+</div>
+</div>
+</td></tr>
+
+<!-- 歷史電子報入口 -->
+<tr><td style="padding:24px 0 0;">
+<div style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="font-size:16px;font-weight:800;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+<a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-size:14px;font-weight:600;">查看歷史電子報</a>
+</div>
+</td></tr>
+
+<!-- Footer -->
+<tr><td style="padding:24px 0 8px;">
+<div style="background:#141414;border-radius:14px;padding:22px 24px;text-align:center;">
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px;">📬 覺得有用？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">訂閱這份電子報</a>，把它分享給你的朋友。</p>
+<p style="color:#64748b;font-size:13px;line-height:1.7;margin:0 0 14px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></p>
+<p style="color:#475569;font-size:12px;line-height:1.6;margin:0;">© 2026 企鵝的 AI 每日電子報🐧　本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</p>
+</div>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
