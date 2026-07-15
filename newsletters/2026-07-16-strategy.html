@@ -1,0 +1,236 @@
+<div style="background:#0f0f0f;padding:24px 12px;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<div style="max-width:650px;margin:0 auto;">
+
+<!-- Header -->
+<div style="background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:12px 12px 0 0;padding:28px 24px;text-align:center;">
+  <div style="font-size:13px;color:#fff;opacity:0.85;letter-spacing:1px;margin-bottom:6px;">企鵝的AI交易策略學習報</div>
+  <div style="font-size:24px;font-weight:800;color:#fff;">策略學習報 ｜ 2026-07-16</div>
+  <div style="font-size:13px;color:#fff;opacity:0.9;margin-top:6px;">BTC × 美股大盤・部位調整與 Kelly 的直覺</div>
+</div>
+
+<!-- 免責聲明 banner -->
+<div style="background:#1a1a1a;padding:12px 20px;border-bottom:1px solid #252525;">
+  <div style="color:#f59e0b;font-size:12.5px;line-height:1.6;text-align:center;">
+    ⚠️ 本報純屬交易紀律與市場結構的學習筆記，<strong style="color:#f59e0b;">不構成任何投資建議</strong>，所有情境演練僅供思考訓練，請勿依此下單。
+  </div>
+</div>
+
+<!-- 資料時間與來源 -->
+<div style="background:#151515;padding:10px 20px;font-size:11.5px;color:#71717a;line-height:1.6;">
+  資料截止：BTC 為 2026-07-15 美東盤中／美股為 2026-07-15 收盤（美東）｜來源：CoinDesk、Yahoo Finance、CNBC、Fortune、TradingEconomics、Fed 官網、BLS、Rulyfi、Quantocracy，詳見各段內文連結。
+</div>
+
+<!-- 今日總覽 -->
+<div style="background:#1a1a1a;padding:22px 24px;">
+  <div style="font-size:16px;font-weight:700;color:#fff;margin-bottom:12px;">⚡ 今日總覽</div>
+  <ul style="margin:0;padding-left:20px;color:#d4d4d8;font-size:15px;line-height:1.8;">
+    <li>BTC 自 6/22 以來首度站上 <strong style="color:#fbbf24;font-weight:700">$65,000</strong> 大關，盤中一度衝高至 <strong style="color:#fbbf24;font-weight:700">$65,100</strong>，隨後回落約 0.5%，24 小時仍收 <strong style="color:#fbbf24;font-weight:700">+3%</strong>。</li>
+    <li>美股受惠 6 月 PPI／CPI 雙雙降溫全面走揚，那斯達克領漲收 <strong style="color:#fbbf24;font-weight:700">+0.62%（26,269）</strong>，SPY 收 <strong style="color:#fbbf24;font-weight:700">$754.81（+0.40%）</strong>，VIX 續降至約 <strong style="color:#fbbf24;font-weight:700">16.15</strong> 的週低。</li>
+    <li>Polymarket 押注 Fed 本月（7/28-29）按兵不動機率上看 <strong style="color:#fbbf24;font-weight:700">93%</strong>，10 年期公債殖利率同步從 4.62% 回落到 <strong style="color:#fbbf24;font-weight:700">4.59%</strong>。</li>
+    <li>今日策略學習主題：<strong style="color:#e2e8f0">部位調整——固定比例與 Kelly 的直覺</strong>，用今天 BTC 突破 $65K 的真實情境，帶你算一次該下多少倉位。</li>
+  </ul>
+</div>
+
+<!-- ══════ BTC 區塊 ══════ -->
+<div style="background:#1a1a1a;padding:22px 24px;border-top:1px solid #252525;">
+  <div style="display:inline-block;background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;font-size:13px;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:14px;">₿ BTC 比特幣</div>
+
+  <div style="background:#252525;border-radius:10px;padding:16px;margin-bottom:14px;overflow-x:auto;">
+    <table style="width:100%;border-collapse:collapse;font-size:13px;color:#d4d4d8;min-width:480px;">
+      <tr style="border-bottom:1px solid #333;">
+        <th style="text-align:left;padding:6px 8px;color:#a1a1aa;">區間</th>
+        <th style="text-align:left;padding:6px 8px;color:#a1a1aa;">當前價</th>
+        <th style="text-align:left;padding:6px 8px;color:#a1a1aa;">變動</th>
+        <th style="text-align:left;padding:6px 8px;color:#a1a1aa;">趨勢方向</th>
+        <th style="text-align:left;padding:6px 8px;color:#a1a1aa;">關鍵點位</th>
+      </tr>
+      <tr style="border-bottom:1px solid #2f2f2f;">
+        <td style="padding:6px 8px;">日</td>
+        <td style="padding:6px 8px;"><strong style="color:#fbbf24;font-weight:700">約 $65,000</strong></td>
+        <td style="padding:6px 8px;"><strong style="color:#fbbf24;font-weight:700">+3%（24hr）</strong></td>
+        <td style="padding:6px 8px;">突破後拉回整理</td>
+        <td style="padding:6px 8px;">前波壓力 $65,000-65,700 待驗證是否轉為支撐</td>
+      </tr>
+      <tr style="border-bottom:1px solid #2f2f2f;">
+        <td style="padding:6px 8px;">週</td>
+        <td style="padding:6px 8px;">區間 $59K-$65K</td>
+        <td style="padding:6px 8px;">本週由弱轉強</td>
+        <td style="padding:6px 8px;">嘗試站上 200 週均線</td>
+        <td style="padding:6px 8px;">200 週均線 $62K-63K</td>
+      </tr>
+      <tr>
+        <td style="padding:6px 8px;">月</td>
+        <td style="padding:6px 8px;">7 月區間 $58K-$65K</td>
+        <td style="padding:6px 8px;">自 6 月底低點反彈中</td>
+        <td style="padding:6px 8px;">21 個月低點反彈</td>
+        <td style="padding:6px 8px;">壓力 $66,000-67,000（6/22 前高附近）／支撐 $58,000</td>
+      </tr>
+    </table>
+  </div>
+
+  <div style="color:#d4d4d8;font-size:15px;line-height:1.7;margin-bottom:14px;">
+    BTC 6 月底才剛觸及 <strong style="color:#fbbf24;font-weight:700">21 個月低點</strong>，今天卻在 6 月 CPI、7 月 PPI 接連降溫的帶動下，盤中衝上 <strong style="color:#fbbf24;font-weight:700">$65,100</strong>，是自 6 月 22 日以來首次站上 $65,000（也正是前一交易日提到的 50 日均線壓力區）。不過隨後回落約 0.5%，顯示這波上攻遇到獲利了結賣壓。值得注意的是，ETF 資金流方向與價格背離——7 月 13 日單日淨流出 <strong style="color:#fbbf24;font-weight:700">$424.66M</strong>，反轉上週 $197.4M 的淨流入，6 月全月淨流出更達約 $4.5B（史上最差單月）。四個視角來看：
+  </div>
+  <ul style="margin:0 0 14px;padding-left:20px;color:#d4d4d8;font-size:14.5px;line-height:1.8;">
+    <li><strong style="color:#e2e8f0">順勢</strong>：站上 $65,000 前波壓力，若能站穩，技術面打開挑戰 6/22 前高 $66K-67K 區間的空間。</li>
+    <li><strong style="color:#e2e8f0">均值回歸</strong>：從盤中高點 $65,100 拉回 0.5%，短線不排除回測 $64K 甚至 200 週均線 $62K-63K。</li>
+    <li><strong style="color:#e2e8f0">突破</strong>：這是 6/22 以來首次站上 $65K，能否收在此水準之上才算有效突破，否則恐是假突破。</li>
+    <li><strong style="color:#e2e8f0">宏觀</strong>：ETF 資金流仍淨流出、與價格反彈方向背離，顯示這波上漲主因是總經降溫預期，而非機構資金面。</li>
+  </ul>
+
+  <div style="color:#d4d4d8;font-size:14.5px;line-height:1.7;margin-bottom:14px;">
+    📰 <strong style="color:#e2e8f0">加密圈新聞</strong>：美國現貨 BTC ETF 於 7 月 13 日單日淨流出 <strong style="color:#fbbf24;font-weight:700">$424.66M</strong>，是本月單日最大贖回，反轉前一週的資金回流（<a href="https://www.kucoin.com/news/flash/us-spot-bitcoin-etfs-record-424-66m-outflow-on-july-13-2026" style="color:#f59e0b;">KuCoin</a>）。另一頭，日本參議院委員會通過將加密貨幣重新分類為「金融商品」的法案，為 2027 年東京證交所推出現貨比特幣 ETF 鋪路（<a href="https://www.coindesk.com/policy/2026/07/15/japan-reclassifies-crypto-as-a-financial-asset-paves-way-for-tax-cuts" style="color:#f59e0b;">CoinDesk</a>）。
+  </div>
+
+  <div style="background:#1a1a1a;border-left:3px solid #f59e0b;border-radius:0 8px 8px 0;padding:14px 16px;">
+    <div style="font-size:13.5px;font-weight:700;color:#f59e0b;margin-bottom:8px;">📌 學習重點</div>
+    <ul style="margin:0;padding-left:18px;color:#d4d4d8;font-size:14px;line-height:1.8;">
+      <li>價格突破而<strong style="color:#e2e8f0">資金流背離</strong>時，代表這段漲勢的持續性存疑，不宜直接假設突破有效。</li>
+      <li>「首次站上前波壓力」只是<strong style="color:#e2e8f0">觀察訊號</strong>，能否收在該水準之上、隔日是否守住，才是確認關鍵。</li>
+      <li>單月 $4.5B 淨流出後單日反彈 $65K，提醒<strong style="color:#e2e8f0">結構性賣壓</strong>可能還沒完全出清。</li>
+      <li>監理面利多（如日本立法）通常影響<strong style="color:#e2e8f0">長期敘事</strong>，對短線價格的即時作用力有限，不要混為一談。</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ══════ 美股大盤 區塊 ══════ -->
+<div style="background:#1a1a1a;padding:22px 24px;border-top:1px solid #252525;">
+  <div style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);color:#fff;font-size:13px;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:14px;">📊 美股大盤</div>
+
+  <div style="color:#d4d4d8;font-size:15px;line-height:1.7;margin-bottom:10px;">
+    6 月 PPI（生產者物價指數，反映企業端的批發成本）降溫幅度超出預期，呼應稍早公布的 CPI 降溫數據，市場解讀通膨壓力持續緩解。大型科技股同步走強：Apple 因傳出中國生成式 AI 功能過審而創<strong style="color:#fbbf24;font-weight:700">歷史新高</strong>，Amazon、Alphabet、Microsoft 均上漲逾 2-3%；BlackRock 財報優於預期，股價創逾一年最大單日漲幅。
+  </div>
+
+  <div style="background:#252525;border-radius:10px;padding:16px;margin-bottom:14px;overflow-x:auto;">
+    <table style="width:100%;border-collapse:collapse;font-size:13px;color:#d4d4d8;min-width:480px;">
+      <tr style="border-bottom:1px solid #333;">
+        <th style="text-align:left;padding:6px 8px;color:#a1a1aa;">標的／區間</th>
+        <th style="text-align:left;padding:6px 8px;color:#a1a1aa;">當前價</th>
+        <th style="text-align:left;padding:6px 8px;color:#a1a1aa;">變動</th>
+        <th style="text-align:left;padding:6px 8px;color:#a1a1aa;">趨勢方向</th>
+        <th style="text-align:left;padding:6px 8px;color:#a1a1aa;">關鍵點位</th>
+      </tr>
+      <tr style="border-bottom:1px solid #2f2f2f;">
+        <td style="padding:6px 8px;">SPY・日</td>
+        <td style="padding:6px 8px;"><strong style="color:#fbbf24;font-weight:700">$754.81</strong></td>
+        <td style="padding:6px 8px;"><strong style="color:#fbbf24;font-weight:700">+0.40%</strong></td>
+        <td style="padding:6px 8px;">創近期新高</td>
+        <td style="padding:6px 8px;">前收 $751.83</td>
+      </tr>
+      <tr style="border-bottom:1px solid #2f2f2f;">
+        <td style="padding:6px 8px;">SPY・週</td>
+        <td style="padding:6px 8px;">—</td>
+        <td style="padding:6px 8px;">PPI／CPI 雙降溫帶動</td>
+        <td style="padding:6px 8px;">本週相對上週走強</td>
+        <td style="padding:6px 8px;">關注 $750 整數關卡是否守穩</td>
+      </tr>
+      <tr style="border-bottom:1px solid #2f2f2f;">
+        <td style="padding:6px 8px;">那斯達克綜合・日</td>
+        <td style="padding:6px 8px;"><strong style="color:#fbbf24;font-weight:700">26,269.23</strong></td>
+        <td style="padding:6px 8px;"><strong style="color:#fbbf24;font-weight:700">+0.62%</strong></td>
+        <td style="padding:6px 8px;">科技股領漲大盤</td>
+        <td style="padding:6px 8px;">QQQ 當日精確收盤數據不足，以指數表現代表（見說明）</td>
+      </tr>
+      <tr>
+        <td style="padding:6px 8px;">VIX</td>
+        <td style="padding:6px 8px;"><strong style="color:#fbbf24;font-weight:700">約 16.15</strong></td>
+        <td style="padding:6px 8px;">較前一日 16.50 續降</td>
+        <td style="padding:6px 8px;">本週低點</td>
+        <td style="padding:6px 8px;">20 以上才轉向恐慌</td>
+      </tr>
+    </table>
+  </div>
+
+  <div style="color:#d4d4d8;font-size:14.5px;line-height:1.7;margin-bottom:8px;">
+    小提醒：QQQ 追蹤那斯達克 100 指數，今天官方公開資料只查得到「那斯達克綜合指數」的精確收盤（26,269.23，+0.62%），QQQ 本身的確切收盤價未能從公開來源核實，因此表格改以指數數據代表走勢，避免用推算數字冒充真實報價。<strong style="color:#fbbf24;font-weight:700">10 年期公債殖利率</strong>今天從週二的兩個月高點 4.62% 回落至 <strong style="color:#fbbf24;font-weight:700">4.59%</strong>，走低通常對成長股估值是正面訊號。
+  </div>
+  <ul style="margin:0 0 14px;padding-left:20px;color:#d4d4d8;font-size:14.5px;line-height:1.8;">
+    <li><strong style="color:#e2e8f0">順勢</strong>：科技三雄＋ASML 財測上修帶動，那斯達克領漲，動能有延續跡象。</li>
+    <li><strong style="color:#e2e8f0">均值回歸</strong>：VIX 續降至週低 16.15，市場情緒偏樂觀，短線若過熱不排除拉回消化。</li>
+    <li><strong style="color:#e2e8f0">突破</strong>：SPY 收在近期高點附近，能否延續要看後續是否放量收在新高之上。</li>
+    <li><strong style="color:#e2e8f0">宏觀</strong>：PPI／CPI 雙降溫＋殖利率回落，市場押注 Fed 本月按兵不動機率上看 93%，是這波走揚的主要支撐。</li>
+  </ul>
+
+  <div style="color:#d4d4d8;font-size:14.5px;line-height:1.7;margin-bottom:14px;">
+    📰 <strong style="color:#e2e8f0">美股新聞</strong>：BlackRock 第二季財報優於預期，股價一度大漲逾 7%，寫下逾一年最佳單日表現（<a href="https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-july-15-2026" style="color:#6366f1;">TheStreet</a>）。ASML 上修全年營收展望並計劃將設備產能擴增 30%，帶動晶片設備類股走強，但記憶體大廠 Micron、SK Hynix 反而重挫逾 7%，顯示<strong style="color:#fbbf24;font-weight:700">同族群內部分歧</strong>明顯（<a href="https://finance.yahoo.com/markets/live/stock-market-today-wednesday-july-15-dow-sp-nasdaq-091813320.html" style="color:#6366f1;">Yahoo Finance</a>）。
+  </div>
+
+  <div style="background:#1a1a1a;border-left:3px solid #6366f1;border-radius:0 8px 8px 0;padding:14px 16px;">
+    <div style="font-size:13.5px;font-weight:700;color:#6366f1;margin-bottom:8px;">📌 學習重點</div>
+    <ul style="margin:0;padding-left:18px;color:#d4d4d8;font-size:14px;line-height:1.8;">
+      <li>PPI 與 CPI 是<strong style="color:#e2e8f0">連環數據</strong>，兩者同向確認時，市場反應通常比單一數據更強烈、更可信。</li>
+      <li>同一族群內個股表現分歧（ASML 漲、Micron 跌），提醒<strong style="color:#e2e8f0">類股輪動邏輯</strong>比「整體板塊看多／看空」更重要。</li>
+      <li>抓不到的精確報價（如今天的 QQQ 收盤）<strong style="color:#e2e8f0">寧可承認資料不足</strong>，也不要用推算數字冒充真實成交價。</li>
+      <li>10 年期殖利率回落是這波股市走揚的<strong style="color:#e2e8f0">背後推手</strong>，比任何單一個股新聞都值得長期追蹤。</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ══════ 📖 今日策略學習 ══════ -->
+<div style="background:#1a1a1a;padding:22px 24px;border-top:1px solid #252525;">
+  <div style="display:inline-block;background:linear-gradient(135deg,#8b5cf6,#6366f1);color:#fff;font-size:13px;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:14px;">📖 今日策略學習</div>
+
+  <div style="font-size:17px;font-weight:700;color:#fff;margin-bottom:6px;">部位調整：固定比例與 Kelly 的直覺</div>
+  <div style="color:#a1a1aa;font-size:13.5px;line-height:1.6;margin-bottom:14px;">
+    為什麼今天學這個：BTC 今天出現一個「看起來很誘人」的突破——站上 6/22 以來未見的 $65,000。光算出正期望值（昨天的主題）還不夠，這種訊號到底該下多少倉位，就是今天要學的「部位調整」。
+  </div>
+
+  <ul style="margin:0 0 16px;padding-left:20px;color:#d4d4d8;font-size:14.5px;line-height:1.8;">
+    <li><strong style="color:#e2e8f0">固定比例</strong>：每筆交易固定押帳戶的一定比例（如 1%-2%），不管訊號強弱都等量下注，簡單但沒有針對「edge」大小做調整。</li>
+    <li><strong style="color:#e2e8f0">Kelly 公式的直覺</strong>：最適下注比例 f* = 勝率 − (1−勝率)/賠率，本質是把「你對這筆交易有多少把握」換算成一個數字。</li>
+    <li><strong style="color:#e2e8f0">全額 Kelly 太激進</strong>：勝率與賠率只要估計錯一點，全額 Kelly 算出的倉位就可能暴衝，實務上多用 1/4～1/2 Kelly 降低波動。</li>
+    <li><strong style="color:#e2e8f0">部位大小該跟信心成正比</strong>，不是每筆都梭哈、也不是每筆都用同樣的量——這才是 Kelly 真正要教的事。</li>
+  </ul>
+
+  <div style="background:#252525;border-left:3px solid #8b5cf6;border-radius:0 8px 8px 0;padding:16px;margin-bottom:14px;">
+    <div style="font-size:13.5px;font-weight:700;color:#8b5cf6;margin-bottom:8px;">🎯 情境演練</div>
+    <div style="color:#d4d4d8;font-size:14.5px;line-height:1.8;">
+      假設你評估「BTC 站上 <strong style="color:#fbbf24;font-weight:700">$65,000</strong> 前波壓力後能延續」這個訊號的勝率約 40%，若成立目標看向 $66K-67K 前高、若失敗回落至 $62K-63K 的 200 週均線，粗抓賠率（風報比）約 3:1。代入 Kelly 公式：f* = 0.4 − 0.6/3 = 0.4 − 0.2 = <strong style="color:#fbbf24;font-weight:700">0.2（20%）</strong>，也就是理論全額 Kelly 建議動用兩成資金——但這是在「勝率與賠率估得很準」的前提下。今天 ETF 資金流其實是淨流出的，代表你對 40% 勝率的信心本來就該打折扣，這時改用 1/4 Kelly（約 5%）甚至更保守的固定比例（1%-2%），才是把「估計誤差」也算進去的務實做法。
+    </div>
+  </div>
+
+  <div style="color:#d4d4d8;font-size:14px;line-height:1.7;">
+    <span style="color:#8b5cf6;font-weight:700;">💡 今日研究速讀：</span>Rulyfi 用 9,990 萬組 BTC/USDT 策略組合做回測後發現，用傳統指標篩選會有 336,818 組策略「看起來很賺」，但套用「Deflated Sharpe Ratio」（把「測試了幾千萬組」這件事本身算進門檻，而不是只跟零比較）之後，只剩 3,130 組（約 0.003%）真正禁得起考驗。換句話說，絕大多數漂亮的回測績效，其實是從海量嘗試中撈出來的<strong style="color:#e2e8f0">運氣</strong>，不是真正的<strong style="color:#e2e8f0">優勢（edge）</strong>——而 Kelly 公式算出來的下注比例，前提正是你輸入的勝率／賠率必須是真的，不是回測碰運氣碰出來的。<br>
+    🔗 <a href="https://rulyfi.com/blog/100-million-backtests-deflated-sharpe" style="color:#8b5cf6;">Skill or Luck? We Ran 100 Million Bitcoin Backtests to Show You How to Tell</a>
+  </div>
+</div>
+
+<!-- ══════ 今日交易紀律提醒 ══════ -->
+<div style="background:#1a1a1a;padding:22px 24px;border-top:1px solid #252525;">
+  <div style="display:inline-block;background:linear-gradient(135deg,#10b981,#06b6d4);color:#fff;font-size:13px;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:14px;">🧭 今日交易紀律提醒</div>
+
+  <div style="font-size:15.5px;font-weight:700;color:#fff;margin-bottom:8px;">週四主題：交易日誌</div>
+  <div style="color:#d4d4d8;font-size:14.5px;line-height:1.7;margin-bottom:10px;">
+    「沒有紀錄的交易，等於沒發生過的實驗——你什麼都學不到。」今天如果你曾在腦中想過「BTC 站上 $65K 我要不要進場」，那個當下對勝率、賠率、部位大小的判斷，如果沒寫下來，明天就會忘記自己當初到底是怎麼想的。
+  </div>
+  <div style="color:#d4d4d8;font-size:14.5px;line-height:1.7;">
+    <strong style="color:#e2e8f0">應用情境</strong>：把今天情境演練算出的「勝率 40%、賠率 3:1、Kelly 建議倉位 20%（實際用 1/4 Kelly）」完整寫進日誌，等 $65K 這一波走完，回頭比對「當初的估計」和「後來的結果」——這是唯一能檢驗你估計能力準不準的方法。
+  </div>
+</div>
+
+<!-- 💭 今日反思 -->
+<div style="padding:22px 24px 8px;">
+  <div style="background:linear-gradient(135deg,#10b981,#06b6d4);padding:1px;border-radius:12px;">
+    <div style="background:#1a1a1a;border-radius:11px;padding:18px;">
+      <div style="font-size:15.5px;font-weight:700;color:#fff;margin-bottom:10px;">💭 今日反思</div>
+      <ul style="margin:0 0 10px;padding-left:20px;color:#d4d4d8;font-size:14.5px;line-height:1.8;">
+        <li>如果今天要對「BTC 站上 $65K 能否延續」下注，你會給自己抓多少勝率、多少賠率？寫下具體數字，而不是「感覺會漲」。</li>
+        <li>ETF 資金流其實是淨流出的，跟價格反彈方向相反——你平常在下決定時，會不會只看到價格這一個變數，忽略了背後的資金面？</li>
+        <li>你上一次認真寫交易日誌是什麼時候？如果答不出來，代表你可能一直在用「記憶」而不是「紀錄」在做決策。</li>
+      </ul>
+      <div style="color:#71717a;font-size:12.5px;">挑一題寫進交易日誌，這就是今天的功課。</div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div style="padding:20px 24px;text-align:center;border-top:1px solid #252525;">
+  <div style="color:#52525b;font-size:11.5px;line-height:1.8;">
+    本報內容為交易紀律與市場結構之學習筆記，所有情境演練均為假設性教學範例，不構成任何投資建議或買賣邀約，亦不保證任何數據之即時性與準確性。市場有風險，投資請自行判斷並承擔後果。<br>
+    本報為 Darren 的個人學習報，非公開發行刊物。<br>
+    本信件由 AI 自動生成。
+  </div>
+</div>
+
+</div>
+</div>
