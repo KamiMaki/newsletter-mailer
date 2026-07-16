@@ -1,0 +1,153 @@
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;margin:0;padding:24px 12px;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<tr><td align="center">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;">
+
+<!-- Header -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px 16px 0 0;padding:28px 28px 24px;">
+<div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#c7d2fe;margin-top:10px;">2026 年 7 月 17 日（星期五）</div>
+</td></tr>
+
+<!-- 30秒重點 -->
+<tr><td style="background:#1a1a1a;padding:24px 28px;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>這 48 小時最大的變化，不是又多一個更會聊天的模型，而是 AI 開始「<strong style="color:#ffffff;">長出身體</strong>」——把 AI 裝進機器人與實體世界所需的四塊拼圖（大腦、算力、練功房、國家隊）幾乎同一天到齊。</li>
+<li style="margin-bottom:10px;">NVIDIA 在日本一口氣端出：邊緣運算模組 <strong style="color:#e2e8f0;">Jetson Thor</strong>（把大模型塞進機器人身上，體積功耗砍半）＋ <strong style="color:#e2e8f0;">Cosmos</strong> 世界模型（讓機器人在模擬裡練功）＋日本政府級「Physical AI」國家計畫。</li>
+<li style="margin-bottom:10px;">同一天，<strong style="color:#e2e8f0;">騰訊</strong>把一顆專為機器人設計的「具身視覺語言模型」Hy-Embodied-VLM 用 Apache 2.0 開放權重丟上 Hugging Face——不同公司、同一個方向。</li>
+<li style="margin-bottom:10px;">巧的是，三大 AI 編碼 CLI（<strong style="color:#e2e8f0;">Claude Code、OpenAI Codex、GitHub Copilot</strong>）本週不約而同收緊「危險指令／子代理」防護，AI 開始能動手做事，安全閥也跟著鎖緊。</li>
+<li style="margin-bottom:0;">其他快訊：Google 關閉 Gemini Code Assist 消費者版、一篇研究戳破「AI 代理會自動愈調愈強」的樂觀假設。</li>
+</ul>
+</td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="padding:22px 0 0;">
+<div style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;padding:1px;">
+<div style="background:#1a1a1a;border-radius:15px;padding:26px 26px 24px;">
+<div style="display:inline-block;background:rgba(99,102,241,0.18);color:#a5b4fc;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;margin-bottom:14px;">🎯 今天的主軸</div>
+<div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-bottom:18px;">AI 正在「長出身體」——把它裝進機器人與真實世界的四塊拼圖，這 48 小時同時到齊</div>
+
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 16px;">先講一個畫面。過去兩年的 AI，比較像一個<strong style="color:#a5b4fc;">被關在客服視窗裡、只會打字的天才</strong>——你問它、它答你，聰明歸聰明，但它沒有眼睛、沒有手腳，走不出那個對話框。這 48 小時發生的事，等於有人開始替這個天才<strong style="color:#a5b4fc;">裝上眼睛、接上手腳，還替它蓋了一座練功房</strong>。技術上，這件事叫 <strong style="color:#a5b4fc;">Physical AI（實體 AI）／具身智慧（Embodied AI）</strong>：讓 AI 不只在螢幕裡回文字，而是能看懂真實環境、並在物理世界裡動作——操作機械手臂、開車、控制一台 CT 機器。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:20px 0 6px;">▍共同變化</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 14px;">這幾則消息乍看是各自的產品發表，其實共同指向一件事：<strong style="color:#ffffff;">把 AI 從「對話框」搬進「機器人身體」所需要的整套拼圖，這 48 小時幾乎一次到位。</strong>一家晶片龍頭、一個國家的政府與產業、一家中國網路巨頭，在同一天不約而同押注「讓 AI 能感知、能行動於真實世界」。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:20px 0 6px;">▍為什麼放在一起看</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 12px;">因為要讓 AI 真的走進實體世界，你需要四樣東西——<strong style="color:#a5b4fc;">一顆大腦、一具能塞進機器裡的算力、一座安全的練功房、還有肯砸錢的靠山</strong>。這幾則新聞剛好把四塊拼圖補齊。</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 12px;">拼圖一是<strong style="color:#e2e8f0;">「身體的算力」</strong>：NVIDIA 於 7/15 發表新一代邊緣運算模組 <strong style="color:#a5b4fc;">Jetson Thor</strong>。旗艦款 T3000 有 <strong style="color:#e2e8f0;">865 FP4 TFLOPS</strong> 算力、32GB 記憶體，體積與功耗卻只有前一代 T5000 的<strong style="color:#e2e8f0;">約一半</strong>；入門款 T2000 也有 400 TFLOPS。白話說，就是把一台過去要塞滿機櫃的 AI 算力，縮小到能裝進一隻機械手臂或一台自走機器人身上——而且還附一個只有 40 億參數、能直接在裝置上跑的 Cosmos 3 Edge 模型，讓機器人不必事事連雲端就能即時看、即時反應。</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 12px;">拼圖二是<strong style="color:#e2e8f0;">「大腦」</strong>：同一天，<strong style="color:#a5b4fc;">騰訊</strong>把一顆專為機器人打造的「具身視覺語言模型」Hy-Embodied-VLM-1.0 直接開放權重放上 Hugging Face（Apache 2.0，最寬鬆的商用授權之一）。它約 300 億參數、但用 MoE 架構每次只啟用約 30 億（所以「懂很多」卻跑得動），一次能看 128 張影像，專門用來讓機器人「看懂眼前發生什麼、該怎麼動」。一家晶片商推硬體、一家網路巨頭開軟體大腦，兩條線在同一天交會。</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 12px;">拼圖三是<strong style="color:#e2e8f0;">「練功房」</strong>：NVIDIA 同期主打的 <strong style="color:#a5b4fc;">Cosmos 世界模型</strong>。機器人不能像 AI 聊天那樣「答錯再改」——它撞壞一次就是真的壞了。世界模型的作用，是先在電腦裡生成一個逼真的「虛擬世界」，讓機器人在裡面反覆試錯、練到熟，再搬進現實。這解決了實體 AI 最貴的一關：練習成本。</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 12px;">拼圖四是<strong style="color:#e2e8f0;">「國家隊」</strong>：日本政府與產業和 NVIDIA 啟動政府支持的 <strong style="color:#a5b4fc;">Physical AI 國家計畫</strong>，要打造面向機器人與數位孿生的開放多模態基礎模型；RIKEN 部署代號 <strong style="color:#e2e8f0;">RIKYU</strong>、用 1,600 顆 Blackwell GPU 的超級電腦，Toyota 用來開發 L2++ 自駕、Canon 與 Fujifilm 做新一代 CT、三大銀行用 Nemotron 建金融 AI 工廠。這不是一家公司的產品線，而是一個國家把「實體 AI」當成基礎建設在鋪。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:20px 0 6px;">▍過去 vs. 現在</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 14px;">過去談「AI 應用」，幾乎都在螢幕裡打轉——聊天、寫文件、生圖、寫程式。機器人是機器人、AI 是 AI，兩邊接不太起來。現在的畫面變了：<strong style="color:#ffffff;">算力小到能上機器人的身、模型開放到能直接下載當大腦、訓練搬進虛擬世界省成本，還有國家級資本在後面推</strong>。AI 從「回答問題」正式跨向「動手做事」。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:20px 0 6px;">▍背後邏輯</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 14px;">為什麼大家突然一起往「實體」走？因為純文字 AI 的能力正在快速商品化，各家都在找下一個護城河，而<strong style="color:#a5b4fc;">物理世界是資料與價值都還沒被吃乾的藍海</strong>——工廠、醫院、物流、家庭的每個動作都還沒被自動化。對 NVIDIA 來說，機器人和自駕是繼資料中心後的下一波顯卡買家；對日本這種少子高齡、缺工嚴重的國家，機器人不是炫技而是<strong style="color:#e2e8f0;">剛需</strong>。當「大腦、算力、練功房」的成本同時被壓下來，把 AI 裝進機器就從實驗室選項變成了商業選項。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:20px 0 6px;">▍對你的工作</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 14px;">如果你是<strong style="color:#e2e8f0;">工程師</strong>，值得開始留意「AI × 實體」這條新職能線——邊緣部署、模型量化、模擬環境（世界模型）與感測資料處理，會是接下來幾年很稀缺的技能，和你熟的雲端 API 是兩套玩法。如果你是<strong style="color:#e2e8f0;">主管</strong>，該問的問題從「AI 能幫我們自動化哪些文書」擴大到「我們有哪些<strong style="color:#a5b4fc;">實體流程</strong>（產線、盤點、巡檢、搬運）值得排進機器人自動化的路線圖」。如果你是<strong style="color:#e2e8f0;">知識工作者</strong>，這是一個訊號：AI 的下一個戰場正從螢幕移向現實，未來幾年最貴的不再只是會寫 prompt，而是懂得把 AI 接進真實世界流程的人。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:20px 0 6px;">▍限制與待驗證</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 14px;">別把 demo 當量產。實體 AI 最難的一段從來不是實驗室裡的漂亮示範，而是<strong style="color:#a5b4fc;">現實世界的雜訊與長尾</strong>——光線、灰塵、意外碰撞、千奇百怪的例外，模擬裡練得再好，落到真實工廠仍常水土不服（這正是自駕車喊了十年還沒全面普及的原因）。Jetson Thor 的實體模組要到 2027 第一季才出貨、騰訊模型的實機表現也還沒被第三方廣泛複驗，NVIDIA 秀的日本案例更是精挑過的旗艦客戶。<strong style="color:#a5b4fc;">「拼圖到齊」是起點，不是終點——它讓實體 AI 從不可能變成可做，但離「好做、便宜做」還有一段路。</strong></p>
+
+<div style="background:#252525;border-radius:8px;padding:14px 16px;margin:18px 0;">
+<div style="color:#a5b4fc;font-size:12px;font-weight:700;margin-bottom:6px;">👤 延伸解讀（編輯分析）</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0;">把 NVIDIA 的硬體、騰訊的開放模型、日本的國家計畫擺在一起看，會發現一個共識正在成形：<strong style="color:#e2e8f0;">AI 產業的重心，正從「更聰明的文字模型」轉向「能行動的實體系統」</strong>。文字這條線大家已經打得差不多，物理世界則幾乎全新。這是編輯的解讀，非任一家官方的正式主張。</p>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:20px 0 6px;">▍記住這句</div>
+<p style="color:#ffffff;font-size:15px;line-height:1.75;margin:0 0 16px;font-weight:600;">AI 的下一個戰場正從「對話框」搬到「真實世界」——這週，把它裝進機器人身體的四塊拼圖同時到齊了。</p>
+
+<p style="color:#94a3b8;font-size:13px;line-height:1.7;margin:0;">🔗 來源：<a href="https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent/" style="color:#06b6d4;text-decoration:none;">NVIDIA 官方部落格（Jetson Thor）</a>、<a href="https://blogs.nvidia.com/blog/japan-ecosystem-2026/" style="color:#06b6d4;text-decoration:none;">NVIDIA 官方部落格（日本 Physical AI）</a>、<a href="https://huggingface.co/tencent/Hy-Embodied-VLM-1.0" style="color:#06b6d4;text-decoration:none;">Hugging Face（騰訊 Hy-Embodied-VLM）</a></p>
+</div>
+</div>
+</td></tr>
+
+<!-- 主軸的衍生新聞 -->
+<tr><td style="padding:24px 0 0;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin:0 0 4px;padding:0 4px;">🔗 主軸的衍生新聞</div>
+</td></tr>
+
+<tr><td style="padding:14px 0 0;">
+<div style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="display:inline-block;background:rgba(6,182,212,0.15);color:#22d3ee;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:10px;line-height:1.5;">騰訊開放「機器人的大腦」：Hy-Embodied-VLM-1.0 具身視覺語言模型</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px;">7/15，騰訊 Robotics X 等團隊把 <strong style="color:#e2e8f0;">Hy-Embodied-VLM-1.0</strong> 以 Apache 2.0 開放權重放上 Hugging Face：約 300 億總參數、每 token 只啟用約 30 億（128 選 8 的 MoE，大而不貴），一次能看 128 張影像，專為<strong style="color:#a5b4fc;">在物理世界行動的具身智能體</strong>設計，官方稱在 38 項相關基準中有 19 項於同級模型拿到最佳。它和主軸是同一件事的軟體面：<strong style="color:#a5b4fc;">當 NVIDIA 把「身體算力」做小，機器人的「大腦」也正被開放出來讓任何人下載改造</strong>——硬體與軟體同一天各補一塊。實機表現尚待第三方複驗。</p>
+<p style="color:#94a3b8;font-style:italic;font-size:13px;margin:0 0 10px;">💡 記住這句：機器人的難點正從「造得出手腳」轉向「看懂該怎麼動」——而這顆大腦，現在可以免費下載。</p>
+<p style="color:#94a3b8;font-size:13px;margin:0;">🔗 <a href="https://huggingface.co/tencent/Hy-Embodied-VLM-1.0" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> ｜ 來源：Hugging Face 官方 model card（騰訊）</p>
+</div>
+</td></tr>
+
+<tr><td style="padding:14px 0 0;">
+<div style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="display:inline-block;background:rgba(6,182,212,0.15);color:#22d3ee;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:10px;line-height:1.5;">NVIDIA Jetson Thor：把資料中心級算力縮進機器人身上</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px;">7/15，NVIDIA 發表新一代邊緣模組 <strong style="color:#e2e8f0;">Jetson Thor</strong>：T3000 有 865 FP4 TFLOPS 與 32GB 記憶體、體積功耗只有前代 <strong style="color:#a5b4fc;">約一半</strong>，入門的 T2000 也有 400 TFLOPS，並附一個 40 億參數、能在裝置端即時跑的 Cosmos 3 Edge 模型。它是主軸裡「身體的算力」那塊拼圖：<strong style="color:#a5b4fc;">當算力小到能上機器人、又不必事事連雲端，即時感知與反應才可能</strong>。不過模擬版本本月才開放，實體模組要等到 2027 年第一季才出貨。</p>
+<p style="color:#94a3b8;font-style:italic;font-size:13px;margin:0 0 10px;">💡 記住這句：機器人能不能「即時反應」，卡的不只是模型聰不聰明，而是那顆腦袋塞不塞得進它的身體。</p>
+<p style="color:#94a3b8;font-size:13px;margin:0;">🔗 <a href="https://blogs.nvidia.com/blog/jetson-thor-robotics-edge-ai-agent/" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> ｜ 來源：NVIDIA 官方部落格</p>
+</div>
+</td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="padding:24px 0 0;">
+<div style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:14px;line-height:1.7;">
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">OpenAI Codex 與 GitHub Copilot 的 CLI 同週收緊「危險指令」防護。</strong>7/16，OpenAI Codex CLI（0.144.5）強化了對強制 <code style="color:#f9a8d4;">rm</code> 等破壞性指令的偵測、被擋時給更清楚的理由；同日 GitHub Copilot CLI（v1.0.71）也加嚴了對子代理與沙箱檔案操作的控管。當 AI 開始真的能在你電腦上動手，兩家不約而同先把安全閥鎖緊，是值得團隊注意的訊號。<a href="https://github.com/github/copilot-cli/blob/main/changelog.md" style="color:#06b6d4;text-decoration:none;">🔗 GitHub Copilot CLI 更新紀錄</a></li>
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">🔄 後續追蹤：Claude Code v2.1.211 釋出，重點在安全性修補。</strong>接續前幾天的版本，7/15 的 v2.1.211 修掉權限預覽的雙向覆寫與零寬字元問題、auto mode 誤蓋掉 PreToolUse hook 的 ask 決策，以及 Bedrock/Vertex 的 prompt-caching 計費回歸，並新增可把子代理文字納入 stream-json 輸出的旗標。<a href="https://code.claude.com/docs/en/changelog" style="color:#06b6d4;text-decoration:none;">🔗 Claude Code 官方 changelog</a></li>
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Google 關閉 Gemini Code Assist 消費者版的 GitHub 程式碼審查。</strong>依官方預告，自 7/17 起 Gemini Code Assist 消費者版在 GitHub 上的所有程式碼審查活動結束，使用者須遷移到 Antigravity。對照近期各家 AI 編碼工具的整併，這是產品線收斂的又一例。<a href="https://developers.google.com/gemini-code-assist/docs/deprecations/consumer-code-review" style="color:#06b6d4;text-decoration:none;">🔗 Google 官方文件</a></li>
+<li style="margin-bottom:0;"><strong style="color:#e2e8f0;">研究：AI 代理的優化不會「自動愈調愈強」。</strong>7/15 上 arXiv 的一篇論文在 Terminal-Bench 2.0 上檢驗代理的持續學習，發現多數自我優化方法反覆迭代後會退化或停滯，唯有把「回歸控制」內建進優化迴圈，增益才能跨輪穩定累積。給正在做 agent 自動迭代的團隊一記提醒：得盯著它會不會愈改愈差。<a href="https://arxiv.org/abs/2607.14004" style="color:#06b6d4;text-decoration:none;">🔗 arXiv:2607.14004</a></li>
+</ul>
+</div>
+</td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="padding:24px 0 0;">
+<div style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">📖 今日概念｜世界模型（World Model）</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 12px;"><strong style="color:#a5b4fc;">一句定義：</strong>一種能「憑想像模擬出接下來會發生什麼」的 AI 模型——給它一個場景與一個動作，它能生成「做了這件事之後，世界會變成什麼樣」。</p>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 12px;"><strong style="color:#a5b4fc;">生活化比喻：</strong>像你伸手拿桌上那杯水之前，腦中會先「預演」一遍——手要伸多遠、杯子會不會倒。你不是每次都真的去撞倒才學會，而是先在腦內模擬。世界模型就是給機器人裝上這種「腦內預演」的能力。</p>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 12px;"><strong style="color:#a5b4fc;">工作中的例子：</strong>訓練一隻倉儲機器手臂抓取貨物，如果每次都用真機器練，撞壞一次就是幾十萬。改用世界模型生成一座逼真的虛擬倉庫，讓它在裡面試錯上百萬次、練到熟，再搬進真實倉庫——這正是 NVIDIA Cosmos 在做的事。</p>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 12px;"><strong style="color:#a5b4fc;">常見誤解：</strong>「世界模型＝更炫的遊戲畫面生成器」。它的重點不是畫得漂不漂亮，而是<strong style="color:#e2e8f0;">預測得準不準</strong>——生成的世界要符合物理規則（重力、碰撞、慣性），機器人在裡面學到的行為才能搬到現實用。</p>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0;"><strong style="color:#a5b4fc;">與今天主軸的關係：</strong>世界模型正是主軸裡的「練功房」那塊拼圖。實體 AI 最貴的一關是「練習成本」——真機試錯又慢又傷，世界模型讓機器人先在虛擬世界練夠本，才是把 AI 搬進真實機器的關鍵前提。</p>
+</div>
+</td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="padding:24px 0 0;">
+<div style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;padding:1px;">
+<div style="background:#1a1a1a;border-radius:15px;padding:24px 26px;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+<ul style="margin:0 0 16px;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.75;">
+<li style="margin-bottom:12px;">如果 AI 的下一波價值，從「螢幕裡的文字」移到「真實世界裡的動作」，你所在的行業有哪一段實體流程（產線、盤點、巡檢、搬運）最可能被率先自動化？那對你的角色是威脅還是槓桿？</li>
+<li style="margin-bottom:12px;">你的團隊過去兩年累積的 AI 能力，幾乎都圍繞著雲端 API 與文字。當戰場轉向邊緣部署、模擬環境與感測資料，這套技能有多少能遷移、又有哪一塊得從頭補？</li>
+<li style="margin-bottom:0;">今天四塊拼圖到齊、卻仍離「好做、便宜做」很遠。面對這種「已經可做、但還不成熟」的技術，你會選擇現在就投人試水溫，還是等它跨過某個門檻再進場——你判斷那個門檻是什麼？</li>
+</ul>
+<p style="color:#a5b4fc;font-weight:700;font-size:15px;line-height:1.7;margin:0;">🎒 今日帶走：這週 AI 開始「長出身體」，戰場正從對話框移向真實世界——該問的不再只是「AI 會不會寫」，而是「AI 能不能動手做」。</p>
+</div>
+</div>
+</td></tr>
+
+<!-- 歷史電子報入口 -->
+<tr><td style="padding:24px 0 0;">
+<div style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="font-size:16px;font-weight:800;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+<a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-size:14px;font-weight:600;">查看歷史電子報</a>
+</div>
+</td></tr>
+
+<!-- Footer -->
+<tr><td style="padding:24px 0 8px;">
+<div style="background:#141414;border-radius:14px;padding:22px 24px;text-align:center;">
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px;">📬 覺得有用？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">訂閱這份電子報</a>，把它分享給你的朋友。</p>
+<p style="color:#64748b;font-size:13px;line-height:1.7;margin:0 0 14px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></p>
+<p style="color:#475569;font-size:12px;line-height:1.6;margin:0;">© 2026 企鵝的 AI 每日電子報🐧　本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</p>
+</div>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
