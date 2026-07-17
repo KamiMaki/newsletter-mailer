@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的 AI 每日電子報🐧 · 2026-07-18</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;">
+<tr><td align="center" style="padding:20px 12px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+
+<!-- Header -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px 16px 0 0;padding:28px 26px;">
+<div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#c7d2fe;margin-top:10px;font-weight:600;">2026 年 7 月 18 日（週六）· 閱讀時間約 7 分鐘</div>
+</td></tr>
+
+<!-- 30 秒重點 -->
+<tr><td style="background:#1a1a1a;padding:24px 26px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+<li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>開放權重模型這週正式擠進第一梯隊——你可以「下載」的模型，第一次在獨立評測上追平了只能「租用」的閉源前沿。</li>
+<li style="margin-bottom:10px;">中國 Moonshot 的 <strong style="color:#e2e8f0;">Kimi K3</strong>（2.8 兆參數、開放權重）在 Artificial Analysis 排到全球第三，實力約當 Opus 4.8，但價格只有 Sonnet 5 等級（$3／$15）。</li>
+<li style="margin-bottom:10px;">NVIDIA 與日本政府啟動「全球首個國家級 AI 基建」，罕見地把整套基礎模型設計成<strong style="color:#e2e8f0;">開放權重、廣泛釋出</strong>——開源不再只是新創的事，而是國家戰略。</li>
+<li style="margin-bottom:10px;">其他值得知道：Claude Code 把 <code style="color:#a5b4fc;">/fork</code> 改成背景 session 並替搜尋／子代理設上限；arXiv 出現一套「免訓練」的 agent 提示注入偵測法；Google Gemini 3.5 Pro 傳定 7/17 上線，但官方到今天仍無 model card。</li>
+</ul>
+</td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="padding:20px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+<tr><td style="padding:26px;">
+<div style="display:inline-block;background:rgba(99,102,241,0.2);color:#a5b4fc;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;margin-bottom:14px;">🎯 今天的主軸</div>
+<div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-bottom:18px;">開放權重模型正式擠進第一梯隊——「能下載的」第一次追上了「只能租的」</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍共同變化</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">過去一年，大家默認一件事：真正最強的模型都是閉源的，你只能透過 API「租」它，權重鎖在供應商的機房裡。這週，這條界線被兩件事同時鬆動。7 月 16 日，中國的 Moonshot 丟出 <strong style="color:#a5b4fc;">Kimi K3</strong>——一個 <strong style="color:#a5b4fc;">2.8 兆參數、承諾 7/27 開放權重</strong>的模型，在多個獨立評測直接排進全球前三、前四，追平了 Anthropic 的 Opus 4.8。同一天，NVIDIA 和日本政府宣布的國家級 AI 基建，也刻意把基礎模型做成<strong style="color:#a5b4fc;">開放權重</strong>。「開源＝比較弱、比較便宜的次選」這個印象，這週被正面挑戰。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍為什麼放在一起看</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">單看 Kimi K3，你會以為只是「又一個中國模型很猛」。但把它跟 NVIDIA×日本的國家基建、以及上週 Thinking Machines 開源的 Inkling（975B）放在一起，會看到同一個方向：<strong style="color:#a5b4fc;">頂尖能力正在跟「可下載、可自架、可改」綁在一起</strong>。從新創、到中國大廠、到國家政府，三種完全不同的玩家，這幾天不約而同把賭注押在「開放權重」這條路上。這不是巧合，是一次集體轉向。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍過去 vs. 現在</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">過去：開放權重模型好用、便宜，但你心裡有數——真要打硬仗，還是得回頭找 GPT 或 Claude。<strong style="color:#a5b4fc;">開源大概落後前沿半年到一年</strong>。<br>現在：Kimi K3 在 Artificial Analysis 智慧指數排到<strong style="color:#a5b4fc;">全球第三（Elo 約 1547）</strong>，只輸給 Claude Fable 5 和 GPT-5.6 Sol，把 Opus 4.8 擠到後面；在部分前端／終端機編碼評測上甚至勝過 Opus 4.8。而它的價格是 <strong style="color:#a5b4fc;">每百萬 token 輸入 $3、輸出 $15</strong>——大約只有 GPT-5.6 Sol（$5／$30）的六成，卻是同級近似的能力。落差從「半年」壓縮到「幾乎沒有」。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍背後邏輯</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">Kimi K3 是個 <strong style="color:#a5b4fc;">MoE（混合專家）</strong>架構：總共 2.8 兆參數，但每個 token 只點亮 896 個專家裡的 16 個（約 1.8%）。白話說，它像一間有 896 位專科醫生的大醫院，但你每次掛號只會被轉給最相關的 16 位——養得起龐大知識庫，跑起來卻不用全院動員，這是它能把「巨大」和「便宜」同時做到的關鍵。對中國廠商而言，開放權重還有戰略意義：在被限制買最先進晶片的處境下，把模型開放出去，等於用「生態」換「影響力」。NVIDIA×日本則是另一種算盤——國家不想被單一美國供應商綁死，開放權重讓本土企業能自架、自改、資料不外流。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍對你的工作</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">如果你是<strong style="color:#e2e8f0;">工程／技術主管</strong>：你現在多了一個真實選項——把敏感或高量的工作負載跑在自架的開放權重模型上，成本可控、資料不出境，而能力不再是明顯讓步。過去「自架＝將就」的假設要重新檢視。<br>如果你是<strong style="color:#e2e8f0;">開發者</strong>：多一個 $3／$15、Opus 級的 API 選擇，尤其編碼場景值得實測；等 7/27 權重釋出後，還能自己微調。<br>如果你是<strong style="color:#e2e8f0;">知識工作者</strong>：短期你未必會直接用到 Kimi，但價格戰會把你正在用的工具一起往下拉——閉源廠商很難無視這種壓力。</div>
+
+<div style="background:#252525;border-radius:8px;padding:14px 16px;margin:18px 0;">
+<div style="color:#a5b4fc;font-size:13px;font-weight:700;margin-bottom:6px;">👤 人物觀點／延伸解讀</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">獨立開發者 <strong style="color:#e2e8f0;">Simon Willison</strong> 用他招牌的「畫一隻騎腳踏車的鵜鶘 SVG」測 Kimi K3，觀察到兩件實務重點：一是它「很會想」——為了畫這張圖用掉 <strong style="color:#a5b4fc;">13,241 個推理 token</strong> 才輸出 3,417 個，單張圖成本約 25 美分，長鏈推理的帳要自己算清楚；二是視覺理解（圖片 alt 文字）表現相當好。他也提醒：這類趣味測試越來越測不出模型在「長對話的 agent 工具呼叫」這種真正重要場景的實力，別把單一評測當結論。<span style="color:#64748b;">（人物觀點，非官方數據）</span></div>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍限制與待驗證</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">別急著改架構。幾個保留：①<strong style="color:#a5b4fc;">權重還沒真的釋出</strong>——Moonshot 說 7/27，在那之前 Kimi K3 一樣只能透過 API 用，「開放」還是張支票。②<strong style="color:#a5b4fc;">評測方法有雜訊</strong>：部分數字是廠商自跑、用不同 agent 框架，跨模型比較要打折看。③2.8 兆參數自架的門檻極高，「能下載」不等於「你跑得動」。④真實世界的長時 agent 任務、工具呼叫穩定度，還需要各團隊自己實測，不能只信榜單。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍記住這句</div>
+<div style="color:#e2e8f0;font-size:15px;line-height:1.75;font-weight:600;">前沿模型的「門票」，這週第一次不再只發給閉源巨頭——但「開放權重」目前給你的是議價能力和退路，還不是可以立刻自架上線的成品。</div>
+
+<div style="border-top:1px solid #333;margin-top:18px;padding-top:12px;font-size:13px;line-height:1.9;">
+<div>🔗 來源：<a href="https://www.kimi.com/" style="color:#06b6d4;text-decoration:none;">Kimi（Moonshot AI 官方產品）</a></div>
+<div>🔗 獨立評測背景：<a href="https://simonwillison.net/2026/Jul/16/kimi-k3/" style="color:#06b6d4;text-decoration:none;">Simon Willison：Kimi K3 分析</a></div>
+</div>
+
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 主軸的衍生新聞 -->
+<tr><td style="padding:6px 0 0;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;padding:0 4px 14px;">🔗 主軸的衍生新聞</div>
+</td></tr>
+
+<tr><td style="background:#1a1a1a;border-radius:14px;padding:22px 24px;margin-bottom:16px;">
+<div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">Kimi K3 引爆「新 DeepSeek 時刻」，AI 估值一度震盪</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">Bloomberg、Fortune 在 7 月 17 日報導，Kimi K3 一發布就<strong style="color:#e2e8f0;">重演了年初 DeepSeek 那種「市場一驚」的劇本</strong>：一個中國實驗室用遠低於西方的價格，端出接近前沿的能力，讓投資人重新質疑「花大錢買閉源算力與模型」的溢價還撐不撐得住。這正是主軸的市場面——當能力差距縮到幾乎看不見，<strong style="color:#e2e8f0;">定價權會從賣方往買方移動</strong>。</div>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:12px 0 10px;">💡 記住這句：真正撼動估值的不是「更強」，而是「一樣強、卻便宜一大截」。</p>
+<div style="font-size:13px;"><a href="https://www.bloomberg.com/news/articles/2026-07-17/china-s-powerful-new-moonshot-ai-model-closes-gap-with-us-rivals" style="color:#06b6d4;text-decoration:none;">🔗 閱讀原文｜來源：Bloomberg</a></div>
+</td></tr>
+
+<tr><td style="height:14px;"></td></tr>
+
+<tr><td style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">🔄 後續追蹤：NVIDIA×日本啟動「全球首個國家級 AI 基建」，押注開放基礎模型</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">延續 NVIDIA 在日本布局實體 AI 的脈絡，7 月 16 日出現關鍵新進展：日本政府、產業與 NVIDIA 正式宣布一座 <strong style="color:#e2e8f0;">Vera Rubin AI 工廠</strong>（27,500 顆 Rubin GPU、140MW），並明確定位為打造「<strong style="color:#e2e8f0;">開放多模態基礎模型</strong>」，其預訓練權重將「廣泛開放給國內開發者與企業」，搭配 Nemotron、Cosmos、Isaac GR00T 等開放模型。和主軸的關係很直接：<strong style="color:#e2e8f0;">開放權重已經從技術選擇，升格為國家級戰略</strong>——政府不想被單一供應商綁死。</div>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:12px 0 10px;">💡 記住這句：當國家級基建都選「開放權重」，這條路線就不再是理想主義，而是主權與供應鏈的現實考量。</p>
+<div style="font-size:13px;"><a href="https://nvidianews.nvidia.com/news/japan-government-industrial-leaders-and-nvidia-launch-the-worlds-first-national-ai-infrastructure" style="color:#06b6d4;text-decoration:none;">🔗 閱讀原文｜來源：NVIDIA Newsroom（官方）</a></div>
+</td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="padding:26px 0 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+<tr><td style="padding:24px 26px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:16px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.75;">
+<li style="margin-bottom:16px;"><strong style="color:#e2e8f0;">Claude Code 把 /fork 改成「背景 session」，並替搜尋與子代理設上限。</strong>7/17 更新中，<code style="color:#a5b4fc;">/fork</code> 會把當前對話複製成一條獨立背景 session（原本的內嵌子代理改名 <code style="color:#a5b4fc;">/subtask</code>），並新增每 session 的 WebSearch（預設 200）與子代理生成（預設 200）上限。為什麼重要：這是把「代理跑失控」從隱憂變成有明確護欄的工程實務，長時任務更敢放手交給它。<a href="https://code.claude.com/docs/en/changelog" style="color:#06b6d4;text-decoration:none;">🔗 來源：Claude Code Changelog（官方）</a></li>
+<li style="margin-bottom:16px;"><strong style="color:#e2e8f0;">arXiv 新論文 PVDetector：不用訓練，就能偵測針對特定 agent 的提示注入攻擊。</strong>這篇 7 月的論文在推論當下比對模型「內部狀態」與預先定義的「違規概念」，號稱假陰性率低於 1%、額外開銷極小。為什麼重要：當 agent 會真的下單、付款、改資料庫，「怎麼擋住被惡意指令劫持」正從研究題目變成上線前的必修課。<a href="https://arxiv.org/abs/2607.12624" style="color:#06b6d4;text-decoration:none;">🔗 來源：arXiv 2607.12624</a></li>
+<li style="margin-bottom:0;"><strong style="color:#e2e8f0;">Google Gemini 3.5 Pro 傳定 7/17 上線，但官方到今天仍無 model card。</strong>多家媒體先前把 7 月 17 日講成 Gemini 3.5 Pro 的上線日，但截至 7/18，官方 Gemini API 文件仍查不到 gemini-3.5-pro，也沒有定價頁或發布貼文。為什麼重要（編輯分析）：在開放權重加速逼近的這一週，閉源龍頭的旗艦一再跳票，會讓「押注單一供應商下一版」的風險更被放大。<a href="https://ai.google.dev/gemini-api/docs/changelog" style="color:#06b6d4;text-decoration:none;">🔗 來源：Google Gemini API 更新日誌（官方）</a></li>
+</ul>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="padding:26px 0 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+<tr><td style="padding:24px 26px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:16px;">📖 今日概念｜開放權重（Open Weights）</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">
+<div style="margin-bottom:12px;"><strong style="color:#a5b4fc;">一句定義：</strong>把訓練好的模型「參數檔」公開讓人下載、自架、微調，但不一定公開訓練資料與完整訓練程式碼。</div>
+<div style="margin-bottom:12px;"><strong style="color:#a5b4fc;">生活化比喻：</strong>像餐廳把「做好的醬料」整罐送你，你可以帶回家自己加菜、調味、無限次使用——但食譜和原料來源它沒給。這跟「只能到店裡點餐」（閉源 API）差很多，也跟「連食譜和原料清單都公開」（真正的開源）不一樣。說回技術：你拿到的是能跑、能改的權重，卻未必能完全「重現」這個模型是怎麼被訓出來的。</div>
+<div style="margin-bottom:12px;"><strong style="color:#a5b4fc;">工作中的例子：</strong>金融或醫療團隊把開放權重模型架在自家機房，敏感資料完全不出境，還能用內部資料微調出專屬版本——這是純 API 服務很難給的控制權。</div>
+<div style="margin-bottom:12px;"><strong style="color:#a5b4fc;">常見誤解：</strong>「開放權重＝開源＝免費隨便用」。其實三件事都要分開看：很多開放權重模型的授權條款有商用限制或使用規範；「開放權重」也不等於「開源」（後者連資料與程式碼都公開）；而且 2.8 兆參數這種規模，自架的硬體成本一點都不便宜。</div>
+<div><strong style="color:#a5b4fc;">與今天主軸的關係：</strong>今天主軸之所以重要，正是因為「開放權重」這一欄，第一次同時擁有了「前沿能力」和「可自架控制」——過去你只能二選一。</div>
+</div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="padding:26px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+<tr><td style="padding:24px 26px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:16px;">🪞 反思時間</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+<li style="margin-bottom:12px;">如果開放權重模型半年內就能穩定追平閉源前沿，你團隊現在為「只能租用的 API」付的溢價，買到的究竟是「能力」，還是只是「不用自己維運的方便」？這筆錢明年還值得付嗎？</li>
+<li style="margin-bottom:12px;">你手上哪些工作負載，是「資料敏感、用量又大」到值得認真評估自架開放權重的？又有哪些其實丟給便宜 API 就好、根本不必扛自架的維運重量？</li>
+<li style="margin-bottom:0;">當一個能力接近的模型來自你無法完全信任其供應鏈的地區，你會怎麼在「成本誘因」和「治理／合規風險」之間畫線？這條線該由工程決定，還是該由法務和管理層一起定？</li>
+</ul>
+<div style="border-top:1px solid #333;margin-top:16px;padding-top:14px;">
+<p style="color:#a5b4fc;font-weight:700;font-size:15px;margin:0;line-height:1.7;">🎒 今日帶走：這一週，「能下載的模型」第一次追上「只能租的模型」——別急著搬家，但一定要重新盤算你對單一供應商的依賴與退路。</p>
+</div>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 歷史電子報入口 -->
+<tr><td style="padding:0 0 16px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+<tr><td style="padding:22px 26px;">
+<div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-bottom:10px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</div>
+<div><a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-weight:600;">查看歷史電子報</a></div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- Footer -->
+<tr><td style="background:#141414;border-radius:0 0 16px 16px;padding:24px 26px;text-align:center;">
+<div style="font-size:14px;color:#cbd5e1;margin-bottom:10px;">📬 覺得有用？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">分享給朋友訂閱這份電子報</a></div>
+<div style="font-size:13px;color:#64748b;margin-bottom:14px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></div>
+<div style="font-size:12px;color:#4b5563;line-height:1.6;border-top:1px solid #2a2a2a;padding-top:14px;">© 2026 企鵝的 AI 每日電子報🐧<br>本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</div>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>
