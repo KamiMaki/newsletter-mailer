@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的 AI 每日電子報🐧 · 2026-07-19</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;">
+<tr><td align="center" style="padding:20px 12px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+
+<!-- Header -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px 16px 0 0;padding:28px 26px;">
+<div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#c7d2fe;margin-top:10px;font-weight:600;">2026 年 7 月 19 日（週日）· 閱讀時間約 7 分鐘</div>
+</td></tr>
+
+<!-- 30 秒重點 -->
+<tr><td style="background:#1a1a1a;padding:24px 26px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+<li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>這 48 小時 AI coding 工具集體「補課」——Claude Code、GitHub Copilot、Codex 不約而同把更新重點從「又能做什麼」轉向「怎麼關得住、看得清、擋得掉」。</li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0;">Claude Code v2.1.214</strong> 是一次以安全為主的釋出：修掉多個權限檢查繞過漏洞、對「看不懂的指令」改成預設攔下來問，還新增能主動結束惡意對話的 <code style="color:#a5b4fc;">EndConversation</code>。</li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0;">GitHub Copilot 程式碼審查</strong>改成「防火牆預設開啟」、把設定寫進 <code style="color:#a5b4fc;">copilot-code-review.yml</code>，還把用量指標下放到「每一個 repo」——同時補上「擋得住」和「看得清」。</li>
+<li style="margin-bottom:0;">其他值得知道：Intel 把 <strong style="color:#e2e8f0;">Gemini Enterprise</strong> 部署到全體員工與晶片設計流程；OpenAI 發文談青少年 AI 安全（近 9 成青少年每週用 ChatGPT）；arXiv 新論文示範預訓練資料可在網路規模被「計算宣傳」投毒。</li>
+</ul>
+</td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="padding:20px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+<tr><td style="padding:26px;">
+<div style="display:inline-block;background:rgba(99,102,241,0.2);color:#a5b4fc;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;margin-bottom:14px;">🎯 今天的主軸</div>
+<div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-bottom:18px;">AI coding 工具這幾天集體「補課」——比的不再是誰更會寫程式，而是誰先把「護欄、權限、可觀測性」補齊</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍共同變化</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">打開這 48 小時三大 AI coding 工具的更新紀錄，你會發現一件反常的事：<strong style="color:#a5b4fc;">幾乎沒有一條在講「新增了什麼能力」</strong>。7/18 的 <strong style="color:#a5b4fc;">Claude Code v2.1.214</strong> 是一次以「安全」為主題的釋出，一口氣修掉五個權限檢查繞過的漏洞；7/17 的 <strong style="color:#a5b4fc;">GitHub Copilot 程式碼審查</strong>把「防火牆預設開啟」，並讓你用一個設定檔管理它、把用量指標下放到每個 repo；7/18 的 <strong style="color:#a5b4fc;">OpenAI Codex 0.144.6</strong> 則是修 bug、把弄亂的上下文長度救回來。三家不同公司，這幾天的關鍵字高度一致：<strong style="color:#a5b4fc;">關得住、看得清、擋得掉</strong>。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍為什麼放在一起看</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">單看任何一條，都只是「例行更新」；但把三條疊在一起，方向就很清楚了。過去一年這些工具在拼的是「能不能自己讀 codebase、自己開 PR、自己跑指令」——也就是<strong style="color:#e2e8f0;">放權</strong>。當放權放到一個程度，真正的瓶頸就不再是「它會不會做」，而是<strong style="color:#a5b4fc;">「它做壞事時，我攔不攔得住、事後查不查得到」</strong>。這一週，三家不約而同開始補這一課。這不是巧合，是 AI coding 從「炫技期」進入「上生產線」的必經轉折。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍過去 vs. 現在</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">過去：changelog 的頭條是「支援新模型」「新增 /某某指令」「速度更快」，安全性通常擠在最後一行。<br>現在：Claude Code 這版把「安全修正」<strong style="color:#a5b4fc;">放在最前面</strong>——修掉 Windows PowerShell 5.1 的權限繞過、讓超過 1 萬字元的超長指令<strong style="color:#a5b4fc;">一律先問你</strong>而不是自動跑、堵住用檔案描述子重導向（file-descriptor redirect）繞過檢查的寫法。Copilot 則把「防火牆<strong style="color:#a5b4fc;">預設開啟</strong>、限制審查時的網路存取」當成頭條功能。安全性，從腳註升格成主打。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍背後邏輯</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">這波「補課」其實踩在三根柱子上，值得記起來。<br>①<strong style="color:#e2e8f0;">護欄（fail closed，預設關閉）</strong>：Claude Code 對「解析不出來、看不懂」的指令，現在一律改成先跳出來問你，而不是預設放行——電子鎖斷電時該自動上鎖，不是自動打開。<br>②<strong style="color:#e2e8f0;">設定即程式碼（config-as-code）</strong>：Copilot 讓你把審查行為寫進 <code style="color:#a5b4fc;">copilot-code-review.yml</code>，還能直接讀 repo 裡的 <code style="color:#a5b4fc;">CLAUDE.md</code>、<code style="color:#a5b4fc;">GEMINI.md</code>、<code style="color:#a5b4fc;">REVIEW.md</code>——治理規則不再靠口頭約定，而是進版控、能被 review。<br>③<strong style="color:#e2e8f0;">可觀測性（visibility）</strong>：Copilot 把用量指標細到「每一個 repo」（哪個庫的 PR 是 agent 開的、審的），Claude Code 也為長時間工具呼叫加了「進度心跳」，不再靜默。你要能<strong style="color:#a5b4fc;">看見</strong>agent 在幹嘛，才談得上信任它。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍對你的工作</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">如果你是<strong style="color:#e2e8f0;">工程／技術主管</strong>：你評估 AI coding 工具的第一個問題該換了——從「它寫得好不好」變成「它出事時，我攔得住、也查得到嗎」。這三根柱子（護欄、設定即程式碼、可觀測性）正好可以當你的採購檢查表。<br>如果你是<strong style="color:#e2e8f0;">開發者</strong>：短期會有一點「摩擦感」——以前自動跑過去的長指令現在會停下來問你，但這是把「代價高的意外」換成「便宜的一次確認」，值得。順手把團隊的審查規則寫進 <code style="color:#a5b4fc;">CLAUDE.md</code>／<code style="color:#a5b4fc;">copilot-code-review.yml</code>，讓 agent 照你的規矩來。<br>如果你是<strong style="color:#e2e8f0;">知識工作者</strong>：這波「先關再開」的思路，很快會蔓延到你用的每個會自己動手的 AI 助理——預設權限愈收愈緊，是好事。</div>
+
+<div style="background:#252525;border-radius:8px;padding:14px 16px;margin:18px 0;">
+<div style="color:#a5b4fc;font-size:13px;font-weight:700;margin-bottom:6px;">👤 延伸解讀（編輯分析）</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">為什麼是「這一週」同時發生？一個合理的讀法：能力這條線，上週才被開放權重模型（Kimi K3 那批）推到近乎追平前沿——當「誰更會寫程式」的差距縮小，競爭焦點自然會往下一個戰場移動，也就是<strong style="color:#e2e8f0;">「誰敢讓企業把生產環境的鑰匙交出來」</strong>。護欄、稽核、權限，正是打開企業採購大門的鑰匙。這是編輯把多條線放在一起後的推論，非任何官方說法。<span style="color:#64748b;">（編輯分析，非官方數據）</span></div>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍限制與待驗證</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">別把「補漏洞」直接讀成「安全了」。幾個保留：①這些多半是<strong style="color:#a5b4fc;">修正既有漏洞</strong>——代表這些繞過方式先前是真的存在過，不是憑空變安全。②「防火牆預設開啟」「長指令先問」都會帶來摩擦，團隊若嫌煩而一路放寬白名單，護欄等於白裝。③這是<strong style="color:#a5b4fc;">48 小時的快照</strong>，三條各自都算例行更新，「集體轉向」是編輯的聚類判讀，未必是各家協調好的策略；下週若又冒出一堆純能力更新，這條主線就要修正。④真正的長時 agent 安全（提示注入、越權操作）還遠沒解決，修 changelog 只是把門檻墊高一階。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍記住這句</div>
+<div style="color:#e2e8f0;font-size:15px;line-height:1.75;font-weight:600;">當 AI coding 工具的更新頭條從「新能力」變成「新護欄」，代表它們正在從玩具長成生產工具——能力決定你用不用得起來，護欄才決定你敢不敢真的把鑰匙交出去。</div>
+
+<div style="border-top:1px solid #333;margin-top:18px;padding-top:12px;font-size:13px;line-height:1.9;">
+<div>🔗 來源：<a href="https://github.com/anthropics/claude-code/releases" style="color:#06b6d4;text-decoration:none;">Claude Code Releases v2.1.214（Anthropic 官方）</a></div>
+<div>🔗 來源：<a href="https://github.blog/changelog/2026-07-17-copilot-code-review-customization-and-configurability-improvements/" style="color:#06b6d4;text-decoration:none;">GitHub Changelog：Copilot 程式碼審查客製化（官方）</a></div>
+<div>🔗 來源：<a href="https://github.blog/changelog/2026-07-17-repository-level-github-copilot-usage-metrics-generally-available/" style="color:#06b6d4;text-decoration:none;">GitHub Changelog：repo 級用量指標 GA（官方）</a></div>
+</div>
+
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 主軸的衍生新聞 -->
+<tr><td style="padding:6px 0 0;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;padding:0 4px 14px;">🔗 主軸的衍生新聞</div>
+</td></tr>
+
+<tr><td style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">OpenAI Codex 0.144.6：連 bug-fix 都在「把上下文救回來」</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">7/18 釋出的 Codex CLI 0.144.6 沒有新功能，重點是<strong style="color:#e2e8f0;">修正 GPT-5.6（Sol／Terra／Luna）的內建指令、把被弄亂的上下文長度恢復回 27.2 萬 token</strong>。它接在上一版 0.144.5「危險指令防護強化」之後——和主軸同一條脈絡：第三家主流 coding agent 這幾天的心力，也全花在「correctness 與收斂護欄」，不是炫新能力。</div>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:12px 0 10px;">💡 記住這句：當三家的更新都在「修正與加固」，代表這類工具的成熟度瓶頸已經不在能力，而在可靠與可控。</p>
+<div style="font-size:13px;"><a href="https://github.com/openai/codex/releases" style="color:#06b6d4;text-decoration:none;">🔗 閱讀原文｜來源：OpenAI Codex Releases（官方）</a></div>
+</td></tr>
+
+<tr><td style="height:14px;"></td></tr>
+
+<tr><td style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">Cursor 進駐 Slack：先給計畫、再動手，還會跨 repo、跨頻道</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">7/17 Cursor 更新它的 Slack 整合：agent <strong style="color:#e2e8f0;">開工前先把計畫貼出來</strong>讓你能及早喊停，過程逐步顯示狀態，還能跨多個 repo 自動挑對的專案、跨頻道讀寫。和主軸的關係：這正是「可觀測性＋護欄」的產品化——<strong style="color:#e2e8f0;">讓 agent 在動手前先攤開計畫</strong>，就是把「事後補救」換成「事前攔截」的另一種寫法。</div>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:12px 0 10px;">💡 記住這句：讓 agent「先講會做什麼、再去做」，是把信任成本從你身上挪回到它身上最便宜的一步。</p>
+<div style="font-size:13px;"><a href="https://cursor.com/changelog" style="color:#06b6d4;text-decoration:none;">🔗 閱讀原文｜來源：Cursor Changelog（官方）</a></div>
+</td></tr>
+
+<tr><td style="height:14px;"></td></tr>
+
+<tr><td style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">arXiv OmniaBench：最強的模型，真實任務也還沒到 6 成</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">7/17 上線的新基準 OmniaBench 用 <strong style="color:#e2e8f0;">1,431 個可實際執行的任務、跨 90＋354 個領域</strong>去考 AI agent，結果前沿模型全數卡在六成以下——<strong style="color:#e2e8f0;">Claude Sonnet 5 為 58.54%、GPT-5.6 Sol 為 57.14%</strong>，弱點集中在「規劃、維持限制條件、犯錯後自我修正」。這正好解釋了主軸：<strong style="color:#e2e8f0;">agent 還沒可靠到能放手，所以大家先忙著加護欄</strong>。<span style="color:#64748b;">（研究論文，v1 標註 7/16 美東、7/17 台北公告）</span></div>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:12px 0 10px;">💡 記住這句：能力榜單漂亮，不代表放到真實流程能收工——這道落差，就是這週護欄潮的根本理由。</p>
+<div style="font-size:13px;"><a href="https://arxiv.org/abs/2607.14989" style="color:#06b6d4;text-decoration:none;">🔗 閱讀原文｜來源：arXiv 2607.14989</a></div>
+</td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="padding:26px 0 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+<tr><td style="padding:24px 26px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:16px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.75;">
+<li style="margin-bottom:16px;"><strong style="color:#e2e8f0;">Intel 把 Gemini Enterprise 部署到全體員工，還拉進晶片設計流程。</strong>Intel 與 Google Cloud 擴大多年合作，把 Gemini Enterprise 導入全球員工的工程、供應鏈與營運，並打造客製 agent 加速半導體研發與晶片設計。為什麼重要：這是「大型製造業把 AI agent 塞進最核心的研發鏈」的具體訊號，不再只是客服和寫信。<a href="https://newsroom.intel.com/artificial-intelligence/intel-google-cloud-announce-collaboration-to-accelerate-intel-ai-enabled-enterprise-transformation" style="color:#06b6d4;text-decoration:none;">🔗 來源：Intel Newsroom（官方）</a></li>
+<li style="margin-bottom:16px;"><strong style="color:#e2e8f0;">OpenAI 發文談「青少年該有安全的 AI」。</strong>OpenAI 主張青少年是第一代「AI 原生世代」，應在年齡合適的防護（家長控制、專家合作）下取用 AI，並引用數據稱近 9 成青少年每週用 ChatGPT 學習與提升技能。為什麼重要：這是把「安全」從工程議題推到「政策與世代」層級，也預告平台將加更多年齡相關預設限制。<a href="https://openai.com/index/why-teens-deserve-access-safe-ai/" style="color:#06b6d4;text-decoration:none;">🔗 來源：OpenAI（官方，7/16–17）</a></li>
+<li style="margin-bottom:16px;"><strong style="color:#e2e8f0;">arXiv 新論文：預訓練資料可在「網路規模」被投毒。</strong>研究顯示，攻擊者不必碰 Wikipedia 這類受控來源，光靠往公開討論介面灌內容，就能把毒資料混進模型的預訓練語料，並提出「HalfLife」指標衡量毒內容能否熬過爬蟲與清洗。為什麼重要：這把「資料供應鏈安全」從理論變成可操作的攻擊面，凡是靠公開網路資料訓練的團隊都該正視。<a href="https://arxiv.org/abs/2607.15267" style="color:#06b6d4;text-decoration:none;">🔗 來源：arXiv 2607.15267</a></li>
+<li style="margin-bottom:0;"><strong style="color:#e2e8f0;">Mistral 開源工具庫 mistral-common v1.11.6 修補。</strong>7/17 釋出的 tokenizer 與驗證函式庫小改版，修正音訊分塊驗證、擋掉會導致除以零的取樣率設定、並修好 SpeechRequest 轉 OpenAI 格式的 seed 欄位。為什麼重要：不是大新聞，但提醒你——多模態（尤其語音）的邊界條件正被一個個補起來，正式上線前這些「不起眼的驗證」才是穩定度所在。<a href="https://github.com/mistralai/mistral-common/releases" style="color:#06b6d4;text-decoration:none;">🔗 來源：Mistral GitHub Releases（官方）</a></li>
+</ul>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="padding:26px 0 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+<tr><td style="padding:24px 26px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:16px;">📖 今日概念｜最小權限原則（Principle of Least Privilege）與 fail-closed</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">
+<div style="margin-bottom:12px;"><strong style="color:#a5b4fc;">一句定義：</strong>只給一個角色「完成任務所需的最小權限」，多一分都不給；而當系統遇到「看不懂、判斷不了」的狀況時，預設選擇「擋下來」而不是「放行」——後者叫 <strong style="color:#e2e8f0;">fail closed（失效時關閉）</strong>。</div>
+<div style="margin-bottom:12px;"><strong style="color:#a5b4fc;">生活化比喻：</strong>新員工報到，門禁卡預設只開得了自己那層樓，不是直接發一把「全棟總鑰匙」。而電子門鎖設計成停電時「自動上鎖」而非「自動彈開」——寧可讓你多刷一次卡，也不要在異常時大門洞開。說回技術：Claude Code 這版把「解析不出來的長指令」從『預設自動跑』改成『預設先問你』，就是同一個道理——異常時往安全那邊倒。</div>
+<div style="margin-bottom:12px;"><strong style="color:#a5b4fc;">工作中的例子：</strong>給 AI coding agent 的權限，別一次全開。能跑哪些指令、能連哪些外部網路、能改哪個目錄，逐項用白名單開；Copilot 把審查防火牆「預設開啟、限制網路」，就是幫你先把大門關上，再讓你按需要開窗。</div>
+<div style="margin-bottom:12px;"><strong style="color:#a5b4fc;">常見誤解：</strong>「先全開，出事再收」比較有效率。實際上剛好相反——權限一旦放出去很難收回，而 fail-closed 的一次確認成本很低、一次意外的代價卻可能很高（刪錯檔、外洩、跑了不該跑的指令）。摩擦感是設計的一部分，不是 bug。</div>
+<div><strong style="color:#a5b4fc;">與今天主軸的關係：</strong>今天三家工具的「補課」，骨子裡都是這條老原則的落地——把 agent 的預設從「方便」調回「安全」，用最小權限與 fail-closed，換來「敢把鑰匙交出去」的底氣。</div>
+</div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="padding:26px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+<tr><td style="padding:24px 26px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:16px;">🪞 反思時間</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+<li style="margin-bottom:12px;">如果從下週起，你評估一個 AI coding 工具的第一個問題，從「它寫得好不好」換成「它出事時我攔得住、也查得到嗎」，你團隊現在用的那幾套，有幾個能通過這關？缺的是哪一根柱子——護欄、設定即程式碼、還是可觀測性？</li>
+<li style="margin-bottom:12px;">你的團隊把哪些權限「預設打開」給了 AI agent（能跑什麼指令、連哪些網路、改哪些檔案）？如果改成「預設關閉、逐項開白名單」，哪些工作流會卡住、哪些其實根本不需要那麼大的權限？</li>
+<li style="margin-bottom:0;">當一個工具的 changelog 從「新增了什麼能力」轉向「補了什麼漏洞、加了什麼護欄」，你會把它讀成「產品成熟」的訊號，還是「能力見頂」的訊號？你打算用什麼方式，從供應商的 release notes 判斷它到底走到哪個階段？</li>
+</ul>
+<div style="border-top:1px solid #333;margin-top:16px;padding-top:14px;">
+<p style="color:#a5b4fc;font-weight:700;font-size:15px;margin:0;line-height:1.7;">🎒 今日帶走：這 48 小時，AI coding 工具比的不是誰更會寫程式，而是誰先把「權限、可觀測性、預設關閉」補齊——能力給你生產力，護欄才決定你敢不敢真的把鑰匙交出去。</p>
+</div>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 歷史電子報入口 -->
+<tr><td style="padding:0 0 16px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+<tr><td style="padding:22px 26px;">
+<div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-bottom:10px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</div>
+<div><a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-weight:600;">查看歷史電子報</a></div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- Footer -->
+<tr><td style="background:#141414;border-radius:0 0 16px 16px;padding:24px 26px;text-align:center;">
+<div style="font-size:14px;color:#cbd5e1;margin-bottom:10px;">📬 覺得有用？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">分享給朋友訂閱這份電子報</a></div>
+<div style="font-size:13px;color:#64748b;margin-bottom:14px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></div>
+<div style="font-size:12px;color:#4b5563;line-height:1.6;border-top:1px solid #2a2a2a;padding-top:14px;">© 2026 企鵝的 AI 每日電子報🐧<br>本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</div>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>

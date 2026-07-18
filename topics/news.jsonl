@@ -39,3 +39,14 @@
 {"date": "2026-07-18", "title": "Claude Code 7/17：/fork 轉背景 session、WebSearch 與子代理各設 200 上限"}
 {"date": "2026-07-18", "title": "arXiv PVDetector：免訓練偵測針對特定用途 agent 的提示注入攻擊"}
 {"date": "2026-07-18", "title": "Gemini 3.5 Pro 傳定 7/17 上線跳票，官方仍無 model card（編輯分析）"}
+{"date": "2026-07-19", "title": "AI Coding 工具集體補課：從拼能力轉向護欄、權限與可觀測性"}
+{"date": "2026-07-19", "title": "Claude Code v2.1.214 安全釋出：修多個權限繞過、新增 EndConversation 工具"}
+{"date": "2026-07-19", "title": "GitHub Copilot 程式碼審查：防火牆預設開啟、copilot-code-review.yml、讀 CLAUDE.md/GEMINI.md/REVIEW.md"}
+{"date": "2026-07-19", "title": "GitHub Copilot 用量指標下放到 repo 級（GA）與 usage-metrics API"}
+{"date": "2026-07-19", "title": "OpenAI Codex 0.144.6：修正 GPT-5.6 內建指令、恢復 272K 上下文"}
+{"date": "2026-07-19", "title": "Cursor 進駐 Slack：開工前先給計畫、跨 repo、跨頻道"}
+{"date": "2026-07-19", "title": "arXiv OmniaBench：前沿 agent 真實任務 Pass@1 仍不到六成"}
+{"date": "2026-07-19", "title": "Intel×Google Cloud：Gemini Enterprise 部署全體員工與晶片設計流程"}
+{"date": "2026-07-19", "title": "OpenAI：Why teens deserve access to safe AI（青少年 AI 安全）"}
+{"date": "2026-07-19", "title": "arXiv：預訓練資料可透過計算宣傳在網路規模被投毒（HalfLife）"}
+{"date": "2026-07-19", "title": "Mistral 開源 mistral-common v1.11.6 修補（音訊驗證）"}
