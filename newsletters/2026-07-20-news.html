@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的 AI 每日電子報🐧 · 2026-07-20</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;">
+<tr><td align="center" style="padding:20px 12px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+
+<!-- Header -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px 16px 0 0;padding:28px 26px;">
+<div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#c7d2fe;margin-top:10px;font-weight:600;">2026 年 7 月 20 日（週一）· 閱讀時間約 7 分鐘</div>
+</td></tr>
+
+<!-- 30 秒重點 -->
+<tr><td style="background:#1a1a1a;padding:24px 26px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+<li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>這 48 小時，前沿 AI 的戰場悄悄換了——比的不再是「誰的模型分數高」，而是<strong style="color:#a5b4fc;">「誰付得起、誰拿得到、誰被掐著脖子」</strong>。同一天，西方把最強模型「收費關進限額」，東方在上海把「便宜又開放」推到台前。</li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0;">Anthropic 7/20 起把最強的 Fable 5 收緊</strong>：Max／Team Premium 雖「永久內含」卻只給 50% 額度、基礎額度同日再砍約三分之一；Pro／Team Standard 等於被請出訂閱，改領一次性 100 美元額度後照 API 價付費。</li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0;">上海 WAIC（7/17–20）成了東方的答卷</strong>：Alibaba 預告 2.4 兆參數的 Qwen3.8-Max、自稱「僅次於 Fable 5」且承諾開放權重；Huawei 秀出自主算力超節點 Atlas 950；29 國另立 WAICO 治理組織。</li>
+<li style="margin-bottom:0;">其他值得知道：<strong style="color:#e2e8f0;">Claude Code v2.1.215</strong> 取消自動跑 <code style="color:#a5b4fc;">/verify</code> 與 <code style="color:#a5b4fc;">/code-review</code>；WAIC 具身智慧集體亮相（AgiBot 四連發、Pudu 半人形）；OpenAI Codex 開了 0.145 alpha 早鳥版。</li>
+</ul>
+</td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="padding:20px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+<tr><td style="padding:26px;">
+<div style="display:inline-block;background:rgba(99,102,241,0.2);color:#a5b4fc;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;margin-bottom:14px;">🎯 今天的主軸</div>
+<div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-bottom:18px;">前沿 AI 的分水嶺，正在從「模型多強」滑向「算力與取用權誰說了算」——西方把最強模型鎖進計費限額，東方用開放權重與自主算力正面對撞</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍共同變化</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">把這 48 小時的兩則大事擺在一起看，方向就很清楚了。<br>7/18，<strong style="color:#a5b4fc;">Anthropic</strong> 透過官方 Claude 帳號宣布：自 <strong style="color:#a5b4fc;">7/20</strong> 起，最強的 <strong style="color:#a5b4fc;">Fable 5</strong> 雖然「永久內含」在 Max／Team Premium，但只給 <strong style="color:#a5b4fc;">50% 額度</strong>，而且基礎額度同一天再縮約三分之一；Pro／Team Standard 用戶則實質被請出訂閱，領一次性 100 美元額度，用完就照 API 價（每百萬 token 輸入 10 美元、輸出 50 美元）計費。官方給的理由很誠實：<strong style="color:#e2e8f0;">「Fable 的需求很難預測，所以我們是一邊擴充算力、一邊分批放行」</strong>。<br>幾乎同時，7/19 的上海 <strong style="color:#a5b4fc;">WAIC 世界人工智慧大會</strong>上，<strong style="color:#a5b4fc;">Alibaba</strong> 預告 2.4 兆參數的 <strong style="color:#a5b4fc;">Qwen3.8-Max</strong>，自稱「當今最強之一、僅次於 Fable 5」，並承諾<strong style="color:#a5b4fc;">「即將開放權重」</strong>、走便宜的 token plan 取用。一邊把最好的關進計費閘門，一邊喊著要免費送出去——這不是巧合。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍為什麼放在一起看</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">單看任一則，都只是「某家調整方案」。但疊在一起，你會看到一條主線：<strong style="color:#e2e8f0;">當開放權重模型的能力已經逼近前沿，「誰的模型更強」就不再是護城河了</strong>。護城河移到了下一層——<strong style="color:#a5b4fc;">算力供給、商業模式、以及主權自主</strong>。Anthropic 收緊 Fable，本質是「需求爆量、算力不夠、只好用價格分流」；Alibaba 開放 Qwen，本質是「反正拼不贏你關起來的那點差距，那我就把地板整個抬高、讓便宜與開放變成武器」。這屆 WAIC 的官方主旋律，恰恰就叫 <strong style="color:#e2e8f0;">「beyond bigger models（別再只比模型大小）」</strong>——261 個模型、108 款晶片同場，agent 與治理才是主角。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍過去 vs. 現在</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">過去：新聞頭條是「我的模型又在某某榜單刷新紀錄」，大家盯著 benchmark 分數。<br>現在：頭條變成「我的最強模型<strong style="color:#a5b4fc;">要限額、要按量收費</strong>」和「我的準前沿模型<strong style="color:#a5b4fc;">要開放權重、要便宜</strong>」。討論的主詞從「準確率」換成「<strong style="color:#e2e8f0;">你付得起嗎、你拿得到嗎、你會不會哪天被斷供</strong>」。連 Fable 5 這半個月反覆延期、又收緊的過程，本身就是「算力供給決定產品節奏」最赤裸的示範。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍背後邏輯</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">這條主線踩在三根柱子上，值得記起來。<br>①<strong style="color:#e2e8f0;">算力（compute）是真正的瓶頸</strong>：Anthropic 自己說了「一邊擴容一邊放行」——最強模型跑起來太貴、產能追不上需求，只能用價格當閥門。<br>②<strong style="color:#e2e8f0;">商業模式的分岔</strong>：西方走「訂閱吃到飽 → 限額 →（超過）按量計費」，把重度用戶推向 API 計價；東方走「開放權重＋低價 token」，用「幾乎白送」去換生態與市占。<br>③<strong style="color:#e2e8f0;">主權自主（sovereignty）</strong>：東方的答案不只是模型，而是<strong style="color:#a5b4fc;">整條堆疊</strong>——Huawei 的 Atlas 950 超節點打自主算力、29 國另立 WAICO 治理組織、開放權重讓誰都能自己架。目標是「不被任何一家、任何一國掐住脖子」。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍對你的工作</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">如果你是<strong style="color:#e2e8f0;">技術／產品主管</strong>：你的模型採購題，從「哪家分數高」變成「哪家我<strong style="color:#a5b4fc;">供得起、也不會被斷供</strong>」。把「單一供應商風險」和「單位成本（每百萬 token）」正式寫進評估表——Fable 5 這種「今天內含、下週變按量」的翻臉速度，就是活生生的提醒。<br>如果你是<strong style="color:#e2e8f0;">工程師</strong>：多留意開放權重這條路。Qwen3.8-Max 若真開權重，代表「準前沿能力」可以自己架、自己控成本、資料不出門——把它當成議價與備援的籌碼，別把雞蛋全放在一個閉源 API 上。<br>如果你是<strong style="color:#e2e8f0;">知識工作者</strong>：你每月付的訂閱，正從「吃到飽」悄悄變成「有額度上限」。看懂「限額＋超額計費」的規則，別等到關鍵時刻才發現最強模型這週已經用完了。</div>
+
+<div style="background:#252525;border-radius:8px;padding:14px 16px;margin:18px 0;">
+<div style="color:#a5b4fc;font-size:13px;font-weight:700;margin-bottom:6px;">👤 延伸解讀（編輯分析）</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">為什麼「開放權重」會變成東方最順手的武器？一個合理的讀法：當你在<strong style="color:#e2e8f0;">閉源能力上追不到第一名</strong>，把模型免費放出去反而是最理性的一步——你用「零取得成本」去換開發者生態、去壓低對手的定價空間、去換「大家都在用我的模型」的話語權。Anthropic 對 Fable 5 的計費限額，和 Alibaba 對 Qwen 的開放承諾，是同一枚硬幣的兩面：<strong style="color:#e2e8f0;">一個守著稀缺的算力收租，一個用開放去掀對方的桌子。</strong>這是編輯把多條線放在一起後的推論，非任何一家的官方說法。<span style="color:#64748b;">（編輯分析，非官方數據）</span></div>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍限制與待驗證</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">幾個必須保留的地方，別讀過頭：<br>①Qwen3.8-Max 目前<strong style="color:#a5b4fc;">只有預告</strong>——沒有官方模型卡、沒有第三方 benchmark，「僅次於 Fable 5」是 <strong style="color:#a5b4fc;">Alibaba 自評</strong>，「即將開放權重」也還沒兌現。當成「宣示」看，別當成「已交付」。<br>②Huawei Atlas 950 的「6.7× Nvidia NVL144」是<strong style="color:#a5b4fc;">官方自報</strong>、且是原型展示，真實良率、量產與軟體生態都還要打問號。<br>③Fable 5「基礎額度砍三分之一」的細節，部分來自科技媒體（the-decoder）解讀，官方主要確認的是「50% 內含＋Pro 轉按量」這個大框架。<br>④這是<strong style="color:#a5b4fc;">48 小時的快照</strong>，「東西方對撞」是編輯把幾條線聚在一起的判讀；若下週 Anthropic 擴容後又放寬限額、或 Qwen 遲遲不開權重，這條主線就要修正。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍記住這句</div>
+<div style="color:#e2e8f0;font-size:15px;line-height:1.75;font-weight:600;">當最強的模型開始「限額收費」、準前沿的模型開始「免費開放」，代表這場競賽的勝負手，已經從「誰寫得出更聰明的模型」，換成了「誰供得起算力、誰的取用權不會被別人掐斷」。</div>
+
+<div style="border-top:1px solid #333;margin-top:18px;padding-top:12px;font-size:13px;line-height:1.9;">
+<div>🔗 來源：<a href="https://www.anthropic.com/news" style="color:#06b6d4;text-decoration:none;">Anthropic 官方 Claude 帳號公告（7/18，Fable 5 方案調整）</a></div>
+<div>🔗 來源：<a href="https://x.com/Alibaba_Qwen" style="color:#06b6d4;text-decoration:none;">Alibaba Qwen 官方帳號（7/19，Qwen3.8-Max 預告，WAIC）</a></div>
+<div>🔗 來源：<a href="https://news.cgtn.com/news/2026-07-17/Beyond-bigger-models-What-WAIC-2026-reveals-about-AI-s-next-chapter-1OQOdVTqqsg/p.html" style="color:#06b6d4;text-decoration:none;">WAIC 2026：beyond bigger models（會議背景）</a></div>
+</div>
+
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 主軸的衍生新聞 -->
+<tr><td style="padding:6px 0 0;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;padding:0 4px 14px;">🔗 主軸的衍生新聞</div>
+</td></tr>
+
+<tr><td style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">Huawei 秀出 Atlas 950 超節點：東方「自主算力」的底牌攤上桌</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">在 WAIC 開幕，Huawei 展出 <strong style="color:#e2e8f0;">Atlas 950 SuperPoD</strong>——用自研 UnifiedBus 2.0 把 <strong style="color:#e2e8f0;">8,192 顆昇騰 Ascend 950DT 晶片串成一個超節點</strong>，官方自報 FP8 算力達 8 EFLOPS、並宣稱「單體算力是 Nvidia NVL144 的 6.7 倍」。和主軸的關係：主軸說「算力才是新護城河」，這就是東方的正面回應——<strong style="color:#e2e8f0;">與其擔心被斷 GPU 供應，不如自己造超節點</strong>。數字是自報、且屬原型展示，量產與軟體生態仍待驗證。</div>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:12px 0 10px;">💡 記住這句：當一方用價格閥門分配算力，另一方就想辦法把算力「自己長出來」——這才是這場對撞的地基。</p>
+<div style="font-size:13px;"><a href="https://en.sedaily.com/international/2026/07/17/huawei-unveils-atlas-950-superpod-linking-thousands-of-ai" style="color:#06b6d4;text-decoration:none;">🔗 閱讀原文｜來源：Huawei WAIC 展示（自報數據，7/16–17）</a></div>
+</td></tr>
+
+<tr><td style="height:14px;"></td></tr>
+
+<tr><td style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">29 國另立「WAICO」：連治理規則都想自己一套</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">在 WAIC 前夕，<strong style="color:#e2e8f0;">29 個國家簽署協議，成立「世界人工智慧合作組織」（WAICO）</strong>，總部設在上海，主打「開放、包容」的全球 AI 治理。和主軸的關係：主軸的第三根柱子是「主權自主」——東方的完整答案不只是晶片和開放模型，還包括<strong style="color:#e2e8f0;">「自己的治理牌桌」</strong>，讓 AI 的規則不完全由歐美主導。這一步是把「不被掐脖子」從技術層，推到了國際制度層。</div>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:12px 0 10px;">💡 記住這句：模型可以開放、晶片可以自造、規則也想自己訂——「主權 AI」正在從口號，長成一整套堆疊。</p>
+<div style="font-size:13px;"><a href="https://www.globaltimes.cn/page/202607/1366233.shtml" style="color:#06b6d4;text-decoration:none;">🔗 閱讀原文｜來源：WAIC／WAICO 成立報導（7/16，官方媒體轉述）</a></div>
+</td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="padding:26px 0 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+<tr><td style="padding:24px 26px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:16px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.75;">
+<li style="margin-bottom:16px;"><strong style="color:#e2e8f0;">Claude Code v2.1.215：不再自動幫你跑 /verify 與 /code-review。</strong>7/19 的釋出改掉一個行為——這兩個技能不再在 session 中自動觸發，改成你要自己叫它才會跑。為什麼重要：這延續了上週「把預設收緊、把主導權還給人」的方向，少一點「AI 自作主張」，多一點「你說了才算」。<a href="https://code.claude.com/docs/en/changelog" style="color:#06b6d4;text-decoration:none;">🔗 來源：Claude Code Changelog（官方）</a></li>
+<li style="margin-bottom:16px;"><strong style="color:#e2e8f0;">WAIC 具身智慧集體亮相：AgiBot 四連發、Pudu 半人形登場。</strong>7/18–19，AgiBot 一口氣發表 A3 Ultra、X2 Edu、G2 Max、OmniHand 3 Ultra-M 四款產品，Pudu Robotics 也首度公開展示工業級半人形機器人 D7。為什麼重要：這屆 WAIC 的另一條暗線是「AI 要長出身體」，機器人從展台走向工廠，是「實體 AI」商業化的具體訊號。<a href="https://www.roboticstomorrow.com/news/2026/07/19/agibot-unveils-four-new-products-at-waic-2026-showcasing-embodied-ai-in-real-world-operations/26859/" style="color:#06b6d4;text-decoration:none;">🔗 來源：WAIC 廠商發表（7/18–19）</a></li>
+<li style="margin-bottom:16px;"><strong style="color:#e2e8f0;">OpenAI Codex 開出 0.145.0-alpha 早鳥版。</strong>7/18 在 GitHub 釋出 0.145.0-alpha.24 預覽版，讓想嘗鮮的人先試下一個穩定版的功能，但官方尚未公布詳細變更說明。為什麼重要：不是大新聞，但它接在前幾版「修正 GPT-5.6 上下文、加固危險指令」之後，代表 Codex 的迭代節奏還很密。<a href="https://github.com/openai/codex/releases" style="color:#06b6d4;text-decoration:none;">🔗 來源：OpenAI Codex Releases（官方，預覽版）</a></li>
+<li style="margin-bottom:0;"><strong style="color:#e2e8f0;">MiniMax M3 在 WAIC 當招牌展出（提醒：非新發布）。</strong>被多方點名為會場亮點的 MiniMax M3，其實是 6 月初就發布的開放權重模型（428B MoE、100 萬 token 上下文、原生多模態＋電腦操作），這次是在 WAIC 作為「開放權重旗艦」展示。為什麼重要：它是主軸「開放權重逼近前沿」最好的實例——把閉源大廠才有的能力，做成人人可自架的開放模型。<a href="https://www.minimax.io/blog/minimax-m3" style="color:#06b6d4;text-decoration:none;">🔗 來源：MiniMax 官方部落格（背景資料）</a></li>
+</ul>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="padding:26px 0 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+<tr><td style="padding:24px 26px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:16px;">📖 今日概念｜主權 AI（Sovereign AI）與開放權重（Open-Weight）</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">
+<div style="margin-bottom:12px;"><strong style="color:#a5b4fc;">一句定義：</strong>「主權 AI」指一個國家或組織，盡量掌握 AI 的<strong style="color:#e2e8f0;">整條堆疊——算力（晶片）、模型、資料</strong>，好在關鍵時刻不被外人斷供或掐住。而「開放權重」是達成它的關鍵工具之一：把模型的參數（權重）公開讓人下載、自己架、自己改，而不是只租一個閉源 API。</div>
+<div style="margin-bottom:12px;"><strong style="color:#a5b4fc;">生活化比喻：</strong>這就像一個國家的「糧食自給率」。你可以靠進口吃飯（用別人的雲端 API），便宜又省事；但一旦對方漲價、限額、或斷供，你就沒飯吃。主權 AI 就是「自己種一部分糧、自己留種子」——說回技術：自研晶片＝耕地，開放權重模型＝可留種、可自種的種子，資料＝你自家的水源。三者到齊，才叫真正端得穩自己的碗。</div>
+<div style="margin-bottom:12px;"><strong style="color:#a5b4fc;">工作中的例子：</strong>一家醫院或銀行不敢把病歷、交易資料送進外部 API，就可以拿「開放權重」模型在自家機房架起來，資料不出門、成本自己控、也不怕供應商哪天改規則。這正是 Qwen 若開放權重、或 MiniMax M3 這類模型的價值所在。</div>
+<div style="margin-bottom:12px;"><strong style="color:#a5b4fc;">常見誤解：</strong>「開放權重＝完全開源、可以隨便商用」。其實不一定——開放權重只保證你「拿得到參數」，能不能商用、能不能改，仍要看它的授權條款（有些限制商用、有些要掛名）。「拿得到」不等於「隨便用」，簽約前務必看清 license。</div>
+<div><strong style="color:#a5b4fc;">與今天主軸的關係：</strong>今天的東西方對撞，骨子裡就是「主權 AI」之爭：西方用限額計費守著稀缺算力，東方用自研晶片＋開放權重＋自訂治理，拼的正是「不被任何人掐脖子」的那份底氣。</div>
+</div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="padding:26px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+<tr><td style="padding:24px 26px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:16px;">🪞 反思時間</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+<li style="margin-bottom:12px;">如果一家供應商可以像 Fable 5 這樣，一週內把「內含」翻臉改成「按量計費」，你目前押注最深的那個閉源模型，一旦明天漲價或限額，你的產品扛得住嗎？你手上有沒有一個「開放權重備援」能在 48 小時內頂上？</li>
+<li style="margin-bottom:12px;">把你團隊現在的模型帳單攤開：你真正在乎的是「分數最高的那家」，還是「每百萬 token 最划算、且不會被斷供的那家」？如果評估表裡還沒有「單位成本」和「供應風險」這兩欄，是什麼讓你到現在還沒補上？</li>
+<li style="margin-bottom:0;">當「準前沿能力」逐漸變成可以自架、可以留種的開放權重，你會把這件事讀成「議價籌碼變多了」的好消息，還是「該重估自建 vs. 外購」的警訊？你打算用什麼指標，判斷哪些工作流值得搬回自家機房、哪些繼續用雲端 API？</li>
+</ul>
+<div style="border-top:1px solid #333;margin-top:16px;padding-top:14px;">
+<p style="color:#a5b4fc;font-weight:700;font-size:15px;margin:0;line-height:1.7;">🎒 今日帶走：這 48 小時，AI 的勝負手從「模型多聰明」換成「算力供得起、取用權掐不斷」——西方把最強模型鎖進計費限額，東方用開放權重與自主算力掀桌，而你的下一個關鍵決策，是別把雞蛋全放進一個會翻臉的閉源籃子。</p>
+</div>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 歷史電子報入口 -->
+<tr><td style="padding:0 0 16px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+<tr><td style="padding:22px 26px;">
+<div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-bottom:10px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</div>
+<div><a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-weight:600;">查看歷史電子報</a></div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- Footer -->
+<tr><td style="background:#141414;border-radius:0 0 16px 16px;padding:24px 26px;text-align:center;">
+<div style="font-size:14px;color:#cbd5e1;margin-bottom:10px;">📬 覺得有用？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">分享給朋友訂閱這份電子報</a></div>
+<div style="font-size:13px;color:#64748b;margin-bottom:14px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></div>
+<div style="font-size:12px;color:#4b5563;line-height:1.6;border-top:1px solid #2a2a2a;padding-top:14px;">© 2026 企鵝的 AI 每日電子報🐧<br>本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</div>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>
