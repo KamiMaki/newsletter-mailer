@@ -1,0 +1,247 @@
+<div style="background:#0f0f0f;padding:24px 12px;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<div style="max-width:650px;margin:0 auto;">
+
+<!-- Header -->
+<div style="background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:14px 14px 0 0;padding:28px 24px;text-align:center;">
+  <div style="font-size:13px;color:#fff7ed;letter-spacing:2px;text-transform:uppercase;margin-bottom:6px;">企鵝的AI交易策略學習報</div>
+  <div style="font-size:24px;font-weight:800;color:#ffffff;">BTC × 美股大盤 策略學習日刊</div>
+  <div style="font-size:13px;color:#fff7ed;margin-top:8px;">2026-07-20（週一）</div>
+</div>
+
+<!-- Disclaimer banner -->
+<div style="background:#1a1a1a;padding:12px 20px;text-align:center;border-bottom:1px solid #2a2a2a;">
+  <span style="color:#f59e0b;font-size:12.5px;font-weight:600;">⚠ 本報純屬交易紀律與知識學習，非投資建議，不構成任何買賣邀約</span>
+</div>
+
+<!-- 今日總覽 -->
+<div style="background:#1a1a1a;padding:22px 24px;border-bottom:1px solid #2a2a2a;">
+  <div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:12px;">⚡ 今日總覽</div>
+  <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+    <li>BTC 週末反彈至約 <strong style="color:#fbbf24;font-weight:700">$64,712（24h +1.15%）</strong>，但仍卡在 <strong style="color:#fbbf24;font-weight:700">$61,884 支撐與 $65,631 壓力</strong>之間整理，尚未脫離區間格局</li>
+    <li>美股上週五收黑，標普 500 寫下<strong style="color:#fbbf24;font-weight:700">近三個月來首見單週下跌</strong>，那斯達克週跌 1.4%，晶片股（Nvidia -2.2%、台積電 -7.3%）領跌，VIX 仍處 <strong style="color:#fbbf24;font-weight:700">18.77</strong> 的中性偏高波動區</li>
+    <li>Buffett Indicator 攀升至 <strong style="color:#fbbf24;font-weight:700">227%</strong>，估值疑慮與軟 CPI 帶來的降息預期正在角力</li>
+    <li>今日學習主題：<strong style="color:#e2e8f0">移動平均的本質與常見誤用</strong></li>
+  </ul>
+</div>
+
+<!-- BTC 區塊 -->
+<div style="background:#1a1a1a;padding:24px;border-bottom:1px solid #2a2a2a;">
+  <div style="display:inline-block;background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;font-size:12px;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:14px;">₿ BTC 比特幣</div>
+
+  <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:10px 0;">
+  比特幣週末（7/19，週六）反彈至約 <strong style="color:#fbbf24;font-weight:700">$64,712</strong>，24 小時<strong style="color:#fbbf24;font-weight:700">上漲 1.15%</strong>，成交量約 $11.1B；這是從 7/14 恐慌探底 $64,875（Fear &amp; Greed 一度跌至 22「極度恐懼」）之後的持續整理。整體來看，過去一週 BTC<strong style="color:#e2e8f0">仍未脫離</strong>近兩週已成形的 $61,884–$65,631 箱型區間。
+  </p>
+
+  <table style="width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;">
+    <tr style="background:#252525;">
+      <th style="text-align:left;padding:8px 10px;color:#94a3b8;font-weight:600;border-bottom:1px solid #333;">區間</th>
+      <th style="text-align:left;padding:8px 10px;color:#94a3b8;font-weight:600;border-bottom:1px solid #333;">當前價</th>
+      <th style="text-align:left;padding:8px 10px;color:#94a3b8;font-weight:600;border-bottom:1px solid #333;">變動%</th>
+      <th style="text-align:left;padding:8px 10px;color:#94a3b8;font-weight:600;border-bottom:1px solid #333;">趨勢方向</th>
+      <th style="text-align:left;padding:8px 10px;color:#94a3b8;font-weight:600;border-bottom:1px solid #333;">關鍵點位</th>
+    </tr>
+    <tr>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">日線</td>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">$64,712</td>
+      <td style="padding:8px 10px;color:#fbbf24;border-bottom:1px solid #2a2a2a;">+1.15%（24h）</td>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">區間內反彈</td>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">$61,884 / $65,631</td>
+    </tr>
+    <tr>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">週線</td>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">與上週大致持平</td>
+      <td style="padding:8px 10px;color:#fbbf24;border-bottom:1px solid #2a2a2a;">箱型震盪</td>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">區間整理</td>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">$61.9K–$65.6K</td>
+    </tr>
+    <tr>
+      <td style="padding:8px 10px;color:#e2e8f0;">月線</td>
+      <td style="padding:8px 10px;color:#e2e8f0;">仍在低檔修復階段</td>
+      <td style="padding:8px 10px;color:#fbbf24;">資料不足，今日略過精確%</td>
+      <td style="padding:8px 10px;color:#e2e8f0;">遠低於年初高點，200 日均線之下</td>
+      <td style="padding:8px 10px;color:#e2e8f0;">年初高點 $93K 遙遠</td>
+    </tr>
+  </table>
+
+  <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:14px 0 6px;"><strong style="color:#e2e8f0">四視角綜合：</strong></p>
+  <ul style="margin:0 0 10px;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+    <li><strong style="color:#e2e8f0">順勢</strong>：過去一週在 $61,884–$65,631 反覆拉扯，尚未出現明確方向，屬<strong style="color:#fbbf24;font-weight:700">盤整格局</strong></li>
+    <li><strong style="color:#e2e8f0">均值回歸</strong>：今日反彈貼近壓力區，若出現超買訊號屬短線均值回歸賣壓情境；反之拉回測試 $61,884 且出現超賣，則是回歸買盤觀察點</li>
+    <li><strong style="color:#e2e8f0">突破</strong>：站穩 $65,631 並帶量，技術面打開向上想像空間；失守 $61,884 則有機會測試更深支撐</li>
+    <li><strong style="color:#e2e8f0">宏觀</strong>：ETF 週資金轉為淨流入但力道遜於 ETH ETF，加上穩定幣新規延宕，監管與資金態度呈現<strong style="color:#fbbf24;font-weight:700">溫和分歧</strong></li>
+  </ul>
+
+  <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:14px 0 6px;"><strong style="color:#e2e8f0">加密圈新聞：</strong></p>
+  <ul style="margin:0 0 14px;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+    <li>美國現貨 BTC ETF 當週（7/13–17）淨流入 <strong style="color:#fbbf24;font-weight:700">$75.67M</strong>（BlackRock IBIT 單一基金吸金 $204.15M 最多），但同期 ETH ETF 吸金 $105.44M，資金力道反超 BTC ETF</li>
+    <li>美國《GENIUS Act》穩定幣最終規則<strong style="color:#fbbf24;font-weight:700">錯過 7/18 法定期限</strong>，發行商與交易所面臨合規時程未明，強制執行預計延至 2027 年 1 月</li>
+  </ul>
+
+  <div style="background:#252525;border-left:3px solid #f59e0b;border-radius:0 8px 8px 0;padding:14px 16px;">
+    <div style="color:#fbbf24;font-weight:700;font-size:13.5px;margin-bottom:8px;">📌 學習重點</div>
+    <ul style="margin:0;padding-left:18px;color:#cbd5e1;font-size:14px;line-height:1.8;">
+      <li>價格在同一區間反覆測試超過一週時，<strong style="color:#e2e8f0">追漲追跌</strong>的勝率通常低於等待邊界訊號</li>
+      <li>ETF 資金流轉正不代表趨勢確立，<strong style="color:#e2e8f0">跨資產比較</strong>（如 ETH 反超 BTC）能看出資金偏好正在轉移</li>
+      <li>監管時程延宕（GENIUS Act）屬於<strong style="color:#e2e8f0">政策不確定性</strong>，不宜當成單一交易理由</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 美股大盤區塊 -->
+<div style="background:#1a1a1a;padding:24px;border-bottom:1px solid #2a2a2a;">
+  <div style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);color:#fff;font-size:12px;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:14px;">📊 美股大盤</div>
+
+  <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:10px 0;">
+  <strong style="color:#e2e8f0">SPY</strong> 於 7/17（最近交易日，週五）收在 <strong style="color:#fbbf24;font-weight:700">$742.49</strong>，單日<strong style="color:#fbbf24;font-weight:700">下跌 1.02%</strong>，較 7/15 高點 $754.81 回落約 1.6%；標普 500 指數收 7,457 點，<strong style="color:#fbbf24;font-weight:700">寫下近三個月來首見單週下跌（週跌約 1%）</strong>，道瓊當日也重挫 406 點。
+  </p>
+  <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:10px 0;">
+  <strong style="color:#e2e8f0">QQQ</strong> 收在 <strong style="color:#fbbf24;font-weight:700">$695.33</strong>，單日<strong style="color:#fbbf24;font-weight:700">下跌 1.50%</strong>；那斯達克指數<strong style="color:#fbbf24;font-weight:700">週跌 1.4%</strong>，晶片股領跌，Nvidia 跌 2.2%、台積電重挫 <strong style="color:#fbbf24;font-weight:700">7.3%</strong>，AI 資本支出競爭疑慮持續發酵。
+  </p>
+  <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:10px 0;">
+  <strong style="color:#e2e8f0">VIX</strong>（恐慌指數，衡量市場對未來 30 天波動的預期，可想成「市場的緊張程度計」）收在 <strong style="color:#fbbf24;font-weight:700">18.77</strong>，較前一週 15.67 大幅跳升 12.19%，波動率制度仍處 12–20 常態帶的<strong style="color:#fbbf24;font-weight:700">中性偏高</strong>位置。10 年期公債殖利率 4.55%，較 7/13 兩個月高點 4.62% 略回落。
+  </p>
+
+  <table style="width:100%;border-collapse:collapse;margin:14px 0;font-size:13.5px;">
+    <tr style="background:#252525;">
+      <th style="text-align:left;padding:8px 10px;color:#94a3b8;font-weight:600;border-bottom:1px solid #333;">指標／區間</th>
+      <th style="text-align:left;padding:8px 10px;color:#94a3b8;font-weight:600;border-bottom:1px solid #333;">當前值</th>
+      <th style="text-align:left;padding:8px 10px;color:#94a3b8;font-weight:600;border-bottom:1px solid #333;">變動%</th>
+      <th style="text-align:left;padding:8px 10px;color:#94a3b8;font-weight:600;border-bottom:1px solid #333;">趨勢方向</th>
+      <th style="text-align:left;padding:8px 10px;color:#94a3b8;font-weight:600;border-bottom:1px solid #333;">關鍵點位</th>
+    </tr>
+    <tr>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">SPY 日線</td>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">$742.49</td>
+      <td style="padding:8px 10px;color:#fbbf24;border-bottom:1px solid #2a2a2a;">-1.02%</td>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">轉弱</td>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">支撐$730／壓力$754</td>
+    </tr>
+    <tr>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">SPY 週線</td>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">近三個月首見週跌</td>
+      <td style="padding:8px 10px;color:#fbbf24;border-bottom:1px solid #2a2a2a;">約-1%</td>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">轉弱</td>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">波段區間$730–$770</td>
+    </tr>
+    <tr>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">QQQ 日線</td>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">$695.33</td>
+      <td style="padding:8px 10px;color:#fbbf24;border-bottom:1px solid #2a2a2a;">-1.50%</td>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">轉弱</td>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">支撐$680／壓力$720</td>
+    </tr>
+    <tr>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">QQQ 週線</td>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">晶片股領跌</td>
+      <td style="padding:8px 10px;color:#fbbf24;border-bottom:1px solid #2a2a2a;">-1.4%</td>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">高檔轉弱</td>
+      <td style="padding:8px 10px;color:#e2e8f0;border-bottom:1px solid #2a2a2a;">Nvidia -2.2%／台積電-7.3%</td>
+    </tr>
+    <tr>
+      <td style="padding:8px 10px;color:#e2e8f0;">VIX</td>
+      <td style="padding:8px 10px;color:#e2e8f0;">18.77</td>
+      <td style="padding:8px 10px;color:#fbbf24;">+12.19%（+2.04pt）</td>
+      <td style="padding:8px 10px;color:#e2e8f0;">波動制度中性偏高</td>
+      <td style="padding:8px 10px;color:#e2e8f0;">常態帶12–20，留意突破20</td>
+    </tr>
+  </table>
+
+  <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:14px 0 6px;"><strong style="color:#e2e8f0">四視角綜合：</strong></p>
+  <ul style="margin:0 0 10px;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+    <li><strong style="color:#e2e8f0">順勢</strong>：連兩週走弱後首見明確單週下跌，短線動能<strong style="color:#fbbf24;font-weight:700">轉向偏空</strong>，晶片股尤其領跌</li>
+    <li><strong style="color:#e2e8f0">均值回歸</strong>：那斯達克週跌 1.4% 後，若指數靠近前波段支撐並出現超賣，屬短線均值回歸情境，但晶片股基本面疑慮未解，須留意「接刀」風險</li>
+    <li><strong style="color:#e2e8f0">突破</strong>：SPY 若跌破 $730，技術面打開向下測試空間；反彈需<strong style="color:#fbbf24;font-weight:700">站回 $754</strong> 才算重新轉強</li>
+    <li><strong style="color:#e2e8f0">宏觀</strong>：軟 CPI 原本利率友善，但 AI 資本支出競爭疑慮與 <strong style="color:#fbbf24;font-weight:700">Buffett Indicator 攀升至 227%</strong> 的估值疑慮同步發酵，形成「利率利多、估值趨避」拉鋸</li>
+  </ul>
+
+  <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:14px 0 6px;"><strong style="color:#e2e8f0">美股新聞：</strong></p>
+  <ul style="margin:0 0 14px;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+    <li>衡量市場總市值對 GDP 比重的 <strong style="color:#fbbf24;font-weight:700">Buffett Indicator 攀升至 227%</strong>，估值過熱疑慮再起；Warren Buffett 同時重申「市場下跌是加碼機會」的長期觀點</li>
+    <li>標普 500 寫下近三個月來首見單週下跌，道瓊單日跌 406 點，那斯達克週跌 1.4%，Nvidia 一度短暫失去市值王座後尾盤收復</li>
+  </ul>
+
+  <div style="background:#252525;border-left:3px solid #6366f1;border-radius:0 8px 8px 0;padding:14px 16px;">
+    <div style="color:#93c5fd;font-weight:700;font-size:13.5px;margin-bottom:8px;">📌 學習重點</div>
+    <ul style="margin:0;padding-left:18px;color:#cbd5e1;font-size:14px;line-height:1.8;">
+      <li>連兩週弱勢後首見<strong style="color:#e2e8f0">單週明確下跌</strong>，是趨勢可能轉變的訊號，但單週數據不足以下定論</li>
+      <li><strong style="color:#e2e8f0">估值指標</strong>（如 Buffett Indicator）與短線價格走勢是兩件事，不要混為一談</li>
+      <li>「大師發言」（如巴菲特逢低論）是<strong style="color:#e2e8f0">長期觀點</strong>，不能直接套用在短線進出場決策上</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 今日策略學習 -->
+<div style="background:#1a1a1a;padding:24px;border-bottom:1px solid #2a2a2a;">
+  <div style="display:inline-block;background:linear-gradient(135deg,#8b5cf6,#6366f1);color:#fff;font-size:12px;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:14px;">📖 今日策略學習</div>
+
+  <div style="font-size:17px;font-weight:700;color:#ffffff;margin:10px 0 6px;">移動平均的本質與常見誤用</div>
+  <p style="color:#94a3b8;font-size:14px;line-height:1.7;margin:0 0 14px;">
+  為什麼今天學這個：BTC 已經在 <strong style="color:#fbbf24;font-weight:700">$61,884–$65,631</strong> 箱型裡整理超過一週，價格反覆貼近又遠離兩端；這正是移動平均（MA）類指標最容易「來回打臉」交易者的市場型態，很適合今天拆解它的本質與陷阱。
+  </p>
+
+  <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:14px 0 6px;"><strong style="color:#e2e8f0">核心概念：</strong></p>
+  <ul style="margin:0 0 14px;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+    <li>移動平均是<strong style="color:#e2e8f0">落後指標</strong>：N 日簡單移動平均的有效延遲約為 N/2 天，你買在趨勢已經走一段之後</li>
+    <li>雙均線交叉時，訊號的延遲更接近<strong style="color:#e2e8f0">慢速均線</strong>的完整落後幅度，不是兩條線的平均</li>
+    <li>盤整市場是均線交叉策略的<strong style="color:#e2e8f0">天敵</strong>：快慢線反覆纏繞，會不斷產生「假訊號→小虧損」的連環扣</li>
+    <li>均線種類本身（SMA／EMA／更低延遲的變形）也會顯著影響績效，選錯類型不是小事</li>
+  </ul>
+
+  <div style="background:#252525;border-left:3px solid #8b5cf6;border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:14px;">
+    <div style="color:#c4b5fd;font-weight:700;font-size:13.5px;margin-bottom:8px;">🎯 情境演練</div>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.8;margin:0;">
+    BTC 這一週在 <strong style="color:#fbbf24;font-weight:700">$61,884–$65,631</strong> 之間反覆試探，今天週末反彈到 <strong style="color:#fbbf24;font-weight:700">$64,712</strong>，正好接近區間中軸。若此時套用一組快慢均線交叉系統，價格每次貼近區間邊界又折返，都可能觸發一次「假交叉」——買在反彈末端、賣在拉回低點，來回被巴（whipsaw）。這種盤整格局下，均線交叉策略若沒有搭配趨勢強度濾網（如 ADX），很容易在多次假訊號中慢慢侵蝕帳戶，而不是單次大虧損；這也是為什麼「均線本身沒錯，但用錯情境」是最常見的誤用。
+    </p>
+  </div>
+
+  <div style="background:#252525;border-radius:8px;padding:14px 16px;">
+    <div style="color:#a5b4fc;font-weight:700;font-size:13.5px;margin-bottom:8px;">💡 今日研究速讀</div>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.8;margin:0 0 8px;">
+    Quantocracy 收錄的部落格文章〈Moving Averages and Harness Engineering for +33% CAGR on Portfolio Optimization〉（Paper to Profit, Stuart Farmer）分享一個實驗：把 OLMAR（On-Line Moving Average Reversion）投資組合策略中原本使用的指數移動平均，替換成另一種低延遲均線變形，在<strong style="color:#e2e8f0">風險輪廓不變</strong>的前提下，年化報酬（CAGR）提升約 33%。核心啟示是：均線「用哪一種」不是細節，而是可以系統化測試、用數據找答案的<strong style="color:#e2e8f0">工程問題</strong>，不該只憑感覺選預設值。
+    </p>
+    <p style="margin:0;font-size:13px;"><a href="https://papertoprofit.substack.com/p/moving-averages-and-harness-engineering" style="color:#818cf8;">🔗 原文連結</a></p>
+  </div>
+</div>
+
+<!-- 今日交易紀律提醒 -->
+<div style="background:#1a1a1a;padding:24px;border-bottom:1px solid #2a2a2a;">
+  <div style="display:inline-block;background:linear-gradient(135deg,#10b981,#06b6d4);color:#fff;font-size:12px;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:14px;">🧭 今日交易紀律提醒</div>
+
+  <div style="font-size:16px;font-weight:700;color:#ffffff;margin:10px 0 8px;">週一停損紀律</div>
+  <p style="color:#cbd5e1;font-size:15px;line-height:1.8;margin:0 0 10px;">
+  「停損不是預測你會不會錯，而是決定錯了要花多少錢。」
+  </p>
+  <p style="color:#94a3b8;font-size:14px;line-height:1.8;margin:0;">
+  應用情境：BTC 目前卡在 $61,884 支撐之上整理，如果沒有在進場前就想好「跌破 $61,884 我最多虧多少」，等於是用「先看看再說」的心態在管理風險——這正是停損紀律要杜絕的行為。停損點該在<strong style="color:#e2e8f0">進場當下</strong>就定案，而不是等價格跌下去之後才臨場決定。
+  </p>
+</div>
+
+<!-- 今日反思 -->
+<div style="padding:24px;">
+  <div style="background:linear-gradient(135deg,#10b981,#06b6d4);padding:1px;border-radius:12px;">
+    <div style="background:#1a1a1a;border-radius:11px;padding:18px 20px;">
+      <div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:12px;">💭 今日反思</div>
+      <ul style="margin:0 0 12px;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+        <li>如果我在 BTC 這個 $61,884–$65,631 箱型裡用均線交叉系統，過去一週會被<strong style="color:#e2e8f0">假訊號</strong>打幾次？</li>
+        <li>我目前的持倉，進場當下有沒有先定好<strong style="color:#e2e8f0">停損金額</strong>，還是打算「到時候再看」？</li>
+        <li>面對「利率利多、估值趨避」的拉鋸格局，我會用<strong style="color:#e2e8f0">哪一種視角</strong>（順勢／均值回歸／突破／宏觀）來決定這週的部位大小？</li>
+      </ul>
+      <div style="color:#64748b;font-size:12.5px;">挑一題寫進交易日誌，這就是今天的功課。</div>
+    </div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div style="padding:20px 24px;border-top:1px solid #2a2a2a;">
+  <p style="color:#64748b;font-size:11.5px;line-height:1.8;margin:0 0 8px;">
+  資料截止：BTC 現價／24h 變化，多方來源綜合（CoinGecko、CoinMarketCap 派生數據），2026/7/19 約19:51 UTC；Fear&amp;Greed 指數，alternative.me／CFGI，2026/7/19；BTC ETF 週資金流／ETH ETF 比較，KuCoin／incrypted 彙整，2026/7/17 當週；GENIUS Act 期限，新聞彙整，2026/7/18；SPY／S&amp;P500，Yahoo Finance／stockanalysis.com，收盤 2026/7/17；QQQ／那斯達克／晶片股，CNBC／Yahoo Finance，收盤 2026/7/17；VIX，Yahoo Finance，2026/7/17；10年期公債殖利率，TradingEconomics，2026/7/17；Buffett Indicator／市場新聞，TS2.tech 市場彙整，2026/7/17-18；CPI／Fed 背景資料，BLS、Federal Reserve Monetary Policy Report，2026/7/14發布之6月數據（沿用前次分析，本期未重複列為新事件）。
+  </p>
+  <p style="color:#64748b;font-size:11.5px;line-height:1.8;margin:0 0 8px;">
+  免責聲明：本報內容僅供交易紀律與知識學習之用，不構成任何投資建議、買賣邀約或個別化財務規劃。所有情境演練均為假設性教學範例，非操作指示。加密貨幣與股票市場均具高波動性與虧損風險，請自行判斷並承擔投資決策之全部責任。
+  </p>
+  <p style="color:#4b5563;font-size:11px;margin:0 0 4px;">本報為 Darren 的個人學習報，非公開發行刊物。</p>
+  <p style="color:#4b5563;font-size:11px;margin:0;">本信件由 AI 自動生成。</p>
+</div>
+
+</div>
+</div>
