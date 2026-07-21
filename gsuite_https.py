@@ -34,6 +34,7 @@ import json
 import os
 import re
 import sys
+import time
 import urllib.error
 import urllib.parse
 import urllib.request
@@ -43,6 +44,8 @@ from pathlib import Path
 
 BASE = Path(__file__).resolve().parent
 HTTP_TIMEOUT = 30
+# 寄送失敗者的重試輪間隔（秒）：len+1 = 每位收件人最多嘗試次數
+SEND_RETRY_DELAYS = (10, 30)
 
 # Windows 主控台/管線預設 cp950，印 emoji 或特殊符號會 UnicodeEncodeError；一律改 UTF-8
 for _stream in (sys.stdout, sys.stderr):
@@ -592,17 +595,50 @@ def cmd_send(args):
         print(f"\n[DRY RUN] 完成，共 {len(recipients)} 位（未實際寄出）")
         return
 
+    ok, skipped = send_to_recipients(token, sender, sender_name, args.subject,
+                                     html_body, recipients)
+    for name, email, err in skipped:
+        print(f"  [SKIP] {mask_email(email)}：重試 {len(SEND_RETRY_DELAYS)} 次仍失敗，本期略過（{err}）")
+    tail = f"（略過 {len(skipped)} 封）" if skipped else ""
+    print(f"\n完成：{ok}/{len(recipients)} 封成功寄出{tail}")
+    # 只要有成功寄出就以 0 結束：dispatch 才會寫 sent marker，重跑不會對已收到
+    # 的訂閱者重複寄送；skip 名單已在上方逐一揭露。全數失敗（憑證/服務中斷）才回 1。
+    sys.exit(0 if ok > 0 else 1)
+
+
+def send_to_recipients(token, sender, sender_name, subject, html_body, recipients,
+                       retry_delays=None, sleep=time.sleep):
+    """逐一寄送；失敗者於後續輪次重試，所有輪次仍失敗者列為 skip。
+
+    回傳 (成功數, skipped)，skipped 為 [(姓名, email, 最後錯誤訊息)]。
+    """
+    if retry_delays is None:
+        retry_delays = SEND_RETRY_DELAYS
     ok = 0
-    for name, email in recipients:
-        raw = build_raw(sender, sender_name, name, email, args.subject, html_body)
-        status, p = http("POST", GMAIL_SEND_URL, token=token, json_body={"raw": raw})
-        if status == 200 and isinstance(p, dict) and p.get("id"):
-            print(f"  [OK] {name} <{mask_email(email)}>  (id={p['id']})")
-            ok += 1
-        else:
-            print(f"  [失敗] {mask_email(email)}：HTTP {status}: {p}")
-    print(f"\n完成：{ok}/{len(recipients)} 封成功寄出")
-    sys.exit(0 if ok == len(recipients) and ok > 0 else 1)
+    pending = list(recipients)          # [(name, email)]
+    last_err = {}                       # email -> 最後一次錯誤訊息
+    for rnd in range(len(retry_delays) + 1):
+        if not pending:
+            break
+        if rnd:
+            print(f"\n[重試 {rnd}/{len(retry_delays)}] {len(pending)} 封失敗，"
+                  f"{retry_delays[rnd - 1]} 秒後重寄")
+            sleep(retry_delays[rnd - 1])
+        still = []
+        for name, email in pending:
+            raw = build_raw(sender, sender_name, name, email, subject, html_body)
+            status, p = http("POST", GMAIL_SEND_URL, token=token, json_body={"raw": raw})
+            if status == 200 and isinstance(p, dict) and p.get("id"):
+                label = "OK" if rnd == 0 else f"OK/重試{rnd}"
+                print(f"  [{label}] {name} <{mask_email(email)}>  (id={p['id']})")
+                ok += 1
+            else:
+                err = f"HTTP {status}: {p}"
+                print(f"  [失敗] {mask_email(email)}：{err}")
+                last_err[email] = err
+                still.append((name, email))
+        pending = still
+    return ok, [(n, e, last_err[e]) for n, e in pending]
 
 
 # ──────────────────────────── Notion 彙整（純 HTTPS） ────────────────────────────

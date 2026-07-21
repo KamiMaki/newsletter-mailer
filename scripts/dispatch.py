@@ -19,11 +19,13 @@ from scripts import dispatch_lib
 ENGINE = "gsuite_https.py"
 _EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 
-# NOTE (at-least-once delivery): a send that partially succeeds (some recipients
-# fail) writes NO marker for that newsletter — see _dispatch_one below. A re-run
-# will therefore re-send to ALL recipients of that newsletter, including the ones
-# that already received it. This is intentional (favors no-drop over no-duplicate)
-# but operators re-running a failed job should know duplicates are possible.
+# NOTE (delivery semantics): gsuite_https `send` retries each failed recipient
+# (SEND_RETRY_DELAYS rounds) and then SKIPS the ones that still fail, exiting 0
+# as long as at least one mail was delivered. So a partial failure DOES write the
+# sent marker — a re-run will not double-send to recipients who already got it,
+# and skipped recipients simply miss that issue (their emails are listed as
+# [SKIP] in the send log). Only a total failure (zero delivered, e.g. broken
+# credentials) exits non-zero and leaves no marker.
 
 def run_cmd(argv):
     """Run `python gsuite_https.py <argv...>`; return exit code. (Monkeypatched in tests.)"""
