@@ -102,3 +102,15 @@
 {"date": "2026-07-24", "title": "NVIDIA DGX GB300 超級電腦進駐美國海軍研究院"}
 {"date": "2026-07-24", "title": "OpenAI 宣布喬治亞州 3.2GW 資料中心園區"}
 {"date": "2026-07-24", "title": "arXiv VeriRefine：先審規格再生 RTL、五層稽核（背景知識）"}
+{"date": "2026-07-25", "title": "Anthropic 發表新旗艦 Claude Opus 5（會自我驗證的 agentic 旗艦、價格同 Opus 4.8）"}
+{"date": "2026-07-25", "title": "Claude Code v2.1.219：Opus 5 設為預設、子代理巢狀深度 1→3、sandbox strictAllowlist"}
+{"date": "2026-07-25", "title": "AMD Advancing AI 2026：Helios 機櫃、MI400（HBM4）、第六代 EPYC Venice，主打 Agentic AI 全端"}
+{"date": "2026-07-25", "title": "GitHub Copilot 上架 Claude Opus 5（主打長時程多步驟 agentic coding）"}
+{"date": "2026-07-25", "title": "微軟正式發表 MAI-Image-2.5-Pro 與 MAI-Voice-2-Flash（生圖 GPU 成本最多省 84-89%）"}
+{"date": "2026-07-25", "title": "DeepSeek 停用 deepseek-chat／deepseek-reasoner 舊別名，全面轉 v4-flash"}
+{"date": "2026-07-25", "title": "OpenAI 將 ChatGPT Health 開放全美 18 歲以上用戶"}
+{"date": "2026-07-25", "title": "NVIDIA 與 KAIST 成立主權 AI 聯合實驗室（五年 3 億美元、Nemotron）"}
+{"date": "2026-07-25", "title": "xAI Grok Build 新增 Workflows（數百平行 agent）與 Tavily 外掛"}
+{"date": "2026-07-25", "title": "arXiv MemTools：可互通的 agent 記憶統一框架"}
+{"date": "2026-07-25", "title": "arXiv 騰訊 WorkBuddy Bench：抗污染的多領域 coding agent 基準"}
+{"date": "2026-07-25", "title": "Cadence AuraStack：業界首個 PCB 與先進封裝的 agentic AI 平台（背景）"}

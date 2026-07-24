@@ -1,0 +1,205 @@
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#0f0f0f;margin:0;padding:24px 12px;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<tr><td align="center">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;">
+
+<!-- ===== Header ===== -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px 16px 0 0;padding:32px 28px;text-align:center;">
+<div style="font-size:26px;font-weight:800;color:#ffffff;letter-spacing:-0.5px;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:8px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#c7d2fe;margin-top:12px;background:rgba(255,255,255,0.15);display:inline-block;padding:4px 14px;border-radius:20px;">2026 年 7 月 25 日 · 星期六</div>
+</td></tr>
+
+<!-- ===== 30秒重點 ===== -->
+<tr><td style="background-color:#1a1a1a;padding:24px 28px 8px 28px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>這 48 小時，<strong>模型、工具鏈、晶片三層同時發表，而且都把準星對到同一件事——讓大量 agent「跑得動、跑得省」</strong>。頭條不是「又一個更聰明的模型」，而是整套堆疊一起轉向。</li>
+<li style="margin-bottom:10px;">Anthropic（7/24）發表新旗艦 <strong>Claude Opus 5</strong>，賣點不是考試分數，而是「<strong>會自己驗證、反覆修到對</strong>」——這正是 agent 最需要的能力；價格與 Opus 4.8 相同（約 Fable 5 的一半）。</li>
+<li style="margin-bottom:10px;">同一天 <strong>Claude Code 與 GitHub Copilot 就把 Opus 5 設為預設／上架</strong>，Claude Code 還把子代理巢狀深度從 1 拉到 3；隔一天 <strong>AMD</strong> 一整套 CPU＋GPU＋機櫃直接掛上「<strong>Agentic AI 世代的全端運算</strong>」標題。</li>
+<li style="margin-bottom:10px;">其他值得知道：微軟自研模型把生圖 GPU 成本砍到剩一到兩成、DeepSeek 收掉舊模型全面轉 V4、OpenAI 把 ChatGPT Health 開放全美、NVIDIA 砸 3 億美元和 KAIST 設主權 AI 實驗室。</li>
+<li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">對半導體工作者最相關：</strong>這股「agent 全端化」正滲進 EDA——本期半導體專區的 Cadence AuraStack 把 agentic AI 帶進<strong>先進封裝與 PCB 設計</strong>，而 AMD 今天發表的 HBM4 MI400 正是先進封裝的產物。</li>
+</ul>
+</td></tr>
+
+<!-- ===== 今天的主軸 ===== -->
+<tr><td style="background-color:#1a1a1a;padding:12px 28px 24px 28px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;padding:1px;">
+<tr><td style="background-color:#1a1a1a;border-radius:13px;padding:24px 22px;">
+<div style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);color:#fff;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;margin-bottom:14px;">🎯 今天的主軸</div>
+<div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-bottom:18px;">旗艦回歸，但這次是「為 agent 打造」的旗艦——模型、工具鏈、晶片這週同時把準星對到「讓大量 agent 跑得動、跑得省」</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:16px 0 6px;">▍共同變化</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;">如果把這 48 小時的大新聞攤開，你會發現它們像講好了一樣，指向同一個目標。<strong style="color:#a5b4fc">模型層</strong>：Anthropic（7/24）發表新旗艦 <strong style="color:#a5b4fc">Claude Opus 5</strong>，官方主打的不是「比誰聰明」，而是它「<strong style="color:#a5b4fc">更擅長驗證自己的工作、謹慎反覆直到成功</strong>」——這句話幾乎就是 agent 的工作說明書。<strong style="color:#a5b4fc">工具鏈層</strong>：同一天 Claude Code（v2.1.219）就把 Opus 5 設為預設 Opus 模型，還把「子代理能再生子代理」的巢狀深度<strong style="color:#a5b4fc">從 1 拉到 3</strong>；GitHub Copilot 也在同日上架 Opus 5。<strong style="color:#a5b4fc">晶片層</strong>：AMD（7/23）在 Advancing AI 大會端出一整套 CPU＋GPU＋機櫃，官方標題白紙黑字寫著「<strong style="color:#a5b4fc">Full-Stack Compute for the Agentic AI Era（為 agentic AI 世代打造的全端運算）</strong>」。三層不約而同，主角都是 agent。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:16px 0 6px;">▍為什麼放在一起看</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;">因為一個 agent 要真的好用，需要三件事「同時」成立，缺一不可——而這週剛好三件一起發生。第一，<strong style="color:#a5b4fc">模型要撐得住長流程</strong>：agent 是連續幾十上百步的自主工作，模型必須會自我檢查、踩到錯能回頭修，Opus 5 對準的就是這點。第二，<strong style="color:#a5b4fc">工具要編得動多層代理</strong>：Claude Code 把子代理巢狀深度開到 3，等於允許「一個主管 agent 派出好幾個小組長、小組長再各自帶人」的分工。第三，<strong style="color:#a5b4fc">底層要夠便宜</strong>：agent 會瘋狂呼叫模型，每次呼叫的成本一放大就吃不消——這正是 AMD 全端硬體、以及下面會提到的微軟自研降本、DeepSeek 全面轉 V4 在做的事。<strong style="color:#a5b4fc">模型會自查、工具能編排、晶片與定價夠省，三根柱子這週一起立起來</strong>，才值得放在一起看。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:16px 0 6px;">▍過去 vs. 現在</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;">過去，旗艦模型比的是「<strong style="color:#a5b4fc">單次問答多聰明</strong>」——考試分數、推理題、知識廣度；你買硬體就是搶「<strong style="color:#a5b4fc">一顆最強的 GPU</strong>」；模型越強越貴，你只能忍。現在整個評分板都換了：Opus 5 的官方對比不再只秀分數，而是強調 CursorBench 上「<strong style="color:#a5b4fc">達到 Fable 5 巔峰水準的 0.5% 以內、但每個任務成本只要一半</strong>」、OSWorld 上「用約三分之一成本超越 Fable 5」——比的是「<strong style="color:#a5b4fc">每完成一個任務要花多少錢</strong>」。硬體那頭，AMD 不再只賣單顆 GPU，而是賣「Helios 整櫃＋EPYC CPU＋ROCm 軟體」，因為 agent 是叢集級、長時間的工作負載。從「比單點最強」變成「比整套划算」。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:16px 0 6px;">▍背後邏輯</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;">技術上，agent 的本質是「<strong style="color:#a5b4fc">長時程、多步驟、大量呼叫</strong>」，這帶出兩個硬需求。一是<strong style="color:#a5b4fc">可靠度</strong>：50 步的任務，就算每步 99% 正確，連乘下來成功率也剩約六成——所以「會不會自我驗證、抓回自己的錯」變成比「單題準不準」更關鍵的能力（這也是今天的今日概念）。二是<strong style="color:#a5b4fc">單位成本</strong>：一個 agent 一趟任務可能呼叫模型幾十次，你如果同時跑一百個 agent，成本就是天文數字——於是「每 token／每任務成本」成了能不能規模化的生死線。商業上，這解釋了為什麼旗艦（Opus 5）維持不漲價、平價快速模型（微軟自研、DeepSeek V4）拼命降本、硬體廠（AMD）主打「每 token 成本」與整櫃效率：<strong style="color:#a5b4fc">大家都在替「同時跑很多 agent」這個未來鋪路</strong>。</div>
+
+<div style="background:#252525;border-radius:8px;padding:12px;margin:16px 0;">
+<div style="color:#c7d2fe;font-size:12px;font-weight:700;margin-bottom:6px;">👤 人物觀點／延伸解讀</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">Anthropic 官方對 Opus 5 的定調值得工程團隊記下：它「<strong style="color:#a5b4fc">much stronger at verifying its work and iterating carefully until it succeeds</strong>（更擅長驗證自己的工作、謹慎反覆直到成功）」。GitHub Copilot 上架時也用幾乎同樣的話——它為「<strong style="color:#a5b4fc">需要跨多步可靠執行的複雜、長時程 coding 任務</strong>」而設計。兩家官方不約而同地把賣點從「答得準」換成「做得完、會自查」。至於「模型／工具／晶片三層對齊成同一主軸」這個歸納，屬<strong style="color:#a5b4fc">編輯分析</strong>，非任何一家官方定調。</div>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:16px 0 6px;">▍對你的工作</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;">如果你是<strong style="color:#a5b4fc">開發者或工程主管</strong>：選型清單該從「哪個模型分數高」多加兩欄——「<strong style="color:#a5b4fc">跑長任務時會不會自我驗證</strong>」「<strong style="color:#a5b4fc">每任務成本多少</strong>」；Opus 5 官方就是用 per-task cost 在跟 Fable 5 比。如果你在<strong style="color:#a5b4fc">半導體設計或驗證</strong>：這波 agentic 浪潮已經不只在寫程式，本期半導體專區的 Cadence AuraStack 就把 agent 帶進先進封裝設計；而你手上做的簽核紀律，正是 agent 落地最缺的「把關能力」。如果你做<strong style="color:#a5b4fc">IT／數位轉型</strong>：評估內部 agent 平台時，把「每 token／每任務成本」與「能不能編排多層子代理」列進採購條件，而不是只看單點模型秀了幾分。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:16px 0 6px;">▍限制與待驗證</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;">別把發表當成落地。Opus 5 的評測數字（ARC-AGI 3 為次佳模型三倍、Frontier-Bench 超越所有模型且逾 Opus 4.8 兩倍）<strong style="color:#a5b4fc">全是 Anthropic 自報</strong>，第三方複現待觀察；官方發布頁未載明 context window（<strong style="color:#a5b4fc">1M 上下文</strong>是 Claude Code changelog 所列，屬該產品設定）。AMD 的 MI400／Helios 是<strong style="color:#a5b4fc">發表</strong>，效能對比多為官方或夥伴（如 Supermicro）數字，真正量產鋪貨、與 NVIDIA 下一代平台的實測對決都還沒發生。微軟「省 84–89% GPU 成本」是「up to」的自家情境值。xAI、OpenAI 部分一手頁面在本環境無法直接抓取，已交叉比對、但以官方頁為準。這是<strong style="color:#a5b4fc">方向的集體轉向，不是終點已到</strong>。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:16px 0 6px;">▍重點一句話</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;">這週的頭條不是「又一個更聰明的模型」，而是「<strong style="color:#a5b4fc">旗艦、工具鏈、晶片同時把準星對到 agent</strong>」——模型要會自我驗證、工具要能編多層子代理、晶片與定價要讓大量 agent 跑得省。agentic 正從「能力競賽」進入「全端落地」。</div>
+
+<div style="margin-top:16px;">
+<div style="color:#06b6d4;font-size:13px;margin-bottom:4px;">🔗 <a href="https://www.anthropic.com/news/claude-opus-5" style="color:#06b6d4;text-decoration:none;">Anthropic：Introducing Claude Opus 5</a>｜來源：anthropic.com</div>
+<div style="color:#06b6d4;font-size:13px;margin-bottom:4px;">🔗 <a href="https://code.claude.com/docs/en/changelog" style="color:#06b6d4;text-decoration:none;">Claude Code v2.1.219 changelog（Opus 5 預設、子代理巢狀深度 1→3）</a>｜來源：code.claude.com</div>
+<div style="color:#06b6d4;font-size:13px;">🔗 <a href="https://newsroom.amd.com/press-kits/advancing-ai-2026-all-news/" style="color:#06b6d4;text-decoration:none;">AMD Advancing AI 2026：Full-Stack Compute for the Agentic AI Era</a>｜來源：newsroom.amd.com</div>
+</div>
+
+</td></tr>
+</table>
+</td></tr>
+
+<!-- ===== 主軸的衍生新聞 ===== -->
+<tr><td style="background-color:#1a1a1a;padding:8px 28px 8px 28px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin:8px 0 14px;">🔗 主軸的衍生新聞</div>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#252525;border-radius:12px;margin-bottom:14px;">
+<tr><td style="padding:18px 20px;">
+<div style="display:inline-block;background:#334155;color:#a5b4fc;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">GitHub Copilot 同日上架 Opus 5，主打「長時程、多步驟」的自主 coding</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">GitHub（7/24）在 Copilot Pro+、Max、Business、Enterprise 的<strong style="color:#a5b4fc">模型選單</strong>加入 Claude Opus 5，官方定位它為「<strong style="color:#a5b4fc">需要跨多步可靠執行的複雜、長時程 coding 任務</strong>」而設計，早期測試在自主改碼、回歸驗證、多工具協調上表現突出。這正是主軸「旗艦即 agent 引擎」的最佳註腳——同一顆旗艦，<strong style="color:#a5b4fc">當天就被 Claude Code 與 Copilot 兩大平台同步接上</strong>。官方也提醒它內建對高危網路內容的強化防護，<strong style="color:#a5b4fc">可能擋下部分資安相關請求</strong>。</div>
+<div style="color:#94a3b8;font-style:italic;font-size:13px;margin:10px 0 8px;">💡 重點一句話：旗艦模型的「上架速度」本身就是訊號——各家 coding 工具搶著在同一天把它接成 agent 引擎。</div>
+<div style="color:#06b6d4;font-size:13px;">🔗 <a href="https://github.blog/changelog/2026-07-24-claude-opus-5-is-now-available-in-github-copilot/" style="color:#06b6d4;text-decoration:none;">閱讀原文（GitHub Changelog 2026-07-24）</a>｜來源：github.blog</div>
+</td></tr>
+</table>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#252525;border-radius:12px;margin-bottom:14px;">
+<tr><td style="padding:18px 20px;">
+<div style="display:inline-block;background:#334155;color:#a5b4fc;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">🔄 後續追蹤：微軟自研影像／語音模型正式發表，生圖 GPU 成本砍到剩一到兩成</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">先前多為「據報導」的消息這回轉正：微軟（7/23）官方發表 <strong style="color:#a5b4fc">MAI-Image-2.5-Pro</strong>（預覽，$5／百萬文字 input、$8／百萬影像 input、$106／百萬影像 output）與語音 <strong style="color:#a5b4fc">MAI-Voice-2-Flash</strong>（$15／百萬字元，較前代快 2 倍、便宜 32%）。已導入 Bing Image Creator（100% 自研）、PowerPoint、OneDrive、Dynamics 365，官方稱較 GPT-Image-2 在 PowerPoint 情境<strong style="color:#a5b4fc">最多省 84%</strong>、Dynamics <strong style="color:#a5b4fc">最多省 89%</strong> GPU 成本。這正對應主軸的「降本」那根柱子——把單位生成成本壓下來，才撐得起大量呼叫。</div>
+<div style="color:#94a3b8;font-style:italic;font-size:13px;margin:10px 0 8px;">💡 重點一句話：自研平價模型不是為了拼分數，是為了讓「每次呼叫」便宜到能大規模跑。</div>
+<div style="color:#06b6d4;font-size:13px;">🔗 <a href="https://microsoft.ai/news/introducing-mai-image-2-5-pro-and-mai-voice-2-flash/" style="color:#06b6d4;text-decoration:none;">閱讀原文（microsoft.ai/news）</a>｜來源：microsoft.ai</div>
+</td></tr>
+</table>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#252525;border-radius:12px;margin-bottom:14px;">
+<tr><td style="padding:18px 20px;">
+<div style="display:inline-block;background:#334155;color:#a5b4fc;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">DeepSeek 收掉舊模型別名，開發者須全面改用 v4-flash</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">DeepSeek 官方 API 文件載明，<strong style="color:#a5b4fc">deepseek-chat 與 deepseek-reasoner 兩個舊別名於 2026-07-24（UTC）停止服務</strong>，開發者須改指向新的 <strong style="color:#a5b4fc">deepseek-v4-flash</strong>，作為 V4 正式轉換的一環。這件事看似只是版本清理，卻是主軸的具體註腳：平價、高速的模型正被推成「agent 大量呼叫」的預設底層——連舊別名都要收乾淨，逼大家往新的低成本檔位遷。</div>
+<div style="color:#94a3b8;font-style:italic;font-size:13px;margin:10px 0 8px;">💡 重點一句話：如果你的服務還接著 DeepSeek 舊別名，這是需要「今天就動手」的一則。</div>
+<div style="color:#06b6d4;font-size:13px;">🔗 <a href="https://api-docs.deepseek.com/" style="color:#06b6d4;text-decoration:none;">閱讀原文（DeepSeek API Docs）</a>｜來源：api-docs.deepseek.com</div>
+</td></tr>
+</table>
+
+</td></tr>
+
+<!-- ===== 其他快訊 ===== -->
+<tr><td style="background-color:#1a1a1a;padding:8px 28px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#252525;border-radius:12px;">
+<tr><td style="padding:18px 20px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:18px;color:#cbd5e1;font-size:14px;line-height:1.7;">
+<li style="margin-bottom:12px;"><strong style="color:#e2e8f0;">OpenAI 把 ChatGPT Health 開放給全美用戶。</strong>OpenAI（7/23）向全美 18 歲以上的 Free／Go／Plus／Pro 用戶開放 ChatGPT Health，可連結 Apple Health、Epic、Oracle Health、One Medical 等紀錄，官方稱每週已處理逾 3 億則健康查詢、且連結資料不用於訓練或廣告。這代表通用聊天機器人正式踩進「個人健康資料」這個高敏感場域，信任與隱私邊界會被放大檢視。🔗 <a href="https://openai.com/index/chatgpt-health/" style="color:#06b6d4;text-decoration:none;">來源：openai.com（一手頁本環境 403，經多方交叉確認）</a></li>
+<li style="margin-bottom:12px;"><strong style="color:#e2e8f0;">NVIDIA 砸 3 億美元與 KAIST 設主權 AI 聯合實驗室。</strong>NVIDIA（7/23）與韓國科學技術院在首爾成立聯合實驗室，五年共 3 億美元、每年 5,000 萬美元算力挹注，聚焦以 Nemotron 開源模型打造韓語與韓國產業的 agentic AI；同日韓國總統李在明於 AI 高峰會偕 NVIDIA 闡述國家 AI 藍圖。頂尖算力與「主權 AI」持續往政府與學術現場綁定。🔗 <a href="https://nvidianews.nvidia.com/news/nvidia-and-kaist-launch-joint-ai-research-lab-to-accelerate-ai-innovation-in-korea" style="color:#06b6d4;text-decoration:none;">來源：nvidianews.nvidia.com</a></li>
+<li style="margin-bottom:12px;"><strong style="color:#e2e8f0;">xAI 為 Grok Build 加入「數百平行 agent」的 Workflows。</strong>據報導（7/23），xAI 替 Grok Build 上線 workflows，可把一項任務<strong style="color:#a5b4fc">分派給數百個平行 agent</strong>執行再彙整結果，並整合專為 LLM 打造的 Tavily 搜尋外掛。這是主軸「工具鏈編排」的另一種極端——不是編排多層，而是拉出大量平行 agent。🔗 <a href="https://x.ai/news" style="color:#06b6d4;text-decoration:none;">來源：x.ai（一手頁本環境 403，屬據報導，刊前建議再核）</a></li>
+<li style="margin-bottom:12px;"><strong style="color:#e2e8f0;">arXiv：MemTools 想替 agent「記憶」訂統一標準。</strong>一篇 7/23 論文針對 agent 記憶系統各家各作、難以互通的痛點，提出用宣告式資料契約標準化記憶生命週期、把記憶元件與部署環境解耦的互通框架。agent 記憶正是 2026 代理式 AI 的關鍵瓶頸，標準化有利跨系統重現與長時程任務。🔗 <a href="https://arxiv.org/abs/2607.21404" style="color:#06b6d4;text-decoration:none;">來源：arxiv.org</a></li>
+<li style="margin-bottom:0;"><strong style="color:#e2e8f0;">arXiv：騰訊推「抗污染」的 coding agent 基準 WorkBuddy Bench。</strong>騰訊（7/23）提出跨倉庫工程、前端、辦公流程、資安測試四大實務領域的 coding agent 基準，任務由真實 commit／PR 反向工程而成以抵抗資料污染，並採領域專屬計分。呼應主軸——當旗艦都在拼 agentic coding，怎麼「公正評測」本身成了要解的題。🔗 <a href="https://arxiv.org/abs/2607.20911" style="color:#06b6d4;text-decoration:none;">來源：arxiv.org</a></li>
+</ul>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- ===== 今日概念 ===== -->
+<tr><td style="background-color:#1a1a1a;padding:16px 28px 8px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#252525;border-radius:12px;">
+<tr><td style="padding:18px 20px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:14px;">📖 今日概念｜長時程任務（long-horizon task）與誤差連乘</div>
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:12px 0 4px;">一句定義</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">指需要模型連續走「幾十到上百步」、且每一步都可能踩到前一步錯誤的自主任務；難點不在單題答不答得對，而在「一長串步驟能不能穩穩走到終點」。</div>
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:14px 0 4px;">生活化比喻</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">像「每次小考都考 99 分的學生」與「能獨立扛完一個為期一週專案的員工」——是兩種不同的能力。說回技術：假設模型每一步都有 99% 正確率，聽起來很高，但 50 步連乘（0.99 的 50 次方）成功率只剩約 <strong style="color:#a5b4fc">60%</strong>；100 步更只剩約 37%。這就是<strong style="color:#a5b4fc">誤差連乘（compounding error）</strong>：長任務裡，真正救命的能力不是「單步更準一點」，而是「<strong style="color:#a5b4fc">走歪了能自己發現、回頭修</strong>」。</div>
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:14px 0 4px;">工作中的例子</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">Opus 5 官方強調它「會驗證自己的工作、反覆修到成功」，就是直接對著誤差連乘開藥方；Claude Code 把子代理巢狀深度開到 3，則是用「分工＋各自檢查」把一個長任務拆成好幾段短任務，降低單一長鏈走歪的風險。在半導體流程裡，等同於「與其讓一個腳本一口氣跑完整條驗證，不如切成可各自簽核的階段」。</div>
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:14px 0 4px;">常見誤解</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">以為「benchmark 分數高 = agent 能力強」。單題準確率和長任務完成率是兩碼事——一個在知識問答刷到頂的模型，丟去跑 80 步的自動化流程，可能中途就雪崩。這也是為什麼今天各家把賣點從「分數」換成「會不會自查、每任務多少成本」。</div>
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:14px 0 4px;">與今天主軸的關係</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">看懂「誤差連乘」，就看懂這週為什麼旗艦、工具、晶片一起轉向：因為要讓長時程 agent 真的可用，得同時解決「模型會不會自查（可靠度）」與「跑那麼多步划不划算（成本）」——這正是主軸三根柱子在做的事。</div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- ===== 半導體 AI 專區 ===== -->
+<tr><td style="background-color:#1a1a1a;padding:16px 28px 8px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#252525;border-radius:12px;">
+<tr><td style="padding:18px 20px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜Cadence AuraStack：把「agent」帶進先進封裝與 PCB 設計</div>
+<div style="margin-bottom:12px;">
+<span style="display:inline-block;background:#334155;color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;margin-right:6px;">EDA 工具（先進封裝／PCB）</span>
+<span style="display:inline-block;background:#3f2d1a;color:#fbbf24;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">內容屬性：背景知識（官方發表）</span>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:14px 0 4px;">▍問題與流程位置（背景知識）</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">今天 AMD 發表的 <strong style="color:#a5b4fc">HBM4 MI400</strong>、或任何一顆現代 AI GPU，早就不是「一片矽」，而是把多顆晶粒（chiplet）＋記憶體堆疊在一起的<strong style="color:#a5b4fc">先進封裝小系統</strong>。這帶來一個惱人問題：封裝／基板的<strong style="color:#a5b4fc">繞線、訊號完整性、電源、散熱要一起算</strong>，過去分別用不同工具、由工程師手動搬資料、一輪輪試——改個佈局就得重跑一次熱、一次 3D、一次 SI/PI，慢又容易顧此失彼。這卡在「設計 → 多物理驗證 → 再優化」這條反覆迴圈上。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:14px 0 4px;">▍AI 如何介入（背景知識）</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">Cadence（7/15 發表）推出 <strong style="color:#a5b4fc">AuraStack</strong>，自稱業界首個針對 PCB 與先進封裝的 <strong style="color:#a5b4fc">agentic AI 平台</strong>，由 NVIDIA Blackwell 加速，用 agent 串起 Celsius（熱）、Clarity 3D、Sigrity X（SI/PI）等多物理求解器。差別在哪？過去是工程師「當人肉排程器」在多個工具間搬資料、逐輪比對；AuraStack 想讓 agent 自動跑「<strong style="color:#a5b4fc">改一版佈局 → 重算多物理 → 依結果再優化</strong>」這個迴圈——把跨工具的迭代自動化，人退到定義目標與最終覆核。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:14px 0 4px;">▍資料與產出（背景知識）</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">輸入是封裝／PCB 的設計與約束（訊號、電源、熱、面積）；產出是繞線、佈局與多物理分析結果。Cadence <strong style="color:#a5b4fc">聲稱</strong>「up to」2 倍上市時間加速、15 倍生產力，並舉 FORVIA HELLA 佈局由 4 天縮到 4 分鐘、與 TSMC 基板自動繞線協作為例——這些皆為<strong style="color:#a5b4fc">廠商行銷／精選案例值，非第三方複現</strong>，請當作方向參考而非通則。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:14px 0 4px;">▍如何驗證（背景知識）</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">這裡有個好處：多物理求解器本身就是驗證工具（熱、SI/PI、3D 分析）。agent 自動化的是「<strong style="color:#a5b4fc">跑驗證 → 依結果改設計 → 再跑驗證</strong>」這條迴圈，而不是繞過驗證。但最終簽核仍須工程師覆核——AI 把「試很多版」變快，不代表「哪一版能出貨」可以不看。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:14px 0 4px;">▍限制與風險（編輯分析）</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">廠商數字是「up to」與精選案例，不能當成你導入就有的成果；agentic 平台實際整合進量產封裝流程的成熟度、與既有簽核紀律怎麼銜接，仍待客戶與第三方驗證。這是<strong style="color:#a5b4fc">官方發表（背景知識），非今日新聞，也非量產成果定論</strong>。別讀成「封裝設計可以放心交給 AI 全自動」。</div>
+
+<div style="color:#06b6d4;font-size:13px;margin-top:12px;">🔗 <a href="https://newsroom.cadence.com/press-releases/press-release-details/2026/Cadence-Introduces-AuraStack-AI-Super-Agent-the-Worlds-First-Agentic-AI-Platform-for-PCB-and-Advanced-Packaging/default.aspx" style="color:#06b6d4;text-decoration:none;">Cadence Introduces AuraStack AI Super Agent（官方新聞稿）</a>｜來源：newsroom.cadence.com</div>
+
+<div style="color:#67e8f9;font-weight:700;font-size:14px;line-height:1.7;margin-top:14px;">👷 對半導體工作者的意義：最該關注的是<strong>先進封裝、基板與訊號完整性工程師</strong>——這波 agentic AI 已從「寫 RTL」蔓延到「封裝與 PCB 設計」，真正的價值點是「<strong>跨多物理工具的反覆迭代</strong>」能不能被 agent 自動跑。可以先挑一個你團隊裡最常來回試的多物理環節，想想若讓 agent 自動迭代、你只做目標定義與簽核，能省下多少「等結果、搬資料」的時間。</div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- ===== 反思時間 ===== -->
+<tr><td style="background-color:#1a1a1a;padding:16px 28px 8px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;padding:1px;">
+<tr><td style="background-color:#1a1a1a;border-radius:13px;padding:22px 20px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+<ul style="margin:0;padding-left:18px;color:#cbd5e1;font-size:14px;line-height:1.7;">
+<li style="margin-bottom:12px;">當旗艦模型的評判標準從「考試分數」悄悄換成「會不會自我驗證、每任務成本多少」，你評估 AI 工具的第一個問題該不該也跟著換？攤開你現在的選型清單，有多少欄位其實還停在「比誰分數高」？</li>
+<li style="margin-bottom:12px;">這週模型、工具鏈、晶片同時對齊到 agent。假設一年後你的工作流真的塞滿會自己動手的 agent，最先被自動化的會是你哪一段「反覆迭代、等結果」的工作？你希望自己是留在「定義對錯與簽核」那一端，還是「親手執行」那一端——為此你現在該累積哪種判斷力？</li>
+<li style="margin-bottom:0;">如果平價模型把「跑一個 agent」的成本一路壓到近乎免費，你的團隊會選擇「養一個超強 agent 慢慢想」，還是「派一百個便宜 agent 平行衝」？這兩條路，對你的系統架構、成本結構與稽核追溯，各自意味著什麼？</li>
+</ul>
+<div style="color:#a5b4fc;font-weight:700;font-size:14px;line-height:1.7;margin-top:14px;">🎒 今日帶走：這週的重點不是「又一個更聰明的模型」，而是旗艦、工具鏈、晶片同時把準星對到 agent——模型要會自我驗證、工具要能編多層子代理、晶片與定價要讓大量 agent 跑得省；agentic 正從能力競賽，進入全端落地。</div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- ===== 歷史電子報入口 ===== -->
+<tr><td style="background-color:#1a1a1a;padding:16px 28px 8px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#252525;border-radius:12px;">
+<tr><td style="padding:18px 20px;text-align:center;">
+<div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-bottom:12px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</div>
+<a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-size:14px;font-weight:700;">查看歷史電子報</a>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- ===== Footer ===== -->
+<tr><td style="background-color:#1a1a1a;border-radius:0 0 16px 16px;padding:20px 28px 28px;text-align:center;border-top:1px solid #2a2a2a;">
+<div style="color:#cbd5e1;font-size:13px;margin-bottom:10px;">📬 覺得有用？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">訂閱這份電子報</a>，分享給你的朋友。</div>
+<div style="color:#64748b;font-size:12px;margin-bottom:14px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></div>
+<div style="color:#475569;font-size:11px;line-height:1.6;">© 2026 企鵝的 AI 每日電子報🐧<br>本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</div>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
