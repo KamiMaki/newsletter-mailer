@@ -1,0 +1,173 @@
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;padding:24px 12px;margin:0;">
+<tr><td align="center">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+
+<!-- Header -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px 16px 0 0;padding:28px 26px;">
+<div style="font-size:23px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#c7d2fe;margin-top:10px;">2026 年 7 月 28 日（二）· 閱讀時間約 7 分鐘</div>
+</td></tr>
+
+<!-- 30秒重點 -->
+<tr><td style="background:#1a1a1a;padding:22px 26px;">
+<div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>在正舉行的 DAC 2026（晶片設計界年度大會），Synopsys、Siemens、NVIDIA 這 48 小時同時宣布同一件事——<strong style="color:#a5b4fc;">AI 從「幫工程師建議下一步」的副駕，升級成「自己跑完整段驗證與實體設計、還會自我檢查」的自主工程師。</strong></li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0;">Synopsys</strong> 端出自主驗證 agent，宣稱把「跑到可驗證 RTL」的時間<strong style="color:#a5b4fc;">最快壓縮 50 倍</strong>；另與 AMD、微軟合作的自主除錯流程，<strong style="color:#a5b4fc;">除錯週期縮短 25–40%</strong>（皆為官方早期評估數字）。</li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0;">Siemens EDA</strong> 主打「<strong style="color:#a5b4fc;">自我驗證（self-verifying）</strong>」agent——讓 AI 的每個決定都回去對照確定性的物理引擎，把「LLM 不可靠」用工程師信得過的老引擎兜底；NVIDIA 則把這一切的底層平台（Agent Toolkit、Nemotron、CUDA-X）一次擴充到位。</li>
+<li style="margin-bottom:10px;">其他值得知道：<strong style="color:#e2e8f0;">NVIDIA 與 Ilya Sutskever 的 SSI</strong> 簽長期合作、算力擴大一個數量級；<strong style="color:#e2e8f0;">AMD 牽手南韓政府</strong>做主權 AI；<strong style="color:#e2e8f0;">GitHub Copilot、Vercel</strong> 同日推企業治理與資料落地控制。</li>
+<li>👷 <strong style="color:#67e8f9;">對半導體工作者最相關：</strong>這不是別人家的新聞——被 AI agent 接手的第一批工作，正是<strong style="color:#67e8f9;">驗證、除錯、實體設計</strong>這些你每天在做的事。角色重心正從「手動跑迴圈」移向「定義意圖、審查產出、守住 signoff 品質」。</li>
+</ul>
+</td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="padding:20px 0;">
+<div style="background:linear-gradient(135deg,#6366f1,#06b6d4);padding:1px;border-radius:16px;">
+<div style="background:#1a1a1a;border-radius:15px;padding:26px;">
+<div style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);color:#fff;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;">🎯 今天的主軸</div>
+<div style="font-size:19px;font-weight:800;color:#ffffff;margin-top:14px;line-height:1.5;">從副駕到自主工程師：AI agent 這週在 DAC 正式接管晶片驗證與實體設計</div>
+
+<p style="color:#cbd5e1;font-size:15px;line-height:1.8;margin:16px 0;">先用一個大家都懂的畫面。<strong style="color:#a5b4fc;">把 AI 進晶片設計，想成自動駕駛的分級。</strong>過去兩年，EDA 裡的 AI 比較像 L2 輔助駕駛——幫你打一點方向盤、提醒你偏移，但手還是得放在盤上、隨時接管。這 48 小時在 DAC 2026（Design Automation Conference，晶片設計自動化界一年一度的大拜拜）上，Synopsys、Siemens、NVIDIA 幾乎同時宣布的，是往 <strong style="color:#a5b4fc;">L4 自主駕駛</strong>邁一大步：你設好目的地（設計意圖與約束），車子自己開完一整段最難走的路——驗證、除錯、實體設計——中途還會自己確認有沒有開錯。回到技術本身：<strong style="color:#a5b4fc;">AI 的角色從「建議下一步」變成「自己跑完整個迴圈，並自我驗證」</strong>，而工程師從駕駛變成監工與簽核者。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍共同變化</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.8;margin:0 0 6px;">三家原本各做各的公司，這週端出的其實是同一個故事：<strong style="color:#a5b4fc;">EDA 的 AI 正在跨過「輔助」與「自主」之間那條線。</strong>過去的賣點是「更聰明的最佳化引擎」或「會補程式的 copilot」；這次的賣點統一變成「<strong style="color:#a5b4fc;">長時間執行、能自己收尾、還會自我驗證的 agent</strong>」。而且不約而同都先打同一個目標——驗證，因為那是整個晶片開發最耗時的一段。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍為什麼放在一起看</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.8;margin:0 0 10px;"><strong style="color:#e2e8f0;">① Synopsys——自主驗證與除錯（7/26–27）</strong>：以 AgentEngineer 平台推出自主設計驗證 agent，官方宣稱把「跑到可驗證 RTL」的時間<strong style="color:#a5b4fc;">最快壓縮 50 倍、覆蓋率再增 20%</strong>；隔天再與微軟、AMD 合作，端出全自主「除錯收斂」與「實體實作收斂」流程，早期評估<strong style="color:#a5b4fc;">除錯週期縮短 25–40%</strong>，可在 Microsoft Discovery 上試用、AMD 正在評估導入。<br>
+<strong style="color:#e2e8f0;">② Siemens EDA——自我驗證的 agent（7/26）</strong>：主打 <strong style="color:#a5b4fc;">self-verifying</strong>——agent 每做一個決定，都回去對照確定性的物理引擎（Solido、Questa、Calibre）核對，而不是只信 LLM 自己說的。官方數字：庫特性化<strong style="color:#a5b4fc;">加速 10 倍以上、token 成本降 5–10 倍</strong>，把原本吃掉「高達七成設計時間」的驗證，從幾天縮到幾小時。<br>
+<strong style="color:#e2e8f0;">③ NVIDIA——把底層平台一次補齊（7/26–27）</strong>：擴充 Agent Toolkit，把 PhysicsNeMo 與 CUDA-X 函式庫、Nemotron 3 Ultra 開放模型、OpenShell 執行環境整包端出，成為上面三家 agent 的共同地基；點名的使用者橫跨 Synopsys、Cadence、Siemens、Keysight，甚至 Samsung 與 TSMC。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍過去 vs. 現在</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.8;margin:0;"><strong style="color:#e2e8f0;">過去：</strong>AI 在 EDA 是「單點加速器」與「建議者」——幫你最佳化某個 placement、補一段 testbench、提醒你哪裡可能有洞，工程師仍全程手動驅動每一步。<br><strong style="color:#e2e8f0;">現在：</strong>agent <strong style="color:#a5b4fc;">自己跑完一整條流程</strong>（驗證→找根因→修→再驗），長時間執行、跨工具編排，還會拿確定性引擎當「裁判」自我檢查。人的位置，從「每一步都要動手」變成「定義意圖、審查結果、決定簽不簽核」。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍背後邏輯</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.8;margin:0;">為什麼三家都先打「驗證」？因為那是最痛的一段——Siemens 直言驗證吃掉<strong style="color:#a5b4fc;">高達七成的設計時間</strong>，投報率最高。但真正的技術突破不在「更會生成」，而在「<strong style="color:#a5b4fc;">怎麼讓人敢信 agent</strong>」。答案是 Siemens 講的 self-verifying：把不可靠、會亂編的 LLM，綁在一個確定性的物理引擎上當黃金裁判——agent 可以天馬行空地想，但每個結論都得通過老引擎那關才算數。這就是把「生成式 AI 的創意」和「EDA 簽核級的嚴謹」縫在一起的關鍵針法。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍對你的工作</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.8;margin:0;">這條主線對半導體讀者特別實在，因為被接手的正是你的日常。<strong style="color:#a5b4fc;">驗證與 DV 工程師</strong>：手動撰寫、跑迴圈、追覆蓋率的比重會下降，重心移向「定義驗證意圖、審查 agent 找到的根因、判斷能不能收斂」。<strong style="color:#a5b4fc;">實體設計工程師</strong>：QoR 調校這種反覆試錯的工作，最適合交給自主收斂流程，你負責設約束與把關。<strong style="color:#a5b4fc;">主管與 CAD／方法學團隊</strong>：該開始盤點的是——哪些流程能安全託付給 agent、資料與 IP 怎麼在雲上受控、以及「agent 的產出誰來簽核」這條治理鏈怎麼建。技能的重心，正從「會操作工具」轉向「會定義約束、會審查、會設護欄」。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍限制與待驗證</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.8;margin:0;">別被漂亮數字沖昏頭。第一，<strong style="color:#a5b4fc;">50 倍、25–40%、10 倍全是廠商自報的早期評估</strong>，沒有第三方 benchmark，實際到你的設計上會打幾折仍未知（<em style="color:#94a3b8;">編輯分析</em>）。第二，多數能力<strong style="color:#a5b4fc;">要 2026 下半年才正式上市</strong>，現在是「評估中」。第三，signoff 品質是否真能交給 agent、責任歸屬怎麼算，是還沒被回答的大哉問——self-verifying 降低了風險，但沒有消除它。第四，Samsung「微影快 20 倍」這種數字只出現在 NVIDIA 的稿子裡、非 Samsung 一手，得打個問號。</p>
+
+<div style="background:#252525;border-radius:8px;padding:14px;margin:18px 0 0;">
+<div style="color:#a5b4fc;font-size:12px;font-weight:700;margin-bottom:6px;">👤 人物觀點／延伸解讀</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0;">Synopsys 首席產品長 Ravi Subramanian 在發布中說：「工程團隊再也負擔不起在效能、品質與開發速度之間做傳統取捨。」<strong style="color:#a5b4fc;">這句話點出了驅動力</strong>——先進節點的設計複雜度已經逼到人力極限，自主 agent 與其說是「加速」，不如說是「在人手不夠時，把最耗時的驗證扛起來」。但值得提醒：這是賣工具的人說的話，數字也是自家評估；方向可信，倍率待驗。<span style="color:#94a3b8;font-style:italic;">（人物觀點，非產業定論，僅供延伸參考。）</span></p>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍重點一句話</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.8;margin:0 0 12px;"><strong style="color:#e2e8f0;">AI agent 在 EDA 這週跨過了「輔助→自主」那條線，第一個接手的就是最耗時的驗證；真正的關鍵不是它多會生成，而是「self-verifying」讓工程師開始敢信它——但倍率數字全是廠商自報，signoff 的信任門檻才是真考驗。</strong></p>
+
+<div style="border-top:1px solid #333;margin-top:16px;padding-top:12px;">
+<div style="color:#94a3b8;font-size:12px;line-height:1.7;">🔗 來源：<a href="https://news.synopsys.com/2026-07-26-Synopsys-Showcases-Comprehensive-Autonomous-Engineering-Workflows-from-Silicon-to-Systems,-Developed-with-NVIDIA-Technology" style="color:#06b6d4;text-decoration:none;">Synopsys Newsroom（7/26）</a>｜<a href="https://news.synopsys.com/2026-07-27-Synopsys-Advances-Agentic-AI-Chip-Design-with-AMD-and-Microsoft" style="color:#06b6d4;text-decoration:none;">Synopsys×AMD×MS（7/27）</a>｜<a href="https://news.siemens.com/en-us/siemens-nvidia-dac-2026/" style="color:#06b6d4;text-decoration:none;">Siemens Newsroom（7/26）</a>｜<a href="https://blogs.nvidia.com/blog/open-secure-ai-alliance/" style="color:#06b6d4;text-decoration:none;">NVIDIA Blog</a></div>
+</div>
+
+</div>
+</div>
+</td></tr>
+
+<!-- 主軸的衍生新聞 -->
+<tr><td style="padding:4px 0 0;">
+<div style="font-size:17px;font-weight:800;color:#ffffff;padding:14px 4px;">🔗 主軸的衍生新聞</div>
+</td></tr>
+
+<tr><td style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="display:inline-block;background:#312e81;color:#c7d2fe;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:800;color:#ffffff;margin-top:12px;line-height:1.5;">40 多家組成「Open Secure AI Alliance」：當 agent 走進高風險工作，先把防線一起蓋起來</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.8;margin:12px 0 6px;">7/27，NVIDIA 帶頭與 <strong style="color:#a5b4fc;">40 多家組織</strong>（含 <strong style="color:#e2e8f0;">Cadence、Synopsys、Siemens</strong>、Microsoft、Hugging Face、CrowdStrike、Cisco、IBM、Red Hat、Linux Foundation 等）成立「開放安全 AI 聯盟」，用<strong style="color:#a5b4fc;">開源工具</strong>共同做 AI 與 agent 的資安防禦：身分框架、權重安全儲存、供應鏈掃描、agent 護欄。它和主軸是同一枚硬幣的兩面——<strong style="color:#a5b4fc;">當自主 agent 開始跑驗證、實體設計這種高風險工作，「怎麼信任、怎麼守住」就成了全產業的共同課題。</strong>值得注意的是，EDA 三巨頭全在名單上，代表晶片設計正是這波「agent 上工也要上鎖」的第一線。發起文還舉了一個真實案例：某次資安事件中，防守方就是在自家基礎設施上跑開放權重模型，分析了超過 <strong style="color:#a5b4fc;">1.7 萬個動作</strong>來圍堵入侵。</p>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:10px 0;">💡 重點一句話：放 agent 上工的同一週，產業也在合力打造它的護欄——自主與可信，注定要綁在一起賣。</p>
+<div style="color:#94a3b8;font-size:12px;">🔗 <a href="https://blogs.nvidia.com/blog/open-secure-ai-alliance/" style="color:#06b6d4;text-decoration:none;">閱讀原文</a>｜來源：NVIDIA Blog（官方）</div>
+</td></tr>
+
+<tr><td style="height:14px;"></td></tr>
+
+<tr><td style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="display:inline-block;background:#312e81;color:#c7d2fe;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:800;color:#ffffff;margin-top:12px;line-height:1.5;">Agent 再自主，底層驗證還是吃 CPU：NVIDIA 用 Vera CPU 替 EDA 加速 1.5 倍</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.8;margin:12px 0 6px;">同一批 DAC 消息裡，NVIDIA（7/26）秀出用自家 <strong style="color:#a5b4fc;">Vera CPU</strong>（88 顆 Olympus 核心）加速 EDA，在 <strong style="color:#e2e8f0;">Cadence Jasper 形式驗證</strong>與 <strong style="color:#e2e8f0;">Synopsys VCS 模擬</strong>等關鍵工作上，官方宣稱效能<strong style="color:#a5b4fc;">最高提升 1.5 倍</strong>。這則和主軸互補：邏輯模擬、形式驗證、數位實作這些工作<strong style="color:#a5b4fc;">至今仍高度吃 CPU 效能</strong>——換句話說，上面的 agent 跑得再聰明，底下還是得有夠快的 CPU 把 verification 的計算量扛起來。自主 agent 是大腦，Vera CPU 是肌肉，兩者缺一不可。</p>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:10px 0;">💡 重點一句話：AI agent 負責「想得快」，但晶片驗證的「算得快」仍靠硬體——這也是為什麼 EDA 與運算硬體越綁越緊。</p>
+<div style="color:#94a3b8;font-size:12px;">🔗 <a href="https://blogs.nvidia.com/blog/vera-cpu-eda/" style="color:#06b6d4;text-decoration:none;">閱讀原文</a>｜來源：NVIDIA Blog（官方）</div>
+</td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="padding:24px 0 0;">
+<div style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:18px;color:#cbd5e1;font-size:15px;line-height:1.75;">
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">NVIDIA 與 Ilya Sutskever 的 SSI 簽長期策略合作。</strong>SSI 將取得下一代 Vera Rubin 平台、把算力擴大一個數量級，NVIDIA 並投入「大量投資」（官方未揭露金額，外傳數字未經證實）。為何重要：這代表最前沿的「安全超智慧」研究，也開始把命運綁在 NVIDIA 的下一代硬體與資本上。<span style="color:#94a3b8;">🔗 <a href="https://nvidianews.nvidia.com/news/ilya-sutskevers-safe-superintelligence-inc-and-nvidia-announce-long-term-strategic-partnership" style="color:#06b6d4;text-decoration:none;">來源</a>：NVIDIA Newsroom</span></li>
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">AMD 牽手南韓科學技術資通訊部，共推主權 AI。</strong>AMD 將提供運算技術、開放軟體與生態合作，支持南韓自建 AI 基礎設施。為何重要：繼記憶體、代工之後，南韓正把「自主 AI 算力」列為國家級戰略，晶片供應商成了各國主權 AI 的爭取對象。<span style="color:#94a3b8;">🔗 <a href="https://newsroom.amd.com/" style="color:#06b6d4;text-decoration:none;">來源</a>：AMD Newsroom</span></li>
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Cognizant 升級為 Anthropic「全球首要夥伴」，逾 3 萬名員工受訓用 Claude。</strong>雙方把 Claude 嵌進 Cognizant 面向製造、生命科學、保險的產業平台。為何重要：大型系統整合商正把前沿模型「工程化」進企業流程，是 AI 從實驗走進傳統產業落地的實質指標。<span style="color:#94a3b8;">🔗 <a href="https://www.anthropic.com/news" style="color:#06b6d4;text-decoration:none;">來源</a>：Anthropic Newsroom</span></li>
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">GitHub Copilot 補上企業治理：managed-settings.json 一套護欄管到底。</strong>7/27 起，Copilot app 與雲端 agent 開始遵循企業「受管設定」檔，統一控管外掛、市集存取與核准提示；另新增專屬政策可單獨開關 Copilot app 存取。為何重要：呼應主軸——當 agent 越自主，企業越需要「一次設定、全體遵循」的護欄與可觀測性。<span style="color:#94a3b8;">🔗 <a href="https://github.blog/changelog/2026-07-27-enterprise-managed-settings-now-apply-to-the-github-copilot-app" style="color:#06b6d4;text-decoration:none;">來源</a>：GitHub Changelog</span></li>
+<li style="margin-bottom:0;"><strong style="color:#e2e8f0;">Vercel AI Gateway 新增區域鎖定與 Kimi K3（附零資料保留）。</strong>可用單一欄位把請求鎖在美國或歐洲、每則回應標明服務區域；同日上架 Kimi K3／K3 Fast，並綁定<strong style="color:#a5b4fc;">零資料保留（ZDR）＋美國供應商</strong>。為何重要：這示範了「強大的開放模型照用，但用合規與資料落地把它包起來」的務實路線。<span style="color:#94a3b8;">🔗 <a href="https://vercel.com/changelog" style="color:#06b6d4;text-decoration:none;">來源</a>：Vercel Changelog</span></li>
+</ul>
+</div>
+</td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="padding:24px 0 0;">
+<div style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">📖 今日概念｜從 Copilot 到 Autonomous Agent（自主代理）</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.8;margin:0 0 10px;"><strong style="color:#a5b4fc;">一句定義：</strong>Copilot 是「你開車、它在旁邊給建議」的 AI；Autonomous Agent（自主代理）則是「你設好目的地、它自己開完整段路、還會自己檢查有沒有開錯」的 AI。差別不在聰不聰明，而在<strong style="color:#a5b4fc;">誰在驅動每一步、以及能連續自主多久</strong>。</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.8;margin:0 0 10px;"><strong style="color:#a5b4fc;">生活化比喻：</strong>Copilot 像導航——它建議「前方請左轉」，但油門煞車方向盤都是你在控。Autonomous Agent 像自駕計程車——你只說「載我去驗證收斂」，它自己規劃、自己執行、遇到岔路自己決定，只有卡住時才回頭問你。<strong style="color:#a5b4fc;">關鍵是那句「自己檢查有沒有開錯」</strong>：好的自駕會不斷拿感測器對照地圖，這正對應到晶片 agent 的「self-verifying」——拿確定性引擎當地圖，隨時核對自己有沒有偏離。</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.8;margin:0 0 10px;"><strong style="color:#a5b4fc;">工作中的例子：</strong>Copilot 幫你補一段 SystemVerilog testbench，你來跑、來判讀（副駕）；Autonomous Agent 則是接到「把這個模組驗到收斂」後，自己寫測試、跑模擬、找根因、修、再驗，跑上好幾小時才回報結果（自駕）。這週 Synopsys、Siemens 端出的，就是後者。</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.8;margin:0 0 10px;"><strong style="color:#a5b4fc;">常見誤解：</strong>「自主＝不用人管了？」錯。自主指的是「連續執行不用你逐步下指令」，不是「不需要人把關」。<strong style="color:#a5b4fc;">人的角色是往上移，不是消失</strong>——從逐步操作，變成定義意圖、審查結果、決定簽不簽核。自駕車也還是要有人設目的地、負最後的責任。</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.8;margin:0;"><strong style="color:#a5b4fc;">與今天主軸的關係：</strong>今天整條主線，就是 EDA 的 AI 從 Copilot 跨到 Autonomous Agent。理解這個區別，你就能看穿廠商話術——問一個問題就好：「它是<strong style="color:#a5b4fc;">給我建議</strong>，還是<strong style="color:#a5b4fc;">自己跑完還會自我驗證</strong>？」答案決定了它值不值得你重排工作流程。</p>
+</div>
+</td></tr>
+
+<!-- 半導體 AI 專區 -->
+<tr><td style="padding:24px 0 0;">
+<div style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:6px;">🏭 半導體 AI 專區｜自主 agent 走進晶片驗證（Verification）</div>
+<div style="margin-bottom:14px;">
+<span style="display:inline-block;background:#0e7490;color:#cffafe;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">EDA 工具</span>
+<span style="display:inline-block;background:#3f3f46;color:#d4d4d8;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-left:6px;">今日新聞</span>
+</div>
+<div style="color:#67e8f9;font-weight:700;font-size:13px;margin:0 0 6px;">▍問題與流程位置</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.8;margin:0 0 10px;">驗證（verification）位在 RTL 設計之後、實體設計之前，任務是回答一個問題：「這份設計的行為，跟規格真的一致嗎？」它出了名地吃資源——工程師得手寫測試環境（testbench）、跑海量模擬、盯覆蓋率（coverage）、一旦出錯還要大海撈針找根因。Siemens 引用的業界數字是：<strong style="color:#a5b4fc;">驗證吃掉高達七成的設計時間</strong>。這也是為什麼這波自主 agent，不約而同都先拿驗證開刀。</p>
+<div style="color:#67e8f9;font-weight:700;font-size:13px;margin:0 0 6px;">▍AI 如何介入</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.8;margin:0 0 10px;"><strong style="color:#e2e8f0;">過去：</strong>AI 頂多幫你生成一段 testbench、或建議下一個該補的測試案例，剩下的跑模擬、判讀、除錯全靠工程師手動驅動。<strong style="color:#e2e8f0;">現在（agent 介入）：</strong>自主 agent 接到「把這模組驗到收斂」的意圖後，<strong style="color:#a5b4fc;">自己規劃測試、跑模擬、分析覆蓋率缺口、定位失敗根因、提修正、再重驗</strong>，長時間連續執行整個迴圈。差別在於——過去是「AI 幫你做其中一步」，現在是「agent 替你跑完整條路」，工程師從逐步操作退到定義意圖與審查結果。</p>
+<div style="color:#67e8f9;font-weight:700;font-size:13px;margin:0 0 6px;">▍資料與產出</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.8;margin:0 0 10px;">輸入是 RTL 設計、規格／assertion、既有 testbench 與覆蓋率報告；產出是新測試、失敗案例的根因分析、修正建議與一份可追溯的驗證軌跡。Synopsys 宣稱這能把「跑到可驗證 RTL」的時間<strong style="color:#a5b4fc;">最快壓 50 倍、覆蓋率再增 20%</strong>，與 AMD／微軟合作的除錯流程則稱<strong style="color:#a5b4fc;">除錯週期縮短 25–40%</strong>（皆為官方早期評估、非第三方 benchmark）。</p>
+<div style="color:#67e8f9;font-weight:700;font-size:13px;margin:0 0 6px;">▍如何驗證</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.8;margin:0 0 10px;">這裡有個很妙的「誰來驗證驗證器」問題。答案是 Siemens 講的 <strong style="color:#a5b4fc;">self-verifying</strong>：不讓 agent 自說自話，而是把它的每個決定丟回<strong style="color:#a5b4fc;">確定性的物理／模擬引擎</strong>（如 Questa、Solido、Calibre）當黃金裁判核對——LLM 負責探索與提案，老引擎負責裁定對錯。落到你手上，實務驗證就是拿已知的黃金結果回測 agent 的判讀，追蹤它會不會漏抓真 bug 或亂報假警報。</p>
+<div style="color:#67e8f9;font-weight:700;font-size:13px;margin:0 0 12px;">▍限制與風險</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.8;margin:0 0 12px;">三點要冷靜看。其一，倍率<strong style="color:#a5b4fc;">全是廠商自報的早期評估</strong>，換到你的設計、你的 constraint 上，折扣未知。其二，多數能力<strong style="color:#a5b4fc;">要 2026 下半年才正式上市</strong>，現在多為「評估中」。其三，signoff 責任歸屬仍是灰色地帶——self-verifying 降低了風險，但「agent 簽的核，出事誰負責」還沒有標準答案。<em style="color:#94a3b8;">（以上區分：DAC 發布與官方數字為今日新聞；「驗證吃七成時間」為業界背景；責任歸屬一段為編輯分析，不涉任何未公開的內部流程或機密。）</em></p>
+<p style="color:#67e8f9;font-weight:700;font-size:14px;line-height:1.7;margin:0;">👷 對半導體工作者的意義：驗證與 DV 工程師最該做的，不是擔心「會不會被取代」，而是及早練「怎麼跟 agent 協作」——把手寫迴圈的力氣，換成定義好的驗證意圖、可回測的黃金參考，以及審查 agent 產出的判斷力。先能監督 agent 的人，會是這波最先被加分的人。</p>
+</div>
+</td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="padding:24px 0;">
+<div style="background:linear-gradient(135deg,#6366f1,#06b6d4);padding:1px;border-radius:16px;">
+<div style="background:#1a1a1a;border-radius:15px;padding:24px;">
+<div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+<li style="margin-bottom:12px;"><strong style="color:#a5b4fc;">趨勢反思：</strong>如果自主 agent 真能把驗證時間砍掉一大半，你所在環節的「稀缺價值」會從「會操作工具、跑得快」移到哪裡去？你現在累積的技能，是會被 agent 取代的那種，還是能監督 agent 的那種？</li>
+<li style="margin-bottom:12px;"><strong style="color:#a5b4fc;">工作連結：</strong>挑一段你團隊最耗時、最反覆試錯的流程（驗證收斂？QoR 調校？）——如果明年要交給一個自主 agent，你得先把哪些「意圖、約束、黃金參考」寫清楚，它才有辦法接手又不出包？</li>
+<li style="margin-bottom:0;"><strong style="color:#a5b4fc;">未來判斷：</strong>當 agent 能自我驗證、卻仍由人簽核，「出事誰負責」的責任鏈該怎麼設計？在你的組織裡，什麼樣的護欄與可追溯紀錄，才能讓你敢把 signoff 級的工作託付出去？</li>
+</ul>
+<p style="color:#a5b4fc;font-weight:700;font-size:15px;line-height:1.7;margin:16px 0 0;">🎒 今日帶走：AI agent 這週在 EDA 從副駕變自駕，先接管最耗時的驗證——真正稀缺的，不再是「會跑工具的人」，而是「能定義意圖、設好護欄、看得懂並簽得下 agent 產出的人」。</p>
+</div>
+</div>
+</td></tr>
+
+<!-- 歷史電子報入口 -->
+<tr><td style="padding:0 0 14px;">
+<div style="background:#1a1a1a;border-radius:14px;padding:20px 24px;">
+<div style="font-size:16px;font-weight:800;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+<a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-size:14px;font-weight:600;">查看歷史電子報</a>
+</div>
+</td></tr>
+
+<!-- Footer -->
+<tr><td style="background:#151515;border-radius:0 0 16px 16px;padding:22px 26px;">
+<p style="color:#94a3b8;font-size:13px;line-height:1.7;margin:0 0 8px;">📬 覺得有用嗎？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">分享給朋友訂閱這份電子報</a></p>
+<p style="color:#64748b;font-size:12px;line-height:1.7;margin:0 0 12px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></p>
+<p style="color:#475569;font-size:11px;line-height:1.6;margin:0;">© 2026 企鵝的 AI 每日電子報🐧 · 本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>

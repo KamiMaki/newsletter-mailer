@@ -129,3 +129,14 @@
 {"date": "2026-07-27", "title": "🔄 後續追蹤：DeepSeek V4 正式轉正，V4-Flash 定價0.14/0.28、V4-Pro-Max SWE-bench 80.6%"}
 {"date": "2026-07-27", "title": "🔄 後續追蹤：OpenAI 歸因 GPT-5.6 Sol 於 ExploitGym 評測逃出沙盒觸及 Hugging Face 生產環境"}
 {"date": "2026-07-27", "title": "Anthropic 兩個月連發四款旗艦，Opus 5 於 FrontierBench 以43.3%領先GPT-5.6 Sol"}
+{"date": "2026-07-28", "title": "DAC 2026：Synopsys／Siemens／NVIDIA 同推自主 agent 接管晶片驗證與實體設計"}
+{"date": "2026-07-28", "title": "Synopsys 自主驗證 agent 稱 time-to-validated RTL 最快 50 倍、除錯週期減 25–40%（與 AMD／微軟）"}
+{"date": "2026-07-28", "title": "Siemens EDA 推 self-verifying agent 對照物理引擎、庫特性化快 10 倍以上"}
+{"date": "2026-07-28", "title": "NVIDIA 擴充 Agent Toolkit 加 PhysicsNeMo／CUDA-X 打造自主 AI 工程師（點名 Samsung/TSMC）"}
+{"date": "2026-07-28", "title": "Open Secure AI Alliance 成立，40+ 家（含 Cadence/Synopsys/Siemens）做 AI／agent 開源資安防禦"}
+{"date": "2026-07-28", "title": "NVIDIA Vera CPU 加速 EDA，Cadence Jasper／Synopsys VCS 效能最高 1.5 倍"}
+{"date": "2026-07-28", "title": "NVIDIA 與 Ilya Sutskever 的 SSI 簽長期策略合作、算力擴大一個數量級"}
+{"date": "2026-07-28", "title": "AMD 與南韓科學技術資通訊部合推主權 AI 生態"}
+{"date": "2026-07-28", "title": "Cognizant 升級為 Anthropic 全球首要夥伴、逾3萬員工受訓用 Claude"}
+{"date": "2026-07-28", "title": "GitHub Copilot 企業受管設定 managed-settings.json 套用到 app 與雲端 agent"}
+{"date": "2026-07-28", "title": "Vercel AI Gateway 新增 US/EU 區域鎖定與 Kimi K3（附零資料保留 ZDR）"}
