@@ -140,3 +140,14 @@
 {"date": "2026-07-28", "title": "Cognizant 升級為 Anthropic 全球首要夥伴、逾3萬員工受訓用 Claude"}
 {"date": "2026-07-28", "title": "GitHub Copilot 企業受管設定 managed-settings.json 套用到 app 與雲端 agent"}
 {"date": "2026-07-28", "title": "Vercel AI Gateway 新增 US/EU 區域鎖定與 Kimi K3（附零資料保留 ZDR）"}
+{"date": "2026-07-29", "title": "Anthropic Claude Mythos 自主找出後量子簽章 HAWK 與 7 回合 AES 新攻擊（HAWK-256 從 2^64 降到 2^38）"}
+{"date": "2026-07-29", "title": "微軟推首款資安專用模型 MAI-Cyber-1-Flash（只訓練防禦、CyberGym 96% 成本砍半、內建 MDASH）"}
+{"date": "2026-07-29", "title": "🔄 後續追蹤：OpenAI 技術報告揭首起自主 AI 網路攻擊（約 17,000 次動作、一週偵測空窗、打進 Hugging Face 正式環境）"}
+{"date": "2026-07-29", "title": "MCP 2026-07-28 發布史上最大改版：無狀態核心＋強化授權（RFC 9207／CIMD／EMA）、棄用 Roots/Sampling/Logging 與 HTTP+SSE"}
+{"date": "2026-07-29", "title": "arXiv Success Is Not Self-Explanatory：agent 答對不等於想對，須稽核成功來源（2607.24054）"}
+{"date": "2026-07-29", "title": "Grok 4.5 進駐 GitHub Copilot（最高 500K 上下文、多 IDE、企業版預設關閉）"}
+{"date": "2026-07-29", "title": "Synopsys 與 Intel Foundry 在 DAC 認證 14A 的 AI EDA 與多物理流程、擴充 3DIC Compiler 支援 EMIB/EMIB-T"}
+{"date": "2026-07-29", "title": "Cadence 第二季財報：營收約 15.8 億美元年增 24%、在手訂單 81 億新高，agentic Super Agent 採用加速"}
+{"date": "2026-07-29", "title": "歐盟 AI 法對通用 AI 模型的執法權 2026-08-02 上路（最高罰 1500 萬歐元或全球營收 3%）"}
+{"date": "2026-07-29", "title": "KLA 2026 財年 Q4 財報：季營收約 36.6 億美元，成長綁 AI 基建與先進封裝製程控制檢測需求"}
+{"date": "2026-07-29", "title": "微軟同場發表 agentic 資安平台 Project Perception（8/3 公開預覽）"}
