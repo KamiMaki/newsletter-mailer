@@ -151,3 +151,11 @@
 {"date": "2026-07-29", "title": "歐盟 AI 法對通用 AI 模型的執法權 2026-08-02 上路（最高罰 1500 萬歐元或全球營收 3%）"}
 {"date": "2026-07-29", "title": "KLA 2026 財年 Q4 財報：季營收約 36.6 億美元，成長綁 AI 基建與先進封裝製程控制檢測需求"}
 {"date": "2026-07-29", "title": "微軟同場發表 agentic 資安平台 Project Perception（8/3 公開預覽）"}
+{"date": "2026-07-30", "title": "MCP 2026-07-28 規格正式拍板：無狀態核心、Tasks／Apps 擴充、OAuth/OIDC 授權強化"}
+{"date": "2026-07-30", "title": "Anthropic 把 MCP 2026-07-28 帶進 Claude：MCP Apps 內嵌 UI、企業 IdP 佈署、觀測儀表板、MCP Tunnels 私網穿透"}
+{"date": "2026-07-30", "title": "AWS AgentCore Gateway 支援無狀態 MCP：一句 UpdateGateway、MCP 伺服器變標準 HTTPS 端點可水平擴充"}
+{"date": "2026-07-30", "title": "OpenAI 開放 ChatGPT 給 10 萬名學術研究者免費使用"}
+{"date": "2026-07-30", "title": "OpenAI ChatGPT 語音接進 Work 與 Codex 桌面版，可語音驅動 agent 任務"}
+{"date": "2026-07-30", "title": "Google Gemini 讀懂並處理 Google 文件留言（摘要留言串、抽主題、找未解問題）"}
+{"date": "2026-07-30", "title": "Cursor 推出 Start 平價方案並開放 Cursor for iOS 公測（常駐 agent、遠端遙控）"}
+{"date": "2026-07-30", "title": "Synopsys 與 AMD、微軟推自主 agentic EDA 除錯流程，早期評估 debug 週期縮短 25–40%（Microsoft Discovery 評估）"}
