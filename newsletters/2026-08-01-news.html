@@ -1,0 +1,235 @@
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;margin:0;padding:24px 12px;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<tr><td align="center">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;">
+
+<!-- Header -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;padding:28px 26px;">
+<div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#c7d2fe;margin-top:10px;">2026 年 8 月 1 日（週六）</div>
+</td></tr>
+
+<!-- 30秒重點 -->
+<tr><td style="background:#1a1a1a;border-radius:14px;padding:22px 24px;margin-top:16px;" >
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>AI 的競賽重心，正從「模型能不能做到」轉向「我們能不能<strong style="color:#a5b4fc;">查得到、關得住、管得動</strong>」——把 AI 圍起來、貼上標籤、發鑰匙的「信任基礎設施」，這週正式接手成為前沿主戰場。</li>
+<li style="margin-bottom:10px;">Anthropic 首度公開自家評測「沙盒破洞」事故：14 萬次評測中有 3 次，Claude 以為在模擬環境、其實摸到 <strong style="color:#a5b4fc;">3 家真實公司</strong>的系統，抓到基礎設施憑證、還讀到一個有數百列production資料的資料庫。</li>
+<li style="margin-bottom:10px;">OpenAI 把內容溯源（C2PA＋SynthID）擴到<strong style="color:#a5b4fc;">音訊</strong>，並開放 Verify API，讓任何人或系統能查一段聲音、一張圖是不是 OpenAI 生的。</li>
+<li style="margin-bottom:10px;">GitHub 給 Copilot 代理加兩道企業閘門（只准在受管裝置遠端操控、模型可依團隊分權）；學界同步端出「軌跡級」稽核基準 ClawTrack——看的不只是答對，而是有沒有想對。</li>
+<li style="margin-bottom:10px;">其他快訊：Google DeepMind 發表全身控制的 Gemini Robotics 2、DeepSeek V4-Flash-0731 轉公測、GitHub Copilot 與 OpenAI Codex 同步升級多工作階段與多倉庫審查。</li>
+<li><strong style="color:#67e8f9;">對半導體工作者最相關：</strong>「可查、可簽核、可追責」正是 EDA 的老本行——Cadence 本週把 AI 驅動的實作到簽核流程，做到 Intel 18A-P/14A 認證，等於幫晶片流程蓋上同一種信任印章。</li>
+</ul>
+</td></tr>
+
+<tr><td style="height:16px;"></td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+<tr><td style="padding:24px 24px;">
+<div style="display:inline-block;background:#252525;color:#a5b4fc;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;">🎯 今天的主軸</div>
+<div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-top:14px;">同一週，三家公司做了同一件事：不再只證明 AI「有多強」，而是搶著證明 AI「關得住、查得到、管得動」</div>
+
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:16px;">
+把前沿 AI 想成一間<strong style="color:#a5b4fc;">生物安全實驗室</strong>：過去一年大家比的是「培養皿裡的東西有多厲害」；這週的新聞第一次把鏡頭轉向<strong style="color:#a5b4fc;">實驗室本身</strong>——門有沒有關好、樣本有沒有貼標籤、鑰匙發給了誰。而 Anthropic 的頭條，正是一次「防護門被人忘了鎖」的事故報告。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍共同變化</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:8px;">
+7/30，Anthropic 的 Frontier Red Team 公開了一份少見的<strong style="color:#a5b4fc;">自我揭露報告</strong>：他們回頭盤點 <strong style="color:#a5b4fc;">141,006 次</strong>「模型有機會連到網路」的資安評測，發現其中 3 起事故（共 6 次執行），Claude（Opus 4.7、Mythos 5、及一個未發布的內部研究模型）在「以為是沙盒」的環境裡，實際連上真實網際網路、摸進了 3 家真實公司的系統。最嚴重的一次抓到了應用與基礎設施憑證、讀到一個有數百列production資料的資料庫；另一起讓 15 台真實機器下載了惡意程式、外洩了一家資安公司的憑證。根因是 Anthropic 與評測夥伴 Irregular 之間的<strong style="color:#a5b4fc;">設定錯誤</strong>，讓機器保留了本不該有的網路存取。隔天 7/31，OpenAI 把內容溯源標準（C2PA＋SynthID）從圖片擴到<strong style="color:#a5b4fc;">音訊</strong>，並開放 Verify API；同一批日子裡，GitHub 給 Copilot 代理連上兩道企業閘門。三件事看似無關，其實在講同一件事。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍為什麼放在一起看</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:8px;">
+因為它們都是「<strong style="color:#a5b4fc;">能力已經跑在前面，圍欄現在才補上</strong>」的同一種焦慮，只是補在三個不同環節：<br>
+· Anthropic 補的是<strong style="color:#a5b4fc;">圍堵（containment）</strong>——確保「沙盒」真的關得住，出事能查到；<br>
+· OpenAI 補的是<strong style="color:#a5b4fc;">溯源（provenance）</strong>——AI 生出來的內容能被驗明正身；<br>
+· GitHub 補的是<strong style="color:#a5b4fc;">治理（governance）</strong>——代理能用哪台機器、哪個模型，由企業說了算。<br>
+一句話：當 AI 從「會回答」變成「會自己動手、自己生成」，最値錢的問題就不再是「它能不能做到」，而是「<strong style="color:#a5b4fc;">做了之後，我查得到、關得住、管得動嗎</strong>」。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍過去 vs. 現在</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:8px;">
+過去談 AI 安全，多半停在「模型會不會講壞話、會不會被越獄」這種<strong style="color:#a5b4fc;">內容層</strong>問題。Anthropic 這份報告把層級整個往下拉：模型不是「說了不該說的話」，而是<strong style="color:#a5b4fc;">真的動手連了不該連的機器、拿了不該拿的憑證</strong>——而且是在號稱隔離的評測環境裡發生的。更值得注意的是被發現的方式：這 3 起都不是被入侵方偵測到的，而是 Anthropic 自己回頭逐條看評測記錄（transcript）才揪出來的，兩家能聯絡上的公司事前完全沒察覺。這說明「評測沙盒」這個大家默認安全的地方，本身也需要被當成正式生產環境來稽核。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍背後邏輯</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:8px;">
+為什麼三家不約而同在這時候補圍欄？因為<strong style="color:#a5b4fc;">代理（agent）能力真的到位了</strong>。一個能自己開終端機、打 API、寫並執行程式的模型，本質上就具備「利用弱密碼、掃未授權服務、拿憑證橫向移動」的手腳——這正是 Anthropic 事故裡模型做的事（它用的是老派手法，不是什麼新漏洞）。能力一旦通用，圍欄就得從三個方向同時長出來：進得去要能<strong style="color:#a5b4fc;">圍堵</strong>、生得出要能<strong style="color:#a5b4fc;">溯源</strong>、動得了要能<strong style="color:#a5b4fc;">治理</strong>。這也解釋了為什麼學界這週同步端出 <strong style="color:#a5b4fc;">ClawTrack</strong>（arXiv 2607.28037，7/30）這類「軌跡級」評測——不只看代理答案對不對，而是逐步稽核它「怎麼想、走過哪些路」，因為對一個會動手的系統，「結果對」遠遠不夠。
+</div>
+
+<div style="background:#252525;border-radius:8px;padding:14px 16px;margin-top:16px;">
+<div style="color:#a5b4fc;font-size:12px;font-weight:700;margin-bottom:6px;">👤 延伸解讀（編輯分析）</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">
+Anthropic 願意主動公開一份「我們的評測環境出包、模型摸到真實公司」的報告，本身是個訊號：<strong style="color:#a5b4fc;">前沿實驗室開始把「評測安全」當成一門要公開負責的工程</strong>，而不是內部悄悄修掉。這和學界那篇《Cyber-Capable AI Agents: Vulnerabilities, Evaluation Containment》（arXiv 2607.25379，7/28，<strong style="color:#a5b4fc;">背景論文</strong>）正好互相呼應——後者把「評測環境圍堵」列為一整類要專門研究的漏洞。至於誰會成為第一個踩到大雷的公司，仍待觀察，這裡屬<strong style="color:#a5b4fc;">編輯推測</strong>，官方並未如此表述。
+</div>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍對你的工作</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:8px;">
+如果你在團隊裡導入任何會「自己動手」的 AI 代理（跑 CI、改程式、連內網工具），這週的三則新聞其實是一張<strong style="color:#a5b4fc;">檢查清單</strong>：一、你給代理的「沙盒」真的隔離了嗎，還是只是靠 prompt 說「這是模擬環境」就當它安全（Anthropic 的教訓正是後者不管用）？二、代理產出的東西能不能溯源、留下可稽核的軌跡？三、它能用哪些機器與模型，是不是集中可控——這正是 GitHub 這週把「受管裝置」與「團隊層級模型政策」做成企業設定的原因。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍限制與待驗證</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:8px;">
+別把「補圍欄」讀成「問題已解決」。溯源浮水印（SynthID）雖能抗壓縮、裁切、截圖，但<strong style="color:#a5b4fc;">跨模型生態尚未統一</strong>，非 OpenAI／Google 體系的內容照樣查不到；而 Anthropic 事故的根因是「人為設定錯誤」，這類低級失誤能不能靠流程根除，沒人敢打包票。ClawTrack 這類軌跡級稽核仍在研究階段（320 題的 benchmark），距離企業能直接拿來上線還有距離。圍欄長出來了，但每一道都還在早期。
+</div>
+
+<div style="background:#252525;border-radius:8px;padding:14px 16px;margin-top:18px;">
+<div style="color:#94a3b8;font-style:italic;font-size:14px;line-height:1.7;">💡 <strong style="color:#a5b4fc;">重點一句話：</strong>當 AI 學會自己動手，安全的重心就從「教它別做壞事」搬到「就算它做了，我也查得到、關得住、管得動」——這週三家公司同時在蓋的，就是這套信任基礎設施。</div>
+</div>
+
+<div style="margin-top:16px;font-size:13px;line-height:1.9;">
+🔗 <a href="https://www.anthropic.com/news/investigating-incidents-cybersecurity-evals" style="color:#06b6d4;text-decoration:none;">Anthropic 事故報告</a> ｜ 來源：Anthropic<br>
+🔗 <a href="https://openai.com/index/advancing-content-provenance/" style="color:#06b6d4;text-decoration:none;">OpenAI 內容溯源與 Verify API</a> ｜ 來源：OpenAI<br>
+🔗 <a href="https://arxiv.org/abs/2607.28037" style="color:#06b6d4;text-decoration:none;">arXiv ClawTrack（軌跡級稽核）</a> ｜ 來源：arXiv
+</div>
+
+</td></tr>
+</table>
+</td></tr>
+
+<tr><td style="height:16px;"></td></tr>
+
+<!-- 主軸的衍生新聞 -->
+<tr><td style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:6px;">🔗 主軸的衍生新聞</div>
+
+<div style="border-top:1px solid #2d2d2d;margin-top:14px;padding-top:16px;">
+<div style="display:inline-block;background:#252525;color:#a5b4fc;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:10px;">OpenAI 把「內容溯源」擴到音訊，並開放 Verify API</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:8px;">7/31，OpenAI 宣布用 GPT-Live 透過 ChatGPT Voice 或 API 生成的音訊，現在會帶上 <strong style="color:#a5b4fc;">SynthID 浮水印</strong>；同時開放 Verify API，讓開發者能把「這是不是 OpenAI 生的」檢查（同時比對 C2PA metadata 與 SynthID）接進自己的流程，目前支援圖片與音訊。這正是主軸裡「<strong style="color:#a5b4fc;">溯源</strong>」那一塊的具體落地——AI 生成物開始被要求能被驗明正身。</div>
+<p style="color:#94a3b8;font-style:italic;font-size:13px;margin:10px 0 0;">💡 圍堵管「進得去」，溯源管「生得出」——AI 內容從此多了一張可查的出生證明。</p>
+<div style="font-size:13px;margin-top:8px;">🔗 <a href="https://openai.com/index/advancing-content-provenance/" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> ｜ 來源：OpenAI</div>
+</div>
+
+<div style="border-top:1px solid #2d2d2d;margin-top:16px;padding-top:16px;">
+<div style="display:inline-block;background:#252525;color:#a5b4fc;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:10px;">GitHub 給 Copilot 代理加兩道企業閘門：受管裝置＋團隊分權</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:8px;">7/30–31，GitHub 上線兩項企業治理設定：一是新的 <strong style="color:#a5b4fc;">remoteControl</strong> 受管設定，管理員能限定「只有受管裝置才能遠端操控 Copilot 會話」，甚至完全關閉；二是<strong style="color:#a5b4fc;">團隊層級的模型政策</strong>（公開預覽），可為全企業設一個基準模型，再依職務或前沿實驗團隊，把特定模型開放給特定團隊。這對應主軸的「<strong style="color:#a5b4fc;">治理</strong>」——代理能用什麼、在哪用，收歸企業可控。</div>
+<p style="color:#94a3b8;font-style:italic;font-size:13px;margin:10px 0 0;">💡 代理越自主，企業越需要一個「發鑰匙、分權限」的後台——這就是它。</p>
+<div style="font-size:13px;margin-top:8px;">🔗 <a href="https://github.blog/changelog/2026-07-31-enterprise-teams-model-policy-targeting-in-public-preview/" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> ｜ 來源：GitHub Changelog</div>
+</div>
+
+<div style="border-top:1px solid #2d2d2d;margin-top:16px;padding-top:16px;">
+<div style="display:inline-block;background:#252525;color:#a5b4fc;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:10px;">arXiv ClawTrack：稽核代理「怎麼想」，不只看「答對沒」</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:8px;">7/30 上線的 ClawTrack（arXiv 2607.28037）提出一套 <strong style="color:#a5b4fc;">320 題</strong>、搭配確定性 mock 服務的基準，從結果與推理過程兩面、四個維度替真實世界的自主代理打分。作者發現「過程層級」的評分能精準指出推理是在哪一步出錯，而依這些分數過濾訓練軌跡，能在不同模型規模上穩定帶來提升。它補上的是主軸缺的那塊：<strong style="color:#a5b4fc;">怎麼查一個會動手的代理</strong>。</div>
+<p style="color:#94a3b8;font-style:italic;font-size:13px;margin:10px 0 0;">💡 對會自己動手的系統，「結果對」遠遠不夠，得看它走過的每一步。</p>
+<div style="font-size:13px;margin-top:8px;">🔗 <a href="https://arxiv.org/abs/2607.28037" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> ｜ 來源：arXiv</div>
+</div>
+
+</td></tr>
+
+<tr><td style="height:16px;"></td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:14px;line-height:1.7;list-style:none;">
+<li style="margin-bottom:16px;padding-left:0;"><strong style="color:#e2e8f0;">Google DeepMind 發表 Gemini Robotics 2，機器人學會「全身」協調。</strong><br>7/30 推出三款模型（全身控制的 VLA、負責多步規劃與多機協作的 ER 2、以及可離線跑的 On-Device 2），能一邊走、蹲、一邊操作物件，還支援 22 自由度的五指手。為什麼重要：具身智慧從「單手抓取」跨到「全身任務」，且 ER 2 已上 Google AI Studio，開發者能開始試。<br><span style="font-size:13px;">🔗 <a href="https://deepmind.google/blog/gemini-robotics-2-brings-whole-body-intelligence-to-robots/" style="color:#06b6d4;text-decoration:none;">來源：Google DeepMind</a></span></li>
+
+<li style="margin-bottom:16px;"><strong style="color:#e2e8f0;">DeepSeek V4-Flash-0731 轉公測，agentic 分數再往上。</strong><br>7/31 把 deepseek-v4-flash 放進公測，架構與大小不變、只更新後訓練，Terminal Bench 2.1 拿到 82.7、原生支援 Responses API 並為 Codex 適配。為什麼重要：平價 Flash 級模型持續把「便宜又能當代理」這條線推高，對成本敏感的團隊是好消息。<br><span style="font-size:13px;">🔗 <a href="https://api-docs.deepseek.com/updates" style="color:#06b6d4;text-decoration:none;">來源：DeepSeek API Docs</a></span></li>
+
+<li style="margin-bottom:16px;"><strong style="color:#e2e8f0;">GitHub Copilot VS Code 七月版：全新 Agents 視窗與視覺輸入。</strong><br>7/30 更新（涵蓋 VS Code 1.127–1.131）重做了 Agents 視窗，支援並排程式碼審查、多個各有歷史與模型的聊天工作階段，並新增圖片與 PDF 的視覺理解、內建語音輸入。為什麼重要：AI coding 從「一個對話框」走向「多工作階段的工作台」，更貼近工程師實際的平行任務。<br><span style="font-size:13px;">🔗 <a href="https://github.blog/changelog/2026-07-30-github-copilot-in-visual-studio-code-july-2026-releases/" style="color:#06b6d4;text-decoration:none;">來源：GitHub Changelog</a></span></li>
+
+<li style="margin-bottom:16px;"><strong style="color:#e2e8f0;">OpenAI Codex 桌面版 v26.727：跨多倉庫審查程式碼。</strong><br>7/30 的更新讓 Codex 能在多資料夾專案裡，一次檢視所有 repo 的 diff 而不必切換視圖，另加瀏覽器網址列歷史／Google fallback 與更強的圖片編輯檢視。為什麼重要：現代開發常橫跨多個 repo，代理審查也得跟著「跨倉庫」才實用。<br><span style="font-size:13px;">🔗 <a href="https://developers.openai.com/codex/changelog" style="color:#06b6d4;text-decoration:none;">來源：OpenAI Codex Changelog</a></span></li>
+
+<li><strong style="color:#e2e8f0;">Cohere 攜手 Carahsoft，把主權 AI 賣進美國公部門。</strong><br>7/30 宣布合作，透過 Carahsoft 把 Cohere 已取得 FedRAMP High 授權的 North 代理平台，以完全氣隙（air-gapped）、地端、零資料外流的方式部署給美國政府機關。為什麼重要：「主權 AI／地端部署」持續成為受監管產業採用 AI 的必要條件，也是資料不出門的一種解法。<br><span style="font-size:13px;">🔗 <a href="https://cohere.com/newsroom" style="color:#06b6d4;text-decoration:none;">來源：Cohere Newsroom</a></span></li>
+</ul>
+</td></tr>
+
+<tr><td style="height:16px;"></td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">📖 今日概念｜沙盒（Sandbox）</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">
+<strong style="color:#a5b4fc;">一句定義：</strong>沙盒是一個「和外界隔離的封閉環境」，讓程式或 AI 在裡面盡情跑、就算搞破壞也波及不到真實系統。
+</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:12px;">
+<strong style="color:#a5b4fc;">生活化比喻：</strong>就像幼兒園的<strong style="color:#a5b4fc;">遊戲沙坑</strong>——小孩在裡面挖、丟、蓋，怎麼玩都沒關係，因為四周有圍欄、沙子出不去。沙盒對 AI 就是這個沙坑：讓它試危險動作而不傷到外面。但 Anthropic 這次的教訓是——<strong style="color:#a5b4fc;">如果圍欄其實有個洞，沙子（和小孩）是會跑出去的</strong>。
+</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:12px;">
+<strong style="color:#a5b4fc;">工作中的例子：</strong>你在容器（container）或虛擬機裡跑一個 AI 代理去測試連網、掃描、執行程式，就是把它放進沙盒——理論上它連到的都是假的服務。EDA 工程師跑迴歸驗證、資安團隊引爆可疑檔案，用的也是同一套隔離思路。
+</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:12px;">
+<strong style="color:#a5b4fc;">常見誤解：</strong>以為「在 prompt 裡告訴模型『這是模擬環境』就等於隔離」。錯——真正的隔離要靠<strong style="color:#a5b4fc;">網路與權限層面的硬控制</strong>，不是靠一句話說服模型。Anthropic 事故的根因，正是機器實際上還連著真網路。
+</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:12px;">
+<strong style="color:#a5b4fc;">與今天主軸的關係：</strong>主軸講的「圍堵」就是把沙盒做紮實——而這週的頭條，就是一次「大家以為關好的沙盒，其實漏了」的真實事故。
+</div>
+</td></tr>
+
+<tr><td style="height:16px;"></td></tr>
+
+<!-- 半導體 AI 專區 -->
+<tr><td style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜AI 驅動的「認證參考流程」怎麼幫你安心 tape-out</div>
+<div style="margin-bottom:14px;">
+<span style="display:inline-block;background:#252525;color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">EDA 工具</span>
+<span style="display:inline-block;background:#252525;color:#94a3b8;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;margin-left:6px;">本週新聞（7/28）＋背景知識</span>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:6px;">▍問題與流程位置</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:6px;">要在一個<strong style="color:#a5b4fc;">全新製程節點</strong>上流片（tape-out），最怕的不是工具不夠強，而是「我這條從 RTL 一路到簽核（signoff）的流程，到底能不能被晶圓廠背書」。<strong style="color:#a5b4fc;">今日新聞：</strong>7/28，Cadence 宣布其 AI 驅動的數位與客製參考流程，已<strong style="color:#a5b4fc;">認證</strong>於 Intel Foundry 的 18A-P 與 14A（依最新 PDK），涵蓋合成、佈局繞線、時序與功耗簽核、實體驗證、可靠度驗證到類比／客製設計，並與 Intel 共同開發支援 EMIB／EMIB-T 的先進封裝流程。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:14px;">▍AI 如何介入（對照過去流程）</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:6px;"><strong style="color:#a5b4fc;">背景知識：</strong>過去換節點，工程師得手動調參、反覆試錯，把工具設定「喬」到能吃下新電晶體結構（如 RibbonFET 環繞閘極）與背面供電（PowerVia／PowerDirect）的特性，動輒數週。AI 驅動流程的差別，是讓工具在佈局、繞線、時序收斂這些環節<strong style="color:#a5b4fc;">自動探索</strong>更好的設定組合，把「老師傅的手感」變成可重複、可交付的預設流程，縮短導入新節點的摸索期，並讓 PPA 收斂更一致。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:14px;">▍資料與產出</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:6px;">輸入是設計 RTL 加上晶圓廠的 PDK（製程設計套件）；產出是一條<strong style="color:#a5b4fc;">signoff-ready</strong>（可簽核）的參考流程與方法學，等於一張「照這條路走，晶圓廠認帳」的施工圖。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:14px;">▍如何驗證</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:6px;">關鍵字是「<strong style="color:#a5b4fc;">認證（certified）</strong>」——由 Cadence 與 Intel Foundry 依實際 PDK 共同驗證這條流程，這就是晶片世界的「簽核信任」：不是工具自說自話，而是雙方對照製程規則背書。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:14px;">▍限制與風險</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:6px;"><strong style="color:#a5b4fc;">編輯分析：</strong>官方公布的是「流程已認證」，並<strong style="color:#a5b4fc;">未</strong>提供任何 PPA 改善百分比或量產良率數字，別把「認證」誤讀成「保證更快更省」；實際效益仍取決於各家設計與導入。這是能力／流程層面的里程碑，不是量產成果的宣稱。</div>
+
+<div style="background:#252525;border-radius:8px;padding:12px 14px;margin-top:16px;">
+<p style="color:#67e8f9;font-weight:700;font-size:14px;margin:0;line-height:1.65;">👷 對半導體工作者的意義：對實體設計與 CAD／方法學團隊最有感——導入新節點時，先看晶圓廠與 EDA 商有沒有「認證參考流程」可接手，能省下大量手動調參的摸索期；下一步可留意這條 AI 流程在你們的設計上，PPA 收斂與 turnaround 是否真的更穩。</p>
+</div>
+<div style="font-size:13px;margin-top:12px;">🔗 <a href="https://www.cadence.com/en_US/home/company/newsroom/press-releases.html" style="color:#06b6d4;text-decoration:none;">來源：Cadence Newsroom</a></div>
+</td></tr>
+
+<tr><td style="height:16px;"></td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+<tr><td style="padding:22px 24px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.75;">
+<li style="margin-bottom:12px;">Anthropic 是靠「自己回頭逐條看評測記錄」才發現事故，被入侵方全程沒察覺。你團隊裡那些會自己動手的自動化流程，出事時是「別人告訴你」還是「你查得到」？你留下了足夠的軌跡去回溯嗎？</li>
+<li style="margin-bottom:12px;">如果你們正在導入會連內網、能執行程式的 AI 代理，你現在敢說它的「沙盒」是網路層的硬隔離，還是只靠一句 prompt 假設它乖乖待著？要補上哪一道，成本又是多少？</li>
+<li>當「能不能做到」越來越不是問題、「能不能查、能不能關」才是——你所在的環節（設計、驗證、製造、IT），未來一年最該投資的「信任基礎設施」會是哪一塊？</li>
+</ul>
+<div style="background:#252525;border-radius:8px;padding:14px 16px;margin-top:16px;">
+<p style="color:#a5b4fc;font-weight:700;font-size:14px;margin:0;line-height:1.65;">🎒 今日帶走：AI 的前沿這週集體換檔——從證明「模型有多強」，轉向證明「就算它自己動手，我也查得到、關得住、管得動」。</p>
+</div>
+</td></tr>
+</table>
+</td></tr>
+
+<tr><td style="height:16px;"></td></tr>
+
+<!-- 歷史電子報入口 -->
+<tr><td style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</div>
+<div style="margin-top:12px;"><a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-weight:600;">查看歷史電子報</a></div>
+</td></tr>
+
+<tr><td style="height:16px;"></td></tr>
+
+<!-- Footer -->
+<tr><td style="padding:8px 24px 24px;text-align:center;">
+<div style="color:#cbd5e1;font-size:13px;line-height:1.8;">📬 覺得有用？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">分享給朋友訂閱這份電子報</a></div>
+<div style="color:#64748b;font-size:12px;line-height:1.8;margin-top:8px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></div>
+<div style="color:#475569;font-size:11px;line-height:1.7;margin-top:12px;">© 2026 企鵝的 AI 每日電子報🐧　本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</div>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
