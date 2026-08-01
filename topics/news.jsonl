@@ -180,3 +180,14 @@
 {"date": "2026-08-01", "title": "OpenAI Codex 桌面版 v26.727：跨多倉庫程式碼審查、瀏覽器與圖片編輯升級"}
 {"date": "2026-08-01", "title": "Cohere 攜手 Carahsoft：FedRAMP High 主權 AI（North）氣隙部署美國公部門"}
 {"date": "2026-08-01", "title": "Cadence AI 驅動參考流程認證 Intel 18A-P/14A：signoff-ready、支援 EMIB/EMIB-T（7/28）"}
+{"date": "2026-08-02", "title": "AI agent 體檢週：多篇研究量出真實生產任務落差（主軸）"}
+{"date": "2026-08-02", "title": "arXiv ORCA-bench：on-call 根因分析 agent 中等題 25.3%、難題 10%，最弱模型 40% 編造根因"}
+{"date": "2026-08-02", "title": "arXiv Sample More, Reflect Less：相同 token 成本下反思迴圈未穩定勝過重複取樣（1.5B–7B）"}
+{"date": "2026-08-02", "title": "arXiv Frontis-MA1：35B agent 在 MLE-Bench Lite 遞迴自我改進至 71.21%、逼近頂尖模型"}
+{"date": "2026-08-02", "title": "arXiv Echoverse：可進化訓練環境把電腦操作 agent 從 36.5% 拉到 67.1%"}
+{"date": "2026-08-02", "title": "🔄 後續追蹤：歐盟 AI 法 8/2 對通用 AI 模型正式行使執法權與透明度標記要求"}
+{"date": "2026-08-02", "title": "GitHub Copilot 淘汰 Gemini 2.5 Pro 與 Gemini 3 Flash（改用 3.1 Pro／3.6 Flash）"}
+{"date": "2026-08-02", "title": "OpenAI Codex 8/31 下架 GPT-5.4／5.4 mini（改用 GPT-5.6 Terra／Luna）"}
+{"date": "2026-08-02", "title": "npm 收緊 bypass-2FA 細粒度存取權杖、敏感操作須互動式 2FA"}
+{"date": "2026-08-02", "title": "Vercel AI SDK 7.0.45 加入實驗性 tool callers（streamText／ToolLoopAgent）"}
+{"date": "2026-08-02", "title": "arXiv：誘導模型宣稱有意識可回復更像人的心智歸因與價值觀（2607.28607）"}
