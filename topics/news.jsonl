@@ -191,3 +191,13 @@
 {"date": "2026-08-02", "title": "npm 收緊 bypass-2FA 細粒度存取權杖、敏感操作須互動式 2FA"}
 {"date": "2026-08-02", "title": "Vercel AI SDK 7.0.45 加入實驗性 tool callers（streamText／ToolLoopAgent）"}
 {"date": "2026-08-02", "title": "arXiv：誘導模型宣稱有意識可回復更像人的心智歸因與價值觀（2607.28607）"}
+{"date": "2026-08-03", "title": "OpenAI Agents SDK for Python v0.19.2：強化 guardrail 回報與 MCP/sandbox/voice 日誌防洩"}
+{"date": "2026-08-03", "title": "OpenAI Agents SDK for JS v0.14.2：保留沙盒 secret 參照、MCP 憑證遮蔽"}
+{"date": "2026-08-03", "title": "Windsurf Desktop v3.6.27：檔案編輯工具擋 symlink 寫入"}
+{"date": "2026-08-03", "title": "Cline v4.1.3：checkpoint 升級為整個工作區真正回捲"}
+{"date": "2026-08-03", "title": "Qwen Code v0.21.3：/review 加入 verification lenses 與 workflow agent 審批"}
+{"date": "2026-08-03", "title": "Vercel AI SDK ai@7.0.48：gateway 升級與 Fireworks error envelope 錯誤處理修正"}
+{"date": "2026-08-03", "title": "🔄 後續追蹤：歐盟 AI 法 8/2 對通用模型正式行使執法權、Article 50 透明度義務生效"}
+{"date": "2026-08-03", "title": "Google Cloud SQL for MySQL QueryData 加參數化 secure views（NL-to-SQL，Preview）"}
+{"date": "2026-08-03", "title": "美國白宮 EO：8/1 covered frontier models 網路能力分級基準內部交付期限"}
+{"date": "2026-08-03", "title": "Google Cloud SQL：Private Service Connect 連線調解預設開啟且不可停用"}
