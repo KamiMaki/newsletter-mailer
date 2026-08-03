@@ -201,3 +201,11 @@
 {"date": "2026-08-03", "title": "Google Cloud SQL for MySQL QueryData 加參數化 secure views（NL-to-SQL，Preview）"}
 {"date": "2026-08-03", "title": "美國白宮 EO：8/1 covered frontier models 網路能力分級基準內部交付期限"}
 {"date": "2026-08-03", "title": "Google Cloud SQL：Private Service Connect 連線調解預設開啟且不可停用"}
+{"date": "2026-08-04", "title": "沒有新模型的一週，AWS／Alibaba／NVIDIA 齊壓「跑 AI 的成本」"}
+{"date": "2026-08-04", "title": "AWS Bedrock 將 GPT-5.6 Luna 推論價砍 80%、Terra 砍 20%（自動生效）"}
+{"date": "2026-08-04", "title": "🔄 後續追蹤：Qwen3.8-Max 全面開放、下週釋出首個 Max 級開放權重（含 27B）"}
+{"date": "2026-08-04", "title": "NVIDIA：在共享 GPU 上跑多租戶隔離叢集（KAI Scheduler＋vCluster 提高利用率）"}
+{"date": "2026-08-04", "title": "NVIDIA Vera 儲存 benchmark：BlueField-4 加速加密／壓縮／完整性檢查"}
+{"date": "2026-08-04", "title": "Cursor 上線 Google Workspace 外掛，agent 直接讀寫 Gmail／Drive／日曆"}
+{"date": "2026-08-04", "title": "Claude Code v2.1.221 發布"}
+{"date": "2026-08-04", "title": "AWS 週報：CloudWatch 全託管 Prometheus、S3 Tables Iceberg V3 Variant、AWS Interconnect 多雲私連 GA"}
