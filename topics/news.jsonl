@@ -209,3 +209,13 @@
 {"date": "2026-08-04", "title": "Cursor 上線 Google Workspace 外掛，agent 直接讀寫 Gmail／Drive／日曆"}
 {"date": "2026-08-04", "title": "Claude Code v2.1.221 發布"}
 {"date": "2026-08-04", "title": "AWS 週報：CloudWatch 全託管 Prometheus、S3 Tables Iceberg V3 Variant、AWS Interconnect 多雲私連 GA"}
+{"date": "2026-08-06", "title": "AI 開始自己舉證：形式化證明成前沿模型信任錨（主軸）"}
+{"date": "2026-08-06", "title": "OpenAI Astra 用 Lean 4 解 10 道十年數學難題、sorry 數為 0、成本約 2000 美元"}
+{"date": "2026-08-06", "title": "Harmonic Aristotle：每步 Lean4 形式驗證、IMO 金牌級、VERINA 96.8%"}
+{"date": "2026-08-06", "title": "CircuitProver：Lean 4 agentic 硬體驗證＋可重用證明庫（arXiv 2607.27259）"}
+{"date": "2026-08-06", "title": "DAC 2026：Synopsys／Siemens／Cadence 推自我驗證 EDA agent（Calibre／Questa 當守門員）"}
+{"date": "2026-08-06", "title": "DeepMind AI Co-Mathematician：FrontierMath Tier 4 48%（背景，2026/05）"}
+{"date": "2026-08-06", "title": "Claude 8/5 當機 7.5 小時（Mythos5／Fable5／Opus5／Sonnet5，今年第 164 次）"}
+{"date": "2026-08-06", "title": "NVIDIA 開源 NOOA agent 框架：讓 agent 行為可測試／追蹤／稽核／治理"}
+{"date": "2026-08-06", "title": "GitHub Copilot 雲端 agent 可自訂推理層級、留言觸發自動化、大規模自訂程式碼掃描"}
+{"date": "2026-08-06", "title": "Harmonic 祭出 100 萬美元形式化研究補助計畫"}
