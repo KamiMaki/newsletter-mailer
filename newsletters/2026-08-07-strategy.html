@@ -1,0 +1,269 @@
+<div style="background:#0f0f0f;padding:24px 12px;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<div style="max-width:650px;margin:0 auto;">
+
+  <!-- Header -->
+  <div style="background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:12px 12px 0 0;padding:28px 24px;text-align:center;">
+    <div style="color:#fff;font-size:22px;font-weight:800;letter-spacing:0.5px;">🐧 企鵝的AI交易策略學習報</div>
+    <div style="color:rgba(255,255,255,0.9);font-size:13px;margin-top:6px;">2026-08-07（週五）｜BTC × 美股大盤｜策略學習報</div>
+  </div>
+
+  <!-- Disclaimer banner -->
+  <div style="background:#1a1a1a;border-bottom:1px solid #2a2a2a;padding:10px 20px;text-align:center;">
+    <span style="color:#f59e0b;font-size:12px;">⚠️ 本報純為交易紀律與思維訓練，非投資建議，不構成任何買賣邀約</span>
+  </div>
+
+  <!-- 今日總覽 -->
+  <div style="background:#1a1a1a;padding:22px 24px;">
+    <div style="color:#fff;font-size:16px;font-weight:700;margin-bottom:12px;">⚡ 今日總覽</div>
+    <ul style="color:#d1d5db;font-size:15px;line-height:1.7;margin:0;padding-left:20px;">
+      <li style="margin-bottom:8px;">BTC 今日（8/6）維持在 <strong style="color:#fbbf24;font-weight:700">$64,700</strong> 附近，貼近 <strong style="color:#fbbf24;font-weight:700">$65,000</strong> 壓力區反覆測試，現貨 ETF 連 3 日淨流入達 <strong style="color:#fbbf24;font-weight:700">$626M</strong></li>
+      <li style="margin-bottom:8px;">美股三大指數週四（8/6）集體收黑：S&amp;P 500 <strong style="color:#fbbf24;font-weight:700">-0.2%</strong>、那斯達克 <strong style="color:#fbbf24;font-weight:700">-0.1%</strong>，Sandisk、Western Digital 財報後暴跌 <strong style="color:#fbbf24;font-weight:700">13%~19%</strong> 拖累半導體股</li>
+      <li style="margin-bottom:8px;">10 年期公債殖利率回升至約 <strong style="color:#fbbf24;font-weight:700">4.61%</strong>，VIX 維持低檔約 <strong style="color:#fbbf24;font-weight:700">15.5</strong>，市場靜待今晚（台北時間）美國 7 月非農就業報告</li>
+      <li>今日策略學習：<strong style="color:#e2e8f0">均值回歸的進出場設計</strong>，搭配 Rulyfi「4880 萬組回測」研究，拆解同根 K 棒內進出場順序如何讓策略獲利瞬間翻盤</li>
+    </ul>
+  </div>
+
+  <!-- ═══ BTC 區塊 ═══ -->
+  <div style="background:#1a1a1a;padding:0 24px 22px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:20px;padding:6px 16px;margin:20px 0 16px;">
+      <span style="color:#fff;font-size:13px;font-weight:700;">₿ BTC 比特幣</span>
+    </div>
+
+    <div style="background:#252525;border-radius:10px;padding:16px 18px;margin-bottom:14px;">
+      <table style="width:100%;border-collapse:collapse;color:#d1d5db;font-size:13px;">
+        <tr style="border-bottom:1px solid #333;">
+          <td style="padding:6px 4px;color:#9ca3af;">區間</td>
+          <td style="padding:6px 4px;color:#9ca3af;">現價/變動</td>
+          <td style="padding:6px 4px;color:#9ca3af;">趨勢</td>
+          <td style="padding:6px 4px;color:#9ca3af;">關鍵點位</td>
+        </tr>
+        <tr style="border-bottom:1px solid #2a2a2a;">
+          <td style="padding:8px 4px;">日線</td>
+          <td style="padding:8px 4px;"><strong style="color:#fbbf24;font-weight:700">$64,700</strong>／約+0.7%</td>
+          <td style="padding:8px 4px;">貼近壓力，區間頂部</td>
+          <td style="padding:8px 4px;">壓力 $65,000</td>
+        </tr>
+        <tr style="border-bottom:1px solid #2a2a2a;">
+          <td style="padding:8px 4px;">週線</td>
+          <td style="padding:8px 4px;">較上週一(8/3 $63,850) <strong style="color:#fbbf24;font-weight:700">約+1.3%</strong></td>
+          <td style="padding:8px 4px;">區間震盪、動能未定</td>
+          <td style="padding:8px 4px;">$62,000-$65,000</td>
+        </tr>
+        <tr>
+          <td style="padding:8px 4px;">月線</td>
+          <td style="padding:8px 4px;">價格月增為正</td>
+          <td style="padding:8px 4px;">ETF 資金面轉強</td>
+          <td style="padding:8px 4px;">200 日均線區</td>
+        </tr>
+      </table>
+    </div>
+
+    <div style="color:#d1d5db;font-size:15px;line-height:1.7;margin-bottom:14px;">
+      <strong style="color:#e2e8f0">關鍵點位</strong>：支撐 <strong style="color:#fbbf24;font-weight:700">$62,000</strong>（本週低點區）／壓力 <strong style="color:#fbbf24;font-weight:700">$65,000</strong>（近期已兩度測試未破）；若進一步走弱，次要支撐看向心理關卡 $60,000。
+    </div>
+
+    <div style="color:#d1d5db;font-size:15px;line-height:1.7;margin-bottom:14px;">
+      <strong style="color:#e2e8f0">四視角</strong><br>
+      <strong style="color:#e2e8f0">順勢</strong>：本週從 $62,400 附近回升至 $64,700，短線動能轉強，但尚未<strong style="color:#fbbf24;font-weight:700">站上 $65,000</strong>，順勢訊號仍待確認。<br>
+      <strong style="color:#e2e8f0">均值回歸</strong>：若逼近 $65,000 後再度遭拒回落，符合近期區間震盪特徵，$62K-$65K 區間思維可能優於單邊突破押注。<br>
+      <strong style="color:#e2e8f0">突破</strong>：若站穩 $65,000，技術面打開挑戰區間上緣空間；若跌破 $62,000，則重新測試 $60,000。<br>
+      <strong style="color:#e2e8f0">宏觀</strong>：霍爾木茲海峽談判降低地緣風險溢價、ADP 就業數據疲弱（僅增 4.4 萬，遠低於預期 7.5 萬）降低 9 月升息機率，兩者共同撐住價格，但今晚非農數據公布可能重新放大波動。
+    </div>
+
+    <div style="color:#d1d5db;font-size:14px;line-height:1.7;margin-bottom:14px;">
+      <strong style="color:#e2e8f0">新聞</strong><br>
+      🔗 <a href="https://www.benzinga.com/crypto/cryptocurrency/26/08/60992849/bitcoin-etf-inflows-pick-up-to-626m-in-three-days-as-crypto-exec-says-zero-bank-liquidity-era-is-ending" style="color:#93c5fd;text-decoration:none;">美國現貨 BTC ETF 連 3 日淨流入達 $626M，BlackRock IBIT 三日吸金 $479M，8 月至今尚未出現單日淨流出</a><br>
+      🔗 <a href="https://www.coingabbar.com/en/crypto-currency-news/crypto-news-today-august-6-bitcoin-gains-defi-stablecoin-drops" style="color:#93c5fd;text-decoration:none;">儘管 BTC 價格企穩，鏈上情緒指數卻落在 Extreme Fear，DeFi 板塊單日重挫 38.7%、穩定幣規模同步下滑</a>
+    </div>
+
+    <div style="background:#252525;border-left:3px solid #f59e0b;border-radius:6px;padding:14px 16px;">
+      <div style="color:#f59e0b;font-size:13px;font-weight:700;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="color:#d1d5db;font-size:14px;line-height:1.7;margin:0;padding-left:18px;">
+        <li>ETF 資金流轉強不保證價格必漲，<strong style="color:#e2e8f0">鏈上情緒指數</strong>同時落在 Extreme Fear，別只看單一指標</li>
+        <li>$65,000 反覆測試不過，代表這不是隨便一次突破就能站穩，進場前先想好失敗時怎麼應對</li>
+        <li>今晚非農數據公布前維持<strong style="color:#e2e8f0">區間思維</strong>，比預設方向更符合目前的市場狀態</li>
+        <li>地緣政治與就業數據同時發酵，波動可能在數據公布後放大，部位大小要提前想清楚</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ═══ 美股大盤 ═══ -->
+  <div style="background:#1a1a1a;padding:0 24px 22px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:20px;padding:6px 16px;margin:20px 0 16px;">
+      <span style="color:#fff;font-size:13px;font-weight:700;">📊 美股大盤</span>
+    </div>
+
+    <div style="color:#d1d5db;font-size:15px;line-height:1.7;margin-bottom:10px;">
+      <strong style="color:#e2e8f0">SPY</strong>：收 <strong style="color:#fbbf24;font-weight:700">$768.56（-0.16%，8/6）</strong>，連兩日從週二（8/4）高點 $771.33 拉回獲利了結。
+    </div>
+
+    <div style="background:#252525;border-radius:10px;padding:16px 18px;margin-bottom:14px;">
+      <table style="width:100%;border-collapse:collapse;color:#d1d5db;font-size:13px;">
+        <tr style="border-bottom:1px solid #333;">
+          <td style="padding:6px 4px;color:#9ca3af;">區間</td>
+          <td style="padding:6px 4px;color:#9ca3af;">現價/變動</td>
+          <td style="padding:6px 4px;color:#9ca3af;">趨勢</td>
+          <td style="padding:6px 4px;color:#9ca3af;">關鍵點位</td>
+        </tr>
+        <tr style="border-bottom:1px solid #2a2a2a;">
+          <td style="padding:8px 4px;">SPY 日線</td>
+          <td style="padding:8px 4px;"><strong style="color:#fbbf24;font-weight:700">$768.56</strong>／-0.16%</td>
+          <td style="padding:8px 4px;">連兩日回落</td>
+          <td style="padding:8px 4px;">支撐 $757</td>
+        </tr>
+        <tr style="border-bottom:1px solid #2a2a2a;">
+          <td style="padding:8px 4px;">SPY 週線</td>
+          <td style="padding:8px 4px;">較上週(7/27 $739.09) <strong style="color:#fbbf24;font-weight:700">+4.0%</strong></td>
+          <td style="padding:8px 4px;">本週強彈後整理</td>
+          <td style="padding:8px 4px;">壓力 $771（近 ATH）</td>
+        </tr>
+        <tr>
+          <td style="padding:8px 4px;">SPY 月線</td>
+          <td style="padding:8px 4px;">較 7 月底($747.03) <strong style="color:#fbbf24;font-weight:700">+2.88%</strong></td>
+          <td style="padding:8px 4px;">8 月開局強勢</td>
+          <td style="padding:8px 4px;">站穩 200 日均線上方</td>
+        </tr>
+      </table>
+    </div>
+
+    <div style="color:#d1d5db;font-size:15px;line-height:1.7;margin-bottom:10px;">
+      <strong style="color:#e2e8f0">QQQ</strong>：收 <strong style="color:#fbbf24;font-weight:700">$714.65（-0.37%，8/6）</strong>，同步從週二(8/4)高點 $723.85 拉回。
+    </div>
+
+    <div style="background:#252525;border-radius:10px;padding:16px 18px;margin-bottom:14px;">
+      <table style="width:100%;border-collapse:collapse;color:#d1d5db;font-size:13px;">
+        <tr style="border-bottom:1px solid #333;">
+          <td style="padding:6px 4px;color:#9ca3af;">區間</td>
+          <td style="padding:6px 4px;color:#9ca3af;">現價/變動</td>
+          <td style="padding:6px 4px;color:#9ca3af;">趨勢</td>
+          <td style="padding:6px 4px;color:#9ca3af;">關鍵點位</td>
+        </tr>
+        <tr style="border-bottom:1px solid #2a2a2a;">
+          <td style="padding:8px 4px;">QQQ 日線</td>
+          <td style="padding:8px 4px;"><strong style="color:#fbbf24;font-weight:700">$714.65</strong>／-0.37%</td>
+          <td style="padding:8px 4px;">連兩日回落</td>
+          <td style="padding:8px 4px;">支撐 $700</td>
+        </tr>
+        <tr style="border-bottom:1px solid #2a2a2a;">
+          <td style="padding:8px 4px;">QQQ 週線</td>
+          <td style="padding:8px 4px;">較上週(7/27 $682.12) <strong style="color:#fbbf24;font-weight:700">+4.77%</strong></td>
+          <td style="padding:8px 4px;">本週強彈後整理</td>
+          <td style="padding:8px 4px;">壓力 $723-725</td>
+        </tr>
+        <tr>
+          <td style="padding:8px 4px;">QQQ 月線</td>
+          <td style="padding:8px 4px;">較 7 月底($687.99) <strong style="color:#fbbf24;font-weight:700">+3.87%</strong></td>
+          <td style="padding:8px 4px;">8 月開局強勢</td>
+          <td style="padding:8px 4px;">修復動能持續</td>
+        </tr>
+      </table>
+    </div>
+
+    <div style="color:#d1d5db;font-size:15px;line-height:1.7;margin-bottom:14px;">
+      <strong style="color:#e2e8f0">VIX</strong>：約 <strong style="color:#fbbf24;font-weight:700">15.5</strong>，明顯低於 20 心理關卡（VIX 是市場對未來 30 天波動的預期，數字越高代表恐慌情緒越濃），儘管大盤週四回落，恐慌情緒仍偏低迷。
+    </div>
+
+    <div style="color:#d1d5db;font-size:15px;line-height:1.7;margin-bottom:14px;">
+      <strong style="color:#e2e8f0">四視角</strong><br>
+      <strong style="color:#e2e8f0">順勢</strong>：本週強彈後連兩日回落，短線動能出現降溫跡象，順勢操作需留意是否進入整理期。<br>
+      <strong style="color:#e2e8f0">均值回歸</strong>：從高點拉回約 0.5%，符合強勢反彈後的正常獲利了結，尚未跌破關鍵支撐，拉回本身不必然是轉弱訊號。<br>
+      <strong style="color:#e2e8f0">突破</strong>：SPY 若重新站穩 $771 上方，技術面打開挑戰歷史新高空間；QQQ 若跌破 $700，則可能重新測試前波支撐。<br>
+      <strong style="color:#e2e8f0">宏觀</strong>：Sandisk、Western Digital 財報後暴跌拖累半導體類股，加上 10 年期公債殖利率回升至約 4.6% 施壓成長股估值，今晚非農就業報告是下一個關鍵變數。
+    </div>
+
+    <div style="color:#d1d5db;font-size:14px;line-height:1.7;margin-bottom:14px;">
+      <strong style="color:#e2e8f0">新聞</strong><br>
+      🔗 <a href="https://finance.yahoo.com/markets/live/stock-market-today-thursday-august-6-dow-sp-nasdaq-091620000.html" style="color:#93c5fd;text-decoration:none;">道瓊週四(8/6)下跌 0.9%、標普 500 跌 0.2%、那斯達克跌 0.1%，油價因霍爾木茲海峽談判反覆走升，10 年期公債殖利率同步回升</a><br>
+      🔗 <a href="https://www.marketscreener.com/news/sandisk-western-digital-drag-on-chip-stocks-as-lofty-expectations-eclipse-strong-earnings-ce7f50ddd88cf326" style="color:#93c5fd;text-decoration:none;">Sandisk、Western Digital 財報優於預期仍遭拋售，分別重挫 13.3%、19.1%，市場對 AI 資本支出與高估值疑慮升溫</a>
+    </div>
+
+    <div style="background:#252525;border-left:3px solid #6366f1;border-radius:6px;padding:14px 16px;">
+      <div style="color:#818cf8;font-size:13px;font-weight:700;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="color:#d1d5db;font-size:14px;line-height:1.7;margin:0;padding-left:18px;">
+        <li>財報優於預期不代表股價會漲，市場在乎的是<strong style="color:#e2e8f0">預期差</strong>，Sandisk、Western Digital 就是活教材</li>
+        <li>連兩日從高點拉回別急著當成反轉訊號，先確認<strong style="color:#e2e8f0">關鍵支撐</strong>有沒有被跌破</li>
+        <li>殖利率回升會壓抑成長股估值，留意 10 年期公債殖利率方向，不只看股價本身</li>
+        <li>今晚非農數據公布前，數據本身就是不確定性來源，部位大小該提前想清楚而非等結果出來才反應</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ═══ 今日策略學習 ═══ -->
+  <div style="background:#1a1a1a;padding:0 24px 22px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#8b5cf6,#6366f1);border-radius:20px;padding:6px 16px;margin:20px 0 16px;">
+      <span style="color:#fff;font-size:13px;font-weight:700;">📖 今日策略學習</span>
+    </div>
+
+    <div style="color:#fff;font-size:17px;font-weight:700;margin-bottom:8px;">均值回歸的進出場設計</div>
+    <div style="color:#9ca3af;font-size:14px;line-height:1.7;margin-bottom:14px;">
+      為什麼今天學這個：BTC 本週持續在 <strong style="color:#fbbf24;font-weight:700">$62,000-$65,000</strong> 區間來回測試，壓力位 $65,000 屢攻不過，正好練習「均值回歸策略該怎麼設計進出場規則」；今天讀到的 Rulyfi 研究更直接點出進出場設計中容易被忽略的「同根 K 棒成交順序」問題。
+    </div>
+
+    <div style="color:#d1d5db;font-size:14px;line-height:1.7;margin-bottom:14px;">
+      <strong style="color:#e2e8f0">核心概念</strong>
+      <ul style="margin:8px 0 0;padding-left:18px;">
+        <li style="margin-bottom:6px;">均值回歸不是看到偏離就進場，要先定義清楚「多遠的偏離」才算訊號</li>
+        <li style="margin-bottom:6px;">進場價與停損價若在同根 K 棒內都被觸及，歷史資料無法告訴你誰先成交</li>
+        <li style="margin-bottom:6px;">用「有利」或「不利」的成交假設回測，同一套策略獲利結果可能天差地遠</li>
+        <li>出場規則要在進場前就寫清楚，不是等行情走到眼前才臨時決定</li>
+      </ul>
+    </div>
+
+    <div style="background:#252525;border-left:3px solid #8b5cf6;border-radius:6px;padding:14px 16px;margin-bottom:14px;">
+      <div style="color:#a78bfa;font-size:13px;font-weight:700;margin-bottom:8px;">🎯 情境演練</div>
+      <div style="color:#d1d5db;font-size:14px;line-height:1.7;">
+        今天 BTC 現價約 <strong style="color:#fbbf24;font-weight:700">$64,700</strong>，貼近 $65,000 壓力反覆測試。若設計一套均值回歸策略：「偏離短期均線超過一定幅度即視為過熱，等回落至支撐 $62,000 附近才考慮進場」，同時把假設性停損設在跌破 $60,000 心理關卡——但如果某根 K 棒同時觸及 $62,000 進場價與 $60,000 停損價，歷史資料其實分不出誰先發生。這正是 Rulyfi 那篇 4880 萬組回測發現的問題：<strong style="color:#fbbf24;font-weight:700">82.54%</strong> 原本用「有利成交」假設判定獲利的策略，換成「不利成交」假設後就轉為虧損。這提醒我們，進出場規則設計不能只看回測的漂亮結果，要問一句「這套規則在最壞的成交順序下還撐得住嗎」。這是情境演練，不是進出場建議。
+      </div>
+    </div>
+
+    <div style="color:#d1d5db;font-size:14px;line-height:1.7;">
+      <blockquote style="margin:0;padding:12px 14px;background:#252525;border-left:3px solid #6366f1;border-radius:6px;">
+        💡 今日研究速讀：Rulyfi〈Does Your Backtest Survive the Adverse Same-Bar Fill? A 48.8 Million-Pair Stress Test〉，作者測試 4880 萬組策略配置，比較「先達標止盈」與「先觸發止損」兩種同 K 棒成交假設的差異，發現 <strong style="color:#e2e8f0">76.13%</strong> 的配置組合總報酬因假設不同而改變，高頻交易策略受影響最大。作者建議將策略分三類處理：兩種假設都賺錢的才進入實盤測試，只有單一假設賺錢的要用更細的分鐘或逐筆資料重新驗證，兩者都賠錢的直接淘汰。
+      </blockquote>
+      <div style="margin-top:8px;">🔗 <a href="https://rulyfi.com/blog/adverse-same-bar-fill" style="color:#93c5fd;text-decoration:none;">原文連結</a></div>
+    </div>
+  </div>
+
+  <!-- ═══ 今日交易紀律提醒 ═══ -->
+  <div style="background:#1a1a1a;padding:0 24px 22px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#10b981,#06b6d4);border-radius:20px;padding:6px 16px;margin:20px 0 16px;">
+      <span style="color:#fff;font-size:13px;font-weight:700;">🛡️ 今日交易紀律提醒</span>
+    </div>
+
+    <div style="color:#fff;font-size:15px;font-weight:700;margin-bottom:10px;">紀律主題：週末風險管理</div>
+    <div style="color:#d1d5db;font-size:15px;line-height:1.7;font-style:italic;margin-bottom:12px;padding:12px 14px;background:#252525;border-radius:6px;">
+      「週末風險不是週六日才開始的，是你今晚非農數字公布前，還沒把部位縮小的那一刻就已經開始了。」
+    </div>
+    <div style="color:#d1d5db;font-size:14px;line-height:1.7;">
+      應用情境：今晚（台北時間約晚間）美國 7 月非農就業報告即將公布，市場預期新增 <strong style="color:#fbbf24;font-weight:700">8 萬</strong> 個職位、失業率持平 <strong style="color:#fbbf24;font-weight:700">4.2%</strong>，而 ADP 數據本週已爆冷門（僅增 4.4 萬，遠低於預期 7.5 萬）。數據公布後緊接著就是流動性稀薄的週末——BTC 市場 24 小時不打烊，但週末成交量往往萎縮；美股更是直接休市兩天，沒有任何調整機會。今晚部位留多大，決定的是你整個週末睡不睡得著，而這個決定必須在數據公布「之前」做好，不是看到結果才反應。
+    </div>
+  </div>
+
+  <!-- 反思 -->
+  <div style="padding:0 24px 22px;">
+    <div style="background:linear-gradient(135deg,#10b981,#06b6d4);padding:1px;border-radius:12px;">
+      <div style="background:#1a1a1a;border-radius:11px;padding:18px;">
+        <div style="color:#fff;font-size:15px;font-weight:700;margin-bottom:10px;">💭 今日反思</div>
+        <ul style="color:#d1d5db;font-size:14px;line-height:1.8;margin:0;padding-left:18px;">
+          <li>如果今晚非農數據大幅不如預期，我現在的 BTC 與美股部位大小，能不能讓我照原計畫應對，而不是臨場砍單？</li>
+          <li>SPY、QQQ 連兩日從高點拉回，我有沒有把這當成「必須馬上離場」的訊號，還是先確認關鍵支撐有沒有被跌破？</li>
+          <li>我今天有沒有先想清楚「進出場規則」，還是等行情走到眼前才臨時決定要不要進場？</li>
+        </ul>
+        <div style="color:#6b7280;font-size:12px;margin-top:12px;">挑一題寫進交易日誌，這就是今天的功課。</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="background:#0f0f0f;border-top:1px solid #2a2a2a;padding:20px 24px;text-align:center;">
+    <div style="color:#6b7280;font-size:11px;line-height:1.8;">
+      資料截止：2026-08-06 美股收盤／2026-08-06 加密貨幣行情（來源與時間戳詳見內文連結）<br>
+      本報內容純為交易紀律與思維訓練之學習用途，不構成任何投資建議、招攬或買賣邀約，所有情境演練皆為假設性說明，非進出場建議。加密貨幣與美股交易存在高度風險，過去表現不代表未來結果，請自行判斷並承擔全部風險。<br>
+      本報為 Darren 的個人學習報，僅供個人學習使用。<br>
+      本信件由 AI 自動生成，內容可能有誤，請自行查證。<br>
+      © 2026 企鵝的AI交易策略學習報
+    </div>
+  </div>
+
+</div>
+</div>
