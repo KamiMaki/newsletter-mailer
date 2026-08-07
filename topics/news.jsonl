@@ -209,3 +209,11 @@
 {"date": "2026-08-04", "title": "Cursor 上線 Google Workspace 外掛，agent 直接讀寫 Gmail／Drive／日曆"}
 {"date": "2026-08-04", "title": "Claude Code v2.1.221 發布"}
 {"date": "2026-08-04", "title": "AWS 週報：CloudWatch 全託管 Prometheus、S3 Tables Iceberg V3 Variant、AWS Interconnect 多雲私連 GA"}
+{"date": "2026-08-08", "title": "AI 開始學會模擬物理世界：世界模型同一天走出兩座實驗室（主軸）"}
+{"date": "2026-08-08", "title": "Google DeepMind WeatherNext 登 Nature：三天颶風預報達過去兩天準度、多爭取一天預警"}
+{"date": "2026-08-08", "title": "DeepMind 開源 WeatherNext 權重（Apache 2.0，三版本含 Colab mini），NHC 已實戰 Melissa 颶風"}
+{"date": "2026-08-08", "title": "NVIDIA 把 Cosmos 世界模型接上 Omniverse Blueprints，擴大工廠／機器人採用與日本 Cosmos 聯盟"}
+{"date": "2026-08-08", "title": "Anthropic 鬆綁 Claude Fable 5 生物安全誤攔：日常健康／教育問題誤擋減約 85%，雙用途研究仍限制"}
+{"date": "2026-08-08", "title": "Kimi K3 開源模型進駐 GitHub Copilot（輸入3／輸出15／快取0.3 美元每百萬 token）"}
+{"date": "2026-08-08", "title": "GitHub Copilot 用量指標 API 新增統計 Claude／Codex 等夥伴 agent 在工作流內活動"}
+{"date": "2026-08-08", "title": "GitHub Copilot 程式碼審查 Lite／Balanced 深淺等級正式 GA"}
