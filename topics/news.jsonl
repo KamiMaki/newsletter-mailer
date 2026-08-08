@@ -209,3 +209,11 @@
 {"date": "2026-08-04", "title": "Cursor 上線 Google Workspace 外掛，agent 直接讀寫 Gmail／Drive／日曆"}
 {"date": "2026-08-04", "title": "Claude Code v2.1.221 發布"}
 {"date": "2026-08-04", "title": "AWS 週報：CloudWatch 全託管 Prometheus、S3 Tables Iceberg V3 Variant、AWS Interconnect 多雲私連 GA"}
+{"date": "2026-08-09", "title": "OpenAI ChatGPT 為 GPT-5.6 Sol 加上思考程度滑桿與 Think 按鈕、Free/Go 無限文字對話"}
+{"date": "2026-08-09", "title": "GitHub Copilot 程式碼審查力度分級 Lite/Balanced 正式 GA"}
+{"date": "2026-08-09", "title": "GitHub 企業受管設定新增 MCP 允許清單（allowedMcpServers/deniedMcpServers、fail-closed）"}
+{"date": "2026-08-09", "title": "Kimi K3 開源模型進駐 GitHub Copilot 全平台、企業版預設關閉"}
+{"date": "2026-08-09", "title": "Anthropic 強化 Fable 5 生物安全防護"}
+{"date": "2026-08-09", "title": "xAI Grok Build 放寬 bash 允許清單、加快 auto 模式核准"}
+{"date": "2026-08-09", "title": "NVIDIA Into the Omniverse：開放世界模型推進 Physical AI"}
+{"date": "2026-08-09", "title": "GitHub Issues 新增 Relates to 關聯與多選欄位 GA"}
