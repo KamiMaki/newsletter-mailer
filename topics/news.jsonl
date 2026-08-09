@@ -209,3 +209,12 @@
 {"date": "2026-08-04", "title": "Cursor 上線 Google Workspace 外掛，agent 直接讀寫 Gmail／Drive／日曆"}
 {"date": "2026-08-04", "title": "Claude Code v2.1.221 發布"}
 {"date": "2026-08-04", "title": "AWS 週報：CloudWatch 全託管 Prometheus、S3 Tables Iceberg V3 Variant、AWS Interconnect 多雲私連 GA"}
+{"date": "2026-08-10", "title": "AMD 收購 Taalas：把模型權重鑄進電晶體的模型專用 IC，HC1 用台積電 6nm 跑 Llama 3.1 8B 逼近每秒 1.7 萬 tokens"}
+{"date": "2026-08-10", "title": "Anthropic 自組客製矽晶團隊、要與模型共同設計硬體，傳評估 Samsung 2nm 與先進封裝"}
+{"date": "2026-08-10", "title": "Google DeepMind 大改組：Hassabis 卸 CEO 轉任主席兼 Alphabet 首席科學家、Kavukcuoglu 接掌營運"}
+{"date": "2026-08-10", "title": "OpenAI 讓免費/Go 用戶無限文字對話並加 Think 按鈕，付費層 GPT-5.6 Sol 統一即時與推論、加算力滑桿"}
+{"date": "2026-08-10", "title": "GitHub Copilot 程式審查 effort levels 正式上線、選取即審查與組織級自訂指令；Kimi K3 進入 Copilot"}
+{"date": "2026-08-10", "title": "Anthropic 強化 Fable 5 生物安全防護"}
+{"date": "2026-08-10", "title": "NVIDIA Omniverse 談開放世界模型推進實體 AI"}
+{"date": "2026-08-10", "title": "Google 老將 Jeff Dean、Sanjay Ghemawat 等出走創公益公司 Discovery Loop 自動化科研迴圈"}
+{"date": "2026-08-10", "title": "GitHub 企業版新增 MCP allowlist（企業受管設定控管可用 MCP 伺服器）"}
