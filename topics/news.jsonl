@@ -209,3 +209,15 @@
 {"date": "2026-08-04", "title": "Cursor 上線 Google Workspace 外掛，agent 直接讀寫 Gmail／Drive／日曆"}
 {"date": "2026-08-04", "title": "Claude Code v2.1.221 發布"}
 {"date": "2026-08-04", "title": "AWS 週報：CloudWatch 全託管 Prometheus、S3 Tables Iceberg V3 Variant、AWS Interconnect 多雲私連 GA"}
+{"date": "2026-08-12", "title": "巨腦退場、小隊伍上工：AI 從單一大模型轉向小而專的模型隊伍＋路由調度"}
+{"date": "2026-08-12", "title": "Meta 重返開源：Muse Glimmer（30B、Apache 2.0、可在單張消費級顯卡本地跑）"}
+{"date": "2026-08-12", "title": "NVIDIA Nemotron 3.5 Lightning（30B MoE）＋開源路由器 NeMo Switchyard"}
+{"date": "2026-08-12", "title": "Microsoft MAI-Code-1.1-Flash 上線 GitHub Copilot（比前代便宜 73%）"}
+{"date": "2026-08-12", "title": "GitHub Copilot for JetBrains 加入 Ollama BYOK 與 Copilot Memory"}
+{"date": "2026-08-12", "title": "Windsurf 後繼者 Devin Desktop v3.7.16 新增子代理（Subagents）區塊"}
+{"date": "2026-08-12", "title": "NVIDIA 攜六大金融機構撬動逾 5,000 億美元 AI 算力融資平台"}
+{"date": "2026-08-12", "title": "OpenAI 推資安專用 GPT-5.6-Cyber（Daybreak Red），抓出兩個 Chrome V8 零日 CVE-2026-15903"}
+{"date": "2026-08-12", "title": "NVIDIA 主張 AI 資料中心需改用 800V DC 電力架構"}
+{"date": "2026-08-12", "title": "n8n 2.35.0 預覽版：修正 AI Agent 節點行為與 Code 節點輸出遮罩"}
+{"date": "2026-08-12", "title": "GitHub Copilot 網頁版：對話可最小化＋顯示每則訊息 token 用量"}
+{"date": "2026-08-12", "title": "arXiv HINT：LLM 生成 RTL 加一層硬體意圖表示層才收斂（7/7 可合成、面積少 5-26%）"}
