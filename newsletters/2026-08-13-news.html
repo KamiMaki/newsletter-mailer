@@ -1,0 +1,194 @@
+<!-- 企鵝的 AI 每日電子報 2026-08-13 -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;margin:0;padding:0;">
+<tr><td align="center" style="padding:16px 10px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+
+<!-- ===== Header ===== -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px 16px 0 0;padding:28px 26px;">
+  <div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:.5px;">企鵝的 AI 每日電子報🐧</div>
+  <div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+  <div style="font-size:13px;color:#c7d2fe;margin-top:10px;">2026 年 8 月 13 日 · 星期四</div>
+</td></tr>
+
+<!-- ===== 30 秒重點 ===== -->
+<tr><td style="background:#1a1a1a;padding:22px 26px;">
+  <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+  <div style="background:#252525;border-radius:10px;padding:16px 18px;">
+    <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+      <li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>三大 AI 助理同步從「你問、它答」升級成「你說一句、它替你把整件事辦完」——Google Gemini 直接幫你訂位、叫車、買票，還一路推到十億月活與 Pixel 11。</li>
+      <li style="margin-bottom:10px;">Google：Gemini <strong style="color:#e2e8f0;">破 10 億月活</strong>（史上最快的產品），Made by Google 發表 <strong style="color:#e2e8f0;">Gemini 多步驟任務自動化</strong>，擴到 40+ App、在手機「虛擬視窗」裡替你操作。</li>
+      <li style="margin-bottom:10px;">xAI 發表 <strong style="color:#e2e8f0;">Grok 4.6</strong> 並接進 Cursor／Grok Build／API；OpenAI 一邊擴充 ChatGPT 語音上傳與 Projects、一邊把廣告測試推到英日韓等 5 國養算力。</li>
+      <li style="margin-bottom:10px;">其他：Anthropic Sonnet 5 促銷價 <strong style="color:#e2e8f0;">8/31 到期</strong>（9/1 回標準價）、Claude Code v2.1.228 修穩定性、Kimi K3 正式進 GitHub Copilot。</li>
+      <li>對半導體工作者最相關：這種「AI 自己做、留逐步紀錄給你複查」的人機分工，正是 EDA 驗證與晶圓缺陷檢測的方向——今天的專區就談這條線。</li>
+    </ul>
+  </div>
+</td></tr>
+
+<!-- ===== 今天的主軸 ===== -->
+<tr><td style="background:#1a1a1a;padding:6px 26px 22px;">
+  <div style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;padding:1px;">
+    <div style="background:#1a1a1a;border-radius:15px;padding:24px 22px;">
+      <div style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);color:#fff;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;">🎯 今天的主軸</div>
+      <div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin:14px 0 6px;">AI 助理這週集體跨過一條線：從「幫你查」變成「替你做、還讓你看著它做」</div>
+
+      <p style="color:#94a3b8;font-size:14px;line-height:1.7;margin:10px 0 18px;">用一個比喻貫穿今天：過去的 AI 像一位<strong style="color:#a5b4fc;">很會查資料的助教</strong>——你問它答，抄回來的功課還是得自己寫；這週它升級成<strong style="color:#a5b4fc;">幫你把整件事辦到好的特助</strong>——你說「幫我訂週五兩位晚餐」，它自己打開 OpenTable、挑時段、按下確認，你只要在旁邊看它做、必要時喊停。</p>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 4px;">▍共同變化</div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 12px;">過去 48 小時，Google、xAI、OpenAI 幾乎同時把「助理」往「<strong style="color:#a5b4fc;">會動手的代理人（agent）</strong>」推。Google 在 8/11 宣布 Gemini App <strong style="color:#a5b4fc;">突破 10 億月活</strong>，隔天 8/12 的 Made by Google 發表會就把主角讓給 <strong style="color:#a5b4fc;">Gemini 任務自動化</strong>：在美國，它能幫你訂餐廳、叫車、買票、甚至打電話跟店家預約，任務已從少數 App 擴到 <strong style="color:#a5b4fc;">40 多款 App</strong>（DoorDash、OpenTable、Ticketmaster、Otter.ai、Wix…）。</p>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 4px;">▍為什麼放在一起看</div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 12px;">因為三家指向同一個轉折，只是切入點不同：Google 打<strong style="color:#a5b4fc;">消費規模</strong>（十億人、裝進 Pixel 11），xAI 打<strong style="color:#a5b4fc;">開發者</strong>（Grok 4.6 直接接進 Cursor、Grok Build、API 讓 agent 寫程式、跑建置），OpenAI 則同時擴充 ChatGPT 讓它<strong style="color:#a5b4fc;">在你的檔案與專案裡多做一點</strong>（語音可上傳檔案、Projects），並用廣告養起這場燒錢的規模戰。單看一則像產品更新，三則疊起來就是一條清楚的產業主線。</p>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 4px;">▍過去 vs. 現在</div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 12px;">過去 Google Assistant 那套自動化靠的是<strong style="color:#a5b4fc;">預先寫死的意圖（intent）</strong>——工程師幫每個功能鋪好軌道，一離開軌道就卡住。現在 Gemini 改成<strong style="color:#a5b4fc;">直接看畫面、推理該按哪裡</strong>：它在手機裡開一個「虛擬視窗」，像人一樣操作 App，所以能對付沒有事先整合的介面。你的角色也從「自己點」變成「<strong style="color:#a5b4fc;">監工</strong>」——過程有即時通知可看進度，AI 代打的電話還留下逐字稿讓你複查，你隨時能接手或喊停。</p>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 4px;">▍背後邏輯</div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 12px;">技術上，這靠三塊拼圖到齊：模型能<strong style="color:#a5b4fc;">理解 UI 語意並決定下一步操作</strong>（也就是「computer use」，見今日概念）、與外部 App 的連結授權、以及<strong style="color:#a5b4fc;">端側算力</strong>（Pixel 11 換上 Tensor G6，官方稱能效提升約 20%）把常見任務就地處理、壓低延遲。商業上，Gemini 10 億月活與 OpenAI 廣告是同一件事的兩面：<strong style="color:#a5b4fc;">要讓 agent 替十億人辦事，就得先有十億人、再有錢付算力帳單</strong>。</p>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 4px;">▍對你的工作</div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 12px;">對工程與知識工作者，最實際的改變是<strong style="color:#a5b4fc;">「委派的單位」從一個問題變成一項任務</strong>。你不再是「問模型、複製答案、自己執行」，而是「交代任務、審查它做了什麼」。於是新的使用者介面重點不再是聊天框，而是<strong style="color:#a5b4fc;">權限、稽核軌跡（transcript）、隨時接手與否決權</strong>——這跟工程團隊如何導入 coding agent、乃至 EDA agent，是同一套治理問題。</p>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 4px;">▍限制與待驗證</div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 14px;">別急著全交出去：Gemini 任務自動化目前<strong style="color:#a5b4fc;">限美國、限特定 App</strong>，遇到陌生或改版的介面仍會出錯，所以官方才把「隨時接手／看逐字稿」做成標配——這代表信任還沒到位。xAI 這邊，Musk 稱 Grok 4.6「客觀第一」屬<strong style="color:#a5b4fc;">廠商宣稱</strong>，未經獨立評測，先別當定論。真正待驗證的是：<strong style="color:#a5b4fc;">出錯時能不能安全復原、拿到你帳號存取權的 agent 安不安全、規模化後可靠度會不會崩</strong>。</p>
+
+      <div style="background:#252525;border-radius:8px;padding:14px 16px;margin:6px 0 4px;">
+        <div style="font-size:12px;font-weight:700;color:#67e8f9;margin-bottom:6px;">👤 人物觀點／延伸解讀</div>
+        <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0;">Google 在十億用戶公告裡把目標寫成「讓 Gemini 成為最<strong style="color:#a5b4fc;">個人化、主動、強大的助理</strong>」——注意那個「主動（proactive）」，正是從「等你問」轉向「替你做」的官方定調。（來源：Google 官方部落格，屬公司立場，非中立評測。）</p>
+      </div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 4px;">▍重點一句話</div>
+      <p style="color:#f1f5f9;font-size:15px;line-height:1.7;margin:0 0 14px;font-weight:600;">2026 下半年的競賽不再是「誰的模型會回答」，而是「<strong style="color:#a5b4fc;">誰的模型敢替你按下確認鍵</strong>」——而且要讓十億人放心把手交出去。</p>
+
+      <div style="border-top:1px solid #333;padding-top:12px;font-size:13px;line-height:1.9;">
+        <a href="https://blog.google/innovation-and-ai/products/gemini-app/one-billion-monthly-users/" style="color:#06b6d4;text-decoration:none;">🔗 Gemini 破 10 億月活（Google 官方）</a><br>
+        <a href="https://blog.google/innovation-and-ai/products/gemini-app/android-multi-step-tasks/" style="color:#06b6d4;text-decoration:none;">🔗 Gemini 多步驟任務自動化（Google 官方）</a><br>
+        <a href="https://x.ai/news" style="color:#06b6d4;text-decoration:none;">🔗 Grok 4.6（xAI 官方）</a>
+      </div>
+    </div>
+  </div>
+</td></tr>
+
+<!-- ===== 主軸的衍生新聞 ===== -->
+<tr><td style="background:#1a1a1a;padding:6px 26px 10px;">
+  <div style="font-size:17px;font-weight:800;color:#ffffff;margin:8px 0 14px;">🔗 主軸的衍生新聞</div>
+
+  <div style="background:#252525;border-radius:12px;padding:18px 18px;margin-bottom:14px;">
+    <div style="display:inline-block;background:#312e81;color:#c7d2fe;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">🔗 衍生新聞</div>
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin:10px 0 8px;">Grok 4.6 一發表就接進 Cursor 與 Grok Build</div>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 8px;">xAI 在 8/12 發表 Grok 4.6，並<strong style="color:#a5b4fc;">同步上線 API、Cursor、Grok Build 與 Grok Bot</strong>，主打「智慧、速度、成本」的平衡。和主軸的關係：它把「替你做」下放到<strong style="color:#a5b4fc;">開發者的建置流程</strong>——agent 不只答問題，而是直接進 IDE 幫你改碼、跑建置。Musk 稱其「客觀第一」為廠商說法，未見獨立評測。</p>
+    <p style="color:#94a3b8;font-size:13px;font-style:italic;margin:0 0 8px;">💡 重點一句話：前沿模型正從「聊天視窗」搬進「工作工具鏈」，能不能嵌進 agent 流程，比跑分更決定它有沒有用。</p>
+    <a href="https://x.ai/news" style="color:#06b6d4;text-decoration:none;font-size:13px;">🔗 閱讀原文 ｜ 來源：xAI</a>
+  </div>
+
+  <div style="background:#252525;border-radius:12px;padding:18px 18px;margin-bottom:14px;">
+    <div style="display:inline-block;background:#312e81;color:#c7d2fe;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">🔗 衍生新聞</div>
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin:10px 0 8px;">ChatGPT 更新：語音可上傳檔案、Projects 更好用</div>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 8px;">OpenAI 在 8/12 更新 ChatGPT 的 App 體驗，<strong style="color:#a5b4fc;">語音模式可上傳檔案</strong>、Projects 與檔案／搜尋操作更順，Web、iOS、Android 同步。和主軸的關係：這是同一條「讓助理在<strong style="color:#a5b4fc;">你的檔案與專案裡多做一點</strong>」的路——不必離開對話就能把資料餵進去、讓它接著處理。</p>
+    <p style="color:#94a3b8;font-size:13px;font-style:italic;margin:0 0 8px;">💡 重點一句話：agent 化不只是「會操作外部 App」，也包括「把你的工作情境搬進對話裡」，讓交辦更少斷點。</p>
+    <a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" style="color:#06b6d4;text-decoration:none;font-size:13px;">🔗 閱讀原文 ｜ 來源：OpenAI Release Notes</a>
+  </div>
+
+  <div style="background:#252525;border-radius:12px;padding:18px 18px;">
+    <div style="display:inline-block;background:#312e81;color:#c7d2fe;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">🔗 衍生新聞</div>
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin:10px 0 8px;">Pixel 11 換 Tensor G6：把 agent 塞進你口袋</div>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 8px;">Made by Google 發表 Pixel 11 系列，全機採 <strong style="color:#a5b4fc;">Tensor G6</strong>，官方稱能效提升約 20%、瀏覽快約 25%。和主軸的關係：agent 要「替你做」，就得<strong style="color:#a5b4fc;">在裝置端就地跑常見任務</strong>以壓低延遲與雲端依賴——端側 AI 晶片是這場自動化能不能好用的隱形地基。</p>
+    <p style="color:#94a3b8;font-size:13px;font-style:italic;margin:0 0 8px;">💡 重點一句話：消費級 agent 的體驗上限，一半寫在模型裡、一半刻在手機的那顆 SoC 上。</p>
+    <a href="https://blog.google/products-and-platforms/products/gemini/" style="color:#06b6d4;text-decoration:none;font-size:13px;">🔗 閱讀原文 ｜ 來源：Google 官方部落格</a>
+  </div>
+</td></tr>
+
+<!-- ===== 其他快訊 ===== -->
+<tr><td style="background:#1a1a1a;padding:16px 26px;">
+  <div style="background:#252525;border-radius:12px;padding:18px 20px;">
+    <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+    <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:14.5px;line-height:1.7;">
+      <li style="margin-bottom:12px;"><strong style="color:#e2e8f0;">OpenAI 廣告測試擴到 5 國。</strong>ChatGPT 廣告自 8/11 起加開英國、墨西哥、巴西、日本、南韓，免費／Go 用戶會看到、付費方案不受影響。為什麼重要：這是 OpenAI 為十億級用戶找長期買單方式的關鍵一步，也定調「免費午餐」時代的收尾。<a href="https://openai.com/index/testing-ads-in-chatgpt/" style="color:#06b6d4;text-decoration:none;">🔗 來源：OpenAI</a></li>
+      <li style="margin-bottom:12px;"><strong style="color:#e2e8f0;">Anthropic Sonnet 5 促銷價 8/31 到期。</strong>官方確認 Claude Sonnet 5 的 $2／$10（每百萬 token）促銷價 8/31 結束，9/1 起回標準價 $3／$15。為什麼重要：正在用 Sonnet 5 跑量產工作流的團隊，這個月要重算成本與預算。<a href="https://claude.com/pricing" style="color:#06b6d4;text-decoration:none;">🔗 來源：Anthropic</a></li>
+      <li style="margin-bottom:12px;"><strong style="color:#e2e8f0;">Claude Code v2.1.228 穩定性修補。</strong>8/11 版本修好互動式 session 偶爾整個停止重繪、Windows 上找不到 git、以及 Remote Control /resume 洩漏對話標題等問題。為什麼重要：把 agent 放進日常終端機，穩定度與權限邊界比新功能更影響能不能放心用。<a href="https://code.claude.com/docs/en/changelog" style="color:#06b6d4;text-decoration:none;">🔗 來源：Claude Code Changelog</a></li>
+      <li style="margin-bottom:12px;"><strong style="color:#e2e8f0;">Kimi K3 正式進 GitHub Copilot。</strong>Moonshot 的開放權重模型 Kimi K3 在 Copilot 全面上線（Pro／Pro+／Max／Business／Enterprise），主打前沿級 agentic 編碼與高性價比。為什麼重要：開放權重模型正快速滲進主流開發工具，改變「用哪個模型寫程式」的預設。<a href="https://github.blog/changelog/" style="color:#06b6d4;text-decoration:none;">🔗 來源：GitHub Changelog</a></li>
+      <li><strong style="color:#e2e8f0;">Gemini 用量結構曝光。</strong>官方 10 億月活公告透露：<strong style="color:#e2e8f0;">63% 互動走語音</strong>、每天產生逾 1.5 億張圖、逾 1 億 iOS 用戶。為什麼重要：語音與影像已成主流入口，暗示下一波介面之爭在「說話與看圖」，不只是打字。<a href="https://blog.google/innovation-and-ai/products/gemini-app/one-billion-monthly-users/" style="color:#06b6d4;text-decoration:none;">🔗 來源：Google</a></li>
+    </ul>
+  </div>
+</td></tr>
+
+<!-- ===== 今日概念 ===== -->
+<tr><td style="background:#1a1a1a;padding:6px 26px 16px;">
+  <div style="background:#252525;border-radius:12px;padding:20px;">
+    <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">📖 今日概念｜Computer Use（讓 AI 直接操作介面）</div>
+
+    <p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0 0 12px;"><strong style="color:#a5b4fc;">一句定義：</strong>讓 AI 不只輸出文字，而是像人一樣「看螢幕、移游標、點按輸入」，直接操作 App 或網頁把任務做完的能力。</p>
+
+    <p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0 0 12px;"><strong style="color:#a5b4fc;">生活化比喻：</strong>過去的 AI 像一位會口述食譜的美食家，你還是得自己下廚；computer use 讓它變成願意捲袖進廚房的廚師——它盯著爐火（螢幕）、自己翻鍋鏟（點按）。回到技術：關鍵在模型能「<strong style="color:#a5b4fc;">理解畫面語意 + 決定下一步操作</strong>」，而不是呼叫預先寫死的接口。</p>
+
+    <p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0 0 12px;"><strong style="color:#a5b4fc;">工作中的例子：</strong>Gemini 在手機「虛擬視窗」裡打開 OpenTable 幫你訂位；coding agent 在終端機自己跑指令、看報錯、再改一版。</p>
+
+    <p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0 0 12px;"><strong style="color:#a5b4fc;">常見誤解：</strong>以為它靠廠商替每個 App 寫好整合（intent）。其實新一代是直接「看 UI、推理操作」，所以能對付沒預先整合的網站——但也因此更容易在陌生或改版的介面上出錯。</p>
+
+    <p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;"><strong style="color:#a5b4fc;">與今天主軸的關係：</strong>今天三家大廠推的「替你把事做完」，底層能力就是 computer use 從 demo 走向十億台手機——這也是為什麼「隨時接手／看逐字稿」會變成標配。</p>
+  </div>
+</td></tr>
+
+<!-- ===== 半導體 AI 專區 ===== -->
+<tr><td style="background:#1a1a1a;padding:6px 26px 16px;">
+  <div style="background:#252525;border-radius:12px;padding:20px;">
+    <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜晶圓缺陷檢測與良率分析</div>
+    <div style="margin-bottom:14px;">
+      <span style="display:inline-block;background:#0e7490;color:#cffafe;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;margin-right:6px;">IC 製造</span>
+      <span style="display:inline-block;background:#334155;color:#cbd5e1;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">背景知識</span>
+    </div>
+
+    <p style="color:#94a3b8;font-size:13px;line-height:1.7;margin:0 0 14px;font-style:italic;">承接今天主軸的「AI 自己做、留紀錄給你複查」——同一種人機分工，正在晶圓廠的檢測線上發生。以下為背景知識與編輯分析，非 48 小時內新聞；不含任何公司內部良率或機密數字。</p>
+
+    <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:12px 0 4px;">▍問題與流程位置</div>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px;">一片晶圓要走數百道製程，每一道都可能長出缺陷。傳統靠光學／電子束<strong style="color:#a5b4fc;">檢測（inspection）</strong>拍下海量影像，再由規則式演算法與工程師判讀。卡關點是：影像量太大、人工判讀慢，而且規則一遇到新型缺陷就失效，還常把無害的「雜訊缺陷（nuisance）」誤報成真缺陷。</p>
+
+    <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:12px 0 4px;">▍AI 如何介入</div>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px;">用深度學習影像模型做<strong style="color:#a5b4fc;">自動缺陷分類（ADC）</strong>，分辨真缺陷與雜訊，甚至抓出規則漏掉的新型態。與過去差異很清楚：過去靠人訂規則，一換製程就得重調；AI 從歷史晶圓資料學習，能把 <strong style="color:#a5b4fc;">layout 幾何特徵與良率下降關聯</strong>起來，在下線前就對「風險幾何」預警。業界近期走向「<strong style="color:#a5b4fc;">兩層</strong>」架構：邊緣端快速初篩、資料中心端做更重的關聯分析與良率預測，兼顧速度與深度（編輯分析）。</p>
+
+    <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:12px 0 4px;">▍資料與產出</div>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px;">輸入是 inspection／量測（metrology）影像、製程參數與歷史良率；產出是缺陷分類、真／假判定、風險 layout 預警與良率預測，回饋給製程整合與設計端。</p>
+
+    <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:12px 0 4px;">▍如何驗證</div>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px;">跟人工複判與實體<strong style="color:#a5b4fc;">失效分析（FA）</strong>的 ground-truth 比對，看召回率與誤報率；並要跨機台、跨批次確認 pilot 的表現能不能撐到全廠規模。</p>
+
+    <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:12px 0 4px;">▍限制與風險</div>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 14px;">最大瓶頸是<strong style="color:#a5b4fc;">資料品質與 metadata 一致性</strong>（併購後命名／標準不一，就餵不出乾淨訓練集）；pilot 好用不代表能規模化；模型會隨製程漂移、需持續再訓練；而且它不能取代 FA，只能加速初判。</p>
+
+    <p style="color:#67e8f9;font-size:14px;line-height:1.7;font-weight:700;margin:0;">👷 對半導體工作者的意義：缺陷檢測與良率工程師最該盯的，是「人機分工線」的移動——AI 接手初判、你負責複判與 corner case。可先在一條產線上做 nuisance filtering 的 A/B 驗證，建立召回／誤報基準，再談是否擴廠導入。</p>
+  </div>
+</td></tr>
+
+<!-- ===== 反思時間 ===== -->
+<tr><td style="background:#1a1a1a;padding:6px 26px 20px;">
+  <div style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;padding:1px;">
+    <div style="background:#1a1a1a;border-radius:15px;padding:22px;">
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+      <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:14.5px;line-height:1.75;">
+        <li style="margin-bottom:12px;">當助理從「回答」變成「替你按確認鍵」，你願意把哪些任務交出去、哪些堅持自己按？劃這條線的標準是什麼——<strong style="color:#a5b4fc;">可逆性、金額、還是責任歸屬</strong>？</li>
+        <li style="margin-bottom:12px;">如果 EDA／驗證／檢測的 agent 也走「自己做、留紀錄給你複查」這條路，你的團隊得先建立什麼（<strong style="color:#a5b4fc;">基準、稽核軌跡、否決權</strong>），才敢讓它跑在正式流程上？</li>
+        <li style="margin-bottom:6px;">消費級 agent 靠十億用戶攤平算力成本；企業與半導體 agent 用戶少、每次代價高。你認為「<strong style="color:#a5b4fc;">監督成本</strong>」會不會反而變成落地的真正瓶頸，而不是模型能力？</li>
+      </ul>
+      <p style="color:#a5b4fc;font-size:14.5px;font-weight:700;line-height:1.7;margin:16px 0 0;border-top:1px solid #333;padding-top:14px;">🎒 今日帶走：AI 這週集體跨過一條線——從「幫你查」變成「替你做、讓你看著它做」；誰能讓十億人放心把手交出去，誰就贏下一輪。</p>
+    </div>
+  </div>
+</td></tr>
+
+<!-- ===== 歷史電子報入口 ===== -->
+<tr><td style="background:#1a1a1a;padding:6px 26px 20px;">
+  <div style="background:#252525;border-radius:12px;padding:20px;text-align:center;">
+    <div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 12px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+    <a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-size:14px;font-weight:600;">查看歷史電子報</a>
+  </div>
+</td></tr>
+
+<!-- ===== Footer ===== -->
+<tr><td style="background:#0f0f0f;border-radius:0 0 16px 16px;padding:22px 26px;text-align:center;border-top:1px solid #252525;">
+  <p style="color:#cbd5e1;font-size:13.5px;line-height:1.7;margin:0 0 8px;">📬 覺得有用？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">分享並邀請朋友訂閱這份電子報</a></p>
+  <p style="color:#64748b;font-size:12.5px;line-height:1.7;margin:0 0 12px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></p>
+  <p style="color:#475569;font-size:12px;line-height:1.6;margin:0;">© 2026 企鵝的 AI 每日電子報🐧 · 本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源</p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
