@@ -209,3 +209,13 @@
 {"date": "2026-08-04", "title": "Cursor 上線 Google Workspace 外掛，agent 直接讀寫 Gmail／Drive／日曆"}
 {"date": "2026-08-04", "title": "Claude Code v2.1.221 發布"}
 {"date": "2026-08-04", "title": "AWS 週報：CloudWatch 全託管 Prometheus、S3 Tables Iceberg V3 Variant、AWS Interconnect 多雲私連 GA"}
+{"date": "2026-08-14", "title": "xAI Grok 4.6 發布：為 long-running agents 設計、會自我測試與驗證，價格維持 $2／$6"}
+{"date": "2026-08-14", "title": "Google Gemini 3.7 Flash 正式 GA：主打軟體工程、網頁開發與 agentic 工作流，同日進 GitHub Copilot"}
+{"date": "2026-08-14", "title": "DeepSeek V4-Pro GA（0813）：重大 Agent 升級、推論力度 low／high／max 可調、原生 Responses API 給 Codex"}
+{"date": "2026-08-14", "title": "GitHub Agent Plugins 1.0：跨 VS Code／Copilot CLI／Copilot app 的 agent 外掛標準"}
+{"date": "2026-08-14", "title": "Cursor Builds：預配置環境讓 Cloud Agent 開機快約 10 倍、首 token 快 3 倍"}
+{"date": "2026-08-14", "title": "arXiv 2608.12150：推論預算相依的模型排名反轉，56476 次推論實測、預算感知選模補回 14.1% 落差"}
+{"date": "2026-08-14", "title": "Claude Code v2.1.229／2.1.231：remote-control --continue、/commit-push-pr 不再自動核准危險 git 旗標"}
+{"date": "2026-08-14", "title": "Vercel AI SDK ai@7.0.65／5.0.236：修 readUIMessageStream 效率、陣列輸出 JSON Schema 根定義、onFinish 錯誤傳遞"}
+{"date": "2026-08-14", "title": "n8n v2.35.2／v2.34.5：proxy 逐跳套用 TLS、修正 outbox 啟用 trigger 的活化模式回報"}
+{"date": "2026-08-14", "title": "NVIDIA GeForce NOW 原生 Linux App 出 Beta：雲端遊戲串流支援 Linux 與 Chromebook"}

@@ -1,0 +1,255 @@
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;margin:0;padding:24px 12px;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<tr><td align="center">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;">
+
+<!-- Header -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;padding:28px 26px;">
+<div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#c7d2fe;margin-top:10px;">2026 年 8 月 14 日（週五）</div>
+</td></tr>
+
+<tr><td style="height:16px;"></td></tr>
+
+<!-- 30秒重點 -->
+<tr><td style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>這 48 小時三家（xAI、Google、DeepSeek）在同兩天內各丟一款前沿模型，賣點卻出奇一致——<strong style="color:#a5b4fc;">比的不是「誰更會聊天」，而是「誰更會當 agent」：能長時間自己跑、自己寫程式、還會回頭檢查自己。</strong></li>
+<li style="margin-bottom:10px;">xAI <strong style="color:#a5b4fc;">Grok 4.6</strong>（8/12）主打長時間任務，官方明說模型會「<strong style="color:#a5b4fc;">邊做邊自我測試、驗證，做完一步先檢查再繼續</strong>」，價格維持 $2／$6 不漲。</li>
+<li style="margin-bottom:10px;">Google <strong style="color:#a5b4fc;">Gemini 3.7 Flash 正式 GA</strong>（8/13）主打軟體工程與 agentic 工作流，同日就進 GitHub Copilot；DeepSeek <strong style="color:#a5b4fc;">V4-Pro GA</strong>（8/13）把「推論力度」做成 low／high／max 旋鈕，並原生接上給 Codex 用的 Responses API。</li>
+<li style="margin-bottom:10px;">其他快訊：GitHub Agent Plugins 1.0、Cursor 讓雲端 agent 開機快 10 倍、Claude Code 收緊危險 git 指令的自動核准、一篇 arXiv 研究實測「給多少推論預算，排行榜就翻盤」。</li>
+<li><strong style="color:#67e8f9;">對半導體工作者最相關：</strong>「模型學會自我檢查」正是 EDA 這幾年在做的事——Siemens 的 agentic 驗證流程讓 AI 每一步都回確定性引擎對答案，關鍵 sign-off 仍不交給 AI 猜。<strong style="color:#67e8f9;">agent 可以快，但要有硬裁判。</strong></li>
+</ul>
+</td></tr>
+
+<tr><td style="height:16px;"></td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+<tr><td style="padding:24px 24px;">
+<div style="display:inline-block;background:#252525;color:#a5b4fc;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;">🎯 今天的主軸</div>
+<div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-top:14px;">三家同兩天推新模型，比的都不是「聊天更聰明」，而是「當 agent 更能幹」——能自己跑很久、自己寫程式，還會回頭檢查自己</div>
+
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:16px;">
+把大型模型想成一位新進員工。過去兩年我們在挑的是「<strong style="color:#a5b4fc;">誰對答如流、誰知識最廣</strong>」——像面試時看誰回答漂亮。但這 48 小時三家丟出的新模型，考的是另一種能力：<strong style="color:#a5b4fc;">交給他一個要跑好幾個小時、分成幾十步的任務，他能不能自己盯著做完、中途不迷路、還會停下來檢查自己有沒有做錯。</strong>這個比喻要說回技術：前者是「單輪對話品質」，後者是「長時序自主任務（long-horizon agent）能力」——模型要能規劃、呼叫工具、讀寫程式碼庫、自我驗證，一路撐到任務結束。三款新模型的官方賣點，全押在後者。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍共同變化</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:8px;">
+8/12–8/13 這兩天，三則彼此無關的官方發布指向同一件事。<strong style="color:#a5b4fc;">xAI 的 Grok 4.6</strong>（8/12）官方描述直接寫著為「<strong style="color:#a5b4fc;">long-running agents</strong>」設計，強調在研究、分析、程式庫導航、應用開發等多步任務上能持續專注，更點名它會「<strong style="color:#a5b4fc;">邊做邊自我測試與驗證，做完一步先檢查自己再往下走</strong>」。<strong style="color:#a5b4fc;">Google 的 Gemini 3.7 Flash</strong>（8/13 正式 GA）官方點名的三個改進面全是工程取向：軟體工程、網頁開發、<strong style="color:#a5b4fc;">agentic 工作流</strong>，而且同一天就被放進 GitHub Copilot 的模型選單。<strong style="color:#a5b4fc;">DeepSeek 的 V4-Pro</strong>（8/13 GA）官方第一句就是「<strong style="color:#a5b4fc;">重大 Agent 升級、生產環境有實質提升</strong>」，還把推論力度拆成 low／high／max 三檔（官方註明 high 是「日常 Agent 工作流」的預設檔），並原生支援為 Codex 最佳化的 OpenAI Responses API。三家、三款模型、三份官方文案，講的是同一句話。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍為什麼放在一起看</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:8px;">
+因為它們不是三個孤立的版本號，而是同一個目標的三個側面：<br>
+· Grok 4.6 補的是<strong style="color:#a5b4fc;">「跑得久又不出錯」</strong>——用自我驗證撐住長任務的可靠度；<br>
+· Gemini 3.7 Flash 補的是<strong style="color:#a5b4fc;">「便宜又快、隨手可用」</strong>——把 agentic 能力放進最常被 agent 大量呼叫的輕量檔，同日就進開發者工具；<br>
+· DeepSeek V4-Pro 補的是<strong style="color:#a5b4fc;">「腦力可以按需分配」</strong>——把「要想多久」變成一顆旋鈕，讓 agent 在每一步自己決定花多少算力。<br>
+單看每一款都只是常規更新，但擺在一起就是一個清楚訊號：<strong style="color:#a5b4fc;">前沿模型的優化目標，正式從「對話」轉向「代理」。</strong>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍過去 vs. 現在</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:8px;">
+一年前，模型發表會拼的是 MMLU、拼考試分數、拼「一句問一句答」有多聰明。現在的官方新聞稿裡，關鍵字換成了 <strong style="color:#a5b4fc;">CursorBench、DeepSWE、agent workflow、self-verification</strong>——衡量的是「能不能獨立完成一件真實的多步工作」。Grok 4.6 秀的三個分數（CursorBench 69.9%、DeepSWE 65.9%、FrontierCode 61.3%）全是編碼與 agent 導向的評測，不是傳統知識題。指標換了，等於整個產業對「厲害」的定義換了：<strong style="color:#a5b4fc;">從「答得漂亮」變成「做得完」。</strong>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍背後邏輯</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:8px;">
+為什麼是現在？因為錢的流向變了。過去一年真正在放量、開始付費的 AI 應用，不是聊天視窗，而是<strong style="color:#a5b4fc;">會自己動手的 coding agent 與工作流自動化</strong>——Cursor、Copilot、Codex 這類產品把模型當「引擎」大量、反覆地呼叫。這對模型提出三個新要求：一是<strong style="color:#a5b4fc;">長任務要穩</strong>（跑一小時中途崩掉就前功盡棄，於是要自我驗證）；二是<strong style="color:#a5b4fc;">單位成本要低</strong>（agent 一次任務可能呼叫幾百次，貴一點都被放大，於是要輕量檔與可調力度）；三是<strong style="color:#a5b4fc;">要好接</strong>（於是原生支援 Responses API、直接進 Copilot 選單）。三款新模型，正好各自回應了這三題。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍對你的工作</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:8px;">
+三個可以立刻帶走的動作——（1）<strong style="color:#a5b4fc;">重新評估「模型選型」的維度</strong>：如果你的用途是 agent／自動化，別再只看聊天品質或知識分數，改看 coding 與 agent 評測、以及有沒有自我驗證機制。（2）<strong style="color:#a5b4fc;">把「推論力度」納入成本設計</strong>：像 DeepSeek 這種可調 low／high／max 的模型，簡單步驟用 low、關鍵步驟切 max，能在同一條 agent 流程裡把帳壓下來。（3）<strong style="color:#a5b4fc;">別假設「越大越強」</strong>：今天的研究（見下方衍生新聞）顯示，給多少推論預算會直接改變模型排名——先用你自己的任務、你打算給的預算跑一次，再決定用誰。
+</div>
+
+<div style="background:#252525;border-radius:8px;padding:12px;margin-top:18px;">
+<div style="color:#67e8f9;font-weight:700;font-size:13px;margin-bottom:6px;">👤 編輯分析／延伸解讀</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">
+值得玩味的是三家不約而同都在強調「<strong style="color:#a5b4fc;">自我檢查</strong>」這件事——Grok 4.6 會做完一步先驗證，DeepSeek 用 max 檔給難題更多思考餘裕。這其實承認了一個現實：<strong style="color:#a5b4fc;">模型跑得越久、越自主，出錯的機會就越被放大，因此「會不會檢查自己」比「單次多聰明」更決定 agent 能不能用。</strong>下面半導體專區會看到，EDA 產業早就把這條紀律做到更硬——每一步都回確定性引擎對答案。這是編輯分析、非官方結論。
+</div>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍限制與待驗證</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:8px;">
+一，官方賣點不等於落地表現——「為 agent 設計」是產品定位，實際能不能撐住你的長任務，仍要用自己的工作流實測。二，Grok 4.6 頁面上的分數（Index 61、CursorBench 69.9% 等）是 <strong style="color:#a5b4fc;">xAI 自家公布</strong>，第三方獨立評測與跨模型比較還需時間累積。三，DeepSeek V4-Pro 的部分 benchmark 在官方頁面是以圖片呈現、無法從文字逐字核對，本報只採用可從文字確認的能力描述與定價結構（尖離峰價 8/16 生效、離峰約低 50%）。<strong style="color:#a5b4fc;">「agent 化」是方向，但每一款仍要自己按計算機。</strong>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍重點一句話</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:8px;">
+這一輪模型競賽的評分標準已經換了：<strong style="color:#a5b4fc;">不再問「誰答得漂亮」，而是問「誰能自己跑完一件多步工作、還會回頭檢查自己」——選型維度、成本設計、驗證機制，都得跟著換。</strong>
+</div>
+
+<div style="margin-top:18px;border-top:1px solid #333;padding-top:14px;">
+<div style="color:#94a3b8;font-size:13px;line-height:1.9;">
+🔗 <a href="https://x.ai/news/grok-4-6" style="color:#06b6d4;text-decoration:none;">Grok 4.6｜xAI 官方（8/12）</a><br>
+🔗 <a href="https://ai.google.dev/gemini-api/docs/changelog" style="color:#06b6d4;text-decoration:none;">Gemini 3.7 Flash GA｜Google 官方 API changelog（8/13）</a><br>
+🔗 <a href="https://api-docs.deepseek.com/news/news260813" style="color:#06b6d4;text-decoration:none;">DeepSeek V4-Pro GA｜DeepSeek 官方（8/13）</a>
+</div>
+</div>
+
+</td></tr>
+</table>
+</td></tr>
+
+<tr><td style="height:16px;"></td></tr>
+
+<!-- 主軸的衍生新聞 -->
+<tr><td style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:6px;">🔗 主軸的衍生新聞</div>
+
+<div style="margin-top:14px;padding:14px 0;border-bottom:1px solid #2a2a2a;">
+<div style="display:inline-block;background:#252525;color:#a5b4fc;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:8px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;line-height:1.5;">GitHub Agent Plugins 1.0：把「幫 agent 加外掛」變成跨產品的標準</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:8px;">
+GitHub 8/12 推出 <strong style="color:#a5b4fc;">Agent Plugins 1.0</strong>，讓第三方外掛用同一套穩定模型，橫跨 VS Code、Copilot CLI 與 Copilot app 擴充 agent 能力。和主軸的關係：模型變得更 agent，工具側就得跟上——<strong style="color:#a5b4fc;">當大家都在寫會自己跑的 agent，「怎麼標準化地給它裝能力」就成了平台級的競爭點</strong>，這一步等於在替 agent 生態鋪水電。
+</div>
+<p style="color:#94a3b8;font-style:italic;font-size:13px;margin-top:8px;margin-bottom:6px;">💡 重點一句話：模型 agent 化的下一題，是「怎麼有規矩地幫 agent 裝外掛」。</p>
+<div style="color:#94a3b8;font-size:13px;">🔗 <a href="https://github.blog/changelog/2026-08-12-agent-plugins-1-0-in-vs-code-copilot-cli-and-the-copilot-app" style="color:#06b6d4;text-decoration:none;">閱讀原文｜GitHub Changelog（8/12）</a></div>
+</div>
+
+<div style="padding:14px 0;border-bottom:1px solid #2a2a2a;">
+<div style="display:inline-block;background:#252525;color:#a5b4fc;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:8px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;line-height:1.5;">Cursor Builds：讓雲端 agent 開機快 10 倍、首個 token 快 3 倍</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:8px;">
+Cursor 8/13 推出 <strong style="color:#a5b4fc;">Builds</strong>——預先配置好的開發環境，讓 Cloud Agent 一啟動就直接進入，官方稱環境開機<strong style="color:#a5b4fc;">快約 10 倍、首 token 產出快 3 倍</strong>，還會在最近變更弄壞環境時自動退回上一個成功版本。和主軸的關係：模型能長時間自主跑之後，瓶頸就從「模型夠不夠聰明」移到「<strong style="color:#a5b4fc;">agent 啟動與環境準備的摩擦</strong>」——基礎設施正在為 agent 的工作節奏重新調校。
+</div>
+<p style="color:#94a3b8;font-style:italic;font-size:13px;margin-top:8px;margin-bottom:6px;">💡 重點一句話：agent 變常態後，比的是「多快能讓它開始幹活」。</p>
+<div style="color:#94a3b8;font-size:13px;">🔗 <a href="https://cursor.com/changelog" style="color:#06b6d4;text-decoration:none;">閱讀原文｜Cursor Changelog（8/13）</a></div>
+</div>
+
+<div style="padding:14px 0;">
+<div style="display:inline-block;background:#252525;color:#a5b4fc;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:8px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;line-height:1.5;">研究：給多少「推論預算」，模型排名就翻盤</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:8px;">
+一篇 8/12 上線的 arXiv 論文跑了 <strong style="color:#a5b4fc;">56,476 次推論</strong>，在 4 個模型、3 個推理評測上，把 token 預算從 64 一路開到 4,096，發現<strong style="color:#a5b4fc;">模型排名會隨預算反轉</strong>（各評測 p&lt;0.01），甚至有 3–19% 的題目在預算變大時反而答錯；用「預算感知」的選模器可補回 14.1% 的最佳落差。和主軸的關係：當 DeepSeek 這類模型把推論力度做成旋鈕，「誰最強」就不再是固定答案——<strong style="color:#a5b4fc;">得綁著「你打算給多少算力」一起問。</strong>（研究結果＋編輯分析）
+</div>
+<p style="color:#94a3b8;font-style:italic;font-size:13px;margin-top:8px;margin-bottom:6px;">💡 重點一句話：選模型前，先問清楚「在我的預算下」誰最強。</p>
+<div style="color:#94a3b8;font-size:13px;">🔗 <a href="https://arxiv.org/abs/2608.12150" style="color:#06b6d4;text-decoration:none;">閱讀原文｜arXiv 2608.12150（8/12）</a></div>
+</div>
+
+</td></tr>
+
+<tr><td style="height:16px;"></td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:12px;"><strong style="color:#e2e8f0;">Claude Code v2.1.229／2.1.231：</strong>新增 <code style="color:#a5b4fc;">remote-control --continue</code> 續接最近的遠端遙控工作階段、自架 runner 的伺服器端 hook 支援。值得注意的是 <strong style="color:#a5b4fc;">/commit-push-pr 不再自動核准 --force／--amend／--no-verify 等危險 git 旗標</strong>——agent 越自主，越要在破壞性操作前留一道人為關卡。🔗 <a href="https://code.claude.com/docs/en/changelog" style="color:#06b6d4;text-decoration:none;">code.claude.com（8/12–8/13）</a></li>
+<li style="margin-bottom:12px;"><strong style="color:#e2e8f0;">Vercel AI SDK ai@7.0.65／5.0.236：</strong>修正 <code style="color:#a5b4fc;">readUIMessageStream</code> 的文字複製效率、保留陣列輸出的 JSON Schema 根定義，並把 chat <code style="color:#a5b4fc;">onFinish</code> 回呼的錯誤正確往上傳。做 AI 串流前端的人值得順手升級，避免吞掉錯誤。🔗 <a href="https://github.com/vercel/ai/releases" style="color:#06b6d4;text-decoration:none;">github.com/vercel/ai（8/13）</a></li>
+<li style="margin-bottom:12px;"><strong style="color:#e2e8f0;">n8n v2.35.2／v2.34.5：</strong>維運級更新，讓請求經過 proxy 時能<strong style="color:#a5b4fc;">逐跳套用 TLS 設定</strong>，並修正經 outbox 啟用的 trigger 活化模式回報。用 n8n 串自動化工作流、又走企業 proxy 的團隊要留意。🔗 <a href="https://github.com/n8n-io/n8n/releases" style="color:#06b6d4;text-decoration:none;">github.com/n8n-io/n8n（8/12–8/13）</a></li>
+<li><strong style="color:#e2e8f0;">NVIDIA GeForce NOW 原生 Linux App 出 Beta：</strong>雲端遊戲串流正式支援 Linux 與 Chromebook。雖是消費級消息，但它和主軸同一條底層邏輯——<strong style="color:#a5b4fc;">把重運算搬到雲端、讓輕薄端也能用</strong>，正是 agent／推論走向雲端服務化的另一面。🔗 <a href="https://blogs.nvidia.com/blog/geforce-now-thursday-linux-native-app/" style="color:#06b6d4;text-decoration:none;">blogs.nvidia.com（8/13）</a></li>
+</ul>
+</td></tr>
+
+<tr><td style="height:16px;"></td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">📖 今日概念｜推論力度（test-time compute / reasoning effort）</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;">一句定義</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:6px;margin-bottom:14px;">
+模型在回答時，可以選擇「<strong style="color:#a5b4fc;">想多久再答</strong>」——花更多 token 一步步推理，通常答得更準，但也更慢、更貴。這個「要投入多少思考」的量，就是推論力度。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;">生活化比喻</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:6px;margin-bottom:14px;">
+像考試時「<strong style="color:#a5b4fc;">要不要打草稿</strong>」。簡單題直接寫答案；難題先在草稿紙上一步步推導再落筆。DeepSeek V4-Pro 的 low／high／max 三檔，就是讓你決定「發給模型多大張草稿紙」。說回技術：那張草稿紙就是模型在推論期產生的<strong style="color:#a5b4fc;">中間推理 token</strong>——它不是憑空更聰明，而是被允許多想幾步。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;">工作中的例子</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:6px;margin-bottom:14px;">
+一條 agent 流程裡混著簡單與困難的步驟：讀檔案、抓欄位這種用 <strong style="color:#a5b4fc;">low</strong> 省錢又快；到了要規劃架構、除一個難纏的 bug，才切到 <strong style="color:#a5b4fc;">max</strong> 讓它慢慢想。同一個模型、按步分配腦力，帳單和品質同時顧到。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;">常見誤解</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:6px;margin-bottom:14px;">
+「<strong style="color:#a5b4fc;">力度開到最大一定最好</strong>」——不一定。今天那篇 arXiv 研究就實測到：把預算開大，反而有 3–19% 的題目答錯，模型間的排名也會翻盤。想太多有時會把原本對的答案「推翻成錯的」，也白花錢。力度是要「配題目」，不是「一律開滿」。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;">與今天主軸的關係</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:6px;">
+三款新模型不約而同把「想多久」變成可調旋鈕（DeepSeek 明著做成 low／high／max、Grok 用自我驗證在難處多花心思），正是因為 <strong style="color:#a5b4fc;">agent 要長時間跑，得能在每一步自己決定花多少算力</strong>——這是「模型 agent 化」在成本與品質上的具體體現。
+</div>
+</td></tr>
+
+<tr><td style="height:16px;"></td></tr>
+
+<!-- 半導體 AI 專區 -->
+<tr><td style="background:#1a1a1a;border-radius:14px;padding:22px 24px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜自我驗證的 agentic EDA：讓 AI 跑得快，但每一步都回引擎對答案</div>
+
+<div style="margin-bottom:14px;">
+<span style="display:inline-block;background:#252525;color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-right:6px;">EDA 工具</span>
+<span style="display:inline-block;background:#252525;color:#fbbf24;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">背景知識＋編輯分析</span>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;">▍問題與流程位置</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:6px;">
+今天主軸講「模型學會自我檢查」；把鏡頭轉到晶片設計的<strong style="color:#a5b4fc;">驗證與 sign-off</strong>，會發現 EDA 產業早就把這條紀律做到更硬。原因很現實：在這個環節，一個 bug 沒攔下來、流到光罩，就是一次幾百萬美元起跳的 re-spin。所以「AI 幫忙可以，但不能用猜的」是這裡的鐵律——這也正是 agent 化最難跨過的信任門檻。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:14px;">▍AI 如何介入</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:6px;">
+在 2026 年 7 月底的 DAC，Siemens EDA 與 NVIDIA 擴大合作、發表<strong style="color:#a5b4fc;">「自我驗證（self-verifying）」的 agentic 工作流</strong>：它的 Fuse EDA AI agent 每做一個決策，都會<strong style="color:#a5b4fc;">送回以物理法則為基礎的確定性 EDA 引擎重新驗算，確認無誤才往下一步</strong>；而在最關鍵的 Calibre sign-off，官方刻意保留確定性演算法，不讓 AI 的不確定性與幻覺進到決生死的環節。和過去流程的差別在於：過去導入 AI 的最大疑慮是「它會不會亂猜」，這套架構的答案是——<strong style="color:#a5b4fc;">讓 agent 負責『跑得快、探索多』，讓確定性引擎負責『每一步的對錯』</strong>，兩者分工。（此為 7 月底 DAC 官方發布之背景資訊，非今日新聞。）
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:14px;">▍資料與產出</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:6px;">
+輸入是 RTL、網表、版圖與各類設計規則；產出是<strong style="color:#a5b4fc;">經過確定性引擎背書的設計決策與驗證結果</strong>——不是「AI 覺得應該沒問題」，而是「DRC／LVS／timing 引擎算過、確認過」。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:14px;">▍如何驗證</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:6px;">
+EDA 的天然優勢是<strong style="color:#a5b4fc;">驗證訊號很硬</strong>：DRC／LVS、時序、功耗、形式驗證都有明確、可重現的地面真值。AI 的每一步建議都能立刻回這些引擎對答案，這也是為什麼 EDA 敢把 agent 接進來——它有一個客觀、不會被說服的裁判。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:14px;">▍限制與風險</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:6px;">
+一，官方把它框為<strong style="color:#a5b4fc;">工作流與架構</strong>，這則發布本身沒有給出硬 PPA 或週期時間數字，別把「示範」當成「已全面量產落地」。二，哪些環節敢交給 AI agent、哪些必須守住確定性，各家與各專案拿捏不同，是工程判斷而非一鍵設定。三，本段整合了官方發布與本報的類比觀察，屬編輯分析、非官方結論。
+</div>
+
+<p style="color:#67e8f9;font-weight:700;font-size:14px;line-height:1.6;margin-top:16px;">👷 對半導體工作者的意義：如果你在驗證、實體設計或 DFT，這正是主軸「模型學會自我檢查」在你領域的成熟版——可以讓 agent 加速探索與嘗試，但關鍵步驟一定要有<strong style="color:#a5b4fc;">可量測的硬引擎當裁判</strong>。值得動手的下一步：盤點你手上哪些步驟「有確定性引擎能立刻對答案」（那些最適合先交給 agent 加速），哪些沒有（那些先別急）。🔗 <a href="https://news.siemens.com/en-us/siemens-nvidia-dac-2026/" style="color:#06b6d4;text-decoration:none;">背景來源：Siemens 官方（DAC 2026，7/26）</a></p>
+</td></tr>
+
+<tr><td style="height:16px;"></td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+<tr><td style="padding:22px 24px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.75;">
+<li style="margin-bottom:12px;">當「厲害的模型」的定義從「答得漂亮」變成「能自己跑完一件多步工作」，你團隊現有的模型評測方式，是不是還停在問答式的比分？你會用哪一個真實工作流，來重新定義「夠好」？</li>
+<li style="margin-bottom:12px;">如果推論力度變成一顆可調旋鈕，而「開最大」不保證最好，你會用什麼機制決定「哪一步該多想、哪一步該省」？這個決策該交給工程師手動配，還是交給 agent 自己判斷——你敢放手到哪？</li>
+<li>EDA 用「每步回確定性引擎對答案」換來對 agent 的信任。回到你自己的工作，哪些環節有這種「客觀硬裁判」可以立刻驗證 AI 的輸出、哪些沒有？沒有硬裁判的環節，你會怎麼補上，才敢讓 agent 上場？</li>
+</ul>
+<p style="color:#a5b4fc;font-weight:700;font-size:15px;line-height:1.6;margin-top:16px;">🎒 今日帶走：這 48 小時的三款前沿模型，比的不是「更會聊天」，而是「更會當 agent」——能長時間自己跑、自己寫、還會回頭檢查自己；而「讓 agent 跑得快、但每一步都有硬裁判驗證」這條紀律，EDA 產業早已示範給整個 AI 世界看。</p>
+</td></tr>
+</table>
+</td></tr>
+
+<tr><td style="height:16px;"></td></tr>
+
+<!-- 歷史電子報入口 -->
+<tr><td style="background:#1a1a1a;border-radius:14px;padding:20px 24px;">
+<div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。<a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;">查看歷史電子報</a></div>
+</td></tr>
+
+<tr><td style="height:16px;"></td></tr>
+
+<!-- Footer -->
+<tr><td style="padding:18px 24px;text-align:center;">
+<div style="color:#94a3b8;font-size:13px;line-height:1.8;">📬 覺得有用？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">分享給朋友訂閱這份電子報</a></div>
+<div style="color:#64748b;font-size:12px;line-height:1.8;margin-top:8px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></div>
+<div style="color:#475569;font-size:11px;line-height:1.7;margin-top:12px;">© 2026 企鵝的 AI 每日電子報🐧　本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源</div>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
