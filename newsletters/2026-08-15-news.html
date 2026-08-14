@@ -1,0 +1,220 @@
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;margin:0;padding:24px 12px;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<tr><td align="center">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;">
+
+<!-- ===== Header ===== -->
+<tr><td style="padding:0 0 20px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:15px;">
+    <tr><td style="padding:28px 26px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+      <div style="font-size:13px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+      <div style="font-size:13px;color:#c7d2fe;margin-top:10px;font-weight:600;">2026 年 8 月 15 日（週六）</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 1. 30 秒重點 ===== -->
+<tr><td style="padding:0 0 18px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+      <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+        <li style="margin-bottom:10px;"><strong style="color:#ffffff;">今日主軸：</strong>Anthropic 今天把 Claude Code 的 <strong style="color:#a5b4fc;">auto mode 設成預設</strong>——AI 不再每一步都問你，只在「不可逆、破壞性、伸出環境外」的危險動作前才停下來。一份 1,053 位付費用戶的研究是催化劑：人類只攔下 <strong style="color:#a5b4fc;">13.6%</strong> 的危險指令，auto mode 攔到 <strong style="color:#a5b4fc;">89%</strong>。</li>
+        <li style="margin-bottom:10px;">同日 Anthropic 的《八月風險報告》說：Claude 已寫下自家<strong style="color:#a5b4fc;">「絕大多數」</strong>併入生產的程式碼，內部研發明顯變快，但公司對「AI 加速 AI 研發」這件事的風險評估，反而<strong style="color:#a5b4fc;">比以前更沒把握</strong>。</li>
+        <li style="margin-bottom:10px;">其他值得知道：Google 推出 <strong style="color:#e2e8f0;">Gemini 3.7 Flash</strong>、xAI <strong style="color:#e2e8f0;">Grok 4.6</strong> 兩天內就進駐 GitHub Copilot、IBM 與 OpenAI 結成企業落地聯盟。</li>
+        <li style="margin-bottom:10px;">冷水一杯：Deloitte 調查顯示 <strong style="color:#e2e8f0;">74%</strong> 企業兩年內要上 agentic AI，卻只有 <strong style="color:#e2e8f0;">21%</strong> 有成熟的治理機制——「放手」跑在「煞車」前面。</li>
+        <li>對半導體工作者最相關：同一股「放手給 agent」的浪潮，正以「<strong style="color:#67e8f9;">自主設計驗證 agent</strong>」的形式進到 EDA。你的角色，正從動手，轉向設目標與審核。</li>
+      </ul>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 2. 今天的主軸 ===== -->
+<tr><td style="padding:0 0 18px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+   <tr><td style="padding:1px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+     <tr><td style="padding:24px 24px 26px 24px;">
+      <div style="display:inline-block;background:#252525;color:#a5b4fc;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;margin-bottom:14px;">🎯 今天的主軸</div>
+      <div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-bottom:8px;">AI 從「幫你做」變成「預設放手做」——自主性跨過門檻，監督成了新戰場</div>
+
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:14px 0;">過去兩年，AI 寫程式的畫面是這樣的：它建議一段程式，跳出一個對話框問你「要執行嗎？」，你按下確認。今天，這個對話框大多不見了。變化不是某個模型突然變聰明，而是<strong style="color:#a5b4fc;">整個產業對「該不該每一步都問人」給出了新答案</strong>——而且答案指向同一個方向：預設放手，把人力從「逐格確認」挪到「設好禁區、盯著儀表板」。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:20px 0 6px 0;">▍共同變化</div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 10px 0;">今天有三則新聞指向同一件事。第一，<strong style="color:#a5b4fc;">Anthropic 從 8/14 起把 Claude Code 的 auto mode 設為 Pro／Max／Team 帳號的預設</strong>：AI 會自己往下做，只有在偵測到「不可逆、破壞性、或動作伸出你環境之外」時才停下來問。第二，同一天發布的《八月風險報告》承認 <strong style="color:#a5b4fc;">Claude 已寫下 Anthropic 內部「絕大多數」併入生產的程式碼</strong>。第三，OpenAI 也發表企業研究，說把 ChatGPT／Codex 真正拿去跑自主工作流的組織，正在拉開和「只把 AI 當聊天助理」的同業的差距。三件事拼起來：<strong style="color:#a5b4fc;">自主不再是選項，而是預設值。</strong></p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:20px 0 6px 0;">▍為什麼放在一起看</div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 10px 0;">因為它們回答的是同一個工程管理問題：<strong style="color:#a5b4fc;">當 AI 一天要做上百個動作，「人類逐一核准」還是不是有效的安全機制？</strong>Anthropic 的答案很直接。他們找 1,053 位付費用戶做對照實驗，埋進危險指令：<strong style="color:#a5b4fc;">人類手動審核只攔下 13.6%，auto mode 攔下 89%</strong>。原因不是人類判斷力差，而是「核准疲勞」——用戶習慣性地按掉了 <strong style="color:#a5b4fc;">97%</strong> 的提示。每步都問，反而讓人閉著眼睛蓋橡皮圖章。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:20px 0 6px 0;">▍過去 vs. 現在</div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 10px 0;">過去（human-in-the-loop，人在迴路裡）：AI 每做一步都等你點頭，安全感來自「你看過每一個動作」——但實際上你只是快速按過去。現在（human-on-the-loop，人在迴路之上）：AI 自己跑完整段任務，安全感改由三層來源——<strong style="color:#a5b4fc;">預設攔截高風險動作、提示注入的自動篩選、以及你事先寫好的「絕不放手」硬性禁止規則（hard deny）</strong>。你的注意力從「每一步」搬到「邊界與結果」。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:20px 0 6px 0;">▍背後邏輯</div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 10px 0;">這不只是產品好不好用的問題，而是一條商業與研發的正回饋。風險報告裡最關鍵的一句話是：Anthropic 說自家內部研發<strong style="color:#a5b4fc;">「明顯更快」</strong>（雖然還沒到兩倍），因為 Claude 在寫大部分的碼。當寫程式這道工序被大量交給 agent，逐步核准就成了整條流水線最慢的瓶頸——把它拿掉，速度才放得出來。放手，是為了讓這條正回饋轉得更快。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:20px 0 6px 0;">▍對你的工作</div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 10px 0;">對工程團隊，這是一次工作重心的搬家：你花在「看 AI 每一步」的時間會變少，花在「設定護欄、審查最終產物、維護 hard deny 清單」的時間會變多。對主管，這變成一道治理題——而多數公司還沒準備好。Deloitte《2026 企業 AI 現況》調查：<strong style="color:#a5b4fc;">74% 企業計畫兩年內部署 agentic AI，但只有 21% 有成熟的自主代理治理模型</strong>。放手的速度，遠快過建煞車的速度。</p>
+
+      <div style="background:#252525;border-radius:8px;padding:14px 16px;margin:18px 0;">
+        <div style="color:#818cf8;font-size:12px;font-weight:700;margin-bottom:6px;">👤 人物觀點／延伸解讀</div>
+        <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0;">Claude Code 負責人 <strong style="color:#a5b4fc;">Boris Cherny</strong> 說，團隊內部「只用 auto mode」，不會想回到手動核准的流程。<span style="color:#94a3b8;">（人物觀點，供理解趨勢，不代表對每個團隊都適用；高風險或受監管環境仍應自行評估放手邊界。）</span></p>
+      </div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:20px 0 6px 0;">▍限制與待驗證</div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 10px 0;">別把「放手」讀成「失控」，也別讀成「已解決」。幾個保留：一，89% vs 13.6% 是 Anthropic 自家、單一情境的對照實驗，換一種攻擊面或一個不設防的環境，數字未必一樣。二，風險報告自己承認：對「AI 加速 AI 研發」的風險評估<strong style="color:#a5b4fc;">「比以前更沒把握」</strong>，把模型錯位（misalignment）的風險從「非常低」上調到「低」，還說最具體的能力評測開始<strong style="color:#a5b4fc;">「飽和」</strong>——連他們都愈來愈難用既有指標判斷模型到底多強了（編輯分析）。三，「hard deny 清單由誰維護、誰為 agent 的錯誤負責」，目前沒有標準答案。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:20px 0 6px 0;">▍重點一句話</div>
+      <p style="color:#e2e8f0;font-size:15px;line-height:1.75;margin:0 0 14px 0;font-weight:600;">自主變成預設之後，工程師的價值從「多會動手」轉向「多會設界、多會審、多敢放、多快攔」。</p>
+
+      <div style="border-top:1px solid #333;padding-top:12px;font-size:13px;line-height:1.9;">
+        <div>🔗 <a href="https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/" style="color:#06b6d4;text-decoration:none;">Claude Code auto mode 預設開啟（8/14）</a> <span style="color:#64748b;">｜來源：TechCrunch／Anthropic</span></div>
+        <div>🔗 <a href="https://www.anthropic.com/responsible-scaling-policy" style="color:#06b6d4;text-decoration:none;">Anthropic 八月風險報告與負責任擴展政策</a> <span style="color:#64748b;">｜來源：Anthropic 官方</span></div>
+        <div>🔗 <a href="https://www.deloitte.com/global/en/issues/generative-ai/state-of-ai-in-enterprise.html" style="color:#06b6d4;text-decoration:none;">Deloitte《2026 企業 AI 現況》</a> <span style="color:#64748b;">｜來源：Deloitte 官方</span></div>
+      </div>
+     </td></tr>
+    </table>
+   </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 3. 主軸的衍生新聞 ===== -->
+<tr><td style="padding:0 0 6px 0;"><div style="font-size:17px;font-weight:800;color:#ffffff;padding:6px 4px 12px 4px;">🔗 主軸的衍生新聞</div></td></tr>
+
+<tr><td style="padding:0 0 14px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:20px 22px;">
+      <div style="display:inline-block;background:#252525;color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+      <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">Anthropic 風險報告：Claude 寫下自家絕大多數生產程式碼，評測開始「飽和」</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 8px 0;">在同日發布的《八月風險報告》裡，Anthropic 說最強的模型現在被<strong style="color:#a5b4fc;">大量用於內部研究與工程</strong>，Claude 寫下併入生產程式碼的「絕大多數」；它把 automated R&D 的整體風險仍評為「低」，卻明說自己<strong style="color:#a5b4fc;">「比以前更沒把握」</strong>。這正是主軸的另一面：放手的不只是外部用戶，前沿實驗室已經在用 AI 大量生產自己的下一代。</p>
+      <p style="color:#94a3b8;font-style:italic;font-size:14px;margin:0 0 10px 0;">💡 重點一句話：當連做出模型的人都說「評測快看不出模型多強了」，你更需要自己的判斷指標，而不是照抄榜單。</p>
+      <div style="font-size:13px;">🔗 <a href="https://www.anthropic.com/responsible-scaling-policy" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> <span style="color:#64748b;">｜來源：Anthropic 官方</span></div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:0 0 14px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:20px 22px;">
+      <div style="display:inline-block;background:#252525;color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+      <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">治理落差浮上檯面：想上 agentic 的很多，準備好煞車的很少</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 8px 0;">Deloitte《2026 企業 AI 現況》調查 3,235 位高階主管：<strong style="color:#a5b4fc;">74% 計畫兩年內部署自主代理，只有 21% 有成熟治理模型</strong>。Deloitte 也在 8/12 擴大 AI 控制與稽核（controls & assurance）服務。和主軸的關係：主軸講「放手已成預設」，這則講「放手的另一半——監督——大多數公司還沒建好」，兩者是同一枚硬幣的正反面。</p>
+      <p style="color:#94a3b8;font-style:italic;font-size:14px;margin:0 0 10px 0;">💡 重點一句話：先把審核與煞車機制建起來的公司，會在 agentic 浪潮裡跑得又快又穩；反之則是又快又危險。</p>
+      <div style="font-size:13px;">🔗 <a href="https://www.deloitte.com/us/en/about/press-room/deloitte-expands-end-to-end-ai-controls-and-assurance-capabilities.html" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> <span style="color:#64748b;">｜來源：Deloitte 官方</span></div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:20px 22px;">
+      <div style="display:inline-block;background:#252525;color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+      <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">Grok 4.6 兩天內進駐 GitHub Copilot，自主編碼 agent 遍地開花</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 8px 0;">xAI 的 <strong style="color:#a5b4fc;">Grok 4.6</strong>（8/12 發布）在 8/14 上架 GitHub Copilot 的八個開發面，也同時在 Cursor、OpenRouter、Vercel、Cloudflare 可用。外部評測 Artificial Analysis Intelligence Index 上，Grok 4.6 High 得 61 分，追平 OpenAI GPT-5.6 Sol Max、落後 Anthropic Fable 5 Max 一分。和主軸的關係：能自己動手的高階編碼 agent 選項愈來愈多、愈來愈便宜，「放手」的供給側正在快速變厚。</p>
+      <p style="color:#94a3b8;font-style:italic;font-size:14px;margin:0 0 10px 0;">💡 重點一句話：模型會被換掉，但你的護欄與審核流程會留下——把工程投資押在後者。</p>
+      <div style="font-size:13px;">🔗 <a href="https://github.blog/changelog/" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> <span style="color:#64748b;">｜來源：GitHub Copilot Changelog／xAI（評測數字為第三方 Artificial Analysis）</span></div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 4. 其他快訊 ===== -->
+<tr><td style="padding:0 0 18px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+      <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:14px;line-height:1.7;">
+        <li style="margin-bottom:13px;"><strong style="color:#e2e8f0;">Google 推出 Gemini 3.7 Flash（8/13）。</strong>平價高速款再迭代，主打更好的 token 效率與代理式規劃能力。旗艦 3.5 Pro 仍延宕之際，Google 靠平價款維持節奏與開發者黏著度。<span style="font-size:13px;">🔗 <a href="https://ai.google.dev/gemini-api/docs/changelog" style="color:#06b6d4;text-decoration:none;">Gemini API 更新紀錄</a></span></li>
+        <li style="margin-bottom:13px;"><strong style="color:#e2e8f0;">IBM 與 OpenAI 結成企業落地聯盟（8/14）。</strong>IBM 將在其顧問部門設立 OpenAI 專責團隊、培訓數千名顧問導入 OpenAI 模型與工具。象徵大型系統整合商正把「導入 agentic AI」變成一門正式生意。<span style="font-size:13px;">🔗 <a href="https://newsroom.ibm.com/" style="color:#06b6d4;text-decoration:none;">IBM Newsroom</a></span></li>
+        <li style="margin-bottom:13px;"><strong style="color:#e2e8f0;">白宮發布前沿 AI 網路安全測試自願框架（8/12）。</strong>要求開發者在部署前把模型送交機密的網安能力評估，評估標準本身不公開。政策訊號：政府開始把「前沿模型的攻防能力」當成國安層級議題處理。<span style="font-size:13px;">🔗 <a href="https://www.whitehouse.gov/" style="color:#06b6d4;text-decoration:none;">White House</a></span></li>
+        <li style="margin-bottom:13px;"><strong style="color:#e2e8f0;">Google DeepMind 手語轉文字（SL2T）模型進入正式產品（8/13）。</strong>可即時把手語翻成文字，服務聽障使用者，從研究 demo 走進真實應用。提醒我們 AI 的價值不只在寫程式，也在把可近用性做進日常工具。<span style="font-size:13px;">🔗 <a href="https://deepmind.google/blog/" style="color:#06b6d4;text-decoration:none;">DeepMind Blog</a></span></li>
+        <li><strong style="color:#e2e8f0;">AI 基建需求續熱：CoreWeave 第二季營收翻倍至 25.8 億美元（8/14）。</strong>積壓訂單（backlog）達 1,040 億美元；同時 NVIDIA 傳出用自家資產負債表替客戶購機擔保。訊號：算力仍供不應求，但「怎麼付錢」正變成整條供應鏈的新變數。<span style="font-size:13px;">🔗 <a href="https://investor.coreweave.com/" style="color:#06b6d4;text-decoration:none;">CoreWeave IR</a></span></li>
+      </ul>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 5. 今日概念 ===== -->
+<tr><td style="padding:0 0 18px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">📖 今日概念｜人在迴路之上（Human-on-the-loop）</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px 0;"><strong style="color:#a5b4fc;">一句定義：</strong>系統自己執行整段任務，人不逐步核准，而是「站在迴路之上」設定邊界、監看儀表板、必要時介入或喊停。相對於「人在迴路裡（human-in-the-loop）」每一步都等你點頭。</p>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px 0;"><strong style="color:#a5b4fc;">生活化比喻：</strong>就像從「駕訓班教練逐個動作喊『打方向燈、看後照鏡』」，升級成「你設好禁行區與速限，讓車自己開，你盯著儀表板，只在異常時接手」。技術上對應的差別是：安全感不再來自「你看過每一步」，而來自「你定義好了什麼絕不能做，加上系統自動攔截高風險動作」。</p>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px 0;"><strong style="color:#a5b4fc;">工作中的例子：</strong>Claude Code auto mode 就是典型——AI 自己讀檔、改碼、跑測試，只在「不可逆／破壞性／伸出環境外」時停下來問你。</p>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px 0;"><strong style="color:#a5b4fc;">常見誤解：</strong>以為「人在迴路裡」一定比較安全。今天的數據打臉這個直覺：當提示太多，人會習慣性蓋橡皮圖章（核准疲勞），逐步審核反而形同虛設——攔截率只有 13.6%。</p>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0;"><strong style="color:#a5b4fc;">與今天主軸的關係：</strong>主軸講的「放手成預設」，本質就是整個產業從 human-in-the-loop 集體搬家到 human-on-the-loop——連 EDA 的晶片驗證也在往這個方向走（見下一區）。</p>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 6. 半導體 AI 專區 ===== -->
+<tr><td style="padding:0 0 18px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜自主設計驗證 agent</div>
+      <div style="margin-bottom:14px;">
+        <span style="display:inline-block;background:#252525;color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">EDA 工具</span>
+        <span style="display:inline-block;background:#3b2f10;color:#fbbf24;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">背景知識</span>
+      </div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px 0;">▍問題與流程位置</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px 0;">設計驗證（Design Verification, DV）是 IC 設計最耗時的環節之一，常吃掉整個專案一半以上的工時。工程師要手寫 testbench、產生刺激（stimulus）、跑成千上萬次回歸模擬（regression）、盯覆蓋率（coverage）缺口、再一個個 debug。這裡的痛點很像主軸講的軟體開發：<strong style="color:#a5b4fc;">大量重複、需要判斷、但每一步都要人盯，人就成了瓶頸。</strong></p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px 0;">▍AI 如何介入</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px 0;">Synopsys 在 <strong style="color:#a5b4fc;">DAC 2026（7/26 官方發表，非本週新聞）</strong>展示與 NVIDIA 合作的「長時運行、全自主」設計驗證 agent：它自己編排整個驗證閉環——產生刺激 → 跑模擬 → 分析覆蓋率 → 定位 bug → 收斂。<strong style="color:#a5b4fc;">和過去差在哪？</strong>過去 AI 在 DV 只做點狀輔助（建議 assertion、分類 log、預測哪個 test 較可能失敗）；現在是 agent 自己跑完整條 loop、長時間無人值守——這正是晶片版的 human-on-the-loop。Synopsys 宣稱可達 <strong style="color:#a5b4fc;">最高 50 倍</strong>更快的 time-to-validated RTL、額外 <strong style="color:#a5b4fc;">20%</strong> 覆蓋率提升，自主 debug 收斂在早期評估中縮短 25–40% debug cycle。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px 0;">▍資料與產出</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px 0;">吃進：RTL、規格、覆蓋率模型、歷史回歸紀錄。產出：驗證過的 RTL、覆蓋率報告、bug 根因與修正建議。技術底層據官方為 NVIDIA Nemotron 模型、跑在其加速運算平台、以 OpenShell runtime 做隔離。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px 0;">▍如何驗證</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px 0;">用可量化指標把關：功能／程式碼覆蓋率是否達標、回歸通過率、以及 agent 的結果能否對照人工黃金標準（golden reference）。覆蓋率與回歸這類「客觀分數」，正好讓自主 agent 有明確的收斂目標。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px 0;">▍限制與風險</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px 0;">這些是<strong style="color:#a5b4fc;">官方發表與早期評估</strong>數字，不是大規模量產化的第三方實證；「50 倍」是特定 workflow 條件下的宣稱，不能直接外推到全流程（編輯分析）。複雜 corner case、安全關鍵設計仍需工程師最終簽核；也別把「探索中／研究成果」讀成「已全面導入」。</p>
+
+      <p style="color:#67e8f9;font-weight:700;font-size:14px;line-height:1.7;margin:14px 0 0 0;">👷 對半導體工作者的意義：DV 工程師的角色，正從「手寫每一個 test」轉向「設定驗證目標、審核 agent 的覆蓋率與最終簽核」——和主軸的 human-on-the-loop 完全同構。可先在非關鍵 IP block 試跑，並建立一份「agent 產出審核清單」，把你的專業變成守門而非划槳。</p>
+
+      <div style="border-top:1px solid #333;margin-top:14px;padding-top:10px;font-size:13px;">🔗 <a href="https://news.synopsys.com/2026-07-26-Synopsys-Showcases-Comprehensive-Autonomous-Engineering-Workflows-from-Silicon-to-Systems,-Developed-with-NVIDIA-Technology" style="color:#06b6d4;text-decoration:none;">Synopsys 官方新聞稿（DAC 2026）</a> <span style="color:#64748b;">｜來源：Synopsys 官方（背景知識，非 48 小時內新聞）</span></div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 7. 反思時間 ===== -->
+<tr><td style="padding:0 0 18px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+   <tr><td style="padding:1px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+     <tr><td style="padding:22px 24px;">
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+      <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:14px;line-height:1.75;">
+        <li style="margin-bottom:12px;">當連 Anthropic 都說評測「開始飽和」、看不太出這一版比上一版強在哪，你在自己的工作裡，會用哪一個「非榜單」指標，來判斷一個新模型值不值得換上生產線？</li>
+        <li style="margin-bottom:12px;">如果你的團隊把 agent 從「每步問你」切成「預設放手、只在危險時停」，你會把哪三種操作寫進「絕不放手」的 hard deny 清單？這份清單由誰維護、出事由誰負責？</li>
+        <li>74% 公司兩年內要上 agentic、卻只有 21% 有成熟治理——先建好審核與煞車的公司，會拉開多大差距？此刻你的組織，站在放手的那 74%、還是準備好的那 21%？</li>
+      </ul>
+      <p style="color:#a5b4fc;font-weight:700;font-size:14px;line-height:1.7;margin:16px 0 0 0;">🎒 今日帶走：自主不再是選項而是預設；真正的競爭力，正從「模型多會做」轉向「你多會設界、多會審、多敢放、多快攔」。</p>
+     </td></tr>
+    </table>
+   </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 歷史電子報入口 ===== -->
+<tr><td style="padding:0 0 18px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+    <tr><td style="padding:22px 24px;text-align:center;">
+      <div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+      <p style="color:#94a3b8;font-size:14px;line-height:1.7;margin:0 0 12px 0;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+      <a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-size:14px;font-weight:600;">查看歷史電子報</a>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== Footer ===== -->
+<tr><td style="padding:6px 8px 0 8px;text-align:center;">
+  <p style="color:#94a3b8;font-size:13px;line-height:1.7;margin:0 0 8px 0;">📬 覺得有幫助？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">分享給朋友訂閱這份電子報</a></p>
+  <p style="color:#64748b;font-size:12px;line-height:1.7;margin:0 0 12px 0;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></p>
+  <p style="color:#475569;font-size:11px;line-height:1.6;margin:0;">© 2026 企鵝的 AI 每日電子報🐧　本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
