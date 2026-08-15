@@ -209,3 +209,14 @@
 {"date": "2026-08-04", "title": "Cursor 上線 Google Workspace 外掛，agent 直接讀寫 Gmail／Drive／日曆"}
 {"date": "2026-08-04", "title": "Claude Code v2.1.221 發布"}
 {"date": "2026-08-04", "title": "AWS 週報：CloudWatch 全託管 Prometheus、S3 Tables Iceberg V3 Variant、AWS Interconnect 多雲私連 GA"}
+{"date": "2026-08-16", "title": "AI 力道旋鈕成主軸：DeepSeek/Qwen/Claude Code 同推推理力道與自主權控制"}
+{"date": "2026-08-16", "title": "DeepSeek V4-Pro GA：推理力道 low/high/max 三檔、尖峰離峰計價（離峰半價）、原生 Responses API/Codex"}
+{"date": "2026-08-16", "title": "🔄 後續追蹤：Qwen3.8-27B 開源權重發布（Apache 2.0、262K 上下文、reasoning_effort、單張 GPU、SWE-bench Pro 61.7）"}
+{"date": "2026-08-16", "title": "Claude Code 2.1.233：自動模式設為預設（分類器把關）、forward_user_identity 按人頭歸屬花費、Linux 記憶體 cgroup 上限、GitLab MR 支援"}
+{"date": "2026-08-16", "title": "OpenAI 預覽 Ultrafast：Cerebras 加速 GPT-5.6 Sol 每秒 750 token、快 14 倍（限量預覽、未公布價格）"}
+{"date": "2026-08-16", "title": "🔄 後續追蹤：Grok 4.6 進駐 GitHub Copilot（agentic coding、企業版預設關閉需管理員開啟）"}
+{"date": "2026-08-16", "title": "Anthropic 公開 Claude 文字浮水印運作原理（內容溯源）"}
+{"date": "2026-08-16", "title": "GitHub OAuth App 支援多重 redirect URI 與 token 更新（8 小時短效 token＋6 個月 refresh、最多 10 個 URI、GHES 3.23）"}
+{"date": "2026-08-16", "title": "NVIDIA 與 UGM/Indosat 在印尼開設首座大學 AI 中心（主權 AI、人才培育）"}
+{"date": "2026-08-16", "title": "Vercel AI SDK ai@7.0.66 與 @ai-sdk/xai@4.0.40（語音時間戳、串流狀態與型別修正）"}
+{"date": "2026-08-16", "title": "n8n 2.34.6 穩定版與 2.35.3 預覽版（Google Ads v21→v25、Teams OAuth 還原、同工作階段略過更新審批）"}

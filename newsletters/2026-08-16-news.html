@@ -1,0 +1,195 @@
+<!-- 企鵝的 AI 每日電子報 2026-08-16 -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;margin:0;padding:0;">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+
+<!-- ===== Header ===== -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px 16px 0 0;padding:32px 28px;">
+  <div style="font-size:26px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+  <div style="font-size:14px;color:#e0e7ff;margin-top:8px;">每日精選 AI 動態 · 讓你掌握未來</div>
+  <div style="font-size:13px;color:#c7d2fe;margin-top:14px;font-weight:600;">2026 年 8 月 16 日（週六）</div>
+</td></tr>
+
+<!-- ===== 30 秒重點 ===== -->
+<tr><td style="background:#1a1a1a;padding:24px 28px;">
+  <div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+  <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+    <li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>這週沒有「更強的新模型」搶版面，真正的共同動作是——大廠們不約而同把「AI 要多用力思考、你要給它多少自主權」做成一個<strong style="color:#a5b4fc;">你能親手轉的旋鈕</strong>。</li>
+    <li style="margin-bottom:10px;">DeepSeek V4-Pro 把推理力道拆成 <strong style="color:#e2e8f0;">low／high／max</strong> 三檔、並改成尖峰/離峰計價；Qwen3.8-27B 開源權重同樣內建 <strong style="color:#e2e8f0;">reasoning_effort</strong> 與思考開關，還能塞進單張 GPU。</li>
+    <li style="margin-bottom:10px;">Claude Code 把「自動模式」設為<strong style="color:#e2e8f0;">預設</strong>——從每步問你，改成分類器把關、只在不可逆動作時才停下來。</li>
+    <li style="margin-bottom:10px;">其他值得知道：OpenAI 預覽 Cerebras 加速的 <strong style="color:#e2e8f0;">Ultrafast</strong>（每秒 750 token）、Grok 4.6 進 GitHub Copilot、NVIDIA 在印尼開第一座大學 AI 中心。</li>
+    <li><strong style="color:#67e8f9;">對半導體工作者最相關：</strong>「推理力道」正是把本地小模型用在 RTL 生成、驗證與缺陷分析時，你拿來換算算力成本與品質的那個旋鈕。</li>
+  </ul>
+</td></tr>
+
+<!-- ===== 今天的主軸 ===== -->
+<tr><td style="padding:24px 12px 8px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+  <tr><td style="padding:1px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+    <tr><td style="padding:26px 26px 28px;">
+      <div style="display:inline-block;background:rgba(99,102,241,0.18);color:#a5b4fc;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;">🎯 今天的主軸</div>
+      <div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-top:16px;">這週的競爭焦點，從「模型多聰明」悄悄換成「你能多細地控制它的力道與自主權」</div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:22px;">▍共同變化</div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:8px 0 0;">攤開這 48 小時的官方發布，你會發現一件有趣的事：<strong style="color:#a5b4fc;">沒有人在比誰家模型更聰明</strong>，反而三家不同陣營同時在做同一件事——把「AI 要花多少力氣思考、你要放手讓它做到哪」變成一組明確的參數。DeepSeek 把推理力道切成 <strong style="color:#a5b4fc;">low／high／max</strong>；Qwen 的開源 27B 同樣有 <strong style="color:#a5b4fc;">reasoning_effort</strong> 檔位加一個「要不要思考」的開關；而 Claude Code 乾脆把「自動模式」設成預設，讓你決定要盯每一步、還是只在危險動作前踩煞車。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍為什麼放在一起看</div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:8px 0 0;">單看任何一則，都只是某家公司的小更新；擺在一起，才看得出方向：<strong style="color:#a5b4fc;">2026 下半年，模型能力已經逼近「夠用」，戰場正在往『可控性』移動</strong>。當一個 agent 任務可能燒掉幾十萬 token、還可能自己去改你的檔案，客戶要的不再是「再聰明 5 分」，而是「讓我能精準控制它花多少錢、冒多大風險」。力道旋鈕與自主權旋鈕，就是廠商交到你手上的兩個控制桿。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍過去 vs. 現在</div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:8px 0 0;">過去你叫模型辦事，它<strong style="color:#a5b4fc;">一律用同一種力氣</strong>回答——簡單問題浪費算力、難題又想得不夠深；agent 工具則是每一步都跳出來問你「可以嗎？」，盯到手軟。現在，同一顆模型你可以對雜事開 low、對日常 agent 開 high、對硬題開 max；agent 也能改成「你信得過的動作自己做，只有要刪東西、要連外網時才停下來問」。<strong style="color:#a5b4fc;">從一個固定檔位，變成一排你能隨任務調的旋鈕。</strong></p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍背後邏輯</div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:8px 0 0;">技術上，這靠的是「<strong style="color:#a5b4fc;">測試時計算（test-time compute）</strong>」——模型回答前可以先產生一段「思考」草稿，草稿愈長、通常想得愈周全，但也愈慢愈貴。把這段草稿的長度做成 low/high/max 檔位，就成了推理力道旋鈕。商業上，這一步很關鍵：DeepSeek 同時把 V4-Pro 改成<strong style="color:#a5b4fc;">尖峰/離峰計價</strong>（離峰是尖峰的一半），等於明白告訴你「力道與時段都會影響帳單」——控制力道，就是控制成本。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍對你的工作</div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:8px 0 0;">如果你在導入 AI 到工程流程，這三則合起來給你一份實用清單：<strong style="color:#a5b4fc;">（1）把任務分級</strong>——例行格式轉換用 low、跑 agent 用 high、卡關的難題才開 max，別再一律全開燒錢；<strong style="color:#a5b4fc;">（2）自主權分層</strong>——讀取/分析類動作放手給 auto，會動到檔案、送資料出去的動作保留人工確認；<strong style="color:#a5b4fc;">（3）留意 Qwen 27B 這種能跑在單張 GPU、又帶力道旋鈕的開源模型</strong>，對不能把程式碼送上雲的團隊特別有價值。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍限制與待驗證</div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:8px 0 0;">別把旋鈕當萬靈丹。<strong style="color:#a5b4fc;">力道開到 max 不等於一定更準</strong>——研究顯示在知識密集型（要查事實）的任務上，多想並不會補上模型不知道的東西，只是更慢更貴（編輯分析）。自主權也一樣：Claude Code 的自動模式據稱靠分類器攔下大多數有害動作，但那組「攔截率」數字目前<strong style="color:#a5b4fc;">來自單一測試、尚未經第三方交叉驗證</strong>，正式上線前不宜當定論。DeepSeek 的離峰價雖然便宜一半，但它是「拉高後的尖峰再打對折」，整體單價其實比舊的統一價高——省不省，要自己算。</p>
+
+      <div style="background:#252525;border-radius:8px;padding:14px 16px;margin-top:20px;">
+        <div style="color:#67e8f9;font-size:12px;font-weight:700;margin-bottom:6px;">👤 延伸解讀（人物觀點）</div>
+        <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0;">Qwen 團隊在 Hugging Face 模型卡上把 27B 定位為「在單張 GPU 上逼近前沿」的開源模型，官方數據 SWE-bench Pro 61.7、OSWorld 84.3，貼近 Claude Sonnet 5（63.2／81.2）。這是<strong style="color:#a5b4fc;">官方自評數據</strong>，尚待第三方獨立評測複現，但方向清楚：可本地部署、可調力道的開源模型，正在把「前沿能力」搬進你自己的機房。</p>
+      </div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍重點一句話</div>
+      <p style="color:#e2e8f0;font-size:15px;line-height:1.7;margin:8px 0 0;font-style:italic;">2026 下半年的 AI 產品，不再只賣「更聰明」，而是把「多用力、多自主、多快、多貴」交到你手上——學會轉這幾個旋鈕，比追每一顆新模型更划算。</p>
+
+      <div style="margin-top:18px;font-size:13px;line-height:1.9;">
+        <div>🔗 <a href="https://api-docs.deepseek.com/news/news260813/" style="color:#06b6d4;text-decoration:none;">DeepSeek V4-Pro 發布與計價</a> <span style="color:#64748b;">｜來源：DeepSeek API Docs</span></div>
+        <div>🔗 <a href="https://huggingface.co/Qwen/Qwen3.8-27B" style="color:#06b6d4;text-decoration:none;">Qwen3.8-27B 開源權重模型卡</a> <span style="color:#64748b;">｜來源：Hugging Face / Qwen</span></div>
+        <div>🔗 <a href="https://code.claude.com/docs/en/changelog" style="color:#06b6d4;text-decoration:none;">Claude Code 更新紀錄</a> <span style="color:#64748b;">｜來源：Anthropic</span></div>
+      </div>
+    </td></tr>
+    </table>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 主軸的衍生新聞 ===== -->
+<tr><td style="background:#1a1a1a;padding:24px 28px;border-radius:16px;">
+  <div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:6px;">🔗 主軸的衍生新聞</div>
+
+  <div style="border-top:1px solid #2f2f2f;padding-top:16px;margin-top:14px;">
+    <div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">🔗 衍生新聞</div>
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:10px;">OpenAI 預覽 Ultrafast：GPT-5.6 Sol 衝到每秒 750 token</div>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:8px 0 0;">OpenAI 與 Cerebras 合作推出限量預覽的「Ultrafast」推論檔，讓 GPT-5.6 Sol <strong style="color:#e2e8f0;">最快每秒 750 個輸出 token、比標準檔快上 14 倍</strong>，首批客戶含 Jane Street、Rogo 等。這正是主軸的另一面：<strong style="color:#e2e8f0;">除了「力道」旋鈕，「速度」也被切成獨立檔位</strong>——同一顆模型，你可以為互動式體驗換更快的推論，代價是另一種計價（目前尚未公布價格與 GA 時間）。</p>
+    <p style="color:#94a3b8;font-style:italic;font-size:14px;margin:10px 0 0;">💡 重點一句話：推論正被拆成「速度 × 力道 × 自主權」三軸，每一軸都成了可選的產品檔位。</p>
+    <div style="margin-top:8px;font-size:13px;">🔗 <a href="https://www.cerebras.ai/blog/accelerating-gpt-5-6-sol-ultrafast-with-openai" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> <span style="color:#64748b;">｜來源：Cerebras 官方（OpenAI 預覽頁 openai.com/index/previewing-ultrafast）</span></div>
+  </div>
+
+  <div style="border-top:1px solid #2f2f2f;padding-top:16px;margin-top:16px;">
+    <div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">🔗 衍生新聞</div>
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:10px;">🔄 後續追蹤：Grok 4.6 進駐 GitHub Copilot</div>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:8px 0 0;">繼先前的 Grok 4.5，xAI 的 <strong style="color:#e2e8f0;">Grok 4.6</strong> 也上架 GitHub Copilot 的模型選單，主打 agentic coding 與多步驟工作流，覆蓋 VS Code、JetBrains、Copilot CLI 與雲端 agent。值得留意的是<strong style="color:#e2e8f0;">企業版預設關閉、需管理員在政策層開啟</strong>——這其實是主軸的組織版：把「要不要放行某顆 agent 模型」也做成一個 IT 能控的開關。</p>
+    <p style="color:#94a3b8;font-style:italic;font-size:14px;margin:10px 0 0;">💡 重點一句話：模型選擇權正被下放到「管理員政策」這一層，可控性從個人延伸到整個組織。</p>
+    <div style="margin-top:8px;font-size:13px;">🔗 <a href="https://github.blog/changelog/2026-08-14-grok-4-6-is-now-available-in-github-copilot/" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> <span style="color:#64748b;">｜來源：GitHub Changelog</span></div>
+  </div>
+
+  <div style="border-top:1px solid #2f2f2f;padding-top:16px;margin-top:16px;">
+    <div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">🔗 衍生新聞</div>
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:10px;">Claude Code 2.1.233：把「花多少錢、用多少記憶體」也變成旋鈕</div>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:8px 0 0;">同一版更新除了自動模式，還加了兩個很「治理」味的功能：<strong style="color:#e2e8f0;">forward_user_identity</strong> 可把登入者身分帶到 gateway，讓團隊<strong style="color:#e2e8f0;">按人頭歸屬 AI 花費</strong>；Linux 上的 <strong style="color:#e2e8f0;">記憶體 cgroup 上限</strong>則能擋住失控的 build 把整個工作階段拖垮。呼應主軸：當 agent 開始自主跑，「錢」與「資源」也需要旋鈕。</p>
+    <p style="color:#94a3b8;font-style:italic;font-size:14px;margin:10px 0 0;">💡 重點一句話：agent 走向自主，配套的成本歸屬與資源護欄就成了下一個必備控制項。</p>
+    <div style="margin-top:8px;font-size:13px;">🔗 <a href="https://code.claude.com/docs/en/changelog" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> <span style="color:#64748b;">｜來源：Anthropic Claude Code Changelog</span></div>
+  </div>
+</td></tr>
+
+<!-- ===== 其他快訊 ===== -->
+<tr><td style="padding:16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:16px;">
+  <tr><td style="padding:24px 28px;">
+    <div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+    <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:14px;line-height:1.7;">
+      <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Anthropic 公開 Claude 文字浮水印原理</strong>——說明生成文字如何被標記以供溯源辨識。在各國加強 AI 內容標示義務的此刻，這類「可驗證來源」的技術透明度，會愈來愈影響企業採用決策。<br>🔗 <a href="https://www.anthropic.com/news" style="color:#06b6d4;text-decoration:none;">來源：Anthropic Newsroom</a></li>
+      <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">GitHub OAuth App 支援多重 redirect URI 與 token 更新</strong>——新 App 預設發放 8 小時短效 token 搭配 6 個月 refresh token，且單一 App 可註冊最多 10 個 redirect URI。對維運多環境的開發團隊，這能省下「一個環境開一個 App」的麻煩並提升安全性。<br>🔗 <a href="https://github.blog/changelog/2026-08-14-multiple-redirect-uris-and-token-refresh-for-oauth-apps/" style="color:#06b6d4;text-decoration:none;">來源：GitHub Changelog</a></li>
+      <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">NVIDIA 在印尼開設首座大學 AI 中心</strong>——與 Universitas Gadjah Mada、Indosat 及印尼數位部合設「UGM Indosat NVIDIA AI 技術中心」，定位為本地人才與主權 AI 基建。這是大廠把算力與人才布局往東南亞新興市場延伸的又一訊號。<br>🔗 <a href="https://nvidianews.nvidia.com/news/universitas-gadjah-mada-indosat-and-nvidia-open-indonesias-first-university-ai-center-to-develop-local-ai-talent" style="color:#06b6d4;text-decoration:none;">來源：NVIDIA Newsroom</a></li>
+      <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Vercel AI SDK 更新至 ai@7.0.66，xAI provider 加語音時間戳</strong>——核心 SDK 修正串流狀態與 TypeScript 型別問題；xAI 套件（@ai-sdk/xai@4.0.40）新增字元級對齊的語音時間戳。對做語音介面的前端團隊是即時可用的小升級。<br>🔗 <a href="https://github.com/vercel/ai/releases" style="color:#06b6d4;text-decoration:none;">來源：Vercel AI SDK Releases</a></li>
+      <li><strong style="color:#e2e8f0;">n8n 發布 2.34.6 穩定版與 2.35.3 預覽版</strong>——修正錯誤輸出處理、遷移 Google Ads API（v21→v25）、還原 Microsoft Teams OAuth 權限；預覽版新增「同一 AI 工作階段建立的工作流可略過更新審批」。自動化平台正逐步吃進 AI 建流程的體驗細節。<br>🔗 <a href="https://github.com/n8n-io/n8n/releases" style="color:#06b6d4;text-decoration:none;">來源：n8n Releases</a></li>
+    </ul>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 今日概念 ===== -->
+<tr><td style="background:#1a1a1a;padding:24px 28px;border-radius:16px;">
+  <div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">📖 今日概念｜推理力道（Reasoning Effort / 測試時計算）</div>
+  <div style="background:#252525;border-radius:8px;padding:16px 18px;">
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0 0 12px;"><strong style="color:#a5b4fc;">一句定義：</strong>讓模型在給出答案「之前」先產生一段內部思考，再由你決定這段思考要多長——這就是「推理力道」，背後的技術名詞叫測試時計算（test-time compute）。</p>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0 0 12px;"><strong style="color:#a5b4fc;">生活化比喻：</strong>就像考試時「花多久打草稿」。選擇題你掃一眼就寫（low）；申論題你先在旁邊列大綱、推演一遍再下筆（high）；遇到證明題，你甚至願意打三頁草稿反覆檢查（max）。草稿愈多通常愈穩，但也吃掉愈多時間。回到技術：那段「草稿」就是模型多吐的思考 token，愈多愈慢愈貴。</p>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0 0 12px;"><strong style="color:#a5b4fc;">工作中的例子：</strong>用 agent 幫你重構一段程式，開 high 讓它多想幾步、少犯錯；但若只是把 JSON 轉成表格，開 low 就好，省下的算力與等待可觀。</p>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0 0 12px;"><strong style="color:#a5b4fc;">常見誤解：</strong>「力道開到 max 一定更準」。並非如此——若題目卡在模型「本來就不知道的事實」（知識密集型），多想並不會憑空補上知識，只是更慢更貴；這時該做的是給它檢索或工具，而不是加大力道。（此為背景知識與編輯分析，非今日新聞）</p>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0;"><strong style="color:#a5b4fc;">與今天主軸的關係：</strong>DeepSeek 與 Qwen 這幾天把 low/high/max 做成正式參數，等於把這個概念從論文搬進你每天呼叫的 API——今天的主軸，本質上就是「測試時計算」變成一個消費者能轉的旋鈕。想深讀可參考 arXiv 綜述《Test-Time Scaling in Reasoning LLMs》（<a href="https://arxiv.org/abs/2608.04001" style="color:#06b6d4;text-decoration:none;">2608.04001</a>，背景文獻）。</p>
+  </div>
+</td></tr>
+
+<!-- ===== 半導體 AI 專區 ===== -->
+<tr><td style="padding:16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:16px;">
+  <tr><td style="padding:24px 28px;">
+    <div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜晶圓廠裡的「即時看片員」</div>
+    <div style="margin-bottom:14px;">
+      <span style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">IC 製造</span>
+      <span style="display:inline-block;background:rgba(148,163,184,0.18);color:#cbd5e1;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-left:6px;">背景知識</span>
+    </div>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;">▍問題與流程位置</div>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:6px 0 0;">先進封裝（hybrid bonding、TSV、微凸塊）把愈來愈多晶粒疊在一起，任何一顆微小缺陷都可能讓整顆昂貴的封裝報廢。缺陷檢測與分類就卡在<strong style="color:#a5b4fc;">製造中段到後段的良率關卡</strong>：傳統做法是拍下大量電子束/光學影像，事後由人工或離線系統判讀，慢、且不同人判斷不一致。</p>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:14px;">▍AI 如何介入</div>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:6px 0 0;">TSMC 在近期 OCP APAC 論壇（8 月 11 日，背景資訊）描述了把視覺 AI 直接嵌進機台的做法：<strong style="color:#a5b4fc;">自動缺陷分類（ADC）在機台邊緣即時判讀影像</strong>、搭配 human-in-the-loop 覆核，並串起 die-level 的製造執行系統（MES）做即時派工與良率預測。與過去最大的差別是<strong style="color:#a5b4fc;">從「事後抽檢分析」推進到「製程中即時攔截」</strong>——缺陷一出現就被分類、隔離，不必等離線報告回來。NVIDIA 官方也證實 TSMC 使用其 Metropolis 與 TAO 工具打造視覺 AI 檢測（今日新聞外的既有事實）。</p>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:14px;">▍資料與產出</div>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:6px 0 0;">輸入是電子束與光學檢測影像，輸出是<strong style="color:#a5b4fc;">缺陷類別標籤與良率預測</strong>，再回饋到 MES 的派工決策。</p>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:14px;">▍如何驗證</div>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:6px 0 0;">靠 human-in-the-loop 由工程師覆核模型判斷、並與最終良率結果對照，逐步修正模型。</p>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:14px;">▍限制與風險</div>
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:6px 0 0;">公開資料<strong style="color:#a5b4fc;">未揭露具體良率提升百分比</strong>，本文不臆測任何內部數字；實務上模型會面臨資料漂移、新缺陷型態需重新訓練、以及邊緣算力與產線節拍的取捨（編輯分析）。</p>
+
+    <p style="color:#67e8f9;font-weight:700;font-size:14px;line-height:1.7;margin:16px 0 0;">👷 對半導體工作者的意義：對良率與缺陷檢測工程師而言，AI 正把檢測從「事後分析」往「即時攔截」推。值得動手的下一步，是把你手上的 domain 缺陷知識，系統化地餵進 human-in-the-loop 的標註迴圈——模型的天花板，往往就取決於你標得多好。</p>
+
+    <div style="margin-top:14px;font-size:13px;">🔗 <a href="https://nvidianews.nvidia.com/news/nvidia-and-tsmc-bring-ai-into-fabs-to-advance-semiconductor-design-and-manufacturing" style="color:#06b6d4;text-decoration:none;">NVIDIA × TSMC：把 AI 帶進晶圓廠</a> <span style="color:#64748b;">｜來源：NVIDIA Newsroom（背景）</span></div>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 反思時間 ===== -->
+<tr><td style="padding:8px 12px 20px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+  <tr><td style="padding:1px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+    <tr><td style="padding:24px 26px;">
+      <div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+      <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.75;">
+        <li style="margin-bottom:12px;">當「推理力道」變成計價參數，你的團隊有沒有一套標準，能判斷哪些任務值得開 max、哪些一律 low？沒有的話，這條「隱形帳單」會由誰、用什麼直覺在決定？</li>
+        <li style="margin-bottom:12px;">Claude Code 把自動模式設為預設，等於把「信任邊界」交給一個分類器。在你的工作裡，哪些動作你願意放手給 auto、哪些無論如何都要人工按下確認？這條線該由誰來畫？</li>
+        <li>如果一顆能跑在單張 GPU、又可調力道的開源模型，能力已逼近雲端前沿——那你把敏感的設計/驗證資料送上雲端 API 的理由，還剩下哪些？本地化的門檻，是不是比你以為的更低了？</li>
+      </ul>
+      <p style="color:#a5b4fc;font-weight:700;font-size:15px;line-height:1.7;margin:18px 0 0;">🎒 今日帶走：這週 AI 沒變得更聰明，但變得更「可調」——學會轉動力道、自主權、速度與成本這幾個旋鈕，比追逐每一顆新模型更能決定你導入 AI 的成敗。</p>
+    </td></tr>
+    </table>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 歷史電子報入口 ===== -->
+<tr><td style="background:#1a1a1a;padding:22px 28px;border-radius:16px;">
+  <div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+  <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+  <a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-size:14px;font-weight:600;">查看歷史電子報</a>
+</td></tr>
+
+<!-- ===== Footer ===== -->
+<tr><td style="padding:24px 28px 32px;text-align:center;">
+  <p style="color:#94a3b8;font-size:13px;line-height:1.7;margin:0 0 8px;">📬 覺得有幫助？分享給朋友：<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">訂閱這份電子報</a></p>
+  <p style="color:#64748b;font-size:13px;line-height:1.7;margin:0 0 14px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></p>
+  <p style="color:#475569;font-size:12px;line-height:1.6;margin:0;">© 2026 企鵝的 AI 每日電子報🐧　本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
