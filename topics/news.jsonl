@@ -209,3 +209,14 @@
 {"date": "2026-08-04", "title": "Cursor 上線 Google Workspace 外掛，agent 直接讀寫 Gmail／Drive／日曆"}
 {"date": "2026-08-04", "title": "Claude Code v2.1.221 發布"}
 {"date": "2026-08-04", "title": "AWS 週報：CloudWatch 全託管 Prometheus、S3 Tables Iceberg V3 Variant、AWS Interconnect 多雲私連 GA"}
+{"date": "2026-08-17", "title": "強 AI 搬進你的地盤：模型開始搬到你自己的資料這一側（開放權重＋同態加密）"}
+{"date": "2026-08-17", "title": "🔄 後續追蹤：Qwen3.8-27B 開放權重正式落地（27B dense、24GB 可跑、SWE-bench Pro 61.7）"}
+{"date": "2026-08-17", "title": "Google 開源 HEIR 同態加密編譯器：讓推論跑在加密資料上、伺服器看不到明文"}
+{"date": "2026-08-17", "title": "DFM Mimir v1：只用可溯源授權資料訓練的 10 億參數開放模型"}
+{"date": "2026-08-17", "title": "Hugging Face〈State of Open Models: Summer 2026〉開放模型年中盤點"}
+{"date": "2026-08-17", "title": "Cursor 雲端 agent 環境改用預建映像（Builds），啟動快 10 倍"}
+{"date": "2026-08-17", "title": "GitHub Copilot 上架 Grok 4.6、Agent Plugins 1.0 GA、加入 Kimi K3／MAI-Code-1.1-Flash"}
+{"date": "2026-08-17", "title": "Claude Code v2.1.233：加 GitLab MR、Linux 記憶體上限與多項安全修補"}
+{"date": "2026-08-17", "title": "IBM 加入 OpenAI Elite 夥伴層、把 GPT-5.6 埋進 IBM Consulting"}
+{"date": "2026-08-17", "title": "Vercel AI SDK 8/15 一批 provider 補丁（@ai-sdk/xai 語音、moonshotai 工具 schema）"}
+{"date": "2026-08-17", "title": "arXiv SynAct：LLM agent 自動讀 synthesis 報告調 PPA（背景研究）"}
