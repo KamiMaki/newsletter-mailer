@@ -209,3 +209,15 @@
 {"date": "2026-08-04", "title": "Cursor 上線 Google Workspace 外掛，agent 直接讀寫 Gmail／Drive／日曆"}
 {"date": "2026-08-04", "title": "Claude Code v2.1.221 發布"}
 {"date": "2026-08-04", "title": "AWS 週報：CloudWatch 全託管 Prometheus、S3 Tables Iceberg V3 Variant、AWS Interconnect 多雲私連 GA"}
+{"date": "2026-08-18", "title": "Cursor 推出 Origin 程式碼託管（早期 beta、與 GitHub 雙向同步、內建 PR 與 CI）"}
+{"date": "2026-08-18", "title": "Claude Code v2.1.234：用量重置後自動延續 session、GitLab MR 狀態、拒絕危險 NT 路徑"}
+{"date": "2026-08-18", "title": "OpenAI Agents SDK v0.21.1：新增模型呼叫逾時與 sandbox 改進"}
+{"date": "2026-08-18", "title": "Vercel AI SDK harness@1.0.73 支援 structured output 的 output 屬性"}
+{"date": "2026-08-18", "title": "ScienceFlow：靠可回復執行狀態撐長任務的研究 agent，完整 MLE-bench 70.22% SOTA"}
+{"date": "2026-08-18", "title": "NVIDIA 保證 SB Energy 俄亥俄 PORTS-Pike 園區獨家部署 AI 運算、OpenAI 20 年租 8 IT-GW"}
+{"date": "2026-08-18", "title": "DeepSeek V4-Pro 8/16 起改尖峰／離峰計費，離峰半價"}
+{"date": "2026-08-18", "title": "Microsoft 8/18 起推 Copilot App 統一更新（帳戶標示、網址遷移 copilot.cloud.microsoft）"}
+{"date": "2026-08-18", "title": "Intern-S2-Mobius：記憶與推理解耦的基礎模型，7B 用 62.6% 資料追平、35B 推論快約 4 倍"}
+{"date": "2026-08-18", "title": "arXiv：Power Sampling 把機率質量推向正確反而準確率掉最多 18.5 個百分點，提出校準改法"}
+{"date": "2026-08-18", "title": "SynAct：讀真實合成報告逐步調參的 LLM 合成 agent，14 設計平均 WNS 壓到基線約 27%"}
+{"date": "2026-08-18", "title": "GateTruth：用突變測試稽核 LLM-RTL 基準嚴謹度，RTLLM v2.0 上 72% 設計未達 95% 擊殺門檻"}
