@@ -1,0 +1,191 @@
+<!-- 企鵝的 AI 每日電子報 2026-08-19 -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;margin:0;padding:0;">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+
+<!-- ===== Header ===== -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px 16px 0 0;padding:32px 28px;text-align:center;">
+<div style="font-size:26px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:8px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#c7d2fe;margin-top:10px;font-weight:600;">2026 年 8 月 19 日（週三）</div>
+</td></tr>
+
+<!-- ===== 30 秒重點 ===== -->
+<tr><td style="background:#1a1a1a;padding:24px 26px;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;padding:6px;">
+<tr><td style="padding:14px 16px;">
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>GitHub 全球當機 7.5 小時、Claude 本週也掛過，這幾天的新聞其實指向同一件事——<strong style="color:#e2e8f0;">AI 開發的地基正從「單一平台」鬆動</strong>，而工具商正搶著長出替代與備援。</li>
+<li style="margin-bottom:10px;">GitHub 8/17 大當機，Actions、API、Copilot、PR、Issues 全中；<strong style="color:#e2e8f0;">Cursor 就在同一天</strong>把「給 AI agent 用」的程式碼倉庫 <strong style="color:#e2e8f0;">Origin</strong> 開放 beta。</li>
+<li style="margin-bottom:10px;">另一條去單一依賴的線：GitHub Copilot 本週把 <strong style="color:#e2e8f0;">Grok 4.6</strong> 一次上到八個介面、推 Agent Plugins 1.0，Copilot 從單一模型走向可插拔多模型。</li>
+<li style="margin-bottom:10px;">其他值得知道：OpenAI 推 <strong style="color:#e2e8f0;">ChatGPT for Teens</strong> 與年齡預測、NVIDIA 在俄亥俄拿下建廠土地與電力、GitHub 上線依 token 類型撤銷憑證。</li>
+<li style="margin-bottom:0;">👷 <strong style="color:#67e8f9;">對半導體工作者最相關：</strong>當 agent 開始自己提交 RTL，晶片設計的版本控制與 review 也要重做——今天的專區就談這個。</li>
+</ul>
+</td></tr></table>
+</td></tr>
+
+<!-- ===== 今天的主軸 ===== -->
+<tr><td style="background:#1a1a1a;padding:8px 26px 24px;">
+<div style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;padding:1px;">
+<div style="background:#1a1a1a;border-radius:15px;padding:26px 24px;">
+<div style="display:inline-block;background:rgba(99,102,241,0.18);color:#a5b4fc;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;margin-bottom:14px;">🎯 今天的主軸</div>
+<div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-bottom:18px;">開發的地基正在鬆動：當「唯一平台」變成單點故障，程式碼與模型層一起開始去中心化</div>
+
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">
+<p style="margin:0 0 16px;">先講一個畫面：8 月 17 日週一早上，全世界的工程師打開 GitHub，發現推不了 code、跑不了 CI、連 Copilot 都掛了。這不是小抖動——<strong style="color:#a5b4fc">整場當機持續約 7.5 小時</strong>，尖峰時網頁與 API 錯誤率約 20%、原始檔與封存下載錯誤率逼近 50%，Actions、Webhooks、Issues、Pull Requests、Pages 全部中招。對很多團隊來說，這半天等於「地基抽掉」，什麼都動不了。</p>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px;">▍共同變化</p>
+<p style="margin:0 0 16px;">把這週的新聞排在一起看，你會發現它們其實是同一齣戲的不同幕：GitHub 當機（8/17）暴露了「整條工作流押在單一平台」的風險；<strong style="color:#e2e8f0">就在同一天</strong>，AI 編輯器 Cursor 把自家程式碼倉庫 <strong style="color:#e2e8f0">Origin</strong> 開放 beta；再往前幾天，GitHub Copilot 把 Grok 4.6 一次上架到八個介面、推可攜的 Agent Plugins，模型層也在「去單一化」。<strong style="color:#a5b4fc">今天大多數新聞共同指向的變化是：AI 開發的基礎設施，正從「只有一個家」長出替代與備援。</strong></p>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px;">▍為什麼放在一起看</p>
+<p style="margin:0 0 16px;">因為它們回答的是同一個問題：<strong style="color:#e2e8f0">當開發越來越依賴「單一平台 + 單一模型」，那個平台掛了怎麼辦？</strong>Cursor 選在 GitHub 最慘的一天開放 Origin，不是巧合，是一記精準的市場動作——它讓「不一定要住在 GitHub」這件事從口號變成當天就能點的按鈕。而 Copilot 加掛 Grok 4.6、開放外掛，等於在模型與能力層做同樣的事：別把雞蛋放同一籃。兩條線合起來，就是這期的主線。</p>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px;">▍過去 vs. 現在</p>
+<p style="margin:0 0 16px;">過去十幾年，「程式碼放哪」幾乎沒有懸念——GitHub 就是預設答案，CI、review、issue、套件全長在上面，深度整合換來的是極致方便。<strong style="color:#e2e8f0">現在天平開始移動</strong>：Cursor 的 Origin 主打一個挑釁的前提——「如果版本控制系統的主要使用者，已經不是人類呢？」它宣稱在 Cursor 內合併的 PR，已有 <strong style="color:#a5b4fc">約 35% 是由自主運行的 agent 開出</strong>的，於是把倉庫重新設計成「給 agent 用」：可追每一行是哪個 prompt 寫的、能回溯、能回滾，還秀出每秒 22.6 commits 這種人類時代倉庫沒設想過的吞吐。從「人為主、工具輔助」，變成「agent 為主、平台重寫」。</p>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px;">▍背後邏輯</p>
+<p style="margin:0 0 16px;">底層是三股力量在推：一是 <strong style="color:#e2e8f0">agent 讓提交量爆增</strong>，人審不完、舊的 review 流程扛不住；二是 <strong style="color:#e2e8f0">集中風險被實際代價教育了一次</strong>——一次 7.5 小時當機，就是無數團隊的停工帳單；三是 <strong style="color:#e2e8f0">競爭者嗅到縫隙</strong>：當你痛的時候，正是別人遞替代方案的最佳時機。Copilot 走多模型、Cursor 蓋新倉庫，本質都是在「降低對任一單點的依賴」上下注。</p>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px;">▍對你的工作</p>
+<p style="margin:0 0 16px;">如果你是工程或平台團隊，這週的訊號很直接：<strong style="color:#e2e8f0">重新盤點你的單點故障</strong>。CI/CD 是不是全靠一家？模型是不是只綁一個供應商？程式碼與設計資料是不是只有一份、只在一個雲上？不是要你明天就搬家，而是要能回答「它掛 8 小時，我損失多少、我的 Plan B 是什麼」。對知識工作者，這也是一次提醒：工具越聰明、你越依賴，備援計畫就越該寫下來。</p>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px;">▍限制與待驗證</p>
+<p style="margin:0 0 16px;">別把「去中心化」當成免費午餐。多一個程式碼倉庫，就多一份同步、權限、稽核與心智負擔；Cursor Origin 目前還是 <strong style="color:#e2e8f0">早期 beta、只開放付費方案</strong>，雙向同步 GitHub 也代表短期內大家仍離不開 GitHub。多模型聽起來美好，但每換一個模型就多一層相容與回歸測試成本。<strong style="color:#94a3b8">（以下為編輯分析）</strong>真正會不會形成「GitHub 之外的第二個家」，還要看企業版落地、稽核合規與生態成熟度，這需要幾季而非幾天來驗證。</p>
+
+<div style="background:#252525;border-radius:8px;padding:14px 16px;margin:6px 0 16px;">
+<div style="color:#c7d2fe;font-size:12px;font-weight:700;margin-bottom:6px;">👤 人物觀點／延伸解讀</div>
+<p style="margin:0;color:#cbd5e1;font-size:14px;line-height:1.7;">產業媒體（VentureBeat）把這件事定調為「GitHub 當機暴露了 AI coding 競賽的缺口」，Cursor 則以「版本控制的主要使用者已不是人」作為 Origin 的核心敘事。<strong style="color:#94a3b8">此為第三方報導與廠商說法，用於解讀趨勢，非官方事實依據；實際採用率仍待長期數據驗證。</strong></p>
+</div>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px;">▍重點一句話</p>
+<p style="margin:0 0 8px;color:#e2e8f0;"><strong>這週的當機與 Origin 一起說了同一句話：把整條工作流押在單一平台上，省下的是今天的整合成本，賭上的是明天的停機風險。</strong></p>
+
+<p style="margin:14px 0 0;font-size:13px;">🔗 來源：<a href="https://www.githubstatus.com/" style="color:#06b6d4;text-decoration:none;">GitHub Status</a> ／ <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-confirms-github-is-down-worldwide/" style="color:#06b6d4;text-decoration:none;">BleepingComputer</a> ｜ <a href="https://venturebeat.com/infrastructure/cursor-launches-origin-code-hosting-platform-as-github-outage-exposes-opening-in-ai-coding-race" style="color:#06b6d4;text-decoration:none;">VentureBeat：Cursor Origin</a></p>
+</div>
+</div>
+</div>
+</td></tr>
+
+<!-- ===== 主軸的衍生新聞 ===== -->
+<tr><td style="background:#1a1a1a;padding:8px 26px 8px;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin:8px 0 14px;">🔗 主軸的衍生新聞</div>
+
+<div style="background:#252525;border-radius:12px;padding:20px 18px;margin-bottom:14px;">
+<div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">Grok 4.6 一次進駐 Copilot 八個介面，Agent Plugins 1.0 上線</div>
+<p style="margin:0 0 10px;color:#cbd5e1;font-size:14px;line-height:1.7;">GitHub 本週把 xAI 的 <strong style="color:#e2e8f0">Grok 4.6</strong> 一口氣加進 Copilot 的模型選單，橫跨 VS Code、Visual Studio、Copilot CLI、雲端 coding agent、JetBrains、Xcode、Eclipse 等八個介面，同時推出可攜的 <strong style="color:#e2e8f0">Agent Plugins 1.0</strong>。這正是主軸的另一條線：如果說 Origin 是在「程式碼放哪」去單一化，Copilot 加掛多模型與外掛，就是在「用哪個腦、接哪些工具」去單一化——同一種「別綁死一家」的下注。<span style="color:#94a3b8;">（此為本週稍早、8/14–16 的官方 Changelog 更新，列為主軸脈絡。）</span></p>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:0 0 10px;">💡 重點一句話：模型層跟程式碼層一起「可插拔」，工具商正在把單一依賴拆成可替換的零件。</p>
+<p style="margin:0;font-size:13px;">🔗 <a href="https://github.blog/changelog/" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> ｜ 來源：GitHub Changelog</p>
+</div>
+
+<div style="background:#252525;border-radius:12px;padding:20px 18px;margin-bottom:6px;">
+<div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">同一週的第二個單點故障：Claude 也大當機</div>
+<p style="margin:0 0 10px;color:#cbd5e1;font-size:14px;line-height:1.7;">就在 GitHub 當機前一天多，<strong style="color:#e2e8f0">Anthropic 於 8/16 約 21:58 UTC 起發生一起影響 Claude.ai、Claude Code 與 Cowork 的服務中斷</strong>，使用者遇到無法登入、載入失敗與請求無法完成。把它和 GitHub 當機放在一起，主軸就更清楚了：這不是單一廠商的倒楣，而是<strong style="color:#e2e8f0">整個 AI 開發堆疊都高度集中</strong>——你倚賴的每一層（程式碼、模型、agent 服務）都可能是那座唯一的橋。</p>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:0 0 10px;">💡 重點一句話：一週內兩次大當機，把「集中風險」從投影片上的名詞，變成真實的停工時數。</p>
+<p style="margin:0;font-size:13px;">🔗 <a href="https://www.bleepingcomputer.com/news/artificial-intelligence/anthropic-confirms-claude-is-down-in-major-outage-affecting-multiple-services/" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> ｜ 來源：BleepingComputer／Anthropic Status</p>
+</div>
+</td></tr>
+
+<!-- ===== 其他快訊 ===== -->
+<tr><td style="background:#1a1a1a;padding:16px 26px 8px;">
+<div style="background:#252525;border-radius:12px;padding:22px 20px;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:14px;line-height:1.7;list-style:none;padding-left:0;">
+<li style="margin-bottom:16px;padding-left:2px;">
+<strong style="color:#e2e8f0;">OpenAI 推出 ChatGPT for Teens 與年齡預測（8/18）。</strong><br>
+針對 13–17 歲推出更嚴格的版本，限制自傷、露骨與擬人化互動，並主打「幫你學、不幫你抄」的作業模式。系統會用帳號與行為訊號「猜測」是否未滿 18 歲，判定為未成年就自動切到青少年版——AI 產品開始被身分與年齡「圍欄」化。<br>
+🔗 <a href="https://openai.com/index/chatgpt-for-teens/" style="color:#06b6d4;text-decoration:none;">來源：OpenAI</a>
+</li>
+<li style="margin-bottom:16px;padding-left:2px;">
+<strong style="color:#e2e8f0;">NVIDIA 在俄亥俄 Pike County 拿下建廠土地與電力（8/17）。</strong><br>
+NVIDIA 透過與 SB Energy 合作，於 PORTS-Pike 科技園區取得土地、電力與廠房容量，為 AI 資料中心鋪路。<span style="color:#94a3b8;">另有報導（Fortune，據報導）指 NVIDIA 為相關 OpenAI 算力擔保上看約 1,050 億美元，此金額為二手轉述、未經官方確認。</span>算力這條供應鏈仍在瘋狂擴產。<br>
+🔗 <a href="https://nvidianews.nvidia.com/news" style="color:#06b6d4;text-decoration:none;">來源：NVIDIA Newsroom</a>
+</li>
+<li style="margin-bottom:0;padding-left:2px;">
+<strong style="color:#e2e8f0;">GitHub 上線「依 token 類型撤銷憑證與解除授權」（8/18）。</strong><br>
+新增可依 token 類型批次撤銷憑證、解除授權的能力，強化企業端的應用安全治理。呼應主軸的另一面——當 agent 與外掛越來越多，<strong style="color:#e2e8f0">「誰拿著什麼權杖、怎麼一鍵收回」</strong>會變成基本功。<br>
+🔗 <a href="https://github.blog/changelog/" style="color:#06b6d4;text-decoration:none;">來源：GitHub Changelog</a>
+</li>
+</ul>
+</div>
+</td></tr>
+
+<!-- ===== 今日概念 ===== -->
+<tr><td style="background:#1a1a1a;padding:16px 26px 8px;">
+<div style="background:#252525;border-radius:12px;padding:22px 20px;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">📖 今日概念｜單點故障（Single Point of Failure, SPOF）</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.75;">
+<p style="margin:0 0 12px;"><strong style="color:#a5b4fc;">一句定義：</strong>系統裡「只要它壞了、整體就跟著停」的那個關鍵環節，就叫單點故障。</p>
+<p style="margin:0 0 12px;"><strong style="color:#a5b4fc;">生活化比喻：</strong>一個小鎮只有一座橋通往外面。平常超方便，但橋一斷，全鎮出不去——這座橋就是這個鎮的 SPOF。GitHub 之於很多團隊，這週就當了一次那座橋。</p>
+<p style="margin:0 0 12px;"><strong style="color:#a5b4fc;">工作中的例子：</strong>你的 CI/CD 全跑在 GitHub Actions、部署腳本靠 Webhook 觸發、程式碼只有一份在 GitHub 上——當機那 7.5 小時，這三件事會一起停擺，因為它們共用同一個單點。</p>
+<p style="margin:0 0 12px;"><strong style="color:#a5b4fc;">常見誤解：</strong>「上雲了就不會掛」。雲端提升的是平均可用度，不是消除單點；只要你所有東西都仰賴同一個服務、同一個區域、同一個供應商，它依然是 SPOF。冗餘要靠設計，不會自動長出來。</p>
+<p style="margin:0;"><strong style="color:#a5b4fc;">與今天主軸的關係：</strong>Cursor 蓋新倉庫、Copilot 吃多模型，本質都是在替 AI 開發流程「拆掉單點」——這正是消除 SPOF 的教科書動作。</p>
+</div>
+</div>
+</td></tr>
+
+<!-- ===== 半導體 AI 專區 ===== -->
+<tr><td style="background:#1a1a1a;padding:16px 26px 8px;">
+<div style="background:#252525;border-radius:12px;padding:22px 20px;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜當 agent 開始自己提交 RTL，晶片設計的版本控制要重做</div>
+<div style="margin-bottom:14px;">
+<span style="display:inline-block;background:rgba(99,102,241,0.18);color:#a5b4fc;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;margin-right:6px;">EDA 工具 / IC 設計</span>
+<span style="display:inline-block;background:rgba(148,163,184,0.18);color:#94a3b8;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">含今日新聞＋背景知識＋編輯分析</span>
+</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.75;">
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px;">▍問題與流程位置</p>
+<p style="margin:0 0 14px;">RTL（暫存器傳輸級，工程師用 Verilog/SystemVerilog 描述晶片邏輯的「原始碼」）本質也是程式碼，存在版本控制與設計資料管理（DDM）系統裡。過去 commit 與 review 都是「人對人」：一位設計師改、一位 reviewer 看。<strong style="color:#e2e8f0">位置就在設計流程最前段的 RTL/驗證環節。</strong></p>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px;">▍AI 如何介入</p>
+<p style="margin:0 0 14px;"><strong style="color:#94a3b8;">（今日新聞連結）</strong>Cursor 這週開放的 Origin，把「版本控制的主要使用者是 agent」變成產品——能記錄哪個 prompt 寫了哪一行、可回溯、可回滾。<strong style="color:#94a3b8;">（背景知識）</strong>晶片端正走同一條路：DAC 2026 上 Synopsys、Siemens EDA 展示的自主驗證 agent，能自己生成 testbench、跑驗證、開修正。差別是——過去人一天提交幾次，agent 是<strong style="color:#e2e8f0">非人類尺度的提交量與速度</strong>，舊的 review 與版本流程扛不住。</p>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px;">▍資料與產出</p>
+<p style="margin:0 0 14px;">輸入是規格、既有 RTL 與 IP；產出除了 RTL 本身，還有 testbench、波形（waveform）、覆蓋率（coverage）報告，以及<strong style="color:#e2e8f0">「哪個 prompt／哪個 agent 產生了哪段修改」的軌跡（provenance）</strong>——這份軌跡在除錯與稽核時，價值不亞於程式碼本身。</p>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px;">▍如何驗證</p>
+<p style="margin:0 0 14px;">這是晶片與軟體最大的不同：<strong style="color:#e2e8f0">晶片有「黃金物理事實」可對照</strong>。<strong style="color:#94a3b8;">（背景知識）</strong>Siemens EDA 的做法是把 agent 產出用 physics-based 的 EDA 引擎回核，formal 驗證與 simulation 當「裁判」，不讓 LLM 自說自話。相比軟體 code review 常靠人眼與測試，晶片流程能用形式化與模擬把 AI 產出「釘」在物理真相上。</p>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px;">▍限制與風險</p>
+<p style="margin:0 0 14px;"><strong style="color:#94a3b8;">（編輯分析／可能影響）</strong>幻覺 RTL、覆蓋率的假陽性、provenance 缺失導致難以追責、以及把整條設計流押在單一 EDA 或雲平台上的鎖定風險（正好呼應今天的主軸）。這些都還在探索與早期導入階段，<strong style="color:#e2e8f0;">不代表已大規模量產落地</strong>；任何「改善百分比」都應回到官方原文確認，本文不臆造內部數字。</p>
+
+<p style="color:#67e8f9;font-weight:700;font-size:14px;margin:6px 0 0;">👷 對半導體工作者的意義：驗證與 CAD／DDM 團隊該開始把「agent 是主要提交者」當前提，重做 review 流程與可追溯性；同時別把設計流全押在單一平台——這週的當機，就是最直白的提醒。</p>
+</div>
+</div>
+</td></tr>
+
+<!-- ===== 反思時間 ===== -->
+<tr><td style="background:#1a1a1a;padding:16px 26px 24px;">
+<div style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;padding:1px;">
+<div style="background:#1a1a1a;border-radius:15px;padding:24px 22px;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+<ul style="margin:0 0 14px;padding-left:20px;color:#cbd5e1;font-size:14px;line-height:1.75;">
+<li style="margin-bottom:12px;">如果你的程式碼、CI/CD、甚至設計資料都放在同一個雲平台，這週 GitHub 掛 7.5 小時對你會是多少代價？你的備援計畫能撐幾小時，還是根本沒寫下來？</li>
+<li style="margin-bottom:12px;">當 agent 變成 repo 裡的主要提交者，你現在的 code review 與版本控制流程，究竟是為「人」還是為「agent」設計的？哪一環會最先崩？</li>
+<li style="margin-bottom:0;">開發與 EDA 工具都在往多模型、多平台走。為了避免被鎖定，你願意接受「多一層抽象、少一點深度整合」的取捨嗎？這條界線你會畫在哪？</li>
+</ul>
+<p style="color:#a5b4fc;font-weight:700;font-size:14px;margin:0;">🎒 今日帶走：把整條工作流押在單一平台上，省下的是今天的整合成本，賭上的是明天的停機風險——這週的兩場當機，替我們算了一次帳。</p>
+</div>
+</div>
+</td></tr>
+
+<!-- ===== 歷史電子報入口 ===== -->
+<tr><td style="background:#1a1a1a;padding:8px 26px 20px;">
+<div style="background:#252525;border-radius:12px;padding:20px;text-align:center;">
+<div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+<p style="margin:0 0 12px;color:#cbd5e1;font-size:14px;line-height:1.7;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+<a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-weight:600;font-size:14px;">查看歷史電子報</a>
+</div>
+</td></tr>
+
+<!-- ===== Footer ===== -->
+<tr><td style="background:#0f0f0f;border-radius:0 0 16px 16px;padding:24px 26px;text-align:center;border-top:1px solid #252525;">
+<p style="margin:0 0 10px;color:#cbd5e1;font-size:14px;">📬 覺得有用？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">訂閱這份電子報</a>，分享給你的朋友。</p>
+<p style="margin:0 0 14px;color:#64748b;font-size:13px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></p>
+<p style="margin:0;color:#475569;font-size:12px;line-height:1.6;">© 2026 企鵝的 AI 每日電子報🐧<br>本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
