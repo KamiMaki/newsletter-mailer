@@ -209,3 +209,18 @@
 {"date": "2026-08-04", "title": "Cursor 上線 Google Workspace 外掛，agent 直接讀寫 Gmail／Drive／日曆"}
 {"date": "2026-08-04", "title": "Claude Code v2.1.221 發布"}
 {"date": "2026-08-04", "title": "AWS 週報：CloudWatch 全託管 Prometheus、S3 Tables Iceberg V3 Variant、AWS Interconnect 多雲私連 GA"}
+{"date": "2026-08-20", "title": "不是讓 agent 更聰明，而是幫它配一個騙不了的驗證器：從形式驗證到 LLM 評測都在對答案與圈手"}
+{"date": "2026-08-20", "title": "NeuroAbs：神經符號 RTL 抽象框架，LLM 提議、SMT 求解器驗證、反例引導精修加速形式驗證"}
+{"date": "2026-08-20", "title": "LangChain LangSmith 推 Tuned Evaluators 校準評測器，首發 Perceived Error 量 agent 產出的錯"}
+{"date": "2026-08-20", "title": "Anthropic Managed Agents 加網域白／黑名單限制 web 工具，Console 新增可觀測 Inspector 與自架 sandbox memory"}
+{"date": "2026-08-20", "title": "GitHub 上線按憑證類型精準撤銷／解除授權"}
+{"date": "2026-08-20", "title": "🔄 後續追蹤：GitHub Copilot 企業受管設定延伸到 JetBrains（外掛治理＋MCP 白名單＋權限模式）"}
+{"date": "2026-08-20", "title": "Cursor 子代理跑在獨立 VM，新增 agent 訂閱盯 PR／Slack／排程與 /goal 長期目標"}
+{"date": "2026-08-20", "title": "Anthropic 把 Files API／Agent Skills 與 Skills API／Admin API 使用者管理推上正式版"}
+{"date": "2026-08-20", "title": "Cerebras 發表晶圓級 CS-4（三顆 WSE-3T、TSMC 5nm、約 750 PFLOPS），主打推論性價比"}
+{"date": "2026-08-20", "title": "OpenAI Codex CLI 0.148.0 內建 Amazon Bedrock 供應商並加入 /export"}
+{"date": "2026-08-20", "title": "Liquid AI 以量化感知蒸餾釋出 LFM2.5 的 4-bit Q4_0 端側權重"}
+{"date": "2026-08-20", "title": "賓州州長 Shapiro 簽署行政命令，把 GRID 標準對 AI 資料中心用電立法上鎖"}
+{"date": "2026-08-20", "title": "Unitree（宇樹科技）上海科創板掛牌首日爆漲逾 6 倍，中國 A 股首家人形機器人上市"}
+{"date": "2026-08-20", "title": "GitHub CodeQL 2.26.3 強化 Actions 查詢與 JavaScript 建模"}
+{"date": "2026-08-20", "title": "GitHub 組織層 Code Quality 儀表板新增 Trends 趨勢分頁"}
