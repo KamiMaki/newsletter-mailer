@@ -209,3 +209,14 @@
 {"date": "2026-08-04", "title": "Cursor 上線 Google Workspace 外掛，agent 直接讀寫 Gmail／Drive／日曆"}
 {"date": "2026-08-04", "title": "Claude Code v2.1.221 發布"}
 {"date": "2026-08-04", "title": "AWS 週報：CloudWatch 全託管 Prometheus、S3 Tables Iceberg V3 Variant、AWS Interconnect 多雲私連 GA"}
+{"date": "2026-08-21", "title": "Cursor 雲端 agent 常駐訂閱：自動接手事件、auto-subscribe 自己的 PR 並修 CI 推到完成、/goal 長期目標、subagent 上獨立 VM"}
+{"date": "2026-08-21", "title": "Cline Desktop v0.0.15-beta.1：/handoff 把本地 session 交接上 Cline Cloud（關 App 仍續跑、可復原）"}
+{"date": "2026-08-21", "title": "Qwen Code v0.21.15：--resume 讓 /review 與 CI retry 接續被中斷的審查"}
+{"date": "2026-08-21", "title": "OpenAI Codex 在 Codex Cloud 加入 GitLab（beta）：@codex 從 issue/MR 起任務與 code review"}
+{"date": "2026-08-21", "title": "Claude Code 2.1.236–238：notify_when_idle 跨 session 一次性通知、egress proxy 每連線授權、long session 記憶體修正、Concise 輸出風格"}
+{"date": "2026-08-21", "title": "Vercel AI SDK ai@7.0.71：串流 onChunk/onError 例外不再中斷串流或遮蔽 provider 錯誤"}
+{"date": "2026-08-21", "title": "Grok 4.6 上架 Amazon Bedrock（500K context、US/global inference profile）"}
+{"date": "2026-08-21", "title": "AWS 為 GPT-5.6（Sol/Terra/Luna）開 cross-Region inference（1M context、跨 25+ 區域）"}
+{"date": "2026-08-21", "title": "OpenAI 測試 Private Safety Processing：零資料保留下偵測濫用、只回窄分類訊號（據報導）"}
+{"date": "2026-08-21", "title": "LangGraph Python SDK 0.4.3：decrypt replacement result 與相依套件更新"}
+{"date": "2026-08-21", "title": "arXiv NeuroAssertion（2608.18482）：formal＋SyGuS＋LLM 生成 RTL 驗證斷言，約 2 倍斷言與 mutation coverage（MLCAD 2026）"}
