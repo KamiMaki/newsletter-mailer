@@ -209,3 +209,11 @@
 {"date": "2026-08-04", "title": "Cursor 上線 Google Workspace 外掛，agent 直接讀寫 Gmail／Drive／日曆"}
 {"date": "2026-08-04", "title": "Claude Code v2.1.221 發布"}
 {"date": "2026-08-04", "title": "AWS 週報：CloudWatch 全託管 Prometheus、S3 Tables Iceberg V3 Variant、AWS Interconnect 多雲私連 GA"}
+{"date": "2026-08-22", "title": "程式代理搬進團隊聊天室：GitHub／OpenAI／Anthropic 同步把 coding agent 變共用非同步隊友（主軸）"}
+{"date": "2026-08-22", "title": "GitHub Copilot 在 Slack 上線：@GitHub 開雲端代理任務、Slack Code 頻道協作、PR 需管理員核准"}
+{"date": "2026-08-22", "title": "GitHub Copilot 進 Microsoft Teams：頻道內 @GitHub 開全隊可見可指揮的代理任務、合併前人審"}
+{"date": "2026-08-22", "title": "OpenAI Codex v0.149.0：新增 codex agents 儀表板與 codex queue 非同步對本地／遠端任務下指令"}
+{"date": "2026-08-22", "title": "Anthropic Claude Code 2.1.23x：工作階段間 @ 互相喊話、notify_when_idle、GitLab MR 支援"}
+{"date": "2026-08-22", "title": "Vercel AI SDK 修串流 onChunk/onError 例外會吞錯誤、中斷串流的問題"}
+{"date": "2026-08-22", "title": "xAI Grok Bot 定位常駐雲端 AI 隊友（內建訊息、核准、連接器、routines）"}
+{"date": "2026-08-22", "title": "GitHub 同日更新：Windows 11 arm64＋VS2026 映像 GA、code scanning 新增已緩解關閉理由與 Code Quality 稽核軌跡"}
