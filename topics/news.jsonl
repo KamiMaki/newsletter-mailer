@@ -209,3 +209,178 @@
 {"date": "2026-08-04", "title": "Cursor 上線 Google Workspace 外掛，agent 直接讀寫 Gmail／Drive／日曆"}
 {"date": "2026-08-04", "title": "Claude Code v2.1.221 發布"}
 {"date": "2026-08-04", "title": "AWS 週報：CloudWatch 全託管 Prometheus、S3 Tables Iceberg V3 Variant、AWS Interconnect 多雲私連 GA"}
+{"date": "2026-08-05", "title": "Open Secure AI Alliance 發布 SAFE 事件共享準則（Linux Foundation，120+ 組織）"}
+{"date": "2026-08-05", "title": "Claude Code v2.1.221／222 安全強化：擋隔離 agent 破壞性 git、SendMessage 過權限分類器、憑證遮罩"}
+{"date": "2026-08-05", "title": "GitHub Copilot 企業團隊分層受管理設定＋留言觸發自動化＋可調推理層級"}
+{"date": "2026-08-05", "title": "NVIDIA Alpamayo 2 Super 開源自駕推理模型開放商用（OpenMDW-1.1，約 30B，LingoQA 第一）"}
+{"date": "2026-08-05", "title": "xAI grok-voice-think-fast-2.0 語音對語音模型 8/5 上線"}
+{"date": "2026-08-05", "title": "🔄 後續追蹤：Qwen3.8-Max 全面開放＋QwenWork 生產力平台公測"}
+{"date": "2026-08-05", "title": "arXiv WorldCup Arena：零洩漏評測顯示前沿模型無真正推理優勢（63.9%）"}
+{"date": "2026-08-05", "title": "OpenAI 退役 ChatGPT 內建 DALL·E GPT（8/30 生效）"}
+{"date": "2026-08-05", "title": "半導體背景：Synopsys／Siemens DAC 2026 自主／自我驗證 EDA agent"}
+{"date": "2026-08-06", "title": "AI 開始自己舉證：形式化證明成前沿模型信任錨（主軸）"}
+{"date": "2026-08-06", "title": "OpenAI Astra 用 Lean 4 解 10 道十年數學難題、sorry 數為 0、成本約 2000 美元"}
+{"date": "2026-08-06", "title": "Harmonic Aristotle：每步 Lean4 形式驗證、IMO 金牌級、VERINA 96.8%"}
+{"date": "2026-08-06", "title": "CircuitProver：Lean 4 agentic 硬體驗證＋可重用證明庫（arXiv 2607.27259）"}
+{"date": "2026-08-06", "title": "DAC 2026：Synopsys／Siemens／Cadence 推自我驗證 EDA agent（Calibre／Questa 當守門員）"}
+{"date": "2026-08-06", "title": "DeepMind AI Co-Mathematician：FrontierMath Tier 4 48%（背景，2026/05）"}
+{"date": "2026-08-06", "title": "Claude 8/5 當機 7.5 小時（Mythos5／Fable5／Opus5／Sonnet5，今年第 164 次）"}
+{"date": "2026-08-06", "title": "NVIDIA 開源 NOOA agent 框架：讓 agent 行為可測試／追蹤／稽核／治理"}
+{"date": "2026-08-06", "title": "GitHub Copilot 雲端 agent 可自訂推理層級、留言觸發自動化、大規模自訂程式碼掃描"}
+{"date": "2026-08-06", "title": "Harmonic 祭出 100 萬美元形式化研究補助計畫"}
+{"date": "2026-08-07", "title": "Anthropic inference hooks：企業推論前 DLP 閘門，prompt 先過自家安全伺服器裁決"}
+{"date": "2026-08-07", "title": "arXiv:2606.26479 綜述：學界收斂到模型外的確定性守門員對抗提示注入"}
+{"date": "2026-08-07", "title": "白宮定案前沿模型網路安全審查框架卻不公開內容"}
+{"date": "2026-08-07", "title": "Meta 推出終端編碼 agent Muse Code（Muse Spark 1.2）"}
+{"date": "2026-08-07", "title": "Kimi K3 進駐 GitHub Copilot 成可選模型"}
+{"date": "2026-08-07", "title": "GitHub 開放跨 repo 大規模自訂 code scanning 預設設定、淘汰 GitHub Spark"}
+{"date": "2026-08-07", "title": "Anthropic Cowork 上手機與網頁、任命 Tino Cuellar 為首位全球事務長"}
+{"date": "2026-08-08", "title": "AI 開始學會模擬物理世界：世界模型同一天走出兩座實驗室（主軸）"}
+{"date": "2026-08-08", "title": "Google DeepMind WeatherNext 登 Nature：三天颶風預報達過去兩天準度、多爭取一天預警"}
+{"date": "2026-08-08", "title": "DeepMind 開源 WeatherNext 權重（Apache 2.0，三版本含 Colab mini），NHC 已實戰 Melissa 颶風"}
+{"date": "2026-08-08", "title": "NVIDIA 把 Cosmos 世界模型接上 Omniverse Blueprints，擴大工廠／機器人採用與日本 Cosmos 聯盟"}
+{"date": "2026-08-08", "title": "Anthropic 鬆綁 Claude Fable 5 生物安全誤攔：日常健康／教育問題誤擋減約 85%，雙用途研究仍限制"}
+{"date": "2026-08-08", "title": "Kimi K3 開源模型進駐 GitHub Copilot（輸入3／輸出15／快取0.3 美元每百萬 token）"}
+{"date": "2026-08-08", "title": "GitHub Copilot 用量指標 API 新增統計 Claude／Codex 等夥伴 agent 在工作流內活動"}
+{"date": "2026-08-08", "title": "GitHub Copilot 程式碼審查 Lite／Balanced 深淺等級正式 GA"}
+{"date": "2026-08-09", "title": "OpenAI ChatGPT 為 GPT-5.6 Sol 加上思考程度滑桿與 Think 按鈕、Free/Go 無限文字對話"}
+{"date": "2026-08-09", "title": "GitHub Copilot 程式碼審查力度分級 Lite/Balanced 正式 GA"}
+{"date": "2026-08-09", "title": "GitHub 企業受管設定新增 MCP 允許清單（allowedMcpServers/deniedMcpServers、fail-closed）"}
+{"date": "2026-08-09", "title": "Kimi K3 開源模型進駐 GitHub Copilot 全平台、企業版預設關閉"}
+{"date": "2026-08-09", "title": "Anthropic 強化 Fable 5 生物安全防護"}
+{"date": "2026-08-09", "title": "xAI Grok Build 放寬 bash 允許清單、加快 auto 模式核准"}
+{"date": "2026-08-09", "title": "NVIDIA Into the Omniverse：開放世界模型推進 Physical AI"}
+{"date": "2026-08-09", "title": "GitHub Issues 新增 Relates to 關聯與多選欄位 GA"}
+{"date": "2026-08-10", "title": "AMD 收購 Taalas：把模型權重鑄進電晶體的模型專用 IC，HC1 用台積電 6nm 跑 Llama 3.1 8B 逼近每秒 1.7 萬 tokens"}
+{"date": "2026-08-10", "title": "Anthropic 自組客製矽晶團隊、要與模型共同設計硬體，傳評估 Samsung 2nm 與先進封裝"}
+{"date": "2026-08-10", "title": "Google DeepMind 大改組：Hassabis 卸 CEO 轉任主席兼 Alphabet 首席科學家、Kavukcuoglu 接掌營運"}
+{"date": "2026-08-10", "title": "OpenAI 讓免費/Go 用戶無限文字對話並加 Think 按鈕，付費層 GPT-5.6 Sol 統一即時與推論、加算力滑桿"}
+{"date": "2026-08-10", "title": "GitHub Copilot 程式審查 effort levels 正式上線、選取即審查與組織級自訂指令；Kimi K3 進入 Copilot"}
+{"date": "2026-08-10", "title": "Anthropic 強化 Fable 5 生物安全防護"}
+{"date": "2026-08-10", "title": "NVIDIA Omniverse 談開放世界模型推進實體 AI"}
+{"date": "2026-08-10", "title": "Google 老將 Jeff Dean、Sanjay Ghemawat 等出走創公益公司 Discovery Loop 自動化科研迴圈"}
+{"date": "2026-08-10", "title": "GitHub 企業版新增 MCP allowlist（企業受管設定控管可用 MCP 伺服器）"}
+{"date": "2026-08-11", "title": "NVIDIA 攜六大華爾街機構成立算力融資平台、動員逾 5,000 億美元第三方資本（算力變資產類別）"}
+{"date": "2026-08-11", "title": "Intel 宣布增發 150 億美元普通股，為 AI 資本支出、先進封裝與外部晶圓籌資"}
+{"date": "2026-08-11", "title": "台積電 7 月營收 4,675.8 億元、年增 44.7% 創同期新高，全年資本支出上修至 600–640 億美元"}
+{"date": "2026-08-11", "title": "據報導：Anthropic 擴大長期算力承諾並自組自研晶片團隊"}
+{"date": "2026-08-11", "title": "Meta 開源 Muse Glimmer：30B、Apache 2.0、單張消費級 GPU 可跑的 on-device 代理模型"}
+{"date": "2026-08-11", "title": "NVIDIA 開源 Magpie 多語 TTS（364M 開放權重、12 語言、可在地部署建語音代理）"}
+{"date": "2026-08-11", "title": "GitHub Copilot 網頁版新增每 session／每則訊息 token 花費指示器並可最小化對話"}
+{"date": "2026-08-11", "title": "開發工具維護週：Vercel AI SDK 7.0.59／langchain-openai 1.4.3／OpenAI Codex 0.148 alpha 小修"}
+{"date": "2026-08-11", "title": "Siemens 自我驗證 agentic EDA（Fuse EDA AI Agent＋Nemotron 3 Ultra，DAC 2026 背景）"}
+{"date": "2026-08-12", "title": "巨腦退場、小隊伍上工：AI 從單一大模型轉向小而專的模型隊伍＋路由調度"}
+{"date": "2026-08-12", "title": "Meta 重返開源：Muse Glimmer（30B、Apache 2.0、可在單張消費級顯卡本地跑）"}
+{"date": "2026-08-12", "title": "NVIDIA Nemotron 3.5 Lightning（30B MoE）＋開源路由器 NeMo Switchyard"}
+{"date": "2026-08-12", "title": "Microsoft MAI-Code-1.1-Flash 上線 GitHub Copilot（比前代便宜 73%）"}
+{"date": "2026-08-12", "title": "GitHub Copilot for JetBrains 加入 Ollama BYOK 與 Copilot Memory"}
+{"date": "2026-08-12", "title": "Windsurf 後繼者 Devin Desktop v3.7.16 新增子代理（Subagents）區塊"}
+{"date": "2026-08-12", "title": "NVIDIA 攜六大金融機構撬動逾 5,000 億美元 AI 算力融資平台"}
+{"date": "2026-08-12", "title": "OpenAI 推資安專用 GPT-5.6-Cyber（Daybreak Red），抓出兩個 Chrome V8 零日 CVE-2026-15903"}
+{"date": "2026-08-12", "title": "NVIDIA 主張 AI 資料中心需改用 800V DC 電力架構"}
+{"date": "2026-08-12", "title": "n8n 2.35.0 預覽版：修正 AI Agent 節點行為與 Code 節點輸出遮罩"}
+{"date": "2026-08-12", "title": "GitHub Copilot 網頁版：對話可最小化＋顯示每則訊息 token 用量"}
+{"date": "2026-08-12", "title": "arXiv HINT：LLM 生成 RTL 加一層硬體意圖表示層才收斂（7/7 可合成、面積少 5-26%）"}
+{"date": "2026-08-13", "title": "Gemini App 破 10 億月活、Google 推 Gemini 多步驟任務自動化（替你訂位、叫車、買票）"}
+{"date": "2026-08-13", "title": "Made by Google 2026：Pixel 11＋Tensor G6，Gemini 任務自動化擴到 40+ App"}
+{"date": "2026-08-13", "title": "xAI 發表 Grok 4.6，同步接進 Cursor／Grok Build／API"}
+{"date": "2026-08-13", "title": "OpenAI ChatGPT 廣告測試擴到英國、墨西哥、巴西、日本、南韓"}
+{"date": "2026-08-13", "title": "OpenAI 更新 ChatGPT App 體驗：語音可上傳檔案、Projects"}
+{"date": "2026-08-13", "title": "Anthropic Claude Sonnet 5 促銷價 8/31 到期，9/1 起回標準價 $3/$15"}
+{"date": "2026-08-13", "title": "Claude Code v2.1.228 穩定性修補"}
+{"date": "2026-08-13", "title": "Kimi K3 開放權重模型正式上線 GitHub Copilot"}
+{"date": "2026-08-14", "title": "xAI Grok 4.6 發布：為 long-running agents 設計、會自我測試與驗證，價格維持 $2／$6"}
+{"date": "2026-08-14", "title": "Google Gemini 3.7 Flash 正式 GA：主打軟體工程、網頁開發與 agentic 工作流，同日進 GitHub Copilot"}
+{"date": "2026-08-14", "title": "DeepSeek V4-Pro GA（0813）：重大 Agent 升級、推論力度 low／high／max 可調、原生 Responses API 給 Codex"}
+{"date": "2026-08-14", "title": "GitHub Agent Plugins 1.0：跨 VS Code／Copilot CLI／Copilot app 的 agent 外掛標準"}
+{"date": "2026-08-14", "title": "Cursor Builds：預配置環境讓 Cloud Agent 開機快約 10 倍、首 token 快 3 倍"}
+{"date": "2026-08-14", "title": "arXiv 2608.12150：推論預算相依的模型排名反轉，56476 次推論實測、預算感知選模補回 14.1% 落差"}
+{"date": "2026-08-14", "title": "Claude Code v2.1.229／2.1.231：remote-control --continue、/commit-push-pr 不再自動核准危險 git 旗標"}
+{"date": "2026-08-14", "title": "Vercel AI SDK ai@7.0.65／5.0.236：修 readUIMessageStream 效率、陣列輸出 JSON Schema 根定義、onFinish 錯誤傳遞"}
+{"date": "2026-08-14", "title": "n8n v2.35.2／v2.34.5：proxy 逐跳套用 TLS、修正 outbox 啟用 trigger 的活化模式回報"}
+{"date": "2026-08-14", "title": "NVIDIA GeForce NOW 原生 Linux App 出 Beta：雲端遊戲串流支援 Linux 與 Chromebook"}
+{"date": "2026-08-15", "title": "Claude Code auto mode 8/14 起設為 Pro/Max/Team 預設（人類攔 13.6% vs auto mode 攔 89%）"}
+{"date": "2026-08-15", "title": "Anthropic 八月風險報告：Claude 寫下自家絕大多數生產程式碼、評測開始飽和、對 AI 加速 R&D 更沒把握"}
+{"date": "2026-08-15", "title": "OpenAI 企業研究：跑自主工作流的組織拉開與把 AI 當聊天助理者的差距"}
+{"date": "2026-08-15", "title": "Deloitte 2026 企業 AI 現況：74% 兩年內部署 agentic、僅 21% 有成熟治理；8/12 擴大 AI 控制與稽核服務"}
+{"date": "2026-08-15", "title": "xAI Grok 4.6（8/12）8/14 進駐 GitHub Copilot 八個開發面、Artificial Analysis Index 61 分"}
+{"date": "2026-08-15", "title": "Google 發布 Gemini 3.7 Flash（8/13）"}
+{"date": "2026-08-15", "title": "IBM 與 OpenAI 結成企業落地聯盟、IBM 顧問部門設 OpenAI 專責團隊（8/14）"}
+{"date": "2026-08-15", "title": "白宮發布前沿 AI 網路安全測試自願框架（8/12）"}
+{"date": "2026-08-15", "title": "Google DeepMind 手語轉文字 SL2T 模型進入正式產品（8/13）"}
+{"date": "2026-08-15", "title": "CoreWeave 第二季營收翻倍至 25.8 億美元、積壓訂單 1,040 億美元（8/14）"}
+{"date": "2026-08-16", "title": "AI 力道旋鈕成主軸：DeepSeek/Qwen/Claude Code 同推推理力道與自主權控制"}
+{"date": "2026-08-16", "title": "DeepSeek V4-Pro GA：推理力道 low/high/max 三檔、尖峰離峰計價（離峰半價）、原生 Responses API/Codex"}
+{"date": "2026-08-16", "title": "🔄 後續追蹤：Qwen3.8-27B 開源權重發布（Apache 2.0、262K 上下文、reasoning_effort、單張 GPU、SWE-bench Pro 61.7）"}
+{"date": "2026-08-16", "title": "Claude Code 2.1.233：自動模式設為預設（分類器把關）、forward_user_identity 按人頭歸屬花費、Linux 記憶體 cgroup 上限、GitLab MR 支援"}
+{"date": "2026-08-16", "title": "OpenAI 預覽 Ultrafast：Cerebras 加速 GPT-5.6 Sol 每秒 750 token、快 14 倍（限量預覽、未公布價格）"}
+{"date": "2026-08-16", "title": "🔄 後續追蹤：Grok 4.6 進駐 GitHub Copilot（agentic coding、企業版預設關閉需管理員開啟）"}
+{"date": "2026-08-16", "title": "Anthropic 公開 Claude 文字浮水印運作原理（內容溯源）"}
+{"date": "2026-08-16", "title": "GitHub OAuth App 支援多重 redirect URI 與 token 更新（8 小時短效 token＋6 個月 refresh、最多 10 個 URI、GHES 3.23）"}
+{"date": "2026-08-16", "title": "NVIDIA 與 UGM/Indosat 在印尼開設首座大學 AI 中心（主權 AI、人才培育）"}
+{"date": "2026-08-16", "title": "Vercel AI SDK ai@7.0.66 與 @ai-sdk/xai@4.0.40（語音時間戳、串流狀態與型別修正）"}
+{"date": "2026-08-16", "title": "n8n 2.34.6 穩定版與 2.35.3 預覽版（Google Ads v21→v25、Teams OAuth 還原、同工作階段略過更新審批）"}
+{"date": "2026-08-17", "title": "強 AI 搬進你的地盤：模型開始搬到你自己的資料這一側（開放權重＋同態加密）"}
+{"date": "2026-08-17", "title": "🔄 後續追蹤：Qwen3.8-27B 開放權重正式落地（27B dense、24GB 可跑、SWE-bench Pro 61.7）"}
+{"date": "2026-08-17", "title": "Google 開源 HEIR 同態加密編譯器：讓推論跑在加密資料上、伺服器看不到明文"}
+{"date": "2026-08-17", "title": "DFM Mimir v1：只用可溯源授權資料訓練的 10 億參數開放模型"}
+{"date": "2026-08-17", "title": "Hugging Face〈State of Open Models: Summer 2026〉開放模型年中盤點"}
+{"date": "2026-08-17", "title": "Cursor 雲端 agent 環境改用預建映像（Builds），啟動快 10 倍"}
+{"date": "2026-08-17", "title": "GitHub Copilot 上架 Grok 4.6、Agent Plugins 1.0 GA、加入 Kimi K3／MAI-Code-1.1-Flash"}
+{"date": "2026-08-17", "title": "Claude Code v2.1.233：加 GitLab MR、Linux 記憶體上限與多項安全修補"}
+{"date": "2026-08-17", "title": "IBM 加入 OpenAI Elite 夥伴層、把 GPT-5.6 埋進 IBM Consulting"}
+{"date": "2026-08-17", "title": "Vercel AI SDK 8/15 一批 provider 補丁（@ai-sdk/xai 語音、moonshotai 工具 schema）"}
+{"date": "2026-08-17", "title": "arXiv SynAct：LLM agent 自動讀 synthesis 報告調 PPA（背景研究）"}
+{"date": "2026-08-18", "title": "Cursor 推出 Origin 程式碼託管（早期 beta、與 GitHub 雙向同步、內建 PR 與 CI）"}
+{"date": "2026-08-18", "title": "Claude Code v2.1.234：用量重置後自動延續 session、GitLab MR 狀態、拒絕危險 NT 路徑"}
+{"date": "2026-08-18", "title": "OpenAI Agents SDK v0.21.1：新增模型呼叫逾時與 sandbox 改進"}
+{"date": "2026-08-18", "title": "Vercel AI SDK harness@1.0.73 支援 structured output 的 output 屬性"}
+{"date": "2026-08-18", "title": "ScienceFlow：靠可回復執行狀態撐長任務的研究 agent，完整 MLE-bench 70.22% SOTA"}
+{"date": "2026-08-18", "title": "NVIDIA 保證 SB Energy 俄亥俄 PORTS-Pike 園區獨家部署 AI 運算、OpenAI 20 年租 8 IT-GW"}
+{"date": "2026-08-18", "title": "DeepSeek V4-Pro 8/16 起改尖峰／離峰計費，離峰半價"}
+{"date": "2026-08-18", "title": "Microsoft 8/18 起推 Copilot App 統一更新（帳戶標示、網址遷移 copilot.cloud.microsoft）"}
+{"date": "2026-08-18", "title": "Intern-S2-Mobius：記憶與推理解耦的基礎模型，7B 用 62.6% 資料追平、35B 推論快約 4 倍"}
+{"date": "2026-08-18", "title": "arXiv：Power Sampling 把機率質量推向正確反而準確率掉最多 18.5 個百分點，提出校準改法"}
+{"date": "2026-08-18", "title": "SynAct：讀真實合成報告逐步調參的 LLM 合成 agent，14 設計平均 WNS 壓到基線約 27%"}
+{"date": "2026-08-18", "title": "GateTruth：用突變測試稽核 LLM-RTL 基準嚴謹度，RTLLM v2.0 上 72% 設計未達 95% 擊殺門檻"}
+{"date": "2026-08-19", "title": "GitHub 全球大當機約 7.5 小時（Actions/API/Copilot/PR/Issues 全中）"}
+{"date": "2026-08-19", "title": "Cursor 推出 Origin：給 AI agent 用的程式碼倉庫，GitHub 當機當天開放 beta"}
+{"date": "2026-08-19", "title": "Grok 4.6 進駐 GitHub Copilot 八個介面、Agent Plugins 1.0 上線"}
+{"date": "2026-08-19", "title": "Anthropic Claude 全球大當機（8/16 起，Claude.ai/Code/Cowork）"}
+{"date": "2026-08-19", "title": "OpenAI 推出 ChatGPT for Teens 與年齡預測，未成年自動切換"}
+{"date": "2026-08-19", "title": "NVIDIA 在俄亥俄 Pike County 取得建廠土地與電力（與 SB Energy）"}
+{"date": "2026-08-19", "title": "GitHub 上線依 token 類型撤銷憑證與解除授權"}
+{"date": "2026-08-20", "title": "不是讓 agent 更聰明，而是幫它配一個騙不了的驗證器：從形式驗證到 LLM 評測都在對答案與圈手"}
+{"date": "2026-08-20", "title": "NeuroAbs：神經符號 RTL 抽象框架，LLM 提議、SMT 求解器驗證、反例引導精修加速形式驗證"}
+{"date": "2026-08-20", "title": "LangChain LangSmith 推 Tuned Evaluators 校準評測器，首發 Perceived Error 量 agent 產出的錯"}
+{"date": "2026-08-20", "title": "Anthropic Managed Agents 加網域白／黑名單限制 web 工具，Console 新增可觀測 Inspector 與自架 sandbox memory"}
+{"date": "2026-08-20", "title": "GitHub 上線按憑證類型精準撤銷／解除授權"}
+{"date": "2026-08-20", "title": "🔄 後續追蹤：GitHub Copilot 企業受管設定延伸到 JetBrains（外掛治理＋MCP 白名單＋權限模式）"}
+{"date": "2026-08-20", "title": "Cursor 子代理跑在獨立 VM，新增 agent 訂閱盯 PR／Slack／排程與 /goal 長期目標"}
+{"date": "2026-08-20", "title": "Anthropic 把 Files API／Agent Skills 與 Skills API／Admin API 使用者管理推上正式版"}
+{"date": "2026-08-20", "title": "Cerebras 發表晶圓級 CS-4（三顆 WSE-3T、TSMC 5nm、約 750 PFLOPS），主打推論性價比"}
+{"date": "2026-08-20", "title": "OpenAI Codex CLI 0.148.0 內建 Amazon Bedrock 供應商並加入 /export"}
+{"date": "2026-08-20", "title": "Liquid AI 以量化感知蒸餾釋出 LFM2.5 的 4-bit Q4_0 端側權重"}
+{"date": "2026-08-20", "title": "賓州州長 Shapiro 簽署行政命令，把 GRID 標準對 AI 資料中心用電立法上鎖"}
+{"date": "2026-08-20", "title": "Unitree（宇樹科技）上海科創板掛牌首日爆漲逾 6 倍，中國 A 股首家人形機器人上市"}
+{"date": "2026-08-20", "title": "GitHub CodeQL 2.26.3 強化 Actions 查詢與 JavaScript 建模"}
+{"date": "2026-08-20", "title": "GitHub 組織層 Code Quality 儀表板新增 Trends 趨勢分頁"}
+{"date": "2026-08-21", "title": "Cursor 雲端 agent 常駐訂閱：自動接手事件、auto-subscribe 自己的 PR 並修 CI 推到完成、/goal 長期目標、subagent 上獨立 VM"}
+{"date": "2026-08-21", "title": "Cline Desktop v0.0.15-beta.1：/handoff 把本地 session 交接上 Cline Cloud（關 App 仍續跑、可復原）"}
+{"date": "2026-08-21", "title": "Qwen Code v0.21.15：--resume 讓 /review 與 CI retry 接續被中斷的審查"}
+{"date": "2026-08-21", "title": "OpenAI Codex 在 Codex Cloud 加入 GitLab（beta）：@codex 從 issue/MR 起任務與 code review"}
+{"date": "2026-08-21", "title": "Claude Code 2.1.236–238：notify_when_idle 跨 session 一次性通知、egress proxy 每連線授權、long session 記憶體修正、Concise 輸出風格"}
+{"date": "2026-08-21", "title": "Vercel AI SDK ai@7.0.71：串流 onChunk/onError 例外不再中斷串流或遮蔽 provider 錯誤"}
+{"date": "2026-08-21", "title": "Grok 4.6 上架 Amazon Bedrock（500K context、US/global inference profile）"}
+{"date": "2026-08-21", "title": "AWS 為 GPT-5.6（Sol/Terra/Luna）開 cross-Region inference（1M context、跨 25+ 區域）"}
+{"date": "2026-08-21", "title": "OpenAI 測試 Private Safety Processing：零資料保留下偵測濫用、只回窄分類訊號（據報導）"}
+{"date": "2026-08-21", "title": "LangGraph Python SDK 0.4.3：decrypt replacement result 與相依套件更新"}
+{"date": "2026-08-21", "title": "arXiv NeuroAssertion（2608.18482）：formal＋SyGuS＋LLM 生成 RTL 驗證斷言，約 2 倍斷言與 mutation coverage（MLCAD 2026）"}
+{"date": "2026-08-22", "title": "程式代理搬進團隊聊天室：GitHub／OpenAI／Anthropic 同步把 coding agent 變共用非同步隊友（主軸）"}
+{"date": "2026-08-22", "title": "GitHub Copilot 在 Slack 上線：@GitHub 開雲端代理任務、Slack Code 頻道協作、PR 需管理員核准"}
+{"date": "2026-08-22", "title": "GitHub Copilot 進 Microsoft Teams：頻道內 @GitHub 開全隊可見可指揮的代理任務、合併前人審"}
+{"date": "2026-08-22", "title": "OpenAI Codex v0.149.0：新增 codex agents 儀表板與 codex queue 非同步對本地／遠端任務下指令"}
+{"date": "2026-08-22", "title": "Anthropic Claude Code 2.1.23x：工作階段間 @ 互相喊話、notify_when_idle、GitLab MR 支援"}
+{"date": "2026-08-22", "title": "Vercel AI SDK 修串流 onChunk/onError 例外會吞錯誤、中斷串流的問題"}
+{"date": "2026-08-22", "title": "xAI Grok Bot 定位常駐雲端 AI 隊友（內建訊息、核准、連接器、routines）"}
+{"date": "2026-08-22", "title": "GitHub 同日更新：Windows 11 arm64＋VS2026 映像 GA、code scanning 新增已緩解關閉理由與 Code Quality 稽核軌跡"}
