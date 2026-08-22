@@ -384,3 +384,17 @@
 {"date": "2026-08-22", "title": "Vercel AI SDK 修串流 onChunk/onError 例外會吞錯誤、中斷串流的問題"}
 {"date": "2026-08-22", "title": "xAI Grok Bot 定位常駐雲端 AI 隊友（內建訊息、核准、連接器、routines）"}
 {"date": "2026-08-22", "title": "GitHub 同日更新：Windows 11 arm64＋VS2026 映像 GA、code scanning 新增已緩解關閉理由與 Code Quality 稽核軌跡"}
+{"date": "2026-08-23", "title": "主軸：跑一次成功不算可靠——多篇研究戳破 agent 單次成功高估可靠度、加記憶加算力反而更糟"}
+{"date": "2026-08-23", "title": "概念：pass@k 與 pass^k（能力題 vs 可靠度題）"}
+{"date": "2026-08-23", "title": "半導體專區：IC 製造｜虛擬量測（用機台感測器訊號預測膜厚、少實測多預測）"}
+{"date": "2026-08-23", "title": "arXiv Thinkingbox：507 個有狀態商業工作流，最強模型 pass@1 65.36% 但 pass@20 僅 25.25%"}
+{"date": "2026-08-23", "title": "arXiv MemTrapBench：正確相關記憶反致推理固著，所有記憶策略輸給無記憶基線（掉超過 10%）"}
+{"date": "2026-08-23", "title": "arXiv AI4AI-Bench：agent 改進造 AI 演算法平均僅 0.166，推理力道調高改核心比例 8%→64%"}
+{"date": "2026-08-23", "title": "arXiv Task-CoEvolve：自適應挑驗證題把 harness 評估成本降約 80%"}
+{"date": "2026-08-23", "title": "arXiv FormalTCS：端到端形式化理論研究，autoformalization 僅 11.5% 為瓶頸"}
+{"date": "2026-08-23", "title": "DeepSeek 推出多模態 V4-Flash-Vision-Exp（加視覺理解、Terminal Bench 2.1 83.9）"}
+{"date": "2026-08-23", "title": "Anthropic 把 Mythos 5 帶進 Claude Security 掃程式碼漏洞、加碼 3500 萬美元 Defender Advantage Fund"}
+{"date": "2026-08-23", "title": "OpenAI 三個月內二度砍 GPT-5.6 Sol 價逾 20%（促銷約三個月，據報導）"}
+{"date": "2026-08-23", "title": "Cline v4.1.11–4.1.13：任務中生圖、排程持久化任務、Skills 變斜線指令、App 更名 Cline"}
+{"date": "2026-08-23", "title": "Claude Code v2.1.239／240：新增 /claude-api upgrade、成本估算標示資料落地 1.1 倍溢價"}
+{"date": "2026-08-23", "title": "NVIDIA 傳以 60 億美元授權＋10 億投資結盟 Poolside（Laguna 開放權重 coding 模型，據報導）"}
