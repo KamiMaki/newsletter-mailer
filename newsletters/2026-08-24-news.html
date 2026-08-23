@@ -1,0 +1,230 @@
+<!-- 企鵝的 AI 每日電子報 · 2026-08-24 -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;margin:0;padding:0;">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;color:#e2e8f0;">
+
+<!-- ===== Header ===== -->
+<tr><td style="padding:0 0 18px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+    <tr><td style="padding:28px 26px;">
+      <div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:.5px;">企鵝的 AI 每日電子報🐧</div>
+      <div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+      <div style="font-size:13px;color:#c7d2fe;margin-top:12px;font-weight:600;">2026 年 8 月 24 日（週日）· 閱讀時間約 7 分鐘</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 1. 30 秒重點 ===== -->
+<tr><td style="padding:0 0 16px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+      <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+        <li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>過去一週，agent 世界同時鋪好了兩條路——<strong style="color:#a5b4fc;">怎麼互相呼叫（互通標準）</strong>和<strong style="color:#a5b4fc;">怎麼自己付錢（金流協定）</strong>。Google 的 A2A 併入和 MCP 同一個中立基金會，AWS／Binance 讓 agent 真的能刷卡交易。</li>
+        <li style="margin-bottom:10px;">AWS Bedrock <strong style="color:#e2e8f0;">AgentCore Payments 轉正式版（GA）</strong>，agent 用穩定幣錢包＋支出上限自己付費用工具；Binance 推 <strong style="color:#e2e8f0;">Agent OS</strong>，把 ChatGPT／Claude Code 等接上交易，錢包限額但護欄偏薄。</li>
+        <li style="margin-bottom:10px;">阿里巴巴發表 <strong style="color:#e2e8f0;">Qwen-UI-Agent</strong>（會直接操作手機／電腦／網頁的畫面）；Tricentis 推自主找缺陷的測試代理；NVIDIA 將於 8/26 公布財報。</li>
+        <li style="margin-bottom:0;"><strong style="color:#67e8f9;">對半導體工作者最相關：</strong>這套「互通＋身分＋最小權限＋支出上限」的治理骨架，正是你日後在公司內部串 EDA／CAD／IT 多工具 agent 時，一定會踩到的那套規矩——現在就值得先看懂。</li>
+      </ul>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 2. 今天的主軸 ===== -->
+<tr><td style="padding:0 0 16px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+   <tr><td style="padding:1px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+      <tr><td style="padding:26px 24px;">
+        <div style="display:inline-block;background:rgba(99,102,241,.18);color:#a5b4fc;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;margin-bottom:14px;">🎯 今天的主軸</div>
+        <div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-bottom:18px;">agent 開始能「講同一種話、用同一種錢」——互通標準與金流協定，同一週一起長成基礎設施</div>
+
+        <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">▍共同變化</div>
+        <div style="font-size:15px;color:#cbd5e1;line-height:1.7;">如果把「一堆 AI agent 一起工作」想像成一座正在成形的城市，過去它缺兩樣最基本的東西：<strong style="color:#a5b4fc;">共通的語言</strong>（agent 之間怎麼互相呼叫）和<strong style="color:#a5b4fc;">共通的貨幣</strong>（agent 怎麼自己付錢）。這一週，兩樣同時到位。語言端：Google 的 <strong style="color:#a5b4fc;">A2A 協定正式併入 Linux Foundation 旗下的 Agentic AI Foundation（AAIF）</strong>，和 Anthropic 貢獻的 MCP 進了同一個中立治理之家（AAIF 自 2025 年底成立以來會員已破 250）。貨幣端：<strong style="color:#a5b4fc;">AWS AgentCore Payments 轉正式版</strong>、<strong style="color:#a5b4fc;">Binance 推出 Agent OS</strong>，讓 agent 能用錢包實際付費、交易。</div>
+
+        <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">▍為什麼放在一起看</div>
+        <div style="font-size:15px;color:#cbd5e1;line-height:1.7;">因為<strong style="color:#a5b4fc;">「怎麼溝通」和「怎麼付錢」是一個經濟體的兩條主幹道</strong>，缺一條都跑不起來。過去它們各自零散：溝通靠每家自訂 SDK、付錢靠人類插信用卡。當這兩件事在同一週都往「共用標準」收斂，意味著 agent 的定位正在改變——從「會幫你做事的工具」變成「能在真實市場裡自己交易的參與者」。這不是又一個更聰明的模型，而是<strong style="color:#a5b4fc;">讓所有模型都能上路的路面和收費站</strong>。</div>
+
+        <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">▍過去 vs. 現在</div>
+        <div style="font-size:15px;color:#cbd5e1;line-height:1.7;">過去：你要讓 agent 接第三方工具，得逐家串接不同 API，付費環節基本無解、只能人工代刷。現在分工清楚了——<strong style="color:#a5b4fc;">A2A 管 agent↔agent</strong>（互相發現能力、協作任務）、<strong style="color:#a5b4fc;">MCP 管 agent↔工具與資料</strong>、<strong style="color:#a5b4fc;">x402／MPP 這類協定管 agent↔錢</strong>。而且金流不是把信用卡交給 AI，而是穩定幣微支付＋支出上限＋短期憑證，agent 連原始金鑰都看不到。</div>
+
+        <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">▍背後邏輯</div>
+        <div style="font-size:15px;color:#cbd5e1;line-height:1.7;">為什麼要搬進「中立基金會」？因為沒有大廠願意把自家 agent 綁死在競爭對手的協定上；交給 Linux Foundation 這種中立機構治理，Google、微軟、AWS、Anthropic、OpenAI 才都敢用。金流端則用 <strong style="color:#a5b4fc;">deterministic budget check</strong>（付款前先做確定性的預算檢查）與 scoped 錢包，解決「機器人要怎麼安全地刷卡」這個治理難題——先把「能花多少、花到何時」框死，再放它去花。</div>
+
+        <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">▍對你的工作</div>
+        <div style="font-size:15px;color:#cbd5e1;line-height:1.7;">別以為這只是消費端的事。<strong style="color:#a5b4fc;">「互通標準 ＋ agent 身分 ＋ 最小權限 ＋ 支出／動作上限 ＋ 可稽核」</strong>這一整套 pattern，正是你之後在公司內部把多個工具串成 agent 流程時，會遇到的同一套治理骨架——不論那是行銷自動化，還是 IC 設計流程裡讓驗證 agent 去呼叫模擬工具、佈局 agent 去調度運算資源。今天在消費市場先跑出來的規矩，明天就是企業內部 agent 平台的預設值。</div>
+
+        <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">▍限制與待驗證</div>
+        <div style="font-size:15px;color:#cbd5e1;line-height:1.7;">別太快歡呼。Binance Agent OS 雖然設了子帳戶不可提領與限額，但多家媒體直指其<strong style="color:#a5b4fc;">安全護欄「大部分還是丟給使用者自己設」</strong>；業界調查也長期指出<strong style="color:#a5b4fc;">約六成企業 agent 是「權限過大」</strong>的狀態。更重要的是：發布公告 ≠ 生產環境真的大規模在用，這些標準與協定都還很年輕，實戰的糾紛處理、退款、對帳、責任歸屬都還沒被壓力測試過。<span style="color:#94a3b8;">（編輯分析）</span></div>
+
+        <div style="background:#252525;border-radius:10px;padding:14px 16px;margin:18px 0 4px;">
+          <div style="font-size:12px;font-weight:700;color:#67e8f9;margin-bottom:6px;">👤 延伸解讀／編輯分析</div>
+          <div style="font-size:14px;color:#cbd5e1;line-height:1.7;">一個值得記的分工比喻：<strong style="color:#a5b4fc;">MCP 像 USB 埠</strong>（agent 插上工具），<strong style="color:#a5b4fc;">A2A 像電話</strong>（agent 打給 agent），<strong style="color:#a5b4fc;">x402／MPP 像收銀台</strong>（結帳）。過去這三件事各家自己做；現在插座和電話進了同一個標準組織，收銀台也有了公版協定。當基礎設施標準化，競爭就會往上移一層——不再比「誰的協定」，而是比「誰的 agent 在這些共用軌道上跑得最好、最可信」。<span style="color:#94a3b8;">（此段為編輯觀點，非官方結論）</span></div>
+        </div>
+
+        <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">▍重點一句話</div>
+        <div style="font-size:15px;color:#e2e8f0;line-height:1.7;font-weight:600;">agent 的下一個戰場不是「誰更聰明」，而是「誰鋪的路和誰用的錢，變成大家共用的標準」。</div>
+
+        <div style="border-top:1px solid #333;margin-top:18px;padding-top:12px;font-size:13px;color:#94a3b8;line-height:1.9;">
+          🔗 來源：<a href="https://www.linuxfoundation.org/press/linux-foundation-announces-the-formation-of-the-agentic-ai-foundation" style="color:#06b6d4;text-decoration:none;">Linux Foundation：AAIF 成立公告</a><br>
+          🔗 來源：<a href="https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to-transact-safely-and-autonomously-at-scale/" style="color:#06b6d4;text-decoration:none;">AWS：AgentCore Payments GA</a><br>
+          🔗 來源：<a href="https://www.prnewswire.com/news-releases/binance-introduces-agent-os-to-connect-ai-applications-to-financial-infrastructure-302856306.html" style="color:#06b6d4;text-decoration:none;">Binance：Agent OS 官方新聞稿</a>
+        </div>
+      </td></tr>
+    </table>
+   </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 3. 主軸的衍生新聞 ===== -->
+<tr><td style="padding:6px 0 6px;">
+  <div style="font-size:17px;font-weight:800;color:#ffffff;padding:6px 4px 12px;">🔗 主軸的衍生新聞</div>
+</td></tr>
+
+<tr><td style="padding:0 0 12px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:20px 24px;">
+      <div style="display:inline-block;background:rgba(6,182,212,.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:8px;">AWS AgentCore Payments 轉正式版：agent 用穩定幣錢包自己買工具</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;">AWS 讓 Bedrock 上的 agent 能<strong style="color:#e2e8f0;">自主付費呼叫付費 API、MCP 與內容</strong>：串接 Coinbase 與 Stripe Privy 的穩定幣錢包、支援 x402 與 Stripe/Tempo 共同制定的 <strong style="color:#e2e8f0;">MPP 協定</strong>，並提供每次付款的<strong style="color:#e2e8f0;">支出上限與到期時間</strong>、付款前做確定性預算檢查、憑證只給短期 token。這正是主軸「用同一種錢」從概念變成雲端正式服務的一塊拼圖。</div>
+      <p style="color:#94a3b8;font-style:italic;font-size:14px;margin:12px 0 8px;">💡 重點一句話：agent 付款的安全感，來自「先框死能花多少」而不是「相信它會乖」。</p>
+      <div style="font-size:13px;color:#94a3b8;">🔗 <a href="https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-payments-is-now-generally-available-enabling-agents-to-transact-safely-and-autonomously-at-scale/" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> ｜ 來源：AWS Machine Learning Blog（2026/08/18）</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:0 0 12px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:20px 24px;">
+      <div style="display:inline-block;background:rgba(6,182,212,.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:8px;">Binance 推 Agent OS：把 ChatGPT、Claude Code 接上交易，但護欄多半交給使用者</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;">Binance 的 Agent OS 一次把主軸三件事都示範了：內建 <strong style="color:#e2e8f0;">MCP 伺服器</strong>（互通）、<strong style="color:#e2e8f0;">x402 可程式化付款</strong>（金流）、以及 <strong style="color:#e2e8f0;">scoped 子帳戶</strong>（治理：不可提領外部、內建限額、需使用者明確授權）。可連 ChatGPT／Claude Code／Codex／Cursor 直接下單。但 TechCrunch 等直指其安全防護「多半仍要使用者自己設定」——恰好是主軸「限制與待驗證」的活教材。</div>
+      <p style="color:#94a3b8;font-style:italic;font-size:14px;margin:12px 0 8px;">💡 重點一句話：讓 agent 能交易很快，讓它「安全地」交易才是真正的工程。</p>
+      <div style="font-size:13px;color:#94a3b8;">🔗 <a href="https://www.prnewswire.com/news-releases/binance-introduces-agent-os-to-connect-ai-applications-to-financial-infrastructure-302856306.html" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> ｜ 來源：Binance 官方新聞稿（2026/08/20）</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:0 0 12px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:20px 24px;">
+      <div style="display:inline-block;background:rgba(6,182,212,.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:8px;">Snowflake CoCo Automations 進公測：託管沙盒排程執行，每次留下可稽核的 thread</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;">Snowflake 讓資料 agent「CoCo」能在<strong style="color:#e2e8f0;">平台託管的沙盒</strong>裡按排程執行，而<strong style="color:#e2e8f0;">每次執行都生成一條可檢視、可續談的 Cortex thread</strong>。當 agent 開始能互通又能花錢，「它到底在哪裡跑、做了什麼、能不能事後查」就變成關鍵——這則正好補上主軸缺的「runtime 與可稽核」那一角。</div>
+      <p style="color:#94a3b8;font-style:italic;font-size:14px;margin:12px 0 8px;">💡 重點一句話：自動化的價值不只在「它會自己跑」，更在「跑完你查得到帳」。</p>
+      <div style="font-size:13px;color:#94a3b8;">🔗 <a href="https://docs.snowflake.com/en/release-notes/2026/other/2026-08-21-cortex-code-automations-preview" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> ｜ 來源：Snowflake 官方發行說明（2026/08/21）</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 4. 其他快訊 ===== -->
+<tr><td style="padding:6px 0 12px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+      <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+        <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">阿里巴巴發表 Qwen-UI-Agent（GUI 基礎代理）。</strong>這是一個能<strong>直接看懂螢幕、跨手機／電腦／網頁點擊操作</strong>的基礎代理，官方稱在 MobileWorld 手機基準達 82.1%、勝過 GPT-5.6 Sol 與 Claude Opus 4.8。為什麼重要：當 agent 能操作任何畫面，很多沒有 API 的老系統也能被自動化。🔗 <a href="https://github.com/Tongyi-MAI/MAI-UI" style="color:#06b6d4;text-decoration:none;">來源：Tongyi-MAI GitHub／技術報告</a></li>
+        <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Tricentis 推出 Aida 與 AgentScore。</strong>Aida 是<strong>不靠既有腳本、自己探索應用程式找出缺陷與覆蓋缺口</strong>的測試代理；AgentScore 則<strong>用機率方式評估「其他 agent」在真實流程中的行為</strong>，給出 ship／block／review 建議。為什麼重要：當大家都在放 agent 上線，「誰來替 agent 打分數」變成剛需。🔗 <a href="https://www.tricentis.com/blog/model-context-protocol-agentic-ai-release" style="color:#06b6d4;text-decoration:none;">來源：Tricentis Blog</a></li>
+        <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Pinecone Nexus 在 τ-Knowledge 企業知識基準奪冠。</strong>這是向量資料庫廠商把<strong>企業內部知識檢索（RAG）</strong>做到基準第一。為什麼重要：agent 再會互通會花錢，答案品質仍卡在「能不能找到對的內部資料」，檢索層還是勝負手。🔗 <a href="https://aiagentstore.ai/ai-agent-news/this-week" style="color:#06b6d4;text-decoration:none;">來源：業界彙整（待官方確認）</a></li>
+        <li style="margin-bottom:0;"><strong style="color:#e2e8f0;">NVIDIA 將於 8/26（週三）公布 FY27 第二季財報。</strong>這是本週最重要的<strong>硬體與 AI 資本支出風向球</strong>，涵蓋至 7/26 的季度。為什麼重要：資料中心與 AI 基建的需求熱度，直接牽動先進製程與封裝的稼動與投資節奏。🔗 <a href="https://nvidianews.nvidia.com/" style="color:#06b6d4;text-decoration:none;">來源：NVIDIA Newsroom</a></li>
+      </ul>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 5. 今日概念 ===== -->
+<tr><td style="padding:0 0 16px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">📖 今日概念｜HTTP 402 與 agent 微支付（machine payments）</div>
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:0 0 4px;">一句定義</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;">HTTP 402「Payment Required（需要付費）」是 1990 年代就寫進網路規格、卻幾乎沒被啟用的一個狀態碼；<strong style="color:#a5b4fc;">x402 這類協定把它「接上電」</strong>，讓伺服器可以對「不是人、而是 agent」的呼叫者直接收費。</div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:0 0 4px;">生活化比喻</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;">它像網頁世界裡一個<strong style="color:#a5b4fc;">預留了三十年卻沒接線的投幣孔</strong>：孔一直都在，但沒插電、投錢沒反應。agent 時代終於把電源接上。說回技術：402 本質就是一個「請先付費」的握手訊號——伺服器回你「要錢」，你付了再放行。</div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:0 0 4px;">工作中的例子</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;">agent 想呼叫一個付費 API 或 MCP → 伺服器回 <strong style="color:#a5b4fc;">402 ＋ 報價</strong> → agent 的錢包用穩定幣付款、附上收據（receipt）→ 伺服器確認後放行。全程<strong style="color:#a5b4fc;">沒有人插信用卡</strong>，每筆交易都留下可對帳的憑證。</div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:0 0 4px;">常見誤解</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;">最大的誤解是「讓 agent 付款＝把公司信用卡交給 AI」。實際上是 <strong style="color:#a5b4fc;">scoped 錢包＋支出上限＋短期憑證＋付款前的確定性預算檢查</strong>；agent 連原始金鑰都看不到，超過額度直接被擋。它更像給 agent 一張「有限額、能追蹤、隨時可停」的儲值卡。</div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:0 0 4px;">與今天主軸的關係</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;">主軸講的「用同一種錢」，底層就是 402／x402／MPP 這一層協定。沒有它，agent 之間就算能互相呼叫（A2A）、能接工具（MCP），也只能空手交流；有了它，agent 經濟才真的能「結帳」。</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 6. 半導體 AI 專區 ===== -->
+<tr><td style="padding:0 0 16px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜類比／混合訊號電路的 AI 設計自動化</div>
+      <div style="margin-bottom:14px;">
+        <span style="display:inline-block;background:rgba(99,102,241,.18);color:#a5b4fc;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-right:6px;">IC 設計</span>
+        <span style="display:inline-block;background:rgba(148,163,184,.18);color:#94a3b8;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">背景知識 ＋ 編輯分析</span>
+      </div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:0 0 4px;">▍問題與流程位置</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;">數位設計早就高度自動化（RTL → 合成 → 佈局繞線一條龍），但<strong style="color:#a5b4fc;">類比／混合訊號</strong>（放大器、PLL、ADC／DAC、電源管理、RF）至今仍高度仰賴資深工程師「手調」。難在哪？因為它是<strong style="color:#a5b4fc;">連續值、非線性、多目標互相打架</strong>——增益、頻寬、雜訊、功耗、面積要同時滿足，還對製程與溫度極度敏感。位置在 IC 設計最前段：拓樸選擇 → 元件尺寸（sizing）→ 佈局（layout）。</div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:0 0 4px;">▍AI 如何介入（與過去的差異）</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;">過去工程師靠參數 sweep 加經驗直覺，一個 block 常要數週。現在 AI 分段接手：<strong style="color:#a5b4fc;">生成式模型提候選拓樸</strong>、<strong style="color:#a5b4fc;">神經網路代理模型（surrogate）＋最佳化做 device sizing</strong>、<strong style="color:#a5b4fc;">生成式／強化學習做佈局與跨製程 migration</strong>。商用如 Cadence Virtuoso Studio 的 AI 以 RL 自動化元件尺寸與佈局繞線並依歷史約束最佳化；研究如 CktGen 把拓樸、sizing、layout 三段都交給生成式模型。關鍵差異：從「人逐點試」變成「AI 從歷史設計學會 constraints，再一次給出候選」。<span style="color:#94a3b8;">（廠商宣稱之效益請視為 vendor-reported）</span></div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:0 0 4px;">▍資料與產出</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;">輸入：既有 schematic／layout、製程設計套件（PDK）、規格書與 datasheet；輸出：候選電路拓樸、元件尺寸、實體佈局。</div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:0 0 4px;">▍如何驗證</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;">AI 生成的結果<strong style="color:#a5b4fc;">一律要回到 SPICE 模擬</strong>與 DRC／LVS 把關才算數——因為 AI 在極端參數區間可能給出看似合理、實則失準的預測。AI 負責「大幅縮小搜尋空間、提出好起點」，最終簽核仍靠既有的確定性驗證。</div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:0 0 4px;">▍限制與風險</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:14px;">高度依賴訓練資料品質，<strong style="color:#a5b4fc;">訓練分布外的新拓樸不易被生成</strong>；多目標 trade-off 仍是硬骨頭（顧此失彼）；大型、多功能區塊整合的擴展性仍差；且絕不能跳過 SPICE 驗證。這些都還是「加速人、而非取代人」的階段。</div>
+
+      <p style="color:#67e8f9;font-weight:700;font-size:14px;margin:0;line-height:1.7;">👷 對半導體工作者的意義：最先受惠的是<strong>類比佈局與跨製程 migration</strong>這類重複勞動；工程師的價值會往「定義規格、設好 constraints、審 SPICE 結果」移動。可先在一個非關鍵 block 上試 AI sizing／migration，量測它替你省下的迭代次數，再決定是否推廣。</p>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 7. 反思時間 ===== -->
+<tr><td style="padding:0 0 16px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+   <tr><td style="padding:1px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+      <tr><td style="padding:24px;">
+        <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+        <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+          <li style="margin-bottom:12px;"><strong style="color:#a5b4fc;">趨勢反思：</strong>當「怎麼互相呼叫」和「怎麼付錢」都變成中立標準，agent 的競爭就會從「協定」上移到「軌道上的表現」。在這個新層級，你認為誰的護城河更深——擁有標準的、擁有金流的，還是擁有最會跑的 agent 的？</li>
+          <li style="margin-bottom:12px;"><strong style="color:#a5b4fc;">工作連結：</strong>如果明年你要在公司內部讓 EDA／CAD／IT 工具都掛上 agent，你會先設計「哪個 agent 有什麼權限、能花多少資源、留什麼稽核紀錄」，還是先追求功能跑得動？這個順序會決定你日後補多少洞。</li>
+          <li style="margin-bottom:0;"><strong style="color:#a5b4fc;">未來判斷：</strong>「agent 能自己花錢」聽起來很美，但第一次出現「agent 亂花錢或被誘導付款」的事故時，你希望公司當下已經有哪三道防線？現在就寫得出來嗎？</li>
+        </ul>
+        <p style="color:#a5b4fc;font-weight:700;font-size:15px;margin:16px 0 0;line-height:1.7;">🎒 今日帶走：這一週 agent 拿到了「共通的語言」和「共通的錢」，它正從會做事的工具，變成能在真實市場交易的參與者——而下一個瓶頸，是治理，不是聰明。</p>
+      </td></tr>
+    </table>
+   </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 8. 歷史電子報入口 ===== -->
+<tr><td style="padding:0 0 16px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 24px;text-align:center;">
+      <div style="font-size:16px;font-weight:800;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+      <div style="font-size:14px;color:#cbd5e1;line-height:1.7;margin-bottom:14px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</div>
+      <a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-weight:700;font-size:15px;">查看歷史電子報</a>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== Footer ===== -->
+<tr><td style="padding:8px 0 20px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    <tr><td style="padding:18px 24px;text-align:center;border-top:1px solid #262626;">
+      <div style="font-size:14px;color:#cbd5e1;margin-bottom:10px;">📬 覺得有用？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">分享給朋友訂閱這份電子報</a></div>
+      <div style="font-size:13px;color:#64748b;margin-bottom:14px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></div>
+      <div style="font-size:12px;color:#475569;line-height:1.6;">© 2026 企鵝的 AI 每日電子報🐧<br>本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+</table>
+</td></tr>
+</table>

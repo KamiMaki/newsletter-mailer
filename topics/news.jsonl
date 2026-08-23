@@ -398,3 +398,14 @@
 {"date": "2026-08-23", "title": "Cline v4.1.11–4.1.13：任務中生圖、排程持久化任務、Skills 變斜線指令、App 更名 Cline"}
 {"date": "2026-08-23", "title": "Claude Code v2.1.239／240：新增 /claude-api upgrade、成本估算標示資料落地 1.1 倍溢價"}
 {"date": "2026-08-23", "title": "NVIDIA 傳以 60 億美元授權＋10 億投資結盟 Poolside（Laguna 開放權重 coding 模型，據報導）"}
+{"date": "2026-08-24", "title": "A2A 併入 AAIF、與 MCP 同進 Linux Foundation 一個中立治理之家（會員破 250）"}
+{"date": "2026-08-24", "title": "AWS Bedrock AgentCore Payments 轉 GA：x402＋MPP、Coinbase／Stripe Privy 錢包、支出上限與到期"}
+{"date": "2026-08-24", "title": "Binance 推 Agent OS：內建 x402 付款與 MCP 伺服器、scoped 子帳戶不可提領、接上 ChatGPT／Claude Code／Codex／Cursor 交易"}
+{"date": "2026-08-24", "title": "Snowflake CoCo Automations 進公測：託管沙盒排程執行、每次產生可稽核 Cortex thread"}
+{"date": "2026-08-24", "title": "Alibaba 發表 Qwen-UI-Agent：跨手機／PC／網頁的 GUI 基礎代理、MobileWorld 82.1% 勝 GPT-5.6 Sol 與 Claude Opus 4.8"}
+{"date": "2026-08-24", "title": "Tricentis 推 Aida 與 AgentScore：自主探索找缺陷的 QE 代理＋機率式評分 agent 行為"}
+{"date": "2026-08-24", "title": "Pinecone Nexus 在 τ-Knowledge 企業知識基準奪冠"}
+{"date": "2026-08-24", "title": "NVIDIA 將於 8/26 公布 FY27 第二季財報"}
+{"date": "2026-08-24", "title": "主軸：agent 開始能「講同一種話、用同一種錢」——互通標準（A2A＋MCP 進 AAIF）與付費金流（x402／MPP、AWS Payments GA、Binance Agent OS）同時收斂"}
+{"date": "2026-08-24", "title": "概念：HTTP 402 與 agent 微支付（machine payments）"}
+{"date": "2026-08-24", "title": "半導體專區：IC 設計｜類比／混合訊號電路的 AI 設計自動化"}
