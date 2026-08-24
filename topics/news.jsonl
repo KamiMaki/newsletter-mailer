@@ -409,3 +409,15 @@
 {"date": "2026-08-24", "title": "主軸：agent 開始能「講同一種話、用同一種錢」——互通標準（A2A＋MCP 進 AAIF）與付費金流（x402／MPP、AWS Payments GA、Binance Agent OS）同時收斂"}
 {"date": "2026-08-24", "title": "概念：HTTP 402 與 agent 微支付（machine payments）"}
 {"date": "2026-08-24", "title": "半導體專區：IC 設計｜類比／混合訊號電路的 AI 設計自動化"}
+{"date": "2026-08-25", "title": "NVIDIA Vera Rubin 平台七晶片全面量產：為 agent 工作方式重新設計硬體（每MW吞吐+30x、每百萬token成本降至1/35）"}
+{"date": "2026-08-25", "title": "NVIDIA Vera CPU 稱首顆為 AI agent 打造（88 Olympus 核心、1.2TB/s、比x86快至1.8x），SpaceXAI 宣布採用"}
+{"date": "2026-08-25", "title": "NVIDIA NVLink Fusion 開放客製 XPU 接進機櫃（延遲低3x、封包率高10x、C2C能效高6x、域72→1152）"}
+{"date": "2026-08-25", "title": "NVIDIA FY27 第二季財報 8/26 公布（前季資料中心營收約752億美元、年增約92%）"}
+{"date": "2026-08-25", "title": "arXiv AI4AI-Bench：agent 改進 AI 演算法平均僅0.166、預設僅8%改核心（拉高推理力道升至64%）"}
+{"date": "2026-08-25", "title": "OpenAI Codex 新增 codex agents 儀表板、棄用 codex mcp-server"}
+{"date": "2026-08-25", "title": "Cline v4.1.14／4.1.15：模型目錄加 Claude Fable 5／DeepSeek、修正 MCP 工具自動核准"}
+{"date": "2026-08-25", "title": "arXiv UpgradeBench：底模升級後微調 adapter 該留/轉/重練的決策基準（相似度探針預測可攜性）"}
+{"date": "2026-08-25", "title": "Claude Code v2.1.241 維護版（接續 2.1.239 的 /claude-api upgrade）"}
+{"date": "2026-08-25", "title": "主軸：NVIDIA Vera Rubin 把整座機櫃與 CPU 都為 agent 工作方式重新設計、七晶片全面量產"}
+{"date": "2026-08-25", "title": "概念：每瓦性能（performance per watt）"}
+{"date": "2026-08-25", "title": "半導體專區：IC 製造｜先進封裝的 AI 缺陷檢測與量測（eBeam 自動缺陷分類與量測）"}

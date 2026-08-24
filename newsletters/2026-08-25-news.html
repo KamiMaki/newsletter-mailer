@@ -1,0 +1,231 @@
+<!-- 企鵝的 AI 每日電子報 · 2026-08-25 -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;margin:0;padding:0;">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;color:#e2e8f0;">
+
+<!-- ===== Header ===== -->
+<tr><td style="padding:0 0 18px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+    <tr><td style="padding:28px 26px;">
+      <div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:.5px;">企鵝的 AI 每日電子報🐧</div>
+      <div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+      <div style="font-size:13px;color:#c7d2fe;margin-top:12px;font-weight:600;">2026 年 8 月 25 日（週一）· 閱讀時間約 7 分鐘</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 1. 30 秒重點 ===== -->
+<tr><td style="padding:0 0 16px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+      <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+        <li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>NVIDIA 昨天（8/24）一口氣把 <strong style="color:#a5b4fc;">Vera Rubin 平台的七顆晶片宣布「全面量產」</strong>，而且整套系統的設計主軸只有一句話——<strong style="color:#a5b4fc;">為「agent 怎麼工作」重新打造硬體</strong>，不只是為了跑更大的模型。</li>
+        <li style="margin-bottom:10px;">關鍵數字：官方稱 Vera Rubin NVL72 對比前代 GB300，<strong style="color:#e2e8f0;">每百萬 token 成本降到 1/35、每 MW 吞吐量提升 30 倍</strong>，並強調「一個 agent 任務吃掉的 token 約是一次聊天的 15 倍」——需求端的形狀變了，硬體才跟著變。</li>
+        <li style="margin-bottom:10px;">同場還有兩件事：NVIDIA 推出<strong style="color:#e2e8f0;">「第一顆為 AI agent 打造的 CPU」Vera</strong>（SpaceXAI 宣布採用），以及用 <strong style="color:#e2e8f0;">NVLink Fusion 把客製 XPU 接進自家機櫃</strong>；另有一篇 arXiv 潑冷水：讓 agent 去改進 AI 演算法本身，多數根本不敢動核心。</li>
+        <li style="margin-bottom:0;"><strong style="color:#67e8f9;">對半導體工作者最相關：</strong>這波「七顆晶片、機櫃級 3D 系統、HBM、客製 XPU」全都靠<strong style="color:#67e8f9;">先進封裝</strong>撐起來——今天的半導體專區就談先進封裝的 AI 缺陷檢測與量測，正是這條供應鏈的良率咽喉。</li>
+      </ul>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 2. 今天的主軸 ===== -->
+<tr><td style="padding:0 0 16px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+   <tr><td style="padding:1px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+      <tr><td style="padding:26px 24px;">
+        <div style="display:inline-block;background:rgba(99,102,241,.18);color:#a5b4fc;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;margin-bottom:14px;">🎯 今天的主軸</div>
+        <div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-bottom:18px;">硬體開始長成「agent 的形狀」——NVIDIA Vera Rubin 把整座機櫃、連 CPU 都改成 agent 愛跑的樣子</div>
+
+        <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">▍共同變化</div>
+        <div style="font-size:15px;color:#cbd5e1;line-height:1.7;">過去兩年談 AI 硬體，重點都是「怎麼把更大的模型塞進去訓練」。這一波 NVIDIA 的 <strong style="color:#a5b4fc;">Vera Rubin 平台（8/24 宣布七顆晶片全面量產）</strong>把敘事換了個主詞：<strong style="color:#a5b4fc;">不是為模型，而是為 agent 而設計</strong>。理由很直白——官方直接點出，一個 agent 任務要來回思考、呼叫工具、讀寫資料，<strong style="color:#a5b4fc;">吃掉的 token 大約是一次普通聊天的 15 倍</strong>。當工作負載的「形狀」從「問一句、答一句」變成「一個任務跑幾百步」，機櫃就得重新設計。所以你會同時看到三件事一起發生：<strong style="color:#a5b4fc;">機櫃級推論效率大跳、一顆「為 agent 打造的 CPU」、以及把客製晶片接進 NVIDIA 機櫃的 NVLink Fusion</strong>。</div>
+
+        <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">▍為什麼放在一起看</div>
+        <div style="font-size:15px;color:#cbd5e1;line-height:1.7;">因為它們回答的是同一個問題：<strong style="color:#a5b4fc;">「當 AI 從『會回答』變成『會自己動手做一長串事』，運算基礎設施要怎麼變？」</strong> GPU 負責海量推論，但 agent 在兩次推論之間還要做編排、跑程式碼、搬資料——這些傳統上塞給 CPU 的雜活，過去沒人為它們最佳化。把「推論吞吐」「呼叫之間的雜活」「以及讓別家客製晶片也能上車」三塊拼起來，才看得出 NVIDIA 想框住的不是一顆晶片的市場，而是<strong style="color:#a5b4fc;">整座「AI 工廠」的預設架構</strong>。</div>
+
+        <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">▍過去 vs. 現在</div>
+        <div style="font-size:15px;color:#cbd5e1;line-height:1.7;">過去：買硬體看的是<strong style="color:#a5b4fc;">「峰值算力（FLOPS）」和「訓練一個大模型多快」</strong>。現在 NVIDIA 主打的指標換成<strong style="color:#a5b4fc;">「每百萬 token 多少錢」「每一度電（每 MW）能跑多少 agent 工作」</strong>。官方數字：Vera Rubin NVL72 相比前代 GB300 NVL72，<strong style="color:#a5b4fc;">每 MW 吞吐量最高提升 30 倍、每百萬 token 成本降至 1/35</strong>，同一電力預算下還能多配置約 40% 的 GPU。這些是拿 <strong style="color:#a5b4fc;">SemiAnalysis 的 AgentX 基準</strong>（用真實的 agent 寫程式軌跡，跑 DeepSeek V4 Pro、Qwen3.5、GLM5.3、Kimi K3 等模型）量出來的，不是純規格表。<span style="color:#94a3b8;">（以上為 NVIDIA 官方揭露之數字，屬 vendor-reported，量測條件請以原文為準）</span></div>
+
+        <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">▍背後邏輯</div>
+        <div style="font-size:15px;color:#cbd5e1;line-height:1.7;">為什麼連 CPU 都要重做？把 agent 想成一個很忙的專案經理：真正「動腦」（模型推論）交給 GPU，但它整天在<strong style="color:#a5b4fc;">開會排程、跑小工具、整理文件</strong>——這些是 CPU 的活。過去 CPU 是通用的，沒人替「agent 的雜活」最佳化，於是 GPU 常常在等 CPU。NVIDIA 這次把 <strong style="color:#a5b4fc;">Vera CPU 定位成「為 agent 打造」</strong>，就是要把兩次推論之間的空檔補起來，讓昂貴的 GPU 少空轉。至於 <strong style="color:#a5b4fc;">NVLink Fusion 開放客製 XPU</strong>，邏輯是：與其擋著大廠自研晶片，不如讓它們的晶片也插進 NVIDIA 的機櫃與網路，繼續坐穩「AI 工廠的地基」這個位置。</div>
+
+        <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">▍對你的工作</div>
+        <div style="font-size:15px;color:#cbd5e1;line-height:1.7;">對半導體人，這條線有兩個直接訊號。其一，<strong style="color:#a5b4fc;">「七顆晶片協同、機櫃級 3D、HBM、客製 XPU」全部建立在先進封裝與高速互連上</strong>——AI 需求熱不熱，最後會傳導到 CoWoS 類封裝、HBM 堆疊與測試量能，這是你稼動與投資節奏的風向球。其二，<strong style="color:#a5b4fc;">評估算力別再只看 FLOPS</strong>：當你之後要在公司內部跑 EDA／驗證／量測的 agent，真正決定成本的是「每個任務要燒多少 token、每度電能做多少事」，這正是今天概念要補的 <strong style="color:#a5b4fc;">每瓦性能</strong>。</div>
+
+        <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">▍限制與待驗證</div>
+        <div style="font-size:15px;color:#cbd5e1;line-height:1.7;">先別被倍數沖昏頭。<strong style="color:#a5b4fc;">30 倍、35 倍都是「對比自家前代、在特定基準」的數字</strong>，且是廠商自報；換個工作負載、換個模型，數字會很不一樣。「全面量產」也不等於明天就大量到貨——先進封裝與 HBM 的供給、良率與電力，都可能是真正的瓶頸。而且巧的是，<strong style="color:#a5b4fc;">NVIDIA 自己的 FY27 第二季財報就在明天（8/26）公布</strong>：市場會用真金白銀替這套敘事打分，資料中心營收與下季展望才是硬證據。<span style="color:#94a3b8;">（編輯分析）</span></div>
+
+        <div style="background:#252525;border-radius:10px;padding:14px 16px;margin:18px 0 4px;">
+          <div style="font-size:12px;font-weight:700;color:#67e8f9;margin-bottom:6px;">👤 延伸解讀／編輯分析</div>
+          <div style="font-size:14px;color:#cbd5e1;line-height:1.7;">一個好記的轉折：<strong style="color:#a5b4fc;">前十年是「把運算變便宜」，這一波是「把 agent 的運算變便宜」。</strong>差別在於，agent 是「長時間、多步驟、來回跑」的工作，效率不再只看單顆晶片多猛，而看<strong style="color:#a5b4fc;">整個機櫃（GPU＋CPU＋網路＋封裝）能不能像一台機器一起省電、省 token</strong>。這也解釋了為何 NVIDIA 要開放 NVLink Fusion——當競爭從「誰的晶片快」上移到「誰的機櫃是產業預設」，把別人的晶片請進自己的地基，反而是守住標準的一步。<span style="color:#94a3b8;">（此段為編輯觀點，非官方結論）</span></div>
+        </div>
+
+        <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">▍重點一句話</div>
+        <div style="font-size:15px;color:#e2e8f0;line-height:1.7;font-weight:600;">AI 硬體的新賽點，不是「跑更大的模型」，而是「把 agent 那種來回跑、很燒 token 的工作，做得又快又省電」——而這一切的物理地基，是先進封裝。</div>
+
+        <div style="border-top:1px solid #333;margin-top:18px;padding-top:12px;font-size:13px;color:#94a3b8;line-height:1.9;">
+          🔗 來源：<a href="https://blogs.nvidia.com/blog/vera-rubin-nvl72-efficiency-ai-agents/" style="color:#06b6d4;text-decoration:none;">NVIDIA Blog：Vera Rubin NVL72 每瓦效率（2026/08/24）</a><br>
+          🔗 來源：<a href="https://nvidianews.nvidia.com/news/nvidia-vera-rubin-platform" style="color:#06b6d4;text-decoration:none;">NVIDIA Newsroom：Vera Rubin 平台（七晶片全面量產）</a><br>
+          🔗 來源：<a href="https://blogs.nvidia.com/blog/nvlink-fusion-xpu-ai-factory/" style="color:#06b6d4;text-decoration:none;">NVIDIA Blog：NVLink Fusion 與客製 XPU</a>
+        </div>
+      </td></tr>
+    </table>
+   </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 3. 主軸的衍生新聞 ===== -->
+<tr><td style="padding:6px 0 6px;">
+  <div style="font-size:17px;font-weight:800;color:#ffffff;padding:6px 4px 12px;">🔗 主軸的衍生新聞</div>
+</td></tr>
+
+<tr><td style="padding:0 0 12px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:20px 24px;">
+      <div style="display:inline-block;background:rgba(6,182,212,.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:8px;">「第一顆為 AI agent 打造的 CPU」：Vera CPU 補上 GPU 之間的空檔，SpaceXAI 宣布採用</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;">NVIDIA 把 Vera 定位成<strong style="color:#e2e8f0;">專為 agent 設計的 CPU</strong>：處理模型推論之間的<strong style="color:#e2e8f0;">編排、程式碼執行與資料搬運</strong>，官方規格為 88 顆自研 Olympus 核心、最高 1.2 TB/s 記憶體頻寬，宣稱在 agent／強化學習／資料處理任務上比 x86 快最多 1.8 倍。<strong style="color:#e2e8f0;">SpaceXAI 同日宣布導入 Vera CPU</strong> 擴充其 agentic AI 算力——這正是主軸「連 CPU 都為 agent 重做」從規格變成客戶採用的一塊拼圖。</div>
+      <p style="color:#94a3b8;font-style:italic;font-size:14px;margin:12px 0 8px;">💡 重點一句話：讓昂貴 GPU 少空轉的關鍵，往往不是更強的 GPU，而是替它把「雜活」接手好的 CPU。</p>
+      <div style="font-size:13px;color:#94a3b8;">🔗 <a href="https://nvidianews.nvidia.com/news/spacexai-adopts-nvidia-vera-cpu-to-accelerate-agentic-ai-at-massive-scale" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> ｜ 來源：NVIDIA Newsroom（2026/08/24）</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:0 0 12px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:20px 24px;">
+      <div style="display:inline-block;background:rgba(6,182,212,.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:8px;">NVLink Fusion：把別家客製 XPU 接進 NVIDIA 機櫃，守住「AI 工廠地基」</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;">NVLink Fusion 讓超大規模業者能把<strong style="color:#e2e8f0;">自研的客製 XPU</strong>接上 NVIDIA 的第六代 NVLink 互連與機櫃架構，官方稱 XPU 間<strong style="color:#e2e8f0;">端到端延遲比乙太網路方案低 3 倍、封包率高 10 倍</strong>，NVLink-C2C 能效較 PCIe 高 6 倍；NVLink 域可達 72 顆、藍圖延伸至 1,152 顆加速器。和主軸的關係：這是 NVIDIA 的<strong style="color:#e2e8f0;">「模型—硬體共同設計」開放策略</strong>——與其擋自研晶片，不如讓它們也在自家軌道上跑。</div>
+      <p style="color:#94a3b8;font-style:italic;font-size:14px;margin:12px 0 8px;">💡 重點一句話：當你擋不住客戶自己做晶片，最好的防守是把他們的晶片變成你機櫃裡的一塊板子。</p>
+      <div style="font-size:13px;color:#94a3b8;">🔗 <a href="https://blogs.nvidia.com/blog/nvlink-fusion-xpu-ai-factory/" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> ｜ 來源：NVIDIA Blog（2026/08/24）</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:0 0 12px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:20px 24px;">
+      <div style="display:inline-block;background:rgba(6,182,212,.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:8px;">明天見真章：NVIDIA FY27 第二季財報 8/26 公布，替這套「agent 硬體」敘事打分</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;">NVIDIA 將於<strong style="color:#e2e8f0;">美東時間 8/26 盤後公布 FY27 第二季財報</strong>。市場關注點：<strong style="color:#e2e8f0;">資料中心營收、下一季展望、以及新平台的毛利率能否守住</strong>（前一季資料中心營收約 752 億美元、年增約 92%）。和主軸的關係：Vera Rubin 講得再漂亮，真正的驗證是需求端肯不肯持續掏錢——財報數字會直接牽動先進製程與封裝的稼動與擴產節奏。<span style="color:#94a3b8;">（發布時間與展望為官方／分析師預期，實際以財報為準）</span></div>
+      <p style="color:#94a3b8;font-style:italic;font-size:14px;margin:12px 0 8px;">💡 重點一句話：技術發表會負責畫餅，財報負責告訴你這塊餅有沒有人買單。</p>
+      <div style="font-size:13px;color:#94a3b8;">🔗 <a href="https://nvidianews.nvidia.com/" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> ｜ 來源：NVIDIA Newsroom（財報預告）</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 4. 其他快訊 ===== -->
+<tr><td style="padding:6px 0 12px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+      <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+        <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">arXiv AI4AI-Bench：讓 agent 去改進「訓練 AI 的演算法」，多數不敢動核心。</strong>研究者給 agent 4 小時、一顆 B300 GPU 去重寫 10 個真實訓練專案的演算法再回測，<strong>平均分只有 0.166（0＝原始基線、1＝最佳），且預設情況下只有 8% 的提交真的改了演算法</strong>，把推理力道調高才升到 64%。為什麼重要：這替「AI 自我加速研發」的樂觀說法降溫——現在的 agent 更會調參數，還不太會動骨架。🔗 <a href="https://arxiv.org/abs/2608.20318" style="color:#06b6d4;text-decoration:none;">來源：arXiv 2608.20318</a></li>
+        <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">OpenAI Codex 新增 <code>codex agents</code> 儀表板、棄用 <code>codex mcp-server</code>。</strong>Codex 讓你能在一個互動介面裡<strong>搜尋、啟動、開啟、改名、停止各項 agent 任務</strong>，同時把 MCP 服務收攏進 app-server 架構。為什麼重要：當一個人同時盯多個 coding agent，「任務控制台」正在成為開發工具的標配。🔗 <a href="https://learn.chatgpt.com/docs/changelog" style="color:#06b6d4;text-decoration:none;">來源：OpenAI Codex Changelog（2026/08/24）</a></li>
+        <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Cline v4.1.14／4.1.15：更新模型目錄並修正 MCP 工具核准行為。</strong>新版把 <strong>Claude Fable 5 與 DeepSeek 變體</strong>加進可選模型，並修好「開啟 MCP 伺服器時自動核准每次工具呼叫」的權限開關。為什麼重要：模型與權限的小修，恰恰是每天在用 coding agent 的人最有感的地方。🔗 <a href="https://github.com/cline/cline/releases" style="color:#06b6d4;text-decoration:none;">來源：Cline GitHub Releases（2026/08/23）</a></li>
+        <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">arXiv UpgradeBench：新基礎模型出來了，你的微調模型該留、該轉、還是重練？</strong>這篇替企業最現實的抉擇建基準——當底模一代代更新，<strong>沿用舊 adapter 的效果可能從幾乎持平一路掉到歸零</strong>；論文提出用一個相似度探針預測「可攜性」，並示範用固定決策策略以約 1/3 的算力／標註成本，換到接近全量重練的品質。為什麼重要：這是 MLOps 的日常痛點，對要長期維運內部模型的 IT／資料團隊很實用。🔗 <a href="https://arxiv.org/abs/2608.20918" style="color:#06b6d4;text-decoration:none;">來源：arXiv 2608.20918</a></li>
+        <li style="margin-bottom:0;"><strong style="color:#e2e8f0;">Claude Code v2.1.241 發布（維護版）。</strong>這是一版<strong>錯誤修正與穩定性強化</strong>，接在功能較多的 2.1.239（新增 <code>/claude-api upgrade</code> 遷移、資料落地工作區的成本估算調整）之後。為什麼重要：對重度使用者，穩定性修補和新旗艦功能一樣值得跟上。🔗 <a href="https://code.claude.com/docs/en/changelog" style="color:#06b6d4;text-decoration:none;">來源：Claude Code Changelog（2026/08/23）</a></li>
+      </ul>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 5. 今日概念 ===== -->
+<tr><td style="padding:0 0 16px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">📖 今日概念｜每瓦性能（performance per watt）</div>
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:0 0 4px;">一句定義</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;">每瓦性能就是<strong style="color:#a5b4fc;">「每消耗一瓦電，能做多少有用的運算」</strong>——在 AI 時代，這個「有用的運算」常被具體化成<strong style="color:#a5b4fc;">「每度電能產生／處理多少 token」或「每 MW 能跑完多少 agent 工作」</strong>。</div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:0 0 4px;">生活化比喻</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;">它像汽車的<strong style="color:#a5b4fc;">「每公升跑幾公里」</strong>：馬力大（峰值算力高）很威風，但真正決定你養不養得起的是油耗。說回技術：資料中心的電力與散熱是硬上限，<strong style="color:#a5b4fc;">當你有固定的一塊電力預算（幾十 MW），能做多少事就由每瓦性能決定</strong>，而不是單顆晶片的紙面算力。</div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:0 0 4px;">工作中的例子</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;">今天主軸的數字就是活例子：NVIDIA 說 Vera Rubin NVL72 相比前代<strong style="color:#a5b4fc;">每 MW 吞吐量提升最高 30 倍、每百萬 token 成本降到 1/35</strong>。換句話說，同樣一間機房、同樣的電，新架構能多服務幾十倍的 agent 請求——這對電力吃緊的資料中心，比「多幾 TFLOPS」重要得多。</div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:0 0 4px;">常見誤解</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;">最大的誤解是<strong style="color:#a5b4fc;">「算力越高＝越划算」</strong>。實際上，一顆峰值很高但很耗電、或常常在等資料的晶片，每瓦性能可能很差。也要小心廠商倍數：<strong style="color:#a5b4fc;">每瓦性能高度依賴「跑什麼工作、用什麼精度、怎麼量」</strong>，離開了指定基準，30 倍可能只剩幾倍。</div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:0 0 4px;">與今天主軸的關係</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;">主軸說「硬體為 agent 重新設計」，衡量成不成功的那把尺，正是每瓦性能與每 token 成本。agent 工作又長又燒 token，若每瓦性能沒跟上，再聰明的 agent 也會被電費和機櫃數量卡死——這也是為什麼 NVIDIA 這次把行銷主軸從「算力」換成了「效率」。</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 6. 半導體 AI 專區 ===== -->
+<tr><td style="padding:0 0 16px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜先進封裝的 AI 缺陷檢測與量測</div>
+      <div style="margin-bottom:14px;">
+        <span style="display:inline-block;background:rgba(99,102,241,.18);color:#a5b4fc;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-right:6px;">IC 製造</span>
+        <span style="display:inline-block;background:rgba(148,163,184,.18);color:#94a3b8;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">背景知識 ＋ 編輯分析</span>
+      </div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:0 0 4px;">▍問題與流程位置</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;">今天主軸那種「機櫃級 3D 系統＋HBM＋多晶片」全靠<strong style="color:#a5b4fc;">先進封裝</strong>把一堆晶片疊／拼在一起（混合鍵合 hybrid bonding、TSV 矽穿孔、微凸塊 microbump、RDL 重佈線）。難處在於：這些結構又小又深又立體，<strong style="color:#a5b4fc;">光學檢測「看得到有異常、卻分不清是真缺陷還是雜訊」</strong>；而封裝良率一旦掉，賠掉的是好幾顆已經做好的高價晶片。位置在製造後段的<strong style="color:#a5b4fc;">缺陷檢測（inspection／review）與量測（metrology）</strong>——決定「這個疊層能不能出貨」的守門關卡。</div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:0 0 4px;">▍AI 如何介入（與過去的差異）</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;">過去光學機台掃出一堆「疑似點」，得靠工程師逐一用電子束（eBeam）覆檢、人工判定與分類，慢且主觀。以 Applied Materials 近期公布的 <strong style="color:#a5b4fc;">SEMVision G7AP（eBeam 缺陷覆檢）＋ VeritySEM 7AP（量測）</strong>為例：前者用 eBeam 的高解析度把光學看不清的缺陷<strong style="color:#a5b4fc;">看清楚並「自動分類」</strong>、快速把「真缺陷」與「雜訊（nuisance）」分開；後者能<strong style="color:#a5b4fc;">依不同基板自動設定，做 2D／3D 關鍵尺寸量測</strong>（含傾角看高度與側壁角）。關鍵差異：從「人逐點看圖判缺陷」往「機台自動分類、把人力留給難題」移動。<span style="color:#94a3b8;">（註：官方原文用「自動分類／自動化」描述，未逐一標明背後是否為深度學習；把它視為 AI／機器學習驅動的缺陷分類，是本區的背景知識與編輯分析，非官方逐字宣稱。）</span></div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:0 0 4px;">▍資料與產出</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;">輸入：光學檢測標出的疑點座標、eBeam／SEM 影像、封裝結構的設計與製程資訊；產出：<strong style="color:#a5b4fc;">分類後的缺陷清單（類型／位置）與關鍵尺寸量測值</strong>，回饋給製程做調整與良率分析。</div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:0 0 4px;">▍如何驗證</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;">自動分類不是說了算：實務上要用<strong style="color:#a5b4fc;">已知樣本（含人工標註的黃金資料）比對分類正確率與漏抓率</strong>，並持續盯「雜訊被誤判成真缺陷」的比例。量測則要對照標準件與其他量測手段確認一致性。AI／自動化負責<strong style="color:#a5b4fc;">大幅減少人工覆檢量、提高一致性</strong>，最終品質判定仍需既有的計量與抽樣把關。</div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:0 0 4px;">▍限制與風險</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:14px;">先進封裝結構日新月異，<strong style="color:#a5b4fc;">沒見過的新缺陷型態、訓練資料外的樣式，自動分類容易失準</strong>；eBeam 覆檢本身較慢，吞吐與成本要權衡；跨產品／跨基板的泛化仍是難題。本區為背景科普，Applied Materials 僅表示<strong style="color:#a5b4fc;">兩套系統「已在多家先進封裝客戶量產使用」</strong>，未公布良率或準確率數字——坊間流傳的百分比請勿當官方數據引用。</div>
+
+      <p style="color:#67e8f9;font-weight:700;font-size:14px;margin:0;line-height:1.7;">👷 對半導體工作者的意義：最先受惠的是<strong>缺陷覆檢與分類</strong>這類重複、吃人力的環節；良率／缺陷工程師的價值會往「定義缺陷分類體系、維護黃金標註集、盯自動分類的漏抓與誤判」移動。可先在一條先進封裝產線上，量測「自動分類替你省下多少人工覆檢工時、漏抓率有沒有守住」，再決定推廣範圍。</p>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 7. 反思時間 ===== -->
+<tr><td style="padding:0 0 16px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+   <tr><td style="padding:1px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+      <tr><td style="padding:24px;">
+        <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+        <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+          <li style="margin-bottom:12px;"><strong style="color:#a5b4fc;">趨勢反思：</strong>當硬體開始「為 agent 的工作方式」重新設計，衡量算力的尺從 FLOPS 換成每 token 成本與每瓦性能。如果你公司內部要導入 AI，你現在評估工具與硬體時，看的是哪一把尺——還停在「規格多猛」，還是已經在算「每個任務要燒多少錢、多少電」？</li>
+          <li style="margin-bottom:12px;"><strong style="color:#a5b4fc;">工作連結：</strong>NVIDIA 願意用 NVLink Fusion 把競爭對手的客製晶片請進自家機櫃，來守住「產業預設架構」。回到你的專業：當一個外部標準或平台強到你不得不接，你會選擇抵抗到底，還是想辦法「在它的軌道上，做只有你能做的那一段」？</li>
+          <li style="margin-bottom:0;"><strong style="color:#a5b4fc;">未來判斷：</strong>先進封裝正從「後段配角」變成 AI 硬體的良率咽喉。如果三年後你們廠的獲利有一大塊押在先進封裝的良率上，你希望現在就先補強哪一項能力——量測、缺陷分類資料、還是跨產品的製程知識累積？</li>
+        </ul>
+        <p style="color:#a5b4fc;font-weight:700;font-size:15px;margin:16px 0 0;line-height:1.7;">🎒 今日帶走：這一波 AI 硬體的主詞從「模型」換成了「agent」——整座機櫃、連 CPU 都在為「來回跑、很燒 token」的工作重做；而讓這一切物理上成立的，是先進封裝與它背後的檢測與量測。</p>
+      </td></tr>
+    </table>
+   </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 8. 歷史電子報入口 ===== -->
+<tr><td style="padding:0 0 16px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 24px;text-align:center;">
+      <div style="font-size:16px;font-weight:800;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+      <div style="font-size:14px;color:#cbd5e1;line-height:1.7;margin-bottom:14px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</div>
+      <a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-weight:700;font-size:15px;">查看歷史電子報</a>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== Footer ===== -->
+<tr><td style="padding:8px 0 20px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    <tr><td style="padding:18px 24px;text-align:center;border-top:1px solid #262626;">
+      <div style="font-size:14px;color:#cbd5e1;margin-bottom:10px;">📬 覺得有用？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">分享給朋友訂閱這份電子報</a></div>
+      <div style="font-size:13px;color:#64748b;margin-bottom:14px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></div>
+      <div style="font-size:12px;color:#475569;line-height:1.6;">© 2026 企鵝的 AI 每日電子報🐧<br>本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
