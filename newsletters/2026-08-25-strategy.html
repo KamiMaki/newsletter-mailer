@@ -1,0 +1,223 @@
+<div style="background:#0f0f0f;padding:24px 12px;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<div style="max-width:650px;margin:0 auto;">
+
+<!-- 1. Header -->
+<div style="background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:14px 14px 0 0;padding:28px 24px;text-align:center;">
+  <div style="font-size:13px;color:#fff8e6;letter-spacing:2px;margin-bottom:6px;">企鵝的 AI 交易策略學習報</div>
+  <div style="font-size:24px;font-weight:700;color:#ffffff;">策略學習報｜2026-08-25</div>
+  <div style="font-size:13px;color:#fff3d6;margin-top:8px;">BTC × 美股大盤・今日主題：部位調整：固定比例與 Kelly 的直覺</div>
+</div>
+
+<!-- 2. 免責聲明 banner -->
+<div style="background:#1a1a1a;border-bottom:1px solid #2a2a2a;padding:12px 20px;text-align:center;">
+  <span style="color:#f59e0b;font-size:12.5px;line-height:1.6;">⚠️ 本報純為交易紀律與觀念學習用途，不構成投資建議；文中所有情境演練皆為教學示範，非買賣訊號。</span>
+</div>
+
+<!-- 3. 今日總覽 -->
+<div style="background:#1a1a1a;padding:22px 24px;">
+  <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:12px;">⚡ 今日總覽</div>
+  <ul style="margin:0;padding-left:20px;color:#d1d5db;font-size:15px;line-height:1.9;">
+    <li>BTC 過去一週狂漲逾 <strong style="color:#fbbf24;font-weight:700">22%</strong>，站上 <strong style="color:#fbbf24;font-weight:700">$77,700</strong>，逼近 $79,000，但 14 日 RSI 飆到 <strong style="color:#fbbf24;font-weight:700">82.2</strong>，落入今年最深的超買區間。</li>
+    <li>美股週一（8/24）收黑：S&P 500 跌 <strong style="color:#fbbf24;font-weight:700">0.28%</strong> 收 7,652.86、那斯達克跌 0.8%，晶片股遭美國擴大對伊朗制裁拖累重挫。</li>
+    <li>10 年期公債殖利率回落至 <strong style="color:#fbbf24;font-weight:700">4.71%</strong>，30 年期卻飆上 <strong style="color:#fbbf24;font-weight:700">5.33%</strong> 創 2007 年以來新高；本週五 Jackson Hole，新任 Fed 主席 Warsh 首次演說登場。</li>
+    <li>今日學習主題：<strong style="color:#fbbf24;font-weight:700">部位調整：固定比例與 Kelly 的直覺</strong>——BTC 超買訊號正好拿來練習「信心越高，越該重新檢查部位大小」。</li>
+  </ul>
+</div>
+
+<!-- 4. BTC 區塊 -->
+<div style="background:#1a1a1a;padding:22px 24px;border-top:1px solid #2a2a2a;">
+  <div style="display:inline-block;background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:20px;padding:6px 16px;font-size:13px;font-weight:700;color:#fff;margin-bottom:16px;">₿ BTC 加密貨幣</div>
+
+  <table style="width:100%;border-collapse:collapse;font-size:13.5px;color:#d1d5db;margin-bottom:16px;">
+    <tr style="background:#252525;">
+      <th style="padding:8px;text-align:left;color:#9ca3af;font-weight:600;">區間</th>
+      <th style="padding:8px;text-align:left;color:#9ca3af;font-weight:600;">當前價</th>
+      <th style="padding:8px;text-align:left;color:#9ca3af;font-weight:600;">變動%</th>
+      <th style="padding:8px;text-align:left;color:#9ca3af;font-weight:600;">趨勢方向</th>
+      <th style="padding:8px;text-align:left;color:#9ca3af;font-weight:600;">關鍵點位</th>
+    </tr>
+    <tr style="border-bottom:1px solid #2a2a2a;">
+      <td style="padding:8px;">日線</td>
+      <td style="padding:8px;">~$77,716</td>
+      <td style="padding:8px;color:#34d399;">+0.72%（較前一日）</td>
+      <td style="padding:8px;">站上短期均線，多頭延續</td>
+      <td style="padding:8px;">壓力 $79K，支撐 $75,800</td>
+    </tr>
+    <tr style="border-bottom:1px solid #2a2a2a;">
+      <td style="padding:8px;">週線</td>
+      <td style="padding:8px;">~$77,716</td>
+      <td style="padding:8px;color:#34d399;">本週 +22~23.5%</td>
+      <td style="padding:8px;">逾 3 年最佳單週表現，明顯站上 50 日均線</td>
+      <td style="padding:8px;">支撐 $75,800，壓力 $79-80K</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;">月線</td>
+      <td style="padding:8px;">~$77,716</td>
+      <td style="padding:8px;color:#34d399;">8 月由 $63-64K 反彈逾 20%</td>
+      <td style="padding:8px;">站回 200 日均線之上</td>
+      <td style="padding:8px;">整數關卡 $71K / $80K</td>
+    </tr>
+  </table>
+
+  <p style="color:#d1d5db;font-size:15px;line-height:1.7;margin:0 0 12px;">
+    BTC 上週靠現貨 ETF 連 5 個交易日（8/17-8/21）吸金 <strong style="color:#fbbf24;font-weight:700">$19.18 億</strong>——創近 10 個月最大單週流入——加上超過 <strong style="color:#fbbf24;font-weight:700">$43 億</strong>空頭部位遭強制平倉，兩股力量疊加把價格從 $63-64K 一路推上 $77,700 附近，一度逼近 $79,463。但漲勢也讓 14 日 <strong style="color:#e2e8f0">RSI（相對強弱指標，用來量測漲跌速度是否過快的溫度計）</strong>衝到 <strong style="color:#fbbf24;font-weight:700">82.2</strong>，遠高於 70 的傳統超買線，是 2026 年目前最深的超買讀數。技術面上，只要守住 <strong style="color:#e2e8f0">$75,800</strong> 這個關鍵支撐，仍有機會重新挑戰 $79K；若跌破，則有回落測試 $71K 的風險。
+  </p>
+
+  <p style="color:#d1d5db;font-size:15px;line-height:1.7;margin:0 0 14px;">
+    四個角度怎麼看這波急漲：<br/>
+    <strong style="color:#e2e8f0">順勢</strong>：週線創逾 3 年最大單週漲幅、站穩短期均線，順勢邏輯仍偏多，但漲勢斜率過陡，追價成本正在變高。<br/>
+    <strong style="color:#e2e8f0">均值回歸</strong>：RSI 82.2 遠超超買線，統計上短線有拉回消化的機率，過熱後的整理是常態而非例外。<br/>
+    <strong style="color:#e2e8f0">突破</strong>：站穩 $75,800 有望測試 $79K，但這波尚未站穩 $80K 整數關卡，屬於未完成的突破，需觀察能否帶量站穩。<br/>
+    <strong style="color:#e2e8f0">宏觀</strong>：ETF 資金流與空頭回補是這波漲勢的主要推手，屬於資金面驅動而非基本面轉強，一旦資金流轉弱，漲勢的支撐力道也會跟著鬆動。
+  </p>
+
+  <p style="color:#d1d5db;font-size:14px;line-height:1.7;margin:0 0 14px;">
+    📰 <strong style="color:#e2e8f0">加密圈新聞</strong>：美國現貨 BTC ETF 連 5 日淨流入合計 $19.18 億，創近 10 個月最大單週流入，同期現貨 ETH ETF 也吸金 $6.97 億；這波急漲同步觸發逾 $43 億空頭部位強制平倉，形成資金面與槓桿去化的正向循環。
+  </p>
+
+  <div style="background:#252525;border-left:3px solid #f59e0b;border-radius:6px;padding:14px 16px;">
+    <div style="font-size:13.5px;font-weight:700;color:#fbbf24;margin-bottom:8px;">📌 學習重點</div>
+    <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:14px;line-height:1.8;">
+      <li>RSI 衝上<strong style="color:#e2e8f0">超買區</strong>不代表必跌，但代表短線風險報酬比正在惡化，這時該檢視部位而非加碼追高。</li>
+      <li>ETF 資金流是<strong style="color:#e2e8f0">資金面指標</strong>，能推動漲勢也能反向抽走支撐，不能當成長期基本面看待。</li>
+      <li>未站穩的整數關卡（如 $80K）常伴隨<strong style="color:#e2e8f0">假突破</strong>，追價前先確認是否帶量站穩。</li>
+      <li>漲勢越急，越該問自己：<strong style="color:#e2e8f0">現在的部位大小，是照著計畫算出來的，還是被行情追著跑出來的？</strong></li>
+    </ul>
+  </div>
+</div>
+
+<!-- 5. 美股大盤區塊 -->
+<div style="background:#1a1a1a;padding:22px 24px;border-top:1px solid #2a2a2a;">
+  <div style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:20px;padding:6px 16px;font-size:13px;font-weight:700;color:#fff;margin-bottom:16px;">📊 美股大盤</div>
+
+  <p style="color:#d1d5db;font-size:15px;line-height:1.7;margin:0 0 10px;">
+    <strong style="color:#e2e8f0">S&P 500</strong> 週一收 <strong style="color:#fbbf24;font-weight:700">7,652.86</strong>，跌 21.51 點（-0.28%）；<strong style="color:#e2e8f0">QQQ</strong>（追蹤那斯達克 100）收 <strong style="color:#fbbf24;font-weight:700">$705.16</strong>，較前一日 $713.44 跌約 <strong style="color:#fbbf24;font-weight:700">1.16%</strong>，那斯達克綜合指數同步跌 0.8% 收 25,980.19；道瓊逆勢收紅，+140.15 點（+0.3%）收 53,417.16，是三大指數中唯一收漲的一個。<strong style="color:#e2e8f0">VIX</strong>（波動率指數，市場恐慌溫度計）收在 <strong style="color:#fbbf24;font-weight:700">15.13</strong>，仍處歷史相對低檔。拖累科技股的主因是美國財政部長 Bessent 週一宣布擴大對伊朗制裁（「Operation Economic Outcast」），半導體類股全面走弱：<strong style="color:#e2e8f0">Micron</strong> 重挫 6.07%、<strong style="color:#e2e8f0">AMD</strong> 跌 3.33%、<strong style="color:#e2e8f0">Intel</strong> 跌 3.81%。
+  </p>
+
+  <table style="width:100%;border-collapse:collapse;font-size:13.5px;color:#d1d5db;margin:12px 0 16px;">
+    <tr style="background:#252525;">
+      <th style="padding:8px;text-align:left;color:#9ca3af;font-weight:600;">區間</th>
+      <th style="padding:8px;text-align:left;color:#9ca3af;font-weight:600;">當前價</th>
+      <th style="padding:8px;text-align:left;color:#9ca3af;font-weight:600;">變動%</th>
+      <th style="padding:8px;text-align:left;color:#9ca3af;font-weight:600;">趨勢方向</th>
+      <th style="padding:8px;text-align:left;color:#9ca3af;font-weight:600;">關鍵點位</th>
+    </tr>
+    <tr style="border-bottom:1px solid #2a2a2a;">
+      <td style="padding:8px;">日線</td>
+      <td style="padding:8px;">S&P 7,652.86</td>
+      <td style="padding:8px;color:#f87171;">-0.28%</td>
+      <td style="padding:8px;">晶片股拖累，週一收黑</td>
+      <td style="padding:8px;">支撐 $7,600</td>
+    </tr>
+    <tr style="border-bottom:1px solid #2a2a2a;">
+      <td style="padding:8px;">週線</td>
+      <td style="padding:8px;">S&P 7,652.86</td>
+      <td style="padding:8px;color:#f87171;">較上週高點約 -2%</td>
+      <td style="padding:8px;">從高檔拉回整理，仍在 50 日均線之上</td>
+      <td style="padding:8px;">壓力 $7,750，支撐 $7,600</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;">月線</td>
+      <td style="padding:8px;">S&P 7,652.86</td>
+      <td style="padding:8px;color:#9ca3af;">8/13 創 7,798.99 收盤新高後拉回</td>
+      <td style="padding:8px;">仍在 200 日均線之上，多頭格局未破壞</td>
+      <td style="padding:8px;">關鍵 $7,600 / $7,800</td>
+    </tr>
+  </table>
+
+  <p style="color:#d1d5db;font-size:15px;line-height:1.7;margin:0 0 14px;">
+    四個角度怎麼看大盤：<br/>
+    <strong style="color:#e2e8f0">順勢</strong>：那斯達克連兩週動能轉弱、晶片股領跌，短期順勢訊號偏空，但道瓊逆勢收紅顯示資金正在輪動而非全面出逃。<br/>
+    <strong style="color:#e2e8f0">均值回歸</strong>：QQQ 單日跌逾 1%，半導體類股跌幅更深，短線超賣區可能出現技術性反彈，但需視晶片股消息面是否降溫。<br/>
+    <strong style="color:#e2e8f0">突破</strong>：若跌破 $7,600 支撐，技術面打開下探空間；若守住並站回 $7,750，有機會挑戰月中前高 $7,800 區間。<br/>
+    <strong style="color:#e2e8f0">宏觀</strong>：伊朗制裁、30 年期殖利率飆上 5.33%（2007 年以來新高）、以及本週五 Warsh 在 Jackson Hole 的首次演說，三個變數本週交織，市場波動可能加大。
+  </p>
+
+  <p style="color:#d1d5db;font-size:14px;line-height:1.7;margin:0 0 14px;">
+    📰 <strong style="color:#e2e8f0">美股新聞</strong>：美國財政部長 Bessent 週一宣布「Operation Economic Outcast」擴大對伊朗制裁，帶動晶片股全面走弱；同時 Jackson Hole 經濟研討會將於本週五（8/28）登場，新任 Fed 主席 Warsh 首次以主席身分演說，市場視其為 9 月 FOMC 前最後一次政策訊號機會。
+  </p>
+
+  <div style="background:#252525;border-left:3px solid #6366f1;border-radius:6px;padding:14px 16px;">
+    <div style="font-size:13.5px;font-weight:700;color:#818cf8;margin-bottom:8px;">📌 學習重點</div>
+    <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:14px;line-height:1.8;">
+      <li>指數收黑但<strong style="color:#e2e8f0">道瓊逆勢收紅</strong>，提醒自己看大盤要看類股輪動，不能只看單一指數數字。</li>
+      <li><strong style="color:#e2e8f0">VIX 偏低</strong>不代表無風險，殖利率飆升與地緣政治消息隨時可能推升波動。</li>
+      <li>像 Jackson Hole 這種<strong style="color:#e2e8f0">已知的事件時點</strong>，紀律上該提前寫好劇本，而非等演說當下才反應。</li>
+      <li>單一族群（如晶片股）重挫時，先確認是<strong style="color:#e2e8f0">個股消息</strong>還是<strong style="color:#e2e8f0">系統性風險</strong>，兩者的因應方式完全不同。</li>
+    </ul>
+  </div>
+</div>
+
+<!-- 6. 今日策略學習 -->
+<div style="background:#1a1a1a;padding:22px 24px;border-top:1px solid #2a2a2a;">
+  <div style="display:inline-block;background:linear-gradient(135deg,#8b5cf6,#6366f1);border-radius:20px;padding:6px 16px;font-size:13px;font-weight:700;color:#fff;margin-bottom:16px;">📖 今日策略學習</div>
+
+  <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:6px;">部位調整：固定比例與 Kelly 的直覺</div>
+  <p style="color:#9ca3af;font-size:13.5px;line-height:1.7;margin:0 0 14px;">
+    為什麼今天學這個：BTC 這波急漲讓很多人「信心爆棚」，正是最容易把部位越押越大的時刻——但今天 RSI 82.2 的超買訊號恰恰說明，越是有把握的時候，越該回頭檢查部位大小是不是還合理。
+  </p>
+
+  <ul style="margin:0 0 16px;padding-left:20px;color:#d1d5db;font-size:15px;line-height:1.8;">
+    <li><strong style="color:#e2e8f0">固定比例</strong>：不管信心高低，每筆都押固定百分比資金，簡單但沒有反映「這筆的優勢有多大」。</li>
+    <li><strong style="color:#e2e8f0">Kelly 公式</strong>：部位比例 = (勝率×賠率 − 敗率) / 賠率，目的是讓長期複合成長率最大化，而不是單筆賺最多。</li>
+    <li><strong style="color:#e2e8f0">估計誤差</strong>是 Kelly 最大的敵人：勝率、賠率只要估錯，全倉 Kelly 會變成過度下注，回撤會被放大。</li>
+    <li>實務上多用 <strong style="color:#e2e8f0">1/4～1/2 Kelly</strong>：半 Kelly 大約能保留全 Kelly 七成五的成長率，卻能把波動砍半，是常見的穩健折衷。</li>
+  </ul>
+
+  <div style="background:#252525;border-left:3px solid #8b5cf6;border-radius:6px;padding:14px 16px;margin-bottom:16px;">
+    <div style="font-size:13.5px;font-weight:700;color:#a78bfa;margin-bottom:8px;">🎯 情境演練</div>
+    <p style="color:#d1d5db;font-size:14px;line-height:1.8;margin:0;">
+      假設你評估這筆 BTC 順勢單勝率 60%、賠率 2:1，全 Kelly 算出來的部位比例是 (0.6×2−0.4)/2 = <strong style="color:#fbbf24;font-weight:700">40%</strong> 資金。但今天 RSI 已經衝到 <strong style="color:#fbbf24;font-weight:700">82.2</strong>，代表你這個「60% 勝率」的估計，此刻的不確定性其實比平常更高——這時候直接押 40% 全倉，等於把估計誤差的風險也一起放大了。改用半 Kelly（20%）甚至 1/4 Kelly（10%），才是把「我對這個估計有多少把握」也算進部位大小裡的做法。<strong style="color:#e2e8f0">部位大小不該只看你算出來的優勢，還要看你對這個優勢估計有多不確定。</strong>
+    </p>
+  </div>
+
+  <div style="background:#252525;border-radius:6px;padding:14px 16px;">
+    <div style="font-size:13.5px;font-weight:700;color:#9ca3af;margin-bottom:6px;">💡 今日研究速讀</div>
+    <p style="color:#d1d5db;font-size:14px;line-height:1.8;margin:0 0 6px;">
+      〈Conformal Kelly: Conformal Prediction Intervals as the Scale in Fractional Kelly Position Sizing〉（arXiv，2026/8/2）提出一個巧妙做法：用「conformal prediction（一種統計方法，能算出對未來報酬的信賴區間）」估出的 75% 區間，直接當作 Kelly 部位的縮放依據——區間越窄（訊號越穩定）部位越大，區間越寬（不確定性越高）部位自動縮小。六年回測（2016-2021，含交易成本與槓桿上限）年化複合成長率達 <strong style="color:#e2e8f0">28.5%</strong>、Sharpe 1.34、最大回撤 27.7%，優於同槓桿下持有 S&P 500 的 15.9%。有趣的是，效果最好的反而是最單純的版本：不加權、逐資產滾動計算的分位數。核心啟示：<strong style="color:#e2e8f0">用「我對這筆估計有多不確定」動態調整部位，比死守單一 Kelly 比例更穩健</strong>。
+    </p>
+    <div style="font-size:13px;">🔗 <a href="https://arxiv.org/abs/2608.01494" style="color:#818cf8;">原文連結</a></div>
+  </div>
+</div>
+
+<!-- 7. 今日交易紀律提醒 -->
+<div style="background:#1a1a1a;padding:22px 24px;border-top:1px solid #2a2a2a;">
+  <div style="display:inline-block;background:linear-gradient(135deg,#10b981,#06b6d4);border-radius:20px;padding:6px 16px;font-size:13px;font-weight:700;color:#fff;margin-bottom:16px;">🛡️ 今日交易紀律提醒｜週二部位控管</div>
+
+  <p style="color:#d1d5db;font-size:15px;line-height:1.8;margin:0 0 10px;">
+    <strong style="color:#fbbf24;font-weight:700">紀律金句：</strong>部位大小不該只跟著你有多篤定走，該跟著你的把握有多不確定走——今天 BTC RSI 衝上 82.2，正是該把部位往小調，而不是往大押的時候。
+  </p>
+  <p style="color:#d1d5db;font-size:14px;line-height:1.8;margin:0;">
+    應用情境：BTC 這週單週大漲逾 22%，很多人此刻的直覺反應是「漲勢這麼強，加碼吧」。但 RSI 82.2 這個數字本身就在告訴你：現在的價格已經跑得比平常快很多，你對「這波還能漲多少」的判斷，此刻的不確定性其實比一週前更高，不是更低。紀律上該做的不是憑信心加大部位，而是先問自己：<strong style="color:#e2e8f0">如果現在的判斷是錯的，我現在的部位大小，能不能承受得住？</strong>把不確定性算進部位大小裡，才是部位控管真正在做的事，而不是只在虧損時才想到要縮手。
+  </p>
+</div>
+
+<!-- 8. 今日反思 -->
+<div style="padding:22px 24px;border-top:1px solid #2a2a2a;background:#1a1a1a;">
+  <div style="background:linear-gradient(135deg,#10b981,#06b6d4);padding:1px;border-radius:12px;">
+    <div style="background:#1a1a1a;border-radius:11px;padding:18px;">
+      <div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:12px;">💭 今日反思</div>
+      <ul style="margin:0 0 12px;padding-left:20px;color:#d1d5db;font-size:14.5px;line-height:1.85;">
+        <li>BTC RSI 已經衝上 82.2，如果我現在有部位，這個超買訊號有沒有讓我重新檢查部位大小，還是我只在意「還會不會再漲」？</li>
+        <li>如果用 Kelly 的邏輯想這筆單，我對「勝率」與「賠率」的估計，此刻的把握有多少？我押的比例，跟這個把握程度相稱嗎？</li>
+        <li>本週五 Jackson Hole 是最大變數，我有沒有先想過「Warsh 偏鴿／偏鷹／中性」三種情境下，我的部位分別該怎麼調整，而不是等演說當下才臨場反應？</li>
+      </ul>
+      <p style="color:#6b7280;font-size:12.5px;margin:0;">挑一題寫進交易日誌，這就是今天的功課。</p>
+    </div>
+  </div>
+</div>
+
+<!-- 9. Footer -->
+<div style="background:#0f0f0f;padding:20px 24px;border-radius:0 0 14px 14px;">
+  <p style="color:#6b7280;font-size:11.5px;line-height:1.8;margin:0 0 8px;">
+    資料截止：2026-08-24 收盤／2026-08-25 盤中（BTC 價格與 RSI：CoinMarketCap AI 分析、Sunday Guardian；BTC ETF 資金流、空頭平倉：Bloomberg、CoinGabbar；S&P 500／道瓊／那斯達克：The Washington Post、CNBC（8/24 收盤）；QQQ：Investing.com；VIX：Investing.com（8/24 4:01pm 收盤）；10 年期／30 年期公債殖利率：CNBC、eurasiabusinessnews.com；伊朗制裁與晶片股：Yahoo Finance、Seeking Alpha；Jackson Hole／Warsh：Bloomberg、Yahoo Finance；研究論文：arXiv 2608.01494）。所有數字皆來自公開財經來源，若無法取得則於文中註明「資料不足，今日略過」。
+  </p>
+  <p style="color:#6b7280;font-size:11.5px;line-height:1.8;margin:0 0 8px;">
+    免責聲明：本報內容僅供交易紀律與投資觀念學習之用，不構成任何投資建議、亦非買賣訊號。所有「情境演練」皆為教學示範，不代表對未來價格的預測或保證。加密貨幣與股票投資均有極高風險，可能導致本金全部或部分損失，請自行判斷並承擔投資決策之後果。
+  </p>
+  <p style="color:#4b5563;font-size:11px;margin:0 0 4px;">本報為 Darren 的個人學習報，非公開發行刊物。</p>
+  <p style="color:#4b5563;font-size:11px;margin:0;">本信件由 AI 自動生成。</p>
+</div>
+
+</div>
+</div>
