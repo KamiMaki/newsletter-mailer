@@ -421,3 +421,17 @@
 {"date": "2026-08-25", "title": "主軸：NVIDIA Vera Rubin 把整座機櫃與 CPU 都為 agent 工作方式重新設計、七晶片全面量產"}
 {"date": "2026-08-25", "title": "概念：每瓦性能（performance per watt）"}
 {"date": "2026-08-25", "title": "半導體專區：IC 製造｜先進封裝的 AI 缺陷檢測與量測（eBeam 自動缺陷分類與量測）"}
+{"date": "2026-08-26", "title": "Skild AI S1：機器人基礎模型靠一段示範影片就上手（in-context learning、10 分鐘長任務、9%→66% 約 7 倍）"}
+{"date": "2026-08-26", "title": "Generalist GEN-1.5：單一示範零梯度更新學新任務（30 秒上下文，平均 59% 成功率）"}
+{"date": "2026-08-26", "title": "NVIDIA Jetson Orin Nano 2 入門機器人電腦：同體積推論快 2 倍、同效能省 40% 功耗（2027 上半年上市）"}
+{"date": "2026-08-26", "title": "據報導：Generalist 由 8VC 領投再募約 2 億美元（估值高於 6 月 20 億）"}
+{"date": "2026-08-26", "title": "Anthropic 撥 500 萬美元資助 AI 對人類福祉影響的獨立研究（申請至 9/21）"}
+{"date": "2026-08-26", "title": "Mistral 與沙烏地 HUMAIN 策略合作：主權 AI、阿拉伯語模型與在地部署"}
+{"date": "2026-08-26", "title": "GitHub Copilot app Customize 分頁正式 GA（接自家工具／知識／工作流）"}
+{"date": "2026-08-26", "title": "OpenAI Codex 支援由 Gmail／Slack／GitHub 事件觸發排程任務、擴充瀏覽器與網站工具"}
+{"date": "2026-08-26", "title": "Dify v1.17.0：agent 加入 E2B 沙箱、首頁快照、技能管理、迴圈內人類輸入"}
+{"date": "2026-08-26", "title": "Claude Code v2.1.243／2.1.245：/usage 逐迴圈用量、modelPicker、Console 免金鑰登入、修 glibc 2.44 崩潰"}
+{"date": "2026-08-26", "title": "NVIDIA Gamescom 2026：DLSS 4.5 Ray Reconstruction 上線"}
+{"date": "2026-08-26", "title": "主軸：機器人學會「看一次就上手」——基礎模型把 in-context learning 帶進實體世界，教機器不再靠重訓而是靠示範"}
+{"date": "2026-08-26", "title": "概念：脈絡內學習（In-Context Learning）vs 微調（fine-tuning）"}
+{"date": "2026-08-26", "title": "半導體專區：EDA 工具｜AI 驅動晶片佈局與 PPA 最佳化（PPAPlace 可微分 post-route PPA 代理）"}
