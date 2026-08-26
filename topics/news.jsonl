@@ -435,3 +435,18 @@
 {"date": "2026-08-26", "title": "主軸：機器人學會「看一次就上手」——基礎模型把 in-context learning 帶進實體世界，教機器不再靠重訓而是靠示範"}
 {"date": "2026-08-26", "title": "概念：脈絡內學習（In-Context Learning）vs 微調（fine-tuning）"}
 {"date": "2026-08-26", "title": "半導體專區：EDA 工具｜AI 驅動晶片佈局與 PPA 最佳化（PPAPlace 可微分 post-route PPA 代理）"}
+{"date": "2026-08-27", "title": "Google Cloud 推 Gemini Enterprise for Legal：法務專用、權限綁定可稽核、透過 MCP 接 iManage（Cleary／Freshfields／Weil 首批）"}
+{"date": "2026-08-27", "title": "Anthropic Compliance API 正式上線（可稽核 Cowork／Claude Code session）＋Admin API 進 ant CLI 與多語 SDK"}
+{"date": "2026-08-27", "title": "Bain 以 Global Premier 加入 Claude 夥伴網路：自家 7000＋員工採用、程式現代化生產力提升 30-50%"}
+{"date": "2026-08-27", "title": "iManage、Eudia 成 Gemini Enterprise for Legal launch partner（垂直知識與資料治理層）"}
+{"date": "2026-08-27", "title": "Cline v4.1.16／SDK v0.0.80-81：遮罩 git 遠端網址憑證，不再送進模型上下文"}
+{"date": "2026-08-27", "title": "OpenAI Codex CLI 0.150.0：任務可由 Gmail／Slack／GitHub 事件觸發、內建瀏覽器擴到 Edge／Brave"}
+{"date": "2026-08-27", "title": "NVIDIA FY27 Q2 財報：營收 962 億美元年增 106%、資料中心 890 億、下季看 1080 億"}
+{"date": "2026-08-27", "title": "AWS 與 NVIDIA 宣布 2027-2028 再部署 200 萬顆 GPU（含 10 萬顆聯邦／國安）與 Vera CPU"}
+{"date": "2026-08-27", "title": "Google 推 Gemini 3.5 Transcribe／Transcribe Live 語音轉文字（85+ 語言、語者辨識、WebSocket 串流）"}
+{"date": "2026-08-27", "title": "阿里巴巴開源 Qwen3.8-Flash-Next（Qwen4 架構搶先版、混合稀疏注意力 MoE、上 HF／ModelScope）"}
+{"date": "2026-08-27", "title": "arXiv Right Diagnoses, Decorative Reasoning：擾動測試顯示醫療思維鏈推理可能只是裝飾（2608.24790）"}
+{"date": "2026-08-27", "title": "arXiv MBIST 面積與測試時間預估：堆疊集成跳過合成，±10% 內面積 90.68%／測試時間 96.80%（2608.19705）"}
+{"date": "2026-08-27", "title": "主軸：AI 大廠不再拚更聰明的模型，而是拚把 AI 安全、可稽核地裝進企業既有工作流（垂直化×治理×顧問落地同天收斂）"}
+{"date": "2026-08-27", "title": "概念：權限感知的 AI 存取（Permission-aware／Governed Retrieval）"}
+{"date": "2026-08-27", "title": "半導體專區：IC 設計｜DFT／MBIST 記憶體測試成本預估（跳過合成的 ML 估算）"}
