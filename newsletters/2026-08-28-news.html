@@ -1,0 +1,211 @@
+<!-- 企鵝的 AI 每日電子報 2026-08-28 -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;margin:0;padding:0;">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+
+<!-- Header -->
+<tr><td style="padding:0 0 20px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+    <tr><td style="padding:28px 26px;">
+      <div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+      <div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+      <div style="font-size:13px;color:#c7d2fe;margin-top:10px;">2026 年 8 月 28 日（四）· 閱讀時間約 7 分鐘</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- 30秒重點 -->
+<tr><td style="padding:0 0 18px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+      <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+        <li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸｜</strong>8/26 同一天，阿里 Qwen 與智譜 Z.ai 各丟出一顆<strong style="color:#a5b4fc;">「總參數巨大、每次只點亮約 5% 參數」的稀疏模型</strong>，開放權重、每百萬 token 只要一毛五上下——前沿模型的成本戰，武器從「把模型做小」換成「把巨模型做到極稀疏」。</li>
+        <li style="margin-bottom:10px;">Qwen3.8-Flash-Next（125B 總／6B 活躍）與 GLM-5.3-Flash（320B 總／18B 活躍）都把注意力算力與 KV cache 大砍，能力衝到與美國前沿模型同級、價格卻差一個數量級。</li>
+        <li style="margin-bottom:10px;">NVIDIA FY27 第二季營收 <strong style="color:#a5b4fc;">962 億美元、年增 106%</strong>，但下季毛利率預估由 75% 降到 74%、股價盤後小跌——市場開始問：推論成本崩跌，這波天量資本支出撐得住嗎？</li>
+        <li style="margin-bottom:10px;">其他值得知道：Anthropic 幫桌面版 Claude 裝了<strong style="color:#a5b4fc;">內建瀏覽器</strong>（免再裝外掛）；GitHub Copilot 企業「全域模型政策」正式 GA，但開放權重模型預設關閉。</li>
+        <li>對半導體工作者最相關的一件事：稀疏化把「記憶體容量／頻寬」推成新瓶頸（總參數大、每次只算一小塊），這正好放大 HBM 與先進封裝的份量；半導體專區則帶你看另一條 AI 落地線——<strong style="color:#a5b4fc;">計算微影與逆微影（ILT）的 AI 加速</strong>。</li>
+      </ul>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="padding:0 0 18px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+    <tr><td style="padding:1px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+        <tr><td style="padding:26px 24px;">
+          <div style="display:inline-block;background:rgba(99,102,241,0.18);color:#a5b4fc;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;margin-bottom:14px;">🎯 今天的主軸</div>
+          <div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-bottom:18px;">成本戰換了武器：不再把模型做小，而是把巨模型做到「極稀疏」——每次只點亮約 5% 的參數，還把權重開放出來</div>
+
+          <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 16px 0;">先講一個生活比喻：以前想省油錢，做法是換一台小車（把模型做小）；但小車跑不快、載不多。今天中國兩間實驗室給的答案完全相反——<strong style="color:#a5b4fc;">造一台十二缸的大引擎，但每次只點火其中一缸</strong>。車體（總參數）依然巨大、能力依然頂尖，油錢（每次推論的算力）卻低到誇張。這台「大引擎、少點火」的技術，就是<strong style="color:#a5b4fc;">稀疏混合專家（Sparse MoE）</strong>，而 8 月 26 日這一天，它同時走出兩座實驗室。</p>
+
+          <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 8px 0;">▍共同變化</div>
+          <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 12px 0;">阿里 Qwen 團隊開源 <strong style="color:#a5b4fc;">Qwen3.8-Flash-Next</strong>：總參數 125B，但每個 token 只活躍 6B（不到 5%），外掛一張 51B 的 N-gram 記憶表與 4B 多 token 預測層，原生讀圖、262K 上下文。官方說它是「Qwen4 架構」的開放權重預覽，訓練成本只有 Qwen3.7-Plus 的<strong style="color:#a5b4fc;">九分之一</strong>，量產 API 定價 0.16 美元／百萬輸入、0.47 美元／百萬輸出。幾乎同一時間，智譜 <strong style="color:#a5b4fc;">Z.ai 揭曉 GLM-5.3-Flash</strong>——就是過去一週在 OpenRouter 上被匿名測試、代號「Ox Alpha」的那顆模型：320B 總參數、18B 活躍（320B-A18B），GLM-5 系列首顆原生多模態，MIT 授權、當天把權重丟上 Hugging Face，定價 0.15／0.50 美元（首發促銷再對折），還宣稱完全跑在中國自製 AI 晶片上。</p>
+
+          <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 8px 0;">▍為什麼放在一起看</div>
+          <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 12px 0;">兩顆模型出自不同公司、不同架構，卻在同一天指向同一件事：<strong style="color:#a5b4fc;">前沿級能力正在跟「每次要花多少算力」脫鉤</strong>。Qwen 用「四層裡三層用 Gated DeltaNet 壓縮歷史、一層用稀疏注意力精準檢索」的混合設計；GLM 則號稱是首顆採「稀疏＋線性混合注意力」的開源前沿模型，把注意力運算砍到原本的 1/3、KV cache 縮到 1/4.4。手法不同，目標一致——<strong style="color:#a5b4fc;">在總參數繼續變大的同時，把「每個 token 的成本」壓垮</strong>。這不是單一產品新聞，而是一條產業主線正在成形。</p>
+
+          <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 8px 0;">▍過去 vs. 現在</div>
+          <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 12px 0;">過去要省成本，你得在「聰明但貴的大模型」和「便宜但笨的小模型」之間二選一。現在的稀疏路線把這道選擇題拆開：模型可以同時很大（知識容量高）又很便宜（每次只算一小塊）。對照一年前，同樣的輸出量在頂級閉源模型上要花二、三十美元，如今這批稀疏開源模型只要幾毛錢，差距是一到兩個數量級。</p>
+
+          <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 8px 0;">▍背後邏輯</div>
+          <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 12px 0;">稀疏化的代價不是消失，而是<strong style="color:#a5b4fc;">從「算力」搬到「記憶體」</strong>。125B、320B 的權重全都得放進記憶體待命，只是每次挑一小撮出來算。所以這條路線省的是 FLOPs 與電費，吃的是記憶體容量與頻寬——Qwen 甚至把那張 51B 的 N-gram 記憶表設計成「可非同步卸載到主機記憶體」，就是在跟記憶體牆討價還價。這也是為什麼它們同時強調「開放權重」：把便宜又能本地部署的權重丟出來，等於把定價權從閉源大廠手上搶一塊過來。</p>
+
+          <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 8px 0;">▍對你的工作</div>
+          <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 12px 0;">如果你在團隊裡負責選模型或估算 AI 成本：<strong style="color:#a5b4fc;">「便宜到可以隨便跑」正在變成前沿的常態</strong>，這讓大量跑 agent、批次跑驗證、把 AI 塞進 CI 迴圈變得划算。但別只看每百萬 token 單價——稀疏大模型的<strong style="color:#a5b4fc;">部署門檻在記憶體</strong>：320B 權重要落地，你得算清楚 GPU 記憶體、量化方案與吞吐，單價便宜不代表自架便宜。對做工具鏈、做內部平台的人，這批 MIT／開放權重模型也讓「把前沿模型關進自家機房、資料不出門」第一次真的可行。</p>
+
+          <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 8px 0;">▍限制與待驗證</div>
+          <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 12px 0;">三個保留：其一，官方跑分（GPQA Diamond 91.7、LiveCodeBench v6 91.9）亮眼，但<strong style="color:#a5b4fc;">benchmark 分數 ≠ 你的真實任務可靠度</strong>，尤其 agent 長流程；其二，Qwen3.8-Flash-Next 自稱「實驗性預覽」，是 Qwen4 架構的搶跑版，穩定度與長期支援還要看；其三，「跑在中國自製晶片」是廠商說法，外部難以獨立驗證，屬<strong style="color:#a5b4fc;">編輯提醒</strong>而非既成事實。便宜、開放、能力強能不能三者兼得，得等社群大規模實測。</p>
+
+          <div style="background:#252525;border-radius:8px;padding:14px 16px;margin:16px 0;">
+            <div style="font-size:12px;font-weight:700;color:#67e8f9;margin-bottom:6px;">👤 延伸解讀（編輯分析／趨勢背景）</div>
+            <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0;">這股「稀疏 MoE 把價格打到骨折」的壓力，不是今天才有：DeepSeek 早就靠 MoE 把同樣輸出壓到 Opus 級別的 1%，OpenAI 也在 8/21 宣布 GPT-5.6 Sol 三個月降價逾 20%、Google 連推三顆 Gemini「Flash」主打效率。今天 Qwen 與 GLM 的意義在於，它們把「稀疏 + 開放權重 + 前沿級」三件事一次湊齊，等於把這條降價曲線的斜率再往下壓一截。（此段為趨勢背景與編輯分析，非 48 小時內新聞。）</p>
+          </div>
+
+          <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 8px 0;">▍重點一句話</div>
+          <p style="color:#e2e8f0;font-size:15px;line-height:1.75;margin:0 0 14px 0;font-weight:600;">前沿模型變便宜的方式，已經從「做小」變成「做大但極稀疏」——省下的算力搬進了記憶體，而開放權重把定價權也一起搬走了。</p>
+
+          <div style="border-top:1px solid #333;padding-top:12px;font-size:13px;line-height:1.9;">
+            <div>🔗 <a href="https://x.com/Alibaba_Qwen/status/2092591393424515114" style="color:#06b6d4;text-decoration:none;">Qwen 官方公告（X）</a> ｜ <a href="https://huggingface.co/Qwen/Qwen3.8-Flash-Next" style="color:#06b6d4;text-decoration:none;">Qwen3.8-Flash-Next 模型卡</a></div>
+            <div>🔗 <a href="https://x.com/Zai_org/status/2092616204787626030" style="color:#06b6d4;text-decoration:none;">Z.ai 官方公告（X）</a> ｜ 來源：Qwen、Z.ai 官方發布（2026/08/26）</div>
+          </div>
+        </td></tr>
+      </table>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- 主軸的衍生新聞 -->
+<tr><td style="padding:0 0 8px 0;">
+  <div style="font-size:16px;font-weight:800;color:#ffffff;padding:6px 4px;">🔗 主軸的衍生新聞</div>
+</td></tr>
+
+<tr><td style="padding:0 0 14px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:20px 22px;">
+      <div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+      <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">🔄 後續追蹤：NVIDIA 財報亮眼，市場卻盯著「毛利率鬆動」與資本支出</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px 0;">NVIDIA 8/26 公布 FY27 第二季：營收 <strong style="color:#e2e8f0;">962 億美元、年增 106%</strong>，資料中心 890 億，下季看 1080 億。但<strong style="color:#e2e8f0;">下季毛利率預估由 75% 滑到 74%</strong>，股價盤後一度小跌。和今天主軸的關係很直接：當稀疏開源模型把推論成本壓到骨折，市場自然會問——若「跑 AI」愈來愈便宜，這波以千億美元計的 GPU 資本支出，回收邏輯會不會被重新定價？</p>
+      <p style="color:#94a3b8;font-style:italic;font-size:13px;margin:0 0 8px 0;">💡 重點一句話：需求數字仍炸裂，但「成本崩跌 vs. 資本支出暴衝」的張力，正成為這輪 AI 週期最關鍵的辯論。</p>
+      <div style="font-size:13px;">🔗 <a href="https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-second-quarter-fiscal-2027" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> ｜ 來源：NVIDIA Newsroom（2026/08/26）</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:0 0 18px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:20px 22px;">
+      <div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+      <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">拆開 Qwen 的「大引擎少點火」：靠三招把 5% 活躍變成可能</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px 0;">Qwen3.8-Flash-Next 能只點亮 6B 就打出前沿分數，靠的是三個零件的組合：<strong style="color:#e2e8f0;">Gated DeltaNet</strong>（四層裡三層用它壓縮長歷史，省注意力算力）、<strong style="color:#e2e8f0;">51B N-gram 記憶表</strong>（用查表換記憶、幾乎不吃每 token 算力，還能卸載到主機記憶體）、以及<strong style="color:#e2e8f0;">內建推測解碼</strong>（多 token 預測層加速生成）。這解釋了為什麼它訓練成本只要前代的九分之一——省下的每一分，都是把「總參數」和「每次算力」硬生生拆開的工程。</p>
+      <p style="color:#94a3b8;font-style:italic;font-size:13px;margin:0 0 8px 0;">💡 重點一句話：稀疏模型便宜的祕密不在「小」，而在架構設計把記憶、檢索、生成三件事各自最佳化。</p>
+      <div style="font-size:13px;">🔗 <a href="https://huggingface.co/Qwen/Qwen3.8-Flash-Next" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> ｜ 來源：Qwen3.8-Flash-Next 官方模型卡（2026/08/26）</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="padding:0 0 18px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+      <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:14px;line-height:1.7;">
+        <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Anthropic 幫桌面版 Claude 裝了內建瀏覽器。</strong>Claude 桌面版（Mac／Windows／Linux）在 Cowork 裡內建一個 Chromium 瀏覽器，任務需要時直接在側欄開網頁、讀取、點擊、填表，不必再裝 Chrome 外掛；為什麼重要：這讓 agent 能操作「沒有 API 的後台與入口網站」，且瀏覽環境與你自己的瀏覽器隔離、看不到你的分頁與密碼（銀行、信箱網站被禁）。企業版已上線、本週推給 Pro／Max／Team。🔗 <a href="https://www.anthropic.com/news" style="color:#06b6d4;text-decoration:none;">來源：Anthropic（2026/08/27）</a></li>
+        <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">GitHub Copilot「全域模型政策」正式 GA。</strong>企業／商業版現在有一個總開關，決定管理員沒明確設定的模型要不要自動開啟，且<strong style="color:#e2e8f0;">預設為「開」</strong>；為什麼重要：這反轉了過去「新模型預設休眠、由 IT 把關」的慣例，值得注意的是<strong style="color:#e2e8f0;">開放權重模型與需資料保留的模型仍預設關閉</strong>——與今天主軸剛好對照：開源模型崛起，但企業防線仍先把它擋在門外。🔗 <a href="https://github.blog/changelog/2026-08-26-global-model-policy-generally-available/" style="color:#06b6d4;text-decoration:none;">來源：GitHub Changelog（2026/08/26）</a></li>
+        <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">StreamPI：不加參數，讓「只看單張畫面」的機器人模型長出時序推理。</strong>這篇 arXiv 論文用「隨機間隔串流訓練」，讓單幀視覺-語言-動作（VLA）模型免加任何參數就具備時序推理，動作更快更順、對畫面時序擾動更穩，真機與 LIBERO 模擬上都勝過 pi0.5；為什麼重要：又一個「不靠更大模型、靠訓練與推論設計」拿下能力的案例。🔗 <a href="https://arxiv.org/abs/2608.26067" style="color:#06b6d4;text-decoration:none;">來源：arXiv 2608.26067（2026/08/26）</a></li>
+        <li><strong style="color:#e2e8f0;">OpenAI 擴大在巴西的佈局。</strong>OpenAI 宣布擴大在巴西的據點與投入，延續其在拉美的落地與資料在地化策略；為什麼重要：前沿實驗室的「主權 AI／在地部署」競賽，正從模型能力延伸到地緣與基礎設施佈局。🔗 <a href="https://openai.com/news/" style="color:#06b6d4;text-decoration:none;">來源：OpenAI（2026/08/27）</a></li>
+      </ul>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="padding:0 0 18px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">📖 今日概念｜稀疏混合專家（Sparse MoE）</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 12px 0;"><strong style="color:#a5b4fc;">一句定義：</strong>把一個大模型切成很多「專家」子網路，每個 token 只交給其中一小撮專家處理——所以模型「總參數」很大，但「每次真正動用的參數（活躍參數）」很小。</p>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 12px 0;"><strong style="color:#a5b4fc;">生活化比喻：</strong>想像一間有 100 位專科醫生的大醫院。你掛號時，櫃檯（路由器）只會把你導去 2、3 位相關科別的醫生，而不是讓 100 位一起會診。醫院很大（總參數多、知識廣），但你這一次的看診成本，只等於那幾位醫生的時間（活躍參數少）。稀疏 MoE 就是這個櫃檯分流的機制。</p>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 12px 0;"><strong style="color:#a5b4fc;">工作中的例子：</strong>GLM-5.3-Flash 是 320B-A18B——320B 是整間醫院的醫生總數，18B 是你這次實際叫到的那幾位。Qwen3.8-Flash-Next 更極端，125B 總參數只點亮 6B。這就是它們能把每百萬 token 壓到一毛五的關鍵。</p>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 12px 0;"><strong style="color:#a5b4fc;">常見誤解：</strong>「參數越多一定越慢越貴」。對稀疏 MoE 不成立——貴的是<strong style="color:#a5b4fc;">記憶體</strong>（所有醫生都得在院待命，權重要全部載入），慢與貴的「每 token 算力」反而因為只叫少數人而下降。所以 MoE 模型常是「記憶體吃很兇、但推論很快很便宜」。</p>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0;"><strong style="color:#a5b4fc;">與今天主軸的關係：</strong>今天的價格崩跌，正是靠把活躍參數比例壓到 5% 上下換來的。理解「總參數 vs. 活躍參數」這組區別，你才看得懂為什麼一顆「更大」的模型可以「更便宜」，以及為什麼它的部署瓶頸會落在記憶體而不是算力。</p>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- 半導體 AI 專區 -->
+<tr><td style="padding:0 0 18px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜計算微影與逆微影（ILT）的 AI 加速</div>
+      <div style="margin-bottom:14px;">
+        <span style="display:inline-block;background:rgba(103,232,249,0.14);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;margin-right:6px;">IC 製造</span>
+        <span style="display:inline-block;background:rgba(148,163,184,0.16);color:#94a3b8;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">背景知識 · 含編輯分析</span>
+      </div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:12px 0 6px 0;">▍問題與流程位置</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px 0;">先講白話問題：先進製程要在晶圓上印出比光波長還小的圖形，光一定會繞射、失真，畫在光罩上的圖案跟真正印出來的長得不一樣。所以在「設計定案 → 做光罩 → 曝光」之間，必須做<strong style="color:#a5b4fc;">光學鄰近修正（OPC）</strong>：把光罩圖形刻意畫歪，好讓印出來剛好對。<strong style="color:#a5b4fc;">逆微影（ILT）</strong>更進一步，直接反推「要印成這樣，光罩該長怎樣」，效果最好，但運算量大到過去難以全晶片量產使用。這一關卡在光罩製作前，是製造流程裡出了名的算力黑洞。</p>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:12px 0 6px 0;">▍AI 如何介入（與過去流程比較）</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px 0;">過去 OPC／ILT 靠 CPU 農場、逐點物理疊代，跑一個全晶片動輒數天。現在兩層加速疊上去：先是 <strong style="color:#a5b4fc;">GPU 加速的計算微影（如 NVIDIA cuLitho）</strong>把整條流程搬上加速運算；再用<strong style="color:#a5b4fc;">生成式 AI 直接「猜」出一張接近最佳的逆光罩</strong>，再交給嚴謹的物理方法收尾——官方數據是在 cuLitho 之上讓 OPC 再快約 2 倍。近期研究更把<strong style="color:#a5b4fc;">生成式強化學習</strong>用來推進 ILT 的極限。差別在於：AI 不是取代物理模擬，而是把「一張好光罩大概長怎樣」先秒出來，省掉大量疊代，讓 cycle time 從天級往小時級壓。</p>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:12px 0 6px 0;">▍資料與產出</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px 0;">輸入是設計版圖、微影/蝕刻模型與空間像模擬；產出是修正後的光罩圖形與 OPC/ILT 配方。對量產而言，這些產出最終要能餵進光罩廠與曝光機（含 ASML High-NA EUV 這一代對隨機效應更敏感的製程）。</p>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:12px 0 6px 0;">▍如何驗證</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px 0;">AI 出的光罩不能直接信，要過三關：物理嚴謹的微影模擬、<strong style="color:#a5b4fc;">邊緣放置誤差（EPE）</strong>與製程窗（process window）檢查、以及對隨機缺陷（stochastic）的容忍度評估，最後回到晶圓上以 SEM 量測實印結果。AI 負責「快」，物理與量測負責「對」。</p>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:12px 0 6px 0;">▍限制與風險</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 12px 0;">生成模型的泛化是關鍵風險：換一層、換一個節點，模型不見得還準；隨機效應與極端圖形仍需物理方法兜底；整條流程並非「無人自動」，而是「AI 加速 + 工程師與物理守門」。以上工作流位置與加速倍數引自 NVIDIA、學術綜述與論文，屬<strong style="color:#a5b4fc;">背景知識與編輯分析</strong>，非 48 小時內新聞，也未涉及任何公司內部良率或機密數字。</p>
+
+      <p style="color:#67e8f9;font-weight:700;font-size:14px;line-height:1.7;margin:0;border-top:1px solid #333;padding-top:12px;">👷 對半導體工作者的意義：最受影響的是光罩／OPC／DTCO 與微影工程師——計算微影是少數能同時壓 cycle time、又直接牽動良率爬坡速度的環節。值得動手的下一步：了解你們 PDK 裡 ILT／OPC 是否已上 GPU 加速，以及生成式方法在哪些非關鍵層可以先試點。🔗 <a href="https://nvidianews.nvidia.com/news/tsmc-synopsys-nvidia-culitho" style="color:#06b6d4;text-decoration:none;">NVIDIA cuLitho</a> ｜ <a href="https://www.nature.com/articles/s41377-025-01923-w" style="color:#06b6d4;text-decoration:none;">Nature：AI-based ILT 綜述</a> ｜ <a href="https://arxiv.org/abs/2602.19027" style="color:#06b6d4;text-decoration:none;">arXiv：生成式 RL 推進 ILT</a></p>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="padding:0 0 18px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+    <tr><td style="padding:1px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+        <tr><td style="padding:24px;">
+          <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+          <ul style="margin:0 0 14px 0;padding-left:20px;color:#cbd5e1;font-size:14px;line-height:1.75;">
+            <li style="margin-bottom:12px;">如果前沿級能力的每 token 成本，一年掉一到兩個數量級，你手上哪些「因為太貴而沒做」的自動化（批次驗證、全量分析、常駐 agent），現在該重新排進路線圖？</li>
+            <li style="margin-bottom:12px;">當便宜又強的權重是「開源、可本地部署」的，你的團隊敢不敢把它關進自家機房跑機密資料？擋你的到底是能力、成本，還是治理與記憶體？</li>
+            <li>稀疏化把瓶頸從算力搬到記憶體——如果你是做晶片或系統的人，這對 HBM、封裝、記憶體階層的下注，意味著什麼樣的三年布局？</li>
+          </ul>
+          <p style="color:#a5b4fc;font-weight:700;font-size:14px;line-height:1.7;margin:0;border-top:1px solid #333;padding-top:12px;">🎒 今日帶走：前沿模型正用「做大但極稀疏 + 開放權重」把價格打骨折，省下的算力搬進了記憶體——這同時鬆動了資本支出的算盤，也放大了 HBM 與封裝的份量。</p>
+        </td></tr>
+      </table>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- 歷史電子報入口 -->
+<tr><td style="padding:0 0 18px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:20px 24px;">
+      <div style="font-size:15px;font-weight:800;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px 0;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+      <div style="font-size:14px;"><a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;">查看歷史電子報</a></div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- Footer -->
+<tr><td style="padding:0 0 12px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#141414;border-radius:14px;">
+    <tr><td style="padding:22px 24px;text-align:center;">
+      <div style="font-size:13px;color:#cbd5e1;margin-bottom:10px;">📬 覺得有幫助？把它分享給朋友 · <a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">訂閱這份電子報</a></div>
+      <div style="font-size:12px;color:#64748b;margin-bottom:12px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></div>
+      <div style="font-size:11px;color:#475569;line-height:1.6;">© 2026 企鵝的 AI 每日電子報🐧<br>本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+</table>
+</td></tr>
+</table>

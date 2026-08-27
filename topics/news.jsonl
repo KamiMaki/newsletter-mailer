@@ -450,3 +450,14 @@
 {"date": "2026-08-27", "title": "主軸：AI 大廠不再拚更聰明的模型，而是拚把 AI 安全、可稽核地裝進企業既有工作流（垂直化×治理×顧問落地同天收斂）"}
 {"date": "2026-08-27", "title": "概念：權限感知的 AI 存取（Permission-aware／Governed Retrieval）"}
 {"date": "2026-08-27", "title": "半導體專區：IC 設計｜DFT／MBIST 記憶體測試成本預估（跳過合成的 ML 估算）"}
+{"date": "2026-08-28", "title": "主軸：稀疏＋開源，前沿模型價崩——Qwen3.8-Flash-Next 與 GLM-5.3-Flash 同日以極稀疏MoE把每token成本壓垮"}
+{"date": "2026-08-28", "title": "概念：稀疏混合專家（Sparse MoE）與活躍參數 vs 總參數"}
+{"date": "2026-08-28", "title": "半導體專區：IC 製造｜計算微影與逆微影（ILT）的 AI 加速"}
+{"date": "2026-08-28", "title": "Qwen 開源 Qwen3.8-Flash-Next：125B總／6B活躍稀疏MoE，Qwen4架構預覽，訓練成本為前代1/9，API 0.16/0.47美元"}
+{"date": "2026-08-28", "title": "Z.ai 揭曉 GLM-5.3-Flash（原Ox Alpha）：320B-A18B原生多模態、MIT開放權重、注意力算力降3倍KV cache降4.4倍、0.15/0.50美元"}
+{"date": "2026-08-28", "title": "🔄 後續追蹤：NVIDIA FY27 Q2 營收962億美元年增106%，下季毛利率75%→74%、股價盤後小跌，市場質疑資本支出"}
+{"date": "2026-08-28", "title": "Qwen3.8-Flash-Next 架構拆解：Gated DeltaNet＋51B N-gram記憶表＋推測解碼"}
+{"date": "2026-08-28", "title": "Anthropic 桌面版 Claude 內建 Chromium 瀏覽器（Cowork），免裝外掛可操作無API後台"}
+{"date": "2026-08-28", "title": "GitHub Copilot 全域模型政策正式GA：未設定模型預設開啟，但開放權重與需資料保留模型預設關閉"}
+{"date": "2026-08-28", "title": "arXiv StreamPI（2608.26067）：隨機間隔串流訓練，單幀VLA免加參數獲時序推理、勝過pi0.5"}
+{"date": "2026-08-28", "title": "OpenAI 擴大在巴西的佈局與投入"}
