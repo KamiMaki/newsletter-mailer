@@ -461,3 +461,14 @@
 {"date": "2026-08-28", "title": "GitHub Copilot 全域模型政策正式GA：未設定模型預設開啟，但開放權重與需資料保留模型預設關閉"}
 {"date": "2026-08-28", "title": "arXiv StreamPI（2608.26067）：隨機間隔串流訓練，單幀VLA免加參數獲時序推理、勝過pi0.5"}
 {"date": "2026-08-28", "title": "OpenAI 擴大在巴西的佈局與投入"}
+{"date": "2026-08-29", "title": "OpenAI Jalapeño 首波實測：自研推論 ASIC 每瓦效率勝 NVIDIA Blackwell 1.5–1.9 倍、延遲低 1.7–3.6 倍、九個月出片、年底部署"}
+{"date": "2026-08-29", "title": "Salesforce×Anthropic「Claudeforce」：Claude 成 Salesforce Atlas 推理引擎預設、Salesforce 反向做成 Claude 外掛（37 銷售技能）"}
+{"date": "2026-08-29", "title": "Broadcom 成自研晶片浪潮隱形贏家：掌約 70% 客製 AI 加速器設計服務、共同設計 TPU/MTIA/Maia/Jalapeño"}
+{"date": "2026-08-29", "title": "NVIDIA 同週回應：約 962 億美元季度、逾千億美元採購保證；OpenAI 承諾訓練與推論持續採購（自研為補位非取代）"}
+{"date": "2026-08-29", "title": "xAI Grok 4.6 上架 Microsoft Foundry（500K context、可調推理層級、支援 long-running agents）"}
+{"date": "2026-08-29", "title": "GitHub Copilot 程式碼審查新增 resolution reasons 與能力擴充（8/27）"}
+{"date": "2026-08-29", "title": "GitHub Actions 保留政策擴及 checks／workflow runs／statuses（8/27）"}
+{"date": "2026-08-29", "title": "Synopsys 8/26 財報：AI 晶片設計需求推升 EDA 景氣、深化與 TSMC 2nm/A16/A14 合作"}
+{"date": "2026-08-29", "title": "主軸：AI 大廠開始自己造推論晶片——OpenAI 用九個月出片的自研 ASIC 在每瓦效率上壓過 NVIDIA"}
+{"date": "2026-08-29", "title": "概念：特定領域架構（Domain-Specific Architecture, DSA）"}
+{"date": "2026-08-29", "title": "半導體專區：EDA 工具｜高階綜合（HLS）與敏捷 ASIC 設計"}
