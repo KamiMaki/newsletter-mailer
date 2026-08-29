@@ -1,0 +1,194 @@
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;margin:0;padding:0;">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;color:#e2e8f0;">
+
+<!-- Header -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px 16px 0 0;padding:28px 28px 24px;">
+<div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:-0.5px;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#c7d2fe;margin-top:10px;">2026 年 8 月 30 日（週六）· 閱讀時間約 7 分鐘</div>
+</td></tr>
+
+<!-- 30秒重點 -->
+<tr><td style="background:#1a1a1a;padding:24px 28px;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+<li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">【今日主軸】Anthropic 發表 Model Hardware Standard（MHS）</strong>：AI 代理第一次有了一套「隨插即用＋內建安全邊界」的標準，能直接、安全地操作實驗室與工廠的實體儀器——AI 正式從螢幕伸手到真實世界。</li>
+<li style="margin-bottom:10px;">這不是 demo：Genentech、華盛頓大學、CMU、QuEra 量子電腦、Tetsuwan 五個真實實驗室都拿出數字——硬體整合從<strong style="color:#e2e8f0;">數週壓到數小時</strong>，量子電腦雷射穩定成功率<strong style="color:#e2e8f0;">從 58% 拉到 99.3%</strong>。</li>
+<li style="margin-bottom:10px;">AWS、Universal Robots、Doosan、Tecan、QIAGEN、Danaher、Raspberry Pi 等硬體與雲端廠加入測試；Anthropic 承諾研究預覽結束後<strong style="color:#e2e8f0;">開源</strong>（複製 MCP 的打法）。</li>
+<li style="margin-bottom:10px;">其他值得知道：OpenAI 因 SpaceX 收購 Cursor，將於 <strong style="color:#e2e8f0;">11/12 斷掉 Cursor 的 OpenAI 模型存取</strong>；GitHub Copilot VS Code 八月版加入「組織級自訂 agent」；Google 推出 Gemini Omni 1.1 Flash 影片模型。</li>
+<li><strong style="color:#67e8f9;">對半導體工作者最相關：</strong>MHS 把「AI 直接操作機台」從想像推向 research preview——量測、搬運、製程設備的自主操作，以及設備預測維護（PdM），可能是最先合流的環節。</li>
+</ul>
+</td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="padding:8px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+<tr><td style="padding:26px 28px;">
+<span style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);color:#fff;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;">🎯 今天的主軸</span>
+<div style="font-size:19px;font-weight:800;color:#ffffff;margin:16px 0 8px;line-height:1.5;">AI 開始離開螢幕、動手碰真東西——Anthropic 用 MHS 把 MCP 那套「隨插即用」標準，從軟體推向實驗室與工廠的機器</div>
+<p style="color:#94a3b8;font-size:14px;margin:0 0 20px;">一句話：這 48 小時大多數重量級新聞共同指向一件事——<strong style="color:#a5b4fc;">AI 代理的操作面正在從 bits（讀寫檔案、呼叫 API）擴張到 atoms（驅動實體儀器）</strong>，而 Anthropic 選擇先把「標準」與「安全」訂下來。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px;">▍共同變化</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 18px;">過去 AI agent 的世界止於螢幕：它能讀檔、寫程式、串 API，但碰不到真實世界的機器。8 月 27 日 Anthropic 與 HHMI Janelia 研究中心共同發表 <strong style="color:#a5b4fc;">Model Hardware Standard（MHS）</strong>研究預覽，讓 agent 能<strong style="color:#a5b4fc;">直接、安全地操作</strong>顯微鏡、液體處理器、機械手臂、甚至量子電腦的雷射系統。同一批新聞裡，Genentech、華盛頓大學、CMU、QuEra、Tetsuwan 各自把真實實驗室的機器交給 Claude 操作，而且都拿出了量化成果。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px;">▍為什麼放在一起看</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 18px;">因為這不是一支炫技影片，而是<strong style="color:#a5b4fc;">「標準＋多家實測＋硬體廠押注」三件事同時發生</strong>。標準面：MHS 用最簡單的 <code style="background:#252525;padding:1px 5px;border-radius:4px;color:#67e8f9;">read</code>／<code style="background:#252525;padding:1px 5px;border-radius:4px;color:#67e8f9;">write</code> 指令、可被自動發現的裝置格式、外加自然語言寫成的「安全上限與操作參數」標籤。實測面：五個真實實驗室分別給出數字。生態面：AWS（Strands Robots）、Universal Robots、Doosan、Tecan、QIAGEN、Danaher、Raspberry Pi、Hugging Face（LeRobot）都在測。單一 demo 可以造假，三件事一起出現才叫趨勢。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px;">▍過去 vs. 現在</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 18px;">過去接一台儀器，工程師要讀紙本手冊、寫客製驅動、把老師傅腦中的「眉角」翻成程式，動輒數週甚至數月。現在：CMU 做劑量反應曲線的整合<strong style="color:#a5b4fc;">「8 小時」完成，過去廠商客製要好幾週</strong>，而且曲線擬合 R²＞0.98、全程無人介入；華盛頓大學把六台儀器串起來<strong style="color:#a5b4fc;">「不到一週」</strong>。最戲劇性的是 QuEra 量子電腦的雷射穩定：回復時間從<strong style="color:#a5b4fc;">150 秒（58% 成功）縮到 6 秒（96%，後續達 99.3%）</strong>，殘餘誤差<strong style="color:#a5b4fc;">從 15.7 mV 壓到 1.55 mV（約安靜十倍）</strong>。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px;">▍背後邏輯</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 18px;">把 MHS 想成<strong style="color:#a5b4fc;">「硬體版的 MCP」</strong>。它用標準化的 driver，把每台裝置的能力、安全上限、操作參數都變成「機器讀得懂、也用自然語言描述得清楚」的格式；agent 可透過 MCP、命令列（CLI）或程式碼三種方式下指令，還能把即時決策「編譯」成可重複執行的<strong style="color:#a5b4fc;">確定性腳本（deterministic script）</strong>，做無人值守的長時間運行。而且它是 <strong style="color:#a5b4fc;">model-agnostic</strong>——不綁單一模型，任何有可程式介面的裝置都能接。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px;">▍對你的工作</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 14px;">對半導體工程師，這是<strong style="color:#a5b4fc;">「AI 直接開機台」的前奏</strong>。MHS 現在測的顯微鏡、液體處理、機械手臂，跟 fab 裡的量測機（eBeam、光學檢測）、晶圓搬運、製程設備，本質是同一類「有可程式介面、有嚴格安全邊界的儀器」。可以想像：AI agent 讀機台的 FDC 感測訊號、即時調參、在無人夜班連續跑實驗與校準。但請把期待放對位置——<strong style="color:#a5b4fc;">這是實驗室與先進製造的 research preview，不是 fab 量產落地</strong>。</p>
+<div style="background:#252525;border-radius:8px;padding:14px 16px;margin:0 0 18px;">
+<div style="color:#67e8f9;font-weight:700;font-size:12px;margin-bottom:6px;">🧭 編輯分析（非官方事實）</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0;">MHS 走的路線跟 MCP 幾乎一模一樣：Anthropic 先訂標準、拉夥伴實測、再開源。MCP 後來被交給 Linux Foundation 旗下的 AAIF 中立治理。若 MHS 複製這條軌跡，「AI 操作硬體」很可能在一兩年內變成跨廠通用的開放標準——設備商該想的不是「要不要支援」，而是「當介面變成公共財，我的護城河搬去哪」。</p>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px;">▍限制與待驗證</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 18px;">別把「AI 會操作機器」誤讀成「AI 有物理直覺」。Anthropic 自己列出限制：Claude 主要透過文字與影像理解物理世界，<strong style="color:#a5b4fc;">空間與物理推理仍薄弱、無法自行排除硬體故障、需要專家監督</strong>；安全評估仍在與夥伴共同開發；連續運行有算力成本；也只支援「有可程式介面」的裝置。換句話說，它擅長把已知流程自動化，不擅長面對真正意外。</p>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px;">▍重點一句話</div>
+<p style="color:#e2e8f0;font-size:15px;line-height:1.7;margin:0 0 16px;font-weight:600;">AI 的下一個戰場不是更聰明的對話，而是「能不能安全地伸手動到真東西」——而先把標準與安全訂下來的人，將決定 agent 能碰到哪些機器。</p>
+
+<p style="margin:0;font-size:13px;"><a href="https://www.anthropic.com/news/model-hardware-standard-research-preview" style="color:#06b6d4;text-decoration:none;">🔗 閱讀原文</a> <span style="color:#475569;">｜來源：Anthropic 官方公告（2026/08/27）</span></p>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 衍生新聞 -->
+<tr><td style="padding:16px 0 0;">
+<div style="font-size:17px;font-weight:800;color:#ffffff;margin:0 0 4px;padding:0 4px;">🔗 主軸的衍生新聞</div>
+</td></tr>
+
+<tr><td style="padding:10px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 24px;">
+<span style="display:inline-block;background:#252525;color:#a5b4fc;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">🔗 衍生新聞</span>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin:12px 0 8px;">MHS 的實測戰績：不是簡報，是拿得出數字的真實驗</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px;">除了 QuEra 的量子雷射，<strong style="color:#e2e8f0;">Tetsuwan Scientific</strong> 的 qPCR 流程測了 <strong style="color:#e2e8f0;">9,143 次分注、300 種轉移類型，準確度比原廠規格好約 12%</strong>；<strong style="color:#e2e8f0;">Genentech</strong> 讓 Claude 自己找出蛋白質分析的最佳流速（水約 140 µL/s、黏稠 BSA 約 10 µL/s）。這些都是<strong style="color:#e2e8f0;">可回測的量化成果</strong>，而非「未來願景」。這正是主軸「可用」而非「概念」的證據。</p>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:0 0 10px;">💡 記住這句：判斷一項 AI 能力成不成熟，看它敢不敢在真實儀器上報數字，而不是報 benchmark。</p>
+<p style="margin:0;font-size:13px;"><a href="https://www.anthropic.com/news/model-hardware-standard-research-preview" style="color:#06b6d4;text-decoration:none;">🔗 閱讀原文</a> <span style="color:#475569;">｜來源：Anthropic 官方公告</span></p>
+</td></tr>
+</table>
+</td></tr>
+
+<tr><td style="padding:6px 0 10px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 24px;">
+<span style="display:inline-block;background:#252525;color:#a5b4fc;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">🔗 衍生新聞</span>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin:12px 0 8px;">硬體廠與雲端一起押注，預覽後將開源</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px;">一個標準要成立，光有規格不夠，得有人願意接。目前 <strong style="color:#e2e8f0;">AWS（Strands Robots）、Universal Robots、Doosan Robotics、Tecan、QIAGEN、Danaher、MBF Bioscience、Automata、Raspberry Pi、Hugging Face（LeRobot）</strong>都在測試 MHS，涵蓋雲端、工業機械手臂、實驗室自動化到教育硬體。Anthropic 明確表示<strong style="color:#e2e8f0;">研究預覽結束後會開源整套框架</strong>，並釋出安全指引——與當年 MCP 如出一轍。</p>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:0 0 10px;">💡 記住這句：標準之爭比模型之爭更難逆轉——一旦生態接上了，換掉的成本就變得極高。</p>
+<p style="margin:0;font-size:13px;"><a href="https://www.anthropic.com/news/model-hardware-standard-research-preview" style="color:#06b6d4;text-decoration:none;">🔗 閱讀原文</a> <span style="color:#475569;">｜來源：Anthropic 官方公告</span></p>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="padding:14px 0 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:22px 26px;">
+<div style="font-size:17px;font-weight:800;color:#ffffff;margin:0 0 16px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:18px;color:#cbd5e1;font-size:14px;line-height:1.75;">
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">OpenAI 將切斷 Cursor 的模型存取（SpaceX 收購後）</strong>：SpaceX 於 8/14 完成對 Cursor 的收購，OpenAI 8/28 依「控制權變更」條款通知終止合約，Cursor 的 OpenAI 模型直連將於 <strong>11/12</strong> 停止（仍可用 Anthropic／Google／Grok）。為什麼重要：這是 AI coding 工具的「模型供應鏈」第一次因企業併購與信任問題被政治化，提醒團隊別把生產力綁死在單一供應商。<a href="https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/" style="color:#06b6d4;text-decoration:none;">🔗 來源：OpenAI</a></li>
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">GitHub Copilot VS Code 八月版：組織級自訂 agent＋推理力道分級</strong>：企業可跨 repo 發布「組織自訂 agent」並自動出現在選單；模型新增 Low／Medium／High thinking effort 控制；Git agent 能在開 PR 前就審查未提交變更。為什麼重要：治理與成本控制正從「選哪個模型」細化到「每個任務給多少推理預算」。<a href="https://github.blog/changelog/2026-08-28-github-copilot-in-visual-studio-august-update-2/" style="color:#06b6d4;text-decoration:none;">🔗 來源：GitHub Changelog</a></li>
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Google 推出 Gemini Omni 1.1 Flash 影片模型</strong>：8/27 上線，支援場景延伸、首尾影格控制、影片參考，360p 快速打樣（約 $0.03／秒）再升級到 4K，於 AI Studio、Gemini API、Flow 與 Gemini App 推出。為什麼重要：生成影片正從「一次成形」走向「可控可迭代」，對做技術簡報與教育內容的團隊是省時工具。<a href="https://ai.google.dev/gemini-api/docs/changelog" style="color:#06b6d4;text-decoration:none;">🔗 來源：Google Gemini API</a></li>
+<li><strong style="color:#e2e8f0;">ChatGPT 支援同一對話串接多個 Google 帳號</strong>：8/28 起，可把個人與工作的 Gmail／Calendar／Contacts 連進同一段對話並分流使用，全球 Plus／Pro／Business／Enterprise 支援。為什麼重要：agent 要真正接手日常事務，「同時看懂你多個身分的資料」是必要的一步。<a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" style="color:#06b6d4;text-decoration:none;">🔗 來源：OpenAI Release Notes</a></li>
+</ul>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="padding:14px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:22px 26px;">
+<div style="font-size:17px;font-weight:800;color:#ffffff;margin:0 0 14px;">📖 今日概念｜硬體抽象層（HAL）與驅動程式</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0 0 12px;"><strong style="color:#a5b4fc;">一句定義：</strong>一層夾在軟體與硬體之間的「翻譯」，讓上層軟體用統一指令操作各種機器，不必管每台裝置的內部細節。</p>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0 0 12px;"><strong style="color:#a5b4fc;">生活化比喻：</strong>像 <strong style="color:#e2e8f0;">USB</strong>——不管是隨身碟、滑鼠還是印表機，內部天差地遠，但插上同一個孔、用同一套協定就能用；作業系統靠「驅動程式」把各家硬體翻成標準訊號。說回技術：MHS 做的，就是替 AI agent 造這層「USB 插孔＋驅動」，把顯微鏡、機械手臂變成 agent 眼中規格一致的裝置。</p>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0 0 12px;"><strong style="color:#a5b4fc;">工作中的例子：</strong>半導體 fab 的 <strong style="color:#e2e8f0;">SECS/GEM</strong> 設備通訊標準、EDA 界的 <strong style="color:#e2e8f0;">OpenAccess</strong> 資料庫——都是同一個精神：讓不同廠牌的設備或工具用一致的介面對話，換機台不用重寫整套軟體。</p>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0 0 12px;"><strong style="color:#a5b4fc;">常見誤解：</strong>以為「有了抽象層，AI 就懂硬體」。錯——抽象層給的是<strong style="color:#e2e8f0;">統一介面與安全邊界</strong>，不是物理理解；agent 依然可能對現實中的意外束手無策。</p>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0;"><strong style="color:#a5b4fc;">與今天主軸的關係：</strong>MHS 本質就是「AI 版的 HAL＋驅動標準」，這正是它能把儀器整合從數週壓到數小時的關鍵——省下的，全是過去寫客製驅動的苦工。</p>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 半導體 AI 專區 -->
+<tr><td style="padding:0 0 14px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:22px 26px;">
+<div style="font-size:17px;font-weight:800;color:#ffffff;margin:0 0 10px;">🏭 半導體 AI 專區｜設備預測維護（Predictive Maintenance, PdM）</div>
+<div style="margin:0 0 16px;">
+<span style="display:inline-block;background:#252525;color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;margin-right:6px;">IC 製造</span>
+<span style="display:inline-block;background:#3a2a1a;color:#fbbf24;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">背景知識</span>
+</div>
+
+<div style="color:#67e8f9;font-weight:700;font-size:13px;margin:0 0 6px;">▍問題與流程位置</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0 0 14px;">fab 裡機台的<strong style="color:#e2e8f0;">非計畫停機（unplanned downtime）</strong>會直接砍掉產出與良率。傳統做「定期保養」（time-based PM）：不是零件還能用就被提早換掉、浪費成本，就是還沒到週期就壞了、整線停擺。這個環節坐落在<strong style="color:#e2e8f0;">設備工程／維護</strong>與製造執行之間。</p>
+
+<div style="color:#67e8f9;font-weight:700;font-size:13px;margin:0 0 6px;">▍AI 如何介入</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0 0 14px;">用機台的 <strong style="color:#e2e8f0;">FDC（Fault Detection and Classification）</strong>感測訊號——溫度、壓力、RF 功率、氣流、馬達電流等時序資料——訓練模型，預測元件的剩餘壽命與故障機率，把維護從「時間到就修」轉為<strong style="color:#e2e8f0;">「狀況到才修」（condition-based）</strong>。跟過去最大的差異：老師傅靠經驗與固定週期，AI 能在訊號<strong style="color:#e2e8f0;">還在規格內、人眼看不出</strong>時就抓到劣化趨勢，提前把維修排進離峰時段，減少突發停機與連帶的晶圓報廢。</p>
+
+<div style="color:#67e8f9;font-weight:700;font-size:13px;margin:0 0 6px;">▍資料與產出</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0 0 14px;">輸入是時序感測資料＋維修紀錄＋故障標註；產出是<strong style="color:#e2e8f0;">剩餘可用壽命（RUL）估計、故障告警、建議保養時窗</strong>，交給排程系統或設備工程師決策。</p>
+
+<div style="color:#67e8f9;font-weight:700;font-size:13px;margin:0 0 6px;">▍如何驗證</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0 0 14px;">用歷史故障回測——模型能否在故障發生前 N 小時預警；再看 precision／recall、<strong style="color:#e2e8f0;">假警報率</strong>，以及最終「實際非計畫停機時間下降多少」。假警報太多會讓工程師關掉系統，是落地成敗關鍵。</p>
+
+<div style="color:#67e8f9;font-weight:700;font-size:13px;margin:0 0 6px;">▍限制與風險</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0 0 16px;">罕見故障的樣本天生就少，模型不易學好；製程或機台改版會造成<strong style="color:#e2e8f0;">模型漂移</strong>；跨機台、跨廠泛化困難；假警報反而製造不必要停機。這些都是背景知識與產業共識，非某公司今日新聞。</p>
+
+<p style="color:#67e8f9;font-weight:700;font-size:14px;line-height:1.7;margin:0 0 12px;">👷 對半導體工作者的意義：對設備／製造工程師，PdM 是 AI 最快能落地的環節之一。下一步若結合今天主軸的 MHS 這類「AI 可直接操作硬體」標準，「預測」與「處置」（自動排修、調參）可能合流——但務必守住安全邊界與人為審核，別讓自動化跨過那條「壞了誰負責」的線。</p>
+<p style="margin:0;font-size:13px;"><a href="https://www.semi.org/en/event/ai-techniques-workshop" style="color:#06b6d4;text-decoration:none;">🔗 延伸背景</a> <span style="color:#475569;">｜來源：SEMI（AI in Semiconductor Manufacturing，背景知識）</span></p>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="padding:0 0 14px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+<tr><td style="padding:24px 26px;">
+<div style="font-size:17px;font-weight:800;color:#ffffff;margin:0 0 14px;">🪞 反思時間</div>
+<ul style="margin:0 0 16px;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+<li style="margin-bottom:12px;">當 AI 從「給建議」變成「動手操作機器」，你的組織該怎麼重新定義「錯誤成本」？軟體出錯可以 rollback，那機台或整片晶圓被弄壞呢？這條界線該由誰、用什麼機制來守？</li>
+<li style="margin-bottom:12px;">如果明年 fab 裡某台量測或搬運設備開始接受 AI agent 直接操作，你希望它<strong style="color:#a5b4fc;">先被賦予哪一項權限、又絕對不能碰哪一項</strong>？你會怎麼設計這道安全邊界與人為審核點？</li>
+<li>MHS 走的是 MCP 的開源路線。當「AI 操作硬體」變成開放標準，設備商的護城河會從「介面／驅動」轉移到哪裡（資料？服務？安全認證？）？你所在的環節，價值會被重新定價嗎？</li>
+</ul>
+<p style="color:#a5b4fc;font-weight:700;font-size:15px;line-height:1.7;margin:0;">🎒 今日帶走：AI 正在從螢幕伸手到真實世界；先把標準與安全邊界訂好的人，會決定 agent 能碰哪些機器、以及碰壞了誰負責。</p>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 歷史電子報入口 -->
+<tr><td style="padding:0 0 14px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:22px 26px;text-align:center;">
+<div style="font-size:16px;font-weight:800;color:#ffffff;margin:0 0 8px;">📚 想回顧之前的內容？</div>
+<p style="color:#94a3b8;font-size:14px;line-height:1.7;margin:0 0 14px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+<a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="display:inline-block;color:#06b6d4;text-decoration:underline;font-weight:700;font-size:14px;">查看歷史電子報</a>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- Footer -->
+<tr><td style="background:#1a1a1a;border-radius:0 0 16px 16px;padding:24px 28px;text-align:center;border-top:1px solid #252525;">
+<p style="color:#cbd5e1;font-size:14px;margin:0 0 10px;">📬 覺得有收穫？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">分享並訂閱這份電子報</a></p>
+<p style="color:#64748b;font-size:13px;margin:0 0 16px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></p>
+<p style="color:#475569;font-size:12px;line-height:1.6;margin:0;">© 2026 企鵝的 AI 每日電子報🐧　本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>

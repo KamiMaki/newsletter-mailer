@@ -472,3 +472,14 @@
 {"date": "2026-08-29", "title": "主軸：AI 大廠開始自己造推論晶片——OpenAI 用九個月出片的自研 ASIC 在每瓦效率上壓過 NVIDIA"}
 {"date": "2026-08-29", "title": "概念：特定領域架構（Domain-Specific Architecture, DSA）"}
 {"date": "2026-08-29", "title": "半導體專區：EDA 工具｜高階綜合（HLS）與敏捷 ASIC 設計"}
+{"date": "2026-08-30", "title": "Anthropic 發表 Model Hardware Standard（MHS）研究預覽：AI 代理可安全操作實驗室與工廠實體儀器（MCP for hardware）"}
+{"date": "2026-08-30", "title": "MHS 實測：QuEra 量子電腦雷射穩定 58%→99.3%、殘餘誤差 15.7mV→1.55mV；CMU 整合 8 小時 vs 數週、R²>0.98"}
+{"date": "2026-08-30", "title": "MHS 實測：Tetsuwan qPCR 9,143 次分注比原廠準約 12%；Genentech Claude 自動優化流速；UW 六儀器不到一週"}
+{"date": "2026-08-30", "title": "MHS 生態：AWS Strands Robots／Universal Robots／Doosan／Tecan／QIAGEN／Danaher／Raspberry Pi／HF LeRobot 測試，預覽後開源"}
+{"date": "2026-08-30", "title": "OpenAI 因 SpaceX 收購 Cursor 援引控制權變更條款，將於 11/12 終止 Cursor 的 OpenAI 模型存取"}
+{"date": "2026-08-30", "title": "GitHub Copilot VS Code 八月版：組織級自訂 agent 跨 repo 發布、Low/Medium/High 推理力道、Git agent 審查未提交變更"}
+{"date": "2026-08-30", "title": "Google Gemini Omni 1.1 Flash（8/27）：生成影片場景延伸、首尾影格控制、360p 打樣約 $0.03/秒升 4K"}
+{"date": "2026-08-30", "title": "OpenAI ChatGPT 支援同一對話串接多個 Google 帳號（Gmail/Calendar/Contacts，個人與工作分流）"}
+{"date": "2026-08-30", "title": "主軸：AI 走下螢幕、動手碰真東西——Anthropic 用 MHS 把 MCP 隨插即用標準推向實驗室與工廠實體硬體"}
+{"date": "2026-08-30", "title": "概念：硬體抽象層（HAL）與驅動程式"}
+{"date": "2026-08-30", "title": "半導體專區：IC 製造｜設備預測維護（Predictive Maintenance, PdM）"}
