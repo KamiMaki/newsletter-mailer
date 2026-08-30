@@ -483,3 +483,11 @@
 {"date": "2026-08-30", "title": "主軸：AI 走下螢幕、動手碰真東西——Anthropic 用 MHS 把 MCP 隨插即用標準推向實驗室與工廠實體硬體"}
 {"date": "2026-08-30", "title": "概念：硬體抽象層（HAL）與驅動程式"}
 {"date": "2026-08-30", "title": "半導體專區：IC 製造｜設備預測維護（Predictive Maintenance, PdM）"}
+{"date": "2026-08-31", "title": "Sony／Warner Chappell 告 Anthropic：指非法抓取歌詞訓練 Claude，三大音樂出版商全數興訟"}
+{"date": "2026-08-31", "title": "NVIDIA 傳 129 億美元收購 Hugging Face，將面臨罕見正面反壟斷審查（據報導）"}
+{"date": "2026-08-31", "title": "Grok Bot 深接 X 25 工具外掛、月費降至 20 美元，並被指示自主刷卡買下一台 Tesla Model Y"}
+{"date": "2026-08-31", "title": "Claude Code 8/29：CLI 先啟動再載 sandbox、Linux 安裝檔瘦身 4.5 倍（約 75MB）、/cost /usage /tasks 加 token 明細"}
+{"date": "2026-08-31", "title": "Vercel AI SDK ai@7.0.85／6.0.272：強制 tool choice、ToolLoopAgent 工具審批 secret、修正 Gateway 影像成本"}
+{"date": "2026-08-31", "title": "主軸：AI 的較量搬進法院與監理機關——版權（告 Anthropic）、反壟斷（NVIDIA 傳購 Hugging Face）、控制權（OpenAI 斷供 Cursor）決定模型能不能用"}
+{"date": "2026-08-31", "title": "概念：模型抽象層（AI Gateway，模型路由與備援）"}
+{"date": "2026-08-31", "title": "半導體專區：EDA 工具｜IR drop（電壓降）與電源完整性的 AI 預測"}

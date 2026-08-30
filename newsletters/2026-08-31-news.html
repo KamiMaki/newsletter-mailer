@@ -1,0 +1,204 @@
+<!-- 企鵝的 AI 每日電子報 2026-08-31 -->
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;margin:0;padding:0;">
+<tr><td align="center" style="padding:20px 12px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+
+<!-- ===== Header ===== -->
+<tr><td style="padding:0 0 18px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+  <tr><td style="padding:28px 26px;">
+    <div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:.5px;">企鵝的 AI 每日電子報🐧</div>
+    <div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+    <div style="font-size:13px;color:#c7d2fe;margin-top:10px;font-weight:600;">2026 年 8 月 31 日（週日）· 閱讀時間約 7 分鐘</div>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 30 秒重點 ===== -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:22px 24px;">
+    <div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+    <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+      <li style="margin-bottom:9px;"><strong style="color:#a5b4fc;">【今日主軸】這 48 小時，AI 的主戰場搬到了法院與監理機關</strong>：Sony、Warner Chappell 兩大音樂出版商控告 Anthropic 非法抓取歌詞訓練 Claude——提醒你「用第三方模型」本身就是一種法律風險。</li>
+      <li style="margin-bottom:9px;">NVIDIA 傳以 <strong style="color:#e2e8f0;">129 億美元</strong>收購開放模型大本營 Hugging Face，這樁交易將面臨罕見的正面反壟斷審查，焦點是「中立通路」會不會倒向自家硬體。（據報導）</li>
+      <li style="margin-bottom:9px;">xAI 的 Grok Bot 深度接上 X、月費下探 $20，還被使用者指示<strong style="color:#e2e8f0;">自主刷卡買了一台 Tesla</strong>——agent 開始花真錢辦真事，但「出事誰負責」仍是空白。</li>
+      <li style="margin-bottom:9px;">開發工具照常快跑：<strong style="color:#e2e8f0;">Claude Code</strong> 加速啟動、Linux 安裝檔瘦身 4.5 倍；<strong style="color:#e2e8f0;">Vercel AI SDK</strong> 強化工具呼叫與代理審批。</li>
+      <li style="margin-bottom:0;"><strong style="color:#67e8f9;">【對半導體人最相關】</strong>模型正在變成一種有「供應鏈風險」的零件。今天最該內化的一句話：把 AI 供應商當 IP core 供應商來管——查來源、備第二家、談好斷供條款。</li>
+    </ul>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 今天的主軸 ===== -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+  <tr><td style="padding:1px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+    <tr><td style="padding:26px 24px;">
+      <div style="display:inline-block;background:rgba(99,102,241,.18);color:#a5b4fc;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;margin-bottom:14px;">🎯 今天的主軸</div>
+      <div style="font-size:20px;font-weight:800;color:#ffffff;line-height:1.5;margin-bottom:18px;">巨頭比的不再是誰的模型更聰明，而是誰扛得過法律與所有權這一關</div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 8px;">▍共同變化</div>
+      <div style="color:#cbd5e1;font-size:15px;line-height:1.75;">過去 48 小時，AI 圈最重的三件事都不在實驗室，而在法庭與監理桌上：Sony Music Publishing 與 Warner Chappell 對 <strong style="color:#a5b4fc;">Anthropic</strong> 提告，指控其非法 torrent、抓取受著作權保護的歌詞來訓練 Claude；<strong style="color:#a5b4fc;">NVIDIA 傳收購 Hugging Face</strong> 被點名恐面臨完整反壟斷審查；再加上稍早 OpenAI 因對手 SpaceX 併購 Cursor 而援引「控制權變更」條款、宣布 11/12 斷供。一句話：<strong style="color:#a5b4fc;">「你能不能用、敢不敢用某個模型」，正在由版權、反壟斷與併購條款決定，而不是跑分。</strong></div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 8px;">▍為什麼放在一起看</div>
+      <div style="color:#cbd5e1;font-size:15px;line-height:1.75;">因為它們戳的是同一個要害——<strong style="color:#a5b4fc;">模型的「可得性」不再理所當然</strong>。版權官司威脅的是「這顆模型本身乾不乾淨、會不會被禁」；反壟斷審查威脅的是「開放模型的通路會不會被一家垄斷」；控制權條款威脅的是「你的供應商被誰買走，就可能被斷供」。三種力量，都跟模型能力無關，卻都能讓你手上的 AI 說停就停。</div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 8px;">▍過去 vs. 現在</div>
+      <div style="color:#cbd5e1;font-size:15px;line-height:1.75;">過去選模型像<strong style="color:#a5b4fc;">逛超市</strong>：比規格、比單價、比延遲，結帳就走，API key 像張加值卡，付錢就能用。現在更像<strong style="color:#a5b4fc;">簽一份長期供應合約</strong>：你得先查對方有沒有官司、股權在誰手上、會不會被併購——API key 從「加值卡」變成了「有身分審查的門禁卡」，門禁背後的公司出事，你的卡就可能突然刷不過。</div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 8px;">▍背後邏輯</div>
+      <div style="color:#cbd5e1;font-size:15px;line-height:1.75;">根本原因是<strong style="color:#a5b4fc;">模型能力高度同質化、且開源追趕的窗口縮到只剩幾週</strong>。當「誰最強」很難再拉開差距，競爭與風險就外溢到非技術層：資料來源的合法性（著作權）、通路的控制權（反壟斷）、供應關係的穩定性（併購與合約）。這也是為什麼巨頭這陣子的大新聞越來越多是訴狀、監理與交易，而不是 benchmark。</div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 8px;">▍對你的工作</div>
+      <div style="color:#cbd5e1;font-size:15px;line-height:1.75;">你在 IDE、CI、產品裡接的每一個模型，本質上都是一顆<strong style="color:#a5b4fc;">單一供應商零件</strong>，而且這顆零件可能因官司被下架、因併購被斷供。半導體人對這件事最有直覺——這就是 <strong style="color:#a5b4fc;">single-source risk</strong>：你不會把整條產線壓在一家沒有第二來源、合約還沒談清楚的 IP 供應商身上。同樣的紀律該搬到 AI 選型上：查訓練資料來源（provenance）、準備 second source、把「控制權變更」寫進合約。</div>
+      <div style="background:#252525;border-radius:8px;padding:14px 16px;margin-top:14px;">
+        <div style="color:#a5b4fc;font-size:12px;font-weight:700;margin-bottom:6px;">👤 編輯分析</div>
+        <div style="color:#94a3b8;font-size:14px;line-height:1.7;">Anthropic 這案並非孤例：三大音樂出版商如今全數對其興訟，且 Universal 等先前那樁已把爭議擴大到逾兩萬首、求償逾 30 億美元。值得注意的是，AI 訓練「合理使用」在美國判決仍分歧——盜版取得資料的部分往往站不住腳，但「訓練本身是否合理使用」各案看法不一。所以這不是「Anthropic 一定會輸」，而是「用第三方模型的人，得把這種法律不確定性當成一個真實的風險項」。</div>
+      </div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 8px;">▍限制與待驗證</div>
+      <div style="color:#cbd5e1;font-size:15px;line-height:1.75;">別急著下定論：<strong style="color:#a5b4fc;">Anthropic 案結果未定</strong>；<strong style="color:#a5b4fc;">NVIDIA–Hugging Face 尚未簽約</strong>、可能破局，反壟斷審查更可能拖上一年；OpenAI 斷供 Cursor 是 Musk 與 OpenAI 宿怨下的<strong style="color:#a5b4fc;">特例</strong>，不代表模型供應商會普遍互相斷供。這些都是「風險訊號」，不是「已成定局」。</div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 8px;">▍重點一句話</div>
+      <div style="color:#e2e8f0;font-size:15px;line-height:1.75;font-weight:600;">挑模型，從今天起多問一句：「它的訓練資料、股權和合約，經得起法院和監理機關檢視嗎？」</div>
+
+      <div style="margin-top:16px;font-size:13px;line-height:1.9;">
+        <a href="https://www.musicbusinessworldwide.com/now-sony-music-publishing-and-warner-chappell-sue-anthropic-in-multi-billion-dollar-lawsuit-one-of-the-largest-and-most-blatant-ongoing-thefts-of-intellectual-property-in-history/" style="color:#06b6d4;text-decoration:none;">🔗 Sony／Warner 告 Anthropic（Music Business Worldwide，引述法院訴狀）</a><br>
+        <a href="https://www.cnbc.com/2026/08/27/nvidia-hugging-face-acquisition.html" style="color:#06b6d4;text-decoration:none;">🔗 NVIDIA 傳收購 Hugging Face（CNBC，據報導）</a><br>
+        <a href="https://openai.com/index/our-decision-on-cursor-following-its-acquisition-by-spacex/" style="color:#06b6d4;text-decoration:none;">🔗 OpenAI 對 Cursor 的決定（OpenAI 官方，前情）</a>
+      </div>
+    </td></tr>
+    </table>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 主軸的衍生新聞 ===== -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:22px 24px;">
+    <div style="display:inline-block;background:rgba(6,182,212,.15);color:#67e8f9;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;margin-bottom:14px;">🔗 衍生新聞</div>
+
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">NVIDIA 傳 129 億美元吃下 Hugging Face，開放模型的「中立門面」恐換老闆</div>
+    <div style="color:#cbd5e1;font-size:14px;line-height:1.75;">多家媒體報導，NVIDIA 已談妥以約 129 億美元收購擁有 1,300 萬開發者的開放模型樞紐 <strong style="color:#e2e8f0;">Hugging Face</strong>（尚未簽約）。這將是 NVIDIA 史上最大手筆，也是它<strong style="color:#e2e8f0;">第一樁躲不掉正面反壟斷審查</strong>的大型軟體交易——監理機關會盯著「一家 GPU 龍頭掌控中立託管平台後，會不會排擠 AMD、Intel 與自研晶片陣營」。<strong style="color:#e2e8f0;">和主軸的關係：</strong>這正是「所有權／通路控制」那條線——你下載開放模型的地方，可能不再中立。</div>
+    <p style="color:#94a3b8;font-style:italic;font-size:14px;margin:12px 0 4px;">💡 記住這句：當「開放」的入口被單一巨頭買下，開放本身就多了一個要看人臉色的閘門。</p>
+    <div style="font-size:13px;"><a href="https://www.cnbc.com/2026/08/27/nvidia-hugging-face-acquisition.html" style="color:#06b6d4;text-decoration:none;">🔗 閱讀原文與來源：CNBC（據報導）</a></div>
+
+    <div style="height:1px;background:#333;margin:20px 0;"></div>
+
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">Grok Bot 被指示自己下單，刷卡買了一台 Tesla Model Y</div>
+    <div style="color:#cbd5e1;font-size:14px;line-height:1.75;">xAI 的常駐雲端代理 <strong style="color:#e2e8f0;">Grok Bot</strong> 本週深度接上 X（25 個工具的唯讀外掛）、月費下探 $20；更引人注意的是，據報導有使用者在明確授權下，指示 Grok Bot 透過訂購 API、用<strong style="color:#e2e8f0;">單次性虛擬卡</strong>完成了一筆真實的 Tesla 採購。<strong style="color:#e2e8f0;">和主軸的關係：</strong>當 agent 開始替你花錢辦真事，「出事誰負責、契約對誰生效」的問責問題就浮上檯面——這是同一個「非技術層」正在追不上技術的另一面。</div>
+    <p style="color:#94a3b8;font-style:italic;font-size:14px;margin:12px 0 4px;">💡 記住這句：讓 agent 動手之前，先想清楚它刷的是誰的卡、簽的是誰的名。</p>
+    <div style="font-size:13px;"><a href="https://x.ai/news" style="color:#06b6d4;text-decoration:none;">🔗 閱讀原文與來源：xAI 官方（採購細節為據報導）</a></div>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 其他快訊 ===== -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:22px 24px;">
+    <div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+    <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+      <li style="margin-bottom:12px;"><strong style="color:#e2e8f0;">Claude Code 8/29 更新：啟動更快、Linux 安裝檔瘦身 4.5 倍。</strong>CLI 現在會在 sandbox 與 MCP 伺服器背景初始化時就讓你開始打字，Linux x64 下載縮到約 75 MB，`/cost`、`/usage`、`/tasks` 也新增 token 明細。為什麼重要：本機開發體驗的摩擦越小，agent 越容易被放進日常工作流。<a href="https://code.claude.com/docs/en/changelog" style="color:#06b6d4;text-decoration:none;">🔗 來源：Claude Code 官方 changelog</a></li>
+      <li style="margin-bottom:12px;"><strong style="color:#e2e8f0;">Vercel AI SDK 釋出 ai@7.0.85／6.0.272（8/30）。</strong>強化工具呼叫（未滿足 tool choice 的回應會被拒絕）、ToolLoopAgent 支援工具審批 secret、並修正 Gateway 影像生成的成本計算。為什麼重要：這些都是把 agent 從 demo 推向「可控、可稽核」生產環境的地基。<a href="https://github.com/vercel/ai/releases" style="color:#06b6d4;text-decoration:none;">🔗 來源：Vercel AI SDK Releases</a></li>
+      <li style="margin-bottom:0;"><strong style="color:#e2e8f0;">Grok Bot 深接 X、入門月費降到 $20（8/29）。</strong>新增可搜文、看提及、管書籤等 25 項唯讀工具（仍不能發文與私訊），並提供免費 X API 額度。為什麼重要：代理越來越「常駐、可連接、便宜」，門檻降低意味著更多非工程角色也會開始用它接管重複性任務。<a href="https://x.ai/news" style="color:#06b6d4;text-decoration:none;">🔗 來源：xAI 官方</a></li>
+    </ul>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 今日概念 ===== -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:22px 24px;">
+    <div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">📖 今日概念｜模型抽象層（AI Gateway）</div>
+    <div style="color:#cbd5e1;font-size:15px;line-height:1.75;">
+      <p style="margin:0 0 12px;"><strong style="color:#a5b4fc;">一句定義：</strong>在你的程式和各家大模型之間，架一層「統一轉接器」——用同一套介面接所有模型，還能設定路由規則與失敗備援，隨時把某家供應商換掉。</p>
+      <p style="margin:0 0 12px;"><strong style="color:#a5b4fc;">生活化比喻：</strong>它像家裡的<strong style="color:#e2e8f0;">萬用延長線＋不斷電系統（UPS）</strong>：插座規格統一，主電（主要供應商）一斷，自動切到備援電池（備援模型），你的電器（應用）連插頭都不用拔。說回技術：gateway 幫你統一 API 格式、自動 failover、還能依成本／延遲／合規把每一個請求路由到最合適的模型。</p>
+      <p style="margin:0 0 12px;"><strong style="color:#a5b4fc;">工作中的例子：</strong>一個產品同時接 Claude、GPT、Gemini，平時把便宜任務丟給小模型、難題丟給旗艦模型；某家臨時漲價、限流或斷供時，gateway 直接切走，使用者無感。</p>
+      <p style="margin:0 0 12px;"><strong style="color:#a5b4fc;">常見誤解：</strong>以為「改個 base_url 就能換模型」。實際上各家的工具呼叫格式、context 上限、甚至輸出風格都不同，抽象層要吸收這些差異、做相容轉換，不是純轉發封包。</p>
+      <p style="margin:0;"><strong style="color:#a5b4fc;">與今天主軸的關係：</strong>主軸講的是「模型可能被官司、併購、控制權條款斷供」；模型抽象層就是最直接的<strong style="color:#e2e8f0;">對沖手段</strong>——把單一供應商風險，降成一個「隨時可切換」的設定。</p>
+    </div>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 半導體 AI 專區 ===== -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:22px 24px;">
+    <div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜用 AI 秒算 IR drop 熱點</div>
+    <div style="margin-bottom:14px;">
+      <span style="display:inline-block;background:rgba(6,182,212,.15);color:#67e8f9;font-size:12px;font-weight:700;padding:4px 10px;border-radius:16px;margin-right:6px;">EDA 工具</span>
+      <span style="display:inline-block;background:rgba(148,163,184,.18);color:#cbd5e1;font-size:12px;font-weight:700;padding:4px 10px;border-radius:16px;">背景知識</span>
+    </div>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:14px 0 6px;">▍問題與流程位置</div>
+    <div style="color:#cbd5e1;font-size:14px;line-height:1.75;">晶片靠一張綿密的電源網路（PDN）供電。電流一大，經過金屬線電阻就會產生壓降（IR drop ＝ 電流 × 電阻），讓某些區域瞬間「電壓不夠」，輕則時序失敗，重則功能出錯。傳統上，這種<strong style="color:#e2e8f0;">電源完整性（power integrity）</strong>分析要等到後段：先做完 placement／routing、抽出寄生參數，再用 <strong style="color:#e2e8f0;">Ansys RedHawk-SC、Cadence Voltus</strong> 這類簽核級求解器跑全晶片分析。準是很準，但一次跑很久，而且等你發現熱點時，設計已經很「硬」、改起來又貴又痛。</div>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:14px 0 6px;">▍AI 如何介入</div>
+    <div style="color:#cbd5e1;font-size:14px;line-height:1.75;">研究界把 IR drop 預測改寫成一個<strong style="color:#e2e8f0;">「看圖預測」問題</strong>：用 CNN／U-Net 這類模型，從功率密度圖、切換活動、PDN 幾何等「特徵圖」，直接吐出一張 IR drop 熱點圖。差別在於——過去是「設計完 → 慢慢算 → 回頭改」；現在是「邊設計 → 秒級預測 → 當場閃避熱點」。等於把後段的一次性大考，變成設計途中隨時能做的小考。</div>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:14px 0 6px;">▍資料與產出</div>
+    <div style="color:#cbd5e1;font-size:14px;line-height:1.75;">輸入是佈局層級的特徵圖（功率、切換、PDN 結構）；輸出是密集的 IR drop 熱點圖，標出哪裡會壓降、壓多少。以經典的 <strong style="color:#e2e8f0;">PowerNet</strong> 研究為例，在最難的 vectorless 動態 IR drop 上，準度較前一代 ML 方法高約 <strong style="color:#e2e8f0;">9%</strong>，速度較商用求解器快約 <strong style="color:#e2e8f0;">30 倍</strong>（此為研究成果，非量產宣稱）。</div>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:14px 0 6px;">▍如何驗證</div>
+    <div style="color:#cbd5e1;font-size:14px;line-height:1.75;">關鍵心態：ML 是「早期篩檢」，不是「最終判決」。熱點圖要拿求解器結果回歸校準（看相關係數、熱點命中率），而最終簽核仍必須交回 RedHawk-SC／Voltus 這類經認證的求解器全跑一遍。</div>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:14px 0 6px;">▍限制與風險</div>
+    <div style="color:#cbd5e1;font-size:14px;line-height:1.75;">換製程節點或新的 PDN 結構，模型常常「不轉移」，得重訓；ML 給的是機率性熱點，<strong style="color:#e2e8f0;">漏報（false negative）</strong>在簽核前必須靠求解器兜底；而且訓練資料多來自特定設計族，泛化能力有限。</div>
+
+    <p style="color:#67e8f9;font-weight:700;font-size:14px;line-height:1.7;margin:16px 0 0;">👷 對半導體工作者的意義：實體設計與電源完整性工程師最先受惠——把 IR drop 檢查從「後段一次性大考」變成「設計途中的即時小考」，及早避開熱點、少繞幾輪 ECO。但務必記住：ML 熱點圖是加速器，不是判官，簽核那一關還是得交給求解器。</p>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 反思時間 ===== -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+  <tr><td style="padding:1px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+    <tr><td style="padding:24px;">
+      <div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+      <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.85;">
+        <li style="margin-bottom:11px;">如果「哪個模型能用」開始由官司和併購決定，你的技術選型流程裡，有沒有一欄專門評估「供應商的法律與股權風險」？還是你其實只比了跑分和單價？</li>
+        <li style="margin-bottom:11px;">你現在的產品或工作流，最關鍵的那個 AI 能力綁在哪一家？如果它明天像 Cursor 一樣被斷供，你要花多久才能切到第二來源、代價是什麼？</li>
+        <li style="margin-bottom:0;">當開源模型的能力只落後前沿幾週，你會為了「可控、可切換、來源乾淨」去選一個稍弱但自己掌握得住的開放模型，還是繼續押注最強卻受制於人的封閉模型？</li>
+      </ul>
+      <p style="color:#a5b4fc;font-weight:700;font-size:15px;line-height:1.7;margin:18px 0 0;">🎒 今日帶走：模型的護城河，正從「多聰明」轉向「多乾淨、多可控」——選 AI 供應商，要像半導體選 IP core 一樣，查授權、備第二來源、談好斷供條款。</p>
+    </td></tr>
+    </table>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 歷史電子報入口 ===== -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:22px 24px;">
+    <div style="font-size:16px;font-weight:800;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+    <div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-bottom:12px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</div>
+    <a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-weight:600;font-size:14px;">查看歷史電子報</a>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== Footer ===== -->
+<tr><td style="padding:8px 24px 24px;text-align:center;">
+  <div style="font-size:13px;color:#94a3b8;line-height:1.8;">
+    📬 覺得有用？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">分享給朋友訂閱這份電子報</a>
+  </div>
+  <div style="font-size:13px;color:#64748b;line-height:1.8;margin-top:8px;">
+    不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a>
+  </div>
+  <div style="font-size:12px;color:#475569;line-height:1.7;margin-top:14px;border-top:1px solid #2a2a2a;padding-top:14px;">
+    © 2026 企鵝的 AI 每日電子報🐧　本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。
+  </div>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
