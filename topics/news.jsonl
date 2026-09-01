@@ -504,3 +504,19 @@
 {"date": "2026-09-01", "title": "主軸：AI 算力的瓶頸從電晶體移到把晶片連起來——SEMICON Taiwan 2026 先進封裝／HBM／光互連成主戰場"}
 {"date": "2026-09-01", "title": "概念：Chiplet（小晶片）與異質整合"}
 {"date": "2026-09-01", "title": "半導體專區：IC 設計｜AI 輔助功能驗證與覆蓋率收斂"}
+{"date": "2026-09-02", "title": "CrowdStrike Fal.Con 2026 發表 SafeMind：攻擊代理與防禦代理在數位分身持續對打（NVIDIA Nemotron）"}
+{"date": "2026-09-02", "title": "CrowdStrike Blue Solano 防禦模型（Nemotron 3 Super）宣稱 99% 更低成本達 99% 準確度，Falcon IQ 用 50+ 代理"}
+{"date": "2026-09-02", "title": "Claude Code 2.1.257：Fable 5.1 設為預設、新增 Containment Escape 自動模式安全規則（擋憑證抓取／繞出口偵測／跨租戶）"}
+{"date": "2026-09-02", "title": "BLOOM-WILT：免訓練自動稽核（logit tilting）把目標壞行為出現率從 51% 逼到 100%（arXiv 2608.31105）"}
+{"date": "2026-09-02", "title": "Anthropic 企業級前沿防護 EFS：資料留客戶自家雲、自動監控攻擊性網路/生物能力與憑證外洩、不需人工審閱"}
+{"date": "2026-09-02", "title": "Anthropic 改進對齊與安全工作（8/31）"}
+{"date": "2026-09-02", "title": "Anthropic 發表 Claude Fable 5.1／Mythos 5.1：Terminal-Bench 4.0 從 42.0% 到 55.8%、快取降價75%、整體約降25%、資安誤報少60%、Mythos 蛋白質命中率近50%"}
+{"date": "2026-09-02", "title": "Google Gemini 推 agentic 影片理解：動態挑片段看，token 最多省88%、成本省66%、準確度升7%（3.7/3.6 Flash、3.5 Flash-Lite）"}
+{"date": "2026-09-02", "title": "OpenAI ChatGPT for Healthcare 接 Epic 電子病歷＋Healthcare Public Data 九官方來源，UCSF Health 試點"}
+{"date": "2026-09-02", "title": "GitHub Copilot 程式碼審查可正式核准 pull request（9/1）"}
+{"date": "2026-09-02", "title": "NVIDIA 與聯發科深化合作，共建邊緣到雲的 AI 運算平台（8/31）"}
+{"date": "2026-09-02", "title": "Vercel AI SDK ai@7.0.89：擴充 FilesV4 檔案操作、修正 generateText 接受違反必選工具的回應"}
+{"date": "2026-09-02", "title": "OpenAI Codex CLI 0.152.0：草稿內 Vim 搜尋、速率限制橫幅、憑證刷新進度、MCP 名稱支援"}
+{"date": "2026-09-02", "title": "主軸：當攻擊變自動，防禦也得自動——AI 代理同一天走進資安攻防的矛與盾兩邊（SafeMind／EFS／Containment Escape／自動紅隊）"}
+{"date": "2026-09-02", "title": "概念：紅隊與藍隊（Red Team／Blue Team）"}
+{"date": "2026-09-02", "title": "半導體專區：IC 製造｜晶圓圖缺陷樣態分類（Wafer Map Defect Pattern Classification）"}

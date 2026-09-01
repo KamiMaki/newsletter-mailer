@@ -1,0 +1,199 @@
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;margin:0;padding:0;">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;color:#e2e8f0;">
+
+<!-- Header -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px 16px 0 0;padding:28px 26px;">
+  <div style="font-size:23px;font-weight:800;color:#ffffff;letter-spacing:.5px;">企鵝的 AI 每日電子報🐧</div>
+  <div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+  <div style="font-size:13px;color:#c7d2fe;margin-top:10px;">2026 年 9 月 2 日（週三）· 台北</div>
+</td></tr>
+
+<!-- 30 秒重點 -->
+<tr><td style="background:#1a1a1a;padding:22px 24px;">
+  <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+  <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.75;">
+    <li style="margin-bottom:9px;"><strong style="color:#a5b4fc;">今日主軸：</strong>好幾家公司在同一天，把「資安」這件事交到了 AI 代理手上——<strong style="color:#a5b4fc;">攻擊方與防守方同時自動化</strong>。CrowdStrike 用 NVIDIA Nemotron 打造會自己攻、自己守的 SafeMind，Anthropic 推企業自動監控，學界則把「紅隊」變成一支能自動跑的程式。</li>
+    <li style="margin-bottom:9px;">CrowdStrike 的防禦模型 <strong style="color:#a5b4fc;">Blue Solano</strong>（跑在 Nemotron 3 Super 上）宣稱以「<strong style="color:#a5b4fc;">99% 更低成本、達到 99% 準確度</strong>」；黃仁勳一句話定調：往後攻擊方與防守方都會比以前更「武裝」。</li>
+    <li style="margin-bottom:9px;">Anthropic 同日發表 <strong style="color:#a5b4fc;">Fable 5.1／Mythos 5.1</strong>：coding 分數大跳、快取降價約 25%、資安誤報少 60%；連模型發表日都帶著濃濃的安全味。</li>
+    <li style="margin-bottom:9px;">其他值得知道：Google 讓 Gemini 學會「挑重點看影片」token 最多省 88%、OpenAI 把 ChatGPT 接上醫院病歷、GitHub Copilot 的程式碼審查現在能直接「批准 PR」了。</li>
+    <li><strong style="color:#67e8f9;">對半導體工作者最相關：</strong>晶圓廠與 IP 是頭號攻擊目標，而 EDA 流程裡的 coding agent 本身正變成新的攻擊面——今天的概念（紅隊／藍隊）與專區（晶圓缺陷自動分類）都在講同一句話：把人工判讀換成自動偵測。</li>
+  </ul>
+</td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="padding:20px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+  <tr><td style="padding:1px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+    <tr><td style="padding:24px 24px 26px;">
+      <div style="display:inline-block;background:rgba(99,102,241,.2);color:#a5b4fc;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;">🎯 今天的主軸</div>
+      <div style="font-size:19px;font-weight:800;color:#ffffff;margin-top:14px;line-height:1.5;">當攻擊變自動，防禦也得自動——AI 代理同一天走進資安的「矛」與「盾」兩邊</div>
+
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:16px 0 0;">先給你一個畫面：過去的大樓保全，是「一個警衛盯著幾十台監視器」，累了會恍神、換班會有空檔。今天這一批消息共同宣告的是——保全換成了<strong style="color:#a5b4fc;">一群會自己巡邏、自己追賊、還會私下互相演練攻防的機器警衛</strong>，而人退到指揮中心，改當那個下判斷、扛責任的裁判。把這條線說白：<strong style="color:#a5b4fc;">資安的攻與守，正同一時間從「人盯」轉成「代理自動化」</strong>。以下把今天幾則看似各自獨立的消息，串成同一個故事。</p>
+
+      <div style="margin-top:20px;"><span style="color:#a5b4fc;font-weight:700;font-size:13px;">▍共同變化</span></div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:8px 0 0;">9/1 這天，四件事指向同一個方向：①CrowdStrike 在 Fal.Con 2026 發表 <strong style="color:#a5b4fc;">SafeMind</strong>，用 NVIDIA Nemotron 打造一套「攻擊代理與防禦代理持續對打、越打越強」的資安系統；②Anthropic 推出 <strong style="color:#a5b4fc;">企業級前沿防護（Enterprise Frontier Safeguards）</strong>，讓濫用偵測在客戶自己的雲裡自動運行、不需 Anthropic 人工審閱；③Claude Code 2.1.257 加了一條叫「<strong style="color:#a5b4fc;">Containment Escape</strong>」的自動模式安全規則，把 coding agent 自己也當成攻擊面來防；④學界的 BLOOM-WILT 論文，把「紅隊」——主動誘出模型壞行為的那一方——寫成了一支能自動跑的程式。</p>
+
+      <div style="margin-top:18px;"><span style="color:#a5b4fc;font-weight:700;font-size:13px;">▍為什麼放在一起看</span></div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:8px 0 0;">因為它們正好湊成一組對稱的「矛與盾」。<strong style="color:#e2e8f0;">矛（攻擊）在自動化</strong>：CrowdStrike 官方引用的數字是 AI 驅動的攻擊過去一年增加 <strong style="color:#a5b4fc;">89%</strong>、最快的入侵擴散只要 <strong style="color:#a5b4fc;">27 秒</strong>，而 BLOOM-WILT 這類自動紅隊，能把「誘出目標壞行為」的成功率從約 51% 一路逼到 100%。<strong style="color:#e2e8f0;">盾（防禦）也在自動化</strong>：CrowdStrike 的防禦模型 Blue Solano（跑在 Nemotron 3 Super 上）宣稱以 99% 更低成本達到 99% 準確度、Falcon IQ 用 50+ 個協作代理跑自動化調查，Anthropic 則把監控搬進企業自己的基礎設施。<span style="color:#94a3b8;">（編輯分析）</span>當一邊 24 小時不睡覺地自動進攻，另一邊就不可能還靠「上班時間有人看告警」硬撐——防禦自動化不是選配，是被逼出來的對稱反應。</p>
+
+      <div style="margin-top:18px;"><span style="color:#a5b4fc;font-weight:700;font-size:13px;">▍過去 vs. 現在</span></div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:8px 0 0;">過去：資安是「工具＋人」——SIEM 把告警丟出來，分析師一條條看、判斷、追查，紅隊演練一年做幾次、靠人力手動打。現在：兩邊都換成會自己決策的代理。SafeMind 讓攻防代理在一個「<strong style="color:#a5b4fc;">數位分身</strong>」環境裡持續對抗、彼此進化（官方稱 offensive-defensive coevolution loop）；紅隊從「一群人花幾週」變成「一支程式跑一晚」。人的角色，從「第一線動手」上移到「設計規則、審查判斷、承擔決策」。</p>
+
+      <div style="margin-top:18px;"><span style="color:#a5b4fc;font-weight:700;font-size:13px;">▍背後邏輯</span></div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:8px 0 0;">為什麼是現在？因為 <strong style="color:#a5b4fc;">agent 這個形態同時把攻與守的成本都打下來了</strong>。對攻擊方，會自己找洞、寫 exploit、橫向移動的代理，讓「大規模、客製化攻擊」變便宜；對防禦方，同一套代理能力反過來做偵測、關聯、回應。有意思的是連 Anthropic 的模型發表都呼應這條線——Fable 5.1 特別強調「資安相關誤報少了 60%、測試中沒有出現關鍵級越獄」，等於把「模型本身別變成幫兇」也算進安全帳裡。安全，正從「事後補的功能」變成「產品內建的一層」。</p>
+
+      <div style="margin-top:18px;"><span style="color:#a5b4fc;font-weight:700;font-size:13px;">▍對你的工作</span></div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:8px 0 0;">如果你在 <strong style="color:#a5b4fc;">IC 設計／驗證</strong>：當你把 coding agent 或 EDA agent 接進流程，它能碰到的 RTL、測試向量、IP、憑證，就是一個全新的攻擊面——Claude Code 這條 Containment Escape 規則（擋自動核准「抓雲端憑證、繞出口偵測、跨租戶存取」）正是這個焦慮的縮影。如果你在 <strong style="color:#a5b4fc;">製造／IT</strong>：晶圓廠的 OT 網路與智慧製造系統本就是高價目標，「攻擊自動化」意味著你要假設對手也在用代理掃你。如果你是 <strong style="color:#a5b4fc;">主管</strong>：Anthropic EFS 這種「資料留在自家雲、監控自動跑」的設計，正是為金融、醫療、<strong style="color:#a5b4fc;">製造</strong>等受規管產業量身打造——治理與稽核，會是你導入 AI 時繞不開的一關。</p>
+
+      <div style="margin-top:18px;"><span style="color:#a5b4fc;font-weight:700;font-size:13px;">▍限制與待驗證</span></div>
+      <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:8px 0 0;">「99% 準確、99% 更省」這類數字，是<strong style="color:#e2e8f0;">供應商在自家評測、特定情境下的結果</strong>，落到你的環境會因資料與威脅樣態而異，別直接當保證值。更根本的張力是：把偵測與回應交給自動代理，等於也把「誤判、誤殺、被反制」的風險交出去——一個防禦代理若被對手用提示注入騙過，破壞力可能比人為疏忽更大。<span style="color:#94a3b8;">（編輯分析）</span>這也是為什麼今天 Anthropic、Claude Code 同時在「讓代理更能幹」與「幫代理裝煞車」兩件事上一起用力——能力與圍欄，得同速前進。</p>
+
+      <div style="background:#252525;border-radius:8px;padding:14px 16px;margin-top:20px;">
+        <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-bottom:6px;">👤 人物觀點（NVIDIA 執行長 黃仁勳，Fal.Con 2026）</div>
+        <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0;">「這是資安新時代的開端。一方面，對手會比以往更加武裝；另一方面，你們每一個人，也會比以往更加武裝。」<span style="color:#94a3b8;">這句話點出主軸的本質：自動化不會只幫某一邊，它同時抬高了矛與盾——真正的差距，會落在「誰更會設計、監督這些代理」。（引言為官方發布，後半句為編輯分析）</span></p>
+      </div>
+
+      <div style="margin-top:18px;"><span style="color:#a5b4fc;font-weight:700;font-size:13px;">▍重點一句話</span></div>
+      <p style="color:#e2e8f0;font-size:15px;line-height:1.75;margin:8px 0 0;font-weight:600;">資安正從「人盯機器」變成「機器盯機器、人當裁判」——攻與守同時自動化，稀缺的不再是工具，而是能設計、驗證與監督這些代理的人。</p>
+
+      <p style="margin:18px 0 0;font-size:13px;"><a href="https://blogs.nvidia.com/blog/nvidia-crowdstrike-fal-con-2026/" style="color:#06b6d4;text-decoration:none;">🔗 NVIDIA 官方部落格：NVIDIA 與 CrowdStrike 深化 Agentic 資安（Fal.Con 2026）</a></p>
+    </td></tr>
+    </table>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- 主軸的衍生新聞 -->
+<tr><td style="padding:0 0 4px;">
+  <div style="font-size:17px;font-weight:800;color:#ffffff;margin:6px 4px 14px;">🔗 主軸的衍生新聞</div>
+</td></tr>
+
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:20px 22px;">
+  <div style="display:inline-block;background:rgba(6,182,212,.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">🔗 衍生新聞</div>
+  <div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:10px;">連 coding agent 自己都被當成攻擊面：Claude Code 加上「Containment Escape」煞車</div>
+  <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:10px 0 0;">Claude Code 2.1.257（9/1）把 <strong style="color:#e2e8f0;">Fable 5.1 設為預設模型</strong>，同時加入一條自動模式安全規則「Containment Escape」——<strong style="color:#e2e8f0;">不再自動核准「抓取雲端中繼資料憑證、繞過出口偵測、跨租戶存取」這類動作</strong>。和主軸的關係：當代理越自主，它自己就成了新的攻擊面；防禦的第一步，是先把「代理能自動做什麼」框起來。</p>
+  <p style="color:#94a3b8;font-style:italic;font-size:13px;margin:10px 0 0;">💡 重點一句話：讓代理更能幹之前，先幫它裝好煞車——能力與圍欄要同速前進。</p>
+  <p style="margin:8px 0 0;font-size:13px;"><a href="https://code.claude.com/docs/en/changelog" style="color:#06b6d4;text-decoration:none;">🔗 閱讀原文｜來源：Claude Code Changelog</a></p>
+</td></tr>
+
+<tr><td style="height:14px;"></td></tr>
+
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:20px 22px;">
+  <div style="display:inline-block;background:rgba(6,182,212,.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">🔗 衍生新聞</div>
+  <div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:10px;">學界把「紅隊」自動化：BLOOM-WILT 把壞行為從 51% 逼到 100%</div>
+  <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:10px 0 0;">arXiv 新論文 BLOOM-WILT（8/31）提出一套<strong style="color:#e2e8f0;">免訓練的自動稽核流程</strong>，靠反覆修正策略＋調整輸出機率權重（logit tilting），主動誘出模型罕見的問題行為，實測把「目標壞行為出現率」平均從 <strong style="color:#e2e8f0;">51% 拉到 100%</strong>，勝過多個基準稽核工具。和主軸的關係：這正是「矛」自動化的學術版——連找模型漏洞的紅隊工作，都能交給程式跑。</p>
+  <p style="color:#94a3b8;font-style:italic;font-size:13px;margin:10px 0 0;">💡 重點一句話：自動紅隊是把雙面刃——你不用，對手也會用。</p>
+  <p style="margin:8px 0 0;font-size:13px;"><a href="https://arxiv.org/abs/2608.31105" style="color:#06b6d4;text-decoration:none;">🔗 閱讀原文｜來源：arXiv 2608.31105</a></p>
+</td></tr>
+
+<tr><td style="height:14px;"></td></tr>
+
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:20px 22px;">
+  <div style="display:inline-block;background:rgba(6,182,212,.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">🔗 衍生新聞</div>
+  <div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:10px;">把監控搬進客戶自己的雲：Anthropic 推企業級前沿防護（EFS）</div>
+  <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:10px 0 0;">Anthropic（9/1）發表 Enterprise Frontier Safeguards：資料<strong style="color:#e2e8f0;">存在企業自己控管的雲（AWS／Azure／GCP）、用客戶自己的金鑰加密</strong>，由自動系統監控「試圖發展攻擊性網路或生物能力、以及憑證外洩」等訊號，<strong style="color:#e2e8f0;">全程不需 Anthropic 人工審閱</strong>。與 100+ 家金融、醫療、製造客戶共同開發，今年秋季起推出。和主軸的關係：這是「盾」自動化落到企業合規現場的具體樣貌——既要偵測濫用，又要不碰客戶資料。</p>
+  <p style="color:#94a3b8;font-style:italic;font-size:13px;margin:10px 0 0;">💡 重點一句話：受規管產業要的不是「更強的模型」，而是「監控自動跑、資料不出門」。</p>
+  <p style="margin:8px 0 0;font-size:13px;"><a href="https://www.anthropic.com/news/enterprise-frontier-safeguards" style="color:#06b6d4;text-decoration:none;">🔗 閱讀原文｜來源：Anthropic</a></p>
+</td></tr>
+
+<tr><td style="height:20px;"></td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 24px;">
+  <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+  <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:14px;line-height:1.7;">
+    <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Anthropic 發表 Claude Fable 5.1／Mythos 5.1（9/1）：</strong>Fable 5.1 在 Terminal-Bench 4.0（agentic coding）從前代 42.0% 跳到 55.8%，快取讀取降價 75%、典型工作負載整體約降 25%；Mythos 5.1 設計的蛋白質 binder 在 12 個標的上命中率「近 50%」（一般為 10–15%）。為什麼重要：模型競賽的重點正從「更聰明」轉向「更會寫程式、更便宜、更能做真科研」。<a href="https://www.anthropic.com/claude-fable-and-mythos-5-1" style="color:#06b6d4;text-decoration:none;">🔗 來源：Anthropic</a></li>
+    <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Google 讓 Gemini「挑重點看影片」（9/1）：</strong>新的 agentic 影片理解讓 Gemini 3.7／3.6 Flash 與 3.5 Flash-Lite <strong style="color:#e2e8f0;">自己決定要看哪段、用什麼速度、從畫面或音訊或字幕切入</strong>，只抓必要片段，token 最多省 88%、成本省 66%、準確度最多升 7%。為什麼重要：對數小時長影片，過去得在「燒 token」和「漏細節」間二選一，現在讓模型自己找重點。<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-agentic-video-in-gemini/" style="color:#06b6d4;text-decoration:none;">🔗 來源：Google</a></li>
+    <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">OpenAI 把 ChatGPT 接上醫院病歷（9/1）：</strong>醫療機構可把 <strong style="color:#e2e8f0;">Epic 電子病歷</strong>接進 ChatGPT for Healthcare，讓臨床人員唯讀查看看診紀錄、檢驗、用藥；另推「Healthcare Public Data」串接 ClinicalTrials.gov、PubMed 等九個官方來源，UCSF Health 為試點。為什麼重要：通用助理正被切成「帶場景與權限」的垂直應用，醫療是落地前排。<a href="https://openai.com/index/chatgpt-connects-health-records-and-healthcare-sources/" style="color:#06b6d4;text-decoration:none;">🔗 來源：OpenAI</a></li>
+    <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">GitHub Copilot 程式碼審查可以「批准 PR」了（9/1）：</strong>Copilot 的自動程式碼審查<strong style="color:#e2e8f0;">從只會留言，升級到能正式核准 pull request</strong>。為什麼重要：代理在開發流程裡拿到的不只是「建議權」，還有「決策權」——這也讓「誰為 AI 的核准負責」成為團隊要先講清楚的規則。<a href="https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/" style="color:#06b6d4;text-decoration:none;">🔗 來源：GitHub</a></li>
+    <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">NVIDIA 與聯發科深化 AI 平台合作（8/31）：</strong>雙方擴大合作，共同開發橫跨基礎設施、邊緣與車用的下一代 AI 運算平台。為什麼重要：AI 算力正從資料中心一路往「邊緣端」延伸，晶片夥伴關係決定誰能吃到這塊。<a href="https://nvidianews.nvidia.com/news/nvidia-and-mediatek-deepen-long-standing-partnership-to-build-ai-edge-to-cloud-computing-platforms" style="color:#06b6d4;text-decoration:none;">🔗 來源：NVIDIA</a></li>
+    <li><strong style="color:#e2e8f0;">Vercel AI SDK ai@7.0.89（9/1）：</strong>擴充檔案介面（新增讀取中繼資料、串流下載、刪除等操作），並<strong style="color:#e2e8f0;">修正 generateText 會接受「違反必選工具」的回應</strong>。為什麼重要：當 agent 會自己叫工具，「工具呼叫的正確性」得從框架層釘死，不能靠模型自律。<a href="https://github.com/vercel/ai/releases" style="color:#06b6d4;text-decoration:none;">🔗 來源：Vercel</a></li>
+  </ul>
+</td></tr>
+
+<tr><td style="height:20px;"></td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 24px;">
+  <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:6px;">📖 今日概念｜紅隊與藍隊（Red Team／Blue Team）</div>
+  <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:12px 0 0;"><strong style="color:#a5b4fc;">一句定義：</strong>紅隊是「扮演攻擊者、主動找漏洞」的一方，藍隊是「負責偵測與防守」的一方；兩邊反覆對抗，目的是搶在真正的壞人之前，把系統的弱點逼出來。</p>
+  <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:12px 0 0;"><strong style="color:#a5b4fc;">生活化比喻：</strong>就像球隊練習時分成「進攻組」和「防守組」互打練習賽——進攻組全力找防線的破綻，防守組則邊守邊補洞。比喻說回技術：以前紅藍隊都是<strong style="color:#a5b4fc;">人力</strong>，一年只能演練幾次；現在兩邊都能換成 <strong style="color:#a5b4fc;">AI 代理</strong>，可以 24 小時不停對打，弱點被翻出來的速度也跟著暴增。</p>
+  <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:12px 0 0;"><strong style="color:#a5b4fc;">工作中的例子：</strong>今天主軸裡的 CrowdStrike SafeMind，就是讓攻擊代理與防禦代理在一個「數位分身」環境裡持續對打、彼此進化；而 BLOOM-WILT 則是把「紅隊」寫成一支自動程式，專門逼模型露出罕見的壞行為。</p>
+  <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:12px 0 0;"><strong style="color:#a5b4fc;">常見誤解：</strong>「紅隊＝駭客、是壞人。」其實紅隊是<strong style="color:#a5b4fc;">自己人扮壞人</strong>——在授權範圍內模擬攻擊，找到洞是為了補、不是為了偷；真正的攻擊者才不會事先跟你打招呼。</p>
+  <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:12px 0 0;"><strong style="color:#a5b4fc;">與今天主軸的關係：</strong>主軸說「攻與守同時自動化」，紅隊與藍隊正是這場自動化裡的兩支隊伍——當兩邊都換成代理，勝負就取決於誰的隊伍設計得更好、監督得更緊。</p>
+</td></tr>
+
+<tr><td style="height:20px;"></td></tr>
+
+<!-- 半導體 AI 專區 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 24px;">
+  <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜晶圓圖缺陷樣態分類（Wafer Map Defect Pattern Classification）</div>
+  <div>
+    <span style="display:inline-block;background:rgba(99,102,241,.2);color:#a5b4fc;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">分類：IC 製造</span>
+    <span style="display:inline-block;background:rgba(148,163,184,.18);color:#cbd5e1;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-left:6px;">內容屬性：背景知識</span>
+  </div>
+
+  <div style="margin-top:16px;"><span style="color:#a5b4fc;font-weight:700;font-size:13px;">▍問題與流程位置</span></div>
+  <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:7px 0 0;">晶圓做完、進到 <strong style="color:#e2e8f0;">wafer sort／電性測試（e-test）</strong>之後，會得到一張「哪些晶粒過、哪些不過」的晶圓圖（bin map）。工程師看圖上壞點的<strong style="color:#e2e8f0;">空間分布樣態</strong>——邊緣環（edge ring）、中心、刮痕、甜甜圈、群聚——來回推是哪個製程或哪台機台出問題。這是良率除錯的關鍵一步，但傳統靠人工目視：慢、主觀、對罕見樣態容易漏，還常遇到「好片太多、壞樣太少」的資料不平衡。</p>
+
+  <div style="margin-top:14px;"><span style="color:#a5b4fc;font-weight:700;font-size:13px;">▍AI 如何介入</span></div>
+  <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:7px 0 0;">用 <strong style="color:#e2e8f0;">CNN（或加上注意力機制的輕量變體）</strong>自動辨識空間樣態；用 autoencoder／GAN 做<strong style="color:#e2e8f0;">資料增強</strong>，補足罕見樣態、對抗類別不平衡；再用「選擇性學習（selective learning）」加一個 <strong style="color:#e2e8f0;">reject option</strong>，讓模型碰到沒把握的圖就<strong style="color:#e2e8f0;">主動棄權、交還人工</strong>；最後用可解釋 AI（SHAP、CBAM 注意力）把「模型是看哪一區做判斷」畫出來，對應回物理根因。和過去差別：從「人一張張看、憑經驗貼標籤」，變成「自動、可稽核、還會標示信心與理由」的分類器，把 yield root-cause 的第一關大幅加速。</p>
+
+  <div style="margin-top:14px;"><span style="color:#a5b4fc;font-weight:700;font-size:13px;">▍資料與產出</span></div>
+  <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:7px 0 0;">輸入是既有的晶圓 bin map／e-test 圖與歷史標註；產出是「缺陷樣態類別＋信心分數＋可能對應的製程／機台線索＋驅動判斷的熱區圖」。它接的是良率分析與缺陷診斷流程，理想上能掛進既有的 MES／yield 管理系統，先做分流、把難判的留給資深工程師。</p>
+
+  <div style="margin-top:14px;"><span style="color:#a5b4fc;font-weight:700;font-size:13px;">▍如何驗證</span></div>
+  <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:7px 0 0;">別把「分得快」誤當「分得對」。實務上要看：混淆矩陣與各類別（尤其罕見類）的召回率、reject option 到底幫你擋掉多少誤判又留下多少人工量、以及 <strong style="color:#e2e8f0;">XAI 熱區是否對得上已知的物理根因</strong>——如果模型說是「機台 A」，熱區卻落在與 A 無關的位置，那準確率再高也不能信。</p>
+
+  <div style="margin-top:14px;"><span style="color:#a5b4fc;font-weight:700;font-size:13px;">▍限制與風險</span></div>
+  <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:7px 0 0;">需要夠量的標註資料；<strong style="color:#e2e8f0;">全新或罕見缺陷模型沒見過就分不出來</strong>；增強出來的假資料若不夠真實，反而會教壞模型；黑箱判斷在良率會議上也有信任門檻。論文與供應商公布的準確率多屬<strong style="color:#e2e8f0;">特定資料集</strong>，落到自家 fab 一定要重新驗證，不能直接搬數字。</p>
+
+  <p style="color:#67e8f9;font-weight:700;font-size:14px;line-height:1.7;margin:16px 0 0;">👷 對半導體工作者的意義：良率／整合工程師最值得先動手的，是拿一批已人工標好的歷史晶圓圖當基準，讓模型重跑一次，比對「一致率」以及它在罕見樣態上的漏抓率——用自家資料驗證「這個自動分類到底可不可信」，比看任何簡報都準。</p>
+
+  <p style="margin:14px 0 0;font-size:13px;"><a href="https://arxiv.org/pdf/2411.11029" style="color:#06b6d4;text-decoration:none;">🔗 來源：arXiv 2411.11029（Autoencoder 增強＋CNN 晶圓圖分類，背景知識）</a></p>
+</td></tr>
+
+<tr><td style="height:20px;"></td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="padding:0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+  <tr><td style="padding:1px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+    <tr><td style="padding:22px 24px 24px;">
+      <div style="font-size:17px;font-weight:800;color:#ffffff;margin-bottom:12px;">🪞 反思時間</div>
+      <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.75;">
+        <li style="margin-bottom:12px;">如果攻擊方已經用 AI 代理 24 小時不停自動找洞，而你的防禦還停在「上班時間有人看告警」的節奏，這中間拉開的時間差，最後會由誰、用什麼方式來補？</li>
+        <li style="margin-bottom:12px;">你的團隊已經把 coding agent 或 EDA agent 接進設計、驗證或 CI 流程了——但有沒有把「這個代理能碰到哪些憑證與設計資料」當成一個明確的攻擊面，去界定權限與監控？還是預設它「應該不會出事」？</li>
+        <li>當一個防禦模型對你宣稱「更低成本、更高準確」，你會拿哪些自家資料與對照組去驗證這個數字，才敢把關鍵告警的判斷權，真正交到它手上？</li>
+      </ul>
+      <p style="color:#a5b4fc;font-weight:700;font-size:15px;line-height:1.7;margin:16px 0 0;">🎒 今日帶走：資安正從「人盯機器」變成「機器盯機器、人當裁判」——攻與守同時自動化，真正稀缺的，是能設計、驗證與監督這些代理的人。</p>
+    </td></tr>
+    </table>
+  </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="height:20px;"></td></tr>
+
+<!-- 歷史電子報入口 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 24px;">
+  <div style="font-size:16px;font-weight:800;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+  <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 12px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+  <a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-weight:600;font-size:14px;">查看歷史電子報</a>
+</td></tr>
+
+<tr><td style="height:18px;"></td></tr>
+
+<!-- Footer -->
+<tr><td style="background:#0f0f0f;padding:18px 24px 8px;border-top:1px solid #252525;">
+  <p style="color:#94a3b8;font-size:13px;line-height:1.7;margin:0 0 8px;">📬 覺得有用？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">訂閱這份電子報</a>，分享給你的朋友。</p>
+  <p style="color:#64748b;font-size:13px;line-height:1.7;margin:0 0 12px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></p>
+  <p style="color:#475569;font-size:12px;line-height:1.6;margin:0;">© 2026 企鵝的 AI 每日電子報。本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
