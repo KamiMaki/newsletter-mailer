@@ -520,3 +520,15 @@
 {"date": "2026-09-02", "title": "主軸：當攻擊變自動，防禦也得自動——AI 代理同一天走進資安攻防的矛與盾兩邊（SafeMind／EFS／Containment Escape／自動紅隊）"}
 {"date": "2026-09-02", "title": "概念：紅隊與藍隊（Red Team／Blue Team）"}
 {"date": "2026-09-02", "title": "半導體專區：IC 製造｜晶圓圖缺陷樣態分類（Wafer Map Defect Pattern Classification）"}
+{"date": "2026-09-03", "title": "GitHub Copilot code review 可核准 PR（計入必要審核數、預設關閉、可限定檔案路徑）"}
+{"date": "2026-09-03", "title": "Anthropic Claude Fable 5.1／Mythos 5.1：同一模型公開護欄版 vs 限定 vetted 解鎖版（1M context、cache read 降至 25%）"}
+{"date": "2026-09-03", "title": "OpenAI Astra 首度越過 Preparedness Critical 網路能力門檻，ExploitBench 滿分、放慢並限制最強能力"}
+{"date": "2026-09-03", "title": "GitHub 統一 Copilot 體驗、雲端 agent 改用 Sandbox 沙箱（不早於 9/28 relaunch）"}
+{"date": "2026-09-03", "title": "OpenAI 對 Astra 全代理應用部署通用 CoT 監控與高風險行為中斷"}
+{"date": "2026-09-03", "title": "Qwen3.8-Max-0902 上線：CodeArena 前端分數升至 1691 居首、維持 1M context、售價不變"}
+{"date": "2026-09-03", "title": "OpenAI 宣布 DevDay 2026 於 9/29 舊金山登場"}
+{"date": "2026-09-03", "title": "OpenAI ChatGPT Ads 自助購買擴及印度／歐洲／中東／北非，年化營收破 10 億美元"}
+{"date": "2026-09-03", "title": "GitHub 重新開放 Copilot Business／Enterprise 信用卡與 PayPal 註冊（9/1）"}
+{"date": "2026-09-03", "title": "主軸：AI 拿到簽字權——同一批發布把 AI 推上放行別人工作的位置，也同時替它上鎖（Copilot 核准 PR／Fable 5.1 vs Mythos 5.1 分級／Astra Critical gating）"}
+{"date": "2026-09-03", "title": "概念：人在環內 vs 人在環外（Human-in-the-loop vs Human-on-the-loop）"}
+{"date": "2026-09-03", "title": "半導體專區：EDA 工具｜AI 生成 RTL 的正確性把關——等價性檢查（LEC）／形式化當守門員"}

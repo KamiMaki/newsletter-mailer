@@ -1,0 +1,202 @@
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;margin:0;padding:0;">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+
+<!-- HEADER -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px 16px 0 0;padding:28px 26px;">
+<div style="font-size:22px;font-weight:800;color:#ffffff;letter-spacing:.5px;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#c7d2fe;margin-top:10px;">2026 年 9 月 3 日（週四）· 台北</div>
+</td></tr>
+
+<!-- 30秒重點 -->
+<tr><td style="background:#1a1a1a;padding:22px 24px;">
+<div style="font-size:16px;font-weight:800;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">【今日主軸】AI 這週跨過一條線</strong>：同一批模型強到可以「替人簽字放行」別人的工作，也強到必須「被上鎖」——<strong style="color:#a5b4fc;">授權與上鎖同一天發生</strong>。</li>
+<li style="margin-bottom:10px;">GitHub Copilot 現在可以「<strong>核准</strong>」Pull Request，核准還能計入 repo 的必要審核數（9/1 公開預覽、預設關閉）。</li>
+<li style="margin-bottom:10px;">Anthropic 把同一顆模型拆成兩個身分：<strong>Fable 5.1</strong>（公開、有安全護欄）與 <strong>Mythos 5.1</strong>（限定通過審核的資安／生科組織）（9/1）。</li>
+<li style="margin-bottom:10px;">OpenAI 的 <strong>Astra</strong> 首度越過自家「Critical」網路安全能力門檻，OpenAI 選擇放慢、限制最強能力並全面上監控（9/1–9/2）。</li>
+<li style="margin-bottom:0;"><strong style="color:#67e8f9;">對半導體最相關</strong>：這正是晶片人最熟的 tapeout／sign-off 題目——誰能簽、簽什麼、gate 放哪；今天半導體專區談 AI 寫的 RTL 如何被等價性檢查擋在 sign-off 前。</li>
+</ul>
+</td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="padding:20px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+<tr><td style="padding:24px 24px 26px;">
+<div style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);color:#fff;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;">🎯 今天的主軸</div>
+<div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-top:14px;">AI 拿到了「簽字權」——同一批發布把它推上放行別人工作的位置，也同時替它上鎖</div>
+
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:16px;">過去一年我們習慣的說法是「AI 是副駕」：它給建議，人拍板。這 48 小時，三家大廠在各自的地盤上，同一天把方向盤往前推了一格——不是讓 AI 更聰明，而是開始<strong style="color:#a5b4fc;">授權它「簽字放行」</strong>，同時又緊張地<strong style="color:#a5b4fc;">替它上鎖</strong>。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍共同變化</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:6px;">三則消息看起來各走各的，其實在回答同一個新問題：<strong style="color:#a5b4fc;">當模型好到可以當「審核者／守門員」，你要授權它到哪、又要把哪一段鎖起來？</strong><br>
+・<strong>GitHub</strong>：Copilot code review 現在會給出「核准評估」，管理員可授權它<strong style="color:#a5b4fc;">真的核准 PR</strong>，且核准能計入 repo 的必要審核數（9/1）。<br>
+・<strong>Anthropic</strong>：新一代 Fable 5.1／Mythos 5.1 是<strong style="color:#a5b4fc;">同一顆底層模型的兩個身分</strong>——Fable 5.1 是帶生產安全護欄的公開版，Mythos 5.1 是解開部分限制、只給通過審核的資安與生命科學組織的限定版（9/1）。<br>
+・<strong>OpenAI</strong>：Astra 成為<strong style="color:#a5b4fc;">第一個越過自家 Preparedness「Critical」網路能力門檻</strong>的模型（ExploitBench 滿分、能在測試中自主串起漏洞鏈），OpenAI 因此放慢、限制最強能力並全面上監控（9/1–9/2）。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍為什麼放在一起看</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:6px;">因為「授權」和「上鎖」是同一枚硬幣的兩面。能力一旦強到可以替人做決定（核准一份 PR、寫一段能被信任的 code、找到一個真的 0-day），風險與責任就同步升高，於是廠商必須同時回答「我授權它簽到哪」與「我把哪一段鎖起來」。Copilot 給了核准權、但<strong style="color:#a5b4fc;">預設關閉還能限定檔案路徑</strong>；OpenAI 給了能力、但<strong style="color:#a5b4fc;">配上鏈式思考（CoT）監控與中斷</strong>；Anthropic 給了更強的模型、但<strong style="color:#a5b4fc;">按信任層級分版發放</strong>。三家的動作，本質是同一件事。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍過去 vs. 現在</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:6px;">過去：AI 是助手，所有簽字、放行、分發都由人決定，模型只有一個「盡量好用」的版本。<br>現在：AI 開始擁有<strong style="color:#a5b4fc;">正式的核准權</strong>（計入必要審核）；模型開始按<strong style="color:#a5b4fc;">信任層級</strong>（誰能拿到解鎖版）與<strong style="color:#a5b4fc;">危險層級</strong>（哪些能力要鎖）被切開發放。這是從「一個模型、人人可用」走向「同一模型、分權分級」。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍背後邏輯</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:6px;">能力提升 → 責任與風險同步提升 → 用治理、權限與監控把「可授權範圍」框出來。注意細節都是「給權限、但設界」：Copilot 的核准會在有新 commit 時<strong style="color:#a5b4fc;">自動撤銷</strong>（跟人類審核一樣），且可按檔案路徑限定；Astra 的每個代理應用都掛上<strong style="color:#a5b4fc;">通用監控</strong>，盯 CoT 並在高風險行為時中斷；Mythos 走 <strong style="color:#a5b4fc;">vetted-access</strong>（先審資格再給）。沒有一家真的把鑰匙整串交出去。</div>
+
+<div style="background:#252525;border-radius:8px;padding:14px 16px;margin-top:18px;">
+<div style="color:#c7d2fe;font-size:12px;font-weight:700;margin-bottom:6px;">👤 延伸解讀（編輯分析）</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">值得注意的是，這波「授權」幾乎都附帶一個煞車：Copilot 官方明說「<strong style="color:#a5b4fc;">核准評估本身不計入 merge 要求</strong>」、預設關閉。換句話說，業界嘴上讓 AI 簽字，手上其實還牢牢按著閘門。真正被改變的，是「監督點」的位置——從盯每一步，變成盯例外與紅線。這是<strong style="color:#a5b4fc;">編輯分析</strong>，非官方定論。</div>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍對你的工作</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:6px;">對軟體團隊：AI 能核准 PR，意味 code review 流程要重畫「<strong style="color:#a5b4fc;">誰能簽、簽什麼、簽了誰負責</strong>」，並想清楚哪些路徑可以外包給 AI、哪些永遠留給人。對半導體工程師：這其實是你們最熟的老題目——tapeout 與 sign-off 文化本來就在處理「誰能 sign off、要不要雙簽、gate 放哪」。AI 只是把同一套「授權＋設界」的思路，搬進了軟體與晶片的每一道關卡。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍限制與待驗證</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-top:6px;">・Copilot 的核准預設關閉、且「評估本身不計入 merge」——真正的授權程度取決於各團隊怎麼設定。<br>・Astra 越過「Critical」是 OpenAI <strong style="color:#a5b4fc;">依自家框架的自評</strong>，外部無法獨立複驗其門檻與測試。<br>・Mythos 5.1 的分級「審核標準」目前不透明，誰能拿到解鎖版由廠商決定。</div>
+
+<div style="border-top:1px solid #333;margin-top:20px;padding-top:14px;">
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;">▍重點一句話</div>
+<div style="color:#e2e8f0;font-size:15px;line-height:1.7;margin-top:6px;font-weight:600;">AI 越能替你簽字，你越要先想清楚——它「不能」簽什麼。</div>
+</div>
+
+<div style="margin-top:16px;font-size:13px;line-height:1.9;">
+<div>🔗 <a href="https://github.blog/changelog/2026-09-01-copilot-code-review-can-now-approve-pull-requests/" style="color:#06b6d4;text-decoration:none;">Copilot 可核准 PR</a>｜來源：GitHub Changelog</div>
+<div>🔗 <a href="https://www.anthropic.com/news" style="color:#06b6d4;text-decoration:none;">Claude Fable 5.1／Mythos 5.1</a>｜來源：Anthropic News</div>
+<div>🔗 <a href="https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/" style="color:#06b6d4;text-decoration:none;">Astra 與 Critical 網路能力</a>｜來源：OpenAI</div>
+</div>
+
+</td></tr></table>
+</td></tr></table>
+</td></tr>
+
+<!-- 衍生新聞 -->
+<tr><td style="padding:0 0 4px;">
+<div style="font-size:16px;font-weight:800;color:#ffffff;margin:8px 4px 14px;">🔗 主軸的衍生新聞</div>
+</td></tr>
+
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:20px 22px;margin-bottom:14px;">
+<div style="display:inline-block;background:#252525;color:#a5b4fc;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:12px;">GitHub 把 Copilot 統一成單一體驗，雲端 agent 改跑 Sandbox 沙箱</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:8px;">GitHub 宣布不早於 9/28 把 github.com 的 Copilot Chat、行動版與雲端 agent <strong>整併成單一體驗</strong>，且雲端 agent 將<strong>透過 Sandbox 沙箱</strong>提供更快也更受控的執行環境。給 agent 更多自主的同一時間，用沙箱把它能碰的東西框起來——正是主軸「授權＋設界」的工具化版本。</div>
+<div style="color:#94a3b8;font-style:italic;font-size:14px;margin-top:10px;">💡 重點一句話：讓 agent 更自主的前提，是先把它關進一個跑得動、也逃不出去的盒子。</div>
+<div style="font-size:13px;margin-top:10px;">🔗 <a href="https://github.blog/changelog/label/copilot/" style="color:#06b6d4;text-decoration:none;">閱讀原文</a>｜來源：GitHub Changelog</div>
+</td></tr>
+
+<tr><td style="height:12px;line-height:12px;font-size:0;">&nbsp;</td></tr>
+
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:20px 22px;">
+<div style="display:inline-block;background:#252525;color:#a5b4fc;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:12px;">OpenAI 給 Astra 配「監工」：全代理應用上 CoT 監控與即時中斷</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:8px;">OpenAI 表示，在偵測到 Astra 出現高階網路能力後曾<strong>暫停開發</strong>，直到建立防護才恢復；並對 Astra 所有代理應用部署<strong>通用監控</strong>，由監視器檢視模型的鏈式思考（CoT），在高風險行為時觸發安全回應、審查並中斷。這說明「授權更強能力」在實務上等於「同時裝上一個永遠在看的監工」。</div>
+<div style="color:#94a3b8;font-style:italic;font-size:14px;margin-top:10px;">💡 重點一句話：能力越危險，監控就越要貼身——放行與盯梢是綁在一起賣的。</div>
+<div style="font-size:13px;margin-top:10px;">🔗 <a href="https://openai.com/index/pacing-model-development-cyber-capabilities/" style="color:#06b6d4;text-decoration:none;">閱讀原文</a>｜來源：OpenAI</div>
+</td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="padding:22px 0 4px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:16px;font-weight:800;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:18px;color:#cbd5e1;font-size:14px;line-height:1.7;">
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Qwen3.8-Max-0902 上線，寫程式衝上排行榜第一。</strong> 阿里巴巴釋出 Qwen3.8-Max 的 0902 快照，前端 CodeArena 分數跳升 22 分至 1,691、擠下對手，維持 100 萬 token 脈絡且售價不變。開源／低成本陣營的 coding 能力持續逼近閉源前沿，對成本敏感的工程團隊多了一個選項。🔗 <a href="https://help.aliyun.com/en/model-studio/qwen3-8-max" style="color:#06b6d4;text-decoration:none;">來源：Alibaba Cloud Model Studio</a></li>
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">OpenAI 宣布 DevDay 2026 於 9/29 在舊金山登場。</strong> OpenAI 公布年度開發者大會日期，通常是 API、Agents 與新模型能力的集中發布時點。想押注 OpenAI 生態的團隊，值得把月底的規劃視窗留下來。🔗 <a href="https://openai.com/index/devday-2026/" style="color:#06b6d4;text-decoration:none;">來源：OpenAI</a></li>
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">ChatGPT Ads 自助購買擴張，年化營收破 10 億美元。</strong> OpenAI 把 ChatGPT 廣告的自助購買（Ads Manager）擴及印度、歐洲、中東與北非，平台年化營收據稱突破 10 億美元。免費 AI 產品正快速走向廣告變現，可能改變使用者對「AI 答案中立性」的預期。🔗 <a href="https://openai.com/index/devday-2026/" style="color:#06b6d4;text-decoration:none;">來源：OpenAI（綜合報導）</a></li>
+<li style="margin-bottom:0;"><strong style="color:#e2e8f0;">GitHub 重新開放 Copilot 企業版信用卡／PayPal 註冊。</strong> 自 9/1 起，GitHub 重新開放以信用卡或 PayPal 付費的 Copilot Business／Enterprise 新客戶註冊。門檻降低意味企業導入 AI coding 的行政摩擦持續下降。🔗 <a href="https://github.blog/changelog/2026-08-28-upcoming-changes-to-github-copilot-policies-and-billing/" style="color:#06b6d4;text-decoration:none;">來源：GitHub Changelog</a></li>
+</ul>
+</td></tr></table>
+</td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="padding:18px 0 4px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:22px 24px;">
+<div style="font-size:16px;font-weight:800;color:#ffffff;margin-bottom:14px;">📖 今日概念｜人在環內 vs. 人在環外（Human-in-the-loop vs. Human-on-the-loop）</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">
+<div style="margin-bottom:10px;"><strong style="color:#a5b4fc;">一句定義：</strong>「人在環內」＝每個決策都要人親自拍板才會執行；「人在環外」＝AI 自行執行，人只在異常或碰到紅線時才介入監督。</div>
+<div style="margin-bottom:10px;"><strong style="color:#a5b4fc;">生活化比喻：</strong>駕訓班教練踩著副煞車、盯著你的每個動作，這是「環內」；換成副駕領航，你開車、他只盯儀表，必要時才出聲，這是「環外」。說回技術——今天 GitHub 讓 Copilot 能核准 PR，就是把 code review 從「環內」往「環外」挪了一格。</div>
+<div style="margin-bottom:10px;"><strong style="color:#a5b4fc;">工作中的例子：</strong>每一支 PR 都要人逐行看完才能合併＝環內；讓 Copilot 自動核准低風險路徑、人只覆核它擋下的例外＝環外。</div>
+<div style="margin-bottom:10px;"><strong style="color:#a5b4fc;">常見誤解：</strong>以為「環外」＝無人監督。其實不是——監督沒有消失，只是<strong style="color:#a5b4fc;">監督點從「每一步」移到「例外與紅線」</strong>。人還在，只是站的位置變了。</div>
+<div><strong style="color:#a5b4fc;">與今天主軸的關係：</strong>今天三家大廠做的，本質都是在替自家 AI 畫「環內／環外」的界線——哪些能自動放行、哪些一定要人回到環內。</div>
+</div>
+</td></tr></table>
+</td></tr>
+
+<!-- 半導體 AI 專區 -->
+<tr><td style="padding:18px 0 4px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:22px 24px;">
+<div style="font-size:16px;font-weight:800;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜AI 寫的 RTL，誰來簽字放行？</div>
+<div style="margin-bottom:14px;">
+<span style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);color:#fff;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">EDA 工具</span>
+<span style="display:inline-block;background:#252525;color:#94a3b8;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;margin-left:6px;">今日新聞＋背景知識</span>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;">▍問題與流程位置</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.75;margin-top:6px;">AI 現在能從規格甚至自然語言「生成 RTL」（晶片的暫存器傳輸級硬體描述）。但生成的 code 對不對？在 tapeout 前，RTL 一路合成到閘級（gate），每一步都必須<strong style="color:#a5b4fc;">數學證明前後功能等價</strong>——這就是等價性檢查（LEC）。位置就在 RTL 撰寫 → 合成 → sign-off 這條主幹上。這正是主軸「AI 能不能簽字放行」在晶片流程裡的版本。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:16px;">▍AI 如何介入</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.75;margin-top:6px;">AI 從兩層切進來：<strong>(1) 幫你寫</strong>——Synopsys 在 DAC 2026 展示自主驗證代理，宣稱把「拿到可驗證 RTL 的時間」加速最高約 50 倍；學界的 FormalRTL 則用軟體參考模型當「可執行的規格」，錨定 LLM 的合成。<strong>(2) 幫你把關</strong>——Cadence 的 Conformal AI Studio 用 AI 做等價性檢查、低功耗與工程變更（ECO）；Synopsys Formality 以 ML 加速等價性驗證約 5 倍。<strong style="color:#a5b4fc;">過去</strong>：工程師手寫 RTL、LEC 全跑、差異靠人 debug；<strong style="color:#a5b4fc;">現在</strong>：AI 寫、AI 幫跑 LEC，人只看被擋下來的差異——效率與可重複性提升，但簽字權仍握在人手上。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:16px;">▍資料與產出</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.75;margin-top:6px;">輸入：規格／C 或 C++ 參考模型／既有 RTL；產出：RTL 加上「等價性證明」或一組反例波形，指出哪裡不等價。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:16px;">▍如何驗證</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.75;margin-top:6px;">LEC 以形式化方法數學證明「黃金版（golden）與修改版功能等價」；跑不過就吐出反例，交人判讀。這台守門員本身不猜、不學風格，只認「等或不等」——它就是主軸裡那個「守門員」在晶片流程的實體版。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:16px;">▍限制與風險</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.75;margin-top:6px;">關鍵盲點：LEC 只證「兩個版本等價」，<strong style="color:#a5b4fc;">不證「規格本身對不對」</strong>。若 AI 照著一份錯的規格生成 RTL，LEC 一樣會放行。此外 50 倍／5 倍都是<strong style="color:#a5b4fc;">廠商宣稱值</strong>，須按自家設計規模驗證，別當普適數字（此段含編輯分析）。</div>
+
+<div style="border-top:1px solid #333;margin-top:16px;padding-top:12px;">
+<div style="color:#67e8f9;font-weight:700;font-size:14px;line-height:1.6;">👷 對半導體工作者的意義：驗證與 sign-off 工程師最該關注——AI 能把「跑 LEC、追差異」自動化，但「決定什麼算 golden、什麼能簽」仍是人的紅線。下一步可在非關鍵 block 試點 AI 輔助 LEC／ECO，先建立信任，再談把關卡外移。</div>
+</div>
+
+<div style="font-size:13px;margin-top:12px;line-height:1.9;">
+<div>🔗 <a href="https://www.cadence.com/en_US/home/tools/digital-design-and-signoff/conformal-ai-studio.html" style="color:#06b6d4;text-decoration:none;">Cadence Conformal AI Studio</a>｜來源：Cadence（今日產業）</div>
+<div>🔗 <a href="https://www.synopsys.com/implementation-and-signoff/signoff/formality-equivalence-checking.html" style="color:#06b6d4;text-decoration:none;">Synopsys Formality 等價性檢查</a>｜來源：Synopsys（背景）</div>
+<div>🔗 <a href="https://arxiv.org/abs/2603.08738" style="color:#06b6d4;text-decoration:none;">FormalRTL：可驗證的 RTL 合成</a>｜來源：arXiv（背景論文）</div>
+</div>
+</td></tr></table>
+</td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="padding:20px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+<tr><td style="padding:22px 24px;">
+<div style="font-size:16px;font-weight:800;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+<li style="margin-bottom:12px;">如果 AI 已經強到可以「核准」你的 PR，你會把哪一類變更的簽字權交出去、哪一類永遠留給人？你劃這條界線的依據，是風險大小、可回復性，還是「出事誰負責」？</li>
+<li style="margin-bottom:12px;">把「人在環內 → 環外」套進你自己的流程（review、驗證、量測判讀、sign-off），第一個可以安全外移的環節是哪個？萬一 AI 簽錯了，你靠什麼機制把它抓回來？</li>
+<li style="margin-bottom:0;">當廠商開始按「信任層級」發同一顆模型（公開版 vs. 限定解鎖版），你的團隊實際拿得到哪一版？如果拿不到最強版本，這會不會變成一種你沒注意到的新競爭落差？</li>
+</ul>
+<div style="border-top:1px solid #333;margin-top:16px;padding-top:14px;">
+<div style="color:#a5b4fc;font-weight:700;font-size:15px;line-height:1.7;">🎒 今日帶走：AI 這週拿到了簽字權，但真正的工程問題不是「它能不能簽」，而是「你敢讓它簽什麼、又把哪一條紅線牢牢留給人」。</div>
+</div>
+</td></tr></table>
+</td></tr></table>
+</td></tr>
+
+<!-- 歷史電子報入口 -->
+<tr><td style="padding:0 0 16px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 24px;text-align:center;">
+<div style="font-size:15px;font-weight:700;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+<div style="color:#94a3b8;font-size:14px;line-height:1.6;margin-bottom:12px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</div>
+<a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-size:14px;font-weight:600;">查看歷史電子報</a>
+</td></tr></table>
+</td></tr>
+
+<!-- Footer -->
+<tr><td style="background:#1a1a1a;border-radius:0 0 16px 16px;padding:22px 24px;text-align:center;">
+<div style="font-size:13px;color:#cbd5e1;margin-bottom:10px;">📬 覺得有幫助？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">分享給朋友訂閱這份電子報</a></div>
+<div style="font-size:13px;color:#64748b;margin-bottom:14px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></div>
+<div style="border-top:1px solid #333;padding-top:14px;font-size:12px;color:#64748b;line-height:1.6;">© 2026 企鵝的 AI 每日電子報🐧<br>本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</div>
+</td></tr>
+
+</table>
+</td></tr></table>
