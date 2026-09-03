@@ -532,3 +532,16 @@
 {"date": "2026-09-03", "title": "主軸：AI 拿到簽字權——同一批發布把 AI 推上放行別人工作的位置，也同時替它上鎖（Copilot 核准 PR／Fable 5.1 vs Mythos 5.1 分級／Astra Critical gating）"}
 {"date": "2026-09-03", "title": "概念：人在環內 vs 人在環外（Human-in-the-loop vs Human-on-the-loop）"}
 {"date": "2026-09-03", "title": "半導體專區：EDA 工具｜AI 生成 RTL 的正確性把關——等價性檢查（LEC）／形式化當守門員"}
+{"date": "2026-09-04", "title": "OpenAI 發表 GPT-6 Astra：FrontierMath T4 97.6%／ARC-AGI-3 99.9%／ExploitBench 100% 刷爆最難評測"}
+{"date": "2026-09-04", "title": "Google Gemini 3.8 Flash：同價全面更強、三項超越 Claude Opus 5（DeepSWE 65.3→73.7、Terminal-Bench 4.0 11.2→19.1）"}
+{"date": "2026-09-04", "title": "Google Gemini 3.8 Flash Cyber：前沿級漏洞偵測修補下放 Flash 價位、鎖給受信任政府與企業"}
+{"date": "2026-09-04", "title": "Astra 跨過準備框架 Critical 資安門檻：最強資安能力限縮給選定夥伴、加思路監控與逃逸圍堵評估"}
+{"date": "2026-09-04", "title": "Sam Altman：從現在起放行速度由對齊與安全進展決定、不再由能力決定（人物觀點）"}
+{"date": "2026-09-04", "title": "NVIDIA 正式簽約以 129 億美元收購 Hugging Face（約 119 億付股東＋10 億留任、預計 2027 上半年完成）"}
+{"date": "2026-09-04", "title": "NVIDIA 深化與 MediaTek 合作：橫跨 AI 基礎設施、本地 AI 運算與車用平台"}
+{"date": "2026-09-04", "title": "Synopsys／Cadence 同步擴大與台積電 AI 晶片設計合作（延伸至 N3／N2／A16／A14 節點）"}
+{"date": "2026-09-04", "title": "AWS 與 NVIDIA 擴大 AI 基礎設施合作因應全球算力需求"}
+{"date": "2026-09-04", "title": "OpenAI 預告 DevDay 2026：9 月 29 日舊金山、稱內容遠超以往"}
+{"date": "2026-09-04", "title": "主軸：最難的考卷被考爆了——前沿模型把公開跑分刷到滿分、衡量 AI 的尺規失效，證明能力與放行模型的規則被迫改寫"}
+{"date": "2026-09-04", "title": "概念：評測飽和（Benchmark Saturation）與資料汙染"}
+{"date": "2026-09-04", "title": "半導體專區：IC 製造｜良率根因分析（Yield Root-Cause／Commonality Analysis with ML）"}
