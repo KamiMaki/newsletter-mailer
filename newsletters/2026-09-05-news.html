@@ -1,0 +1,190 @@
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;margin:0;padding:0;">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+
+<!-- Header -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px 16px 0 0;padding:28px 28px 24px;">
+<div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:.5px;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#c7d2fe;margin-top:10px;">2026 年 9 月 5 日（週六）· 閱讀時間約 7 分鐘</div>
+</td></tr>
+
+<!-- 30 秒重點 -->
+<tr><td style="background:#1a1a1a;padding:22px 24px;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">【今日主軸】AI 大廠開始花大錢「分配防禦力」。</strong>GPT-6 Astra（9/3）跨過官方認定的「Critical」網安門檻後，OpenAI 隨即宣布 10 億美元 Daybreak 計畫，把最強的資安能力優先送給水電、地方政府、開源維護者這些「買不起資安」的防守方——AI 的新支出項目，從訓練模型變成向社會弱點投放防禦力。</li>
+<li style="margin-bottom:10px;">Google 幾乎同時用 <strong style="color:#e2e8f0;">Gemini 3.8 Flash／Flash Cyber</strong>「同一顆核心、兩種存取 envelope」走上同一條路——模型能力不變，差別在「你是誰、能拿到哪個版本」。</li>
+<li style="margin-bottom:10px;">OpenAI 另砸 <strong style="color:#e2e8f0;">10 億美元 Daybreak</strong> 補貼水電、地方政府、開源維護者等「沒有資安預算」的防守方，把最強能力當公共防禦資源定向投放。</li>
+<li style="margin-bottom:10px;">其他快訊：<strong style="color:#e2e8f0;">NVIDIA 正式簽約收購 Hugging Face</strong>（約 129 億美元）；GitHub Copilot 一天下架 6 個舊模型、CLI 補上模型 fallback——模型正變成「會過期、要備援」的相依套件。</li>
+<li>對半導體工作者：今天的主線是「能力太強，就得管『誰能碰』」；在晶片端，對應的老問題是「你沒寫的第三方 IP 與 netlist 能不能信」——本期半導體專區談 AI 如何幫你抓<strong style="color:#67e8f9;">硬體木馬</strong>。</li>
+</ul>
+</td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="background:#0f0f0f;padding:20px 12px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+<tr><td style="padding:26px 24px;">
+<div style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);color:#fff;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;">🎯 今天的主軸</div>
+<div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin:16px 0 6px;">模型越過紅線之後，AI 大廠的新工作是「分配防禦力」——先給防守方，還花錢武裝買不起的那一群</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:20px 0 6px;">▍共同變化</div>
+<div style="font-size:15px;color:#cbd5e1;line-height:1.7;">9 月 3 日，OpenAI 的 <strong style="color:#a5b4fc;">GPT-6 Astra</strong> 跨過自家 Preparedness Framework 的「<strong style="color:#a5b4fc;">Critical</strong>」網路安全門檻——第一次有前沿模型官方承認「攻擊性能力強到會觸發部署限制」。真正的新動作在後面：OpenAI 沒有只是把能力鎖起來，而是端出 <strong style="color:#a5b4fc;">10 億美元的 Daybreak 計畫</strong>，把這份能力優先、且補貼式地送到防守方手上。同一條路上，Google 用 <strong style="color:#a5b4fc;">Gemini 3.8 Flash Cyber</strong> 把資安版限給受信任的防守者，Anthropic 也以 Mythos 5.1 與企業級防護走防守型部署。三家收斂到同一個動作：<strong style="color:#a5b4fc;">主動把防禦力分配出去</strong>。</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:20px 0 6px;">▍為什麼放在一起看</div>
+<div style="font-size:15px;color:#cbd5e1;line-height:1.7;">昨天我們談的是「跑分被考爆、衡量能力的尺規失效」；今天要看的是<strong style="color:#a5b4fc;">尺規失效之後，能力被怎麼分配</strong>。當一顆模型強到能自己挖出真漏洞，「無差別開放給所有人」就成了風險本身。於是 AI 大廠多了一項過去沒有的支出：不是把能力賣給出得起錢的人，而是<strong style="color:#a5b4fc;">花錢把防禦力定向投放到社會最脆弱的節點</strong>——水廠、電網、地方政府、開源維護者。三家龍頭在同一週各自做出這個選擇，代表它不是公關姿態，而是能力到了某個水位後、廠商不得不接手的公共責任。</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:20px 0 6px;">▍過去 vs. 現在</div>
+<div style="font-size:15px;color:#cbd5e1;line-height:1.7;">以前：買個帳號、付得起錢，就能用到最強版本，差別只在價格與速率上限。現在：最強的「攻擊性」能力（例如產生概念驗證 exploit）<strong style="color:#a5b4fc;">公開版直接拒答</strong>；想解鎖，得先證明你是防守方、走 OpenAI Daybreak 的審核。門票從「錢」變成「身分審核（vetting）」。</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:20px 0 6px;">▍背後邏輯</div>
+<div style="font-size:15px;color:#cbd5e1;line-height:1.7;">數字說明為何要上鎖：Astra 在 <strong style="color:#a5b4fc;">ExploitBench 拿到 100%</strong>（前代 GPT-5.6 Sol 為 78.5%），ExploitGym 成功率 <strong style="color:#a5b4fc;">42.4% 對 30.3%</strong>，且用更少的輸出 token；更關鍵的是，它在測試發布前三個月的漏洞時，額外<strong style="color:#a5b4fc;">挖到兩個全新的零日漏洞</strong>，OpenAI 選擇通報廠商而非公開。能力已能實際找出真漏洞——同樣的能力若無差別開放給攻擊方，就是災難。於是廠商改用「能力對稱性」思維：讓防守方先拿到，並補貼買不起的防守方。</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:20px 0 6px;">▍對你的工作</div>
+<div style="font-size:15px;color:#cbd5e1;line-height:1.7;">三個實際影響：<strong style="color:#a5b4fc;">(1)</strong> 你的 AI 供應商可能把「最強版本」鎖在審核之後，採購與合規要開始問「我們算不算被認可的防守方」。<strong style="color:#a5b4fc;">(2)</strong> 模型已能自動找零日，代表你的內部程式、legacy code、甚至 EDA 腳本都在射程內——紅隊演練要提早把「AI 自動找洞」納入。<strong style="color:#a5b4fc;">(3)</strong> 若你的單位屬關鍵基礎設施（含部分半導體 IT／OT 系統），可能符合 Daybreak 的補貼資格。</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:20px 0 6px;">▍限制與待驗證</div>
+<div style="font-size:15px;color:#cbd5e1;line-height:1.7;">「Critical」是 OpenAI <strong style="color:#a5b4fc;">自評框架</strong>、不是外部標準，缺乏第三方稽核。分層釋出到底是真能擋住攻擊方，還是只把時間延後？在「攻擊方也能改用開源模型」的世界，「先給防守方」的護城河能撐多久？以及那 10 億美元是<strong style="color:#a5b4fc;">抵自家產品的 credit、目標六個月內用完</strong>，實際覆蓋率仍待觀察。（以上部分為編輯分析）</div>
+
+<div style="background:#252525;border-radius:8px;padding:14px;margin:18px 0 6px;">
+<div style="font-size:12px;font-weight:700;color:#67e8f9;margin-bottom:6px;">👤 人物觀點／延伸解讀</div>
+<div style="font-size:14px;color:#cbd5e1;line-height:1.7;">值得玩味的是同一週的兩種聲音：一邊是 OpenAI／Google 為「太強的能力」上鎖、審核、補貼防守方；另一邊，Meta 的 Zuckerberg 在 X 宣布 Muse Spark 1.3 時說能力「便宜到難以計價」。<strong style="color:#a5b4fc;">能力要普及、還是要管制</strong>——這條張力線，會是接下來一年前沿模型競爭的真正戰場。（編輯分析）</div>
+</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">▍重點一句話</div>
+<div style="font-size:15px;color:#e2e8f0;line-height:1.7;font-weight:600;">當模型強到能自己挖出零日的那天，「發給誰」就和「怎麼訓練」一樣重要了。</div>
+
+<div style="font-size:13px;color:#06b6d4;margin-top:16px;line-height:1.8;">
+🔗 來源：<a href="https://openai.com/index/gpt-6-astra/" style="color:#06b6d4;">OpenAI — GPT-6 Astra</a>｜<a href="https://openai.com/index/path-to-astra/" style="color:#06b6d4;">OpenAI — Path to Astra（Preparedness）</a>｜<a href="https://deepmind.google/models/" style="color:#06b6d4;">Google DeepMind — Gemini</a>
+</div>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 主軸的衍生新聞 -->
+<tr><td style="background:#1a1a1a;padding:22px 24px 8px;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:6px;">🔗 主軸的衍生新聞</div>
+</td></tr>
+
+<tr><td style="background:#1a1a1a;padding:6px 24px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:12px;"><tr><td style="padding:18px 18px;">
+<div style="display:inline-block;background:#312e81;color:#c7d2fe;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin:12px 0 8px;">Daybreak for Frontline Defenders：10 億美元把最強能力送到防守方手上</div>
+<div style="font-size:14px;color:#cbd5e1;line-height:1.7;">OpenAI 宣布投入 <strong style="color:#e2e8f0;">10 億美元的補貼額度</strong>（抵自家產品 credit、目標六個月內用完），對象是水／污水系統、電網、地方政府、非營利與開源維護者這些「沒有企業級資安預算」的防守方。它們可用 Daybreak 審視 legacy code、分析可疑活動、驗證漏洞並開發修補。<strong style="color:#e2e8f0;">和主軸的關係</strong>：分層釋出不只有「擋住攻擊面」這一半，還有「主動補貼防守面」的另一半。</div>
+<div style="font-size:14px;color:#94a3b8;font-style:italic;margin:10px 0 8px;">💡 記住這句：分層釋出的完整動作，是一手上鎖、一手扶持。</div>
+<div style="font-size:13px;"><a href="https://openai.com/index/daybreak-for-frontline-defenders/" style="color:#06b6d4;">🔗 閱讀原文</a> ｜ 來源：OpenAI</div>
+</td></tr></table>
+</td></tr>
+
+<tr><td style="background:#1a1a1a;padding:6px 24px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:12px;"><tr><td style="padding:18px 18px;">
+<div style="display:inline-block;background:#312e81;color:#c7d2fe;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin:12px 0 8px;">Gemini 3.8 Flash／Flash Cyber：同一顆核心、兩種存取 envelope</div>
+<div style="font-size:14px;color:#cbd5e1;line-height:1.7;">Google DeepMind 在六週內釋出第三個 Flash，這次一次推出兩個版本：<strong style="color:#e2e8f0;">底層是同一顆模型</strong>，差別在「安全 envelope 與誰能存取」——一般版給所有人，Cyber 版走另一層存取控制。隨後 GitHub Copilot 也把 Gemini 3.8 Flash 納入可選模型。<strong style="color:#e2e8f0;">和主軸的關係</strong>：證明「能力→分層」不是 OpenAI 的獨門政策，而是跨公司的收斂趨勢。</div>
+<div style="font-size:14px;color:#94a3b8;font-style:italic;margin:10px 0 8px;">💡 記住這句：連 Google 都把「你是誰」寫進了 API 的存取層。</div>
+<div style="font-size:13px;"><a href="https://github.blog/changelog/" style="color:#06b6d4;">🔗 閱讀原文</a> ｜ 來源：Google DeepMind／GitHub Changelog</div>
+</td></tr></table>
+</td></tr>
+
+<tr><td style="background:#1a1a1a;padding:6px 24px 18px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:12px;"><tr><td style="padding:18px 18px;">
+<div style="display:inline-block;background:#312e81;color:#c7d2fe;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin:12px 0 8px;">同一個能力，既是矛也是鎖：Astra 拒寫 exploit、卻挖到兩個零日</div>
+<div style="font-size:14px;color:#cbd5e1;line-height:1.7;">Astra 的<strong style="color:#e2e8f0;">公開版會拒絕產生概念驗證 exploit</strong> 等進階攻擊任務；但同一顆模型在內部測試中，<strong style="color:#e2e8f0;">主動找到兩個全新的零日漏洞</strong>，OpenAI 正走負責任揭露流程通報相關廠商。<strong style="color:#e2e8f0;">和主軸的關係</strong>：能力證據（能挖真洞）與上鎖證據（拒絕攻擊用途）同時出現，正是「分層釋出」要處理的兩難。</div>
+<div style="font-size:14px;color:#94a3b8;font-style:italic;margin:10px 0 8px;">💡 記住這句：越強的找洞能力，越需要一把配套的鎖。</div>
+<div style="font-size:13px;"><a href="https://openai.com/index/gpt-6-astra/" style="color:#06b6d4;">🔗 閱讀原文</a> ｜ 來源：OpenAI（CSO Online 交叉確認）</div>
+</td></tr></table>
+</td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="background:#0f0f0f;padding:16px 12px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;"><tr><td style="padding:22px 24px;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Microsoft 推出 MAI-Transcribe-2 語音轉文字模型。</strong> Foundry 上公開預覽，覆蓋 60 種語言、支援語者分離與字級時間戳，主打「最高品質、最快、最便宜」，發表價 0.10 美元／音訊小時（至 2026 年底）。為什麼重要：語音辨識被壓到近乎白菜價，會議、客服、設備語音日誌轉寫的門檻大幅降低。<a href="https://techcommunity.microsoft.com/blog/azure-ai-foundry-blog/mai-transcribe-2-highest-quality-transcription-at-the-fastest-speed-and-lowest-c/4550972" style="color:#06b6d4;">🔗 來源：Microsoft</a></li>
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">GitHub Copilot 一天下架 6 個舊模型，CLI 補上模型 fallback。</strong> 9/1 起 Opus 4.5／4.6、Sonnet 4.5／4.6、Gemini 3.1 Pro、Raptor mini 退場，同時 Fable 5.1、GPT-6 Astra、Gemini 3.8 Flash 陸續 GA、CLI 新增自訂 agent 模型 fallback。為什麼重要：模型正變成「會過期、要備援」的相依套件，把工作流綁死單一版本＝技術債。<a href="https://github.blog/changelog/" style="color:#06b6d4;">🔗 來源：GitHub Changelog</a></li>
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Meta Muse Spark 1.3 登場（9/2）。</strong> Zuckerberg 在 X 宣布，主打 coding／agentic 的「最大一次躍進」、能力「便宜到難以計價」，已進 Muse Code 與 API；開源權重稱「即將」但未定日期。為什麼重要：前沿編碼模型的價格戰再開一輪，與 GPT-5.6 Sol、Claude Opus 5 正面對打。<a href="https://www.theregister.com/ai-and-ml/2026/09/02/zucks-muse-to-spark-joy-with-open-weights-release-soon/5294093" style="color:#06b6d4;">🔗 來源：Meta（The Register 轉述）</a></li>
+<li><strong style="color:#e2e8f0;">企業導入訊號：McKinsey《State of AI 2026》——32% 組織因「能自己做」而放棄採購軟體。</strong> 調查顯示近三分之一受訪組織，因為可用 agentic coding 工具內部自建，而決定不買某些軟體產品或功能；大型企業擴大導入編碼代理的比例也快速上升。為什麼重要：對半導體 IT／數位轉型主管，「買 point tool 還是自建」的天平正在移動。<a href="https://www.mckinsey.com/capabilities/quantumblack/our-insights/the-state-of-ai" style="color:#06b6d4;">🔗 來源：McKinsey</a></li>
+</ul>
+</td></tr></table>
+</td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="background:#0f0f0f;padding:8px 12px 16px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;"><tr><td style="padding:22px 24px;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">📖 今日概念｜零日漏洞（Zero-day）與負責任揭露（Responsible Disclosure）</div>
+<div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;"><strong style="color:#a5b4fc;">一句定義：</strong>零日漏洞＝軟體廠商自己都還不知道、還來不及修的安全漏洞（留給防守方修補的天數＝0）。</div>
+<div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;"><strong style="color:#a5b4fc;">生活化比喻：</strong>就像你家門鎖上有個連鎖匠都不知道的暗孔——誰先發現，誰就握有無聲進出的鑰匙。說回技術：先發現的一方能在無人察覺下利用它，直到有人揭露並修補。</div>
+<div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;"><strong style="color:#a5b4fc;">工作中的例子：</strong>Astra 在測試時針對「發布前三個月已知的漏洞」下手，還額外挖到兩個全新的零日；OpenAI 選擇通報相關廠商、而非公開利用——這就是負責任揭露的實作。</div>
+<div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;"><strong style="color:#a5b4fc;">常見誤解：</strong>以為「找到漏洞就該立刻公開」。其實負責任揭露是先私下通報、給廠商一段修補期，到期或修好後才公開，避免把可直接使用的攻擊武器一次送到所有人手上。</div>
+<div style="font-size:15px;color:#cbd5e1;line-height:1.7;"><strong style="color:#a5b4fc;">與今天主軸的關係：</strong>當模型能自動量產零日，「能力先給誰、漏洞揭露給誰」就成了今天分層釋出必須解的核心問題。</div>
+</td></tr></table>
+</td></tr>
+
+<!-- 半導體 AI 專區 -->
+<tr><td style="background:#0f0f0f;padding:8px 12px 16px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;"><tr><td style="padding:22px 24px;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜硬體木馬與第三方 IP 的 AI 檢測</div>
+<div style="margin-bottom:14px;">
+<span style="display:inline-block;background:#0e7490;color:#cffafe;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;margin-right:6px;">IC 設計</span>
+<span style="display:inline-block;background:#3f3f46;color:#e4e4e7;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">背景知識</span>
+</div>
+
+<div style="font-size:13px;font-weight:700;color:#67e8f9;margin:14px 0 6px;">▍問題與流程位置</div>
+<div style="font-size:15px;color:#cbd5e1;line-height:1.7;">現代 SoC 大量整合外購的第三方 IP，你拿到的常常是 <strong style="color:#67e8f9;">gate-level netlist（閘級網表）</strong>而非原始設計。有心人可能在其中偷埋「硬體木馬」：平時潛伏、遇特定條件才觸發洩密、當機或降效。這個信任問題落在<strong style="color:#67e8f9;">設計整合到簽核前</strong>的驗證環節——也就是 design-for-trust。</div>
+
+<div style="font-size:13px;font-weight:700;color:#67e8f9;margin:16px 0 6px;">▍AI 如何介入</div>
+<div style="font-size:15px;color:#cbd5e1;line-height:1.7;">過去要抓木馬，多半依賴「黃金參考晶片」逐一比對，或由工程師手動訂門檻——難擴展，而且現實中<strong style="color:#67e8f9;">常常根本沒有 golden reference</strong>。近年（含 2026）研究把 netlist 轉成圖（閘為節點、連線為邊），用<strong style="color:#67e8f9;">圖神經網路（GNN）搭配最近鄰等機器學習</strong>，學出木馬電路的結構特徵，不需黃金參考就能標出可疑的閘與位置。差異在於：從「規則／門檻＋人工目視」升級為「資料驅動、可定位、免 golden」，覆蓋更大、速度更快。</div>
+
+<div style="font-size:13px;font-weight:700;color:#67e8f9;margin:16px 0 6px;">▍資料與產出</div>
+<div style="font-size:15px;color:#cbd5e1;line-height:1.7;">輸入是 gate-level netlist（轉成圖，節點附面積、功耗、扇入／扇出等特徵）；產出是每個節點或子電路的<strong style="color:#67e8f9;">木馬機率與定位</strong>，讓工程師知道該盯哪裡，而不是大海撈針。</div>
+
+<div style="font-size:13px;font-weight:700;color:#67e8f9;margin:16px 0 6px;">▍如何驗證</div>
+<div style="font-size:15px;color:#cbd5e1;line-height:1.7;">對照公開資料集（如 Trust-Hub 類 benchmark）計算偵測率與誤報率、測試跨設計的泛化能力；可疑點仍需人工複核，並搭配<strong style="color:#67e8f9;">側通道量測與形式化方法</strong>交叉確認，不能單靠一個模型下結論。</div>
+
+<div style="font-size:13px;font-weight:700;color:#67e8f9;margin:16px 0 6px;">▍限制與風險</div>
+<div style="font-size:15px;color:#cbd5e1;line-height:1.7;">這是編輯分析下的現況：木馬設計者也會學著閃避 ML 特徵；真實產線的木馬樣本稀少，訓練資料偏少；誤報過高會反過來拖慢簽核。目前屬<strong style="color:#67e8f9;">研究與工具化階段，並非「已全面量產落地」</strong>——不可把研究成果當成既成的產線標配。</div>
+
+<div style="font-size:15px;color:#67e8f9;font-weight:700;line-height:1.7;margin-top:16px;">👷 對半導體工作者的意義：對驗證、DFT 與資安／IP 整合工程師，這條路把「你沒寫的東西能不能信」變成可量測的步驟。可先從第三方 IP 的 netlist 結構稽核、用既有 Trust-Hub 資料集做小實驗切入，別等到流片後才發現問題。</div>
+<div style="font-size:13px;margin-top:12px;"><a href="https://arxiv.org/pdf/2501.16347" style="color:#06b6d4;">🔗 來源：arXiv 2501.16347（netlist HT 定位）</a> ｜ <a href="https://link.springer.com/article/10.1007/s44291-025-00151-1" style="color:#06b6d4;">Springer（2026）</a></div>
+</td></tr></table>
+</td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="background:#0f0f0f;padding:8px 12px 20px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;"><tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;"><tr><td style="padding:24px;">
+<div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.75;">
+<li style="margin-bottom:12px;">如果最強的 AI 能力開始「先給通過審核的防守方」，你的組織是拿得到、還是被擋在門外？「vetted defender」的門檻由誰定義、對你公平嗎？</li>
+<li style="margin-bottom:12px;">當模型能自動在你的 legacy code 與 EDA 腳本裡挖出零日，你會先讓它幫你補洞，還是更擔心同樣的能力落到對手手上？你的紅隊準備好把「AI 自動找洞」納入了嗎？</li>
+<li>把「最強能力鎖在審核之後」，到底能擋住攻擊方多久？當開源模型的能力持續追上，分層釋出是真正的護城河，還是只是拖延戰術？</li>
+</ul>
+<div style="font-size:15px;color:#a5b4fc;font-weight:700;line-height:1.7;margin-top:16px;">🎒 今日帶走：模型強到能自己挖零日的那天，AI 大廠的新戰場不再是「誰更聰明」，而是「誰能拿到、拿到哪個版本」。</div>
+</td></tr></table>
+</td></tr></table>
+</td></tr>
+
+<!-- 歷史電子報入口 -->
+<tr><td style="background:#0f0f0f;padding:0 12px 16px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;"><tr><td style="padding:20px 24px;">
+<div style="font-size:16px;font-weight:800;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+<div style="font-size:14px;color:#cbd5e1;line-height:1.7;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</div>
+<div style="margin-top:10px;font-size:14px;"><a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;">查看歷史電子報</a></div>
+</td></tr></table>
+</td></tr>
+
+<!-- Footer -->
+<tr><td style="background:#0a0a0a;border-radius:0 0 16px 16px;padding:24px;text-align:center;">
+<div style="font-size:14px;color:#cbd5e1;margin-bottom:10px;">📬 覺得有用？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">訂閱這份電子報</a>，或分享給朋友。</div>
+<div style="font-size:13px;color:#64748b;margin-bottom:14px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></div>
+<div style="font-size:12px;color:#475569;line-height:1.6;">© 2026 企鵝的 AI 每日電子報🐧<br>本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</div>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
