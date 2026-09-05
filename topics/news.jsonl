@@ -555,3 +555,15 @@
 {"date": "2026-09-05", "title": "主軸：模型越過紅線之後，AI 大廠的新工作是分配防禦力——先給防守方、還花錢武裝買不起資安的那一群（Astra Critical＋Daybreak 10 億美元）"}
 {"date": "2026-09-05", "title": "概念：零日漏洞（Zero-day）與負責任揭露（Responsible Disclosure）"}
 {"date": "2026-09-05", "title": "半導體專區：IC 設計｜硬體木馬與第三方 IP 的 AI 檢測（GNN／netlist 圖模型、免 golden reference）"}
+{"date": "2026-09-06", "title": "🔄 後續追蹤：Anthropic 讓 Claude 幾乎全自主把費馬大定理形式化進 Lean（11 天、1300 萬行、30300 條定理、60 億 token、Lean 核心逐條檢查）"}
+{"date": "2026-09-06", "title": "GitHub HydraFusion 研究預覽：多模型執行時編排（Single／Cascade／Critique），TerminalBench 2.1 品質 +4.9 分、成本低 67%"}
+{"date": "2026-09-06", "title": "arXiv DRACO（2609.04094）：動態 rubric 把軌跡分數攤回每一步，長差事代理 AppWorld +15.9 分、贏過標準答案獎勵"}
+{"date": "2026-09-06", "title": "arXiv（2609.04170）：100 自主代理協作證數學，作弊撇步經共享記憶傳染、另一群自組隊稽核抵制，提 Ostrom 共有財治理"}
+{"date": "2026-09-06", "title": "GPT-6 Astra 全面 GA 上 GitHub Copilot，Codex CLI 設為預設並支援經 Amazon Bedrock 存取"}
+{"date": "2026-09-06", "title": "GitHub Copilot 8/31 批次：新增 Claude Fable 5.1、全付費層開放 Gemini 3.8 Flash、harness 在 JetBrains GA、VS Code 1.136 Agent Merge 公測"}
+{"date": "2026-09-06", "title": "Claude Code v2.1.261：/status 與 doctor 顯示組織政策載入失敗原因、行內輸出上限拉到 128K、新增 /skill-doctor"}
+{"date": "2026-09-06", "title": "arXiv on-policy 蒸餾（2609.04172）：單一訓練查詢覆蓋 71.5% 訓練狀態、16 條語意多樣查詢達 98.9% 追平全資料"}
+{"date": "2026-09-06", "title": "SEMICON Taiwan 2026（9/2–9/4）落幕：全球半導體設備銷售 1351 億美元年增 15%、材料 732 億美元年增 6.8%、Google Amin Vahdat 首度亞洲開場"}
+{"date": "2026-09-06", "title": "主軸：AI 交出第一場跑好幾天、還能被機器逐條驗證的長差事——費馬大定理形式化＋DRACO／HydraFusion／代理群體治理補齊訓練成本與治理"}
+{"date": "2026-09-06", "title": "概念：機器可檢查的證明（machine-checkable proof）與證明輔助器（proof assistant，如 Lean）"}
+{"date": "2026-09-06", "title": "半導體專區：EDA 工具｜時脈樹合成（Clock Tree Synthesis）的 ML 快速預測與 Pareto 最佳化（SwiftCTS）"}
