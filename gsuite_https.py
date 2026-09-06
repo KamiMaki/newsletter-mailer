@@ -17,7 +17,8 @@ AI電子報 — Google Sheets / Forms / Gmail 整合工具（純 HTTPS、零外�
   sync-subs                                  Google 表單回應 → 同步進「訂閱者」工作表
   list-subs --type 報別                      列出該報別 active 訂閱者
   send --html F --subject S --type 報別 [--no-sync] [--dry-run]
-                                             同步表單訂閱者後逐一寄送（失敗退備援名單）
+                                             同步表單訂閱者後逐一寄送（名單讀取失敗會先重試，
+                                             仍失敗退備援名單；無備援則以 1 結束、不標記已寄）
   notion-add --md F --meta J [--dry-run]     把當期內容（Markdown）寫進 Notion 彙整資料庫
                                              報別→資料庫由 .env NOTION_TOKEN / NOTION_*_DB_ID 決定
 
@@ -46,6 +47,11 @@ BASE = Path(__file__).resolve().parent
 HTTP_TIMEOUT = 30
 # 寄送失敗者的重試輪間隔（秒）：len+1 = 每位收件人最多嘗試次數
 SEND_RETRY_DELAYS = (10, 30)
+# 讀取 Sheets / Forms 遇暫時性錯誤（5xx、429、網路層錯誤）的重試間隔（秒）：
+# len+1 = 最多嘗試次數。Google API 偶發 503 UNAVAILABLE 通常數秒內就恢復。
+READ_RETRY_DELAYS = (5, 15, 45)
+# 視為暫時性、值得重試的 HTTP 狀態；0 = http() 的網路層錯誤（timeout / 連線中斷）
+TRANSIENT_STATUSES = frozenset({0, 429, 500, 502, 503, 504})
 
 # Windows 主控台/管線預設 cp950，印 emoji 或特殊符號會 UnicodeEncodeError；一律改 UTF-8
 for _stream in (sys.stdout, sys.stderr):
@@ -142,6 +148,25 @@ def http(method, url, *, token=None, json_body=None, form_data=None, extra_heade
         return 0, {"error": f"{type(e).__name__}: {e}"}
 
 
+def http_retry(method, url, *, retry_delays=None, sleep=time.sleep, label="", **kw):
+    """同 http()，但遇 TRANSIENT_STATUSES 依 retry_delays 重試，回傳最後一次的 (status, payload)。
+
+    只用在可安全重送的請求（GET、換 token 等冪等呼叫）；Gmail 寄信有自己的
+    逐位收件人重試（send_to_recipients），不要套這個，否則會重複寄。
+    """
+    if retry_delays is None:
+        retry_delays = READ_RETRY_DELAYS
+    status, p = http(method, url, **kw)
+    for i, delay in enumerate(retry_delays, 1):
+        if status not in TRANSIENT_STATUSES:
+            break
+        what = f"{label} " if label else ""
+        print(f"[警告] {what}HTTP {status}（暫時性錯誤），{delay} 秒後重試 {i}/{len(retry_delays)}")
+        sleep(delay)
+        status, p = http(method, url, **kw)
+    return status, p
+
+
 def get_access_token():
     """以 refresh token 換 access token。"""
     cid = cfg("GMAIL_CLIENT_ID")
@@ -152,7 +177,7 @@ def get_access_token():
                               ("GMAIL_REFRESH_TOKEN", rtok)) if not v]
     if missing:
         die(f"缺少憑證：{', '.join(missing)}（請設定環境變數或 .env）")
-    status, payload = http("POST", TOKEN_URL, form_data={
+    status, payload = http_retry("POST", TOKEN_URL, label="換取 access token", form_data={
         "client_id": cid, "client_secret": csec,
         "refresh_token": rtok, "grant_type": "refresh_token",
     })
@@ -172,7 +197,9 @@ def _sid():
 
 
 def sheet_get(token, rng):
-    status, p = http("GET", f"{SHEETS_URL}/{_sid()}/values/{urllib.parse.quote(rng)}", token=token)
+    """讀取範圍內的列；暫時性錯誤（503 等）會依 READ_RETRY_DELAYS 重試，仍失敗才 raise。"""
+    status, p = http_retry("GET", f"{SHEETS_URL}/{_sid()}/values/{urllib.parse.quote(rng)}",
+                           token=token, label=f"讀取 {rng}")
     if status != 200:
         raise RuntimeError(f"讀取 {rng} 失敗 HTTP {status}: {p}")
     return p.get("values", [])
@@ -428,7 +455,7 @@ def build_raw(sender, sender_name, to_name, to_email, subject, html_body):
 # ──────────────────────────── 表單同步 ────────────────────────────
 
 def _form_question_map(token, form_id):
-    status, p = http("GET", f"{FORMS_URL}/{form_id}", token=token)
+    status, p = http_retry("GET", f"{FORMS_URL}/{form_id}", token=token, label="讀取表單結構")
     if status != 200:
         raise RuntimeError(f"讀取表單結構失敗 HTTP {status}: {p}")
     qmap = {}
@@ -444,7 +471,8 @@ def _form_question_map(token, form_id):
 def _fetch_form_events(token, form_id, parser):
     """讀取單一表單的全部回應並解析 → (事件清單, 略過無效數)。"""
     qmap = _form_question_map(token, form_id)
-    status, p = http("GET", f"{FORMS_URL}/{form_id}/responses", token=token)
+    status, p = http_retry("GET", f"{FORMS_URL}/{form_id}/responses", token=token,
+                           label="讀取表單回應")
     if status != 200:
         raise RuntimeError(f"讀取表單回應失敗 HTTP {status}: {p}")
     events, skipped = [], 0
@@ -573,19 +601,28 @@ def cmd_send(args):
             except Exception as e:
                 print(f"[警告] 表單同步失敗（不影響寄送）：{e}")
 
-        # 2) 取訂閱者名單；試算表讀不到時退備援名單，再不行只寄給寄件者本人
+        # 2) 取訂閱者名單（sheet_get 內建暫時性錯誤重試）。
+        #    讀取失敗 → 退備援名單；連備援都沒有就以 1 結束，不寫 sent marker，
+        #    讓 Actions 變紅、重跑時補寄。以前這裡會「只寄給寄件者本人」並標記已寄，
+        #    結果一次 503 就讓整期電子報靜默消失（訂閱者一封都沒收到，重跑也不補）。
+        #    工作表讀得到但沒有 active 訂閱者，才維持退備援名單 → 寄件者本人。
         recipients = []
+        read_err = None
         try:
             recipients = _pick_subscribers(sheet_get(token, f"{SUBS_TAB}!A2:F"), args.type)
         except Exception as e:
-            print(f"[警告] 讀取訂閱者工作表失敗：{e}")
+            read_err = e
+            print(f"[警告] 讀取訂閱者工作表失敗（已重試 {len(READ_RETRY_DELAYS)} 次）：{e}")
         if not recipients:
             recipients = _parse_fallback(cfg("FALLBACK_RECIPIENTS"))
             if recipients:
                 print(f"[警告] 試算表無可用名單，改用備援名單（{len(recipients)} 位）")
+            elif read_err is not None:
+                die("訂閱者工作表讀取失敗且未設定 FALLBACK_RECIPIENTS，本期不寄送；"
+                    "請待 Google API 恢復後重跑 workflow（未寫 sent marker，重跑會補寄）")
             else:
                 recipients = [("", sender)]
-                print("[警告] 無備援名單，只寄給寄件者本人")
+                print("[警告] 無 active 訂閱者也無備援名單，只寄給寄件者本人")
 
     print(f"寄送對象：{len(recipients)} 位")
     print(f"主旨：{args.subject}")
