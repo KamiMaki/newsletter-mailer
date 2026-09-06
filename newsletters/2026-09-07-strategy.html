@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>策略學習報</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<div style="max-width:650px;margin:0 auto;background:#0f0f0f;padding:16px;">
+
+  <!-- Header -->
+  <div style="background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:14px;padding:28px 24px;text-align:center;margin-bottom:16px;">
+    <div style="font-size:22px;font-weight:800;color:#fff;letter-spacing:0.5px;">🐧 企鵝的AI交易策略學習報</div>
+    <div style="font-size:14px;color:rgba(255,255,255,0.9);margin-top:6px;">2026-09-07（週一）｜BTC × 美股大盤 × 策略學習</div>
+  </div>
+
+  <!-- Disclaimer banner -->
+  <div style="background:#1a1a1a;border:1px solid #f59e0b;border-radius:10px;padding:12px 16px;margin-bottom:16px;">
+    <div style="color:#f59e0b;font-size:12.5px;line-height:1.6;">⚠️ 本報純屬個人交易紀律與策略學習用途，不構成任何投資建議，內文不含買賣指示，請自行判斷風險。</div>
+  </div>
+
+  <!-- 今日總覽 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="font-size:17px;font-weight:700;color:#fff;margin-bottom:12px;">⚡ 今日總覽</div>
+    <ul style="margin:0;padding-left:20px;color:#d1d5db;font-size:15px;line-height:1.8;">
+      <li>BTC 週五（9/5）一度衝上 <strong style="color:#fbbf24;font-weight:700">$80,120</strong> 逼近歷史高點，週末拉回至 <strong style="color:#fbbf24;font-weight:700">約 $79,900</strong> 整理，現貨 ETF 本週由外流轉為連日大額回補（9/3 單日流入 $731M）。</li>
+      <li>美股 8 月收官走出全月上漲：S&amp;P 500 全月<strong style="color:#fbbf24;font-weight:700">+2.7%</strong>、那斯達克<strong style="color:#fbbf24;font-weight:700">+4%</strong>，但 9 月開局因非農數據意外強勁，道瓊 9/4 收 <strong style="color:#fbbf24;font-weight:700">53,414.25</strong> 較高點拉回。</li>
+      <li>VIX 收在 <strong style="color:#fbbf24;font-weight:700">14.53</strong> 仍屬歷史低檔但連日微升，10 年期公債殖利率回到 <strong style="color:#fbbf24;font-weight:700">約 4.76%</strong>，市場正等待 9/11 CPI 與 9/15-16 FOMC 兩場大考。</li>
+      <li>今日策略學習主題：<strong style="color:#fbbf24;font-weight:700">回測過擬合與樣本外驗證</strong>——用本週 BTC 兩度測試 $80K 都拉回的真實案例，練習分辨「真訊號」和「樣本太少的巧合」。</li>
+    </ul>
+  </div>
+
+  <!-- BTC Section Badge -->
+  <div style="background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:10px;padding:10px 16px;margin-bottom:2px;text-align:center;">
+    <span style="color:#fff;font-size:15px;font-weight:700;">₿ 加密貨幣：BTC 區塊</span>
+  </div>
+
+  <div style="background:#1a1a1a;border-radius:0 0 12px 12px;padding:20px;margin-bottom:16px;">
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;margin:0 0 14px 0;">
+      BTC 目前約 <strong style="color:#fbbf24;font-weight:700">$79,900</strong>（資料來源：CoinDesk，9/6 17:41 EDT），週五（9/5）盤中曾觸及 <strong style="color:#fbbf24;font-weight:700">$80,120.52</strong>，隨後<strong style="color:#e2e8f0">未能站穩並拉回</strong>，週末在 $79,800-$80,000 一帶整理，這已是近兩週第二次測試 $80K 整數關卡都遭拒。
+    </p>
+
+    <div style="overflow-x:auto;margin-bottom:14px;">
+    <table style="width:100%;border-collapse:collapse;font-size:13px;color:#d1d5db;">
+      <tr style="background:#252525;">
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">週期</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">當前價</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">變動</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">趨勢方向</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">關鍵點位</th>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">日線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">$79,900</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">較週五高點 <strong style="color:#fbbf24;font-weight:700">約 -0.3%</strong></td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;"><strong style="color:#e2e8f0">高檔整理</strong>，未能延續突破</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">$80,000 壓力</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">週線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">本週約 $78K→$80.1K</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">較上週約 $78K <strong style="color:#fbbf24;font-weight:700">上漲近 2%</strong></td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;"><strong style="color:#e2e8f0">區間走高</strong>，ETF 資金流轉強帶動</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">$76K-$78K 支撐</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">月線</td>
+        <td style="padding:8px;">9 月開局 $78K-$80.1K</td>
+        <td style="padding:8px;">8 月<strong style="color:#fbbf24;font-weight:700">單月上漲約 25%</strong>後轉為整理</td>
+        <td style="padding:8px;"><strong style="color:#e2e8f0">多頭結構未破</strong>，但上緣屢攻不下</td>
+        <td style="padding:8px;">$80K-$82K 供給牆</td>
+      </tr>
+    </table>
+    </div>
+
+    <div style="background:#252525;border-radius:8px;padding:14px;margin-bottom:14px;">
+      <div style="color:#fff;font-size:13.5px;font-weight:700;margin-bottom:8px;">🔍 四策略視角</div>
+      <div style="color:#d1d5db;font-size:13.5px;line-height:1.8;">
+        <strong style="color:#e2e8f0">順勢：</strong>本週從 $78K 上漲逼近 $80K，短期動能仍偏多，只要不跌破 $76K，順勢架構還站得住。<br>
+        <strong style="color:#e2e8f0">均值回歸：</strong>連兩次觸及 $80K 都拉回，顯示這個整數關卡目前仍是有效壓力，追高後的拉回屬正常現象。<br>
+        <strong style="color:#e2e8f0">突破：</strong>若能帶量收在 $80K 之上，技術面才打開向 $82K 供給牆上緣的空間；瞬間觸及又快速拉回是假突破的典型訊號。<br>
+        <strong style="color:#e2e8f0">宏觀：</strong>ETF 資金流本週由外流轉為連日大額回補，顯示機構逢低承接，但 9/11 CPI 與 9/15-16 FOMC 是下一個變數。
+      </div>
+    </div>
+
+    <div style="color:#d1d5db;font-size:14px;line-height:1.7;margin-bottom:14px;">
+      <div style="color:#fff;font-size:13.5px;font-weight:700;margin-bottom:6px;">📰 加密圈新聞</div>
+      🔗 俄羅斯 Sberbank 宣布自 9/1 起依聯邦法 282-FZ 接受比特幣作為企業貸款抵押品；薩爾瓦多與 IMF 就比特幣增持爭議達成協議，可望解鎖 $1.4 億融資。<br>
+      🔗 現貨 BTC ETF 過去 30 天累計淨流入約 $42.5 億，9/3 單日 $731M 淨流入創今年 1 月中以來最大單日紀錄，IBIT 貢獻超六成。
+    </div>
+
+    <div style="background:#1a1a1a;border-left:3px solid #f59e0b;border-radius:0 8px 8px 0;padding:14px 16px;">
+      <div style="color:#f59e0b;font-size:13.5px;font-weight:700;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:13.5px;line-height:1.8;">
+        <li>整數關卡連續<strong style="color:#e2e8f0">「觸及即拉回」</strong>不代表必破，樣本太少的推論容易變成過擬合。</li>
+        <li>逢高追突破前，先確認<strong style="color:#e2e8f0">帶量收盤站穩</strong>，而不是盤中瞬間觸及就當作進場理由。</li>
+        <li>ETF 資金流轉強是<strong style="color:#e2e8f0">背景資訊</strong>，不是進場訊號，紀律仍要看你自己寫好的規則。</li>
+        <li>把「這幾天」的走勢當成全部歷史，是交易中最容易忽略的<strong style="color:#e2e8f0">取樣偏誤</strong>。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- US Stocks Section -->
+  <div style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:10px;padding:10px 16px;margin-bottom:2px;text-align:center;">
+    <span style="color:#fff;font-size:15px;font-weight:700;">📊 美股大盤區塊</span>
+  </div>
+
+  <div style="background:#1a1a1a;border-radius:0 0 12px 12px;padding:20px;margin-bottom:16px;">
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;margin:0 0 14px 0;">
+      S&amp;P 500（SPY）9/4 收 <strong style="color:#fbbf24;font-weight:700">$770.19</strong>（指數收 7,718.60，<strong style="color:#fbbf24;font-weight:700">-0.38%</strong>），道瓊同日下跌 271.86 點收 53,414.25，主因是 8 月非農就業<strong style="color:#e2e8f0">意外增加 162,000 人</strong>（原估僅 53,000）、失業率持平 4.1%，推升市場對 9 月 FOMC 升息的押注。QQQ 收 <strong style="color:#fbbf24;font-weight:700">$718.96</strong>，那斯達克指數收 26,506.99（-0.29%）。VIX 收在 <strong style="color:#fbbf24;font-weight:700">14.53</strong>（較前日 +1.47%），仍處歷史低檔的<strong style="color:#e2e8f0">波動率制度</strong>（可想成市場「保費」的價格，數字越低代表投資人越不擔心大波動），但已連日回升。10 年期公債殖利率反彈至 <strong style="color:#fbbf24;font-weight:700">約 4.76%</strong>，Fed 理事 Waller 表態傾向 9 月維持利率不變。
+    </p>
+
+    <div style="overflow-x:auto;margin-bottom:14px;">
+    <table style="width:100%;border-collapse:collapse;font-size:13px;color:#d1d5db;">
+      <tr style="background:#252525;">
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">週期</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">當前價</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">變動</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">趨勢方向</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">關鍵點位</th>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">日線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">SPY $770.19</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;"><strong style="color:#fbbf24;font-weight:700">-0.38%</strong></td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;"><strong style="color:#e2e8f0">非農後轉弱</strong>，短線承壓</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">7,700 整數關卡</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">週線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">S&amp;P 500 7,718.60</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">距歷史收盤高點 7,798.99 <strong style="color:#fbbf24;font-weight:700">約 -1.0%</strong></td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;"><strong style="color:#e2e8f0">高檔拉回整理</strong>，多頭結構未破</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">7,800 壓力</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">月線</td>
+        <td style="padding:8px;">9 月開局承壓</td>
+        <td style="padding:8px;">8 月全月 <strong style="color:#fbbf24;font-weight:700">S&amp;P +2.7%、那指 +4%</strong></td>
+        <td style="padding:8px;"><strong style="color:#e2e8f0">道瓊連 5 個月收紅</strong>，長期趨勢未變</td>
+        <td style="padding:8px;">7,650 支撐</td>
+      </tr>
+    </table>
+    </div>
+
+    <div style="background:#252525;border-radius:8px;padding:14px;margin-bottom:14px;">
+      <div style="color:#fff;font-size:13.5px;font-weight:700;margin-bottom:8px;">🔍 四策略視角</div>
+      <div style="color:#d1d5db;font-size:13.5px;line-height:1.8;">
+        <strong style="color:#e2e8f0">順勢：</strong>8 月全月上漲、道瓊連 5 個月收紅的多頭格局未變，但 9 月開局的上升動能正面臨測試。<br>
+        <strong style="color:#e2e8f0">均值回歸：</strong>指數從歷史高點拉回約 1%，屬健康的短線消化，只要守住 7,650 支撐，均值回歸買盤仍可能出現。<br>
+        <strong style="color:#e2e8f0">突破：</strong>8 月創下的收盤高點 7,798.99 尚未重新測試站穩，真正的多頭延續要等這個價位收復。<br>
+        <strong style="color:#e2e8f0">宏觀：</strong>非農遠優於預期推升 9 月升息押注，10 年期殖利率回升至 4.76%，8 月 CPI（9/11）與 FOMC（9/15-16）是接下來兩週最大變數。
+      </div>
+    </div>
+
+    <div style="color:#d1d5db;font-size:14px;line-height:1.7;margin-bottom:14px;">
+      <div style="color:#fff;font-size:13.5px;font-weight:700;margin-bottom:6px;">📰 美股新聞</div>
+      🔗 美股 8 月收官：S&amp;P 500 單月上漲 2.7%、那斯達克大漲 4%，道瓊寫下連續第 5 個上漲月份。<br>
+      🔗 10 年期公債殖利率高檔震盪回落至約 4.76%，Fed 理事 Waller 表態 9 月利率決策高度取決於 8 月 CPI（9/11 公布）。
+    </div>
+
+    <div style="background:#1a1a1a;border-left:3px solid #6366f1;border-radius:0 8px 8px 0;padding:14px 16px;">
+      <div style="color:#6366f1;font-size:13.5px;font-weight:700;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:13.5px;line-height:1.8;">
+        <li>非農數據<strong style="color:#e2e8f0">優於預期</strong>未必是利多，也可能推升升息疑慮反壓抑股價。</li>
+        <li>拉回歷史高點下方約 1% 屬<strong style="color:#e2e8f0">正常回檔</strong>，不代表趨勢已經轉空。</li>
+        <li>CPI 與 FOMC 前<strong style="color:#e2e8f0">先寫好三種劇本</strong>，比盤中臨時反應更可靠。</li>
+        <li>VIX 從低檔連日回升是<strong style="color:#e2e8f0">風險胃納轉弱</strong>的訊號，留意部位大小是否跟著調整。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Strategy Learning Section -->
+  <div style="background:linear-gradient(135deg,#8b5cf6,#6366f1);border-radius:10px;padding:10px 16px;margin-bottom:2px;text-align:center;">
+    <span style="color:#fff;font-size:15px;font-weight:700;">📖 今日策略學習</span>
+  </div>
+
+  <div style="background:#1a1a1a;border-radius:0 0 12px 12px;padding:20px;margin-bottom:16px;">
+    <div style="color:#fff;font-size:16px;font-weight:700;margin-bottom:6px;">回測過擬合與樣本外驗證</div>
+    <p style="color:#d1d5db;font-size:14.5px;line-height:1.7;margin:0 0 14px 0;">
+      為什麼今天學這個：本週 BTC 從 $78K 一路漲到週五觸及 <strong style="color:#fbbf24;font-weight:700">$80,120</strong>，卻兩度在 $80K 附近拉回。如果你只看這 3-5 天的資料，很容易「回測」出一條「BTC 觸及 $80K 就放空」的漂亮規則——但這正是<strong style="color:#e2e8f0">最容易掉入的過擬合陷阱</strong>：樣本太少、太貼合近期走勢，卻誤以為找到了規律。
+    </p>
+    <div style="color:#fff;font-size:13.5px;font-weight:700;margin-bottom:8px;">核心概念</div>
+    <ul style="margin:0 0 14px 0;padding-left:18px;color:#d1d5db;font-size:13.5px;line-height:1.8;">
+      <li>回測績效再漂亮，如果<strong style="color:#e2e8f0">「跑了幾次」沒被記錄</strong>，就無法判斷是真訊號還是巧合。</li>
+      <li>樣本外驗證：把資料切成「開發期」與「驗證期」，兩邊都撐得住的規則才算數。</li>
+      <li>年度／分段拆解比總和數字更誠實，一個穩定的平均報酬可能是靠一段暴賺蓋過其他時段的虧損。</li>
+      <li>把多個雜訊訊號疊加（ensemble）本身會製造<strong style="color:#e2e8f0">虛假的高夏普值</strong>，疊越多、看起來越像有效策略。</li>
+    </ul>
+
+    <div style="background:#252525;border-left:3px solid #8b5cf6;border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:14px;">
+      <div style="color:#8b5cf6;font-size:13px;font-weight:700;margin-bottom:6px;">🎯 情境演練</div>
+      <div style="color:#d1d5db;font-size:13.5px;line-height:1.7;">
+        本週 BTC 在 $78K-$80,120 之間，總共只測試了<strong style="color:#fbbf24;font-weight:700">2-3 次</strong> $80K 關卡，若只用這幾天的資料回測「觸及 $80K 就放空」，很可能得出漂亮的勝率——但樣本數只有個位數，這正是文章說的「訊號疊加＋極少樣本＝虛假夏普值」。真正該做的是把過去半年 BTC 測試整數關卡的所有案例都拉出來，切成前後兩段分別驗證，而不是只看這一週就下結論。
+      </div>
+    </div>
+
+    <div style="color:#d1d5db;font-size:13.5px;line-height:1.7;">
+      <blockquote style="margin:0;padding:12px 14px;background:#252525;border-radius:8px;">
+        💡 <strong style="color:#e2e8f0">今日研究速讀</strong>：Jonathan Kinlay 給一個 AI 研究代理人四年「刻意構造為零可預測性」的價格數據，結果代理人回來說找到了一個多空策略，樣本內夏普值高達 2.1，還煞有其事寫了一段解釋這個「效應」的經濟邏輯。作者拆解發現，這個漂亮數字有 88% 來自兩個沒被記錄的參數：跑了幾次回測、疊加了幾個訊號——換句話說，不是代理人更聰明，只是它把更多雜訊訊號疊得比機械式方法更激進，本質是統計假象。白話說：試驗次數和訊號疊加深度如果不記錄下來，再漂亮的回測數字都可能是選擇偏誤的產物。<br>
+        🔗 <a href="https://jonathankinlay.com/2026/09/a-sharpe-of-2-1-from-nothing-the-second-number-your-agent-doesnt-log/" style="color:#8b5cf6;">原文：A Sharpe of 2.1 From Nothing: The Second Number Your Agent Doesn't Log</a>
+      </blockquote>
+    </div>
+  </div>
+
+  <!-- Discipline Section -->
+  <div style="background:linear-gradient(135deg,#10b981,#06b6d4);border-radius:10px;padding:10px 16px;margin-bottom:2px;text-align:center;">
+    <span style="color:#fff;font-size:15px;font-weight:700;">🧭 今日交易紀律提醒</span>
+  </div>
+
+  <div style="background:#1a1a1a;border-radius:0 0 12px 12px;padding:20px;margin-bottom:16px;">
+    <div style="color:#fff;font-size:15px;font-weight:700;margin-bottom:8px;">週一紀律主題：停損紀律</div>
+    <p style="color:#d1d5db;font-size:14.5px;line-height:1.7;margin:0 0 10px 0;">
+      「停損不是預測你會不會錯，是先承認你一定會錯，然後決定你要撐過幾次錯，還留在牌桌上。」
+    </p>
+    <p style="color:#d1d5db;font-size:14px;line-height:1.7;margin:0;">
+      應用情境：BTC 這週兩度測試 $80K 都拉回，若你曾在觸及新高時追進卻沒設停損，今天正是<strong style="color:#e2e8f0">補上這條規則</strong>的時機——尤其 9/11 CPI、9/15-16 FOMC 兩場考驗還在前面。
+    </p>
+  </div>
+
+  <!-- Reflection -->
+  <div style="background:linear-gradient(135deg,#10b981,#06b6d4);padding:1px;border-radius:12px;margin-bottom:16px;">
+    <div style="background:#1a1a1a;border-radius:11px;padding:18px;">
+      <div style="color:#fff;font-size:16px;font-weight:700;margin-bottom:10px;">💭 今日反思</div>
+      <ul style="margin:0 0 10px 0;padding-left:18px;color:#d1d5db;font-size:14px;line-height:1.8;">
+        <li>如果我真的照這幾天 BTC 測試 $80K 的走勢回測出一條規則，我有沒有先問過樣本夠不夠多？</li>
+        <li>非農數據優於預期卻讓大盤走弱，我的交易計畫裡有沒有為「好消息也可能利空」預留規則？</li>
+        <li>面對 9/11 CPI 與 9/15-16 FOMC 這兩個已知變數，我這週有沒有先把停損邏輯寫清楚，而不是等消息出來才反應？</li>
+      </ul>
+      <div style="color:#9ca3af;font-size:12.5px;">挑一題寫進交易日誌，這就是今天的功課。</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="text-align:center;padding:16px 8px;color:#6b7280;font-size:11.5px;line-height:1.8;">
+    本報為 Darren 的個人學習報，內容僅供交易紀律與策略思維學習之用，不構成投資建議，亦不代表對未來價格之預測。所有市場數據均取自公開來源（CoinDesk、CoinStats、Yahoo Finance、CNBC、Cetera、HedgeCo、U.S. Treasury、BLS 等），資料截止時間以文中標註為準，實際數字請以官方或交易所公告為準。<br>
+    本信件由 AI 自動生成。
+  </div>
+
+</div>
+</body>
+</html>
