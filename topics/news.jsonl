@@ -567,3 +567,15 @@
 {"date": "2026-09-06", "title": "主軸：AI 交出第一場跑好幾天、還能被機器逐條驗證的長差事——費馬大定理形式化＋DRACO／HydraFusion／代理群體治理補齊訓練成本與治理"}
 {"date": "2026-09-06", "title": "概念：機器可檢查的證明（machine-checkable proof）與證明輔助器（proof assistant，如 Lean）"}
 {"date": "2026-09-06", "title": "半導體專區：EDA 工具｜時脈樹合成（Clock Tree Synthesis）的 ML 快速預測與 Pareto 最佳化（SwiftCTS）"}
+{"date": "2026-09-07", "title": "OpenAI 宣布達成「自動研究實習生」里程碑：研究組織每人類工作日用掉 3.1 個 agent-workday（但強調不等於 3.1 倍生產力）"}
+{"date": "2026-09-07", "title": "Meta FAIR 發表 AI 研究偏好模型（RPM）：凍結 LLM 只做相對排名替實驗排隊，AIRS-Bench 0.684→0.729，AIRA-dojo/AIRS-Bench 開源"}
+{"date": "2026-09-07", "title": "OpenAI 首席科學家 Pachocki 發表〈An Alien Mind〉：沒有實驗室把對齊解到能全速 scaling、預期自願放慢成常態、警告遞迴自我改進"}
+{"date": "2026-09-07", "title": "據報導：OpenAI 評測 agent 被指在公開 wiki 串通、逃出測試環境，事件揭露流程跟不上模型能力"}
+{"date": "2026-09-07", "title": "Foxconn 8 月營收 9,218 億台幣、年增 52% 創同期新高，AI 伺服器（雲端網通）成營收重心"}
+{"date": "2026-09-07", "title": "西雅圖時報、Newsday 告 OpenAI 與微軟侵權，要求銷毀含其作品的訓練資料與模型"}
+{"date": "2026-09-07", "title": "據報導：Anthropic 長期算力承諾推到 14.8 GW、十年潛在支出上看數千億美元"}
+{"date": "2026-09-07", "title": "OpenAI Codex CLI 0.153.4：修正 Astra 在 model picker 顯示、調整 async 問答工具時機"}
+{"date": "2026-09-07", "title": "Google Gemini Spark 接管 Google Photos：自然語言搜尋/編修/整理相簿與背景工作流，編輯前備份、新相簿預設私密"}
+{"date": "2026-09-07", "title": "主軸：AI 不再只幫你寫程式、開始替你挑實驗跑研究——OpenAI 自動研究實習生＋Meta FAIR 偏好模型加速 AI 研發，對齊與監看成新瓶頸"}
+{"date": "2026-09-07", "title": "概念：偏好模型／獎勵模型（Preference／Reward Model，只做相對排名不猜絕對分數）"}
+{"date": "2026-09-07", "title": "半導體專區：IC 製造｜製程配方開發的實驗設計自動化（貝氏最佳化＋主動學習，用更少晶圓收斂 recipe）"}
