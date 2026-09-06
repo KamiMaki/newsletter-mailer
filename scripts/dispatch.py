@@ -26,6 +26,10 @@ _EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
 # and skipped recipients simply miss that issue (their emails are listed as
 # [SKIP] in the send log). Only a total failure (zero delivered, e.g. broken
 # credentials) exits non-zero and leaves no marker.
+# Reading the subscriber sheet (and the Forms sync) retries transient Google API
+# errors (5xx/429/network, READ_RETRY_DELAYS). If the sheet still can't be read
+# and FALLBACK_RECIPIENTS is unset, `send` exits 1 WITHOUT sending, so no marker
+# is written and a re-run of the job delivers the issue once the API recovers.
 
 def run_cmd(argv):
     """Run `python gsuite_https.py <argv...>`; return exit code. (Monkeypatched in tests.)"""
