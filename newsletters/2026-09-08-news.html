@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的 AI 每日電子報</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;padding:20px 12px;">
+<tr>
+<td align="center">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+
+<!-- ===== Header ===== -->
+<tr>
+<td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px 16px 0 0;padding:32px 28px;text-align:center;">
+<div style="font-size:26px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:8px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="display:inline-block;margin-top:14px;padding:5px 14px;background:rgba(255,255,255,0.18);border-radius:20px;font-size:13px;color:#ffffff;font-weight:600;">2026 年 9 月 8 日</div>
+</td>
+</tr>
+
+<!-- ===== 30秒重點 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:24px 28px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;padding:6px;">
+<tr><td style="padding:14px 18px;">
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+<li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>大廠這兩天很安靜，但本週登上 arXiv 的一批新研究不約而同指向同一件事——當「把模型做更大、做更聰明」的效率紅利見頂，<strong style="color:#e2e8f0">省電、省面積的戰場正往下退一層，從「模型」退回「電路與數字格式」本身</strong>。</li>
+<li style="margin-bottom:10px;">三塊拼圖同一方向：一顆在 <strong style="color:#e2e8f0">22 奈米製程</strong>做出的「類比 softmax」電路，把注意力運算留在類比域、免掉數位轉換（<strong style="color:#a5b4fc">25.5 pJ／元素</strong>）；FlexPosit 用 posit 數字格式，把 LLM 權重壓到 <strong style="color:#a5b4fc">5 位元以下</strong>還逼近 FP16；APEX-RBD 用「逐運算配精度」替機器人控制晶片省下近 <strong style="color:#a5b4fc">2 倍面積</strong>。</li>
+<li style="margin-bottom:10px;">其他值得知道：一篇研究戳破「換模型 agent 就失憶」——結構化知識圖幾乎不受影響，壓縮筆記卻可能一升一降差近 20 分；Claude Code、n8n、OpenAI Codex 都出了小修版，其中 n8n 專門修「Anthropic agent 執行緒會永久壞掉」的 bug。</li>
+<li>對半導體工作者最相關的一句：今天的主線就是<strong style="color:#a5b4fc">你的主場</strong>——當演算法紅利見頂，下一輪效率要靠「演算法 × 數字格式 × 電路」一起 co-design 逼出來；本期半導體專區談 AI 如何秒算佈局後的寄生電容。</li>
+</ul>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 今天的主軸 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:8px 28px 24px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:13px;">
+<tr><td style="padding:26px 24px;">
+<div style="display:inline-block;padding:5px 14px;background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:20px;font-size:13px;color:#ffffff;font-weight:700;margin-bottom:16px;">🎯 今天的主軸</div>
+<div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-bottom:18px;">當「把模型做更大」的效率紅利見頂，這一週的研究不約而同往下鑽一層——把省電省面積的戰場，從「模型」搬回「電路與數字格式」本身</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍共同變化</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">大公司這兩天沒放大招，真正有料的都在 arXiv 上。本週公開的三篇研究，乍看八竿子打不著——一篇在講怎麼用<strong style="color:#a5b4fc">類比電路算 softmax</strong>，一篇在講怎麼用一種叫 <strong style="color:#a5b4fc">posit 的數字格式</strong>壓 LLM 權重，一篇在替<strong style="color:#a5b4fc">機器人控制晶片</strong>逐個運算配精度——但它們其實在做同一件事：不再想辦法把模型變聰明，而是回頭問「<strong style="color:#e2e8f0">同一筆運算，能不能花更少的電、更小的面積算出來</strong>」。第一篇（Compute-in-Memory Attention）在 GlobalFoundries 22 奈米 FD-SOI 上做出一顆把注意力分數留在類比域、免掉數位轉換的電路，每個輸出元素只花 <strong style="color:#a5b4fc">25.5 pJ</strong>、精度和理想 softmax 只差 2.5%。第二篇（FlexPosit）用 posit 的「漸縮精度」把權重壓到 <strong style="color:#a5b4fc">5 位元以下</strong>還能逼近 FP16，吞吐量比前代方案高 1.8 倍、能耗低 1.2 倍。第三篇（APEX-RBD）用混合精度替機器人動力學加速器省下最多 <strong style="color:#a5b4fc">1.9 倍面積、1.8 倍功耗</strong>。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍為什麼放在一起看</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">因為它們從<strong style="color:#e2e8f0">三個不同樓層</strong>攻同一道牆。過去幾年 AI 的效率進步，大多來自「模型變大、演算法變好、製程往前推一個節點」；但這條路的邊際報酬正在遞減——再堆參數、再換節點，省下的電越來越有限。於是研究者開始往下鑽：<strong style="color:#a5b4fc">類比運算</strong>攻的是「電路層」（別再把類比訊號轉成數位再算），<strong style="color:#a5b4fc">posit 數字格式</strong>攻的是「表示層」（用更少的位元表達同一個數），<strong style="color:#a5b4fc">混合精度</strong>攻的是「排程層」（只在需要的地方花高精度）。三篇同一週落地，等於在說：<strong style="color:#e2e8f0">下一輪省電，不會來自更大的模型，而是來自把「一次乘加到底花幾焦耳」重新設計一遍</strong>。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍過去 vs. 現在</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">過去：要更快更省，就換更強的 GPU、上更先進的製程、把模型剪枝或蒸餾——大家的目光都在「模型」和「晶片買哪顆」。現在：焦點下沉到晶片<strong style="color:#e2e8f0">裡面</strong>。真正吃電的往往不是那個乘法本身，而是「<strong style="color:#a5b4fc">把資料搬來搬去、把格式轉來轉去</strong>」——在記憶體和運算單元之間反覆搬動位元、把類比感測值轉成數位再算，這些「搬運與轉換」的能量常常比運算還貴。類比記憶體內運算的思路就是：<strong style="color:#e2e8f0">乾脆在資料所在的地方就地算完，能不轉數位就不轉</strong>；posit 與混合精度則是：<strong style="color:#e2e8f0">既然多數權重不需要那麼多位元，就別浪費</strong>。這是一種從「買更好的引擎」轉向「重新設計汽化器」的視角切換。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍背後邏輯</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">關鍵字是「<strong style="color:#a5b4fc">記憶牆（memory wall）</strong>」與「<strong style="color:#a5b4fc">資料搬移的能量</strong>」。在現代加速器裡，一次乘加的能量，常常遠小於「把那兩個數從記憶體叫出來」的能量；資料進出、格式轉換（尤其類比 ↔ 數位的 ADC/DAC）是吃電大戶。所以三篇論文的共同解法都圍著「少搬、少轉、少花位元」打轉：類比 softmax 用「一條共享的下降斜坡＋RC 衰減參考」直接在類比域生出指數權重，連溫度都能用 RC 時間常數調——省掉一整段數位運算與轉換；FlexPosit 用 posit 的漸縮精度，讓靠近零的數值（LLM 權重的大宗）拿到較高精度、極端值容忍較低精度，用「可調精度的位元串列架構」逐群組調；APEX-RBD 則用<strong style="color:#e2e8f0">物理知識先縮小搜尋空間、再用代理模型</strong>快速掃出「哪個運算用幾位元最划算」。共同的哲學：<strong style="color:#a5b4fc">精度是一種預算，該花在刀口上</strong>。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍對你的工作</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">對半導體與硬體團隊，這波的訊號是：<strong style="color:#e2e8f0">效率的下一桶金在「跨層 co-design」</strong>——演算法、數字格式、電路要一起設計，不能各做各的。對 IC 設計與架構師，「<strong style="color:#a5b4fc">每次運算的能量／面積</strong>」正在變成和 PPA 一樣重要的一級指標，而混合精度、近記憶體／記憶體內運算會是接下來 design space exploration 的常客。對驗證與 EDA 工程師，類比、混合精度電路更難用傳統數位流程簽核，<strong style="color:#e2e8f0">怎麼驗一顆「會有噪聲、精度可調」的電路</strong>本身就是新題目。對非硬體的工程團隊，可帶走的一句是：當你的模型再也擠不出效率，別只想著換更大的模型，<strong style="color:#a5b4fc">往下看一層</strong>——資料格式、記憶體佈局、量化策略，往往還藏著沒撿的免費午餐。</div>
+
+<div style="background:#252525;border-radius:8px;padding:14px 16px;margin:18px 0;">
+<div style="color:#67e8f9;font-weight:700;font-size:13px;margin-bottom:6px;">👤 延伸解讀（編輯分析）</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">把這三篇擺在一起，會看到一個很「半導體」的老規律又回來了：<strong style="color:#e2e8f0">當上層紅利見頂，價值就往下沉一層</strong>。就像當年 CPU 頻率撞牆後，效能進步改由多核、快取、指令集去擠；現在 LLM 的「把參數堆更多」也開始撞牆，於是擠效率的任務下沉到數字格式與電路。這對台灣半導體是好消息——這一層正是我們最擅長的地方。但要提醒：這些都還是<strong style="color:#a5b4fc">研究原型與架構研究</strong>，不是量產矽；類比與混合精度好看的數字，能不能扛得住製程變異、溫度漂移與良率，才是真正的關卡。（本段為編輯分析，非論文結論）</div>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍限制與待驗證</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">先別把數字讀過頭。類比運算天生要面對<strong style="color:#e2e8f0">元件失配、熱噪聲、PVT 漂移</strong>，那顆 22 奈米 softmax 是驗證性的測試電路、不是產品，「和理想差 2.5%」是在受控條件下的結果，跨溫度、跨批次能不能維持仍待驗證。FlexPosit 與 APEX-RBD 的加速與省電數字，都來自<strong style="color:#a5b4fc">各自論文的架構模擬與基準比較</strong>（對比 BitMoD、OliVe、uniform-precision 基線），還沒有第三方在真實矽上複現；posit 也還不是主流硬體原生支援的格式，落地要看工具鏈與生態。<strong style="color:#a5b4fc">編輯分析：</strong>這波真正的看點不是某個數字多漂亮，而是「效率戰線正式下沉到電路與數字格式」這個<strong style="color:#e2e8f0">方向</strong>——方向對了，數字會被後面的工程慢慢磨出來。</div>
+
+<div style="background:linear-gradient(135deg,rgba(99,102,241,0.15),rgba(6,182,212,0.15));border-left:3px solid #6366f1;border-radius:6px;padding:12px 16px;margin:18px 0 6px;">
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-bottom:4px;">▍重點一句話</div>
+<div style="color:#e2e8f0;font-size:15px;line-height:1.7;font-weight:600;">AI 省電的下一步，不在「更大的模型」，而在「更聰明的電路與數字格式」——當演算法紅利見頂，效率戰線就下沉到晶片本身，而那正是半導體人的主場。</div>
+</div>
+
+<div style="margin-top:14px;font-size:13px;line-height:1.9;">
+<a href="https://arxiv.org/abs/2609.04266" style="color:#06b6d4;text-decoration:none;">🔗 Compute-in-Memory Attention：類比 softmax 電路（arXiv 2609.04266）</a><br>
+<a href="https://arxiv.org/abs/2609.04724" style="color:#06b6d4;text-decoration:none;">🔗 FlexPosit：LLM 推論加速器的可調 posit 精度（arXiv 2609.04724）</a><br>
+<a href="https://arxiv.org/abs/2609.05161" style="color:#06b6d4;text-decoration:none;">🔗 APEX-RBD：機器人動力學加速器的混合精度探索（arXiv 2609.05161）</a>
+</div>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 主軸的衍生新聞 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:8px 28px 10px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">🔗 主軸的衍生新聞</div>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;margin-bottom:14px;">
+<tr><td style="padding:18px 20px;">
+<div style="display:inline-block;padding:3px 10px;background:#1e293b;border-radius:14px;font-size:11px;color:#67e8f9;font-weight:700;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">類比算 softmax：把注意力留在類比域，免掉最貴的那段轉換</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">Transformer 的 softmax 過去得先把類比的注意力分數<strong style="color:#e2e8f0">轉成數位</strong>再算指數與正規化，這段轉換在記憶體內運算（CIM）系統裡是隱形的吃電大戶。這篇論文在 GlobalFoundries 22 奈米 FD-SOI 上做出一顆<strong style="color:#a5b4fc">時域類比 softmax 電路</strong>，用「共享下降斜坡＋RC 衰減參考」直接在類比域生成指數權重，連溫度都能靠 RC 時間常數調；128 個元素只花 <strong style="color:#a5b4fc">242.97 奈秒、13.44 mW</strong>，每元素 25.5 pJ，精度與理想 softmax 差 2.5%。它正是主軸「電路層」那塊拼圖最具體的示範。</div>
+<div style="color:#94a3b8;font-style:italic;font-size:14px;margin:10px 0 8px;">💡 重點一句話：最貴的常常不是運算，而是「轉換」——能在類比域算完，就少燒一段電。</div>
+<a href="https://arxiv.org/abs/2609.04266" style="color:#06b6d4;text-decoration:none;font-size:13px;">🔗 閱讀原文 ｜ 來源：arXiv 2609.04266</a>
+</td></tr>
+</table>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;margin-bottom:14px;">
+<tr><td style="padding:18px 20px;">
+<div style="display:inline-block;padding:3px 10px;background:#1e293b;border-radius:14px;font-size:11px;color:#67e8f9;font-weight:700;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">FlexPosit：用「漸縮精度」的數字格式，把權重壓到 5 位元以下還不掉分</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">現有量化不是「細到準但開銷大」，就是「粗到省但低位元會掉精度」，而且多半只能用<strong style="color:#e2e8f0">固定幾檔精度</strong>。FlexPosit 借用 posit 格式「靠近零精度高、遠離零精度低」的特性——正好對上 LLM 權重多半集中在零附近——用一個<strong style="color:#a5b4fc">可調精度的位元串列架構</strong>，做到「像逐群組一樣準、又像逐通道一樣規律」。結果：<strong style="color:#a5b4fc">5 位元以下</strong>逼近 FP16，吞吐量比 BitMoD 高 1.8 倍、能耗低 1.2 倍。這是主軸「表示層」的代表作。</div>
+<div style="color:#94a3b8;font-style:italic;font-size:14px;margin:10px 0 8px;">💡 重點一句話：不是所有數都值得用同樣多的位元——把精度當預算花，就能省。</div>
+<a href="https://arxiv.org/abs/2609.04724" style="color:#06b6d4;text-decoration:none;font-size:13px;">🔗 閱讀原文 ｜ 來源：arXiv 2609.04724</a>
+</td></tr>
+</table>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;margin-bottom:6px;">
+<tr><td style="padding:18px 20px;">
+<div style="display:inline-block;padding:3px 10px;background:#1e293b;border-radius:14px;font-size:11px;color:#67e8f9;font-weight:700;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">APEX-RBD：逐運算配精度，替邊緣控制晶片省下近 2 倍面積</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">機器人的即時控制要在很小的功耗預算內算「剛體動力學」，統一用高精度太浪費。APEX-RBD 是個<strong style="color:#a5b4fc">混合精度探索框架</strong>：先用物理知識縮小搜尋空間，再用代理模型（surrogate）快速掃出「哪個運算用幾位元最划算」，在滿足精度與效能約束下自動配置。對比統一精度基線，最多省下 <strong style="color:#a5b4fc">1.9 倍面積、1.8 倍功耗</strong>。它把主軸的「排程層」講清楚：<strong style="color:#e2e8f0">精度不是全域設定，而是逐運算的選擇</strong>。</div>
+<div style="color:#94a3b8;font-style:italic;font-size:14px;margin:10px 0 8px;">💡 重點一句話：省電不必犧牲能力——把高精度只留給真正需要的那幾步。</div>
+<a href="https://arxiv.org/abs/2609.05161" style="color:#06b6d4;text-decoration:none;font-size:13px;">🔗 閱讀原文 ｜ 來源：arXiv 2609.05161</a>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 其他快訊 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:14px 28px 10px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:18px;color:#cbd5e1;font-size:14px;line-height:1.7;">
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0">換模型，你的 agent 會失憶嗎？一篇研究做了對照實驗。</strong>研究比較四種記憶格式在「模型升級」後的表現：<strong style="color:#a5b4fc">固定 schema 的知識圖幾乎不受影響（準確度變動 ±0.002）</strong>，但壓縮式筆記高度綁模型，換代方向不同可能 +9.91 到 −13.28 分，RAG 若只做部分重嵌入還會白丟近 12 分。為什麼重要：當模型每週換代，agent「記憶」怎麼存，決定了它換腦後還記不記得事——結構化、有 schema 的記憶最耐久。<a href="https://arxiv.org/abs/2609.05339" style="color:#06b6d4;text-decoration:none;">🔗 來源</a></li>
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0">n8n 2.38.4（beta）專門修「Anthropic agent 執行緒會永久壞掉」。</strong>這版把任務執行器逾時收斂到優雅關閉的時間窗、修好 Anthropic agent 執行緒斷掉後無法復原的問題，並讓 npm audit 不再卡住沙箱建置。對用 n8n 串 agent 工作流的人是實打實的穩定性修補——也側面說明「模型接線」正變成新脆弱點。<a href="https://github.com/n8n-io/n8n/releases" style="color:#06b6d4;text-decoration:none;">🔗 來源</a></li>
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0">Claude Code 更新至 2.1.263。</strong>官方變更日誌只列「錯誤修正與穩定性改善」，屬小改版；較有份量的功能（組織政策診斷、輸出上限拉到 128K、<code>/skill-doctor</code>）落在 9/4 的 2.1.262。顯示前沿 coding agent 進入高頻小步快跑的維護節奏。<a href="https://code.claude.com/docs/en/changelog" style="color:#06b6d4;text-decoration:none;">🔗 來源</a></li>
+<li><strong style="color:#e2e8f0">OpenAI Codex 推出 0.154.0-alpha.5／alpha.6 兩個預覽版。</strong>9/7 同日連發兩個 alpha 建置，屬迭代測試版、無詳細變更說明。對照 n8n 與 Claude Code，本週開發工具圈幾乎都是「小修快發」，沒有大新聞——正好對照主軸：熱鬧的都在底層研究。<a href="https://github.com/openai/codex/releases" style="color:#06b6d4;text-decoration:none;">🔗 來源</a></li>
+</ul>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 今日概念 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:14px 28px 10px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;">
+<tr><td style="padding:22px 22px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">📖 今日概念｜記憶體內運算（Compute-in-Memory, CIM）與類比運算</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:6px 0 4px;">定義</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-bottom:12px;">一種<strong style="color:#e2e8f0">在資料所在的位置（記憶體裡）就地做運算</strong>的做法，常搭配「類比運算」——直接用電壓、電流、電荷去算，而不是全部先轉成 0 與 1 的數位訊號再算。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:6px 0 4px;">生活化比喻</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-bottom:12px;">傳統晶片像「食材放冰箱、廚房在另一頭」——每做一道菜都要把食材從冰箱搬到廚房、切好、再搬回去，走廊上耗掉的力氣常比切菜還多。CIM 則是<strong style="color:#a5b4fc">把爐子直接架在冰箱門口</strong>，食材一拿出來就地下鍋。這個比喻的技術重點是：現代運算真正的耗能大戶，往往是「資料搬移」與「格式轉換」，而不是那一下乘加——縮短距離、少轉一次格式，省的電比想像中多。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:6px 0 4px;">工作中的例子</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-bottom:12px;">記憶體陣列（如 SRAM、RRAM）天生會做「乘加」——把輸入當電壓加在記憶格上，電流自動加總，就是一次矩陣乘向量。今天主軸那顆類比 softmax 更進一步，連指數與正規化都留在類比域算完，省掉一整段 ADC 轉換。這類設計常用在<strong style="color:#e2e8f0">邊緣 AI、感測器前端、低功耗推論</strong>。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:6px 0 4px;">常見誤解</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-bottom:12px;">以為「類比＝不準、註定被數位取代」。其實對 AI 推論這種<strong style="color:#a5b4fc">容忍一點誤差</strong>的任務，類比的「夠準又超省」反而划算；真正的難處不是準度天花板，而是<strong style="color:#e2e8f0">失配、噪聲、溫度漂移與製程變異</strong>的工程控制，以及設計、驗證工具鏈還不成熟。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:6px 0 4px;">與今天主軸的關係</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">主軸講「效率戰線下沉到電路與數字格式」，CIM 就是「電路層」最核心的那把武器。理解它，你就懂為什麼一顆 22 奈米的小電路，會和「LLM 怎麼省電」扯上關係——因為省電的關鍵，早就不只在模型，而在「怎麼算、在哪裡算」。</div>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 半導體 AI 專區 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:14px 28px 10px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;">
+<tr><td style="padding:22px 22px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜讓 AI 秒算佈局後的「寄生電容」</div>
+<div style="margin-bottom:14px;">
+<span style="display:inline-block;padding:3px 10px;background:#0e7490;border-radius:14px;font-size:11px;color:#ffffff;font-weight:700;margin-right:6px;">EDA 工具</span>
+<span style="display:inline-block;padding:3px 10px;background:#3f3f46;border-radius:14px;font-size:11px;color:#d4d4d8;font-weight:700;">背景知識 · 編輯分析</span>
+</div>
+
+<div style="color:#67e8f9;font-weight:700;font-size:13px;margin:6px 0 4px;">▍問題與流程位置</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.75;margin-bottom:12px;">佈局（layout）畫完後，金屬線之間會產生<strong style="color:#e2e8f0">寄生電容與電阻（parasitic R/C）</strong>——它們不是你想要的元件，卻真實影響延遲、功耗與訊號完整性。製程越先進、線距越窄，這些寄生效應越主導成敗，所以要做「<strong style="color:#a5b4fc">寄生參數萃取（extraction）</strong>」：把佈局幾何算成一張精確的 R/C 網表，交給時序、功耗分析。傳統靠場解算器（field solver）算得準但慢，或靠規則式模型（rule-based）算得快但在先進節點越來越不準——這正是卡在「簽核前」的一道昂貴關卡。</div>
+
+<div style="color:#67e8f9;font-weight:700;font-size:13px;margin:6px 0 4px;">▍AI 如何介入</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.75;margin-bottom:12px;">用<strong style="color:#a5b4fc">機器學習當「快速代理」</strong>：把佈局的 3D 幾何切成小窗口，訓練模型直接預測電容矩陣，取代逐點跑場解算器。和過去最大的差別在「<strong style="color:#e2e8f0">準度 × 速度</strong>」的折衷被推進了一大截——例如 CapBench（DAC 2026 收錄）用 <strong style="color:#a5b4fc">61,855 個 3D 窗口、橫跨 3 種 PDK</strong>（ASAP7／NanGate45／Sky130HD）建了公開基準，比較十種架構後發現：CNN 最準（誤差 1.75%），GNN 稍不準（10.2%）但<strong style="color:#a5b4fc">快 41.4 倍</strong>。更新的 AttentionCap 用 Transformer 學電容矩陣，在真實設計上自電容誤差 0.67%、耦合電容誤差 3.99%，推論<strong style="color:#a5b4fc">比 CNN 快 192 倍</strong>，換新節點只需約 5,000 筆樣本微調。過去要跑幾小時的萃取，AI 有機會壓到近即時，讓工程師在設計中途就能反覆試。</div>
+
+<div style="color:#67e8f9;font-weight:700;font-size:13px;margin:6px 0 4px;">▍資料與產出</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.75;margin-bottom:12px;">輸入：佈局的 3D 幾何窗口（金屬線形狀、間距、層次），標準答案由高精度場解算器（如 RWCap）產生。輸出：每條線的自電容與線間耦合電容，組成 R/C 網表，餵給後續時序／功耗／訊號完整性分析。</div>
+
+<div style="color:#67e8f9;font-weight:700;font-size:13px;margin:6px 0 4px;">▍如何驗證</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.75;margin-bottom:12px;">保留一批未見過的設計當測試集、與場解算器的黃金值比對誤差，並看跨 PDK／跨節點的泛化能力——CapBench 之所以有價值，就是提供了<strong style="color:#e2e8f0">可重現、多製程</strong>的共同標尺，讓不同方法能公平比。實務上，AI 萃取多半當「快速預覽」，關鍵路徑仍要用場解算器複核把關。<span style="color:#94a3b8;">（以上為 2026 年 arXiv 論文與 DAC 2026 收錄成果之背景整理，非本週新聞；數字為論文自述，尚待第三方複現）</span></div>
+
+<div style="color:#67e8f9;font-weight:700;font-size:13px;margin:6px 0 4px;">▍限制與風險</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.75;margin-bottom:14px;">模型往「沒看過的佈局樣態」外推時可信度會掉；不同代工廠、不同節點的 PDK 差異大，跨廠泛化仍是硬骨頭；而簽核級的準度要求極高，AI 的統計誤差再小，關鍵網路仍不敢直接放行。<strong style="color:#a5b4fc">編輯分析：</strong>它的價值是「把慢而準的萃取，變成快而夠準的中途預覽」，讓設計迭代不必每次都等場解算器——這和今天主軸「用更聰明的算法省下昂貴運算」是同一套邏輯。</div>
+
+<div style="font-size:13px;line-height:1.9;margin-bottom:14px;">
+<a href="https://arxiv.org/abs/2604.11202" style="color:#06b6d4;text-decoration:none;">🔗 CapBench：多 PDK 寄生電容萃取基準（arXiv 2604.11202，DAC 2026 收錄）</a><br>
+<a href="https://arxiv.org/abs/2606.08161" style="color:#06b6d4;text-decoration:none;">🔗 AttentionCap：Transformer 電容矩陣學習（arXiv 2606.08161）</a><br>
+<a href="https://www.dac.com/" style="color:#06b6d4;text-decoration:none;">🔗 背景：第 63 屆 DAC（設計自動化年會）2026</a>
+</div>
+
+<div style="background:#1e293b;border-radius:8px;padding:12px 16px;">
+<div style="color:#67e8f9;font-weight:700;font-size:14px;line-height:1.7;">👷 對半導體工作者的意義：實體設計、寄生萃取與訊號完整性工程師最相關。可以先把 ML 萃取當「設計中途的快速健檢」——在還沒定案前就抓出寄生偏高的關鍵線，把場解算器留給最後簽核，用同樣的時間換更多次迭代。這是把主軸「精度是預算、花在刀口上」直接搬進 P&R 流程的一步。</div>
+</div>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 反思時間 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:14px 28px 20px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:13px;">
+<tr><td style="padding:24px 24px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+<li style="margin-bottom:12px;"><strong style="color:#a5b4fc">趨勢反思：</strong>如果「把模型做更大」的效率紅利真的見頂，下一輪省電要靠電路與數字格式，那你團隊的技術優勢，是站在「會用更大模型」那一側，還是「會把運算做更省」那一側？這兩種能力，你手上各投資了多少？</li>
+<li style="margin-bottom:12px;"><strong style="color:#a5b4fc">工作連結：</strong>回到你最花電、最花面積的那一段運算——有沒有哪一步其實不需要現在的精度、或不需要把資料搬那麼遠？如果要導入混合精度或近記憶體運算，你的驗證流程準備好驗一顆「會有噪聲、精度可調」的設計了嗎？</li>
+<li><strong style="color:#a5b4fc">未來判斷：</strong>當效率的競爭下沉到「演算法 × 數字格式 × 電路」的跨層 co-design，最稀缺的會是哪一種人——精通單一層的專家，還是能把三層縫在一起的「翻譯者」？你的組織裡，誰在做這個縫合？</li>
+</ul>
+<div style="background:linear-gradient(135deg,rgba(99,102,241,0.2),rgba(6,182,212,0.2));border-radius:8px;padding:14px 16px;margin-top:16px;">
+<div style="color:#a5b4fc;font-weight:700;font-size:15px;line-height:1.7;">🎒 今日帶走：當模型再也擠不出效率，答案不在「更大」，而在「更下面一層」——電路、數字格式、記憶體佈局裡，還藏著沒撿的免費午餐，而那正是半導體人的主場。</div>
+</div>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 歷史電子報入口 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:6px 28px 20px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;">
+<tr><td style="padding:20px 22px;text-align:center;">
+<div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-bottom:14px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</div>
+<a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-size:15px;font-weight:600;">查看歷史電子報</a>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== Footer ===== -->
+<tr>
+<td style="background:#141414;border-radius:0 0 16px 16px;padding:24px 28px;text-align:center;">
+<div style="font-size:14px;color:#cbd5e1;margin-bottom:10px;">📬 覺得有用？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">分享給朋友訂閱這份電子報</a></div>
+<div style="font-size:13px;color:#64748b;margin-bottom:14px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></div>
+<div style="font-size:12px;color:#475569;line-height:1.6;border-top:1px solid #262626;padding-top:14px;">© 2026 企鵝的 AI 每日電子報🐧<br>本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</div>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

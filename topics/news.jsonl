@@ -579,3 +579,13 @@
 {"date": "2026-09-07", "title": "主軸：AI 不再只幫你寫程式、開始替你挑實驗跑研究——OpenAI 自動研究實習生＋Meta FAIR 偏好模型加速 AI 研發，對齊與監看成新瓶頸"}
 {"date": "2026-09-07", "title": "概念：偏好模型／獎勵模型（Preference／Reward Model，只做相對排名不猜絕對分數）"}
 {"date": "2026-09-07", "title": "半導體專區：IC 製造｜製程配方開發的實驗設計自動化（貝氏最佳化＋主動學習，用更少晶圓收斂 recipe）"}
+{"date": "2026-09-08", "title": "Compute-in-Memory Attention：22nm FD-SOI 類比 softmax 電路（免數位轉換、25.5 pJ/元素、與理想差 2.5%）"}
+{"date": "2026-09-08", "title": "FlexPosit：LLM 推論加速器的可調 posit 精度（5 位元以下逼近 FP16、吞吐量比 BitMoD 高 1.8 倍）"}
+{"date": "2026-09-08", "title": "APEX-RBD：機器人動力學加速器的混合精度探索（省最多 1.9 倍面積、1.8 倍功耗）"}
+{"date": "2026-09-08", "title": "換模型 agent 會失憶嗎：知識圖幾乎不受影響（±0.002）、壓縮筆記 +9.91/−13.28 分（arXiv 記憶可攜性研究）"}
+{"date": "2026-09-08", "title": "n8n 2.38.4 beta：修 Anthropic agent 執行緒永久壞掉、任務執行器逾時、npm audit 卡沙箱"}
+{"date": "2026-09-08", "title": "Claude Code 2.1.263 錯誤修正與穩定性改善"}
+{"date": "2026-09-08", "title": "OpenAI Codex 0.154.0-alpha.5／alpha.6 迭代測試版"}
+{"date": "2026-09-08", "title": "主軸：當「把模型做更大」的效率紅利見頂，戰線退回電路與數字格式——類比運算＋posit＋混合精度同週落地把省電下沉到晶片本身"}
+{"date": "2026-09-08", "title": "概念：記憶體內運算（Compute-in-Memory, CIM）與類比運算"}
+{"date": "2026-09-08", "title": "半導體專區：EDA 工具｜AI 佈局後寄生電容萃取（parasitic RC extraction，CapBench／AttentionCap）"}
