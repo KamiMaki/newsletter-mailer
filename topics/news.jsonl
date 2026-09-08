@@ -589,3 +589,15 @@
 {"date": "2026-09-08", "title": "主軸：當「把模型做更大」的效率紅利見頂，戰線退回電路與數字格式——類比運算＋posit＋混合精度同週落地把省電下沉到晶片本身"}
 {"date": "2026-09-08", "title": "概念：記憶體內運算（Compute-in-Memory, CIM）與類比運算"}
 {"date": "2026-09-08", "title": "半導體專區：EDA 工具｜AI 佈局後寄生電容萃取（parasitic RC extraction，CapBench／AttentionCap）"}
+{"date": "2026-09-09", "title": "Mistral 完成 30 億歐元 D 輪、估值逾 210 億歐元，三星電子領投（歐洲史上最大科技股權募資，錢用於自建並持有資料中心＋租算力）"}
+{"date": "2026-09-09", "title": "PyTorch 基金會迎阿里雲與寒武紀為白金會員、螞蟻集團黃金會員（各獲理事會與技術諮詢委員會席位，逾250個中國組織已貢獻）"}
+{"date": "2026-09-09", "title": "Anthropic 據報導喊停 60 億美元收購 Decart（晶片省電軟體、盡職調查後放棄、主要以股票溢價約五成）"}
+{"date": "2026-09-09", "title": "NVIDIA 據估仍握約 92% 主權 AI 晶片（Counterpoint 8月數據），並向韓國政府與四大企業供應多達 26 萬顆晶片"}
+{"date": "2026-09-09", "title": "ASML 拉齊台積電、三星、Intel 押注 High NA EUV，共推 6→12 吋光罩路線圖（目標2033、單台約4億美元、產能約+40%）"}
+{"date": "2026-09-09", "title": "開源自主編碼代理 OpenHands 推出 1.0（Docker沙箱、安全政策、資源上限、外掛系統，約68% SWE-bench Verified）"}
+{"date": "2026-09-09", "title": "GitHub Enterprise Server 3.22 正式上線（GA）"}
+{"date": "2026-09-09", "title": "百度發表新一代 Super 小度端側 AI 硬體（智慧螢幕、陪伴螢幕、第二代監控攝影機）"}
+{"date": "2026-09-09", "title": "arXiv 2609.04058：agentic LLM 主導後量子密碼加速器從RTL到PCIe bring-up，232次實驗成功率71.6%，硬體耦合梯度（文件77-85% vs 合成/上板50-53%）"}
+{"date": "2026-09-09", "title": "主軸：AI 的地圖「上層多極、底層集中」——資本與開源治理搬離美國（三星領投Mistral＋中國三巨頭進PyTorch治理），但ASML／NVIDIA 機台與算力仍集中"}
+{"date": "2026-09-09", "title": "概念：主權 AI（Sovereign AI）"}
+{"date": "2026-09-09", "title": "半導體專區：IC 設計｜agentic LLM 端到端晶片設計（RTL→流片）的能力邊界與可觀測性"}
