@@ -601,3 +601,12 @@
 {"date": "2026-09-09", "title": "主軸：AI 的地圖「上層多極、底層集中」——資本與開源治理搬離美國（三星領投Mistral＋中國三巨頭進PyTorch治理），但ASML／NVIDIA 機台與算力仍集中"}
 {"date": "2026-09-09", "title": "概念：主權 AI（Sovereign AI）"}
 {"date": "2026-09-09", "title": "半導體專區：IC 設計｜agentic LLM 端到端晶片設計（RTL→流片）的能力邊界與可觀測性"}
+{"date": "2026-09-10", "title": "Qualcomm 與 AWS 多世代合作打造自研 AI 推論晶片＋1.6T 光互連（AI300 加入年度路線圖、股權認股權證綁定）"}
+{"date": "2026-09-10", "title": "ASML／台積電／三星啟動 12 吋大尺寸光罩倡議：解高 NA EUV 半視場拼接、試產 2031／量產就緒 2033"}
+{"date": "2026-09-10", "title": "Meta 推出個人 AI agent Muse：會下單付款、跑在 Muse Secure VM＋Sentinel 把關網路"}
+{"date": "2026-09-10", "title": "三星擴大與 ASML 合作、高 NA EUV 用於高階 DRAM 量產（目標 2028）"}
+{"date": "2026-09-10", "title": "Google DeepMind 發布 AlphaGenome Atlas：1PB 預算 90 億 DNA 變異分子影響＋AVI 分數"}
+{"date": "2026-09-10", "title": "GitHub Copilot 企業受管代理權限：集中封鎖／核准／自動放行＋最多 25 筆品質問題交代理自動修復"}
+{"date": "2026-09-10", "title": "主軸：AI 戰線移到推論產能——Qualcomm 綁 AWS 自研推論晶片＋ASML／台積電／三星 12 吋光罩同日出手"}
+{"date": "2026-09-10", "title": "概念：推論（Inference）vs. 訓練（Training）"}
+{"date": "2026-09-10", "title": "半導體專區：EDA 工具｜多角落時序簽核（Multi-Corner STA）的 ML 快速預測"}
