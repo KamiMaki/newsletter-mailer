@@ -610,3 +610,15 @@
 {"date": "2026-09-10", "title": "主軸：AI 戰線移到推論產能——Qualcomm 綁 AWS 自研推論晶片＋ASML／台積電／三星 12 吋光罩同日出手"}
 {"date": "2026-09-10", "title": "概念：推論（Inference）vs. 訓練（Training）"}
 {"date": "2026-09-10", "title": "半導體專區：EDA 工具｜多角落時序簽核（Multi-Corner STA）的 ML 快速預測"}
+{"date": "2026-09-11", "title": "DeepSeek V4.1-Flash 發表：因果編碼器–解碼器架構把 KV 快取砍到約 1/4、HBM 用量 1/4、快取命中價降到 $0.003/token"}
+{"date": "2026-09-11", "title": "Lightbits Inferra：虛擬化 GPU HBM、分層與預取 KV 快取，稱同硬體多跑 16 倍併發、TTFT 改善逾百倍"}
+{"date": "2026-09-11", "title": "台積電 2026 年 8 月營收年增 53.3%（約 163 億美元）、資本支出上修至 600–640 億美元、同時起造約 20 座廠"}
+{"date": "2026-09-11", "title": "DeepSeek 以 MIT 開源 V4.1-Flash 權重、離峰輸入 $0.15/M，9/14 起 V4-Pro 請求全導向 V4.1-Flash"}
+{"date": "2026-09-11", "title": "arXiv agent KV 快取研究潮（線上快取壓縮、跨回合意圖修剪、多層記憶體預測式管理）"}
+{"date": "2026-09-11", "title": "GitHub「AI Scan for pull request APIs」公開預覽（9/10）"}
+{"date": "2026-09-11", "title": "GitHub Actions 新增 cache-mode 存取控制、防 CI 快取投毒（9/10）"}
+{"date": "2026-09-11", "title": "Claude Code 2.1.266 修復 gateway 回歸（CLAUDE_CODE_USE_GATEWAY 誤觸雲端登入）"}
+{"date": "2026-09-11", "title": "小鵬 IRON 人形機器人走下產線（9/8 廣州、核心製程逾 80% 自動化、2027 起外部交付）"}
+{"date": "2026-09-11", "title": "主軸：agent 燒的是記憶體不是算力——DeepSeek V4.1-Flash 砍 KV 快取＋Lightbits Inferra 虛擬化 HBM，把 agent 成本瓶頸從算力移到記憶體"}
+{"date": "2026-09-11", "title": "概念：KV 快取（KV Cache，鍵值快取）"}
+{"date": "2026-09-11", "title": "半導體專區：IC 製造｜混合鍵合（hybrid bonding）對準與缺陷的 AI 量測（HBM／3D 堆疊）"}
