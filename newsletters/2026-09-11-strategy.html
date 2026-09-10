@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>策略學習報</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<div style="max-width:650px;margin:0 auto;background:#0f0f0f;padding:16px;">
+
+  <!-- Header -->
+  <div style="background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:14px;padding:28px 24px;text-align:center;margin-bottom:16px;">
+    <div style="font-size:22px;font-weight:800;color:#fff;letter-spacing:0.5px;">🐧 企鵝的AI交易策略學習報</div>
+    <div style="font-size:14px;color:rgba(255,255,255,0.9);margin-top:6px;">2026-09-11（週五）｜BTC × 美股大盤 × 策略學習</div>
+  </div>
+
+  <!-- Disclaimer banner -->
+  <div style="background:#1a1a1a;border:1px solid #f59e0b;border-radius:10px;padding:12px 16px;margin-bottom:16px;">
+    <div style="color:#f59e0b;font-size:12.5px;line-height:1.6;">⚠️ 本報純屬個人交易紀律與策略學習用途，不構成任何投資建議，內文不含買賣指示，請自行判斷風險。</div>
+  </div>
+
+  <!-- 今日總覽 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="font-size:17px;font-weight:700;color:#fff;margin-bottom:12px;">⚡ 今日總覽</div>
+    <ul style="margin:0;padding-left:20px;color:#d1d5db;font-size:15px;line-height:1.8;">
+      <li>BTC 續跌至 <strong style="color:#fbbf24;font-weight:700">$77,087</strong>（24h <strong style="color:#fbbf24;font-weight:700">約 -2.05%</strong>），盤中一度探至 <strong style="color:#fbbf24;font-weight:700">$76,748</strong>，逼近整數關卡，市場等待今晚 CPI 公布。</li>
+      <li>美股連<strong style="color:#e2e8f0">4 個交易日收黑</strong>：S&amp;P 500 收 <strong style="color:#fbbf24;font-weight:700">7,591.70（-0.58%）</strong>、那指 -1.07%、道瓊 -316.56 點，油價站上 <strong style="color:#fbbf24;font-weight:700">$100/桶</strong>創本輪新高。</li>
+      <li>10 年期公債殖利率升至 <strong style="color:#fbbf24;font-weight:700">4.97%</strong>（多年高檔），CPI 今晚公布、FOMC 9/16 登場，市場對<strong style="color:#e2e8f0">升息</strong>機率押注上看近六成。</li>
+      <li>今日策略學習主題：<strong style="color:#fbbf24;font-weight:700">均值回歸的進出場設計</strong>——BTC 今天正好跌到整數關卡附近，適合拿真實點位練習進出場規則。</li>
+    </ul>
+  </div>
+
+  <!-- BTC Section Badge -->
+  <div style="background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:10px;padding:10px 16px;margin-bottom:2px;text-align:center;">
+    <span style="color:#fff;font-size:15px;font-weight:700;">₿ 加密貨幣：BTC 區塊</span>
+  </div>
+
+  <div style="background:#1a1a1a;border-radius:0 0 12px 12px;padding:20px;margin-bottom:16px;">
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;margin:0 0 14px 0;">
+      BTC 目前約 <strong style="color:#fbbf24;font-weight:700">$77,087</strong>（9/11，CoinDesk／CoinGecko），過去 24 小時<strong style="color:#e2e8f0">下跌約 2.05%</strong>，盤中一度探至 <strong style="color:#fbbf24;font-weight:700">$76,748</strong> 低點，高點僅 $78,871，較昨天（9/10）的 $78,700 一線再度走弱。這是本週第四度未能站穩 $80K 整數關卡後的延續性拉回，市場關注的核心矛盾是：這只是 CPI 公布前的觀望性減碼，還是趨勢真的轉弱。現貨 BTC ETF 資金面同樣轉守：9/8-9 兩日累計淨流出約 <strong style="color:#fbbf24;font-weight:700">$166.8M</strong>，終止連 3 週的吸金趨勢，但 9 月至今整體仍是淨流入 $770.2M。以伊軍事衝突已延續 7 個月，油價衝破 $100/桶推升的通膨疑慮，是接下來幾天籠罩加密與股市的共同變數。
+    </p>
+
+    <div style="overflow-x:auto;margin-bottom:14px;">
+    <table style="width:100%;border-collapse:collapse;font-size:13px;color:#d1d5db;">
+      <tr style="background:#252525;">
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">週期</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">當前價</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">變動</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">趨勢方向</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">關鍵點位</th>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">日線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">$77,087</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">24h <strong style="color:#fbbf24;font-weight:700">約 -2.05%</strong></td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;"><strong style="color:#e2e8f0">續跌</strong>，逼近整數關卡</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">$76K 支撐</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">週線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">本週高點 $81,300 附近遇阻後轉跌</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">距 9/3 高點 $82,283 <strong style="color:#fbbf24;font-weight:700">約 -6.3%</strong></td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;"><strong style="color:#e2e8f0">高檔拉回延續</strong></td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">$80K 壓力／$76K 支撐</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">月線</td>
+        <td style="padding:8px;">9 月開局持續整理</td>
+        <td style="padding:8px;">8 月<strong style="color:#fbbf24;font-weight:700">單月上漲約 25%</strong>後進入拉回</td>
+        <td style="padding:8px;"><strong style="color:#e2e8f0">多頭結構承壓</strong>，波動明顯放大</td>
+        <td style="padding:8px;">$82,283 前高／$74K 月線支撐區</td>
+      </tr>
+    </table>
+    </div>
+
+    <div style="background:#252525;border-radius:8px;padding:14px;margin-bottom:14px;">
+      <div style="color:#fff;font-size:13.5px;font-weight:700;margin-bottom:8px;">🔍 四策略視角</div>
+      <div style="color:#d1d5db;font-size:13.5px;line-height:1.8;">
+        <strong style="color:#e2e8f0">順勢：</strong>連續在 $81-82K 遇阻後動能持續轉弱，且跌破日內 $78K 關卡，短線順勢角度轉為偏空觀望。<br>
+        <strong style="color:#e2e8f0">均值回歸：</strong>今天低點 $76,748 貼近月線支撐區，若出現止跌訊號值得留意，但目前尚未看到明確止穩跡象。<br>
+        <strong style="color:#e2e8f0">突破：</strong>跌破 $76K 整數關卡會打開向 $74K 甚至更低的下檔空間；反之站回 $80K 才能重新挑戰 $81-82K 壓力。<br>
+        <strong style="color:#e2e8f0">宏觀：</strong>CPI 今晚登場、FOMC 9/16 升息機率上看近六成，加上油價衝破 $100 帶動的通膨疑慮，是這波拉回與資金轉守背後的宏觀壓力來源。
+      </div>
+    </div>
+
+    <div style="color:#d1d5db;font-size:14px;line-height:1.7;margin-bottom:14px;">
+      <div style="color:#fff;font-size:13.5px;font-weight:700;margin-bottom:6px;">📰 加密圈新聞</div>
+      🔗 <a href="https://cryptobriefing.com/spot-bitcoin-etfs-sell-166m-market-evaluation/" style="color:#f59e0b;">現貨 BTC ETF 9/8-9 兩日合計淨流出約 $166.8M</a>，終止連 3 週淨流入趨勢，但 9 月至今整體仍淨流入 $770.2M。<br>
+      🔗 <a href="https://www.fxstreet.com/cryptocurrencies/news/bitcoin-holds-steady-on-positive-etf-flows-despite-short-term-holders-cashing-in-202609102028" style="color:#f59e0b;">短線持有者陸續獲利了結</a>，但整體 ETF 資金流向仍為 BTC 價格提供一定支撐。
+    </div>
+
+    <div style="background:#1a1a1a;border-left:3px solid #f59e0b;border-radius:0 8px 8px 0;padding:14px 16px;">
+      <div style="color:#f59e0b;font-size:13.5px;font-weight:700;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:13.5px;line-height:1.8;">
+        <li>連日跌破同一批整數關卡，是<strong style="color:#e2e8f0">流動性聚集區</strong>被反覆測試，不是單一天的雜訊。</li>
+        <li>ETF 資金流由淨流入轉淨流出只有 2 天，先別急著判斷<strong style="color:#e2e8f0">趨勢已經反轉</strong>，觀察是否延續。</li>
+        <li>CPI 公布前部位大小要能<strong style="color:#e2e8f0">同時扛住</strong>數字超預期與低於預期兩種結果。</li>
+        <li>地緣衝突拖了 7 個月還沒退場，代表你的風險假設該<strong style="color:#e2e8f0">重新校準</strong>，不是當作短期雜訊。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- US Stocks Section -->
+  <div style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:10px;padding:10px 16px;margin-bottom:2px;text-align:center;">
+    <span style="color:#fff;font-size:15px;font-weight:700;">📊 美股大盤區塊</span>
+  </div>
+
+  <div style="background:#1a1a1a;border-radius:0 0 12px 12px;padding:20px;margin-bottom:16px;">
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;margin:0 0 14px 0;">
+      S&amp;P 500 9/10 收 <strong style="color:#fbbf24;font-weight:700">7,591.70（-0.58%）</strong>，道瓊收 52,064.10（<strong style="color:#fbbf24;font-weight:700">-316.56 點</strong>），那斯達克收 26,081.72（<strong style="color:#fbbf24;font-weight:700">-0.65%</strong>），三大指數<strong style="color:#e2e8f0">連續第 4 個交易日收黑</strong>。SPY 對應收在約 $759.03，QQQ 收 708.62（-1.07%）。主要壓力是美國 WTI 原油站上 <strong style="color:#fbbf24;font-weight:700">$102.48（+6.7%）</strong>，隨美伊戰事延續至第 7 個月而升破每桶 $100，帶動通膨疑慮；加上 10 年期公債殖利率攀升至 <strong style="color:#fbbf24;font-weight:700">4.97%</strong>，逼近多年高檔。VIX 目前約 <strong style="color:#fbbf24;font-weight:700">16.34</strong>（VIX 可以想成市場的「保費」，數字越高代表投資人越擔心後續震盪），仍落在近一個多月 14-17 的區間上緣。8 月 PPI 月增 0.4%，符合預期；市場正倒數今晚登場的 CPI 與下週 9/16 的 FOMC 會議。
+    </p>
+
+    <div style="overflow-x:auto;margin-bottom:14px;">
+    <table style="width:100%;border-collapse:collapse;font-size:13px;color:#d1d5db;">
+      <tr style="background:#252525;">
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">週期</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">當前價</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">變動</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">趨勢方向</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">關鍵點位</th>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">日線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">S&amp;P 7,591.70（9/10）</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">S&amp;P <strong style="color:#fbbf24;font-weight:700">-0.58%</strong>／道瓊 -0.6%／那指 -0.65%</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;"><strong style="color:#e2e8f0">連 4 日收黑</strong>，短線轉弱</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">7,550-7,600 支撐</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">週線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">本週持續走弱</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">較 8 月高點 7,798.99 <strong style="color:#fbbf24;font-weight:700">約 -2.7%</strong></td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;"><strong style="color:#e2e8f0">從高檔持續拉回</strong></td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">7,650-7,700 反壓</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">月線</td>
+        <td style="padding:8px;">9 月開局承壓</td>
+        <td style="padding:8px;">8 月全月 <strong style="color:#fbbf24;font-weight:700">S&amp;P +2.7%、那指 +4%</strong></td>
+        <td style="padding:8px;"><strong style="color:#e2e8f0">長期趨勢未破</strong>，短線波動放大</td>
+        <td style="padding:8px;">7,798.99 前高（S&amp;P）</td>
+      </tr>
+    </table>
+    </div>
+
+    <div style="background:#252525;border-radius:8px;padding:14px;margin-bottom:14px;">
+      <div style="color:#fff;font-size:13.5px;font-weight:700;margin-bottom:8px;">🔍 四策略視角</div>
+      <div style="color:#d1d5db;font-size:13.5px;line-height:1.8;">
+        <strong style="color:#e2e8f0">順勢：</strong>連續第 4 個交易日收黑，短線動能明顯轉弱，順勢角度傾向保持觀望而非逢低加碼。<br>
+        <strong style="color:#e2e8f0">均值回歸：</strong>指數已較 8 月高點回落約 2.7%，但 VIX 僅 16 左右仍屬溫和，尚未出現極端恐慌訊號，止跌確認還不夠明確。<br>
+        <strong style="color:#e2e8f0">突破：</strong>觀察 7,550-7,600 是否守住，跌破打開更深拉回空間；站回 7,650-7,700 才算短線止穩訊號。<br>
+        <strong style="color:#e2e8f0">宏觀：</strong>油價站上 $100、10 年期殖利率逼近多年高檔、CPI 今晚公布加 FOMC 下週登場，多重宏觀變數同時發酵，是這波回調主因。
+      </div>
+    </div>
+
+    <div style="color:#d1d5db;font-size:14px;line-height:1.7;margin-bottom:14px;">
+      <div style="color:#fff;font-size:13.5px;font-weight:700;margin-bottom:6px;">📰 美股新聞</div>
+      🔗 <a href="https://finance.yahoo.com/markets/live/stock-market-today-thursday-september-10-dow-sp-500-nasdaq-oil-gains-100-083717303.html" style="color:#6366f1;">美股連 4 個交易日收黑</a>，油價站上 $100/桶、10 年期殖利率攀升是主要壓力來源。<br>
+      🔗 <a href="https://www.cnbc.com/2026/09/10/fridays-cpi-inflation-report-is-even-more-important-than-usual-heres-what-to-expect.html" style="color:#6366f1;">週五 CPI 報告重要性升高</a>：8 月非農優於預期已推升 9 月升息機率，CPI 是 FOMC 前最後一份關鍵數據。
+    </div>
+
+    <div style="background:#1a1a1a;border-left:3px solid #6366f1;border-radius:0 8px 8px 0;padding:14px 16px;">
+      <div style="color:#6366f1;font-size:13.5px;font-weight:700;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:13.5px;line-height:1.8;">
+        <li>油價、殖利率、CPI／FOMC 事件風險同時疊加時，先分辨<strong style="color:#e2e8f0">哪一個是主因</strong>。</li>
+        <li>VIX 仍在溫和區間，代表市場還沒進入<strong style="color:#e2e8f0">恐慌性拋售</strong>，拉回可能還沒走完。</li>
+        <li>連 4 日收黑但仍離高點不遠，還不能直接判斷<strong style="color:#e2e8f0">長期趨勢已轉空</strong>。</li>
+        <li>CPI 公布前部位要能<strong style="color:#e2e8f0">同時扛住</strong>升息機率上調與下調兩種劇本。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Strategy Learning Section -->
+  <div style="background:linear-gradient(135deg,#8b5cf6,#6366f1);border-radius:10px;padding:10px 16px;margin-bottom:2px;text-align:center;">
+    <span style="color:#fff;font-size:15px;font-weight:700;">📖 今日策略學習</span>
+  </div>
+
+  <div style="background:#1a1a1a;border-radius:0 0 12px 12px;padding:20px;margin-bottom:16px;">
+    <div style="color:#fff;font-size:16px;font-weight:700;margin-bottom:6px;">均值回歸的進出場設計</div>
+    <p style="color:#d1d5db;font-size:14.5px;line-height:1.7;margin:0 0 14px 0;">
+      為什麼今天學這個：BTC 今天盤中低點來到 <strong style="color:#e2e8f0">$76,748</strong>，正好貼近整數關卡與月線支撐區，是市場典型會出現「要不要接刀」念頭的位置。均值回歸交易最容易出錯的地方，<strong style="color:#e2e8f0">不是要不要進場，是進場前有沒有先把出場規則寫死</strong>。今天正好拿這個真實點位，練習一次完整的進出場設計。
+    </p>
+    <div style="color:#fff;font-size:13.5px;font-weight:700;margin-bottom:8px;">核心概念</div>
+    <ul style="margin:0 0 14px 0;padding-left:18px;color:#d1d5db;font-size:13.5px;line-height:1.8;">
+      <li>進場訊號不能只看<strong style="color:#e2e8f0">「跌多了」</strong>，要有具體確認：乖離率、RSI 背離或觸及區間下緣。</li>
+      <li>出場規則要在<strong style="color:#e2e8f0">進場前</strong>寫好兩層：接近均值的停利、跌破區間假設的停損。</li>
+      <li>最大風險是把<strong style="color:#e2e8f0">趨勢反轉</strong>誤判成拉回，要先確認區間假設還成不成立。</li>
+      <li>停損距離決定部位大小，不能因為<strong style="color:#e2e8f0">「相信會漲回來」</strong>就放大部位攤平。</li>
+    </ul>
+
+    <div style="background:#252525;border-left:3px solid #8b5cf6;border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:14px;">
+      <div style="color:#8b5cf6;font-size:13px;font-weight:700;margin-bottom:6px;">🎯 情境演練</div>
+      <div style="color:#d1d5db;font-size:13.5px;line-height:1.7;">
+        假設今天 BTC 跌到今日低點 <strong style="color:#fbbf24;font-weight:700">$76,748</strong>，且技術面出現短線止穩訊號（例如 RSI 從超賣區回升），這是均值回歸交易者會關注的進場情境。進場前要先寫死兩件事：<strong style="color:#e2e8f0">停利</strong>設在 $80K 附近（近期均值區）附近，<strong style="color:#e2e8f0">停損</strong>設在跌破 $74K（月線支撐失守，代表區間假設失效）。如果之後真的跌破 $74K，代表這不是拉回是趨勢轉弱，均值回歸倉位就該按照預先設好的規則出場，而不是凹單等反彈——那已經不是均值回歸，是賭博。
+      </div>
+    </div>
+
+    <div style="color:#d1d5db;font-size:13.5px;line-height:1.7;">
+      <blockquote style="margin:0;padding:12px 14px;background:#252525;border-radius:8px;">
+        💡 <strong style="color:#e2e8f0">今日研究速讀</strong>：一篇分析那斯達克掛牌股票「訂單流」的最新研究，用貝氏線上變點偵測（BOCPD）等方法，即時捕捉買賣力道背後<strong style="color:#e2e8f0">結構性轉變的時間點</strong>，藉此判斷市場正處於穩定期還是不穩定期。白話說：與其憑感覺猜「現在是不是要反轉了」，這類方法試著用統計訊號，量化偵測市場<strong style="color:#e2e8f0">從一種行為模式切換到另一種</strong>的當下——這正是均值回歸交易者判斷「區間假設是否還成立」時最需要的工具。<br>
+        🔗 <a href="https://arxiv.org/abs/2609.07989" style="color:#8b5cf6;">原文：Regimes in the Order Flow</a>
+      </blockquote>
+    </div>
+  </div>
+
+  <!-- Discipline Section -->
+  <div style="background:linear-gradient(135deg,#10b981,#06b6d4);border-radius:10px;padding:10px 16px;margin-bottom:2px;text-align:center;">
+    <span style="color:#fff;font-size:15px;font-weight:700;">🧭 今日交易紀律提醒</span>
+  </div>
+
+  <div style="background:#1a1a1a;border-radius:0 0 12px 12px;padding:20px;margin-bottom:16px;">
+    <div style="color:#fff;font-size:15px;font-weight:700;margin-bottom:8px;">週五紀律主題：週末風險管理</div>
+    <p style="color:#d1d5db;font-size:14.5px;line-height:1.7;margin:0 0 10px 0;">
+      「週末風險管理今天特別複雜：CPI 傍晚公布、下週三 FOMC 還在等，加上以伊衝突已經打滿七個月——三重風險同時疊在你收盤後兩天沒辦法即時反應的空窗期裡，先問部位撐不撐得住這三個情境疊加在一起，而不是先猜 CPI 數字會不會超預期。」
+    </p>
+    <p style="color:#d1d5db;font-size:14px;line-height:1.7;margin:0;">
+      應用情境：今晚 CPI 公布後，BTC 與美股很可能出現劇烈波動，但週末沒有正常交易時段可以即時調整；下週三 FOMC 前市場對升息的押注已升到近六成，任何意外都可能延續到週一開盤。與其在週五收盤前猜測結果，不如先問自己：如果 CPI 超預期偏高、FOMC 意外升息、油價因地緣衝突再度飆升，這三種情境<strong style="color:#e2e8f0">同時發生</strong>，現在的部位大小扛得住嗎？扛不住的話，收盤前先減碼，而不是週末靠運氣。
+    </p>
+  </div>
+
+  <!-- Reflection -->
+  <div style="background:linear-gradient(135deg,#10b981,#06b6d4);padding:1px;border-radius:12px;margin-bottom:16px;">
+    <div style="background:#1a1a1a;border-radius:11px;padding:18px;">
+      <div style="color:#fff;font-size:16px;font-weight:700;margin-bottom:10px;">💭 今日反思</div>
+      <ul style="margin:0 0 10px 0;padding-left:18px;color:#d1d5db;font-size:14px;line-height:1.8;">
+        <li>如果今天要在 $76K-77K 附近逢低進場，我的停利與停損有沒有在進場前就寫死？</li>
+        <li>我今天有沒有把「BTC 跌多了應該會反彈」的直覺，誤當成一個真正有確認訊號的進場理由？</li>
+        <li>今晚 CPI 公布、下週 FOMC 登場前，我現在的部位大小，同時扛得住三種情境疊加發生嗎？</li>
+      </ul>
+      <div style="color:#9ca3af;font-size:12.5px;">挑一題寫進交易日誌，這就是今天的功課。</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="text-align:center;padding:16px 8px;color:#6b7280;font-size:11.5px;line-height:1.8;">
+    本報為 Darren 的個人學習報，內容僅供交易紀律與策略思維學習之用，不構成投資建議，亦不代表對未來價格之預測。所有市場數據均取自公開來源（CoinDesk、CoinGecko、Yahoo Finance、CNBC、TheStreet、MacroRadar、TradingEconomics、Federal Reserve H.15、Kiplinger、TFTC、FXStreet、arXiv 等），部分數值為以官方收盤價搭配同日公開漲跌幅換算之約略值（標註「約」），資料截止時間以文中標註為準（美股 9/10 收盤、加密貨幣與殖利率為 9/11 報價），實際數字請以官方或交易所公告為準。<br>
+    本信件由 AI 自動生成。
+  </div>
+
+</div>
+</body>
+</html>
