@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>策略學習報</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<div style="max-width:650px;margin:0 auto;background:#0f0f0f;padding:16px;">
+
+  <!-- Header -->
+  <div style="background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:14px;padding:28px 24px;text-align:center;margin-bottom:16px;">
+    <div style="font-size:22px;font-weight:800;color:#fff;letter-spacing:0.5px;">🐧 企鵝的AI交易策略學習報</div>
+    <div style="font-size:14px;color:rgba(255,255,255,0.9);margin-top:6px;">2026-09-12（週六）｜BTC × 美股大盤 × 策略學習</div>
+  </div>
+
+  <!-- Disclaimer banner -->
+  <div style="background:#1a1a1a;border:1px solid #f59e0b;border-radius:10px;padding:12px 16px;margin-bottom:16px;">
+    <div style="color:#f59e0b;font-size:12.5px;line-height:1.6;">⚠️ 本報純屬個人交易紀律與策略學習用途，不構成任何投資建議，內文不含買賣指示，請自行判斷風險。</div>
+  </div>
+
+  <!-- 今日總覽 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="font-size:17px;font-weight:700;color:#fff;margin-bottom:12px;">⚡ 今日總覽</div>
+    <ul style="margin:0;padding-left:20px;color:#d1d5db;font-size:15px;line-height:1.8;">
+      <li>BTC 約 <strong style="color:#fbbf24;font-weight:700">$77,218</strong>（9/11），較本週高點 <strong style="color:#fbbf24;font-weight:700">$82,283</strong>（9/3）已<strong style="color:#e2e8f0">回撤約 6.2%</strong>，現貨 ETF 連 3 日淨流出合計約 <strong style="color:#fbbf24;font-weight:700">$449M</strong>，但 9 月迄今整體仍淨流入。</li>
+      <li>美股週五（9/11）<strong style="color:#e2e8f0">止住連 4 黑</strong>：S&amp;P 500 <strong style="color:#fbbf24;font-weight:700">+0.96%</strong>、道瓊 +1.15%、那指 +0.88%，但整週 S&amp;P 仍<strong style="color:#fbbf24;font-weight:700">收跌 0.6%</strong>。</li>
+      <li>8 月 CPI 年增 <strong style="color:#fbbf24;font-weight:700">3.4%</strong>、核心月增 0.3% 略高於預期，帶動 9/16 FOMC <strong style="color:#e2e8f0">升息機率</strong>跳升至近 <strong style="color:#fbbf24;font-weight:700">87%</strong>；10 年期公債殖利率逼近 <strong style="color:#fbbf24;font-weight:700">5%</strong> 關卡。</li>
+      <li>今日策略學習主題：<strong style="color:#fbbf24;font-weight:700">最大回撤與資金曲線管理</strong>——這週 BTC 從高點拉回逾 6%，正好是練習回撤紀律的活教材。</li>
+    </ul>
+  </div>
+
+  <!-- BTC Section Badge -->
+  <div style="background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:10px;padding:10px 16px;margin-bottom:2px;text-align:center;">
+    <span style="color:#fff;font-size:15px;font-weight:700;">₿ 加密貨幣：BTC 區塊</span>
+  </div>
+
+  <div style="background:#1a1a1a;border-radius:0 0 12px 12px;padding:20px;margin-bottom:16px;">
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;margin:0 0 14px 0;">
+      BTC 目前約 <strong style="color:#fbbf24;font-weight:700">$77,218</strong>（9/11，CoinDesk），較前一交易日<strong style="color:#e2e8f0">大致持平</strong>（9/10 收 $77,087），本週一度探至 <strong style="color:#fbbf24;font-weight:700">$76,748</strong> 低點，目前價位剛好貼在 20 日均線 $77,071 附近（均線可以想成近期買賣力道的「平均成本」，價格在均線上下拉鋸代表多空還沒分出勝負）。以伊軍事衝突本週再度升溫，雙方展開開戰以來最激烈交火，油價一度衝破 $105/桶，是這波拉回的主要導火線。現貨 BTC ETF 資金面同步轉守：9/8 至 9/10 連 3 個交易日淨流出，合計約 <strong style="color:#fbbf24;font-weight:700">$449M</strong>，但 9 月迄今整體仍是淨流入約 $320.5M，代表月初的吸金力道還沒被完全抵銷。
+    </p>
+
+    <div style="overflow-x:auto;margin-bottom:14px;">
+    <table style="width:100%;border-collapse:collapse;font-size:13px;color:#d1d5db;">
+      <tr style="background:#252525;">
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">週期</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">當前價</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">變動%</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">趨勢方向</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">關鍵點位</th>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">日線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">$77,218（9/11）</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">較昨日<strong style="color:#fbbf24;font-weight:700">約持平</strong></td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;"><strong style="color:#e2e8f0">高檔震盪</strong>，貼近 20 日均線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">$76K 支撐／$78K 阻力</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">週線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">本週低點 $76,748</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">距 9/3 高點 $82,283 <strong style="color:#fbbf24;font-weight:700">約 -6.2%</strong></td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;"><strong style="color:#e2e8f0">高檔拉回整理</strong></td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">$82,283 前高／$76K 支撐</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">月線</td>
+        <td style="padding:8px;">9 月開局承壓</td>
+        <td style="padding:8px;">8 月<strong style="color:#fbbf24;font-weight:700">單月上漲約 25%</strong>後進入拉回</td>
+        <td style="padding:8px;"><strong style="color:#e2e8f0">長期多頭結構未破</strong>，動能減速（MACD 柱狀圖轉負）</td>
+        <td style="padding:8px;">$82,283 前高／$74K 月線支撐區</td>
+      </tr>
+    </table>
+    </div>
+
+    <div style="background:#252525;border-radius:8px;padding:14px;margin-bottom:14px;">
+      <div style="color:#fff;font-size:13.5px;font-weight:700;margin-bottom:8px;">🔍 四策略視角</div>
+      <div style="color:#d1d5db;font-size:13.5px;line-height:1.8;">
+        <strong style="color:#e2e8f0">順勢：</strong>價格卡在 20 日均線附近拉鋸，尚未確立新方向，順勢角度傾向觀望等待均線站穩或跌破的訊號。<br>
+        <strong style="color:#e2e8f0">均值回歸：</strong>本週回撤約 6.2%，力度屬於健康拉回而非崩跌，若止跌訊號出現，均值回歸者會關注是否收復 $78K。<br>
+        <strong style="color:#e2e8f0">突破：</strong>站回 $78K 可望挑戰 $80K 整數關卡；跌破 $76K 則打開測試 $74K 月線支撐區的空間。<br>
+        <strong style="color:#e2e8f0">宏觀：</strong>以伊衝突再度升溫、CPI 公布後 FOMC 升息機率跳升，兩股力道同時牽制風險偏好，是本週回撤的核心背景。
+      </div>
+    </div>
+
+    <div style="color:#d1d5db;font-size:14px;line-height:1.7;margin-bottom:14px;">
+      <div style="color:#fff;font-size:13.5px;font-weight:700;margin-bottom:6px;">📰 加密圈新聞</div>
+      🔗 <a href="https://www.cryptotimes.io/2026/09/11/bitcoin-etfs-lose-449m-in-3-days-ahead-of-us-cpi/" style="color:#f59e0b;">現貨 BTC ETF 9/8-9/10 連 3 日淨流出合計約 $449M</a>，CPI 公布前資金面明顯轉守，但 9 月至今整體仍淨流入約 $320.5M。<br>
+      🔗 <a href="https://bitcoinmagazine.com/markets/bitcoin-price-drops-on-us-iran-fighting" style="color:#f59e0b;">以伊戰事本週再度升溫</a>，雙方展開開戰以來最激烈交火，油價一度衝破 $105/桶，BTC 單日一度重挫逾 2%。
+    </div>
+
+    <div style="background:#1a1a1a;border-left:3px solid #f59e0b;border-radius:0 8px 8px 0;padding:14px 16px;">
+      <div style="color:#f59e0b;font-size:13.5px;font-weight:700;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:13.5px;line-height:1.8;">
+        <li>從 $82,283 高點拉回 6.2%，是<strong style="color:#e2e8f0">正常回撤</strong>，先別急著套用崩盤劇本。</li>
+        <li>ETF 資金流連 3 日淨流出，觀察是<strong style="color:#e2e8f0">趨勢反轉</strong>還是短線觀望性減碼。</li>
+        <li>價格貼著均線拉鋸時，<strong style="color:#e2e8f0">部位不宜提前押單一方向</strong>，等訊號明確再動作。</li>
+        <li>地緣衝突與 FOMC 事件疊加時，先評估<strong style="color:#e2e8f0">部位能承受的最大回撤</strong>再決定要不要留倉。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- US Stocks Section -->
+  <div style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:10px;padding:10px 16px;margin-bottom:2px;text-align:center;">
+    <span style="color:#fff;font-size:15px;font-weight:700;">📊 美股大盤區塊</span>
+  </div>
+
+  <div style="background:#1a1a1a;border-radius:0 0 12px 12px;padding:20px;margin-bottom:16px;">
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;margin:0 0 14px 0;">
+      S&amp;P 500 週五（9/11）反彈 <strong style="color:#fbbf24;font-weight:700">+0.96%</strong>，道瓊 +1.15%、那斯達克 +0.88%，止住連 4 個交易日收黑的頹勢，SPY 收在約 <strong style="color:#fbbf24;font-weight:700">$765.94</strong>。但拉長到整週看，S&amp;P 500 仍<strong style="color:#e2e8f0">收跌約 0.6%</strong>、那指跌 0.7%、道瓊跌 426 點，Friday 的反彈只是把本週跌幅收斂，不是趨勢逆轉。反彈的關鍵是 8 月 CPI 公布後，油價與長天期公債殖利率雙雙從高檔回落：WTI 原油 -2.4% 收 $100.05/桶，市場暫時鬆一口氣。年初至今 S&amp;P 500 仍<strong style="color:#fbbf24;font-weight:700">上漲約 11.9%</strong>，長期多頭結構未破。
+    </p>
+
+    <p style="color:#d1d5db;font-size:14.5px;line-height:1.7;margin:0 0 10px 0;">
+      <strong style="color:#e2e8f0">QQQ</strong> 週五收 <strong style="color:#fbbf24;font-weight:700">$715.56</strong>，跟隨那指走勢反彈但本週同樣收跌，科技股對殖利率走升較為敏感，是這波拉回中相對弱勢的族群。
+    </p>
+    <p style="color:#d1d5db;font-size:14.5px;line-height:1.7;margin:0 0 10px 0;">
+      <strong style="color:#e2e8f0">VIX</strong>（可以想成市場的「保費」，數字越高代表投資人越願意付錢買避險）本週一度衝上 <strong style="color:#fbbf24;font-weight:700">28 個交易日新高</strong>，反映油價與通膨數據交織下的緊張情緒，但 CPI 公布後迅速降溫，週五收 <strong style="color:#fbbf24;font-weight:700">15.92（-10.79%）</strong>，顯示市場對「壞消息沒有更壞」鬆了一口氣。
+    </p>
+    <p style="color:#d1d5db;font-size:14.5px;line-height:1.7;margin:0 0 14px 0;">
+      10 年期公債殖利率本週飆升近 20 個基點，一度逼近 <strong style="color:#fbbf24;font-weight:700">5%</strong> 關卡，為 2007 年以來最高檔區，主因是美國生產者物價（PPI）在以伊戰事推升能源成本下加速上升。8 月 CPI 年增 <strong style="color:#fbbf24;font-weight:700">3.4%</strong>、核心月增 0.3% 略高於預期，市場隨即將 9/16 FOMC <strong style="color:#e2e8f0">升息機率</strong>由約 69% 一口氣推升至近 <strong style="color:#fbbf24;font-weight:700">87%</strong>。
+    </p>
+
+    <div style="overflow-x:auto;margin-bottom:14px;">
+    <table style="width:100%;border-collapse:collapse;font-size:13px;color:#d1d5db;">
+      <tr style="background:#252525;">
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">週期</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">當前價</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">變動</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">趨勢方向</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">關鍵點位</th>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">日線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">SPY $765.94（9/11）</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">S&amp;P <strong style="color:#fbbf24;font-weight:700">+0.96%</strong>／道瓊 +1.15%／那指 +0.88%</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;"><strong style="color:#e2e8f0">止跌反彈</strong>，結束連 4 黑</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">$760 支撐／$767 阻力</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">週線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">本週先跌後彈</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">S&amp;P 週跌 <strong style="color:#fbbf24;font-weight:700">-0.6%</strong>／那指 -0.7%／道瓊 -426 點</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;"><strong style="color:#e2e8f0">高檔拉回未止</strong></td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">前波高點反壓區</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">月線</td>
+        <td style="padding:8px;">9 月開局震盪</td>
+        <td style="padding:8px;">年初至今 S&amp;P <strong style="color:#fbbf24;font-weight:700">+11.9%</strong>、那指 +13.3%、道瓊 +9.4%</td>
+        <td style="padding:8px;"><strong style="color:#e2e8f0">長期多頭結構未破</strong>，短線波動放大</td>
+        <td style="padding:8px;">年初至今高點附近整理</td>
+      </tr>
+    </table>
+    </div>
+
+    <div style="background:#252525;border-radius:8px;padding:14px;margin-bottom:14px;">
+      <div style="color:#fff;font-size:13.5px;font-weight:700;margin-bottom:8px;">🔍 四策略視角</div>
+      <div style="color:#d1d5db;font-size:13.5px;line-height:1.8;">
+        <strong style="color:#e2e8f0">順勢：</strong>週五反彈打斷連 4 黑，但整週仍收跌，順勢訊號尚不足以確認短線動能已經翻多。<br>
+        <strong style="color:#e2e8f0">均值回歸：</strong>VIX 從 28 日新高快速降溫至 15.92，顯示極端恐慌情緒已消退，指數有機會向近期均值修復。<br>
+        <strong style="color:#e2e8f0">突破：</strong>觀察 SPY 能否站穩 $767 上方延續反彈；跌破 $760 則本週回撤可能延續。<br>
+        <strong style="color:#e2e8f0">宏觀：</strong>CPI 落地、FOMC 升息機率跳升至近 87%，加上 10 年期殖利率逼近 5%，下週三 FOMC 決策是市場最大變數。
+      </div>
+    </div>
+
+    <div style="color:#d1d5db;font-size:14px;line-height:1.7;margin-bottom:14px;">
+      <div style="color:#fff;font-size:13.5px;font-weight:700;margin-bottom:6px;">📰 美股新聞</div>
+      🔗 <a href="https://finance.yahoo.com/markets/live/stock-market-today-friday-september-11-dow-sp-500-nasdaq-cpi-inflation-082201751.html" style="color:#6366f1;">CPI 落在預期內帶動美股反彈</a>，油價與殖利率同步從高檔回落，但 FOMC 升息機率一口氣跳升至近 87%。<br>
+      🔗 <a href="https://www.bloomberg.com/news/articles/2026-09-11/global-bond-selloff-sends-10-year-treasury-yields-to-cusp-of-5" style="color:#6366f1;">全球公債賣壓將 10 年期殖利率推向 5% 邊緣</a>，為 2007 年以來最高檔區，市場密切關注下週 FOMC 決策。
+    </div>
+
+    <div style="background:#1a1a1a;border-left:3px solid #6366f1;border-radius:0 8px 8px 0;padding:14px 16px;">
+      <div style="color:#6366f1;font-size:13.5px;font-weight:700;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:13.5px;line-height:1.8;">
+        <li>單日反彈不等於<strong style="color:#e2e8f0">趨勢反轉</strong>，先看整週數據再下結論。</li>
+        <li>VIX 從高檔快速回落，是<strong style="color:#e2e8f0">恐慌情緒消退</strong>的訊號，但不代表風險事件已經結束。</li>
+        <li>殖利率逼近 5% 這種<strong style="color:#e2e8f0">多年高檔區</strong>，是資金定價邏輯的重要分水嶺，值得持續追蹤。</li>
+        <li>FOMC 前部位要能<strong style="color:#e2e8f0">同時扛住</strong>升息與暫停兩種劇本，而不是賭其中一種。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Strategy Learning Section -->
+  <div style="background:linear-gradient(135deg,#8b5cf6,#6366f1);border-radius:10px;padding:10px 16px;margin-bottom:2px;text-align:center;">
+    <span style="color:#fff;font-size:15px;font-weight:700;">📖 今日策略學習</span>
+  </div>
+
+  <div style="background:#1a1a1a;border-radius:0 0 12px 12px;padding:20px;margin-bottom:16px;">
+    <div style="color:#fff;font-size:16px;font-weight:700;margin-bottom:6px;">最大回撤與資金曲線管理</div>
+    <p style="color:#d1d5db;font-size:14.5px;line-height:1.7;margin:0 0 14px 0;">
+      為什麼今天學這個：BTC 這週從 9/3 高點 <strong style="color:#e2e8f0">$82,283</strong> 拉回到 $76,748，跌幅約 6.2%；美股整週也收跌，VIX 中途一度衝上 28 日新高。這正是一次教科書等級的<strong style="color:#e2e8f0">「回撤事件」</strong>——重點不是這次拉回會不會止穩，而是你的資金曲線在拉回發生時，有沒有跟著行情一起失控。
+    </p>
+    <div style="color:#fff;font-size:13.5px;font-weight:700;margin-bottom:8px;">核心概念</div>
+    <ul style="margin:0 0 14px 0;padding-left:18px;color:#d1d5db;font-size:13.5px;line-height:1.8;">
+      <li><strong style="color:#e2e8f0">最大回撤（Max Drawdown）</strong>是資金曲線從高點到低點的最大跌幅，衡量的是你能撐多久，不是賺多少。</li>
+      <li>同樣的<strong style="color:#e2e8f0">夏普值</strong>，回撤深度可能天差地遠——報酬分布的肥尾與波動聚集會讓實際回撤比想像中更深。</li>
+      <li>回撤中最危險的不是虧損本身，是<strong style="color:#e2e8f0">在回撤過程中加碼攤平</strong>，把單次拉回變成資金曲線的永久性損傷。</li>
+      <li>資金曲線管理的核心是<strong style="color:#e2e8f0">先設好能接受的回撤上限</strong>，觸及就強制減碼，而不是事後才決定要不要停手。</li>
+    </ul>
+
+    <div style="background:#252525;border-left:3px solid #8b5cf6;border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:14px;">
+      <div style="color:#8b5cf6;font-size:13px;font-weight:700;margin-bottom:6px;">🎯 情境演練</div>
+      <div style="color:#d1d5db;font-size:13.5px;line-height:1.7;">
+        假設你在 9/3 BTC 觸及 <strong style="color:#fbbf24;font-weight:700">$82,283</strong> 高點時滿倉持有，到本週低點 $76,748，帳面回撤約 <strong style="color:#fbbf24;font-weight:700">6.2%</strong>。如果你事先設定「單一部位最大可接受回撤 5%，觸及就減碼一半」，那麼在跌破約 $78,168（高點 -5%）時你就該已經行動，而不是等到回撤擴大到 6.2% 才驚覺部位太重。這條規則不是要你精準預測底部，而是把<strong style="color:#e2e8f0">「資金曲線的最大跌幅」</strong>控制在你能承受的範圍內——這樣即使這次拉回還沒結束，你手上仍有籌碼可以應對下週 FOMC 這類新的變數，而不是提早出局。
+      </div>
+    </div>
+
+    <div style="color:#d1d5db;font-size:13.5px;line-height:1.7;">
+      <blockquote style="margin:0;padding:12px 14px;background:#252525;border-radius:8px;">
+        💡 <strong style="color:#e2e8f0">今日研究速讀</strong>：一篇探討系統化交易策略回撤風險的論文指出，光看夏普值和波動率，並不足以判斷一個策略實際會經歷多深、多久的回撤。研究用蒙地卡羅模擬延伸了經典的回撤框架，並測試在報酬分布偏態、肥尾、波動聚集等更貼近真實市場的情境下，<strong style="color:#e2e8f0">最大回撤深度、最長恢復時間</strong>等四個指標會如何各自變化——結論是：這些風險指標彼此並不同步惡化，不能只看單一數字就下結論。白話說：兩個「看起來績效差不多」的策略，實際的回撤體驗可能差很多，這也是為什麼<strong style="color:#e2e8f0">資金曲線管理</strong>不能只靠一個夏普值就放心。<br>
+        🔗 <a href="https://arxiv.org/abs/2608.00127" style="color:#8b5cf6;">原文：Drawdown Risk Beyond Brownian Motion</a>
+      </blockquote>
+    </div>
+  </div>
+
+  <!-- Discipline Section -->
+  <div style="background:linear-gradient(135deg,#10b981,#06b6d4);border-radius:10px;padding:10px 16px;margin-bottom:2px;text-align:center;">
+    <span style="color:#fff;font-size:15px;font-weight:700;">🧭 今日交易紀律提醒</span>
+  </div>
+
+  <div style="background:#1a1a1a;border-radius:0 0 12px 12px;padding:20px;margin-bottom:16px;">
+    <div style="color:#fff;font-size:15px;font-weight:700;margin-bottom:8px;">週六紀律主題：復盤方法</div>
+    <p style="color:#d1d5db;font-size:14.5px;line-height:1.7;margin:0 0 10px 0;">
+      「復盤這週不該只看 BTC 從高點拉回了多少，要看你的資金曲線這週的回撤，有多少是市場造成的、有多少是你自己在拉回中加碼或猶豫造成的——這兩種回撤的解法完全不一樣。」
+    </p>
+    <p style="color:#d1d5db;font-size:14px;line-height:1.7;margin:0;">
+      應用情境：這週 BTC 從 $82,283 拉回到 $76,748，現貨 ETF 也連 3 日淨流出，如果你這週有部位，先攤開自己的交易紀錄問：這段回撤期間，我有沒有在下跌過程中<strong style="color:#e2e8f0">加碼攤平</strong>？有沒有因為「怕錯過反彈」而提早進場，結果又被甩了一次？復盤的目的不是替這週的盈虧找理由，是分清楚哪些回撤是<strong style="color:#e2e8f0">市場本來就會有的波動</strong>，哪些是自己的決策把單純的回撤放大成了更深的傷害。下週三 FOMC 前，先把這個答案寫清楚，比猜測升息與否更重要。
+    </p>
+  </div>
+
+  <!-- Reflection -->
+  <div style="background:linear-gradient(135deg,#10b981,#06b6d4);padding:1px;border-radius:12px;margin-bottom:16px;">
+    <div style="background:#1a1a1a;border-radius:11px;padding:18px;">
+      <div style="color:#fff;font-size:16px;font-weight:700;margin-bottom:10px;">💭 今日反思</div>
+      <ul style="margin:0 0 10px 0;padding-left:18px;color:#d1d5db;font-size:14px;line-height:1.8;">
+        <li>這週 BTC 從高點拉回 6.2%，我有沒有事先設定「回撤到多少就該減碼」的規則？</li>
+        <li>這週資金曲線的下跌，有多少是市場本身的波動，有多少是我自己的決策造成的？</li>
+        <li>下週三 FOMC 前，我現在的部位大小，能不能同時扛住升息與暫停兩種結果？</li>
+      </ul>
+      <div style="color:#9ca3af;font-size:12.5px;">挑一題寫進交易日誌，這就是今天的功課。</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="text-align:center;padding:16px 8px;color:#6b7280;font-size:11.5px;line-height:1.8;">
+    本報為 Darren 的個人學習報，內容僅供交易紀律與策略思維學習之用，不構成投資建議，亦不代表對未來價格之預測。所有市場數據均取自公開來源（CoinDesk、Bitcoin Magazine、CryptoTimes、Yahoo Finance、Bloomberg、CNBC、TheStreet、WTOP、Benzinga、TFTC、arXiv 等），部分數值為以官方收盤價搭配同日公開漲跌幅換算之約略值（標註「約」），資料截止時間以文中標註為準（美股 9/11 收盤、加密貨幣為 9/11 報價），實際數字請以官方或交易所公告為準。<br>
+    本信件由 AI 自動生成。
+  </div>
+
+</div>
+</body>
+</html>
