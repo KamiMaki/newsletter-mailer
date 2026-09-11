@@ -622,3 +622,14 @@
 {"date": "2026-09-11", "title": "主軸：agent 燒的是記憶體不是算力——DeepSeek V4.1-Flash 砍 KV 快取＋Lightbits Inferra 虛擬化 HBM，把 agent 成本瓶頸從算力移到記憶體"}
 {"date": "2026-09-11", "title": "概念：KV 快取（KV Cache，鍵值快取）"}
 {"date": "2026-09-11", "title": "半導體專區：IC 製造｜混合鍵合（hybrid bonding）對準與缺陷的 AI 量測（HBM／3D 堆疊）"}
+{"date": "2026-09-12", "title": "Sakana Fugu Ultra v2：編排型模型 8 項評測 5 項最佳、池中不含 Fable 5.1／GPT-6-Astra（Chartography 48.3／DeepSWE 74.3）"}
+{"date": "2026-09-12", "title": "Sakana Fugu Max：成本型編排模型 $2／$6、納入 NVIDIA Nemotron，主打可抽換模型池＝供應鏈韌性"}
+{"date": "2026-09-12", "title": "OpenAI GPT-Live-1：全雙工即時語音模型把推理外包給搭配模型，Full Duplex Bench +30pp、$0.05／分鐘"}
+{"date": "2026-09-12", "title": "Anthropic 第 4 份濫用報告《Detecting and Countering Misuse of AI: September 2026》：AI 從顧問變作業指揮官、靠多代理框架編排、API 金鑰成戰利品"}
+{"date": "2026-09-12", "title": "Anthropic 企業版 Smart Reports（Beta）：量測團隊 Claude 用量／成本／摩擦，重複模式可包成共用 skill"}
+{"date": "2026-09-12", "title": "GitHub Copilot 程式碼審查可自動解決＋VS Code 代理納入企業用量統計（9/11）"}
+{"date": "2026-09-12", "title": "Zscaler 推出 Agentic SOC：多個專門資安代理協作分診／根因調查／判定／自動圍堵"}
+{"date": "2026-09-12", "title": "Visa 代理商務「信任指數」研究：付款與身分為 AI 代理交易的關鍵控制點"}
+{"date": "2026-09-12", "title": "主軸：AI 的競爭單位從『單一巨模型』轉向『一個端點編排一群模型』——Fugu 靠調度贏前沿、GPT-Live-1 把語音與推理拆層"}
+{"date": "2026-09-12", "title": "概念：模型路由與編排（Model Routing／Orchestration，跨獨立模型派工、可抽換，非 MoE）"}
+{"date": "2026-09-12", "title": "半導體專區：EDA 工具｜邏輯綜合的 AI／強化學習『合成配方』最佳化（DRiLLS／AISYN／ABC-RL）"}
