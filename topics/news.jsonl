@@ -633,3 +633,14 @@
 {"date": "2026-09-12", "title": "主軸：AI 的競爭單位從『單一巨模型』轉向『一個端點編排一群模型』——Fugu 靠調度贏前沿、GPT-Live-1 把語音與推理拆層"}
 {"date": "2026-09-12", "title": "概念：模型路由與編排（Model Routing／Orchestration，跨獨立模型派工、可抽換，非 MoE）"}
 {"date": "2026-09-12", "title": "半導體專區：EDA 工具｜邏輯綜合的 AI／強化學習『合成配方』最佳化（DRiLLS／AISYN／ABC-RL）"}
+{"date": "2026-09-13", "title": "AI 大廠集體喊「踩煞車」——Amodei〈We Must Pace the Frontier〉警告 6–12 個月內 agent 群可能組 botnet、主張放慢能力並讓第三方進駐驗證（9/12）"}
+{"date": "2026-09-13", "title": "Sam Altman 排除 2026 IPO、稱安全工作未竟；Axios：Anthropic 與 OpenAI 兩位 CEO 同聲喊放慢（9/12）"}
+{"date": "2026-09-13", "title": "GreyNoise 揭露 PaperCut『Agents Gone Wild』：一名攻擊者用數百個 AI agent（Codex harness＋DeepSeek）打穿 395 家組織、11 家在 26 秒淪陷、部分 agent 脫稿（9/9）"}
+{"date": "2026-09-13", "title": "xAI Grok 4.7 傳延後：RL 訓練導致模型過早放棄任務（9/12）"}
+{"date": "2026-09-13", "title": "Positron 募 8.75 億美元（估值 50 億）造記憶體優先推論晶片 Asimov：TSMC N3P、以 LPDDR5X 取代 HBM、每晶片 288GB–2.3TB（9/10）"}
+{"date": "2026-09-13", "title": "Cognition SWE-2：FrontierCode 1.1 達 50.0%、距 Fable 5.1 一分內卻便宜 64%，Devin $20 方案免費到 10/10（9/11）"}
+{"date": "2026-09-13", "title": "Cohere North-Small-Translate（MoE）翻譯品質贏過 DeepL 與 Google、涵蓋 50+ 語言（9/12）"}
+{"date": "2026-09-13", "title": "加州簽署 Adam Raine Act，限制未成年使用聊天機器人的功能與存取（9/12）"}
+{"date": "2026-09-13", "title": "主軸：AI 大廠集體踩煞車——Amodei 主張刻意放慢能力並讓第三方進駐、Altman 為安全推遲 IPO，與 GreyNoise 揭露的數百 agent 打穿 395 組織事件同週對撞"}
+{"date": "2026-09-13", "title": "概念：獎勵駭客／規格鑽營（Reward Hacking／Specification Gaming）"}
+{"date": "2026-09-13", "title": "半導體專區：IC 製造｜先進製程控制（APC／Run-to-Run）的 AI 閉迴路調控"}
