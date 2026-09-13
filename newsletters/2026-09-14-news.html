@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的 AI 每日電子報🐧</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;padding:16px 0;">
+<tr><td align="center">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+
+<!-- Header -->
+<tr><td style="padding:8px 16px 20px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+    <tr><td style="padding:28px 24px;text-align:center;">
+      <div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+      <div style="font-size:13px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+      <div style="display:inline-block;margin-top:14px;background:rgba(0,0,0,0.25);color:#ffffff;font-size:12px;font-weight:600;padding:5px 14px;border-radius:20px;">2026 年 9 月 14 日</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- 30秒重點 -->
+<tr><td style="padding:0 16px 16px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 22px 8px;">
+      <div style="font-size:17px;font-weight:700;color:#ffffff;">⚡ 30 秒重點</div>
+    </td></tr>
+    <tr><td style="padding:4px 22px 22px;">
+      <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+        <li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>本週三大 AI coding CLI（Claude Code、OpenAI Codex、Gemini CLI）同一時間動手，補的<strong style="color:#e2e8f0;">不是</strong>模型變聰明，而是<strong style="color:#e2e8f0;">代理自己的門鎖</strong>——deny 權限規則、MCP 連線與「工作區信任」。</li>
+        <li style="margin-bottom:10px;">共同訊號：當你「clone 一個 repo 就直接開 agent」，那個資料夾裡的設定檔可能在你按下信任前就已經跑了——三家都改成<strong style="color:#e2e8f0;">預設不信任</strong>。</li>
+        <li style="margin-bottom:10px;">其他快訊：DeepSeek 收回 V4-Pro 退役計畫（9/14 起續命、計價不變）；微軟把 xAI 的 Grok 塞進 Word／Excel／PowerPoint；Grok 4.7 因「太早停手、不夠自我檢查」延後。</li>
+        <li style="margin-bottom:0;"><strong style="color:#67e8f9;">對半導體工作者最相關：</strong>你們在內網跑的 EDA 腳本代理、MCP 工具鏈，正是這波「工作區信任」要守的門——今天教你為什麼「黑名單」擋不住。</li>
+      </ul>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="padding:0 16px 16px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+   <tr><td style="padding:1px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+     <tr><td style="padding:24px 22px;">
+       <div style="display:inline-block;background:#6366f1;color:#fff;font-size:12px;font-weight:700;padding:4px 12px;border-radius:16px;">🎯 今天的主軸</div>
+       <div style="font-size:19px;font-weight:800;color:#ffffff;margin-top:14px;line-height:1.5;">你桌上的 coding agent，本身成了新的攻擊面——這週三大工具修的不是「腦」，是「門鎖」</div>
+
+       <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:16px 0 0;">先講一個場景：你請了一位很能幹的裝潢師傅（AI coding agent）進家裡幹活。過去大家在意的是「師傅手藝好不好」——模型會不會寫程式。這一週三家大廠（Anthropic、OpenAI、Google）不約而同做的，卻是<strong style="color:#a5b4fc;">換門鎖、查證件、規定師傅帶來的水電工（MCP 工具）不能亂接管線</strong>。焦點從「代理夠不夠聰明」轉向「代理夠不夠安全地待在你的機器上」。</p>
+
+       <div style="height:1px;background:#333;margin:20px 0;"></div>
+
+       <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-bottom:6px;">▍共同變化</div>
+       <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 16px;">三則更新指向同一件事：<strong style="color:#e2e8f0;">代理工具的本機權限模型</strong>被集中補強。<br>
+       ・<strong style="color:#e2e8f0;">Claude Code 2.1.269（9/11）→ 2.1.270（9/12）</strong>：修好幾個「deny／ask 權限規則會靜靜失效」的破口——以 <code style="background:#252525;padding:1px 5px;border-radius:4px;color:#67e8f9;">!</code> 開頭的否定規則會外溢到寫它的設定檔以外、<code style="background:#252525;padding:1px 5px;border-radius:4px;color:#67e8f9;">Edit()</code> 與寫入路徑檢查擋不住 Bash <code style="background:#252525;padding:1px 5px;border-radius:4px;color:#67e8f9;">tee</code> 寫到工作目錄外的檔案；同時堵住 MCP／外掛連線細節把 <code style="background:#252525;padding:1px 5px;border-radius:4px;color:#67e8f9;">${VAR}</code> 裡的密鑰印出來，並讓「未信任的工作區不載入 MCP 伺服器定義」。<br>
+       ・<strong style="color:#e2e8f0;">Gemini CLI 0.59.0</strong>：兩個安全修補——擋掉 MCP OAuth 中繼資料探索的 <strong style="color:#a5b4fc;">SSRF</strong>（伺服器端請求偽造），並改成<strong style="color:#a5b4fc;">「fail-closed 工作區信任」</strong>：沒信任過的資料夾，MCP 伺服器一律不載入。<br>
+       ・<strong style="color:#e2e8f0;">OpenAI Codex CLI 0.154.0</strong>：收緊啟動時的信任處理，並明訂外部訊息（ExternalMessage）只帶「工具層級授權，<strong style="color:#a5b4fc;">不等於使用者授權</strong>」——也就是外部塞進來的內容不能自動升級成你本人的權限。</p>
+
+       <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-bottom:6px;">▍為什麼放在一起看</div>
+       <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 16px;">單看是三則零碎的版本號，合起來卻是一條清楚的路線：<strong style="color:#e2e8f0;">agent 的價值來自「能讀你的檔、能跑指令、能接外部工具」，但這三件事正好也是它的攻擊面</strong>。三家在同一週把力氣花在同一組東西上——<strong style="color:#a5b4fc;">deny 規則、MCP 連線、工作區信任、密鑰外洩</strong>——這不是巧合，是整個產業意識到：把代理接進真實開發環境後，最大的風險不是它答錯，而是它<strong style="color:#e2e8f0;">被你剛 clone 的那個 repo 牽著走</strong>。</p>
+
+       <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-bottom:6px;">▍過去 vs. 現在</div>
+       <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 16px;"><strong style="color:#e2e8f0;">過去：</strong>「clone 下來直接開 agent」被當成順手的工作流，設定檔、hooks、MCP 伺服器清單只要在專案裡就會被讀。<strong style="color:#e2e8f0;">現在：</strong>三家都轉向「<strong style="color:#a5b4fc;">預設不信任（fail-closed）</strong>」——先問你信不信任這個工作區，沒點頭之前，專案內的 MCP／代理設定不生效。門從「預設開著」改成「預設鎖著」。</p>
+
+       <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-bottom:6px;">▍背後邏輯</div>
+       <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 16px;">這波修補的源頭，是稍早被揭露的一類真實漏洞：<strong style="color:#e2e8f0;">「信任前執行視窗」</strong>（pre-trust execution window）。Check Point 等研究指出，Claude Code 早期在你按下「信任這個 repo」<strong style="color:#a5b4fc;">之前</strong>，就會先執行 repo 內的設定，導致「光是 clone 並開啟一個惡意 repo」就可能偷走 API 金鑰或執行任意程式（對應 CVE-2025-59536、CVE-2026-21852，均已修補）。<span style="color:#94a3b8;">〔編輯分析〕</span>把這條背景擺進來就懂了：MCP 讓代理能外接無數第三方工具，等於把「供應鏈風險」搬進你的終端機——工作區信任與 SSRF 防護，就是在補這道門。</p>
+
+       <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-bottom:6px;">▍對你的工作</div>
+       <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 16px;">如果你或團隊在跑這些 CLI：<strong style="color:#e2e8f0;">（1）</strong>升級到最新版，別停在舊版本吃這些破口；<strong style="color:#e2e8f0;">（2）</strong>檢查你寫在 <code style="background:#252525;padding:1px 5px;border-radius:4px;color:#67e8f9;">/tmp</code>、<code style="background:#252525;padding:1px 5px;border-radius:4px;color:#67e8f9;">/var</code> 這類符號連結路徑上的 deny 規則是否真的生效；<strong style="color:#e2e8f0;">（3）</strong>把 MCP 伺服器清單當成相依套件管理——只接你信得過的來源，並把密鑰放進真正的 secret 管理而非明文設定；<strong style="color:#e2e8f0;">（4）</strong>養成「先信任、再開工」的習慣，尤其是別人給你的 repo。</p>
+
+       <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-bottom:6px;">▍限制與待驗證</div>
+       <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 16px;">別誤讀成「已經安全了」。<span style="color:#94a3b8;">〔編輯分析／可能影響〕</span>這些是「補洞」而非「重建」：deny 規則本質上是黑名單，補完一個繞法，往往還有下一個（見今日概念）。<strong style="color:#e2e8f0;">真正的安全邊界要靠允許清單＋沙盒隔離，而不是靠列舉所有壞路徑。</strong>另外「fail-closed 工作區信任」會改變你的手感——以後 clone 完不會立刻能用 MCP，得先明確信任；這是安全換來的一點摩擦，值得。</p>
+
+       <div style="background:#252525;border-radius:8px;padding:14px 16px;margin:4px 0 4px;">
+         <div style="color:#a5b4fc;font-size:12px;font-weight:700;margin-bottom:6px;">👤 人物觀點／延伸解讀</div>
+         <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0;">多位安全研究者示範過「用八種方式繞過自己的 Claude Code deny-list，最後只有 allow-list 守得住」「連下 50 個子指令後 deny 規則悄悄失效」等案例（延伸解讀，非官方發布）。這些不是官方事實，但和三家本週的修補方向完全對上：<strong style="color:#a5b4fc;">代理的權限不能靠「列黑名單」硬撐。</strong></p>
+       </div>
+
+       <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍重點一句話</div>
+       <p style="color:#e2e8f0;font-size:15px;line-height:1.75;margin:0 0 14px;font-weight:600;">代理越能幹，它的「本機權限與外接工具」就越是攻擊面；這一週的主旋律是把門從「預設開著」改成「預設鎖著」。</p>
+
+       <div style="border-top:1px solid #333;padding-top:12px;">
+         <div style="color:#94a3b8;font-size:12px;line-height:1.9;">
+           🔗 來源：<a href="https://code.claude.com/docs/en/changelog" style="color:#06b6d4;text-decoration:none;">Claude Code Changelog（2.1.269／2.1.270）</a><br>
+           🔗 來源：<a href="https://geminicli.com/docs/changelogs/latest/" style="color:#06b6d4;text-decoration:none;">Gemini CLI v0.59.0 Changelog</a><br>
+           🔗 來源：<a href="https://releasebot.io/updates/openai/codex" style="color:#06b6d4;text-decoration:none;">OpenAI Codex CLI 0.154.0 更新</a><br>
+           🔗 背景：<a href="https://research.checkpoint.com/2026/rce-and-api-token-exfiltration-through-claude-code-project-files-cve-2025-59536/" style="color:#06b6d4;text-decoration:none;">Check Point Research：pre-trust execution window（CVE-2025-59536／CVE-2026-21852，已修補）</a>
+         </div>
+       </div>
+     </td></tr>
+    </table>
+   </td></tr>
+  </table>
+</td></tr>
+
+<!-- 主軸的衍生新聞 -->
+<tr><td style="padding:0 16px 8px;">
+  <div style="font-size:16px;font-weight:700;color:#ffffff;padding:8px 6px;">🔗 主軸的衍生新聞</div>
+</td></tr>
+
+<tr><td style="padding:0 16px 12px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:20px 22px;">
+      <div style="display:inline-block;background:#252525;color:#67e8f9;font-size:11px;font-weight:700;padding:3px 10px;border-radius:14px;">🔗 衍生新聞</div>
+      <div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:10px;">Gemini CLI 0.59.0：把「MCP SSRF」與「工作區信任」一次補上</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:12px 0 0;">Google 這版只做兩件事，都是安全：<strong style="color:#e2e8f0;">擋掉 MCP OAuth 中繼資料探索與認證環節的 SSRF</strong>（避免代理被誘導去打內網位址），並改成 <strong style="color:#e2e8f0;">fail-closed 工作區信任</strong>——受限模式下會過濾 MCP 伺服器，沒信任過的資料夾一律不載入。和主軸完全同調：把「外接工具」和「未知專案」這兩個入口先鎖起來。</p>
+      <p style="color:#94a3b8;font-style:italic;font-size:13px;margin:12px 0 0;">💡 重點一句話：SSRF 是「騙代理去替你發請求」，工作區信任是「先驗證再放行」——兩者一起才擋得住 MCP 這條新入口。</p>
+      <div style="margin-top:12px;"><a href="https://geminicli.com/docs/changelogs/latest/" style="color:#06b6d4;text-decoration:none;font-size:12px;">🔗 閱讀原文 ｜ 來源：Gemini CLI 官方 Changelog</a></div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:0 16px 12px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:20px 22px;">
+      <div style="display:inline-block;background:#252525;color:#67e8f9;font-size:11px;font-weight:700;padding:3px 10px;border-radius:14px;">🔗 衍生新聞</div>
+      <div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:10px;">OpenAI Codex CLI 0.154.0：外部內容只有「工具權限」，不是「你本人」</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:12px 0 0;">Codex 這版收緊<strong style="color:#e2e8f0;">啟動時的信任處理</strong>，並把一條界線寫進協定：外部訊息（ExternalMessage）可以發起或加入一輪對話，但<strong style="color:#e2e8f0;">只帶「工具層級授權，不授予使用者授權」</strong>。翻成白話——一封被塞進流程的外部訊息，不能自動升級成「你本人下的命令」。這正是<strong style="color:#a5b4fc;">提示注入</strong>（prompt injection）最愛鑽的縫。（同版也移除了 <code style="background:#252525;padding:1px 5px;border-radius:4px;color:#67e8f9;">codex mcp-server</code> 進入點。）</p>
+      <p style="color:#94a3b8;font-style:italic;font-size:13px;margin:12px 0 0;">💡 重點一句話：把「誰在說話」和「他能做什麼」分開授權，是擋住外部內容冒充主人的關鍵一步。</p>
+      <div style="margin-top:12px;"><a href="https://releasebot.io/updates/openai/codex" style="color:#06b6d4;text-decoration:none;font-size:12px;">🔗 閱讀原文 ｜ 來源：OpenAI Codex 更新紀錄</a></div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:0 16px 12px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:20px 22px;">
+      <div style="display:inline-block;background:#252525;color:#fbbf24;font-size:11px;font-weight:700;padding:3px 10px;border-radius:14px;">🔗 衍生新聞 · 背景</div>
+      <div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:10px;">這波為什麼發生：clone 一個 repo 就可能被偷金鑰</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:12px 0 0;"><span style="color:#94a3b8;">〔背景，非 48 小時內新聞〕</span>安全研究揭露的<strong style="color:#e2e8f0;">「信任前執行視窗」</strong>是這波修補的導火線：代理在你確認信任該 repo <strong style="color:#a5b4fc;">之前</strong>，就會執行 repo 內的設定檔／hooks，於是「光是 clone 並開啟一個惡意專案」就能外洩 API 金鑰、甚至執行任意程式（CVE-2025-59536、CVE-2026-21852，皆已修補）。它解釋了為什麼三家本週都倒向「預設不信任」。</p>
+      <p style="color:#94a3b8;font-style:italic;font-size:13px;margin:12px 0 0;">💡 重點一句話：把不信任的 repo 當成「陌生人遞來的隨身碟」，別讓它在你點頭前就開始跑。</p>
+      <div style="margin-top:12px;"><a href="https://research.checkpoint.com/2026/rce-and-api-token-exfiltration-through-claude-code-project-files-cve-2025-59536/" style="color:#06b6d4;text-decoration:none;font-size:12px;">🔗 閱讀原文 ｜ 來源：Check Point Research</a></div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="padding:8px 16px 12px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 22px 8px;">
+      <div style="font-size:17px;font-weight:700;color:#ffffff;">📎 其他快訊</div>
+    </td></tr>
+    <tr><td style="padding:4px 22px 22px;">
+      <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:14px;line-height:1.7;">
+        <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">DeepSeek 收回 V4-Pro 退役計畫（9/14）：</strong>原訂 9/14 起 V4-Pro 請求全轉 V4.1-Flash，官方改口「因使用者需求，V4 Pro 服務於 9/14 後繼續提供、計價不變」；同時舊名 <code style="background:#252525;padding:1px 5px;border-radius:4px;color:#67e8f9;">deepseek-v4-flash</code> 仍受理，但實際由 V4.1-Flash 服務、按 Flash 價計費。<em style="color:#94a3b8;">為什麼重要：模型退役會直接打到你的 CI 與生產流程，供應商臨時延役提醒你——別把單一模型版本寫死。</em> <a href="https://api-docs.deepseek.com/news/news20260914" style="color:#06b6d4;text-decoration:none;">🔗 來源：DeepSeek API 官方公告</a></li>
+
+        <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">微軟把 Grok 帶進 Word／Excel／PowerPoint（9/13）：</strong>M365 Copilot 新增 xAI 的 Grok 模型，先在 <strong style="color:#e2e8f0;">Frontier 早期計畫</strong>限量預覽，給企業一個 OpenAI／Anthropic 以外的選項；預覽期不對歐盟、EFTA 與英國開放。<em style="color:#94a3b8;">為什麼重要：微軟的「多模型」策略再進一步，辦公室生產力工具正式變成模型的競技場。</em> <a href="https://techcommunity.microsoft.com/blog/microsoft365copilotblog/introducing-word-excel-and-powerpoint-agents-in-microsoft-365-copilot/4470604" style="color:#06b6d4;text-decoration:none;">🔗 來源：Microsoft 365 Copilot Blog</a></li>
+
+        <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">xAI Grok 4.7 延後上線（約 9/12，據報導）：</strong>Musk 原說約 9/12 推出，之後表示「還要幾天」，原因是模型在難題上<strong style="color:#e2e8f0;">太早停手、自我檢查不夠嚴謹</strong>（強化學習與 self-checking 問題）。<em style="color:#94a3b8;">為什麼重要：連前沿廠都卡在「知道何時該繼續、如何驗證自己」——這正是 agent 可靠度的核心難題。（人物觀點，非官方發布）</em> <a href="https://www.datastudios.org/post/xai-grok-4-7-delay-reinforcement-learning-self-checking" style="color:#06b6d4;text-decoration:none;">🔗 來源：Elon Musk on X（轉述）</a></li>
+
+        <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Salesforce 推出七個具名產業 agent（9/11）：</strong>Agentforce 一口氣給出 Casey、Paige、Carter、Hunter 等七個各司其職的 agent，分別對應銷售、客服、電商、IT／HR、供應鏈等場景。<em style="color:#94a3b8;">為什麼重要：企業 agent 從「一個萬能助手」走向「一群有明確職責的專員」，和昨日主軸的「編排多模型」互相呼應。</em> <a href="https://aiagentstore.ai/ai-agent-news/this-week" style="color:#06b6d4;text-decoration:none;">🔗 來源：Salesforce（週報彙整）</a></li>
+
+        <li style="margin-bottom:0;"><strong style="color:#e2e8f0;">OpenAI Agents API 進入公測（9/10）：</strong>把管理式的 Codex harness 開放出來——session、編排、context 壓縮與復原都由平台代管，開發者只要提供工具、選執行環境（OpenAI 代管、自架或合作夥伴）。<em style="color:#94a3b8;">為什麼重要：把「跑長任務的骨架」變成 API，等於降低自建 agent 的門檻——但也把更多權限交給平台，呼應今日的信任主題。</em> <a href="https://openai.com/index/" style="color:#06b6d4;text-decoration:none;">🔗 來源：OpenAI</a></li>
+      </ul>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="padding:8px 16px 12px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 22px 6px;">
+      <div style="font-size:17px;font-weight:700;color:#ffffff;">📖 今日概念｜允許清單 vs. 拒絕清單（Allow-list vs. Deny-list）</div>
+    </td></tr>
+    <tr><td style="padding:6px 22px 22px;">
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0 0 12px;"><strong style="color:#a5b4fc;">一句定義：</strong>「拒絕清單」是列出所有<strong style="color:#e2e8f0;">禁止</strong>的東西、其餘放行；「允許清單」是列出所有<strong style="color:#e2e8f0;">准許</strong>的東西、其餘一律擋下。</p>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0 0 12px;"><strong style="color:#a5b4fc;">生活化比喻：</strong>拒絕清單像夜店門口「這幾個人不准進」的黑名單——只要沒被點名、或換件衣服、走側門，就混得進去。允許清單像機場登機——<strong style="color:#e2e8f0;">名單上沒有你，怎麼樣都上不了飛機。</strong></p>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0 0 12px;"><strong style="color:#a5b4fc;">工作中的例子：</strong>今天主軸裡 Claude Code 修的那些 deny 破口——符號連結繞路、<code style="background:#252525;padding:1px 5px;border-radius:4px;color:#67e8f9;">tee</code> 寫到目錄外、否定規則外溢——本質都是「黑名單漏列了一種繞法」。你補一個，攻擊者找下一個；這是黑名單的宿命：<strong style="color:#e2e8f0;">你要枚舉「所有壞的」，但壞的無窮多。</strong></p>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0 0 12px;"><strong style="color:#a5b4fc;">常見誤解：</strong>「我把危險指令都 deny 了，應該安全了吧？」——不。deny 規則能減少誤觸，但<strong style="color:#e2e8f0;">不是安全邊界</strong>；真正的邊界是「只允許明確清單內的操作」＋沙盒隔離。方便的黑名單，換不到安全的保證。</p>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0;"><strong style="color:#a5b4fc;">與今天主軸的關係：</strong>三大 CLI 這週的方向，正是從「列黑名單」滑向「預設拒絕、明確允許」（fail-closed 工作區信任就是允許清單思維）。理解這條線，你就懂為什麼「補洞」永遠補不完，得換設計。</p>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- 半導體 AI 專區 -->
+<tr><td style="padding:8px 16px 12px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;border:1px solid #1e3a3f;">
+    <tr><td style="padding:22px 22px 6px;">
+      <div style="font-size:17px;font-weight:700;color:#ffffff;">🏭 半導體 AI 專區｜用 AI 決定「測試點插哪裡」（DFT / 測試點插入）</div>
+      <div style="margin-top:10px;">
+        <span style="display:inline-block;background:#252525;color:#67e8f9;font-size:11px;font-weight:700;padding:3px 10px;border-radius:14px;">分類：IC 設計</span>
+        <span style="display:inline-block;background:#3a2f1a;color:#fbbf24;font-size:11px;font-weight:700;padding:3px 10px;border-radius:14px;margin-left:4px;">內容屬性：背景知識</span>
+      </div>
+    </td></tr>
+    <tr><td style="padding:12px 22px 22px;">
+      <div style="color:#67e8f9;font-weight:700;font-size:13px;margin-bottom:5px;">▍問題與流程位置</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0 0 14px;">晶片流片後要測「有沒有製造缺陷」，靠的是 <strong style="color:#e2e8f0;">DFT（可測試性設計）</strong>：在設計階段就把電路改造得「好測」。其中一步叫 <strong style="color:#e2e8f0;">測試點插入（Test Point Insertion, TPI）</strong>——在難以控制或難以觀察的內部節點加上額外的控制／觀測點，讓 <strong style="color:#e2e8f0;">ATPG（自動測試向量生成）</strong>更容易把缺陷「照出來」。痛點是：TPI 插太多會吃面積、增功耗、拖時序；插太少又測不乾淨。<strong style="color:#a5b4fc;">「插在哪、插幾個」是一個巨大的組合最佳化問題</strong>，傳統靠啟發式規則，常常顧此失彼。</p>
+
+      <div style="color:#67e8f9;font-weight:700;font-size:13px;margin-bottom:5px;">▍AI 如何介入（與過去流程的差異）</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0 0 14px;"><span style="color:#94a3b8;">〔背景知識〕</span>過去是「規則＋工程師經驗＋反覆試跑 ATPG」的迴圈，一輪要很久。研究方向改用<strong style="color:#e2e8f0;">機器學習與強化學習</strong>：例如 <strong style="color:#a5b4fc;">DeepTPI</strong> 把電路轉成 And-Inverter Graph（AIG）圖表示，用<strong style="color:#e2e8f0;">深度強化學習</strong>學會「該把測試點放在哪」，目標是用更少的測試點換到更高覆蓋率、更少的 ATPG 向量數。差別在於：AI 能從大量電路中<strong style="color:#e2e8f0;">學到跨設計的通則</strong>，而不是每顆晶片都從零試錯——把原本幾輪 ATPG 才收斂的事，前移成一次較準的預測。</p>
+
+      <div style="color:#67e8f9;font-weight:700;font-size:13px;margin-bottom:5px;">▍資料與產出</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0 0 14px;"><strong style="color:#e2e8f0;">輸入：</strong>閘級網表／AIG 圖、節點的可控性與可觀測性指標、過往 ATPG 結果。<strong style="color:#e2e8f0;">產出：</strong>一組建議的測試點位置與型別，接回既有 DFT／ATPG 流程。近期也有像 <strong style="color:#a5b4fc;">ATPG-aware 輕量掃描插入（LITE）</strong>的做法，主打「比傳統 TPI 更低的面積／功耗代價」換到相近的測試效率。</p>
+
+      <div style="color:#67e8f9;font-weight:700;font-size:13px;margin-bottom:5px;">▍如何驗證</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0 0 14px;">關鍵是「AI 的建議不能只看它自己說好」——要用<strong style="color:#e2e8f0;">既有 ATPG 工具實跑</strong>，比較覆蓋率（fault coverage）、測試向量數、以及面積／功耗／時序 overhead 是否真的改善。這其實和今天主軸同一個精神：<strong style="color:#a5b4fc;">AI 提議、既有可信工具驗收</strong>，別讓提議者自己當裁判。</p>
+
+      <div style="color:#67e8f9;font-weight:700;font-size:13px;margin-bottom:5px;">▍限制與風險</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.75;margin:0 0 14px;"><span style="color:#94a3b8;">〔編輯分析〕</span>學到的模型<strong style="color:#e2e8f0;">跨製程節點、跨設計風格的可遷移性有限</strong>，換一個 library 或設計團隊可能就要重訓；上述多為研究成果，<strong style="color:#e2e8f0;">不代表已大規模量產落地</strong>。真正導入時，覆蓋率與良率是不能妥協的紅線，AI 只能在「不劣化簽核結果」的前提下幫你更快收斂。</p>
+
+      <p style="color:#67e8f9;font-weight:700;font-size:14px;line-height:1.7;margin:6px 0 0;">👷 對半導體工作者的意義：DFT／驗證工程師最有感——把 TPI 從「憑經驗反覆試」變成「先預測、再用 ATPG 驗收」。想動手的下一步，是拿自家一顆代表性設計，讓 ML 建議 vs. 現行流程做一次覆蓋率與 overhead 的對照，先看得到差距再談導入。</p>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="padding:8px 16px 16px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+   <tr><td style="padding:1px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+     <tr><td style="padding:22px;">
+       <div style="font-size:17px;font-weight:700;color:#ffffff;">🪞 反思時間</div>
+       <ul style="margin:14px 0 0;padding-left:20px;color:#cbd5e1;font-size:14px;line-height:1.75;">
+         <li style="margin-bottom:12px;"><strong style="color:#a5b4fc;">趨勢反思：</strong>當代理最大的風險從「答錯」變成「被它讀到的專案牽著走」，你評估一個 AI 工具時，會把「權限模型與工作區信任」放在「跑分」前面，還是後面？該怎麼排這個優先序？</li>
+         <li style="margin-bottom:12px;"><strong style="color:#a5b4fc;">工作連結：</strong>你的團隊在內網跑 EDA 腳本代理或接了 MCP 工具鏈——如果套用「預設拒絕、明確允許」，哪些現行的方便流程會被卡住？這些摩擦你願意用多少「省下的除錯時間」去換？</li>
+         <li style="margin-bottom:0;"><strong style="color:#a5b4fc;">未來判斷：</strong>今天無論是 coding agent 的權限、還是 DFT 的測試點，共同答案都是「AI 提議、可信工具驗收」。如果驗收環節（ATPG、形式驗證、權限沙盒）才是瓶頸，那下一個該投資的，是更強的模型，還是更快更嚴的驗證器？</li>
+       </ul>
+       <div style="border-top:1px solid #333;margin-top:16px;padding-top:14px;">
+         <p style="color:#a5b4fc;font-weight:700;font-size:14px;line-height:1.7;margin:0;">🎒 今日帶走：這一週 AI 工具的主戰場不是「更聰明」，而是「更該鎖」——把代理的門從預設開著改成預設鎖著，並記住：黑名單擋不住的，得靠允許清單。</p>
+       </div>
+     </td></tr>
+    </table>
+   </td></tr>
+  </table>
+</td></tr>
+
+<!-- 歷史電子報入口 -->
+<tr><td style="padding:0 16px 16px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:20px 22px;text-align:center;">
+      <div style="font-size:15px;font-weight:700;color:#ffffff;">📚 想回顧之前的內容？</div>
+      <p style="color:#94a3b8;font-size:13px;line-height:1.7;margin:8px 0 12px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+      <a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-size:14px;font-weight:600;">查看歷史電子報</a>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- Footer -->
+<tr><td style="padding:0 16px 24px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    <tr><td style="padding:18px 22px;text-align:center;border-top:1px solid #252525;">
+      <p style="color:#cbd5e1;font-size:13px;margin:0 0 8px;">📬 覺得有用？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">分享給朋友訂閱</a></p>
+      <p style="color:#64748b;font-size:12px;margin:0 0 12px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></p>
+      <p style="color:#475569;font-size:11px;line-height:1.6;margin:0;">© 2026 企鵝的 AI 每日電子報 🐧<br>本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</p>
+    </td></tr>
+  </table>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>

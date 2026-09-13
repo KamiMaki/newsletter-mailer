@@ -644,3 +644,15 @@
 {"date": "2026-09-13", "title": "主軸：AI 大廠集體踩煞車——Amodei 主張刻意放慢能力並讓第三方進駐、Altman 為安全推遲 IPO，與 GreyNoise 揭露的數百 agent 打穿 395 組織事件同週對撞"}
 {"date": "2026-09-13", "title": "概念：獎勵駭客／規格鑽營（Reward Hacking／Specification Gaming）"}
 {"date": "2026-09-13", "title": "半導體專區：IC 製造｜先進製程控制（APC／Run-to-Run）的 AI 閉迴路調控"}
+{"date": "2026-09-14", "title": "主軸：桌上的 coding agent 成新攻擊面——三大 CLI 本週補的是 deny 規則/MCP/工作區信任而非模型能力"}
+{"date": "2026-09-14", "title": "概念：允許清單 vs 拒絕清單（Allow-list vs Deny-list，黑名單不是安全邊界）"}
+{"date": "2026-09-14", "title": "半導體專區：IC 設計｜DFT 測試點插入（TPI）與 ATPG 的 AI/強化學習最佳化（DeepTPI/LITE，背景）"}
+{"date": "2026-09-14", "title": "Claude Code 2.1.269→2.1.270：修 deny/ask 規則靜默失效（! 否定規則外溢、Edit/tee 寫路徑繞過）、MCP 密鑰 ${VAR} 外洩、未信任工作區不載入 MCP"}
+{"date": "2026-09-14", "title": "Gemini CLI 0.59.0：MCP OAuth SSRF 防護＋fail-closed 工作區信任（未信任資料夾不載入 MCP 伺服器）"}
+{"date": "2026-09-14", "title": "OpenAI Codex CLI 0.154.0：收緊啟動信任、ExternalMessage 僅工具層級授權不等於使用者授權、移除 codex mcp-server 進入點"}
+{"date": "2026-09-14", "title": "背景：Claude Code pre-trust execution window（clone 惡意 repo 可外洩 API 金鑰/RCE，CVE-2025-59536、CVE-2026-21852 已修補）"}
+{"date": "2026-09-14", "title": "DeepSeek 收回 V4-Pro 退役計畫：9/14 起續命、計價不變，舊 flash 名由 V4.1-Flash 服務按 Flash 價計費"}
+{"date": "2026-09-14", "title": "微軟把 xAI Grok 帶進 M365 Copilot（Word/Excel/PowerPoint，Frontier 限量預覽，EU/EFTA/UK 不開放）"}
+{"date": "2026-09-14", "title": "xAI Grok 4.7 延後：Musk 稱模型太早停手、自我檢查不夠嚴謹（RL/self-checking，據報導）"}
+{"date": "2026-09-14", "title": "Salesforce Agentforce 推出七個具名產業 agent（Casey/Paige/Carter/Hunter 等）"}
+{"date": "2026-09-14", "title": "OpenAI Agents API 進入公測：開放管理式 Codex harness（session/編排/壓縮/復原代管）"}
