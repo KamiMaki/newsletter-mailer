@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>策略學習報</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<div style="max-width:650px;margin:0 auto;background:#0f0f0f;padding:16px;">
+
+  <!-- Header -->
+  <div style="background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:14px;padding:28px 24px;text-align:center;margin-bottom:16px;">
+    <div style="font-size:22px;font-weight:800;color:#fff;letter-spacing:0.5px;">🐧 企鵝的AI交易策略學習報</div>
+    <div style="font-size:14px;color:rgba(255,255,255,0.9);margin-top:6px;">2026-09-14（週一）｜BTC × 美股大盤 × 策略學習</div>
+  </div>
+
+  <!-- Disclaimer banner -->
+  <div style="background:#1a1a1a;border:1px solid #f59e0b;border-radius:10px;padding:12px 16px;margin-bottom:16px;">
+    <div style="color:#f59e0b;font-size:12.5px;line-height:1.6;">⚠️ 本報純屬個人交易紀律與策略學習用途，不構成任何投資建議，內文不含買賣指示，請自行判斷風險。</div>
+  </div>
+
+  <!-- 今日總覽 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="font-size:17px;font-weight:700;color:#fff;margin-bottom:12px;">⚡ 今日總覽</div>
+    <ul style="margin:0;padding-left:20px;color:#d1d5db;font-size:15px;line-height:1.8;">
+      <li>BTC 回落至 <strong style="color:#fbbf24;font-weight:700">$77,242</strong>，現貨 ETF <strong style="color:#e2e8f0">連 4 個交易日淨流出</strong>（9/12 單日 -$13.29M），仍卡在 $80K 壓力與 $74-75K 支撐之間整理。</li>
+      <li>美股週五（9/11）<strong style="color:#e2e8f0">終止連 4 黑</strong>：S&amp;P 500 收 <strong style="color:#fbbf24;font-weight:700">7,656.98（+0.86%）</strong>、道瓊 +509.19 點、那指 +0.96%，因 8 月 CPI 符合預期而反彈。</li>
+      <li>10 年期公債殖利率仍逼近 <strong style="color:#fbbf24;font-weight:700">4.98%</strong> 近年高檔，本週三大變數同週登場：<strong style="color:#e2e8f0">FOMC（9/15-16）</strong>與 <strong style="color:#e2e8f0">CLARITY Act 參院表決（9/15）</strong>。</li>
+      <li>今日策略學習主題：<strong style="color:#fbbf24;font-weight:700">交易日誌與復盤方法論</strong>——本季最擁擠的宏觀事件週，正是最該先把日誌寫好的時候。</li>
+    </ul>
+  </div>
+
+  <!-- BTC Section Badge -->
+  <div style="background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:10px;padding:10px 16px;margin-bottom:2px;text-align:center;">
+    <span style="color:#fff;font-size:15px;font-weight:700;">₿ 加密貨幣：BTC 區塊</span>
+  </div>
+
+  <div style="background:#1a1a1a;border-radius:0 0 12px 12px;padding:20px;margin-bottom:16px;">
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;margin:0 0 14px 0;">
+      BTC 目前約 <strong style="color:#fbbf24;font-weight:700">$77,242.79</strong>（9/13 凌晨，CoinDesk），較 9/8 開盤 $79,093.85 進一步走弱，也仍遠低於 9/3 觸及的 $82,283 高點與本輪 $81,300 附近的反覆遇阻區。現貨 BTC ETF 資金面同步轉守：9/8-9/11 連 4 個交易日淨流出，四日合計約 $462.7M，9/12 單日再流出 $13.29M（<strong style="color:#e2e8f0">但流出金額較前幾日明顯收斂</strong>），終止了前一週 $1B 淨流入的強勢；相對地，以太幣 ETF 9/12 單日淨流入 $216.41M，已連續 4 週吸金，資金明顯出現<strong style="color:#e2e8f0">BTC 轉弱、ETH 相對強勢</strong>的分歧。以伊軍事衝突與地緣風險仍是背景雜訊，市場正等待本週三大宏觀變數：FOMC 利率決策、CLARITY Act 表決，任一個都可能打破目前的區間盤整。
+    </p>
+
+    <div style="overflow-x:auto;margin-bottom:14px;">
+    <table style="width:100%;border-collapse:collapse;font-size:13px;color:#d1d5db;">
+      <tr style="background:#252525;">
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">週期</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">當前價</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">變動</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">趨勢方向</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">關鍵點位</th>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">日線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">$77,242.79</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">較 9/8 開盤 <strong style="color:#fbbf24;font-weight:700">再走弱</strong></td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;"><strong style="color:#e2e8f0">區間整理</strong>偏弱</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">$76K 短線支撐</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">週線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">本週 ETF 連 4 日淨流出</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">距 9/3 高點 $82,283 <strong style="color:#fbbf24;font-weight:700">約 -6.1%</strong></td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;"><strong style="color:#e2e8f0">資金面轉守</strong></td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">$80K 壓力／$74-75K 支撐</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">月線</td>
+        <td style="padding:8px;">9 月開局震盪整理</td>
+        <td style="padding:8px;">8 月<strong style="color:#fbbf24;font-weight:700">單月大漲約 25%</strong>後進入消化期</td>
+        <td style="padding:8px;"><strong style="color:#e2e8f0">高檔區間整理</strong>，尚未確認方向</td>
+        <td style="padding:8px;">$82,283 前高／$74K 月線支撐區</td>
+      </tr>
+    </table>
+    </div>
+
+    <div style="background:#252525;border-radius:8px;padding:14px;margin-bottom:14px;">
+      <div style="color:#fff;font-size:13.5px;font-weight:700;margin-bottom:8px;">🔍 四策略視角</div>
+      <div style="color:#d1d5db;font-size:13.5px;line-height:1.8;">
+        <strong style="color:#e2e8f0">順勢：</strong>連續在 $81-82K 遇阻、ETF 資金連 4 日淨流出，短線動能仍偏弱，順勢角度傾向觀望而非追多。<br>
+        <strong style="color:#e2e8f0">均值回歸：</strong>現價 $77,242 尚未回測到 $74-75K 支撐區，均值回歸的明確進場訊號目前還沒出現。<br>
+        <strong style="color:#e2e8f0">突破：</strong>跌破 $76K 可能打開測試 $74K 的空間；重新站穩 $80K 才有機會挑戰 $81-82K 前高。<br>
+        <strong style="color:#e2e8f0">宏觀：</strong>本週 FOMC（9/15-16）與 CLARITY Act 參院表決（9/15）同週登場，任一個結果都可能打破目前的盤整格局。
+      </div>
+    </div>
+
+    <div style="color:#d1d5db;font-size:14px;line-height:1.7;margin-bottom:14px;">
+      <div style="color:#fff;font-size:13.5px;font-weight:700;margin-bottom:6px;">📰 加密圈新聞</div>
+      🔗 <a href="https://news.bitcoin.com/bitcoin-etf/ether-etfs-gain-216m-as-bitcoin-etfs-extend-4-day-outflow-streak/" style="color:#f59e0b;">現貨 BTC ETF 連 4 日淨流出</a>，9/12 單日 -$13.29M，同日以太幣 ETF 淨流入 $216.41M，連續第 4 週吸金。<br>
+      🔗 <a href="https://finance.yahoo.com/markets/crypto/articles/bitcoin-etf-news-demand-faces-142217788.html" style="color:#f59e0b;">Bitcoin ETF News: Demand Faces Its First September Test</a>，市場關注 9 月資金動能能否延續 8 月的強勢紀錄。
+    </div>
+
+    <div style="background:#1a1a1a;border-left:3px solid #f59e0b;border-radius:0 8px 8px 0;padding:14px 16px;">
+      <div style="color:#f59e0b;font-size:13.5px;font-weight:700;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:13.5px;line-height:1.8;">
+        <li>ETF 資金流出<strong style="color:#e2e8f0">連續天數</strong>比單日金額更值得追蹤，代表趨勢是否真的在轉向。</li>
+        <li>BTC 轉弱、ETH 走強的<strong style="color:#e2e8f0">資金分歧</strong>，是判斷「加密圈整體轉空」前該先排除的雜訊。</li>
+        <li>區間中段（$77K）不是進場訊號，<strong style="color:#e2e8f0">等關鍵點位</strong>比預判方向重要。</li>
+        <li>本週三大宏觀變數同時開獎前，部位大小要能<strong style="color:#e2e8f0">同時扛住</strong>多種劇本。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- US Stocks Section -->
+  <div style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:10px;padding:10px 16px;margin-bottom:2px;text-align:center;">
+    <span style="color:#fff;font-size:15px;font-weight:700;">📊 美股大盤區塊</span>
+  </div>
+
+  <div style="background:#1a1a1a;border-radius:0 0 12px 12px;padding:20px;margin-bottom:16px;">
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;margin:0 0 14px 0;">
+      S&amp;P 500 9/11（週五）收 <strong style="color:#fbbf24;font-weight:700">7,656.98（+0.86%）</strong>，道瓊收 52,573.29（<strong style="color:#fbbf24;font-weight:700">+509.19 點／+0.98%</strong>），那斯達克指數收 26,333.04（<strong style="color:#fbbf24;font-weight:700">+0.96%</strong>），<strong style="color:#e2e8f0">終止連 4 個交易日的跌勢</strong>。SPY 對應收在約 $764.29，QQQ 收 $714.88（+0.87%）。反彈主因是 8 月 CPI 數據符合市場預期，緩解了此前對通膨黏著的疑慮，帶動 VIX 大幅回落至 <strong style="color:#fbbf24;font-weight:700">15.84</strong>（單日下跌逾 11%；VIX 可以想成市場的「保費」，數字越高代表投資人越擔心後續震盪），重新落回過去一個多月維持的 14-17 區間。但 10 年期公債殖利率仍守在 <strong style="color:#fbbf24;font-weight:700">4.98%</strong> 附近，為近三年高檔區，是壓抑股市估值的主要變數。本週市場焦點轉向 9/15-16 登場的 FOMC 會議，CME FedWatch 顯示升息機率約 66%，Fed 主席 Warsh 稱近期通膨數據「令人擔憂」。
+    </p>
+
+    <div style="overflow-x:auto;margin-bottom:14px;">
+    <table style="width:100%;border-collapse:collapse;font-size:13px;color:#d1d5db;">
+      <tr style="background:#252525;">
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">週期</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">當前價</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">變動</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">趨勢方向</th>
+        <th style="padding:8px;text-align:left;border-bottom:1px solid #333;">關鍵點位</th>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">日線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">S&amp;P 7,656.98（9/11）</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">S&amp;P <strong style="color:#fbbf24;font-weight:700">+0.86%</strong>／道瓊 +0.98%／那指 +0.96%</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;"><strong style="color:#e2e8f0">終止連 4 黑</strong>，短線反彈</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">7,590-7,600 支撐</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">週線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">前 4 日連跌後週五反彈</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">整週波動明顯放大</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;"><strong style="color:#e2e8f0">高檔震盪</strong>，反轉尚待確認</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">7,700-7,750 反壓</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">月線</td>
+        <td style="padding:8px;">9 月開局承壓後回穩</td>
+        <td style="padding:8px;">8 月全月 <strong style="color:#fbbf24;font-weight:700">S&amp;P +2.7%、那指 +4%</strong></td>
+        <td style="padding:8px;"><strong style="color:#e2e8f0">長期趨勢未破</strong>，短線仍待方向確認</td>
+        <td style="padding:8px;">7,798.99 前高（S&amp;P）</td>
+      </tr>
+    </table>
+    </div>
+
+    <div style="background:#252525;border-radius:8px;padding:14px;margin-bottom:14px;">
+      <div style="color:#fff;font-size:13.5px;font-weight:700;margin-bottom:8px;">🔍 四策略視角</div>
+      <div style="color:#d1d5db;font-size:13.5px;line-height:1.8;">
+        <strong style="color:#e2e8f0">順勢：</strong>週五單日反彈終止連 4 黑，但僅一天資料，順勢訊號還不足以確認趨勢已轉向。<br>
+        <strong style="color:#e2e8f0">均值回歸：</strong>CPI 利多推動指數從低點反彈，但反彈幅度僅約收復部分跌幅，是否延續仍待觀察。<br>
+        <strong style="color:#e2e8f0">突破：</strong>能否站穩 7,700 並挑戰月初高點是關鍵；跌破 7,590 則重新測試本輪低點。<br>
+        <strong style="color:#e2e8f0">宏觀：</strong>FOMC（9/15-16）是本週最大變數，10 年期殖利率逼近 4.98% 近三年高檔，持續對股市估值構成壓力。
+      </div>
+    </div>
+
+    <div style="color:#d1d5db;font-size:14px;line-height:1.7;margin-bottom:14px;">
+      <div style="color:#fff;font-size:13.5px;font-weight:700;margin-bottom:6px;">📰 美股新聞</div>
+      🔗 <a href="https://www.cnbc.com/2026/09/10/stock-market-today-live-updates.html" style="color:#6366f1;">美股週五終止連 4 黑</a>，8 月 CPI 符合預期緩解通膨疑慮，S&amp;P 500 收 7,656.98。<br>
+      🔗 <a href="https://www.cnbc.com/2026/08/28/-september-fed-decision-now-a-coin-flip-as-rate-hike-odds-increase.html" style="color:#6366f1;">CME FedWatch 顯示 9 月升息機率約 66%</a>，Fed 主席 Warsh 形容近期通膨數據「令人擔憂」。
+    </div>
+
+    <div style="background:#1a1a1a;border-left:3px solid #6366f1;border-radius:0 8px 8px 0;padding:14px 16px;">
+      <div style="color:#6366f1;font-size:13.5px;font-weight:700;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:13.5px;line-height:1.8;">
+        <li>單日反彈不能直接推翻<strong style="color:#e2e8f0">連續下跌</strong>的趨勢判斷，需要更多天數確認。</li>
+        <li>VIX 快速回落到區間下緣，代表市場<strong style="color:#e2e8f0">短線恐慌情緒</strong>降溫，但不代表風險消失。</li>
+        <li>殖利率逼近近三年高檔時，股市反彈的<strong style="color:#e2e8f0">上檔空間</strong>可能相對有限。</li>
+        <li>FOMC 前部位規劃要先寫下<strong style="color:#e2e8f0">升息／不升息</strong>兩種劇本各自的因應規則。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- Strategy Learning Section -->
+  <div style="background:linear-gradient(135deg,#8b5cf6,#6366f1);border-radius:10px;padding:10px 16px;margin-bottom:2px;text-align:center;">
+    <span style="color:#fff;font-size:15px;font-weight:700;">📖 今日策略學習</span>
+  </div>
+
+  <div style="background:#1a1a1a;border-radius:0 0 12px 12px;padding:20px;margin-bottom:16px;">
+    <div style="color:#fff;font-size:16px;font-weight:700;margin-bottom:6px;">交易日誌與復盤方法論</div>
+    <p style="color:#d1d5db;font-size:14.5px;line-height:1.7;margin:0 0 14px 0;">
+      為什麼今天學這個：本週 FOMC（9/15-16）與 CLARITY Act 參院表決（9/15）同週登場，是本季最擁擠的宏觀事件週。事件一多，事後最容易發生的就是<strong style="color:#e2e8f0">用結果幫自己編故事</strong>——如果現在不先把「當下為什麼這樣做」寫清楚，等結果出來後很難分辨自己是「照計畫執行」還是「純粹賭對」。
+    </p>
+    <div style="color:#fff;font-size:13.5px;font-weight:700;margin-bottom:8px;">核心概念</div>
+    <ul style="margin:0 0 14px 0;padding-left:18px;color:#d1d5db;font-size:13.5px;line-height:1.8;">
+      <li>日誌要記<strong style="color:#e2e8f0">決策當下</strong>的理由與信心度，不是事後才回頭補寫。</li>
+      <li>復盤問的不是這筆賺賠多少，是有沒有<strong style="color:#e2e8f0">照計畫執行</strong>。</li>
+      <li>用<strong style="color:#e2e8f0">標籤系統</strong>（衝動進場／照計畫／臨時破例）分類，比單純記損益更容易抓出問題根源。</li>
+      <li>要<strong style="color:#e2e8f0">固定週期</strong>復盤，而不是隨機想到才做，才能累積可比較的樣本。</li>
+    </ul>
+
+    <div style="background:#252525;border-left:3px solid #8b5cf6;border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:14px;">
+      <div style="color:#8b5cf6;font-size:13px;font-weight:700;margin-bottom:6px;">🎯 情境演練</div>
+      <div style="color:#d1d5db;font-size:13.5px;line-height:1.7;">
+        假設你的計畫原本寫的是「BTC 回測 $74-75K 才考慮進場」，但看到現價 <strong style="color:#fbbf24;font-weight:700">$77,242</strong> 在 FOMC 前有反彈跡象就想提前進場——這正是日誌該記下的破例時刻。不是等結果出來才回頭復盤，而是在按下進場鍵<strong style="color:#e2e8f0">之前</strong>，先寫一句「我現在為什麼改變原計畫」。等 FOMC 與 CLARITY Act 結果揭曉後，回頭比對這句話與實際結果，你會很清楚看出：這次的提前進場，是因為看到新訊號，還是純粹只是等不下去了。
+      </div>
+    </div>
+
+    <div style="color:#d1d5db;font-size:13.5px;line-height:1.7;">
+      <blockquote style="margin:0;padding:12px 14px;background:#252525;border-radius:8px;">
+        💡 <strong style="color:#e2e8f0">今日研究速讀</strong>：一篇探討交易者行為分析的文章指出，比起單純記錄損益，用「進場是否衝動」「有沒有守住停損」「計畫是否書面先行」等<strong style="color:#e2e8f0">標籤系統</strong>替每筆交易分類，更能讓資料分析（甚至 AI 輔助）抓出隱藏的模式——例如連續虧損後勝率會不會突然崩盤。白話說：記錄「結果」只能告訴你賺賠多少，記錄「行為標籤」才能告訴你問題出在哪一個環節。<br>
+        🔗 <a href="https://tradingmindlab.com/blog/behavioral-trading-analytics-consistent-profitability-2026" style="color:#8b5cf6;">原文：Behavioral Trading Analytics for Consistent Profitability</a>
+      </blockquote>
+    </div>
+  </div>
+
+  <!-- Discipline Section -->
+  <div style="background:linear-gradient(135deg,#10b981,#06b6d4);border-radius:10px;padding:10px 16px;margin-bottom:2px;text-align:center;">
+    <span style="color:#fff;font-size:15px;font-weight:700;">🧭 今日交易紀律提醒</span>
+  </div>
+
+  <div style="background:#1a1a1a;border-radius:0 0 12px 12px;padding:20px;margin-bottom:16px;">
+    <div style="color:#fff;font-size:15px;font-weight:700;margin-bottom:8px;">週一紀律主題：停損紀律</div>
+    <p style="color:#d1d5db;font-size:14.5px;line-height:1.7;margin:0 0 10px 0;">
+      「停損最容易崩潰的時刻，不是行情噴出的那一秒，是你盤前設停損時心裡偷偷想著『這次應該不會那麼準』——本週 FOMC 與 CLARITY Act 雙變數同天開獎，正是最容易讓人不知不覺放寬停損距離的一週。」
+    </p>
+    <p style="color:#d1d5db;font-size:14px;line-height:1.7;margin:0;">
+      應用情境：BTC 現在卡在 $74-75K 支撐與 $80K 壓力的中段，本週三與週二分別有 FOMC 決策與 CLARITY Act 表決結果公布，任一個意外都可能讓價格瞬間衝出這個區間。與其等到行情噴出才臨時決定「要不要先撤停損給它多一點空間」，不如現在就把停損價位寫進日誌、明確標註是根據哪個支撐／壓力設定的——這樣當行情真的劇烈波動時，你面對的是<strong style="color:#e2e8f0">一個已經簽好的合約</strong>，而不是一個可以臨時討價還價的建議。
+    </p>
+  </div>
+
+  <!-- Reflection -->
+  <div style="background:linear-gradient(135deg,#10b981,#06b6d4);padding:1px;border-radius:12px;margin-bottom:16px;">
+    <div style="background:#1a1a1a;border-radius:11px;padding:18px;">
+      <div style="color:#fff;font-size:16px;font-weight:700;margin-bottom:10px;">💭 今日反思</div>
+      <ul style="margin:0 0 10px 0;padding-left:18px;color:#d1d5db;font-size:14px;line-height:1.8;">
+        <li>如果我今天在 BTC $77K 附近有任何進出場動作，我有沒有先寫下「為什麼是現在」？</li>
+        <li>面對本週 FOMC 與 CLARITY Act 雙變數，我的停損價位是不是已經寫死，而不是等行情噴出才臨時決定？</li>
+        <li>回顧最近幾筆交易的日誌，我記錄的是「當下的理由」，還是結果出來後才回頭補的故事？</li>
+      </ul>
+      <div style="color:#9ca3af;font-size:12.5px;">挑一題寫進交易日誌，這就是今天的功課。</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="text-align:center;padding:16px 8px;color:#6b7280;font-size:11.5px;line-height:1.8;">
+    本報為 Darren 的個人學習報，內容僅供交易紀律與策略思維學習之用，不構成投資建議，亦不代表對未來價格之預測。所有市場數據均取自公開來源（CoinDesk、Yahoo Finance、CNBC、Bitcoin.com News、Forbes、CME FedWatch 等），部分數值為以官方收盤價搭配同日公開漲跌幅換算之約略值（標註「約」），資料截止時間以文中標註為準（美股與殖利率為 9/11 收盤，因 9/12-13 為週末休市；加密貨幣為 9/13 凌晨報價），實際數字請以官方或交易所公告為準。<br>
+    本信件由 AI 自動生成。
+  </div>
+
+</div>
+</body>
+</html>
