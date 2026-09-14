@@ -1,0 +1,207 @@
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;margin:0;padding:0;">
+<tr><td align="center" style="padding:20px 12px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;color:#e2e8f0;">
+
+<!-- ============ Header ============ -->
+<tr><td style="padding:0 0 18px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+  <tr><td style="padding:28px 26px;">
+    <div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+    <div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+    <div style="font-size:13px;color:#c7d2fe;margin-top:10px;font-weight:600;">2026 年 9 月 15 日（週二）· 閱讀時間約 7 分鐘</div>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ============ 30 秒重點 ============ -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:22px 24px;">
+    <div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+    <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.75;">
+      <li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>當 agent 從「一個」變成「一群」，這 48 小時多家公司同時把重點從「把 agent 做更聰明」搬到「管住一群 agent」——註冊身分、綁權限、看行為、算成本的 <strong style="color:#a5b4fc;">agent 控制平面</strong> 正式成為基礎設施。</li>
+      <li style="margin-bottom:10px;">Salesforce 年度大會 <strong style="color:#e2e8f0;">Dreamforce 今天（9/15）在舊金山開幕</strong>，主軸是「agentic enterprise」，並把整個產品堆疊押在「agent 治理即基礎設施」，今天下午還有一場專門的信任與安全 keynote。</li>
+      <li style="margin-bottom:10px;">開發維運側，<strong style="color:#e2e8f0;">Akuity（Argo CD 原班人馬）9/14 推出 Agentic Control Plane 與 MCP Server</strong>：讓 Claude／Codex／Cursor 等第三方 agent 都走同一個控制平面認證、繼承使用者權限、留下統一稽核軌跡。</li>
+      <li style="margin-bottom:10px;">其他值得知道的：<strong style="color:#e2e8f0;">Anthropic／OpenAI／Google 傳自 7 月起密會，想合組產業自律的 AI 標準機構</strong>（據報導）；GitHub Copilot 讓自動選模型可調「成本 vs 品質」；OpenAI Codex CLI 跟進新版 MCP 協定。</li>
+      <li><strong style="color:#67e8f9;">對半導體工作者最相關的：</strong>「管住一群自動化的東西、看清它在做什麼」正是 fab 與設計部門天天在面對的事——今天半導體專區談 AI 如何加速光學量測（OCD／散射量測）的逆問題求解。</li>
+    </ul>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ============ 今天的主軸 ============ -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+  <tr><td style="padding:1px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+    <tr><td style="padding:24px 24px 26px 24px;">
+      <div style="display:inline-block;background:rgba(99,102,241,0.18);color:#a5b4fc;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;margin-bottom:14px;">🎯 今天的主軸</div>
+      <div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-bottom:8px;">agent 從「一個」變成「一群」之後，戰場從「誰的 agent 更聰明」轉到「誰說得清每個 agent 是誰、能碰什麼、做過什麼」</div>
+      <div style="font-size:14px;color:#94a3b8;line-height:1.6;margin-bottom:20px;">這 48 小時的共同變化：agent 治理不再是「多加幾條防護規則」，而是升級成一個獨立的「控制平面（control plane）」——把身分、權限、行為紀錄與成本統一管起來。</div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin-bottom:6px;">▍共同變化</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.75;margin-bottom:18px;">昨天我們才談過「桌上的 coding agent 成了新攻擊面」，那是從<strong style="color:#a5b4fc;">單一工具的安全</strong>切入。今天的新聞把鏡頭拉遠：當一家公司同時跑幾十、上百個 agent，問題不再是「這個 agent 會不會被騙」，而是<strong style="color:#a5b4fc;">「這一群 agent 到底是誰、拿了誰的權限、上週動了哪些系統」</strong>。Salesforce 今天開幕的 Dreamforce、Akuity 昨天推出的 Agentic Control Plane，還有 Okta／微軟這一年鋪的「非人身分」框架，講的其實是同一件事：把 agent 當成「有身分、要授權、可稽核」的正式成員來管。</div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin-bottom:6px;">▍為什麼放在一起看</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.75;margin-bottom:18px;">因為它們從三個不同的門走進同一個房間。<strong style="color:#a5b4fc;">CRM／業務側</strong>：Salesforce 把整個產品堆疊押在「agent 治理即基礎設施」，用 AI Control Plane 註冊 agent、設身分與存取政策、管生命週期、評估表現、觀察行為、追蹤成本。<strong style="color:#a5b4fc;">開發維運側</strong>：Akuity（Argo CD／Kargo 的原班人馬）9/14 推出 Agentic Control Plane，讓 agent 的每一個請求都以「當下連線的那個人」的身分通過控制平面，政策層還能擋掉「就算你本人有權、也不該讓 agent 代做」的正式環境操作。<strong style="color:#a5b4fc;">身分／資安側</strong>：Okta 的「每個 agent 都需要身分」框架與微軟 Entra Agent ID，把既有的零信任那一套（條件式存取、權限管理）延伸到非人身分上。三條線都指向：<strong style="color:#a5b4fc;">agent 的瓶頸正在從「能力」轉到「治理」。</strong></div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin-bottom:6px;">▍過去 vs. 現在</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.75;margin-bottom:18px;">過去管一個 agent，靠的是塞在提示詞裡的規矩、一份 deny 清單、或工具層的開關——像用便利貼提醒一位新來的實習生「別碰那台伺服器」。現在改成 IT 老手熟悉的那一套<strong style="color:#a5b4fc;">身分與存取管理（IAM）流程</strong>：註冊 → 授權（這個任務需要什麼才給什麼）→ 執行時管控 → 退役，每一步都留紀錄。差別在於，便利貼靠人自律、規模一大就失效；控制平面是把規則從「agent 內部的自覺」搬到「agent 外部、擋在它和資源之間的一道關卡」。</div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin-bottom:6px;">▍背後邏輯</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.75;margin-bottom:18px;">數字會逼著大家往這走。微軟自己說 Copilot Studio 上已有 16 萬個組織跑著超過 40 萬個自訂 agent；Okta 引用的調查更直接——<strong style="color:#a5b4fc;">88% 的組織回報疑似或確認發生過 AI agent 相關資安事件，卻只有 22% 真的把 agent 當成「有身分的實體」在管</strong>（此為調查數據，屬編輯引用的背景）。當 agent 數量以指數成長、又個個能自己呼叫工具與 API，「先看得到、再管得住、還算得出花多少錢」就從加分項變成不做不行的地基。</div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin-bottom:6px;">▍對你的工作</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.75;margin-bottom:18px;">對工程與 IT 主管，這是一個該提早問的問題：你們給 AI 工具的權限，是「這個人有的全給」還是「這個任務要的才給」？對開發者，未來接入公司系統的 agent 很可能不再是「你偷偷掛上去的腳本」，而要先在控制平面登記身分、拿到 scoped 權限、行為被記錄。好處是出事能追、成本能算；代價是多一層設定與治理流程。<strong style="color:#a5b4fc;">先想清楚哪些操作「連你有權、agent 也不准代做」，會比事後補救省事得多。</strong></div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin-bottom:6px;">▍限制與待驗證</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.75;margin-bottom:18px;">三個現實要提醒：其一，<strong style="color:#a5b4fc;">看得到 ≠ 管得住</strong>——observability（把行為記下來）只是治理的一隻腳，真正難的是即時攔阻與最小權限。其二，<strong style="color:#a5b4fc;">各家控制平面互不相通</strong>：Salesforce、Akuity、Okta、微軟各蓋各的，跨平台的 agent 身分還沒有共通標準，今天的整合很可能是明天的鎖定（vendor lock-in）。其三，這些多是<strong style="color:#a5b4fc;">產品發表與框架</strong>，實際能擋下多少誤動作、稽核軌跡在真實事故裡有多好用，還要看落地後的數據（此段為編輯分析）。</div>
+
+      <div style="background:#252525;border-radius:8px;padding:14px 16px;margin-bottom:18px;">
+        <div style="font-size:12px;font-weight:700;color:#67e8f9;margin-bottom:6px;">👤 人物觀點／延伸解讀</div>
+        <div style="font-size:14px;color:#cbd5e1;line-height:1.7;">Salesforce 執行長 Marc Benioff 今天在 Dreamforce 與 Anthropic 執行長 Dario Amodei 同台談 Claudeforce 合作。產業分析普遍把這屆 Dreamforce 讀成一個訊號：<strong style="color:#a5b4fc;">Salesforce 正把「agent 治理」本身當成產品與基礎設施在賣</strong>，而不只是把 agent 當功能加進 CRM（延伸解讀，非官方定論）。</div>
+      </div>
+
+      <div style="font-size:13px;font-weight:700;color:#a5b4fc;margin-bottom:6px;">▍重點一句話</div>
+      <div style="font-size:15px;color:#e2e8f0;line-height:1.75;font-weight:600;">agent 變多之後，勝負不在誰的 agent 更聰明，而在誰能一眼說清「每個 agent 是誰、能碰什麼、做過什麼」。</div>
+
+      <div style="margin-top:16px;font-size:13px;color:#94a3b8;line-height:1.9;">
+        🔗 來源：<a href="https://www.globenewswire.com/news-release/2026/09/14/3361377/0/en/akuity-launches-agentic-control-plane-for-software-delivery-bringing-operational-context-and-governance-to-ai-agents.html" style="color:#06b6d4;text-decoration:none;">Akuity 官方新聞稿（9/14）</a><br>
+        🔗 來源：<a href="https://www.salesforce.com/dreamforce/" style="color:#06b6d4;text-decoration:none;">Salesforce Dreamforce 2026</a><br>
+        🔗 來源：<a href="https://www.okta.com/blog/ai/okta-ai-agents-early-access-announcement/" style="color:#06b6d4;text-decoration:none;">Okta for AI Agents（身分框架，背景）</a>
+      </div>
+    </td></tr>
+    </table>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ============ 主軸的衍生新聞 ============ -->
+<tr><td style="padding:0 0 16px 0;">
+  <!-- 衍生 1 -->
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;margin-bottom:14px;">
+  <tr><td style="padding:20px 24px;">
+    <div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">Claudeforce 上路：治理跟著 agent「走出去」到別家 AI 介面</div>
+    <div style="font-size:14px;color:#cbd5e1;line-height:1.7;margin-bottom:10px;">Salesforce 與 Anthropic 的 Claudeforce 合作以「Salesforce in Claude」落地，帶著 <strong style="color:#e2e8f0;">37 個預建業務技能</strong>，讓賣方與 agent 直接在 Claude 裡對「即時營收脈絡」推理、更新管線、並採取<strong style="color:#e2e8f0;">受治理的動作（governed action）</strong>。和主軸的關係：治理不只待在自家後台，還要能<strong style="color:#e2e8f0;">跟著 agent 移動到別的介面</strong>——資料、權限與稽核在哪都跟著走，才叫真治理。</div>
+    <p style="color:#94a3b8;font-style:italic;font-size:14px;margin:0 0 10px 0;">💡 重點一句話：agent 會到處跑，治理必須是「隨身」的，不能綁在某一個 App 裡。</p>
+    <div style="font-size:13px;color:#94a3b8;">🔗 <a href="https://www.salesforce.com/claudeforce/" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> ｜ 來源：Salesforce</div>
+  </td></tr>
+  </table>
+  <!-- 衍生 2 -->
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:20px 24px;">
+    <div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">Okta 把治理化成三個問題：我的 agent 在哪、能連什麼、能做什麼</div>
+    <div style="font-size:14px;color:#cbd5e1;line-height:1.7;margin-bottom:10px;">Okta 的「每個 agent 都需要身分」框架，用一個中央控制平面 <strong style="color:#e2e8f0;">Agent Gateway</strong> 把所有 agent 的存取請求路由並全程記錄，供稽核與觀測；核心就是那三個問句。和主軸的關係：它替今天所有的控制平面補上<strong style="color:#e2e8f0;">最底層的地基——身分</strong>。沒有「這是誰」，後面的權限與稽核都無從談起（此為框架與調查，非 48 小時內新品）。</div>
+    <p style="color:#94a3b8;font-style:italic;font-size:14px;margin:0 0 10px 0;">💡 重點一句話：資料控制與執行時控制，都得先知道「是哪個 agent 在動」，身分是第一張骨牌。</p>
+    <div style="font-size:13px;color:#94a3b8;">🔗 <a href="https://www.okta.com/newsroom/articles/ai-agents-at-work-2026-agentic-enterprise-security/" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> ｜ 來源：Okta</div>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ============ 其他快訊 ============ -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:22px 24px;">
+    <div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+    <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+      <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">傳 Anthropic／OpenAI／Google 密會，想合組 AI 標準機構</strong>：據報導，三家自 7 月起開工作組會議，討論一個由業界主導、對前沿模型做發布前測試與獨立稽核的組織（Amodei 主推、Hassabis 曾提議仿效華爾街 FINRA）。為什麼重要：若成真，未來模型「能不能上市」可能多一道業界自律關卡，牽動整條 AI 供應鏈的節奏。🔗 <a href="https://qz.com/anthropic-google-openai-ai-standards-body-091426" style="color:#06b6d4;text-decoration:none;">來源（據報導）</a></li>
+      <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">GitHub Copilot：自動選模型可調「成本 vs 品質」</strong>：9/14 更新讓你在 Copilot 自動挑模型時，自行拉桿決定要更省還是更強。為什麼重要：這其實是「治理的成本那一腳」——連 agent 用哪個腦、花多少錢，都被搬上可調的控制面。🔗 <a href="https://github.blog/changelog/" style="color:#06b6d4;text-decoration:none;">來源：GitHub Changelog</a></li>
+      <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">OpenAI Codex CLI 跟進新版 MCP 協定（2026-07-28）</strong>：支援分頁式工具探索、多輪請求與非阻塞式伺服器啟動。為什麼重要：MCP 是 agent 接外部工具的共通插座，協定升級意味著更大規模、更穩的工具連接——這也是控制平面能統一納管的前提。🔗 <a href="https://www.gradually.ai/en/changelogs/codex-cli/" style="color:#06b6d4;text-decoration:none;">來源：Codex CLI Changelog</a></li>
+      <li><strong style="color:#e2e8f0;">OpenAI 宣布 DevDay 2026 訂於 9/29 舊金山</strong>：年度開發者大會排定日期，通常是 API 與 agent 工具更新的重頭戲。為什麼重要：兩週後很可能又是一波 agent 平台級公告，值得先把行事曆標起來。🔗 <a href="https://openai.com/index/devday-2026/" style="color:#06b6d4;text-decoration:none;">來源：OpenAI</a></li>
+    </ul>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ============ 今日概念 ============ -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:22px 24px;">
+    <div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">📖 今日概念｜控制平面 vs. 資料平面</div>
+    <div style="font-size:15px;color:#cbd5e1;line-height:1.75;">
+      <p style="margin:0 0 12px 0;"><strong style="color:#a5b4fc;">一句定義：</strong>「資料平面（data plane）」是真正做事、搬運東西的那一層；「控制平面（control plane）」是決定「誰能做、往哪走、按什麼規則」的那一層。系統設計常刻意把兩者分開。</p>
+      <p style="margin:0 0 12px 0;"><strong style="color:#a5b4fc;">生活化比喻：</strong>想像一座機場。跑道上起降、載客飛行的飛機是資料平面；塔台不搬一件行李，卻決定誰能起飛、走哪條航道、何時降落，那就是控制平面。塔台癱瘓，飛機還在天上，但沒人敢亂飛。</p>
+      <p style="margin:0 0 12px 0;"><strong style="color:#a5b4fc;">工作中的例子：</strong>網路交換器裡，轉封包的晶片是資料平面，算路由表的軟體是控制平面；今天的 agent 控制平面也一樣——agent 呼叫 API、讀寫資料是「做事」，而「這個 agent 有沒有權限這樣做、要不要記一筆、超支了沒」是「管事」，被抽出來獨立成一層。</p>
+      <p style="margin:0 0 12px 0;"><strong style="color:#a5b4fc;">常見誤解：</strong>以為「把行為都記下來（observability）」就等於「管得住」。其實紀錄屬於「看得到」，真正的控制平面還要能<strong style="color:#a5b4fc;">當下攔阻</strong>——看到違規卻攔不下來，塔台就只是行車紀錄器。</p>
+      <p style="margin:0;"><strong style="color:#a5b4fc;">與今天主軸的關係：</strong>今天所有廠商在做的，本質上就是<strong style="color:#a5b4fc;">替 agent 蓋一座塔台</strong>——把「管事」從 agent 自己的腦袋裡搬出來，變成擋在它和資源之間、看得到也管得住的一層。</p>
+    </div>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ============ 半導體 AI 專區 ============ -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:22px 24px;">
+    <div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜光學量測的「逆推」：用機器學習解 OCD／散射量測</div>
+    <div style="margin-bottom:16px;">
+      <span style="display:inline-block;background:rgba(103,232,249,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-right:6px;">IC 製造</span>
+      <span style="display:inline-block;background:rgba(148,163,184,0.18);color:#cbd5e1;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">背景知識</span>
+    </div>
+    <div style="font-size:15px;color:#cbd5e1;line-height:1.75;">
+      <div style="font-size:13px;font-weight:700;color:#67e8f9;margin-bottom:6px;">▍問題與流程位置</div>
+      <p style="margin:0 0 14px 0;">先進節點與 3D 封裝要量的是 nm 級的線寬、間距、高度、側壁角。<strong style="color:#67e8f9;">CD-SEM／AFM 準，但慢、成本高、還可能傷到樣品</strong>，難以做 inline 近全檢。業界因此大量用<strong style="color:#67e8f9;">光學臨界尺寸（OCD）／散射量測</strong>：對週期性結構打光、量它散射／繞射出來的光譜（如 Mueller 矩陣），非破壞又快。麻煩在於——你量到的是「光譜」，要的卻是「尺寸」，中間隔著一個難解的<strong style="color:#67e8f9;">逆問題</strong>。</p>
+      <div style="font-size:13px;font-weight:700;color:#67e8f9;margin-bottom:6px;">▍AI 如何介入</div>
+      <p style="margin:0 0 14px 0;">傳統做法是先用嚴謹的電磁模擬（RCWA）算出「各種尺寸 → 對應光譜」的龐大 library，量測時再回頭比對查表，或每量一次就跑一次昂貴模擬——<strong style="color:#67e8f9;">慢、且維度一多就爆炸</strong>。AI 的切法是：用 RCWA 產生大量合成光譜當訓練資料，訓練一個神經網路直接學「光譜 → 尺寸」的反向映射，量測時只要一次前向推論。和過去最大的差別是把「每次量測都要重算物理」換成「一次訓練、之後即時查詢」。有研究（3D 封裝重佈線層）報告單次量測可壓到 <strong style="color:#67e8f9;">3 毫秒以下、吞吐量較 AFM／SEM 提升約兩個數量級</strong>（此為學術研究數據，非量產成果）。</p>
+      <div style="font-size:13px;font-weight:700;color:#67e8f9;margin-bottom:6px;">▍資料與產出</div>
+      <p style="margin:0 0 14px 0;">輸入是繞射／散射光譜、Mueller 矩陣或後焦面影像；輸出是 CD、高度、間距、側壁角等結構參數。訓練資料主要來自 RCWA 合成（再用少量實測校正），這也讓它<strong style="color:#67e8f9;">不必仰賴海量標註的真實晶圓</strong>。</p>
+      <div style="font-size:13px;font-weight:700;color:#67e8f9;margin-bottom:6px;">▍如何驗證</div>
+      <p style="margin:0 0 14px 0;">拿 CD-SEM／AFM／TEM 當「參考真值」交叉比對、看殘差分布，並檢查模型在製程窗口邊緣的敏感度是否合理。關鍵是要輸出<strong style="color:#67e8f9;">不確定度估計</strong>，讓量測值能被 SPC（統計製程管制）正確判讀。</p>
+      <div style="font-size:13px;font-weight:700;color:#67e8f9;margin-bottom:6px;">▍限制與風險</div>
+      <p style="margin:0 0 16px 0;">一是<strong style="color:#67e8f9;">合成與真實的落差（domain gap）</strong>：RCWA 模型沒涵蓋的材料或製程漂移，網路學不到。二是<strong style="color:#67e8f9;">外插失準</strong>——遇到訓練分布外的新結構，預測可能自信卻錯。三是模型會 drift，需定期用實測再校正。這些都是編輯整理的通則，不代表任一特定產線的做法。</p>
+      <p style="color:#67e8f9;font-weight:700;font-size:15px;margin:0;line-height:1.6;">👷 對半導體工作者的意義：量測吞吐與回饋速度，往往是良率 ramp 的隱形瓶頸。ML-OCD 讓 inline 量測有機會從「抽樣」走向「近全檢」，但量測／良率／整合工程師要把「模型信心與不確定度」納入判讀，別把神經網路的輸出當成無條件真值。</p>
+      <div style="margin-top:14px;font-size:13px;color:#94a3b8;line-height:1.9;">
+        🔗 來源：<a href="https://www.mdpi.com/2072-666X/16/8/838" style="color:#06b6d4;text-decoration:none;">《AI-Powered Next-Generation Technology for Semiconductor Optical Metrology: A Review》(MDPI, 2025)</a><br>
+        🔗 來源：<a href="https://tsapps.nist.gov/publication/get_pdf.cfm?pub_id=929975" style="color:#06b6d4;text-decoration:none;">NIST：Contrasting Conventional and Machine Learning Approaches（散射量測）</a>
+      </div>
+    </div>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ============ 反思時間 ============ -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+  <tr><td style="padding:1px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+      <ul style="margin:0 0 14px 0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.75;">
+        <li style="margin-bottom:12px;">如果一年後你的組織會有「幾十個 agent」在跑，你現在能一眼答出「哪個 agent 是誰、拿了誰的權限、上週動過哪些系統」嗎？答不出來的話，這座塔台該由誰來蓋、蓋在哪一層？</li>
+        <li style="margin-bottom:12px;">你現在給 AI 工具或 agent 的權限，是照「這個人有的全給」還是「這個任務需要的才給」？有哪些正式環境的操作，應該設計成「連你本人有權、也不准 agent 代做」？</li>
+        <li>當 Salesforce、Akuity、Okta、微軟各自蓋自己的 agent 控制平面，你會賭「單一平台全包」還是「跨平台互通標準」？你的採購與架構要替另一種結局留什麼後路？</li>
+      </ul>
+      <p style="color:#a5b4fc;font-weight:700;font-size:15px;margin:0;line-height:1.6;">🎒 今日帶走：agent 一多，勝負就從「誰更聰明」轉向「誰管得住」——先看得到、再管得住、還算得出成本的那一層，正在成為新的基礎設施。</p>
+    </td></tr>
+    </table>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ============ 歷史電子報入口 ============ -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:22px 24px;">
+    <div style="font-size:16px;font-weight:800;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+    <div style="font-size:14px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</div>
+    <a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-size:15px;font-weight:600;">查看歷史電子報</a>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- ============ Footer ============ -->
+<tr><td style="padding:0 0 20px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#141414;border-radius:14px;">
+  <tr><td style="padding:22px 24px;text-align:center;">
+    <div style="font-size:14px;color:#cbd5e1;line-height:1.8;margin-bottom:10px;">📬 覺得有用？把它分享給朋友吧！<br><a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;font-weight:600;">訂閱這份電子報</a></div>
+    <div style="font-size:13px;color:#64748b;line-height:1.8;margin-bottom:14px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></div>
+    <div style="font-size:12px;color:#475569;line-height:1.7;border-top:1px solid #262626;padding-top:14px;">© 2026 企鵝的 AI 每日電子報🐧<br>本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</div>
+  </td></tr>
+  </table>
+</td></tr>
+
+</table>
+</td></tr>
+</table>

@@ -656,3 +656,14 @@
 {"date": "2026-09-14", "title": "xAI Grok 4.7 延後：Musk 稱模型太早停手、自我檢查不夠嚴謹（RL/self-checking，據報導）"}
 {"date": "2026-09-14", "title": "Salesforce Agentforce 推出七個具名產業 agent（Casey/Paige/Carter/Hunter 等）"}
 {"date": "2026-09-14", "title": "OpenAI Agents API 進入公測：開放管理式 Codex harness（session/編排/壓縮/復原代管）"}
+{"date": "2026-09-15", "title": "Akuity 推出 Agentic Control Plane 與 MCP Server：第三方 agent 共用控制平面認證、繼承使用者權限、統一稽核（9/14）"}
+{"date": "2026-09-15", "title": "Dreamforce 2026 開幕：Salesforce 把整個 stack 押在『agent 治理即基礎設施』（AI Control Plane／observability／Trust keynote）"}
+{"date": "2026-09-15", "title": "Claudeforce／Salesforce in Claude：37 個預建業務技能、在 Claude 內對 live 營收採取 governed action"}
+{"date": "2026-09-15", "title": "Okta『每個 agent 都需要身分』框架：Agent Gateway 控制平面＋三問（agent 在哪／能連什麼／能做什麼）"}
+{"date": "2026-09-15", "title": "傳 Anthropic／OpenAI／Google 自 7 月起密會、討論合組業界主導的 AI 標準機構（Amodei 主推、仿 FINRA，據報導）"}
+{"date": "2026-09-15", "title": "GitHub Copilot 自動選模型新增『成本 vs 品質』可調拉桿（9/14）"}
+{"date": "2026-09-15", "title": "OpenAI Codex CLI 支援新版 MCP 協定（2026-07-28）：分頁探索、多輪請求、非阻塞啟動"}
+{"date": "2026-09-15", "title": "OpenAI 宣布 DevDay 2026 訂於 9/29 舊金山"}
+{"date": "2026-09-15", "title": "主軸：agent 從一個變成一群後戰場轉到治理——控制平面（身分／權限／行為／成本）成為基礎設施（Dreamforce＋Akuity＋Okta/Entra）"}
+{"date": "2026-09-15", "title": "概念：控制平面 vs 資料平面（Control Plane vs Data Plane）"}
+{"date": "2026-09-15", "title": "半導體專區：IC 製造｜光學臨界尺寸散射量測（OCD/scatterometry）的機器學習逆問題求解"}
