@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的 AI 每日電子報🐧</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;">
+<tr><td align="center" style="padding:20px 12px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+
+<!-- Header -->
+<tr><td style="padding:0 0 18px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+  <tr><td style="padding:26px 24px;">
+    <div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+    <div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+    <div style="font-size:13px;color:#c7d2fe;margin-top:10px;font-weight:600;">2026 年 9 月 16 日（週三）· 閱讀時間約 7 分鐘</div>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- 30秒重點 -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:22px 24px;">
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+    <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+      <li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>AI 大廠不再只賣「一顆最強的腦」，而是開始賣「一組會自己分難易的腦」——同一批發布，把「按任務難度自動配一顆<strong style="color:#a5b4fc">剛好夠用、最便宜</strong>的模型」變成產品預設。</li>
+      <li style="margin-bottom:10px;">Google 推 <strong style="color:#e2e8f0">Gemini 3.8 Live</strong>，一口氣拆成便宜的即時對話版（$0.84/hr）與貴一點的「深思版」（$3.50/hr），語音品質衝上業界第一。</li>
+      <li style="margin-bottom:10px;">GitHub Copilot 的自動選模器新增 <strong style="color:#e2e8f0">Efficiency／Balance／Intelligence 三檔</strong>，讓你替整批任務先定調「要省還是要好」；同一週 Claude Code 悄悄收緊用量約 17%。</li>
+      <li style="margin-bottom:10px;">其他值得知道：NVIDIA AI Infra Summit 開幕主打「為 agent 而生的基礎設施」；Cornelis 募 2.05 億美元、把運算塞進網路挑戰 InfiniBand；上海 AI Lab 開源 744B agentic 模型 Atria Dawn。</li>
+      <li><strong style="color:#67e8f9;">對半導體工作者最相關：</strong>「用更少算力換同樣結果」這條線，正好對上 EDA 裡最燒機時的環節之一——標準單元庫特性化，ML 代理模型能把它加速百倍（見半導體專區）。</li>
+    </ul>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+  <tr><td style="padding:1px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+    <tr><td style="padding:24px;">
+      <div style="display:inline-block;background:rgba(99,102,241,0.18);color:#a5b4fc;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;margin-bottom:14px;">🎯 今天的主軸</div>
+      <div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-bottom:16px;">AI 開始賣「會自己分難易的腦」——同一天，各家把「每個任務配剛好夠用的模型」變成預設</div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍共同變化</div>
+      <div style="color:#cbd5e1;font-size:15px;line-height:1.7;">過去一年，AI 大廠比的是「誰的單一模型最聰明」。這兩天的發布卻不約而同轉向另一件事：<strong style="color:#a5b4fc">不再逼你用同一顆最強（也最貴）的模型做所有事，而是讓系統看菜下飯——簡單的任務丟給便宜小模型，難的才升級到大模型。</strong>Google 的 Gemini 3.8 Live 直接把語音模型拆成兩層；GitHub Copilot 的自動選模器多了「要省還是要好」的旋鈕；Anthropic 則反向收緊用量，逼大家精打細算。三件事指向同一個結論：<strong style="color:#a5b4fc">「分難易」本身，正在變成產品。</strong></div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍為什麼放在一起看</div>
+      <div style="color:#cbd5e1;font-size:15px;line-height:1.7;">單看任何一則，都只是某家又更新了。但放在一起，就看得出這是被<strong style="color:#a5b4fc">「agent 的用量經濟學」</strong>逼出來的共識。當 AI 從「你問一句、它答一句」變成「它自己跑幾十步」，每一步都用旗艦模型，帳單會爆掉。於是各家不約而同把「幫你選一顆夠用就好的模型」內建進產品，而不是外包給使用者自己糾結。</div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍過去 vs. 現在</div>
+      <div style="color:#cbd5e1;font-size:15px;line-height:1.7;"><strong style="color:#e2e8f0">過去：</strong>你在下拉選單裡自己挑模型，挑錯不是太貴就是太笨，一整個 session 用到底。<br><strong style="color:#e2e8f0">現在：</strong>系統<strong style="color:#a5b4fc">逐個提示（per-prompt）即時評估難度</strong>再派工——Copilot 就算你選了「Intelligence 檔」，遇到寫一段文件註解，還是會自動改用小模型；Gemini 3.8 Live 平時用便宜的對話層，碰到需要推理的問題才切到「Extended Thinking」而不打斷對話。你設定的是「偏好」，不是「哪一顆」。</div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍背後邏輯</div>
+      <div style="color:#cbd5e1;font-size:15px;line-height:1.7;">三個具體證據把這條線釘死：<br>① <strong style="color:#e2e8f0">Gemini 3.8 Live／Live Extended Thinking</strong>（9/15，Google 官方）：一個主打「規模與成本效率」的即時對話版（輸入音訊 $0.84/hr），一個主打複雜推理的深思版（$3.50/hr）；兩者都能在對話中即時切換 97 種語言、<strong style="color:#a5b4fc">邊講話邊在背景跑工具呼叫</strong>。深思版在 Speech-to-Speech 品質指數拿 82.6，壓過 GPT-Live-1 Astra（81.5）與 Grok Voice（81.3）。<br>② <strong style="color:#e2e8f0">GitHub Copilot 自動選模</strong>（9/14，GitHub 官方）：新增 Efficiency／Balance／Intelligence 三檔，<strong style="color:#a5b4fc">按你選的檔位、逐個提示挑最合適的模型</strong>，而且「照實際用到的模型計費」，付費用戶再打九折。<br>③ <strong style="color:#e2e8f0">Anthropic Claude Code</strong>（9/14，據 AI Weekly 報導）：結束暑期臨時加碼的 50% 週用量，Pro／Max 相較夏季淨減約 17%——<strong style="color:#a5b4fc">供給端在收緊，等於替「省著用」的需求加了一把火。</strong></div>
+
+      <div style="background:#252525;border-radius:10px;padding:14px 16px;margin:18px 0;">
+        <div style="color:#a5b4fc;font-size:12px;font-weight:700;margin-bottom:6px;">👤 人物觀點／延伸解讀（編輯分析）</div>
+        <div style="color:#cbd5e1;font-size:14px;line-height:1.7;">值得注意的是，這套「分難易」邏輯也長進了 coding agent 的骨架裡：Factory 的 Droid 標榜<strong style="color:#a5b4fc">模型不可知（model-agnostic）、把「深化的模型路由」列為核心投資</strong>，讓不同能力層級的模型接力完成一件工作。換句話說，「配一顆剛好夠用的模型」不只是大廠的計費策略，也正在成為工具層的預設架構。（產品能力來自 Factory 官方說明；坊間流傳的最新募資金額各來源不一，本報不採用未經第一手確認的數字。）</div>
+      </div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍限制與待驗證</div>
+      <div style="color:#cbd5e1;font-size:15px;line-height:1.7;">好處明顯，但別急著全押。<strong style="color:#e2e8f0">第一</strong>，「自動選模」是黑盒：你不一定知道某次回答被派給了哪顆模型，出錯時難以復現與究責。<strong style="color:#e2e8f0">第二</strong>，「照實際用到的模型計費」意味著<strong style="color:#a5b4fc">成本變得難以事前預估</strong>——你設「省」，系統仍可能判斷某任務要升級。<strong style="color:#e2e8f0">第三</strong>，難度判斷本身會出錯：把難題誤判成簡單、派給小模型，省下的錢會用品質賠回去。這些都還沒有公開、可稽核的第三方評測背書，屬於「方向對、細節待驗」。</div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 6px;">▍重點一句話</div>
+      <div style="color:#cbd5e1;font-size:15px;line-height:1.7;">AI 產品的競爭軸，正從「我的模型多聰明」滑向「我多會替你分配聰明」——<strong style="color:#a5b4fc">會分難易，開始比單純更強更值錢。</strong></div>
+
+      <div style="border-top:1px solid #333;margin-top:18px;padding-top:12px;font-size:13px;color:#94a3b8;">
+        🔗 來源：<a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-8-live-gemini-3-8-live-extended-thinking/" style="color:#06b6d4;text-decoration:none;">Google 官方部落格</a> ｜ <a href="https://github.blog/changelog/2026-09-14-configure-cost-and-quality-in-copilot-auto-model-selection/" style="color:#06b6d4;text-decoration:none;">GitHub Changelog</a> ｜ <a href="https://aiweekly.co/ai-news-today" style="color:#06b6d4;text-decoration:none;">AI Weekly（Claude Code 用量）</a>
+      </div>
+    </td></tr>
+    </table>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- 主軸的衍生新聞 -->
+<tr><td style="padding:0 0 8px 0;">
+  <div style="font-size:16px;font-weight:700;color:#e2e8f0;padding:6px 4px;">🔗 主軸的衍生新聞</div>
+</td></tr>
+
+<tr><td style="padding:0 0 12px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:20px 22px;">
+    <div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">Anthropic 收緊 Claude Code 用量約 17%，替「省著用」加了一把火</div>
+    <div style="color:#cbd5e1;font-size:14px;line-height:1.7;">Anthropic 結束暑期臨時提供的 50% 週用量加碼，Pro／Max 方案相較夏季<strong style="color:#a5b4fc">淨減約 17%</strong>。這和主軸互為表裡：<strong style="color:#e2e8f0">供給端收緊配額</strong>，正是逼使用者與工具轉向「按難度配模型、能省則省」的直接壓力。</div>
+    <p style="color:#94a3b8;font-style:italic;font-size:14px;margin:10px 0 8px;">💡 重點一句話：配額不是無限的，「分難易」不是選配、是生存技能。</p>
+    <div style="font-size:13px;color:#94a3b8;">🔗 <a href="https://aiweekly.co/ai-news-today" style="color:#06b6d4;text-decoration:none;">來源：AI Weekly（2026/09/14，據報導）</a></div>
+  </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:0 0 12px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:20px 22px;">
+    <div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">Factory Droid：把「模型不可知的路由」做成 coding agent 的骨架</div>
+    <div style="color:#cbd5e1;font-size:14px;line-height:1.7;">企業級 coding agent 平台 Factory 強調其 Droid <strong style="color:#a5b4fc">模型不可知、介面不可知</strong>，能在任何 IDE／CLI／Slack 執行，並把「更深的模型路由」與常駐背景代理列為核心產品投資，客戶含 NVIDIA、Adobe、MongoDB。它把主軸的邏輯<strong style="color:#e2e8f0">從大廠計費策略，落實到開發工具的架構層</strong>。</div>
+    <p style="color:#94a3b8;font-style:italic;font-size:14px;margin:10px 0 8px;">💡 重點一句話：未來 coding agent 的差異化，可能不在「用哪顆模型」，而在「多會派工」。</p>
+    <div style="font-size:13px;color:#94a3b8;">🔗 <a href="https://factory.ai/news/series-c" style="color:#06b6d4;text-decoration:none;">來源：Factory 官方</a></div>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="padding:6px 0 12px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:22px 24px;">
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+    <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:14px;line-height:1.75;">
+      <li style="margin-bottom:14px;"><strong style="color:#e2e8f0">NVIDIA AI Infra Summit 開幕（9/15–17，聖塔克拉拉）：</strong>VP Ian Buck 以「為 agentic AI 時代打造基礎設施」開場主題演講。整場聚焦「AI 工廠」全端堆疊——從 Vera Rubin 機櫃到 scale-up／scale-out 網路，把 agent 工作負載當成硬體設計的第一原則。 🔗 <a href="https://www.ai-infra-summit.com/speakers/ian-buck" style="color:#06b6d4;text-decoration:none;">來源</a></li>
+      <li style="margin-bottom:14px;"><strong style="color:#e2e8f0">Cornelis 募 2.05 億美元、發表 Active Compute Fabric（9/14）：</strong>由 Intel Omni-Path 部門獨立出來的 Cornelis，把「可程式化運算」直接塞進網路交換層，讓資料在 GPU 之間<strong style="color:#a5b4fc">流動時就順手做完部分運算</strong>；採 UALink／Ultra Ethernet 開放標準、聯手 Qualcomm，正面挑戰 NVIDIA InfiniBand。這意味 AI 建置的瓶頸正從「晶片本身」外溢到「晶片之間的網路」。 🔗 <a href="https://www.networkworld.com/article/4221872/cornelis-lands-205m-to-make-ai-networks-compute-not-just-connect.html" style="color:#06b6d4;text-decoration:none;">來源</a></li>
+      <li style="margin-bottom:14px;"><strong style="color:#e2e8f0">上海 AI Lab 開源 Atria Dawn Preview（arXiv 9/14）：</strong>以 6 月的 744B MoE 模型 GLM-5.2 為底做後訓練，透過「可驗證經驗管線」把工具互動接上可執行環境；<strong style="color:#a5b4fc">MIT 授權、權重公開</strong>，等於給算力充足的團隊一個免談授權、可自架的前沿 agentic 模型。 🔗 <a href="https://huggingface.co/internlm/Atria-Dawn-Preview" style="color:#06b6d4;text-decoration:none;">來源</a></li>
+      <li style="margin-bottom:14px;"><strong style="color:#e2e8f0">SemiAnalysis：Vera Rubin NVL72 每 MW 吞吐約 Blackwell 7 倍（9/15，第三方分析）：</strong>以 DeepSeek V4 Pro 實測，Vera Rubin NVL72 的<strong style="color:#a5b4fc">「每兆瓦 token 吞吐量」約為 Blackwell 的 7 倍</strong>。此為第三方機構評測、非 NVIDIA 官方數字，供趨勢參考。 🔗 <a href="https://aiweekly.co/ai-news-today" style="color:#06b6d4;text-decoration:none;">來源</a></li>
+      <li><strong style="color:#e2e8f0">GitHub 強化供應鏈安全（9/15）：</strong>上線「強制套用 Advanced Security 組態」，並宣布 <strong style="color:#a5b4fc">HTTPS 中的 SHA-1 落日</strong>。對把 CI／CD 綁進 AI 工作流的團隊，等於再收一次安全底線。 🔗 <a href="https://github.blog/changelog/" style="color:#06b6d4;text-decoration:none;">來源</a></li>
+    </ul>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="padding:6px 0 12px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:22px 24px;">
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:14px;">📖 今日概念｜模型級聯（Model Cascade）</div>
+    <div style="color:#cbd5e1;font-size:15px;line-height:1.7;">
+      <p style="margin:0 0 12px;"><strong style="color:#a5b4fc">一句定義：</strong>先用便宜的小模型試著回答，只有當它「沒把握」或「答不好」時，才把同一個問題升級交給更貴、更強的大模型——像一條由淺入深的接力線。</p>
+      <p style="margin:0 0 12px;"><strong style="color:#a5b4fc">生活化比喻：</strong>就像醫院分診：多數人先讓「一般門診」處理，只有複雜病況才轉「專科主治」。你不會叫最貴的主任醫師看每一個感冒。<span style="color:#94a3b8;">（回到技術：小模型＝門診、大模型＝主治，中間那個「要不要轉診」的判斷，就是級聯的核心。）</span></p>
+      <p style="margin:0 0 12px;"><strong style="color:#a5b4fc">工作中的例子：</strong>一個 code review agent 可以先用小模型掃過所有檔案挑出可疑處，只把「真的有嫌疑」的片段送給大模型深究——多數檔案根本不需要旗艦模型。</p>
+      <p style="margin:0 0 12px;"><strong style="color:#a5b4fc">常見誤解：</strong>級聯不等於「路由」。<strong style="color:#e2e8f0">路由</strong>是一開始就從幾個模型裡挑一個來做（挑完就定案）；<strong style="color:#e2e8f0">級聯</strong>是先做、不滿意再往上升級（可能經過好幾層）。兩者常被混用，但省錢的機制不同。</p>
+      <p style="margin:0;"><strong style="color:#a5b4fc">與今天主軸的關係：</strong>Copilot 的三檔自動選模、Gemini Live 的「對話層 vs 深思層」，骨子裡都是級聯／分層的思路——先便宜、必要時才升級。理解級聯，就理解了今天這批產品「省錢」的共同引擎。</p>
+    </div>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- 半導體 AI 專區 -->
+<tr><td style="padding:6px 0 12px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:22px 24px;">
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜標準單元庫特性化的 ML 加速</div>
+    <div style="margin-bottom:14px;">
+      <span style="display:inline-block;background:rgba(99,102,241,0.18);color:#a5b4fc;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;margin-right:6px;">EDA 工具</span>
+      <span style="display:inline-block;background:rgba(148,163,184,0.16);color:#cbd5e1;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">背景知識</span>
+    </div>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:6px 0 6px;">▍問題與流程位置</div>
+    <div style="color:#cbd5e1;font-size:14px;line-height:1.7;">晶片設計要能做時序（timing）與功耗分析，得先有一份「標準單元庫」的電性模型——也就是每一顆邏輯閘（AND、正反器…）在不同<strong style="color:#a5b4fc">製程、電壓、溫度（PVT corner）</strong>下的延遲與功耗數字，存進 <strong style="color:#e2e8f0">Liberty（.lib）</strong>檔。這一步叫「特性化（characterization）」，位在整個設計流程最上游：庫沒好，後面 P&R、簽核都動不了。問題是它極度燒機時——每顆單元、每個轉態、每組 PVT 與負載都要跑一次 SPICE，一個先進節點的完整庫動輒數百萬次模擬、耗時數週。</div>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:16px 0 6px;">▍AI 如何介入</div>
+    <div style="color:#cbd5e1;font-size:14px;line-height:1.7;"><strong style="color:#e2e8f0">過去：</strong>老老實實對每個 PVT corner 重跑 SPICE，多一個 corner 就多一輪完整模擬。<br><strong style="color:#e2e8f0">現在（研究方向）：</strong>用 ML 當 SPICE 的「代理模型（surrogate）」——只在少數 corner 實跑 SPICE，其餘用模型<strong style="color:#a5b4fc">推論預測</strong>。學界已示範多條路：以<strong style="color:#e2e8f0">圖神經網路（GNN）</strong>吃進單元電路結構、跨 PVT 直接預測特性，報稱相對 SPICE 約 <strong style="color:#a5b4fc">100 倍加速</strong>；用全 MLP 架構的 LIBMixer 報稱約 31.5 倍；也有用<strong style="color:#e2e8f0">高斯過程回歸＋主動學習</strong>針對 CCS 模型，主動挑「最該實跑」的樣本以更少模擬收斂。差別在於：把「盲目全跑」換成「挑重點跑、其餘用學到的規律補」。</div>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:16px 0 6px;">▍資料與產出</div>
+    <div style="color:#cbd5e1;font-size:14px;line-height:1.7;">輸入是單元的電路結構／版圖幾何、電晶體參數與少量已實跑的 SPICE 結果；產出是可直接寫回 <strong style="color:#e2e8f0">.lib</strong> 的延遲、轉態、功耗（乃至 CCS／雜訊）數值。關鍵在於產出必須是<strong style="color:#a5b4fc">下游工具吃得下的標準格式</strong>，否則再快也接不進既有流程。</div>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:16px 0 6px;">▍如何驗證</div>
+    <div style="color:#cbd5e1;font-size:14px;line-height:1.7;">拿預測值和「黃金 SPICE 結果」比對誤差（通常看關鍵路徑上的相對誤差要壓在個位數百分比內），並回到真實設計上跑一次簽核，確認時序結論不因代理模型而翻盤。對安全邊界緊的路徑，可保留「必要時退回實跑 SPICE」的機制——這本身就是一種級聯思路。</div>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:16px 0 6px;">▍限制與風險</div>
+    <div style="color:#cbd5e1;font-size:14px;line-height:1.7;">代理模型<strong style="color:#a5b4fc">外推能力有限</strong>：遇到訓練時沒看過的新節點、新單元拓撲或極端 corner，誤差可能失控；而特性化的數字會被整條時序簽核放大，一點系統性偏差就可能誤判良率或漏抓 timing violation。因此目前多定位為「<strong style="color:#e2e8f0">加速探索與設計技術協同最佳化（DTCO）</strong>」的工具，最終簽核仍傾向以實跑 SPICE 把關。以上為公開論文的研究成果與背景知識，非特定公司的量產導入宣稱。</div>
+
+    <p style="color:#67e8f9;font-weight:700;font-size:14px;margin:16px 0 0;line-height:1.6;">👷 對半導體工作者的意義：對做庫特性化／DTCO、需要快速掃很多 PVT 或探索新單元的工程師，ML 代理模型能把「跑一輪要幾週」壓成「幾小時內先看到近似結果」，讓你把昂貴的完整 SPICE 留給最後簽核——值得先在內部小範圍試跑、量化你自己流程上的誤差與加速比。</p>
+
+    <div style="border-top:1px solid #333;margin-top:14px;padding-top:12px;font-size:13px;color:#94a3b8;">
+      🔗 來源：<a href="https://arxiv.org/abs/2312.12784" style="color:#06b6d4;text-decoration:none;">GNN 快速特性化（arXiv 2312.12784）</a> ｜ <a href="https://arxiv.org/abs/2505.10799" style="color:#06b6d4;text-decoration:none;">GPR＋主動學習 CCS（arXiv 2505.10799）</a> ｜ LIBMixer（ASP-DAC）
+    </div>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="padding:6px 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+  <tr><td style="padding:1px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+    <tr><td style="padding:24px;">
+      <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+      <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+        <li style="margin-bottom:12px;"><strong style="color:#a5b4fc">趨勢反思：</strong>當「自動選模」把用了哪顆模型變成黑盒，你要如何在成本失控與品質翻車之間，替團隊設下一條你能解釋、能稽核的界線？</li>
+        <li style="margin-bottom:12px;"><strong style="color:#a5b4fc">工作連結：</strong>回想你手上最燒機時的環節（庫特性化、迴歸驗證、大量 corner 掃描……），哪些可以套用「先便宜代理、必要時才實跑」的級聯思路？誤差要壓到多少你才敢把它接進正式流程？</li>
+        <li><strong style="color:#a5b4fc">未來判斷：</strong>如果三年後「多會派工」比「模型多強」更決定體驗，那你採購 AI 工具時，評估重點該從「跑分」移到哪些看不見的能力上？</li>
+      </ul>
+      <p style="color:#a5b4fc;font-weight:700;font-size:15px;margin:16px 0 0;line-height:1.6;">🎒 今日帶走：AI 的新戰場不是「誰更聰明」，而是「誰更會替你把聰明用在刀口上」——分難易，正在變成產品本身。</p>
+    </td></tr>
+    </table>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- 歷史電子報入口 -->
+<tr><td style="padding:0 0 12px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:20px 24px;">
+    <div style="font-size:15px;font-weight:700;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+    <div style="color:#cbd5e1;font-size:14px;line-height:1.7;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</div>
+    <div style="margin-top:12px;"><a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-weight:600;font-size:14px;">查看歷史電子報</a></div>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- Footer -->
+<tr><td style="padding:8px 0 24px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+  <tr><td style="padding:18px 24px;text-align:center;">
+    <div style="color:#94a3b8;font-size:13px;line-height:1.8;">📬 覺得有收穫？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">分享並訂閱這份電子報</a></div>
+    <div style="color:#64748b;font-size:12px;line-height:1.8;margin-top:8px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></div>
+    <div style="color:#475569;font-size:11px;line-height:1.7;margin-top:14px;border-top:1px solid #262626;padding-top:14px;">© 2026 企鵝的 AI 每日電子報🐧 · 本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源</div>
+  </td></tr>
+  </table>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>

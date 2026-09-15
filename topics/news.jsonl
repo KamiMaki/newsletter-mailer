@@ -667,3 +667,15 @@
 {"date": "2026-09-15", "title": "主軸：agent 從一個變成一群後戰場轉到治理——控制平面（身分／權限／行為／成本）成為基礎設施（Dreamforce＋Akuity＋Okta/Entra）"}
 {"date": "2026-09-15", "title": "概念：控制平面 vs 資料平面（Control Plane vs Data Plane）"}
 {"date": "2026-09-15", "title": "半導體專區：IC 製造｜光學臨界尺寸散射量測（OCD/scatterometry）的機器學習逆問題求解"}
+{"date": "2026-09-16", "title": "Gemini 3.8 Live／Live Extended Thinking：即時對話版$0.84與深思版$3.50兩層、97語即時切換、邊講邊跑工具、S2S 82.6奪冠"}
+{"date": "2026-09-16", "title": "GitHub Copilot 自動選模新增 Efficiency／Balance／Intelligence 三檔、逐提示挑模型、照實際模型計費"}
+{"date": "2026-09-16", "title": "Anthropic Claude Code 結束50%週用量加碼、Pro/Max淨減約17%"}
+{"date": "2026-09-16", "title": "Factory Droid：模型不可知、把深化模型路由與常駐背景代理列為核心"}
+{"date": "2026-09-16", "title": "NVIDIA AI Infra Summit 開幕（Ian Buck 主題演講：為 agentic AI 打造基礎設施）"}
+{"date": "2026-09-16", "title": "Cornelis 募2.05億美元、發表 Active Compute Fabric（把運算塞進網路、UALink/Ultra Ethernet、聯手Qualcomm挑戰InfiniBand）"}
+{"date": "2026-09-16", "title": "上海 AI Lab 開源 Atria Dawn Preview：MIT授權744B agentic MoE（GLM-5.2後訓練、可驗證經驗管線）"}
+{"date": "2026-09-16", "title": "SemiAnalysis：Vera Rubin NVL72 每MW token吞吐約Blackwell 7倍（DeepSeek V4 Pro實測）"}
+{"date": "2026-09-16", "title": "GitHub 強化供應鏈安全：強制Advanced Security組態、HTTPS SHA-1落日"}
+{"date": "2026-09-16", "title": "主軸：AI 改賣『會自己分難易的腦』——同一天Gemini拆兩層／Copilot自動選模三檔／Claude Code收緊用量，把按任務難度配剛好夠用的模型變產品預設（成本facet）"}
+{"date": "2026-09-16", "title": "概念：模型級聯（Model Cascade，先便宜後升級、非路由）"}
+{"date": "2026-09-16", "title": "半導體專區：EDA 工具｜標準單元庫特性化（Cell Library Characterization）的 ML 加速"}
