@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的AI交易策略學習報 2026-09-17</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<div style="max-width:650px;margin:0 auto;padding:16px;">
+
+  <!-- Header -->
+  <div style="background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:14px;padding:28px 20px;text-align:center;margin-bottom:16px;">
+    <div style="font-size:22px;font-weight:800;color:#ffffff;">🐧 企鵝的AI交易策略學習報</div>
+    <div style="font-size:14px;color:#fff7ed;margin-top:6px;">2026-09-17（週四）｜BTC × 美股大盤 策略學習</div>
+  </div>
+
+  <!-- Disclaimer banner -->
+  <div style="background:#1a1a1a;border:1px solid #f59e0b;border-radius:10px;padding:12px 14px;margin-bottom:16px;">
+    <div style="color:#f59e0b;font-size:12.5px;line-height:1.6;">⚠️ 本報純屬個人交易紀律與策略學習筆記，所有內容為 AI 輔助整理之教育材料，<strong style="color:#f59e0b;">不構成任何投資建議</strong>，不涉及買賣賣進賣出之推薦。市場有風險，決策請自負責任。</div>
+  </div>
+
+  <!-- 今日總覽 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:18px;margin-bottom:16px;">
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">⚡ 今日總覽</div>
+    <ul style="margin:0;padding-left:20px;color:#d4d4d4;font-size:15px;line-height:1.8;">
+      <li>Fed 9 月意外升息 2 碼至 <strong style="color:#fbbf24;font-weight:700">3.75%–4.00%</strong>，是<strong style="color:#fbbf24;font-weight:700">2023 年以來首次升息</strong>，主席 Warsh 鷹派談話讓美股由紅翻黑，道瓊收跌 1.21%。</li>
+      <li>BTC 受 CLARITY Act 參院表決失利（50:49 未過 60 票門檻）與升息雙重壓力，今日報價約 <strong style="color:#fbbf24;font-weight:700">$75,986</strong>，本週兩度衝高遭拒後<strong style="color:#fbbf24;font-weight:700">轉弱</strong>。</li>
+      <li>VIX 跳升近 3% 收 <strong style="color:#fbbf24;font-weight:700">17.71</strong>，10 年期公債殖利率站穩 <strong style="color:#fbbf24;font-weight:700">5%</strong> 整數關卡，波動率制度可能正在轉變。</li>
+      <li>今日策略學習主題：<strong style="color:#fbbf24;font-weight:700">突破策略與假突破過濾</strong>——正好呼應本週 BTC 兩次失敗突破。</li>
+    </ul>
+  </div>
+
+  <!-- BTC 區塊 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:18px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;font-size:13px;font-weight:700;padding:5px 12px;border-radius:20px;margin-bottom:12px;">₿ BITCOIN</div>
+
+    <table style="width:100%;border-collapse:collapse;margin-bottom:14px;font-size:13px;">
+      <tr style="background:#252525;">
+        <td style="padding:8px;color:#9ca3af;font-weight:700;border-bottom:1px solid #333;">區間</td>
+        <td style="padding:8px;color:#9ca3af;font-weight:700;border-bottom:1px solid #333;">當前價</td>
+        <td style="padding:8px;color:#9ca3af;font-weight:700;border-bottom:1px solid #333;">變動</td>
+        <td style="padding:8px;color:#9ca3af;font-weight:700;border-bottom:1px solid #333;">趨勢</td>
+        <td style="padding:8px;color:#9ca3af;font-weight:700;border-bottom:1px solid #333;">關鍵點位</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;color:#d4d4d4;border-bottom:1px solid #2a2a2a;">日</td>
+        <td style="padding:8px;color:#d4d4d4;border-bottom:1px solid #2a2a2a;">$75,986</td>
+        <td style="padding:8px;color:#d4d4d4;border-bottom:1px solid #2a2a2a;">日內 $75,151–$76,233</td>
+        <td style="padding:8px;color:#fbbf24;border-bottom:1px solid #2a2a2a;">區間盤整</td>
+        <td style="padding:8px;color:#d4d4d4;border-bottom:1px solid #2a2a2a;">支撐 $75K／壓力 $77K</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;color:#d4d4d4;border-bottom:1px solid #2a2a2a;">週</td>
+        <td style="padding:8px;color:#d4d4d4;border-bottom:1px solid #2a2a2a;">$75,986</td>
+        <td style="padding:8px;color:#d4d4d4;border-bottom:1px solid #2a2a2a;">較上週 $81,300 阻力區回落約 6.5%</td>
+        <td style="padding:8px;color:#f87171;border-bottom:1px solid #2a2a2a;">轉弱</td>
+        <td style="padding:8px;color:#d4d4d4;border-bottom:1px solid #2a2a2a;">壓力 $80K</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;color:#d4d4d4;">月</td>
+        <td style="padding:8px;color:#d4d4d4;">$75,986</td>
+        <td style="padding:8px;color:#d4d4d4;">較 9/3 高點 $82,283 回落約 7.6%</td>
+        <td style="padding:8px;color:#f87171;">拉回整理</td>
+        <td style="padding:8px;color:#d4d4d4;">支撐 $72K</td>
+      </tr>
+    </table>
+
+    <div style="color:#d4d4d4;font-size:15px;line-height:1.7;margin-bottom:12px;">
+      本週 BTC 兩度挑戰高點都<strong style="color:#fbbf24;font-weight:700">失敗拉回</strong>：先是月初衝高 <strong style="color:#fbbf24;font-weight:700">$82,283</strong> 遭拒，接著在 CLARITY Act 表決前反彈到 $80K 附近又跌落。CLARITY Act（數位資產市場架構法案）9/15 在參院以 50:49 未跨過 60 票門檻，加上 Fed 隔日升息，雙重利空讓 BTC 一度跌破 $76,000，現貨 BTC/ETH ETF 9/15 合計淨流出約 <strong style="color:#fbbf24;font-weight:700">$591.8M</strong>，創數月來最大單日流出。
+    </div>
+
+    <div style="background:#252525;border-radius:10px;padding:14px;margin-bottom:12px;">
+      <div style="color:#e2e8f0;font-weight:700;font-size:14px;margin-bottom:8px;">四視角綜合</div>
+      <div style="color:#d4d4d4;font-size:13.5px;line-height:1.8;">
+        <strong style="color:#e2e8f0">順勢：</strong>本週跌破前波整理區間，短期趨勢轉弱，順勢邏輯下應留意反彈力道能否站回 $78K。<br>
+        <strong style="color:#e2e8f0">均值回歸：</strong>價格已回落至近一個月低檔，但目前缺乏明確超賣讀數，均值回歸訊號尚未成形。<br>
+        <strong style="color:#e2e8f0">突破：</strong>本週兩次都是「失敗突破」，正是今天學習主題的活教材，需要用量能與回測驗證真假。<br>
+        <strong style="color:#e2e8f0">宏觀：</strong>Fed 鷹派升息＋監管法案卡關是雙重逆風，短期宏觀情緒不利風險資產。
+      </div>
+    </div>
+
+    <div style="color:#d4d4d4;font-size:14px;line-height:1.7;margin-bottom:12px;">
+      📰 <strong style="color:#e2e8f0">加密圈新聞：</strong>Fed 升息公布後 BTC 一度彈向 $76,300，隨後在 Warsh 鷹派記者會中回落至決議前水準約 $75,700，反應相對克制；CLARITY Act 觸礁也拖累 Coinbase、Strategy 等加密股走弱。
+    </div>
+
+    <div style="background:#1a1a1a;border-left:3px solid #f59e0b;border-radius:6px;padding:14px;">
+      <div style="color:#f59e0b;font-weight:700;font-size:14px;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="margin:0;padding-left:18px;color:#d4d4d4;font-size:13.5px;line-height:1.8;">
+        <li>兩次衝高遭拒提醒我們：<strong style="color:#e2e8f0">突破當下不代表趨勢已確立</strong>，需等收盤確認。</li>
+        <li>ETF 資金流轉為淨流出時，<strong style="color:#e2e8f0">是情緒指標而非進出場訊號</strong>，別急著解讀成方向確定。</li>
+        <li>法規／政策類利空（CLARITY Act）往往<strong style="color:#e2e8f0">短期衝擊大於長期基本面</strong>，紀律上不宜單靠單一新聞做決策。</li>
+        <li>波動加大時，<strong style="color:#e2e8f0">部位大小的重要性大於方向判斷</strong>的正確與否。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 美股大盤區塊 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:18px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);color:#fff;font-size:13px;font-weight:700;padding:5px 12px;border-radius:20px;margin-bottom:12px;">📊 美股大盤</div>
+
+    <div style="color:#d4d4d4;font-size:15px;line-height:1.7;margin-bottom:12px;">
+      S&amp;P 500 9/16 收 <strong style="color:#fbbf24;font-weight:700">7,551.81</strong>（<strong style="color:#fbbf24;font-weight:700">-0.45%</strong>），道瓊重挫 631.21 點（-1.21%），那斯達克綜合指數幾乎打平收 25,978.42（-0.01%），顯示大型科技股相對抗跌。VIX（波動率指數，市場對未來 30 天波動的預期，愈高代表投資人愈緊張）跳升近 3% 收 <strong style="color:#fbbf24;font-weight:700">17.71</strong>，脫離近一個月 14–17 的低檔區間上緣。QQQ 最近一次確認收盤為 9/15 的 $704.54，9/16 精確收盤數字暫缺，以那斯達克綜合指數走勢替代參考。
+    </div>
+
+    <table style="width:100%;border-collapse:collapse;margin-bottom:14px;font-size:13px;">
+      <tr style="background:#252525;">
+        <td style="padding:8px;color:#9ca3af;font-weight:700;border-bottom:1px solid #333;">區間</td>
+        <td style="padding:8px;color:#9ca3af;font-weight:700;border-bottom:1px solid #333;">S&amp;P 500</td>
+        <td style="padding:8px;color:#9ca3af;font-weight:700;border-bottom:1px solid #333;">變動</td>
+        <td style="padding:8px;color:#9ca3af;font-weight:700;border-bottom:1px solid #333;">趨勢</td>
+        <td style="padding:8px;color:#9ca3af;font-weight:700;border-bottom:1px solid #333;">關鍵點位</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;color:#d4d4d4;border-bottom:1px solid #2a2a2a;">日</td>
+        <td style="padding:8px;color:#d4d4d4;border-bottom:1px solid #2a2a2a;">7,551.81</td>
+        <td style="padding:8px;color:#d4d4d4;border-bottom:1px solid #2a2a2a;">-33.92 (-0.45%)</td>
+        <td style="padding:8px;color:#f87171;border-bottom:1px solid #2a2a2a;">轉弱</td>
+        <td style="padding:8px;color:#d4d4d4;border-bottom:1px solid #2a2a2a;">支撐 7,500</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;color:#d4d4d4;border-bottom:1px solid #2a2a2a;">週</td>
+        <td style="padding:8px;color:#d4d4d4;border-bottom:1px solid #2a2a2a;">7,551.81</td>
+        <td style="padding:8px;color:#d4d4d4;border-bottom:1px solid #2a2a2a;">較上週 7,656.98 回落約 1.4%</td>
+        <td style="padding:8px;color:#f87171;border-bottom:1px solid #2a2a2a;">轉弱</td>
+        <td style="padding:8px;color:#d4d4d4;border-bottom:1px solid #2a2a2a;">壓力 7,650</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;color:#d4d4d4;">月</td>
+        <td style="padding:8px;color:#d4d4d4;">7,551.81</td>
+        <td style="padding:8px;color:#d4d4d4;">8 月收官 +2.7%，9 月至今拉回</td>
+        <td style="padding:8px;color:#fbbf24;">9 月拉回整理</td>
+        <td style="padding:8px;color:#d4d4d4;">支撐 7,500／壓力 7,650</td>
+      </tr>
+    </table>
+
+    <div style="background:#252525;border-radius:10px;padding:14px;margin-bottom:12px;">
+      <div style="color:#e2e8f0;font-weight:700;font-size:14px;margin-bottom:8px;">四視角綜合</div>
+      <div style="color:#d4d4d4;font-size:13.5px;line-height:1.8;">
+        <strong style="color:#e2e8f0">順勢：</strong>8 月上漲趨勢在 9 月升息決議後遇阻，若跌破 7,500 整數關卡，順勢賣壓可能加重。<br>
+        <strong style="color:#e2e8f0">均值回歸：</strong>那斯達克幾乎打平顯示大型科技股韌性仍在，若 S&amp;P 在 7,500 附近止穩，值得觀察反彈。<br>
+        <strong style="color:#e2e8f0">突破：</strong>S&amp;P 尚未站回前波高點 7,656，目前正處於失敗突破後的回測階段。<br>
+        <strong style="color:#e2e8f0">宏觀：</strong>升息循環重啟＋10 年期站上 5%，公債殖利率壓力恐持續壓抑股票估值。
+      </div>
+    </div>
+
+    <div style="color:#d4d4d4;font-size:14px;line-height:1.7;margin-bottom:12px;">
+      📰 <strong style="color:#e2e8f0">美股新聞：</strong>Fed 以 12-0 一致同意升息 2 碼至 3.75%–4.00%，為 2023 年以來首次升息；最新利率點陣圖顯示 18 位官員中有 16 位認為今年至少再升息一次、其中 4 位預期升兩次，12 月會議升息機率大增。
+    </div>
+
+    <div style="background:#1a1a1a;border-left:3px solid #6366f1;border-radius:6px;padding:14px;">
+      <div style="color:#6366f1;font-weight:700;font-size:14px;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="margin:0;padding-left:18px;color:#d4d4d4;font-size:13.5px;line-height:1.8;">
+        <li>市場「一致預期」（原本多押注降息）被推翻時，<strong style="color:#e2e8f0">紀律比猜對方向更重要</strong>。</li>
+        <li>那斯達克打平、道瓊重挫的分歧走勢提醒：<strong style="color:#e2e8f0">大盤指數不能只看單一標的</strong>判斷全局。</li>
+        <li>VIX 從低檔區間上緣跳升，是<strong style="color:#e2e8f0">波動率制度可能轉變</strong>的早期訊號，宜提前檢視停損距離。</li>
+        <li>殖利率站上 5% 整數關卡是<strong style="color:#e2e8f0">長期利率環境的心理關卡</strong>，值得持續追蹤而非單日反應。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 今日策略學習 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:18px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#8b5cf6,#6366f1);color:#fff;font-size:13px;font-weight:700;padding:5px 12px;border-radius:20px;margin-bottom:12px;">📖 今日策略學習</div>
+
+    <div style="color:#ffffff;font-size:16px;font-weight:700;margin-bottom:6px;">突破策略與假突破過濾</div>
+    <div style="color:#a1a1aa;font-size:13.5px;margin-bottom:12px;">為什麼今天學這個：本週 BTC 剛好上演兩次「失敗突破」——9/3 衝高 $82,283 遭拒、CLARITY Act 表決前反彈 $80K 又回落，正是複習假突破辨識的最佳活教材。</div>
+
+    <div style="color:#e2e8f0;font-weight:700;font-size:14px;margin-bottom:8px;">核心概念</div>
+    <ul style="margin:0 0 14px 0;padding-left:18px;color:#d4d4d4;font-size:13.5px;line-height:1.8;">
+      <li>真突破通常伴隨<strong style="color:#e2e8f0">放量</strong>，假突破常發生在量縮或反向量增時。</li>
+      <li>突破後首根 K 棒<strong style="color:#e2e8f0">收回原區間</strong>（reclaim）是最常見的假突破警訊。</li>
+      <li>用 ATR（平均真實區間，衡量波動大小的常用指標）或百分比緩衝，可過濾雜訊型突破。</li>
+      <li>突破前<strong style="color:#e2e8f0">盤整時間越長</strong>，一旦真突破，可信度通常越高。</li>
+    </ul>
+
+    <div style="background:#252525;border-left:3px solid #8b5cf6;border-radius:6px;padding:14px;margin-bottom:14px;">
+      <div style="color:#8b5cf6;font-weight:700;font-size:13.5px;margin-bottom:6px;">🎯 情境演練</div>
+      <div style="color:#d4d4d4;font-size:13.5px;line-height:1.7;">若 BTC 反彈測試 <strong style="color:#fbbf24;font-weight:700">$78K</strong> 壓力，且收盤價無法連續站穩 $78K 之上（例如需收在約 $78,800 以上維持 1–2 個交易日），則可視為假突破警訊；若進一步跌破整理區下緣 <strong style="color:#fbbf24;font-weight:700">$74K</strong>，則傾向確認短期轉弱而非假跌破。這不是預測，而是一套「如果…那麼…」的檢查邏輯。</div>
+    </div>
+
+    <div style="color:#d4d4d4;font-size:13.5px;line-height:1.7;">
+      <blockquote style="margin:0;padding:10px 14px;background:#252525;border-radius:6px;">💡 <strong style="color:#e2e8f0">今日研究速讀：</strong>Quantocracy 今日精選的〈Strategy Recalibration Breakout〉一文檢視了一套涵蓋 1975–2026 年的突破策略，最佳參數區間落在 160–480 天，但近年滾動夏普比率明顯走弱，且與其他趨勢策略高度相關、對投資組合的分散效益有限，作者最終決定將這套突破策略除役而非繼續調整參數。給我們的啟示：曾經有效的突破規則不會永遠有效，要定期檢視策略的邊際貢獻，而不是死守一套規則不放。<br>🔗 <a href="https://www.handelsmeisterei.de/strategy_recalibration_breakout/" style="color:#8b5cf6;">原文連結</a></blockquote>
+    </div>
+  </div>
+
+  <!-- 今日交易紀律提醒 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:18px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#10b981,#06b6d4);color:#fff;font-size:13px;font-weight:700;padding:5px 12px;border-radius:20px;margin-bottom:12px;">✅ 今日交易紀律提醒｜交易日誌</div>
+    <div style="color:#d4d4d4;font-size:15px;line-height:1.7;margin-bottom:10px;">
+      今天 Fed 把市場原本押注的「降息劇本」直接翻成「升息劇本」——<strong style="color:#fbbf24;font-weight:700">交易日誌真正該記的，不是你有沒有猜對政策方向，是方向被推翻的那一刻，你的部位是照著原本寫好的因應規則動，還是愣住了才反應。</strong>
+    </div>
+    <div style="color:#d4d4d4;font-size:14px;line-height:1.7;">
+      應用情境：今晚就把「若 Fed 意外轉鷹」「若 CLARITY Act 再次卡關」「若 BTC 跌破 $74K」三種情境，各自對應的部位動作寫進日誌。下次意外發生時，你要做的是照著做，而不是臨場重新想一遍。
+    </div>
+  </div>
+
+  <!-- 今日反思 -->
+  <div style="background:linear-gradient(135deg,#10b981,#06b6d4);padding:1px;border-radius:12px;margin-bottom:16px;">
+    <div style="background:#1a1a1a;border-radius:11px;padding:18px;">
+      <div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:10px;">💭 今日反思</div>
+      <ul style="margin:0;padding-left:18px;color:#d4d4d4;font-size:14.5px;line-height:1.8;">
+        <li>如果 Fed 的升息路徑持續超出你原本的劇本，你現在 BTC 與美股的部位大小，撐得住劇本被推翻兩次以上嗎？</li>
+        <li>本週 BTC 兩次測試高點都失敗拉回，你有一套明確規則判斷「這是假突破」，還是每次都是事後諸葛？</li>
+        <li>今晚把「Fed 意外轉鷹」這個情境寫進交易日誌了嗎？還是打算等下次意外發生時才臨時反應？</li>
+      </ul>
+      <div style="color:#6ee7b7;font-size:12.5px;margin-top:12px;">挑一題寫進交易日誌，這就是今天的功課。</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="text-align:center;padding:20px 10px;color:#6b7280;font-size:11.5px;line-height:1.8;">
+    <div style="margin-bottom:8px;">資料截止：2026-09-17（台北時間）／數字來源見內文標註（Coinbase、Yahoo Finance、CNBC、CoinDesk、Saxo、Quantocracy 等公開財經來源）</div>
+    <div style="margin-bottom:8px;">本報內容為 AI 輔助生成之學習筆記，僅供教育與個人紀律訓練用途，<strong style="color:#9ca3af;">不構成投資建議</strong>，不代表任何買賣進出之推薦。過去績效不代表未來表現，投資／交易前請自行查證並審慎評估風險。</div>
+    <div style="margin-bottom:8px;">本報為 Darren 的個人學習報，僅供其個人參考使用。</div>
+    <div>本信件由 AI 自動生成。</div>
+  </div>
+
+</div>
+</body>
+</html>
