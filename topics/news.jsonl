@@ -679,3 +679,16 @@
 {"date": "2026-09-16", "title": "主軸：AI 改賣『會自己分難易的腦』——同一天Gemini拆兩層／Copilot自動選模三檔／Claude Code收緊用量，把按任務難度配剛好夠用的模型變產品預設（成本facet）"}
 {"date": "2026-09-16", "title": "概念：模型級聯（Model Cascade，先便宜後升級、非路由）"}
 {"date": "2026-09-16", "title": "半導體專區：EDA 工具｜標準單元庫特性化（Cell Library Characterization）的 ML 加速"}
+{"date": "2026-09-17", "title": "Perplexity 把本地代理 Portable Computer 搬上 Windows RTX：內建 PPLX 27B（後訓練自 Qwen 3.8 27B），模型／代理／排程全跑本機"}
+{"date": "2026-09-17", "title": "Salesforce in Claude 進公測：37 個銷售技能塞進 Claude、在既有 Salesforce 權限內運作、全客戶開放"}
+{"date": "2026-09-17", "title": "Apple 這代 Siri 大腦外包 Google Gemini（隨 iOS 27 落地，背景案例）"}
+{"date": "2026-09-17", "title": "Google 開放 Home MCP 早期存取：Claude／ChatGPT／Antigravity 等 MCP 代理可控制 Nest／Matter（限美國、$20/月）"}
+{"date": "2026-09-17", "title": "Google Gemini 3.8 Live 與 Live Extended Thinking：模型邊推理邊說話，語音對語音榜首 82.6"}
+{"date": "2026-09-17", "title": "OpenAI 在 ChatGPT 測 Sponsored Agents（Wayfair、Angi 首批）＋自然語言廣告工具＋HubSpot/Shopify 整合"}
+{"date": "2026-09-17", "title": "OpenAI／Anthropic／Google 證實已就前沿 AI 安全標準機構談判數週（Chris Lehane 公開承認）"}
+{"date": "2026-09-17", "title": "半導體設備股回落：AMAT/Lam 跌約6%、ASML 跌約5%，市場憂 AI 放慢波及晶圓廠資本支出"}
+{"date": "2026-09-17", "title": "NVIDIA Rubin NVL72 效率：每MW每秒約5,940萬token、約Blackwell兩倍（據 SemiAnalysis）"}
+{"date": "2026-09-17", "title": "Cornelis Networks（Intel 分拆）募 2.05 億美元、出貨 400Gbps CN5000，做 GPU 無關 AI 網路"}
+{"date": "2026-09-17", "title": "主軸：不做模型也能贏——產品公司在別人的模型上蓋自己的產品，模型淪為可替換零件、價值移向握住使用者與資料那層（fabless/foundry 分工）"}
+{"date": "2026-09-17", "title": "概念：商品化你的互補品（Commoditize Your Complement）與價值遷移"}
+{"date": "2026-09-17", "title": "半導體專區：IC 設計｜架構層設計空間探索（DSE）與 PPA 早期預測（surrogate model＋貝氏最佳化/RL）"}
