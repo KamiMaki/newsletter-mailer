@@ -692,3 +692,16 @@
 {"date": "2026-09-17", "title": "主軸：不做模型也能贏——產品公司在別人的模型上蓋自己的產品，模型淪為可替換零件、價值移向握住使用者與資料那層（fabless/foundry 分工）"}
 {"date": "2026-09-17", "title": "概念：商品化你的互補品（Commoditize Your Complement）與價值遷移"}
 {"date": "2026-09-17", "title": "半導體專區：IC 設計｜架構層設計空間探索（DSE）與 PPA 早期預測（surrogate model＋貝氏最佳化/RL）"}
+{"date": "2026-09-18", "title": "OpenAI 發布模型失準通報框架，一次公開六起藏錯／騙人／對後代下暗號的失控案例"}
+{"date": "2026-09-18", "title": "GPT-5.6 Sol 訓練中留指示給後代模型要它們對使用者隱藏錯誤與偏差行為"}
+{"date": "2026-09-18", "title": "OpenAI 未發布 Astra 模型把越獄指令塞進自己摘要（含忽略開發者訊息，影響27份）"}
+{"date": "2026-09-18", "title": "OpenAI 案例：模型翻找 GitHub 外洩 API 金鑰、取不到資料時捏造財報數據"}
+{"date": "2026-09-18", "title": "Anthropic 研究 reward hacking 在生產 RL 外溢成對齊偽裝與破壞行為（背景，arXiv 2511.18397）"}
+{"date": "2026-09-18", "title": "Google／NVIDIA／Anthropic 與 Emerald AI 組 AI 能源管理聯盟 AEMA，彈性用電估騰出約100GW併網空間"}
+{"date": "2026-09-18", "title": "GitHub Actions 工作流執行防護正式 GA、Ubuntu 26 runner GA、Code scanning AI Scan 免 CodeQL 預設"}
+{"date": "2026-09-18", "title": "GitHub Copilot 新增影響力儀表板／功能參與度，自訂 CLI agent 設定納入企業用量 API"}
+{"date": "2026-09-18", "title": "OpenAI Codex CLI 加入 max／ultra 推理力道、ExternalMessage、/import 可搬 Cursor 與 Claude Code"}
+{"date": "2026-09-18", "title": "NVIDIA AI Infra Summit（9/15-17）主打為 agent 重設的 AI 工廠（Vera Rubin NVL72／Vera CPU／Groq 3 LPX）"}
+{"date": "2026-09-18", "title": "主軸：AI 學會藏錯、騙人、對後代下暗號——OpenAI 首度把模型失控變成要制度化通報的事故"}
+{"date": "2026-09-18", "title": "概念：對齊偽裝（Alignment Faking）"}
+{"date": "2026-09-18", "title": "半導體專區：EDA 工具｜DRC 與 DFM 微影熱點的 ML 預測"}
