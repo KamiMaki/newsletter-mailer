@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>策略學習報 2026-09-19</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<div style="max-width:650px;margin:0 auto;padding:20px 16px;">
+
+  <!-- Header -->
+  <div style="background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:14px;padding:28px 24px;text-align:center;margin-bottom:16px;">
+    <div style="font-size:22px;font-weight:700;color:#ffffff;">📈 企鵝的AI交易策略學習報</div>
+    <div style="font-size:14px;color:#fff7ed;margin-top:6px;">2026-09-19（六）｜BTC × 美股大盤｜策略學習</div>
+  </div>
+
+  <!-- Disclaimer banner -->
+  <div style="background:#1a1a1a;border:1px solid #f59e0b;border-radius:10px;padding:12px 16px;margin-bottom:16px;">
+    <div style="color:#f59e0b;font-size:13px;line-height:1.6;">⚠️ 本報純屬交易紀律與策略學習教材，<strong style="color:#f59e0b;">不構成任何投資建議</strong>，所有情境演練皆為教學示範，請勿直接依此下單。</div>
+  </div>
+
+  <!-- 今日總覽 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:12px;">⚡ 今日總覽</div>
+    <ul style="margin:0;padding-left:20px;color:#d1d5db;font-size:15px;line-height:1.8;">
+      <li>BTC 從 Fed 升息後低點 $75,986 強彈至 <strong style="color:#fbbf24;font-weight:700">約 $80,861</strong>，現貨 ETF 結束連兩日流出，9/17、9/18 分別轉為 <strong style="color:#fbbf24;font-weight:700">淨流入 $159.5M、$154.39M</strong></li>
+      <li>美股本週收平週線仍收黑：S&P 500 收 <strong style="color:#fbbf24;font-weight:700">7,650.50（+0.17%）</strong>、那斯達克連兩日收紅收 26,522.55、道瓊小跌收 51,682.64</li>
+      <li>10年期公債殖利率 9/18 再度站上 <strong style="color:#fbbf24;font-weight:700">5.004%</strong>，VIX 僅 15.52，仍維持在近25個交易日的14-17低波動區間</li>
+      <li>📖 今日學習主題：<strong style="color:#fbbf24;font-weight:700">多時間框架對齊</strong>——BTC這週從$82K遭拒、跌破$76K、又衝回$80K，正好拿來練「日線抓方向、小時線抓時機」</li>
+    </ul>
+  </div>
+
+  <!-- BTC 區塊 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:20px;padding:6px 16px;color:#fff;font-size:13px;font-weight:700;margin-bottom:14px;">₿ BTC 比特幣</div>
+
+    <table style="width:100%;border-collapse:collapse;margin-bottom:14px;font-size:13px;">
+      <tr style="background:#252525;">
+        <th style="padding:8px;text-align:left;color:#9ca3af;font-weight:600;">區間</th>
+        <th style="padding:8px;text-align:left;color:#9ca3af;font-weight:600;">當前價</th>
+        <th style="padding:8px;text-align:left;color:#9ca3af;font-weight:600;">變動</th>
+        <th style="padding:8px;text-align:left;color:#9ca3af;font-weight:600;">趨勢</th>
+        <th style="padding:8px;text-align:left;color:#9ca3af;font-weight:600;">關鍵點位</th>
+      </tr>
+      <tr style="border-bottom:1px solid #333;">
+        <td style="padding:8px;color:#d1d5db;">日線</td>
+        <td style="padding:8px;color:#fbbf24;">$80,861</td>
+        <td style="padding:8px;color:#4ade80;">24hr約+6%</td>
+        <td style="padding:8px;color:#d1d5db;">強彈修復</td>
+        <td style="padding:8px;color:#d1d5db;">站回$80K整數關卡</td>
+      </tr>
+      <tr style="border-bottom:1px solid #333;">
+        <td style="padding:8px;color:#d1d5db;">週線</td>
+        <td style="padding:8px;color:#fbbf24;">$75,986→$80,861</td>
+        <td style="padding:8px;color:#4ade80;">V型反彈</td>
+        <td style="padding:8px;color:#d1d5db;">Fed升息急殺後修復</td>
+        <td style="padding:8px;color:#d1d5db;">支撐$76K</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;color:#d1d5db;">月線</td>
+        <td style="padding:8px;color:#fbbf24;">9月MTD約-1.5%</td>
+        <td style="padding:8px;color:#f87171;">區間整理</td>
+        <td style="padding:8px;color:#d1d5db;">Q3累計約+32%</td>
+        <td style="padding:8px;color:#d1d5db;">壓力$82K供給牆</td>
+      </tr>
+    </table>
+
+    <div style="color:#d1d5db;font-size:15px;line-height:1.7;margin-bottom:12px;">
+      本週 BTC 走出一趟劇烈 V 型反轉：Fed 9/16 升息後一度<strong style="color:#fbbf24;font-weight:700">跌破 $76,000</strong>觸及 $75,986，但 9/17-18 快速強彈至 <strong style="color:#fbbf24;font-weight:700">約 $80,861</strong>，24 小時漲幅接近 6%。同步觀察到的是現貨 BTC ETF 資金流<strong style="color:#fbbf24;font-weight:700">結束連兩日淨流出</strong>，9/17、9/18 分別轉為淨流入 $159.5M、$154.39M，BlackRock IBIT 是主要買盤（9/17 單日貢獻 $183.7M）。以季度來看，BTC 本月 MTD 約 -1.5%，但 Q3 累計仍上漲約 32%，是 2025 年第三季以來首次有望收出正報酬的季度。
+    </div>
+
+    <div style="background:#252525;border-radius:10px;padding:14px;margin-bottom:14px;">
+      <div style="color:#9ca3af;font-size:13px;margin-bottom:6px;">四策略視角</div>
+      <div style="color:#d1d5db;font-size:14px;line-height:1.8;">
+        <strong style="color:#e2e8f0">順勢：</strong>從$76K低點強彈回$80K+，結構修復偏多，但反彈速度快，追價風險不小<br>
+        <strong style="color:#e2e8f0">均值回歸：</strong>把$82K遭拒到$76K急殺再彈回$80K視為一次均值回歸，$80K附近可能只是回到中樞，不是新趨勢起點<br>
+        <strong style="color:#e2e8f0">突破：</strong>只要沒站穩收在$82K之上，都還算區間內的又一次測試，尚未構成有效突破<br>
+        <strong style="color:#e2e8f0">宏觀：</strong>ETF資金流轉正、Fed升息落地、CLARITY Act卡關三個訊號彼此矛盾，還沒有一致方向
+      </div>
+    </div>
+
+    <div style="color:#d1d5db;font-size:14px;line-height:1.7;margin-bottom:14px;">
+      <strong style="color:#e2e8f0">📰 加密圈新聞：</strong><br>
+      1. 現貨 BTC ETF 結束連兩日淨流出，9/17、9/18 分別淨流入 $159.5M、$154.39M，BlackRock IBIT 主導買盤<br>
+      2. SEC 推出代幣化證券「創新豁免」（innovation exemption），允許符合條件平台進行鏈上股票交易，鏈上證券議題重新升溫
+    </div>
+
+    <div style="background:#252525;border-left:3px solid #f59e0b;border-radius:0 8px 8px 0;padding:14px 16px;">
+      <div style="color:#f59e0b;font-size:14px;font-weight:700;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:14px;line-height:1.8;">
+        <li>V型反彈速度快不代表趨勢已確立，紀律上該靠<strong style="color:#e2e8f0">對齊訊號</strong>決定進場，不是追價本能</li>
+        <li>ETF資金流由負轉正只有兩天，還不足以判斷<strong style="color:#e2e8f0">趨勢反轉</strong>，需要更長觀察窗口</li>
+        <li>$82K反覆遭拒代表壓力區<strong style="color:#e2e8f0">流動性堅實</strong>，站穩收盤才算突破，觸及不算</li>
+        <li>監管消息（SEC豁免）屬於<strong style="color:#e2e8f0">長線敘事</strong>，不該被拿來當短線加碼的理由</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 美股大盤區塊 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:20px;padding:6px 16px;color:#fff;font-size:13px;font-weight:700;margin-bottom:14px;">📊 美股大盤</div>
+
+    <table style="width:100%;border-collapse:collapse;margin-bottom:14px;font-size:13px;">
+      <tr style="background:#252525;">
+        <th style="padding:8px;text-align:left;color:#9ca3af;font-weight:600;">區間</th>
+        <th style="padding:8px;text-align:left;color:#9ca3af;font-weight:600;">當前價</th>
+        <th style="padding:8px;text-align:left;color:#9ca3af;font-weight:600;">變動</th>
+        <th style="padding:8px;text-align:left;color:#9ca3af;font-weight:600;">趨勢</th>
+        <th style="padding:8px;text-align:left;color:#9ca3af;font-weight:600;">關鍵點位</th>
+      </tr>
+      <tr style="border-bottom:1px solid #333;">
+        <td style="padding:8px;color:#d1d5db;">日線</td>
+        <td style="padding:8px;color:#fbbf24;">SPY $760.47</td>
+        <td style="padding:8px;color:#4ade80;">S&P +0.17%</td>
+        <td style="padding:8px;color:#d1d5db;">指數分歧</td>
+        <td style="padding:8px;color:#d1d5db;">日內區間$760.05-$762.72</td>
+      </tr>
+      <tr style="border-bottom:1px solid #333;">
+        <td style="padding:8px;color:#d1d5db;">週線</td>
+        <td style="padding:8px;color:#fbbf24;">週五翻紅</td>
+        <td style="padding:8px;color:#f87171;">週線收黑</td>
+        <td style="padding:8px;color:#d1d5db;">Dow、S&P皆錄得週虧損</td>
+        <td style="padding:8px;color:#d1d5db;">支撐$750</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;color:#d1d5db;">月線</td>
+        <td style="padding:8px;color:#fbbf24;">回到區間上緣</td>
+        <td style="padding:8px;color:#d1d5db;">月線持平整理</td>
+        <td style="padding:8px;color:#d1d5db;">未站穩前波高點</td>
+        <td style="padding:8px;color:#d1d5db;">壓力$770</td>
+      </tr>
+    </table>
+
+    <div style="color:#d1d5db;font-size:15px;line-height:1.7;margin-bottom:12px;">
+      美股三大指數 9/18 走勢分歧：S&P 500 上漲 0.17% 收 <strong style="color:#fbbf24;font-weight:700">7,650.50</strong>，那斯達克連兩日收紅、上漲 0.39% 收 26,522.55（QQQ 收 $716.37），道瓊小跌 95.40 點（-0.18%）收 51,682.64。儘管週五翻紅，本週 Dow 與 S&P 500 仍<strong style="color:#fbbf24;font-weight:700">雙雙錄得週線虧損</strong>，市場持續消化 Fed 鷹派升息與 AI 能力疑慮的雙重壓力。10 年期公債殖利率 9/18 再度站上 <strong style="color:#fbbf24;font-weight:700">5.004%</strong>（較 9/17 4.94% 再度回升），VIX 僅 15.52，維持在近 25 個交易日的 14-17 低波動區間內。
+      <br><br>
+      <span style="color:#9ca3af;font-size:13px;">小提醒：10年期公債殖利率可以想成「政府借錢的成本」，殖利率越高，代表市場要求更高的補償才願意借錢給政府，通常也會推高企業融資成本、壓抑股票估值。</span>
+    </div>
+
+    <div style="background:#252525;border-radius:10px;padding:14px;margin-bottom:14px;">
+      <div style="color:#9ca3af;font-size:13px;margin-bottom:6px;">四策略視角</div>
+      <div style="color:#d1d5db;font-size:14px;line-height:1.8;">
+        <strong style="color:#e2e8f0">順勢：</strong>那斯達克連兩日收紅顯示成長股資金回流，但道瓊仍小跌，指數之間出現分歧<br>
+        <strong style="color:#e2e8f0">均值回歸：</strong>殖利率二度站上5%可能是短線超漲，若殖利率回落，股市有機會技術性反彈<br>
+        <strong style="color:#e2e8f0">突破：</strong>本週收平但週線收黑，大盤仍卡在區間高點附近整理，尚未出現有效放量突破<br>
+        <strong style="color:#e2e8f0">宏觀：</strong>升息落地、殖利率破5%、晶片股疑慮三重壓力尚未完全消化
+      </div>
+    </div>
+
+    <div style="color:#d1d5db;font-size:14px;line-height:1.7;margin-bottom:14px;">
+      <strong style="color:#e2e8f0">📰 美股新聞：</strong><br>
+      1. 10年期公債殖利率 9/18 再度站上 5.004%，交易員增加 10 月 Fed 再升息的押注<br>
+      2. 美股三大指數本週收平但週線仍收黑，那斯達克連兩日收紅、道瓊小跌，投資人持續消化 Fed 鷹派升息與 AI 能力疑慮
+    </div>
+
+    <div style="background:#252525;border-left:3px solid #6366f1;border-radius:0 8px 8px 0;padding:14px 16px;">
+      <div style="color:#6366f1;font-size:14px;font-weight:700;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:14px;line-height:1.8;">
+        <li>指數之間出現分歧（那斯達克紅、道瓊黑）時，先確認<strong style="color:#e2e8f0">資金去哪</strong>，不要只看單一指數</li>
+        <li>殖利率二度站上5%代表<strong style="color:#e2e8f0">升息壓力尚未釋放</strong>，紀律上仍要為波動預留部位彈性</li>
+        <li>週線收黑但日線翻紅時，先問<strong style="color:#e2e8f0">哪個時間框架</strong>才是你倉位設定的依據</li>
+        <li>VIX低但事件密度高的落差，代表市場<strong style="color:#e2e8f0">尚未定價風險</strong>，不是安全訊號</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 今日策略學習 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#8b5cf6,#6366f1);border-radius:20px;padding:6px 16px;color:#fff;font-size:13px;font-weight:700;margin-bottom:14px;">📖 今日策略學習</div>
+
+    <div style="color:#ffffff;font-size:16px;font-weight:700;margin-bottom:8px;">多時間框架對齊</div>
+    <div style="color:#d1d5db;font-size:14px;line-height:1.7;margin-bottom:14px;">
+      為什麼今天學這個：這週 BTC 在幾天內經歷 <strong style="color:#fbbf24;font-weight:700">$82K遭拒 → 跌破$76K → 又彈回$80,861</strong> 三次反轉，如果只盯著小時線，這種行情很容易整週都在逆勢被巴。多時間框架對齊要解決的，正是「用大時間框架抓方向、小時間框架抓時機」這個問題。
+    </div>
+
+    <div style="color:#9ca3af;font-size:13px;margin-bottom:6px;">核心概念</div>
+    <ul style="margin:0 0 14px 0;padding-left:20px;color:#d1d5db;font-size:14px;line-height:1.8;">
+      <li>高時間框架（週線/日線）負責決定<strong style="color:#e2e8f0">該往哪個方向</strong>找機會，不是拿來抓進場點</li>
+      <li>低時間框架（小時線）只回答<strong style="color:#e2e8f0">現在要不要扣扳機</strong>，不該用來決定方向</li>
+      <li>當日線與小時線方向衝突時，紀律是<strong style="color:#e2e8f0">等對齊</strong>，不是「選一個相信」</li>
+      <li>對齊後的訊號數量比單一時間框架少很多，這是<strong style="color:#e2e8f0">代價</strong>，不是缺陷</li>
+    </ul>
+
+    <div style="background:#252525;border-left:3px solid #8b5cf6;border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:14px;">
+      <div style="color:#8b5cf6;font-size:14px;font-weight:700;margin-bottom:8px;">🎯 情境演練</div>
+      <div style="color:#d1d5db;font-size:14px;line-height:1.7;">
+        BTC 日線在 9/16 Fed 升息後跌破 $76K，結構轉為偏空；但 9/18 已強彈回 $80,861，站回近期高點區，日線結構修復偏多。若此時小時線 MACD 同步出現黃金交叉，才是「日線轉多＋小時線進場訊號」對齊的時刻；若小時線還在原地打結、日線也還沒真正收復失土，紀律上是<strong style="color:#e2e8f0">等待對齊</strong>，不是選邊站猜方向。
+      </div>
+    </div>
+
+    <div style="color:#d1d5db;font-size:14px;line-height:1.7;">
+      <blockquote style="margin:0;padding:12px 14px;background:#252525;border-radius:8px;color:#9ca3af;font-style:normal;">
+        💡 今日研究速讀：Quantpedia 這篇文章示範用「日線 MACD 方向」當進場濾網、「小時線 MACD 黃金交叉」當進場時機的 BTC 策略：純小時線 MACD 策略年化報酬 4.6%、Sharpe 僅 0.33；加上日線趨勢濾網後 Sharpe 跳升到 0.80；再疊加「收在第一根收黑K棒平倉」的移動停利，Sharpe 進一步提升到 1.07、Calmar 0.87。作者的結論是「穩健性來自結構，不是複雜度」——沒有加更多參數，只是讓兩個時間框架方向一致才進場，績效就有明顯提升。
+      </blockquote>
+      <div style="margin-top:8px;"><a href="https://quantpedia.com/how-to-design-a-simple-multi-timeframe-trend-strategy-on-bitcoin/" style="color:#8b5cf6;font-size:13px;">🔗 原文：How to Design a Simple Multi-Timeframe Trend Strategy on Bitcoin</a></div>
+    </div>
+  </div>
+
+  <!-- 交易紀律提醒 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#10b981,#06b6d4);border-radius:20px;padding:6px 16px;color:#fff;font-size:13px;font-weight:700;margin-bottom:14px;">🛡️ 今日交易紀律提醒｜復盤方法</div>
+    <div style="color:#d1d5db;font-size:15px;line-height:1.7;margin-bottom:10px;">
+      這週的復盤不是問你猜不猜得到 Fed 真的升息，是問 BTC 從 $82K 遭拒、跌破 $76K、又衝回 $80K 這三次反轉之間，<strong style="color:#fbbf24;font-weight:700">你的判斷有沒有跟著日線、小時線各自對齊</strong>，還是每次都只挑一個時間框架來說服自己。
+    </div>
+    <div style="color:#9ca3af;font-size:14px;line-height:1.7;">
+      應用情境：打開這週的交易紀錄，把每一筆進出場標上「當時日線方向」跟「當時小時線方向」，如果超過一半的單子是兩者<strong style="color:#e2e8f0">衝突時硬凹進場</strong>的，代表這次復盤該檢查的不是輸贏，是有沒有等對齊訊號。
+    </div>
+  </div>
+
+  <!-- 今日反思 -->
+  <div style="background:linear-gradient(135deg,#10b981,#06b6d4);padding:1px;border-radius:12px;margin-bottom:16px;">
+    <div style="background:#1a1a1a;border-radius:11px;padding:18px;">
+      <div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:10px;">💭 今日反思</div>
+      <ul style="margin:0 0 10px 0;padding-left:20px;color:#d1d5db;font-size:14px;line-height:1.8;">
+        <li>今天BTC從$76K衝回$80,861，你在看這段反彈時，是先確認<strong style="color:#e2e8f0">日線方向</strong>轉多，還是只看到小時線noise就進場？</li>
+        <li>這週Fed升息、CLARITY法案觸礁、殖利率二度站上5%分別在不同時間點發生，如果只看小時線，你有沒有被中間的雜訊甩出場？</li>
+        <li>如果你的日線判斷跟小時線判斷這週有衝突過，你當下選擇的是<strong style="color:#e2e8f0">等對齊</strong>，還是選你比較想相信的那個？</li>
+      </ul>
+      <div style="color:#6b7280;font-size:12px;">挑一題寫進交易日誌，這就是今天的功課。</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="text-align:center;padding:20px 10px;color:#6b7280;font-size:12px;line-height:1.8;">
+    <div>本報為 Darren 的個人學習報，內容僅供交易紀律與策略學習之用，不構成投資建議。</div>
+    <div>所有情境演練與點位討論皆為教學示範，任何交易決策請自行判斷並承擔風險。</div>
+    <div style="margin-top:8px;">資料截止：2026-09-19 台北時間（美股資料為9/18收盤）｜本信件由 AI 自動生成</div>
+  </div>
+
+</div>
+</body>
+</html>
