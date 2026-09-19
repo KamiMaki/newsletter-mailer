@@ -716,3 +716,15 @@
 {"date": "2026-09-19", "title": "主軸：AI 造 AI 從口號變成可量化階段——Anthropic 首度公佈 Claude 主導 26% 自家研發＋同週破橢圓曲線秩紀錄"}
 {"date": "2026-09-19", "title": "概念：遞迴自我改進（Recursive Self-Improvement, RSI）"}
 {"date": "2026-09-19", "title": "半導體專區：IC 設計｜ML 晶片動態功耗快篩（GRANNITE／APOLLO／DynamicRTL，背景）"}
+{"date": "2026-09-20", "title": "Anthropic 與 OpenAI 改搶 20–30MW 小型資料中心（英國／北歐／美國）補在 GW 級巨廠之外（CNBC 報導）"}
+{"date": "2026-09-20", "title": "Anthropic 上月簽下 Nscale 約 460MW／450 億美元西維吉尼亞資料中心校區"}
+{"date": "2026-09-20", "title": "電網並網排隊 5–7 年、2026 數 GW 資料中心容量因拿不到電延後；FERC 要求電網營運商提加速方案（背景）"}
+{"date": "2026-09-20", "title": "大廠 2026 上半年密集簽核電 PPA（Meta-Oklo、微軟-Constellation 三哩島、亞馬遜-Talen Susquehanna，背景）"}
+{"date": "2026-09-20", "title": "Claude Code v2.1.277 原生讀 AGENTS.md（無 CLAUDE.md 時改讀、可 /config 切換）＋gateway egress boundary 旗標"}
+{"date": "2026-09-20", "title": "OpenAI Codex 0.155.0 新增實驗性語音對話與麥克風、狀態列推理摘要、agent 任務隱藏/封存/刪除、Bedrock 憑證"}
+{"date": "2026-09-20", "title": "Google Gemini Enterprise 代理平台：Gemini 3.5 Pro 起代理式影片處理、Memory Bank 記憶檔 GA（近期）"}
+{"date": "2026-09-20", "title": "OpenAI 發布澳洲青少年安全藍圖（延續 ChatGPT for Teens 年齡預測與第三方驗證）"}
+{"date": "2026-09-20", "title": "OpenAI 推 Astra for Law（跨 2.3 億以上網址法律檢索＋26 外掛）與 ChatGPT 進 Word 外掛"}
+{"date": "2026-09-20", "title": "主軸：AI 瓶頸從搶晶片變成搶電與落地速度——大廠棄巨型、改搶 20–30MW 小站點就近上線"}
+{"date": "2026-09-20", "title": "概念：電網互連佇列（Interconnection Queue）"}
+{"date": "2026-09-20", "title": "半導體專區：EDA 工具｜3D-IC／多晶片系統的 AI 熱-電多物理協同設計"}
