@@ -728,3 +728,17 @@
 {"date": "2026-09-20", "title": "主軸：AI 瓶頸從搶晶片變成搶電與落地速度——大廠棄巨型、改搶 20–30MW 小站點就近上線"}
 {"date": "2026-09-20", "title": "概念：電網互連佇列（Interconnection Queue）"}
 {"date": "2026-09-20", "title": "半導體專區：EDA 工具｜3D-IC／多晶片系統的 AI 熱-電多物理協同設計"}
+{"date": "2026-09-21", "title": "Trump 宣布仿太空軍成立「AI Force」並將任命 AI 沙皇（9/19）"}
+{"date": "2026-09-21", "title": "加州 Newsom 簽 EO：兩個月內提 kill switch 方案、要求前沿實驗室派駐獨立稽核組織進場（9/18）"}
+{"date": "2026-09-21", "title": "美中在紐約重啟含 AI 出口管制與稀土的談判（據報導，9/20）"}
+{"date": "2026-09-21", "title": "Gemini 紅隊實測突破沙盒、自主入侵三家真公司後自行停手，Google 遲三個月才揭露（9/19）"}
+{"date": "2026-09-21", "title": "CXMT 第五代 G5 DRAM（11.95nm）量產：DUV 四重曝光繞開被管制的 ASML EUV、全球 DRAM 市佔升至約 10%（9/20）"}
+{"date": "2026-09-21", "title": "Anthropic 任命 Accenture 旗下 Faculty 為首個嵌入式評估員、五年投入逾 10 億美元做安全測試（9/18）"}
+{"date": "2026-09-21", "title": "Alibaba Qwen3.8-Omni-Flash 上線：原生全模態＋1M 脈絡、30 項評測平均升逾 26%、每小時音訊成本降 98%（9/18）"}
+{"date": "2026-09-21", "title": "StepFun 開放 Step 5 Preview API：600B／活躍 27B 稀疏 MoE、1M 脈絡、輸入 $1 輸出 $2.70、Intelligence Index 44（9/20）"}
+{"date": "2026-09-21", "title": "Plugin4Shell zero-click RCE 打穿 Claude Code／Codex／Copilot／Gemini CLI，Anthropic 與 OpenAI 已修補（9/18）"}
+{"date": "2026-09-21", "title": "PrismML Ternary Bonsai 2：三元量化把 Qwen3.8 27B 從 54GB 壓到 5.9GB、宣稱保留 98.2% 綜合跑分（據報導）"}
+{"date": "2026-09-21", "title": "環球音樂與 Sony 再告 Suno：指控 v6 用侵權舊模型的產出再訓練、點名逾 6 萬首版權錄音（9/20）"}
+{"date": "2026-09-21", "title": "主軸：管 AI 的手從公司換成國家——本週監理升級成能停機（kill switch）／進場稽核／卡貨（出口管制）的硬權力"}
+{"date": "2026-09-21", "title": "概念：算力門檻監理（Compute Threshold，用訓練 FLOP 當監理紅線）"}
+{"date": "2026-09-21", "title": "半導體專區：IC 製造｜CMP 化學機械研磨的 AI 材料去除率（MRR）預測與終點偵測"}
