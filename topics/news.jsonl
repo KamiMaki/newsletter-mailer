@@ -742,3 +742,17 @@
 {"date": "2026-09-21", "title": "主軸：管 AI 的手從公司換成國家——本週監理升級成能停機（kill switch）／進場稽核／卡貨（出口管制）的硬權力"}
 {"date": "2026-09-21", "title": "概念：算力門檻監理（Compute Threshold，用訓練 FLOP 當監理紅線）"}
 {"date": "2026-09-21", "title": "半導體專區：IC 製造｜CMP 化學機械研磨的 AI 材料去除率（MRR）預測與終點偵測"}
+{"date": "2026-09-22", "title": "垂直 AI 公司改用開源權重自養模型：Cursor／Decagon／Harvey 認定封閉 API 蓋不出可長久產品，需自控 mid/post-training、護欄與資料留存"}
+{"date": "2026-09-22", "title": "Harvey 毛利從約 50% 崩到 -50% 後靠自養模型轉正：以 Moonshot Kimi K3 後訓練自研模型、並用 NVIDIA Nemotron 3 Ultra 做法律模型（宣稱前沿級準確度、每次成本降至 1/10）"}
+{"date": "2026-09-22", "title": "Abridge 以 NVIDIA Nemotron 打造首個臨床對話專用基礎模型"}
+{"date": "2026-09-22", "title": "xAI Grok 4.7 上線（傳 2.1 兆參數、$2/$6 每百萬 token）並同日進 GitHub Copilot 全 IDE"}
+{"date": "2026-09-22", "title": "NVIDIA Nemotron 開放模型策略：Arcee AI 約 0.9 美元/百萬輸出 token（約 20 倍便宜）、Glean Waldo、H Company Holotron 3 Nano >76%"}
+{"date": "2026-09-22", "title": "Base Labs 與 Hugging Face 合推開源權重模型的評估與監控工具"}
+{"date": "2026-09-22", "title": "NVIDIA 推 DSX Ready 認證計畫：為 AI 工廠電力與冷卻元件把關（BESS：Hitachi Energy／LG Energy／Tesla；CDU：LG Electronics／LiquidStack／Vertiv）"}
+{"date": "2026-09-22", "title": "加州州長 Newsom 簽署資料中心法：規範電費分攤、用水與地方監管"}
+{"date": "2026-09-22", "title": "Anthropic 揭內部約 3 萬個 agent、決策阻擋率約 0.002%"}
+{"date": "2026-09-22", "title": "OpenAI 成立 9 人數學顧問小組（IAS 主辦）：於 Navier-Stokes 爭議後把關 AI 數學成果的審查與發布"}
+{"date": "2026-09-22", "title": "GitHub Copilot CLI v1.0.87、OpenAI Codex CLI 0.155.1 維護更新"}
+{"date": "2026-09-22", "title": "主軸：前沿太貴又管不到底層——垂直 AI 公司改收養開源權重、自己後訓練養模型"}
+{"date": "2026-09-22", "title": "概念：開放權重（Open-weight）模型 vs 開源 vs 封閉"}
+{"date": "2026-09-22", "title": "半導體專區：EDA 工具｜形式驗證的斷言／性質自動生成（LLM 從規格生 SVA）"}
