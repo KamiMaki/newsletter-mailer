@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>策略學習報</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<div style="max-width:650px;margin:0 auto;padding:20px 16px;">
+
+  <!-- Header -->
+  <div style="background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:12px;padding:24px 20px;text-align:center;margin-bottom:16px;">
+    <div style="font-size:22px;font-weight:700;color:#fff;">📈 企鵝的AI交易策略學習報</div>
+    <div style="font-size:13px;color:#fff2e0;margin-top:6px;">2026-09-22（週二）｜BTC × 美股大盤 × 策略學習</div>
+  </div>
+
+  <!-- Disclaimer banner -->
+  <div style="background:#1a1a1a;border:1px solid #f59e0b;border-radius:8px;padding:10px 14px;margin-bottom:16px;">
+    <span style="color:#f59e0b;font-size:12px;line-height:1.6;">⚠️ 本報純屬個人交易紀律與策略學習用途，不構成投資建議，所有情境演練僅為教學示範，請自行判斷風險。</span>
+  </div>
+
+  <!-- 今日總覽 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:18px 20px;margin-bottom:16px;">
+    <div style="font-size:16px;font-weight:700;color:#fff;margin-bottom:10px;">⚡ 今日總覽</div>
+    <ul style="margin:0;padding-left:18px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+      <li>BTC 空頭回補噴出，<strong style="color:#fbbf24;font-weight:700">觸及約$84,320，創1月底以來新高</strong>，一小時內清算逾$2.6億空單。</li>
+      <li>美股由AI晶片股領漲，<strong style="color:#fbbf24;font-weight:700">那斯達克大漲2.26%收27,122.09創波段新高</strong>，S&P 500同步逼近歷史高點。</li>
+      <li>10年期公債殖利率從5.01%高點<strong style="color:#fbbf24;font-weight:700">回落至4.96%</strong>，市場消化完9月升息後的鷹派震盪。</li>
+      <li>今日學習主題：<strong style="color:#e2e8f0">部位調整：固定比例與 Kelly 的直覺</strong>——用今天的空頭清算事件，拆解「部位大小」怎麼決定生死。</li>
+    </ul>
+  </div>
+
+  <!-- ═══ BTC 區塊 ═══ -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:20px;padding:6px 16px;font-size:13px;font-weight:700;color:#fff;margin-bottom:14px;">₿ BTC 比特幣</div>
+
+    <table style="width:100%;border-collapse:collapse;font-size:13px;color:#cbd5e1;margin-bottom:14px;">
+      <tr style="background:#252525;">
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#94a3b8;">週期</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#94a3b8;">當前價</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#94a3b8;">變動</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#94a3b8;">趨勢</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#94a3b8;">關鍵點位</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">日線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">≈$84,320</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;color:#4ade80;">單日急拉</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">強勢突破</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">壓力$85K</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">週線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">本週急拉</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;color:#4ade80;">週線翻多</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">站回7日均線之上</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">支撐$80K</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">月線</td>
+        <td style="padding:8px;">9月區間$76K-$85K</td>
+        <td style="padding:8px;color:#4ade80;">月線收復失土</td>
+        <td style="padding:8px;">重回200日均線上方</td>
+        <td style="padding:8px;">支撐$82K／壓力$86K</td>
+      </tr>
+    </table>
+
+    <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;">
+      9/21 BTC一小時內<strong style="color:#fbbf24;font-weight:700">噴出突破$84,000</strong>，為1月底以來首見，觸發約$2.62億空單清算；隨後24小時內全市場清算金額擴大到<strong style="color:#fbbf24;font-weight:700">約$7.46億，其中$6.48億是空頭部位</strong>。Glassnode先前已標記<strong style="color:#e2e8f0">$83K-$86K為空單密集聚集區</strong>，這波急拉正好把堆在這個區間的槓桿空單一次性洗出場——技術面上這是<strong style="color:#fbbf24;font-weight:700">典型的空頭回補（short squeeze）</strong>而非單純買盤堆疊。
+    </p>
+    <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 14px;">
+      四視角：<strong style="color:#e2e8f0">順勢</strong>——站上$80K後動能明確轉強，趨勢跟隨者這波是順風車；<strong style="color:#e2e8f0">均值回歸</strong>——短時間噴出$4K以上，追高風險已升高，拉回$82K附近才是較合理的均值回歸切入區；<strong style="color:#e2e8f0">突破</strong>——若能站穩$85K，技術面打開挑戰$86K-$88K區間的空間；<strong style="color:#e2e8f0">宏觀</strong>——10年期殖利率回落替風險資產解壓，但升息後的高利率環境仍是中期逆風。
+    </p>
+
+    <p style="color:#94a3b8;font-size:13px;line-height:1.6;margin:0 0 14px;">
+      📰 加密圈新聞：① BTC空頭回補衝高至約$85,000附近，24小時清算約$7.46億，其中空單占$6.48億（CoinDesk, 9/21）。② 現貨BTC ETF 9/18單日淨流入$4.33億，FBTC以$3.11億居冠、IBIT $1.08億次之，扭轉9/15-16連兩日合計流出約$7.46億的緊縮格局（The Coin Republic, 9/18）。
+    </p>
+
+    <div style="background:#252525;border-left:3px solid #f59e0b;border-radius:6px;padding:14px 16px;">
+      <div style="font-size:13px;font-weight:700;color:#f59e0b;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="margin:0;padding-left:18px;color:#cbd5e1;font-size:14px;line-height:1.8;">
+        <li>今天的<strong style="color:#e2e8f0">空頭清算</strong>提醒你：部位大小若沒配合對邊際優勢的信心，噴出行情一來就是強制出場。</li>
+        <li><strong style="color:#e2e8f0">密集聚集區</strong>（像$83K-$86K）本身不是進場理由，是波動放大的警訊。</li>
+        <li>順勢突破後追價前，先問自己：這筆的部位比例是照規則算出來的，還是被噴出行情的興奮感放大的。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ═══ 美股大盤 區塊 ═══ -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:20px;padding:6px 16px;font-size:13px;font-weight:700;color:#fff;margin-bottom:14px;">📊 美股大盤</div>
+
+    <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;">
+      <strong style="color:#e2e8f0">S&amp;P 500</strong>：9/21收<strong style="color:#fbbf24;font-weight:700">7,764.70（+1.49%）</strong>，逼近8/13創下的歷史收盤高點7,777.88，僅一步之遙。<strong style="color:#e2e8f0">QQQ／那斯達克</strong>：那斯達克綜合指數收<strong style="color:#fbbf24;font-weight:700">27,122.09（+2.26%）</strong>，創去年6月以來波段新高，由Intel（+12%）、AMD（+10%，市值突破兆元）領軍的AI晶片股帶動；QQQ最近一次公開收盤價（9/18）約$721.45，同步走高。<strong style="color:#e2e8f0">VIX</strong>：9/21收<strong style="color:#fbbf24;font-weight:700">約14.93（+0.81%）</strong>，仍處在9月以來14-17的低波動區間——VIX可以想成「市場的心跳監測儀」，數字越低代表交易員預期波動越小，但也可能是風險被低估的訊號。
+    </p>
+
+    <table style="width:100%;border-collapse:collapse;font-size:13px;color:#cbd5e1;margin-bottom:14px;">
+      <tr style="background:#252525;">
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#94a3b8;">週期</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#94a3b8;">S&amp;P 500</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#94a3b8;">趨勢</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#94a3b8;">關鍵點位</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">日線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">7,764.70（+1.49%）</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;color:#4ade80;">單日強彈</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">壓力7,780</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">週線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">脫離上週跌勢</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;color:#4ade80;">週線翻多</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">站回7日均線</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">月線</td>
+        <td style="padding:8px;">9月區間7,590-7,765</td>
+        <td style="padding:8px;color:#4ade80;">逼近歷史高</td>
+        <td style="padding:8px;">支撐7,600／壓力7,780（ATH）</td>
+      </tr>
+    </table>
+
+    <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 14px;">
+      四視角：<strong style="color:#e2e8f0">順勢</strong>——AI股領軍突破前高，趨勢動能仍在；<strong style="color:#e2e8f0">均值回歸</strong>——單日+2.26%漲幅偏大，短線追價前該想清楚回檔緩衝空間；<strong style="color:#e2e8f0">突破</strong>——若S&amp;P 500站穩7,780，技術面打開挑戰歷史新高後的空間；<strong style="color:#e2e8f0">宏觀</strong>——殖利率回落、油價下跌替股市減壓，市場同步在等待川習會結果，屬於偏多但仍有變數的環境。
+    </p>
+
+    <p style="color:#94a3b8;font-size:13px;line-height:1.6;margin:0 0 14px;">
+      📰 美股新聞：① 那斯達克9/21大漲2.26%收27,122.09創波段新高，AI晶片股領漲，Intel+12%、AMD+10%市值破兆美元（Yahoo Finance／TheStreet, 9/21）。② 10年期公債殖利率9/21降至4.96%，較9/18的5.01%回落，市場消化9月升息後的鷹派立場並觀望川習會（Trading Economics, 9/21）。
+    </p>
+
+    <div style="background:#252525;border-left:3px solid #6366f1;border-radius:6px;padding:14px 16px;">
+      <div style="font-size:13px;font-weight:700;color:#6366f1;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="margin:0;padding-left:18px;color:#cbd5e1;font-size:14px;line-height:1.8;">
+        <li>單日+2.26%的<strong style="color:#e2e8f0">噴出式上漲</strong>，是最容易讓人臨時放大部位的時刻。</li>
+        <li><strong style="color:#e2e8f0">VIX偏低</strong>不代表沒風險，是市場暫時沒把風險定價進去。</li>
+        <li>逼近歷史高點時，該問的不是「還能不能追」，是「部位比例配不配得上這裡的不確定性」。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ═══ 📖 今日策略學習 ═══ -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#8b5cf6,#6366f1);border-radius:20px;padding:6px 16px;font-size:13px;font-weight:700;color:#fff;margin-bottom:14px;">📖 今日策略學習</div>
+
+    <div style="font-size:17px;font-weight:700;color:#fff;margin-bottom:6px;">部位調整：固定比例與 Kelly 的直覺</div>
+    <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 12px;">
+      為什麼今天學這個：今天BTC一小時內清算<strong style="color:#fbbf24;font-weight:700">$2.62億空單</strong>，24小時擴大到<strong style="color:#fbbf24;font-weight:700">$7.46億</strong>——這些被強制平倉的部位，多半不是方向錯，是<strong style="color:#e2e8f0">部位太大</strong>。今天正好用這個事件，拆解「該下多少比例」這件事。
+    </p>
+
+    <div style="font-size:13px;font-weight:700;color:#8b5cf6;margin-bottom:8px;">核心概念</div>
+    <ul style="margin:0 0 14px;padding-left:18px;color:#cbd5e1;font-size:14px;line-height:1.8;">
+      <li><strong style="color:#e2e8f0">Kelly公式</strong>：下注比例=勝率×盈虧比-敗率，抓的是長期複利成長率最大化。</li>
+      <li>全額Kelly波動極大，實務上多用<strong style="color:#e2e8f0">半Kelly或1/3 Kelly</strong>換取更平滑的資金曲線。</li>
+      <li><strong style="color:#e2e8f0">固定比例</strong>部位法簡單好執行，但沒吃到「這筆勝率比較高就多下一點」的邊際優勢。</li>
+      <li>勝率、盈虧比只要估錯，Kelly比例的誤差會被<strong style="color:#e2e8f0">放大</strong>，這也是為什麼保守版更常被使用。</li>
+    </ul>
+
+    <div style="background:#252525;border-left:3px solid #8b5cf6;border-radius:6px;padding:14px 16px;margin-bottom:14px;">
+      <div style="font-size:13px;font-weight:700;color:#8b5cf6;margin-bottom:8px;">🧮 情境演練</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0;">
+        若你評估BTC從今天約<strong style="color:#fbbf24;font-weight:700">$84,320</strong>拉回測試$80K支撐後，有60%機率反彈到$88K（賺賠比接近1:1），Kelly公式給出的下注比例約為 2×0.6-1=<strong style="color:#fbbf24;font-weight:700">20%資金</strong>。但這個60%是你自己估的，不是市場給你的保證——所以實務上會抓<strong style="color:#e2e8f0">半Kelly（約10%）</strong>甚至更保守的<strong style="color:#e2e8f0">1/4 Kelly（約5%）</strong>。今天被清算的$6.48億空單，很可能就是滿倉押注「一定會跌破」的代價。
+      </p>
+    </div>
+
+    <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0;">
+      <strong style="color:#e2e8f0">今日研究速讀</strong>：Novotny（2026）研究訂單簿市場的槓桿與內生性流動性危機發現，只要市場對「基本面錨定」有共識，就算書本槓桿很高，市場也能維持平靜；但一旦這個錨定被削弱，報酬尾端風險指數會從約6.5驟降到2.3，波動聚集程度也大約翻倍。換句話說，<strong style="color:#fbbf24;font-weight:700">槓桿本身不是引爆點，共識瓦解的那一刻才是</strong>——這正好呼應今天BTC空單為何在短時間內被反噬出場。
+    </p>
+    <p style="color:#94a3b8;font-size:12px;margin:8px 0 0;">🔗 <a href="https://arxiv.org/abs/2609.20192" style="color:#8b5cf6;">arXiv:2609.20192 — Herding and Liquidity in Order-Book Markets III</a></p>
+  </div>
+
+  <!-- ═══ 今日交易紀律提醒 ═══ -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#10b981,#06b6d4);border-radius:20px;padding:6px 16px;font-size:13px;font-weight:700;color:#fff;margin-bottom:14px;">🧭 今日交易紀律提醒</div>
+    <div style="font-size:15px;font-weight:700;color:#fff;margin-bottom:8px;">週二主題：部位控管</div>
+    <p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0;">
+      「<strong style="color:#e2e8f0">部位控管不是替每一筆都套一樣的公式，是你在勝率沒把握時，敢不敢把倉位縮到比你「以為」該縮的還小。</strong>」今天BTC噴出、那斯達克創波段新高，兩邊都在提供「追進去」的誘惑；但真正的部位控管，是在興奮感最強的時候，還記得問自己這筆的信心分數有沒有騙人。
+    </p>
+  </div>
+
+  <!-- 💭 今日反思 -->
+  <div style="background:linear-gradient(135deg,#10b981,#06b6d4);padding:1px;border-radius:12px;margin-bottom:16px;">
+    <div style="background:#1a1a1a;border-radius:11px;padding:18px 20px;">
+      <div style="font-size:15px;font-weight:700;color:#fff;margin-bottom:10px;">💭 今日反思</div>
+      <ul style="margin:0;padding-left:18px;color:#cbd5e1;font-size:14px;line-height:1.8;">
+        <li>BTC回到$84K高點時，如果你的勝率估計錯了5%，現在的部位大小還撐得住嗎？</li>
+        <li>今天那斯達克單日大漲2.26%，你有沒有因為怕錯過而想用比平常更大的部位追進？</li>
+        <li>下次下單前，你的部位比例是固定死的百分比，還是有照勝率與盈虧比重新算過？</li>
+      </ul>
+      <p style="color:#94a3b8;font-size:12px;margin:12px 0 0;">挑一題寫進交易日誌，這就是今天的功課。</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="text-align:center;padding:20px 10px;color:#666;font-size:11px;line-height:1.8;">
+    <p style="margin:0 0 8px;">本報所有內容僅供交易紀律與策略學習之用，不構成任何投資建議或勸誘。文中所有點位、情境演練均為教學示範，不代表未來走勢預測，過去績效不保證未來報酬。加密貨幣與美股投資具高風險，可能導致本金虧損，請自行判斷並承擔風險。</p>
+    <p style="margin:0 0 8px;">資料截止：2026-09-21（美東時間）。數字來源已於內文各段標註，詳見各新聞與研究連結。</p>
+    <p style="margin:0 0 4px;">本報為 Darren 的個人學習報。</p>
+    <p style="margin:0;">本信件由 AI 自動生成。</p>
+  </div>
+
+</div>
+</body>
+</html>
