@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>企鵝的AI交易策略學習報</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<div style="max-width:650px;margin:0 auto;padding:20px 16px;">
+
+  <!-- Header -->
+  <div style="background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:12px;padding:28px 22px;text-align:center;margin-bottom:16px;">
+    <div style="font-size:22px;font-weight:700;color:#ffffff;">🐧 企鵝的AI交易策略學習報</div>
+    <div style="font-size:14px;color:#fff7ed;margin-top:6px;">2026-09-23｜BTC × 美股大盤・策略學習</div>
+  </div>
+
+  <!-- Disclaimer banner -->
+  <div style="background:#1a1a1a;border:1px solid #f59e0b;border-radius:8px;padding:12px 16px;margin-bottom:16px;">
+    <div style="color:#f59e0b;font-size:13px;line-height:1.6;">⚠️ 本報純為交易紀律與策略思維學習之用，<strong style="color:#f59e0b;">不構成任何投資建議</strong>，所有情境演練皆為假設性教學範例，請勿作為買賣依據。</div>
+  </div>
+
+  <!-- 今日總覽 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:12px;">⚡ 今日總覽</div>
+    <ul style="margin:0;padding-left:20px;color:#e2e8f0;font-size:15px;line-height:1.8;">
+      <li>BTC單日暴漲近7%衝上<strong style="color:#fbbf24;font-weight:700">$86,000</strong>上方，24小時內觸發<strong style="color:#fbbf24;font-weight:700">逾$750M空單清算</strong>，一舉突破$80K關卡直逼$90K</li>
+      <li>美股三大指數表現分歧：那斯達克創<strong style="color:#fbbf24;font-weight:700">27,244.28</strong>新高（+0.45%），S&amp;P 500持平於<strong style="color:#fbbf24;font-weight:700">7,764.64</strong>，道瓊小跌至51,863.69（-0.36%）</li>
+      <li>VIX僅<strong style="color:#fbbf24;font-weight:700">14.87</strong>維持低檔平靜，但BTC同日卻出現7%劇烈波動——這正是今天「量能與流動性分析」的課題起點</li>
+      <li>今日紀律主題：<strong style="color:#fbbf24;font-weight:700">情緒管理（FOMO）</strong>——當「市場FOMO觸頂」本身成為新聞標題時，該怎麼看自己的部位</li>
+    </ul>
+  </div>
+
+  <!-- BTC 區塊 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:20px;padding:6px 16px;font-size:13px;font-weight:700;color:#fff;margin-bottom:14px;">₿ BTC 加密貨幣</div>
+
+    <table style="width:100%;border-collapse:collapse;font-size:13px;color:#e2e8f0;margin-bottom:14px;">
+      <tr style="background:#252525;">
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#fbbf24;">區間</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#fbbf24;">現價/變動</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#fbbf24;">趨勢</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#fbbf24;">關鍵點位</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">日線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;"><strong style="color:#fbbf24">$86,624</strong>／+6.47%</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">急漲突破</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">站上$80K</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">週線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">週初約$80K→本週$86K+</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">明顯轉強，高於7日均線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">上看$90K</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">月線</td>
+        <td style="padding:8px;">9月Fed升息後反彈</td>
+        <td style="padding:8px;">月線轉多，高於200日均線</td>
+        <td style="padding:8px;">支撐$80K</td>
+      </tr>
+    </table>
+
+    <div style="background:#252525;border-radius:8px;padding:14px;margin-bottom:14px;">
+      <div style="font-size:13px;color:#94a3b8;margin-bottom:8px;font-weight:700;">四策略視角</div>
+      <div style="font-size:14px;color:#e2e8f0;line-height:1.8;">
+        <strong style="color:#e2e8f0">順勢：</strong>站穩$80K後量能強勁，順勢者會觀察能否守住這個由壓力轉支撐的關鍵位置<br>
+        <strong style="color:#e2e8f0">均值回歸：</strong>單日<strong style="color:#fbbf24">+7%</strong>已明顯偏離短期均值，均值回歸者此刻更在意拉回力道有多快<br>
+        <strong style="color:#e2e8f0">突破：</strong>$80K在近月多次遭拒後，今日終於放量突破，是本輪最關鍵的技術訊號<br>
+        <strong style="color:#e2e8f0">宏觀：</strong>油價回落、Fed升息利空已被市場消化，風險偏好回升是這波行情的背景推手
+      </div>
+    </div>
+
+    <div style="font-size:14px;color:#e2e8f0;line-height:1.7;margin-bottom:6px;">
+      📰 BTC短時間內逾<strong style="color:#fbbf24;font-weight:700">$750M</strong>空單遭強制清算，空頭回補是這波急漲穿越$80K阻力的主要推力之一。
+    </div>
+    <div style="font-size:14px;color:#e2e8f0;line-height:1.7;margin-bottom:14px;">
+      📰 現貨BTC ETF本週一（9/21）單日淨流入<strong style="color:#fbbf24;font-weight:700">$998.95M</strong>，創2026年最大單日流入紀錄，BlackRock IBIT主導買盤。
+    </div>
+
+    <div style="border-left:3px solid #f59e0b;background:#252525;border-radius:0 8px 8px 0;padding:14px 16px;">
+      <div style="font-size:13px;color:#f59e0b;font-weight:700;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="margin:0;padding-left:18px;color:#e2e8f0;font-size:14px;line-height:1.8;">
+        <li><strong style="color:#e2e8f0">空單回補</strong>推動的暴漲本質是被迫平倉，不是新資金主動進場，追高前先分清楚來源</li>
+        <li>單日波動<strong style="color:#e2e8f0">超過±5%</strong>時，原本設定的停損停利距離可能已經不合理，值得重新檢視</li>
+        <li><strong style="color:#e2e8f0">ETF資金流</strong>是相對穩定的買盤，清算事件是一次性訊號，兩者代表的意義完全不同</li>
+        <li>壓力轉支撐（$80K）能否守住，比單日漲幅多少更能判斷這波是否延續</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 美股大盤區塊 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:20px;padding:6px 16px;font-size:13px;font-weight:700;color:#fff;margin-bottom:14px;">📊 美股大盤</div>
+
+    <div style="font-size:14px;color:#e2e8f0;line-height:1.7;margin-bottom:10px;">
+      <strong style="color:#e2e8f0">SPY</strong>收於<strong style="color:#fbbf24;font-weight:700">$773.25</strong>（日內區間$772.59–$775.14），近乎持平；<strong style="color:#e2e8f0">QQQ</strong>收<strong style="color:#fbbf24;font-weight:700">$737.50</strong>，那斯達克指數同步創<strong style="color:#fbbf24;font-weight:700">27,244.28</strong>歷史新高。<strong style="color:#e2e8f0">VIX</strong>收在<strong style="color:#fbbf24;font-weight:700">14.87</strong>低檔，代表選擇權市場對後市波動預期依舊平靜——這是一種俗稱「恐慌指數」的隱含波動率量尺，數字越低代表市場越不緊張，但它反映的是「預期」，不代表今天BTC那種實際發生的劇烈波動。
+    </div>
+
+    <table style="width:100%;border-collapse:collapse;font-size:13px;color:#e2e8f0;margin-bottom:14px;">
+      <tr style="background:#252525;">
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#67e8f9;">區間</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#67e8f9;">現價/變動</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#67e8f9;">趨勢</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#67e8f9;">關鍵點位</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">日線（SPY）</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">$773.25／持平</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">區間整理</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">$770支撐／$780壓力</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">週線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">本週窄幅震盪</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">貼近7日均線盤整</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">$770–$780區間</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">月線（QQQ）</td>
+        <td style="padding:8px;">創27,244.28新高</td>
+        <td style="padding:8px;">月線續強，高於200日均線</td>
+        <td style="padding:8px;">支撐約$720</td>
+      </tr>
+    </table>
+
+    <div style="background:#252525;border-radius:8px;padding:14px;margin-bottom:14px;">
+      <div style="font-size:13px;color:#94a3b8;margin-bottom:8px;font-weight:700;">四策略視角</div>
+      <div style="font-size:14px;color:#e2e8f0;line-height:1.8;">
+        <strong style="color:#e2e8f0">順勢：</strong>那斯達克創新高顯示AI科技股動能仍在，順勢操作者關注這股動能能否延續<br>
+        <strong style="color:#e2e8f0">均值回歸：</strong>道瓊近期偏弱、跌破均線，均值回歸者會留意是否有技術性反彈空間<br>
+        <strong style="color:#e2e8f0">突破：</strong>那斯達克站上27,244前高，是本週美股最關鍵的技術突破訊號<br>
+        <strong style="color:#e2e8f0">宏觀：</strong>油價回落、10年期殖利率持穩<strong style="color:#fbbf24">4.959%</strong>，通膨疑慮暫緩讓風險偏好回升
+      </div>
+    </div>
+
+    <div style="font-size:14px;color:#e2e8f0;line-height:1.7;margin-bottom:6px;">
+      📰 那斯達克9/22受AI晶片股與Meta「Muse AI」熱潮帶動創<strong style="color:#fbbf24;font-weight:700">27,244.28</strong>新高，為6月以來首次改寫紀錄。
+    </div>
+    <div style="font-size:14px;color:#e2e8f0;line-height:1.7;margin-bottom:14px;">
+      📰 道瓊受Cisco（-4.5%）、JPMorgan（-3.35%）等權值股拖累收跌<strong style="color:#fbbf24;font-weight:700">185點</strong>，漲勢集中在少數AI相關個股。
+    </div>
+
+    <div style="border-left:3px solid #6366f1;background:#252525;border-radius:0 8px 8px 0;padding:14px 16px;">
+      <div style="font-size:13px;color:#818cf8;font-weight:700;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="margin:0;padding-left:18px;color:#e2e8f0;font-size:14px;line-height:1.8;">
+        <li><strong style="color:#e2e8f0">VIX低</strong>不代表所有資產都平靜，不同市場的波動要分開檢視，不能互相套用</li>
+        <li>指數創新高時，先確認是<strong style="color:#e2e8f0">全面上漲</strong>還是集中在少數幾檔股票</li>
+        <li>油價、殖利率、VIX三項指標同步降溫，通常反映<strong style="color:#e2e8f0">風險偏好</strong>正在回升</li>
+        <li>大盤「持平」的表面數字下，可能藏著類股輪動劇烈的內部分歧</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 今日策略學習 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#8b5cf6,#6366f1);border-radius:20px;padding:6px 16px;font-size:13px;font-weight:700;color:#fff;margin-bottom:14px;">📖 今日策略學習</div>
+
+    <div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:6px;">成交量與流動性分析</div>
+    <div style="font-size:14px;color:#94a3b8;line-height:1.7;margin-bottom:14px;">為什麼今天學這個：今天VIX只有<strong style="color:#fbbf24;font-weight:700">14.87</strong>，選擇權市場「看起來」很平靜，但BTC卻在24小時內暴漲近7%、清算超過<strong style="color:#fbbf24;font-weight:700">$750M</strong>空單——這其實是一場流動性事件，不是波動率制度轉變，正好拿來拆解「量」到底該怎麼讀。</div>
+
+    <div style="font-size:13px;color:#a78bfa;font-weight:700;margin-bottom:8px;">核心概念</div>
+    <ul style="margin:0 0 14px 0;padding-left:20px;color:#e2e8f0;font-size:14px;line-height:1.8;">
+      <li>量是價格變動背後「有沒有真資金」的證據，價漲量縮要提高警覺</li>
+      <li>流動性稀薄時，同樣規模的資金更容易造成劇烈的價格位移</li>
+      <li><strong style="color:#e2e8f0">空單回補</strong>是強制性買盤，會製造量能，但不等於新趨勢確立</li>
+      <li>穩定的ETF資金流，比單次清算事件更能反映真實、持續的需求</li>
+    </ul>
+
+    <div style="border-left:3px solid #8b5cf6;background:#252525;border-radius:0 8px 8px 0;padding:14px 16px;margin-bottom:14px;">
+      <div style="font-size:13px;color:#a78bfa;font-weight:700;margin-bottom:8px;">🎯 情境演練</div>
+      <div style="font-size:14px;color:#e2e8f0;line-height:1.8;">今天BTC從$80K附近急拉到<strong style="color:#fbbf24">$86,000</strong>以上，24小時內超過<strong style="color:#fbbf24">$750M</strong>空單被強制平倉。同一時間，現貨BTC ETF在9/21單日流入<strong style="color:#fbbf24">$998.95M</strong>——這是兩種完全不同的「量」：一種是空頭被迫買回，屬於一次性事件，通常隨部位出清而消退；另一種是機構資金穩定進場，屬於持續性買盤。單看K棒漲幅無法分辨兩者比重，但比對「ETF資金流」與「衍生品清算數據」，就能大致判斷這波突破背後，穩定買盤與強制回補各佔多少——這會決定你該把它當成「趨勢確立」還是「短期軋空」來理解。</div>
+    </div>
+
+    <div style="background:#252525;border-radius:8px;padding:14px 16px;">
+      <div style="font-size:13px;color:#94a3b8;font-weight:700;margin-bottom:6px;">🔬 今日研究速讀</div>
+      <div style="font-size:14px;color:#e2e8f0;line-height:1.8;margin-bottom:6px;"><strong style="color:#e2e8f0">Model-Free Passive Execution via Order-Level Shadowing</strong> — 這篇論文提出一種不需要預測模型的被動下單演算法（Shadow-PPOV）：不去預測成交機率，而是直接觀察其他市場參與者的委託單行為，模仿其掛單位置與時機。作者在一整年CME ES期貨數據上測試，發現這種「只讀取、不計算」的簡單做法，可以當作評估其他複雜預測模型是否真的有效的基準線。對散戶的啟示：想讀懂流動性，有時候直接觀察委託單流向（order flow），會比套用複雜指標更誠實。</div>
+      <div style="font-size:13px;"><a href="https://arxiv.org/abs/2609.18019" style="color:#818cf8;">🔗 閱讀原文</a></div>
+    </div>
+  </div>
+
+  <!-- 交易紀律提醒 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#10b981,#06b6d4);border-radius:20px;padding:6px 16px;font-size:13px;font-weight:700;color:#fff;margin-bottom:14px;">🧭 今日交易紀律提醒</div>
+
+    <div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:10px;">情緒管理（FOMO）</div>
+    <div style="background:#252525;border-radius:8px;padding:14px 16px;margin-bottom:12px;">
+      <div style="font-size:14px;color:#e2e8f0;line-height:1.8;font-style:italic;">「FOMO最危險的時刻，不是你看到別人賺錢眼紅，而是像今天這樣——『市場FOMO觸頂』本身變成新聞標題時，你會把『大家都在追』當成『這次真的不一樣』的證據，卻忘了回頭檢查，這波上漲有多少是<strong style="color:#fbbf24">$750M</strong>空單被迫回補撐出來的。」</div>
+    </div>
+    <div style="font-size:14px;color:#e2e8f0;line-height:1.8;">應用情境：當媒體標題已經在寫「FOMO觸頂」，代表市場情緒早已被公開討論、甚至被交易——這時真正該問的不是「我要不要追」，而是「支撐這根長紅K棒的，是穩定買盤還是強制回補」。若答案是後者，代表這股動能的續航力，遠比表面漲幅看起來的更脆弱。</div>
+  </div>
+
+  <!-- 今日反思 -->
+  <div style="background:linear-gradient(135deg,#10b981,#06b6d4);padding:1px;border-radius:12px;margin-bottom:16px;">
+    <div style="background:#1a1a1a;border-radius:11px;padding:18px;">
+      <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:12px;">💭 今日反思</div>
+      <ul style="margin:0 0 10px 0;padding-left:20px;color:#e2e8f0;font-size:14px;line-height:1.8;">
+        <li>今天BTC單日+7%，若你手上原本沒有部位，現在看到的到底是「錯過的趨勢」，還是「被逼空推高的價格」？</li>
+        <li>今天VIX只有14.87，但BTC波動遠超這個數字，你平常是用哪一個指標判斷「現在市場平不平靜」？</li>
+        <li>若你今天真的因為FOMO進場，支撐這個決定的是資金流數據，還是純粹「大家都在講」的感覺？</li>
+      </ul>
+      <div style="font-size:12px;color:#94a3b8;">挑一題寫進交易日誌，這就是今天的功課。</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="text-align:center;padding:16px 10px;color:#666;font-size:12px;line-height:1.8;">
+    <div style="margin-bottom:8px;">⚠️ 本報所有內容僅為交易紀律與策略思維之學習教材，引用之市場數據來自公開財經媒體與資料源，可能存在延遲或誤差；文中所有情境演練均為假設性教學範例，不構成任何投資建議，不應作為實際買賣依據。加密貨幣與股票市場均具高度風險，投資前請自行判斷並承擔風險。</div>
+    <div style="margin-bottom:8px;">本報為 Darren 的個人學習報，僅供個人學習使用。</div>
+    <div>本信件由 AI 自動生成。</div>
+  </div>
+
+</div>
+</body>
+</html>
