@@ -756,3 +756,15 @@
 {"date": "2026-09-22", "title": "主軸：前沿太貴又管不到底層——垂直 AI 公司改收養開源權重、自己後訓練養模型"}
 {"date": "2026-09-22", "title": "概念：開放權重（Open-weight）模型 vs 開源 vs 封閉"}
 {"date": "2026-09-22", "title": "半導體專區：EDA 工具｜形式驗證的斷言／性質自動生成（LLM 從規格生 SVA）"}
+{"date": "2026-09-23", "title": "Anthropic Claude Opus 5.5 發表：比 Opus 5 便宜 40%、快逾 30%，複雜任務仍升級（Terminal-Bench 52.3%→66.4%、$4/$20、快取讀 $0.20）"}
+{"date": "2026-09-23", "title": "OpenAI GPT-6 Sol／Luna 進 GitHub Copilot（Sol 均衡、Luna 家族最低成本、量計價）"}
+{"date": "2026-09-23", "title": "Claude Code 2.1.280：Opus 5.5 設為預設 Opus 模型（1M 上下文、$4/$20、快取讀 $0.20）"}
+{"date": "2026-09-23", "title": "OpenAI Codex CLI 0.156.0：全螢幕 TUI、預設語音對話、/usage 用量儀表板"}
+{"date": "2026-09-23", "title": "Hugging Face Transformers 可直接執行 llama.cpp 量化模型＋tokenizers v1 發表"}
+{"date": "2026-09-23", "title": "AMD 市值突破 1 兆美元（單日約 +9.4%、一週增約 2000 億美元，AI 需求推動）"}
+{"date": "2026-09-23", "title": "NVIDIA Isaac ROS 5.0：把 agentic 工作流帶進機器人（Jetson Orin Nano→Thor，ROSCon）"}
+{"date": "2026-09-23", "title": "OpenAI 開放第三方安全團隊在訓練/評估/部署階段提早評估（洽談 METR、Redwood Research）"}
+{"date": "2026-09-23", "title": "Cadence ChipStack AI 新增 RTL 生成代理（規格→RTL＋PPA，Honda R&D 評估、Q4 2026 早期試用，宣稱省 24% 面積/18% 功耗）"}
+{"date": "2026-09-23", "title": "主軸：前沿模型換代拚的是效率不是更聰明——Opus 5.5 便宜40%快30%卻更強、OpenAI GPT-6 拆出最省的 Luna 版，把成本寫進模型本身"}
+{"date": "2026-09-23", "title": "概念：每任務成本（Cost-per-Task）vs 每 token 單價"}
+{"date": "2026-09-23", "title": "半導體專區：IC 製造｜虛擬量測（Virtual Metrology）——用機台 FDC 訊號預測薄膜沉積膜厚，不量每片也有結果"}
