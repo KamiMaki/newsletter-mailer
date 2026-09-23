@@ -768,3 +768,16 @@
 {"date": "2026-09-23", "title": "主軸：前沿模型換代拚的是效率不是更聰明——Opus 5.5 便宜40%快30%卻更強、OpenAI GPT-6 拆出最省的 Luna 版，把成本寫進模型本身"}
 {"date": "2026-09-23", "title": "概念：每任務成本（Cost-per-Task）vs 每 token 單價"}
 {"date": "2026-09-23", "title": "半導體專區：IC 製造｜虛擬量測（Virtual Metrology）——用機台 FDC 訊號預測薄膜沉積膜厚，不量每片也有結果"}
+{"date": "2026-09-24", "title": "Google Gemini 3.8 Flash TTS／Flash-Lite TTS 正式 GA＋聲音設計/聲音複製、語音庫擴到 150+"}
+{"date": "2026-09-24", "title": "OpenAI Codex 0.156.0 把語音對話設成預設開啟（F8、內建音訊執行環境）＋全螢幕 TUI／usage"}
+{"date": "2026-09-24", "title": "Vercel AI SDK ai@7.0.113 加入 Gemini 3.8 TTS 支援（結構化語音中繼資料、逐輪說話者/風格控制）"}
+{"date": "2026-09-24", "title": "Anthropic：Claude 協助發現帶類 CRISPR 重複序列的全新酵素系統"}
+{"date": "2026-09-24", "title": "阿里巴巴 Qwen 4 家族（Max/Plus/Flash/27B）雲棲大會亮相、宣布以新架構訓練中（無規格）"}
+{"date": "2026-09-24", "title": "聯合國安理會首度召開前沿 AI 高階簡報（Altman／Amodei／Bengio／Delangue 同場）"}
+{"date": "2026-09-24", "title": "Cadence 與 TSMC 擴大合作：工具通過 A14／N2P 製程認證、silicon-proven UALink IP、支援 3DFabric"}
+{"date": "2026-09-24", "title": "GitHub Copilot 桌面 app 加入本地沙箱；Cursor 推 Security Review／Rollouts"}
+{"date": "2026-09-24", "title": "Cadence 為 ChipStack AI 加入 spec-to-RTL 生成 agent（早期評估省 24% 面積／18% 功耗、Honda R&D 試用、Q4 2026 EA）"}
+{"date": "2026-09-24", "title": "AgenticSizing：多代理 LLM 類比電路 sizing（55 電晶體/60 變數、LDO 60% 成功率、平均 83 迭代）（arXiv 2609.25873）"}
+{"date": "2026-09-24", "title": "主軸：語音從「展示功能」轉正成「預設介面層」——模型GA／CLI預設／SDK標準三層同週把語音變預設（Gemini 3.8 TTS＋Codex＋Vercel AI SDK）"}
+{"date": "2026-09-24", "title": "概念：串接式語音 vs 原生/端到端語音（Cascaded ASR→LLM→TTS vs Native Audio）"}
+{"date": "2026-09-24", "title": "半導體專區：IC 設計｜類比/混合訊號電路尺寸自動化（Analog Circuit Sizing，agentic LLM／AnaFlow／AgenticSizing）"}
