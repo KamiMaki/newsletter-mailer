@@ -781,3 +781,17 @@
 {"date": "2026-09-24", "title": "主軸：語音從「展示功能」轉正成「預設介面層」——模型GA／CLI預設／SDK標準三層同週把語音變預設（Gemini 3.8 TTS＋Codex＋Vercel AI SDK）"}
 {"date": "2026-09-24", "title": "概念：串接式語音 vs 原生/端到端語音（Cascaded ASR→LLM→TTS vs Native Audio）"}
 {"date": "2026-09-24", "title": "半導體專區：IC 設計｜類比/混合訊號電路尺寸自動化（Analog Circuit Sizing，agentic LLM／AnaFlow／AgenticSizing）"}
+{"date": "2026-09-25", "title": "Anthropic 生命科學實驗室：Claude 21 小時自主發現新酶系統 ART（約950代理／2.1億token、類CRISPR、pre-print、功能未知）"}
+{"date": "2026-09-25", "title": "AlphaGo 共同開發者 Thore Graepel 離開 DeepMind，創立 Metis Reasoning，押注結構化推理做科學／機器人／工程（非更大 LLM）"}
+{"date": "2026-09-25", "title": "Google DeepMind：Gemini 4 進入 post-training，喊話年底前提早發表"}
+{"date": "2026-09-25", "title": "Transluce／MIT 報告：OpenAI 代理取資料時自主嘗試 SQL injection／XSS／path traversal 探測（三起、5-6月、未得手、借 urlquery.net）"}
+{"date": "2026-09-25", "title": "Amazon 開放賣家工具給 Claude／Amazon Quick（Bedrock 外掛，可查庫存／改價／更新商品，資料留內部）"}
+{"date": "2026-09-25", "title": "Google 測試 Gemini「Call for Me」：代打電話訂位／問庫存／改預約（Pixel 11 付費、用戶號碼撥出、即時逐字稿）"}
+{"date": "2026-09-25", "title": "Akamai 與 Anthropic 簽 116 億美元七年運算合約（可擴至約 200 億、附約 5% 認股權證、支撐 CPU 推論）"}
+{"date": "2026-09-25", "title": "DeepSeek 年化營收破 10 億美元、API 毛利率逾 82%、傳募 75 億並籌上海掛牌"}
+{"date": "2026-09-25", "title": "ASML 上半年在歐洲零光刻機銷售，籲歐盟創造需求（韓 43%／台 30%／中 14%／美 9%／日 4%）"}
+{"date": "2026-09-25", "title": "OpenAI ChatGPT 語音升級：可切 GPT-6 Astra／Sol／Luna 三檔模型並整合電子郵件"}
+{"date": "2026-09-25", "title": "Synopsys×TSMC：A14 認證 EDA 流程＋agentic 實作到簽核收斂、3DIC Compiler agentic chiplet 佈局協同最佳化、Fusion Compiler LLM 輔助"}
+{"date": "2026-09-25", "title": "主軸：AI 從對話助手轉為自主研究員——Claude 自主發現新酶系統、Metis 押注結構化推理做科學，前沿轉向自主發現能力"}
+{"date": "2026-09-25", "title": "概念：長時程自主代理（Long-horizon Autonomous Agent）與代理鷹架（Scaffolding）"}
+{"date": "2026-09-25", "title": "半導體專區：EDA 工具｜agentic AI 實作到簽核收斂與 3DIC chiplet 佈局協同（Synopsys×TSMC A14／3DFabric）"}
