@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>企鵝的AI交易策略學習報 — 2026-09-25</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<div style="max-width:650px;margin:0 auto;background:#0f0f0f;padding:16px;">
+
+  <!-- Header -->
+  <div style="background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:14px;padding:28px 20px;text-align:center;margin-bottom:16px;">
+    <div style="font-size:26px;font-weight:800;color:#0f0f0f;">🐧 企鵝的AI交易策略學習報</div>
+    <div style="font-size:14px;color:#1a1a1a;margin-top:6px;font-weight:600;">2026-09-25 ｜ BTC × 美股大盤 × 策略學習</div>
+  </div>
+
+  <!-- Disclaimer banner -->
+  <div style="background:#1a1a1a;border:1px solid #f59e0b;border-radius:10px;padding:12px 16px;margin-bottom:16px;text-align:center;">
+    <span style="color:#f59e0b;font-size:13px;font-weight:600;">⚠️ 本報純屬個人學習用途，所有內容為交易紀律與思維訓練，不構成投資建議</span>
+  </div>
+
+  <!-- 今日總覽 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="font-size:17px;font-weight:700;color:#fff;margin-bottom:12px;">⚡ 今日總覽</div>
+    <ul style="margin:0;padding-left:20px;color:#d1d5db;font-size:15px;line-height:1.8;">
+      <li>BTC受10年期公債殖利率飆破<strong style="color:#fbbf24;font-weight:700">5.2%（創2007年6月以來新高）</strong>及美元走強拖累，從本週高點$87,000拉回至約<strong style="color:#fbbf24;font-weight:700">$83,443</strong>，24小時跌約2.8%；現貨BTC ETF連5個交易日淨流入，9/23單日再吸金約<strong style="color:#fbbf24;font-weight:700">$3.47億</strong>。</li>
+      <li>全球公債遭遇多年最猛烈拋售潮，美國<strong style="color:#fbbf24;font-weight:700">5年期殖利率19年來首度站上5%</strong>、30年期創2004年以來新高，市場對Fed 10月再升息的定價機率已升至<strong style="color:#fbbf24;font-weight:700">約64%</strong>。</li>
+      <li>S&P 500在殖利率風暴中尾盤拉平，收<strong style="color:#fbbf24;font-weight:700">7,707.18（近乎持平）</strong>；道瓊卻連3日收黑，跌<strong style="color:#fbbf24;font-weight:700">162點（-0.31%）至51,350</strong>，凸顯利率敏感類股承壓最重。</li>
+      <li>今日學習主題：<strong style="color:#fbbf24;font-weight:700">加密市場特性：資金費率、清算與週末效應</strong>——週五晚上市場即將進入流動性最薄的窗口，正好搭配本週先軋空、後拉回的劇本，學會看資金費率和清算數據。</li>
+    </ul>
+  </div>
+
+  <!-- ═══ BTC 區塊 ═══ -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;font-size:13px;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:14px;">₿ BTC 加密貨幣</div>
+
+    <table style="width:100%;border-collapse:collapse;margin:10px 0 16px;font-size:13px;color:#d1d5db;">
+      <tr style="background:#252525;">
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">週期</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">當前價</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">變動%</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">趨勢方向</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">關鍵點位</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">日線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">$83,443</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;color:#ef4444;">-2.8%(24hr)</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">殖利率飆升引發拉回</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">支撐$82K / 壓力$87K</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">週線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">$83,443</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;color:#22c55e;">較上週$80-81K區間 +3~4%</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">先軋空衝高後拉回</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">支撐$80K / 壓力$87K</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">月線</td>
+        <td style="padding:8px;">$83,443</td>
+        <td style="padding:8px;">深V反彈</td>
+        <td style="padding:8px;">月初$80K→月中殺至$74K→月底衝$87K</td>
+        <td style="padding:8px;">支撐$74K / 壓力$87-90K</td>
+      </tr>
+    </table>
+
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;">
+      這波拉回的引信很清楚：10年期公債殖利率9/24盤中一口氣飆升逾10個基點觸及<strong style="color:#fbbf24;font-weight:700">5.223%，創2007年6月以來新高</strong>，同時美元走強，兩者疊加把BTC從本週三(9/21)軋空觸及的$87,000高點，一路打回<strong style="color:#fbbf24;font-weight:700">$83,443</strong>，24小時跌幅約2.8%。不過資金面並未同步轉弱——現貨BTC ETF連5個交易日淨流入，9/23單日再吸金約<strong style="color:#fbbf24;font-weight:700">$3.47億</strong>（IBIT $166.29M、FBTC $143.24M領銜），過去7天合計淨流入逾$17.8億，顯示機構資金並未因這次殖利率風暴大舉撤出，只是價格暫時讓位給總體逆風。
+    </p>
+
+    <div style="background:#252525;border-radius:8px;padding:14px;margin:14px 0;font-size:14px;color:#d1d5db;line-height:1.7;">
+      <div><strong style="color:#e2e8f0">順勢：</strong>本週從$74K一路軋空衝上$87K的多頭排列尚未被破壞，只要$82K支撐守住，趨勢跟隨的邏輯仍成立。</div>
+      <div style="margin-top:6px;"><strong style="color:#e2e8f0">均值回歸：</strong>距9/21的$87K高點回落逾4%，加上資金費率略高於30天均值，均值回歸者會盯$80-82K區間有沒有守住。</div>
+      <div style="margin-top:6px;"><strong style="color:#e2e8f0">突破：</strong>若殖利率壓力緩解、能重新收復$85K，技術面打開再挑戰$87K前高的空間；若跌破$80K，突破失敗的機率就升高。</div>
+      <div style="margin-top:6px;"><strong style="color:#e2e8f0">宏觀：</strong>全球公債遭遇多年最猛烈拋售，5年期殖利率19年來首見站上5%，實質利率走高對包括BTC在內的所有風險資產都是逆風。</div>
+    </div>
+
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;">
+      🔗 加密圈新聞：現貨BTC ETF連<strong style="color:#fbbf24;font-weight:700">5個交易日淨流入</strong>（9/23單日約$3.47億），過去7天合計吸金逾$17.8億，是本輪反彈資金面的重要支撐；同時BTC因殖利率飆升承壓拉回，短線價格與中期資金流暫時出現背離。
+    </p>
+
+    <div style="border-left:3px solid #f59e0b;background:#252525;border-radius:0 8px 8px 0;padding:14px 16px;margin-top:14px;">
+      <div style="font-weight:700;color:#fff;font-size:14px;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:14px;line-height:1.8;">
+        <li><strong style="color:#e2e8f0">資金費率</strong>略高於均值但未過熱，代表這波拉回是宏觀驅動，不是槓桿過熱的必然出清。</li>
+        <li>ETF資金流持續淨流入卻擋不住價格拉回，提醒你：<strong style="color:#e2e8f0">資金面是中期指標</strong>，別拿來預測今晚的K棒。</li>
+        <li>從$87K到$83K的拉回幅度，正好落在本週波動區間內，<strong style="color:#e2e8f0">別急著解讀成趨勢反轉</strong>。</li>
+        <li>週五收盤後流動性將變薄，<strong style="color:#e2e8f0">槓桿部位的停損距離</strong>該提前抓寬，而不是臨時反應。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ═══ 美股大盤區塊 ═══ -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);color:#fff;font-size:13px;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:14px;">📊 美股大盤</div>
+
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;">
+      S&P 500在史詩級公債拋售潮中尾盤拉平，9/24收<strong style="color:#fbbf24;font-weight:700">7,707.18</strong>，較前一日僅微幅上漲不到1點；那斯達克/QQQ同樣尾盤抹平跌幅，QQQ約收在$741附近，與前一日幾乎持平。但道瓊卻連續第3個交易日收黑，跌<strong style="color:#fbbf24;font-weight:700">162點（-0.31%）至51,350</strong>，反映對利率最敏感的傳產與金融類股承壓最重。VIX（波動率指數，市場替未來波動幅度定價的「保險費」）9/24盤中一度衝到<strong style="color:#fbbf24;font-weight:700">16.57</strong>，較前一日的14.1-14.4區間明顯墊高，顯示選擇權市場終於開始為這波殖利率風暴計價。
+    </p>
+
+    <table style="width:100%;border-collapse:collapse;margin:10px 0 16px;font-size:13px;color:#d1d5db;">
+      <tr style="background:#252525;">
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">週期</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">S&P 500</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">變動%</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">趨勢方向</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">關鍵點位</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">日線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">7,707.18</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;color:#9ca3af;">近乎持平</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">尾盤拉回抵消跌幅</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">支撐$7,650 / 壓力$7,750</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">週線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">7,707.18</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;color:#9ca3af;">較9/23的7,706.03持平</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">高檔震盪</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">支撐$7,650 / 壓力$7,750</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">月線</td>
+        <td style="padding:8px;">7,707.18</td>
+        <td style="padding:8px;">月中回落後高檔整理</td>
+        <td style="padding:8px;">區間偏強</td>
+        <td style="padding:8px;">支撐$7,600 / 壓力$7,750</td>
+      </tr>
+    </table>
+
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;">
+      道瓊連3日下跌的觸發點是同一套劇本：美國5年期公債標售需求疲弱（被視為2018年以來次差的一次標售），加上強勁經濟數據，把5年期殖利率推上<strong style="color:#fbbf24;font-weight:700">19年來首見的5%</strong>關卡、30年期殖利率更創下<strong style="color:#fbbf24;font-weight:700">2004年以來新高</strong>，全球公債殖利率平均值直逼2007年以來最高的4%關卡。市場現在對Fed 10月再升息的機率定價已升至約<strong style="color:#fbbf24;font-weight:700">64%</strong>，12月再升一次的機率也有約48%。
+    </p>
+
+    <div style="background:#252525;border-radius:8px;padding:14px;margin:14px 0;font-size:14px;color:#d1d5db;line-height:1.7;">
+      <div><strong style="color:#e2e8f0">順勢：</strong>那斯達克和S&P尾盤守住平盤，顯示成長股買盤仍願意在殖利率壓力下接手，多頭格局尚未被打破。</div>
+      <div style="margin-top:6px;"><strong style="color:#e2e8f0">均值回歸：</strong>道瓊連3黑、VIX從14墊高到16附近，均值回歸者會觀察殖利率若稍微降溫，指數是否同步反彈修復。</div>
+      <div style="margin-top:6px;"><strong style="color:#e2e8f0">突破：</strong>若殖利率繼續衝高侵蝕估值，S&P跌破$7,650支撐，拉回空間可能擴大到$7,600以下。</div>
+      <div style="margin-top:6px;"><strong style="color:#e2e8f0">宏觀：</strong>全球公債遭遇近20年最猛烈的拋售潮，是主宰接下來股市走勢的核心變數，比任何單一財報都關鍵。</div>
+    </div>
+
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;">
+      🔗 美股新聞：美國5年期公債標售遭遇<strong style="color:#fbbf24;font-weight:700">2018年以來次差需求</strong>，疊加強勁經濟數據，把5年期殖利率推上19年來首見的5%，30年期殖利率創2004年以來新高，全球公債殖利率均值直逼2007年以來最高水位。
+    </p>
+
+    <div style="border-left:3px solid #6366f1;background:#252525;border-radius:0 8px 8px 0;padding:14px 16px;margin-top:14px;">
+      <div style="font-weight:700;color:#fff;font-size:14px;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:14px;line-height:1.8;">
+        <li>道瓊連3黑但S&P和那斯達克尾盤拉平，提醒你同一天的大盤數字，<strong style="color:#e2e8f0">不同指數的抗跌力</strong>可能天差地遠。</li>
+        <li>VIX從14附近墊高到16，是波動率終於開始反映殖利率壓力的訊號，<strong style="color:#e2e8f0">別等它噴到30才注意風險</strong>。</li>
+        <li>公債標售需求疲弱是總體面的<strong style="color:#e2e8f0">領先指標</strong>，比任何一天的股價漲跌更該寫進總經觀察清單。</li>
+        <li>利率驅動的下跌通常是全面性的，分辨它跟個股基本面驅動的下跌，決定你<strong style="color:#e2e8f0">該不該無差別減碼</strong>。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ═══ 今日策略學習 ═══ -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#8b5cf6,#6366f1);color:#fff;font-size:13px;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:14px;">📖 今日策略學習</div>
+
+    <div style="font-size:17px;font-weight:700;color:#fff;margin-bottom:6px;">加密市場特性：資金費率、清算與週末效應</div>
+    <p style="color:#9ca3af;font-size:14px;line-height:1.6;margin-top:0;">為什麼今天學這個：今天是週五，市場即將進入流動性最薄的週末窗口；同時本週BTC才因軋空觸及$87K，又在殖利率飆破5.2%後拉回到$83K附近——這正是資金費率與清算機制在幕後推動價格的活教材。</p>
+
+    <div style="margin-top:12px;">
+      <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:14px;line-height:1.8;">
+        <li><strong style="color:#e2e8f0">資金費率</strong>是永續合約多空互相支付的費用，讓合約價格貼齊現貨；費率明顯偏正代表市場過度看多。</li>
+        <li><strong style="color:#e2e8f0">強制清算</strong>指槓桿部位保證金不足被平倉，會製造連鎖賣壓或買壓，把原本的波動放大好幾倍。</li>
+        <li>週末做市商規模縮小、銀行與法幣入金管道關閉，<strong style="color:#e2e8f0">訂單簿變薄</strong>，同樣大小的買賣單造成的價格衝擊是平日的數倍。</li>
+        <li>現貨ETF只在美股時段活躍，但比特幣期現貨24/7不停歇，兩者<strong style="color:#e2e8f0">流動性分離</strong>讓假日波動更難被機構資金穩定。</li>
+      </ul>
+    </div>
+
+    <div style="border-left:3px solid #8b5cf6;background:#252525;border-radius:0 8px 8px 0;padding:14px 16px;margin-top:14px;">
+      <div style="font-weight:700;color:#fff;font-size:14px;margin-bottom:8px;">🎯 情境演練</div>
+      <p style="margin:0;color:#d1d5db;font-size:14px;line-height:1.7;">
+        BTC資金費率目前約每8小時0.0075%（年化約8.18%），略高於30天均值0.0054%，顯示多方付費意願略增，但還沒到市場公認過熱的0.03%警戒線；過去7天全網清算金額約$5.58億，其中最大單筆清算發生在9/21——BTC衝上$85,000那天，一口氣有$6.48億空單被強制平倉。現在時序來到週五晚上，BTC剛因殖利率飆破5.2%從高點拉回到$83K附近，準備進入流動性只剩平日一半的週末：若週六凌晨（台灣時間）美股收盤後傳出意外的殖利率或地緣消息，同樣規模的賣單，在訂單簿變薄的情況下可能讓BTC測試$80K支撐時滑落得比平日更深，並觸發新一輪連鎖清算——這正是「部位規模要撐得住最壞情境」的具體場景。
+      </p>
+    </div>
+
+    <div style="margin-top:14px;padding:12px 14px;background:#252525;border-radius:8px;">
+      <p style="margin:0;color:#d1d5db;font-size:14px;line-height:1.7;">
+        <strong style="color:#e2e8f0">💡 今日研究速讀：</strong>arXiv論文〈Designing funding rates for perpetual futures in cryptocurrency markets〉探討交易所該如何設計資金費率機制，讓永續合約價格與現貨保持一致；作者證明只要資金費率設計得當，永續合約價格就能穩定貼齊目標價值，也提出更容易落地執行的替代費率結構。用白話說：資金費率不是隨機的數字，它是交易所用來「校正」多空失衡的工具，讀懂費率變化，就是讀懂市場情緒的溫度計。
+      </p>
+      <p style="margin:8px 0 0;font-size:13px;"><a href="https://arxiv.org/abs/2506.08573" style="color:#a78bfa;">🔗 閱讀原文</a></p>
+    </div>
+  </div>
+
+  <!-- ═══ 交易紀律提醒 ═══ -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#10b981,#06b6d4);color:#fff;font-size:13px;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:14px;">🎯 今日交易紀律提醒</div>
+    <div style="font-size:16px;font-weight:700;color:#fff;margin-bottom:8px;">週五主題：週末風險管理</div>
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;">
+      週末風險管理不是猜週六會不會冒出黑天鵝新聞，是先問自己：如果資金費率、連鎖清算和變薄的流動性三個效應同時發威，你現在的部位規模撐不撐得住——尤其這個週末還疊加著尚未歇止的公債殖利率風暴。
+    </p>
+    <p style="color:#9ca3af;font-size:13px;line-height:1.6;margin-top:8px;">
+      應用情境：今晚收盤前，把週末要盯的三個指標寫下來——資金費率有沒有轉為異常正值、未平倉量是否處於高檔、你的槓桿部位在最壞情境下的強制平倉價位落在哪裡；三項都在安全範圍，才安心跨過這個殖利率風暴未歇的週末。
+    </p>
+  </div>
+
+  <!-- 💭 今日反思 -->
+  <div style="background:linear-gradient(135deg,#10b981,#06b6d4);padding:1px;border-radius:12px;margin-bottom:16px;">
+    <div style="background:#1a1a1a;border-radius:11px;padding:18px;">
+      <div style="font-size:16px;font-weight:700;color:#fff;margin-bottom:10px;">💭 今日反思</div>
+      <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:14px;line-height:1.8;">
+        <li>如果週末BTC真的因流動性變薄大幅震盪，我現在的部位規模，撐不撐得住比平日更深的滑價？</li>
+        <li>10年期殖利率創2007年以來新高這件事，我有沒有先假設「Fed可能真的在10月再升一次」這個劇本，並調整部位？</li>
+        <li>我上一次檢查自己槓桿部位的強制平倉價位，是什麼時候？如果是很久以前，這個數字現在還準嗎？</li>
+      </ul>
+      <p style="margin:12px 0 0;color:#9ca3af;font-size:13px;">挑一題寫進交易日誌，這就是今天的功課。</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="text-align:center;padding:20px 10px;color:#6b7280;font-size:12px;line-height:1.8;">
+    <p style="margin:0 0 8px;">資料截止：BTC/資金費率/清算數據 — 2026/09/21-24（Coinglass、Lookonchain、TechFlowPost、TheCoinRepublic等公開來源）；美股收盤/VIX — 2026/09/24（Bloomberg、CNBC、TheStreet、247WallSt）；10年期及5年期公債殖利率、Fed動態 — 2026/09/24（CNBC、Bloomberg、US News）；研究論文 — arXiv 2506.08573。</p>
+    <p style="margin:0 0 8px;">本報內容為交易紀律與市場思維訓練之用，所有情境演練皆為假設性教學範例，不構成任何投資建議，不代表買進、賣出或加減碼之建議。加密貨幣與股票市場均有高波動風險，請謹慎評估自身風險承受能力。</p>
+    <p style="margin:0 0 8px;">本報為 Darren 的個人學習報，僅供個人學習追蹤之用。</p>
+    <p style="margin:0;">本信件由 AI 自動生成。</p>
+  </div>
+
+</div>
+</body>
+</html>
