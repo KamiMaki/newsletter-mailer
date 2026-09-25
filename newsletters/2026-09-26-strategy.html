@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>企鵝的AI交易策略學習報 — 2026-09-26</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<div style="max-width:650px;margin:0 auto;background:#0f0f0f;padding:16px;">
+
+  <!-- Header -->
+  <div style="background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:14px;padding:28px 20px;text-align:center;margin-bottom:16px;">
+    <div style="font-size:26px;font-weight:800;color:#0f0f0f;">🐧 企鵝的AI交易策略學習報</div>
+    <div style="font-size:14px;color:#1a1a1a;margin-top:6px;font-weight:600;">2026-09-26 ｜ BTC × 美股大盤 × 策略學習</div>
+  </div>
+
+  <!-- Disclaimer banner -->
+  <div style="background:#1a1a1a;border:1px solid #f59e0b;border-radius:10px;padding:12px 16px;margin-bottom:16px;text-align:center;">
+    <span style="color:#f59e0b;font-size:13px;font-weight:600;">⚠️ 本報純屬個人學習用途，所有內容為交易紀律與思維訓練，不構成投資建議</span>
+  </div>
+
+  <!-- 今日總覽 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="font-size:17px;font-weight:700;color:#fff;margin-bottom:12px;">⚡ 今日總覽</div>
+    <ul style="margin:0;padding-left:20px;color:#d1d5db;font-size:15px;line-height:1.8;">
+      <li>BTC本週先軋空衝上<strong style="color:#fbbf24;font-weight:700">$87,265創波段新高</strong>，隨後在10年期公債殖利率飆破5.2%的壓力下拉回至<strong style="color:#fbbf24;font-weight:700">約$84,400</strong>整理，本週仍收漲約10%。</li>
+      <li>現貨BTC ETF連<strong style="color:#fbbf24;font-weight:700">6個交易日淨流入</strong>，累計$28.4億，但9/24單日流入僅<strong style="color:#fbbf24;font-weight:700">$190.65M</strong>，較週一歷史次高值$999M急縮<strong style="color:#fbbf24;font-weight:700">81%</strong>，資金動能明顯降溫。</li>
+      <li>美股三大指數週五收漲，S&P 500收<strong style="color:#fbbf24;font-weight:700">7,743.41（+0.51%）</strong>、道瓊大漲478點收<strong style="color:#fbbf24;font-weight:700">51,828.62</strong>；但10年期殖利率仍在<strong style="color:#fbbf24;font-weight:700">5.17%高檔</strong>盤旋，創2007年6月以來新高。</li>
+      <li>今日學習主題：<strong style="color:#fbbf24;font-weight:700">ETF資金流怎麼讀</strong>——搭配這週BTC ETF資金流從單日近$10億雪崩到剩$1.9億的真實案例，學會分辨「資金流趨緩」跟「資金流轉向」的差別。</li>
+    </ul>
+  </div>
+
+  <!-- ═══ BTC 區塊 ═══ -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;font-size:13px;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:14px;">₿ BTC 加密貨幣</div>
+
+    <table style="width:100%;border-collapse:collapse;margin:10px 0 16px;font-size:13px;color:#d1d5db;">
+      <tr style="background:#252525;">
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">週期</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">當前價</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">變動%</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">趨勢方向</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">關鍵點位</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">日線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">$84,400</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;color:#ef4444;">較前日$85,200約-1%</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">高檔整理</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">支撐$82K / 壓力$86-87K</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">週線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">$84,400</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;color:#22c55e;">較上週$81K附近 約+10%</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">先軋空衝高後拉回整理</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">支撐$81K / 壓力$87K（本週高點）</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">月線</td>
+        <td style="padding:8px;">$84,400</td>
+        <td style="padding:8px;color:#22c55e;">較月初約$77-78K 約+8-9%</td>
+        <td style="padding:8px;">月中殺至$74K後強力反彈</td>
+        <td style="padding:8px;">支撐$74K / 壓力$87-90K</td>
+      </tr>
+    </table>
+
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;">
+      這週的軋空行情堪稱教科書等級：BTC在9/21-23三天內從約$81K一路衝上<strong style="color:#fbbf24;font-weight:700">$87,265創波段新高</strong>，同步觸發數億美元規模的空單強制清算。但隨後10年期公債殖利率飆破<strong style="color:#fbbf24;font-weight:700">5.2%（創2007年6月以來新高）</strong>，加上美元走強，BTC同步拉回至<strong style="color:#fbbf24;font-weight:700">$84,400附近</strong>整理。資金面上，現貨BTC ETF維持連6日淨流入，累計$28.4億，是9月以來最強勁的資金流紀錄之一，但流入速度明顯降溫——從9/21單日<strong style="color:#fbbf24;font-weight:700">$998.95M（全年最大單日流入）</strong>驟降至9/24僅<strong style="color:#fbbf24;font-weight:700">$190.65M</strong>，跌幅高達81%。
+    </p>
+
+    <div style="background:#252525;border-radius:8px;padding:14px;margin:14px 0;font-size:14px;color:#d1d5db;line-height:1.7;">
+      <div><strong style="color:#e2e8f0">順勢：</strong>本週從$81K到$87K的多頭排列尚未被破壞，只要$82K支撐守住，趨勢跟隨的邏輯仍成立。</div>
+      <div style="margin-top:6px;"><strong style="color:#e2e8f0">均值回歸：</strong>距本週$87K高點回落逾3%，均值回歸者會盯$82-84K區間有沒有守穩，作為短線回補訊號。</div>
+      <div style="margin-top:6px;"><strong style="color:#e2e8f0">突破：</strong>若重新站回$86K，技術面打開再挑戰$87K前高的空間；若跌破$82K，突破失敗機率升高。</div>
+      <div style="margin-top:6px;"><strong style="color:#e2e8f0">宏觀：</strong>10年期殖利率在5.17%高檔盤旋，加上PMI數據熱推升Fed 10月升息機率，實質利率走高對BTC仍是逆風。</div>
+    </div>
+
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;">
+      🔗 加密圈新聞：BlackRock旗下IBIT帶動<strong style="color:#fbbf24;font-weight:700">$191M單日ETF淨流入</strong>，但衍生品市場同步出現空頭押注短線回檔的訊號；另有技術面觀察指出BTC月線RSI（相對強弱指標，用來衡量近期漲跌力道是否過熱或過冷）正從今年低檔區反彈走強。
+    </p>
+
+    <div style="border-left:3px solid #f59e0b;background:#252525;border-radius:0 8px 8px 0;padding:14px 16px;margin-top:14px;">
+      <div style="font-weight:700;color:#fff;font-size:14px;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:14px;line-height:1.8;">
+        <li>ETF連6日淨流入但單日金額砍到剩零頭，<strong style="color:#e2e8f0">「還在流入」不代表「流入力道不變」</strong>，兩者是不同訊號。</li>
+        <li>軋空行情製造的新高，容易讓人把<strong style="color:#e2e8f0">短期空單回補</strong>誤認成新趨勢已經確立。</li>
+        <li>殖利率飆升與BTC拉回同一天發生，提醒<strong style="color:#e2e8f0">總體逆風可以蓋過</strong>原本強勁的鏈上資金流訊號。</li>
+        <li>本週經歷軋空衝高、殖利率打回、高檔整理三段劇本，沒有清楚的<strong style="color:#e2e8f0">日內紀律</strong>很容易追高殺低。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ═══ 美股大盤區塊 ═══ -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);color:#fff;font-size:13px;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:14px;">📊 美股大盤</div>
+
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;">
+      三大指數週五(9/25)同步收漲，S&P 500收<strong style="color:#fbbf24;font-weight:700">7,743.41（+0.51%）</strong>，那斯達克綜合指數收<strong style="color:#fbbf24;font-weight:700">27,068.72（+0.5%）</strong>，QQQ收約$745.18（較前一交易日$741.10走高）；表現最強的是道瓊，大漲<strong style="color:#fbbf24;font-weight:700">478.64點（+0.93%）收51,828.62</strong>，寫下「儘管公債拋售潮衝擊、仍守住週線收紅」的一週。VIX（波動率指數，選擇權市場對未來30天波動幅度的定價，數字越高代表市場預期震盪越劇烈）9/24收<strong style="color:#fbbf24;font-weight:700">15.67</strong>，較前一日上漲3.23%，仍處在相對低檔的14-17區間，尚未完整反映殖利率風暴的風險溢價。
+    </p>
+
+    <table style="width:100%;border-collapse:collapse;margin:10px 0 16px;font-size:13px;color:#d1d5db;">
+      <tr style="background:#252525;">
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">週期</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">S&P 500</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">變動%</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">趨勢方向</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">關鍵點位</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">日線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">7,743.41</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;color:#22c55e;">+0.51%</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">收漲作收</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">支撐$7,650 / 壓力$7,750</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">週線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">7,743.41</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;color:#22c55e;">週線收紅</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">波動中仍守住多頭格局</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">支撐$7,600 / 壓力$7,750</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">月線</td>
+        <td style="padding:8px;">7,743.41</td>
+        <td style="padding:8px;color:#9ca3af;">月中承壓後反彈收復失土</td>
+        <td style="padding:8px;">區間偏強</td>
+        <td style="padding:8px;">支撐$7,590 / 壓力$7,750</td>
+      </tr>
+    </table>
+
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;">
+      這週最大的變數是<strong style="color:#fbbf24;font-weight:700">9/25公布的PMI數據熱到58.4（2021年以來最快擴張速度）</strong>，把Fed 10月再升息的機率一口氣推升到<strong style="color:#fbbf24;font-weight:700">69.7%</strong>，也把10年期公債殖利率推向<strong style="color:#fbbf24;font-weight:700">5.17%（2007年6月以來新高）</strong>。即便如此，S&P 500與那斯達克仍在週五守住漲勢，顯示成長股買盤對利率上升的容忍度，比表面數字看起來更高。
+    </p>
+
+    <div style="background:#252525;border-radius:8px;padding:14px;margin:14px 0;font-size:14px;color:#d1d5db;line-height:1.7;">
+      <div><strong style="color:#e2e8f0">順勢：</strong>三大指數週線守住漲勢，只要不跌破$7,650，多頭格局尚未被打破。</div>
+      <div style="margin-top:6px;"><strong style="color:#e2e8f0">均值回歸：</strong>VIX從14墊高到接近16附近，均值回歸者會觀察殖利率若稍微降溫，指數是否加速反彈修復。</div>
+      <div style="margin-top:6px;"><strong style="color:#e2e8f0">突破：</strong>若殖利率繼續衝高侵蝕估值，S&P跌破$7,650支撐，拉回空間可能擴大到$7,600以下。</div>
+      <div style="margin-top:6px;"><strong style="color:#e2e8f0">宏觀：</strong>PMI熱到2021年以來最快擴張速度，把10月升息機率單日推升近10個百分點，是接下來兩週的核心觀察變數。</div>
+    </div>
+
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;">
+      🔗 美股新聞：熱到<strong style="color:#fbbf24;font-weight:700">58.4的PMI</strong>把10月升息機率推向近7成，10年期公債殖利率同步觸及19年高點；儘管如此，主流媒體週末回顧仍以「三大指數克服公債拋售潮、寫下週線收紅」作為本週美股定調。
+    </p>
+
+    <div style="border-left:3px solid #6366f1;background:#252525;border-radius:0 8px 8px 0;padding:14px 16px;margin-top:14px;">
+      <div style="font-weight:700;color:#fff;font-size:14px;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:14px;line-height:1.8;">
+        <li>同一天公債殖利率創新高、股市卻收漲，提醒你<strong style="color:#e2e8f0">「利率上升」不必然等於「股市下跌」</strong>，要看漲幅有沒有被市場消化。</li>
+        <li>VIX僅15-16的低檔，跟本週實際的殖利率、BTC雙重震盪程度不成比例，<strong style="color:#e2e8f0">別只看單一數字</strong>判斷風險。</li>
+        <li>PMI數據把升息機率單日推升近10個百分點，<strong style="color:#e2e8f0">事件驅動的機率變化</strong>速度往往比想像中更快。</li>
+        <li>道瓊、S&P、那斯達克漲幅不同，凸顯<strong style="color:#e2e8f0">類股輪動</strong>仍在持續，別用單一指數代表全市場。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ═══ 今日策略學習 ═══ -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#8b5cf6,#6366f1);color:#fff;font-size:13px;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:14px;">📖 今日策略學習</div>
+
+    <div style="font-size:17px;font-weight:700;color:#fff;margin-bottom:6px;">ETF資金流怎麼讀</div>
+    <p style="color:#9ca3af;font-size:14px;line-height:1.6;margin-top:0;">為什麼今天學這個：今天是很剛好的教材日——本週BTC現貨ETF連6日淨流入累計$28.4億，聽起來很強，但單日流入金額從$999M砍到只剩$190M，跌幅高達81%。到底該解讀成「資金持續進場」還是「資金動能正在退潮」，正是這門課要教的判斷方法。</p>
+
+    <div style="margin-top:12px;">
+      <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:14px;line-height:1.8;">
+        <li>ETF資金流分兩種：<strong style="color:#e2e8f0">總流量</strong>（今天到底流入或流出多少）和<strong style="color:#e2e8f0">意外流量</strong>（實際流量減去原本預期的流量）。</li>
+        <li>真正有預測力的是<strong style="color:#e2e8f0">意外流量</strong>，不是總流量——市場已經消化的資金流沒有額外訊號價值。</li>
+        <li>學術研究顯示，意外流入能顯著正向預測<strong style="color:#e2e8f0">ETF隔日報酬</strong>，機制來自造市商（AP）資訊不對稱。</li>
+        <li>資金流<strong style="color:#e2e8f0">減速不等於轉向</strong>，要用連續多日的趨勢而非單一天的數字判斷。</li>
+      </ul>
+    </div>
+
+    <div style="border-left:3px solid #8b5cf6;background:#252525;border-radius:0 8px 8px 0;padding:14px 16px;margin-top:14px;">
+      <div style="font-weight:700;color:#fff;font-size:14px;margin-bottom:8px;">🎯 情境演練</div>
+      <p style="margin:0;color:#d1d5db;font-size:14px;line-height:1.7;">
+        9/24當天BTC ETF單日淨流入$190.65M，仍然是正數，如果你只看「連6日淨流入」這個總量標題，會覺得資金面依然強勁。但按照今天學的「意外流量」邏輯，該問的是：這$190.65M有沒有低於市場原本預期的正常流入水準？本週一(9/21)的$998.95M本身就是軋空行情帶動的異常值——如果把過去30天的日均流入畫出來，$190M很可能只是回歸到正常區間，而不是資金真的在撤退。這時比起單看某一天的金額大小，更該做的是拉出這條均值曲線，看今天的數字落在均值的哪個位置，才能分辨「退潮」跟「回歸正常」的差別。
+      </p>
+    </div>
+
+    <div style="margin-top:14px;padding:12px 14px;background:#252525;border-radius:8px;">
+      <p style="margin:0;color:#d1d5db;font-size:14px;line-height:1.7;">
+        <strong style="color:#e2e8f0">💡 今日研究速讀：</strong>Quantpedia文章〈How to Use ETF Flows to Predict Subsequent Daily ETF Performance〉整理的學術研究發現，「意外」ETF資金流（扣除次級市場需求與套利預期後的殘差）能顯著正向預測隔日報酬；用這個訊號建構的策略（做多資金流轉正的ETF、放空轉負的ETF，依規模加權），研究期間扣除交易成本後年化報酬達14.02%、t值3.40、Sharpe約0.88。白話說：不是「今天有沒有資金流入」重要，是「流入量有沒有超出市場原本的預期」才是真正的訊號。
+      </p>
+      <p style="margin:8px 0 0;font-size:13px;"><a href="https://quantpedia.com/how-to-use-etf-flows-to-predict-subsequent-daily-etf-performance/" style="color:#a78bfa;">🔗 閱讀原文</a></p>
+    </div>
+  </div>
+
+  <!-- ═══ 交易紀律提醒 ═══ -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#10b981,#06b6d4);color:#fff;font-size:13px;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:14px;">🎯 今日交易紀律提醒</div>
+    <div style="font-size:16px;font-weight:700;color:#fff;margin-bottom:8px;">週六主題：復盤方法</div>
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;">
+      復盤不是問你這週有沒有抓到BTC衝上$87K的軋空高點，是問當ETF資金流從單日近$10億雪崩式砍到剩$1.9億時，你有沒有把這當成一個該重新檢視部位的訊號，還是因為價格還撐在高檔，就選擇視而不見。
+    </p>
+    <p style="color:#9ca3af;font-size:13px;line-height:1.6;margin-top:8px;">
+      應用情境：今晚花10分鐘，把這週三個關鍵轉折的時間點寫下來——BTC軋空衝高、10年期殖利率飆破5.2%引發拉回、ETF資金流力道驟減——分別標註你當下有沒有做出對應的部位調整，還是每次都是看完新聞才後知後覺才反應。
+    </p>
+  </div>
+
+  <!-- 💭 今日反思 -->
+  <div style="background:linear-gradient(135deg,#10b981,#06b6d4);padding:1px;border-radius:12px;margin-bottom:16px;">
+    <div style="background:#1a1a1a;border-radius:11px;padding:18px;">
+      <div style="font-size:16px;font-weight:700;color:#fff;margin-bottom:10px;">💭 今日反思</div>
+      <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:14px;line-height:1.8;">
+        <li>這週BTC ETF資金流從近$10億砍到剩$1.9億，我有沒有真的注意到這個變化，還是只看到「連6日淨流入」的標題就安心了？</li>
+        <li>10年期公債殖利率創2007年6月以來新高，我的BTC與美股部位，有沒有先假設「利率繼續走高」這個劇本，並算過對應的最大回撤？</li>
+        <li>這週市場經歷軋空、殖利率風暴、ETF資金流驟減三個轉折，我的交易日誌有沒有把「當下」的判斷寫下來，而不是靠現在的記憶重新腦補？</li>
+      </ul>
+      <p style="margin:12px 0 0;color:#9ca3af;font-size:13px;">挑一題寫進交易日誌，這就是今天的功課。</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="text-align:center;padding:20px 10px;color:#6b7280;font-size:12px;line-height:1.8;">
+    <p style="margin:0 0 8px;">資料截止：BTC價格/ETF資金流 — 2026/09/25（CoinDesk、Cryptonomist、news.bitcoin.com、TheCryptoBasic等公開來源，含9/21-9/24歷史流入數據）；美股收盤 — 2026/09/25（Yahoo Finance、CNBC）；VIX — 2026/09/24（MacroRadar）；10年期公債殖利率 — 2026/09/25（CNBC、Advisor Perspectives）；8月CPI/Fed決策 — CBS News、BLS 8月CPI報告；研究文章 — Quantpedia。</p>
+    <p style="margin:0 0 8px;">本報內容為交易紀律與市場思維訓練之用，所有情境演練皆為假設性教學範例，不構成任何投資建議，不代表買進、賣出或加減碼之建議。加密貨幣與股票市場均有高波動風險，請謹慎評估自身風險承受能力。</p>
+    <p style="margin:0 0 8px;">本報為 Darren 的個人學習報，僅供個人學習追蹤之用。</p>
+    <p style="margin:0;">本信件由 AI 自動生成。</p>
+  </div>
+
+</div>
+</body>
+</html>
