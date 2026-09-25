@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的 AI 每日電子報</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;">
+<tr>
+<td align="center" style="padding:16px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+
+<!-- ===== Header ===== -->
+<tr>
+<td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px 16px 0 0;padding:32px 28px;text-align:center;">
+<div style="font-size:26px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報 🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:8px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#c7d2fe;margin-top:6px;">2026-09-26 · 星期六</div>
+</td>
+</tr>
+
+<!-- ===== 30秒重點 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:24px 28px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;">
+<tr><td style="padding:16px 18px;">
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.9;">
+<li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>AI 代理本週集體「升格」——從你叫一次才動一次的工具，變成有身分、會自己一直跑的<strong style="color:#ffffff;">常駐同事</strong>：Amazon 讓賣家不登入也 24 小時顧店、微軟 Copilot 推出會「自己接著做」的 Autopilot、新創 Ando 直接把 agent 拉進團隊聊天當正式成員。</li>
+<li style="margin-bottom:10px;">同一天 Dataiku 推出跨平台的「代理管理台」——因為當 agent 多到自己會跑，企業第一個問題變成「我到底養了哪些 agent、哪個最危險」。</li>
+<li style="margin-bottom:10px;">OpenAI 預告 <strong style="color:#e2e8f0;">GPT-6 Cyber</strong> 與第一個資安部署產品（9/29 DevDay）；Google DeepMind 證實 <strong style="color:#e2e8f0;">Gemini 4</strong> 已進入後訓練、要「盡快」推出。</li>
+<li style="margin-bottom:0;"><strong style="color:#67e8f9;">對半導體工作者最相關：</strong>當 AI 被授權「自己動」，關鍵不再是它多聰明，而是<strong style="color:#ffffff;">怎麼給它剛好夠用的權限、怎麼在事後查得到它做了什麼</strong>——這正是缺陷自動分類（ADC）在晶圓廠早就在解的老問題（見半導體專區）。</li>
+</ul>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 今天的主軸 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:8px 28px 24px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:13px;">
+<tr><td style="padding:24px 22px;">
+
+<div style="display:inline-block;background:rgba(99,102,241,0.18);color:#a5b4fc;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;">🎯 今天的主軸</div>
+<div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-top:14px;">AI 代理正在領到「員工證」——從你呼叫的工具，變成會自己一直跑的常駐同事</div>
+
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:16px 0 0;">
+先講一個畫面。以前你用 AI，比較像叫一位<strong style="color:#a5b4fc;">工讀生</strong>：你交代一句、它做一次、你盯著看完，事情結束它就走。本週 9/24～9/25 有一批看似不相關的發布，其實共同把這個關係改寫了——AI 代理開始領到「員工證」：有自己的名字與權限、被交付一段<strong style="color:#ffffff;">持續的任務</strong>、而且不需要你每次按一下才動。工讀生變成了正職同事。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:22px 0 8px;">▍共同變化</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0;">
+三則發布指向同一件事。<strong style="color:#e2e8f0;">Amazon</strong> 9/24 升級 Seller Assistant，讓代理工作流「在背景持續執行」，賣家<strong style="color:#a5b4fc;">不必登入 Seller Central</strong> 也能 24 小時自動盯庫存、調價格、處理例行任務。<strong style="color:#e2e8f0;">微軟</strong> 9/25 改版 Copilot，端出名為 <strong style="color:#a5b4fc;">Autopilot</strong> 的代理，官方形容它是「數位同事」，特點就是<strong style="color:#ffffff;">會自己接著做，而不是等你下一個指令</strong>。新創 <strong style="color:#e2e8f0;">Ando</strong> 更直接——做了一個給人和 agent 共用的團隊通訊軟體（對標 Slack），agent 在裡面是<strong style="color:#a5b4fc;">有持久身分與權限的「正式成員」</strong>，拿了 2,000 萬美元種子輪。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:22px 0 8px;">▍為什麼放在一起看</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0;">
+三家公司、三個場景，卻都在把 agent 的身份從「被呼叫的功能」推向「常駐的執行者」。差別藏在三個小地方：<strong style="color:#e2e8f0;">不必登入</strong>（Amazon）＝沒有人坐在螢幕前按執行；<strong style="color:#e2e8f0;">自己接著做</strong>（微軟）＝任務是連續的，不是一問一答；<strong style="color:#e2e8f0;">是團隊成員</strong>（Ando）＝它有名字、有權限、會被別人 @。當「常駐、連續、有身分」這三件事同時成立，AI 就從工具變成了<strong style="color:#ffffff;">組織裡的一個角色</strong>。這不是某家的行銷詞，而是同一週多家不約而同做的產品決定。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:22px 0 8px;">▍過去 vs. 現在</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0;">
+過去：你開著視窗，打一句「幫我把這批庫存低的商品調價」，AI 給你建議，你確認、你送出、你關掉。<strong style="color:#e2e8f0;">人是引擎，AI 是副駕。</strong><br>
+現在：你設好規則與上限，agent 在你睡覺時自己巡、自己改、把每一步記進稽核紀錄，隔天給你一份「我做了什麼」。<strong style="color:#ffffff;">AI 是引擎，人退到監工與稽核。</strong>這就是為什麼 Amazon 特別強調它帶「完整稽核軌跡」與「賣家自訂的護欄」——因為沒有人盯著的時候，稽核與護欄就是唯一的煞車。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:22px 0 8px;">▍背後邏輯</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0;">
+為什麼是現在？因為模型「一次做對一長串步驟」的能力終於夠用了。Amazon 說 Seller Assistant 一次可編排<strong style="color:#a5b4fc;">上百個步驟、動用上百項賣家指標</strong>；微軟把 Office 直接嵌進 Copilot 讓 agent 能連續操作。能力到位後，產品公司要賣的就不再是「更聰明的答案」，而是<strong style="color:#ffffff;">一段可以放手的持續勞動力</strong>——按「做完的事」收費，比按「聊幾句」收費值錢得多。這也是為什麼大家搶著把 agent 塞進你已經在用的地方（賣家後台、團隊聊天、Office），而不是再開一個新視窗：常駐同事要坐在辦公室裡，不是待在門外。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:22px 0 8px;">▍對你的工作</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0;">
+如果你管的是團隊或流程，這週的訊號是：<strong style="color:#e2e8f0;">你的下一個「新人」可能是個 agent，而報到流程完全不一樣。</strong>人類新人你給帳號、給權限、給主管；agent 新人你要給的是<strong style="color:#a5b4fc;">範圍受限的憑證、明確的護欄、和一條查得到的稽核軌跡</strong>（今日概念會拆這件事）。而且它不會累、不會下班，所以「誰在監工、出事誰負責」必須先想清楚——不登入就能改價格，聽起來很爽，但也代表沒有人在那個當下踩煞車。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:22px 0 8px;">▍限制與待驗證</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0;">
+別急著全信。第一，這些多半是<strong style="color:#e2e8f0;">剛發布或 Beta</strong>：微軟 Copilot 才改版、Amazon 賣家外掛先在美國 Beta、Ando 剛出隱身。「會自己做」和「做得對」是兩回事，長工作流一步錯就可能連錯。第二，<strong style="color:#e2e8f0;">責任歸屬</strong>還是灰色地帶——agent 半夜把價格調錯、把庫存訂爆，帳算誰的？第三，<strong style="color:#e2e8f0;">稽核不等於控制</strong>：事後查得到，不代表當下擋得住。這也是為什麼「管理 agent」本週立刻變成生意（見下方衍生新聞）。
+</p>
+
+<div style="background:#252525;border-radius:8px;padding:14px 16px;margin-top:20px;">
+<div style="font-size:12px;font-weight:700;color:#67e8f9;margin-bottom:6px;">👤 編輯分析</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0;">
+把這週和上週對照很有意思：前幾天大家談的是 agent「更會做研究、更會編排」；這週談的是 agent「拿到了辦公室的座位」。能力面已經卷得差不多，戰線正在移到<strong style="color:#a5b4fc;">組織面與治理面</strong>——不是「AI 能不能做」，而是「你敢不敢讓它自己做、要怎麼給權限、出事怎麼查」。（此段為編輯觀察，非官方說法。）
+</p>
+</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:22px 0 8px;">▍重點一句話</div>
+<p style="color:#e2e8f0;font-size:15px;line-height:1.75;margin:0;font-weight:600;">
+AI 代理正在從「你按一下的工具」變成「會自己一直跑的常駐同事」；當沒有人盯著時，權限邊界與稽核軌跡才是真正的產品。
+</p>
+
+<div style="border-top:1px solid #333;margin-top:20px;padding-top:14px;font-size:13px;line-height:1.9;color:#94a3b8;">
+🔗 來源：
+<a href="https://www.aboutamazon.com/news/innovation-at-amazon/seller-assistant-plugin-amazon-quick-claude" style="color:#06b6d4;text-decoration:none;">Amazon 官方新聞</a>｜
+<a href="https://www.bnnbloomberg.ca/business/company-news/2026/09/25/microsoft-revamps-copilot-with-code-generation-agentic-ai-tools/" style="color:#06b6d4;text-decoration:none;">微軟 Copilot 改版（Bloomberg）</a>｜
+<a href="https://www.globenewswire.com/news-release/2026/09/24/3368344/0/en/ando-launches-agent-native-messaging-platform-announces-20-million-seed.html" style="color:#06b6d4;text-decoration:none;">Ando 官方發布</a>
+</div>
+
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 主軸的衍生新聞 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:8px 28px 8px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin:10px 0 4px;">🔗 主軸的衍生新聞</div>
+</td>
+</tr>
+
+<!-- 衍生 1 -->
+<tr>
+<td style="background:#1a1a1a;padding:8px 28px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;">
+<tr><td style="padding:18px 20px;">
+<div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:12px;">Dataiku 推出跨平台「代理管理台」，先幫你盤點養了哪些 agent</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:12px 0 0;">
+9/24，Dataiku 發表獨立、<strong style="color:#e2e8f0;">不綁單一廠商</strong>的 Agent Management，能自動掃出企業內在各平台（點名 AWS、Databricks、Google、微軟、Salesforce、Snowflake 等）跑的<strong style="color:#a5b4fc;">每一個 agent</strong>，衡量它們的商業與技術價值，並標出風險最高的那些，10 月上市。<strong style="color:#e2e8f0;">和主軸的關係：</strong>當 agent 多到會自己跑，第一個治理問題不是「怎麼管」，而是「我到底有哪些、哪個沒人在看」——這正是常駐同事變多之後，HR 得先做的「點名冊」。
+</p>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:12px 0 0;">💡 重點一句話：先數得清，才談得上管得住。</p>
+<div style="font-size:13px;color:#94a3b8;margin-top:10px;">🔗 <a href="https://www.dataiku.com/company/news/dataiku-agent-management-general-availability" style="color:#06b6d4;text-decoration:none;">閱讀原文</a>｜來源：Dataiku 官方</div>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- 衍生 2 -->
+<tr>
+<td style="background:#1a1a1a;padding:8px 28px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;">
+<tr><td style="padding:18px 20px;">
+<div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:12px;">Google 幫 Gemini 代理換 harness，還加了「憑證 API」讓它安全動用外部服務</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:12px 0 0;">
+Google 把 Antigravity 編碼代理的工具帶進 Gemini API 受管代理（antigravity-preview-09-2026，跑在 Gemini 3.8 Flash），並新增兩個關鍵 API：<strong style="color:#a5b4fc;">Files API</strong>（資料進出代理環境）與 <strong style="color:#a5b4fc;">Credentials API</strong>——讓代理能<strong style="color:#e2e8f0;">安全地拿到憑證去動用外部服務</strong>。官方數據：檔案修改少用 40% 輸出 token、多回合任務完成率高約 6%。<strong style="color:#e2e8f0;">和主軸的關係：</strong>常駐同事要「自己動」，就得握有動別的系統的鑰匙；憑證 API 正是把「怎麼發、怎麼收回這把鑰匙」做成基礎建設。
+</p>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:12px 0 0;">💡 重點一句話：給 agent 一把「範圍受限、可收回」的鑰匙，是放手的前提。</p>
+<div style="font-size:13px;color:#94a3b8;margin-top:10px;">🔗 <a href="https://aistudio.google.com/learn/managed-agents-updated-harness-files-credentials" style="color:#06b6d4;text-decoration:none;">閱讀原文</a>｜來源：Google AI Studio 官方</div>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 其他快訊 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:16px 28px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:14.5px;line-height:1.75;">
+<li style="margin-bottom:14px;">
+<strong style="color:#e2e8f0;">OpenAI 預告 GPT-6 Cyber 與第一個資安部署產品</strong>：9/24 傳出將在 9/29 DevDay 預覽 GPT-6 Cyber（今年第四個資安專用模型），並首度配一個「幫客戶自動化流程、修補漏洞」的產品一起賣。這代表資安正從一種模型能力，變成 OpenAI 一條獨立的<strong style="color:#a5b4fc;">產品線</strong>，也讓它能順便監看模型被怎麼用。
+<span style="color:#94a3b8;">🔗 <a href="https://fortune.com/2026/09/24/openai-launching-gpt-6-cyber-model-and-security-product-devday/" style="color:#06b6d4;text-decoration:none;">Fortune</a></span>
+</li>
+<li style="margin-bottom:14px;">
+<strong style="color:#e2e8f0;">Google DeepMind：Gemini 4 已進後訓練，要「盡快」推出</strong>：DeepMind 的 Kavukcuoglu 於 9/24 峰會首度公開表示「已看到很有希望的結果」、要盡快推出後訓練版本。第三方評測（Intelligence Index）顯示現行 Gemini 落後 Opus 5.5 與 GPT-6 一截，這是 Google 追趕前沿差距的訊號（發布時程為官方口頭指引，尚未給正式日期）。
+<span style="color:#94a3b8;">🔗 <a href="https://finance.yahoo.com/technology/ai/articles/google-gemini-4-enters-post-122454510.html" style="color:#06b6d4;text-decoration:none;">Yahoo Finance</a></span>
+</li>
+<li style="margin-bottom:0;">
+<strong style="color:#e2e8f0;">微軟 Copilot 改版加入「Code」：用講的就生出 app 與儀表板</strong>：9/25 同一場改版把 Copilot 拆成 Home／Code／Autopilot 三層，其中 Code 讓使用者用自然語言直接產出應用程式、儀表板。對非工程背景的人來說，這把「做個小工具」的門檻又降了一階（發布未久，實用度待驗證）。
+<span style="color:#94a3b8;">🔗 <a href="https://www.bnnbloomberg.ca/business/company-news/2026/09/25/microsoft-revamps-copilot-with-code-generation-agentic-ai-tools/" style="color:#06b6d4;text-decoration:none;">Bloomberg</a></span>
+</li>
+</ul>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 今日概念 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:8px 28px 16px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">📖 今日概念｜委派授權與範圍受限的代理憑證</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:4px 0 6px;">一句定義</div>
+<p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">
+「委派授權（scoped delegation）」是指：你不把完整權限交給 AI 代理，而是發給它一張<strong style="color:#e2e8f0;">用途受限、金額受限、時效受限、可隨時收回</strong>的「臨時通行證」，讓它只能在你劃定的範圍內替你動作。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">生活化比喻</div>
+<p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">
+像你請助理去採買：你不會把整張信用卡＋密碼給他，而是給一張<strong style="color:#e2e8f0;">預付卡</strong>，寫明「只能在這家店、上限 3,000 元、今天有效」。刷完就作廢，弄丟了也只損失卡裡的額度。技術上就是這張「預付卡」：一枚綁死金額、對象、期限的<strong style="color:#a5b4fc;">一次性憑證（scoped token）</strong>，而不是你的本尊帳號。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">工作中的例子</div>
+<p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">
+這正是本週 Google <strong style="color:#e2e8f0;">Credentials API</strong> 在做的事——讓代理能「安全地」拿憑證動用外部服務，而不是把主帳號密碼塞給它。更完整的產業標準也已成形：Google 的 <strong style="color:#a5b4fc;">AP2（Agent Payments Protocol，已捐給 FIDO 聯盟）</strong>用兩張「簽章授權書（mandate）」把「你想買什麼、條件是什麼」和「用哪張卡、多少錢」分開簽；OpenAI 與 Stripe 的 <strong style="color:#a5b4fc;">ACP</strong> 則用一枚「共享付款 token」代表「只准向這家商店收這個金額」的一次性授權。（AP2／ACP 為既有官方標準文件，非今日新聞，列此僅供延伸理解。）
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">常見誤解</div>
+<p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">
+誤解一：「給 agent 我的 API key 就好。」——那等於把整串鑰匙交出去，一旦外洩全盤皆輸；委派授權的重點是<strong style="color:#e2e8f0;">最小權限＋可收回</strong>。誤解二：「有稽核紀錄就安全。」——稽核是<strong style="color:#e2e8f0;">事後</strong>查得到，範圍受限的憑證才是<strong style="color:#e2e8f0;">事前</strong>就擋住越權。兩者是不同層的防線，缺一不可。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">與今天主軸的關係</div>
+<p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">
+主軸說 agent 變成「會自己動的常駐同事」。它要能自己動，就得握有動別的系統的權限；而你敢放手的前提，就是這把權限是<strong style="color:#ffffff;">範圍受限、可收回、留痕</strong>的。委派授權，就是讓「放手」和「可控」能同時成立的那張安全網。
+</p>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 半導體 AI 專區 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:8px 28px 16px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;border:1px solid #06b6d4;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:6px;">🏭 半導體 AI 專區｜用深度學習做晶圓缺陷影像的自動分類（ADC）</div>
+<div style="margin:10px 0 4px;">
+<span style="display:inline-block;background:rgba(103,232,249,0.14);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-right:6px;">IC 製造</span>
+<span style="display:inline-block;background:rgba(148,163,184,0.18);color:#cbd5e1;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">背景知識</span>
+</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px;">▍問題與流程位置</div>
+<p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">
+晶圓在光刻、蝕刻、CMP、沉積等關鍵步驟後，會先用<strong style="color:#e2e8f0;">光學檢測機</strong>高速掃出「哪裡疑似有缺陷」，再把座標交給<strong style="color:#e2e8f0;">電子束／SEM 複檢機</strong>拍高解析照片。ADC（Automatic Defect Classification）要做的，是把這些缺陷照片一張張<strong style="color:#a5b4fc;">分類</strong>（顆粒、橋接、斷線、空洞、刮傷、圖案缺陷……），排出缺陷 Pareto 給良率工程師追根因。痛點很直接：產線一天可產出<strong style="color:#e2e8f0;">數以百萬計的缺陷影像</strong>，靠人工看不完，且不同工程師判讀不一致，容易漏殺（放過真缺陷）或過殺（誤殺良品）。（註：這與「晶圓圖缺陷『樣態』分類」不同——後者看的是整片晶圓上不良晶粒的空間分布，用的是電測資料；本篇談的是<strong style="color:#a5b4fc;">單顆缺陷的顯微影像</strong>。）
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px;">▍AI 如何介入（與過去的差異）</div>
+<p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">
+過去靠<strong style="color:#e2e8f0;">規則式＋人工特徵</strong>（用大小、形狀、灰階門檻寫規則），每一層都要重調、對細微缺陷力不從心，最後仍需大量人工複檢。改用<strong style="color:#a5b4fc;">CNN／深度學習</strong>後，模型直接從標註過的缺陷影像「學特徵」，一次輸出缺陷類別＋信心分數，吞吐量與一致性都大幅提升。實務上多家已落地：Applied Materials 的 <strong style="color:#e2e8f0;">ExtractAI</strong> 把光學檢測與電子束複檢即時串起來，訓練系統把「真的殺良率的缺陷」從一堆「雜訊型缺陷（nuisance）」中挑出來；KLA、Hitachi High-Tech 的複檢 SEM 也內建 ML 版 ADC。差異的核心從「人寫規則、人判讀」變成「機器學樣本、人審可疑案」。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px;">▍資料與產出</div>
+<p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">
+輸入：SEM 複檢影像（高解析但雜訊多）、光學檢測影像、缺陷座標／晶圓圖，KLA 方案還會帶入 CAD 設計資訊。輸出：缺陷類別＋信心、缺陷 Pareto、以及<strong style="color:#e2e8f0;">雜訊過濾</strong>。Applied 宣稱 ExtractAI 只需複檢約 <strong style="color:#a5b4fc;">0.001% 的樣本</strong>就能刻畫全部潛在缺陷，把上百萬個可疑點收斂到約一千個需要處理（此為廠商聲稱值）。難點也在資料：專家標註昂貴、<strong style="color:#e2e8f0;">類別極度不平衡</strong>（最致命的缺陷樣本反而最少）、影像需先去噪。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px;">▍如何驗證</div>
+<p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">
+業界用<strong style="color:#e2e8f0;">準確率、純度（purity）、分類率</strong>並要求極低的<strong style="color:#a5b4fc;">漏檢率（escape rate）</strong>——把真缺陷誤判成雜訊是最貴的錯。做法是拿模型結果對<strong style="color:#e2e8f0;">人工判讀的混淆矩陣</strong>、保留未見缺陷做 holdout、並讓工程師專門<strong style="color:#e2e8f0;">審查低信心案例</strong>（人在環內把關）。這其實就是今天主軸的縮影：讓 AI 自己判，但保留一條「可疑就交回給人」的稽核回路。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px;">▍限制與風險</div>
+<p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">
+一，遇到<strong style="color:#e2e8f0;">沒見過的新缺陷</strong>可能誤分或漏判（有研究加 k-NN 讓新型缺陷被「標為未知」而非硬塞舊類）。二，模型<strong style="color:#e2e8f0;">綁層綁製程</strong>，換一層、換一台機、製程一漂移就要重訓或微調。三，雜訊 vs 真缺陷的界線本就難分。四，過度信任會讓漏檢流到下游——所以低漏檢率與人工抽審始終不能省。
+</p>
+
+<p style="color:#67e8f9;font-weight:700;font-size:14.5px;line-height:1.7;margin:18px 0 0;">👷 對半導體工作者的意義：這波「AI 自己動」的浪潮，對缺陷/良率/檢測工程師其實是熟悉的老問題新版本——關鍵永遠是「漏檢率」和「可疑就交回人審」那條回路。值得動手的下一步：把你手上 ADC 或檢測模型的漏檢率、以及低信心案例的人工回審比例攤開來看，這兩個數字才是「敢不敢放手」的真正指標。</p>
+
+<div style="border-top:1px solid #333;margin-top:16px;padding-top:12px;font-size:13px;line-height:1.9;color:#94a3b8;">
+🔗 來源：
+<a href="https://semiengineering.com/using-deep-learning-adc-for-defect-classification-for-automatic-defect-inspection/" style="color:#06b6d4;text-decoration:none;">Semiconductor Engineering</a>｜
+<a href="https://arxiv.org/abs/2206.13505" style="color:#06b6d4;text-decoration:none;">arXiv 2206.13505（SEM 缺陷分類）</a>｜
+<a href="https://www.appliedmaterials.com/us/en/blog/blog-posts/introducing-a-new-playbook-in-process-control.html" style="color:#06b6d4;text-decoration:none;">Applied Materials ExtractAI</a>
+</div>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 反思時間 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:8px 28px 24px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:13px;">
+<tr><td style="padding:22px 22px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.85;">
+<li style="margin-bottom:12px;">如果明天你的團隊要「雇用」第一個會自己一直跑的 agent，你會先劃定哪三條它<strong style="color:#a5b4fc;">絕對不能跨越</strong>的界線？這三條要靠「事前的權限」還是「事後的稽核」來守？</li>
+<li style="margin-bottom:12px;">Amazon 讓賣家「不登入也能運作」很吸引人，但也拿掉了那個「有人在當下按煞車」的時刻。以你的工作為例，哪些決定<strong style="color:#a5b4fc;">值得用便利換掉即時人工把關</strong>，哪些絕對不行？分界線畫在哪？</li>
+<li style="margin-bottom:0;">半導體的 ADC 幾十年來都用「低漏檢率＋人審可疑案」來讓自動判讀可信。如果把同一套紀律搬到辦公室的 agent 上，你的流程裡<strong style="color:#a5b4fc;">「可疑就交回給人」的那條回路</strong>目前存在嗎？還是根本沒有？</li>
+</ul>
+<div style="border-top:1px solid #333;margin-top:16px;padding-top:14px;">
+<p style="color:#a5b4fc;font-weight:700;font-size:15px;line-height:1.7;margin:0;">🎒 今日帶走：AI 代理正在領員工證、變成會自己跑的常駐同事；決定它能不能放心上工的，不是它多聰明，而是你有沒有給它「範圍受限、可收回、查得到」的權限與稽核回路。</p>
+</div>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 歷史電子報入口 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:0 28px 16px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;">
+<tr><td style="padding:18px 20px;text-align:center;">
+<div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.6;margin:0 0 12px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+<a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-size:14px;font-weight:600;">查看歷史電子報</a>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== Footer ===== -->
+<tr>
+<td style="background:#141414;border-radius:0 0 16px 16px;padding:24px 28px;text-align:center;">
+<p style="color:#cbd5e1;font-size:14px;margin:0 0 10px;">📬 覺得有用？分享給朋友，一起掌握 AI：<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">訂閱這份電子報</a></p>
+<p style="color:#64748b;font-size:13px;margin:0 0 14px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></p>
+<p style="color:#475569;font-size:12px;line-height:1.6;margin:0;">© 2026 企鵝的 AI 每日電子報 🐧<br>本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源</p>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

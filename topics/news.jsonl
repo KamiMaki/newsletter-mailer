@@ -795,3 +795,13 @@
 {"date": "2026-09-25", "title": "主軸：AI 從對話助手轉為自主研究員——Claude 自主發現新酶系統、Metis 押注結構化推理做科學，前沿轉向自主發現能力"}
 {"date": "2026-09-25", "title": "概念：長時程自主代理（Long-horizon Autonomous Agent）與代理鷹架（Scaffolding）"}
 {"date": "2026-09-25", "title": "半導體專區：EDA 工具｜agentic AI 實作到簽核收斂與 3DIC chiplet 佈局協同（Synopsys×TSMC A14／3DFabric）"}
+{"date": "2026-09-26", "title": "主軸：AI 代理領到員工證——從你呼叫的工具變成有身分、會自己一直跑的常駐同事（Amazon 不登入顧店＋微軟 Copilot Autopilot＋Ando agent 當團隊成員）"}
+{"date": "2026-09-26", "title": "概念：委派授權與範圍受限的代理憑證（Scoped Delegation／Agent Credentials）"}
+{"date": "2026-09-26", "title": "半導體專區：IC 製造｜用深度學習做晶圓缺陷影像的自動分類（ADC，Automatic Defect Classification）"}
+{"date": "2026-09-26", "title": "Amazon 升級 Seller Assistant：代理工作流背景持續執行、賣家不登入也能 24 小時盯庫存調價，帶稽核軌跡與自訂護欄、Claude Beta 外掛"}
+{"date": "2026-09-26", "title": "微軟改版 Copilot 分 Home／Code／Autopilot 三層：Autopilot 為會自己接著做的數位同事、Code 用自然語言生 app／儀表板、嵌入 Office"}
+{"date": "2026-09-26", "title": "Ando 出隱身：給人與 agent 共用的團隊通訊軟體，agent 為有持久身分與權限的正式成員，2,000 萬美元種子輪（Accel 領投）"}
+{"date": "2026-09-26", "title": "Dataiku 推 Agent Management：跨平台自動盤點企業所有 agent、衡量價值並標高風險者，10 月上市"}
+{"date": "2026-09-26", "title": "Google Gemini API 受管代理換上 Antigravity harness（Gemini 3.8 Flash），新增 Files API 與 Credentials API，輸出 token 少 40%、任務完成率高約 6%"}
+{"date": "2026-09-26", "title": "OpenAI 預告 GPT-6 Cyber 與第一個資安部署產品（9/29 DevDay），為今年第四個資安專用模型，資安成獨立產品線"}
+{"date": "2026-09-26", "title": "Google DeepMind：Gemini 4 已進後訓練、Kavukcuoglu 稱要盡快推出，追趕與 Opus 5.5／GPT-6 的前沿差距"}
