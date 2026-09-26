@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<title>企鵝的AI交易策略學習報 — 2026-09-27</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<div style="max-width:650px;margin:0 auto;background:#0f0f0f;padding:16px;">
+
+  <!-- Header -->
+  <div style="background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:14px;padding:28px 20px;text-align:center;margin-bottom:16px;">
+    <div style="font-size:26px;font-weight:800;color:#0f0f0f;">🐧 企鵝的AI交易策略學習報</div>
+    <div style="font-size:14px;color:#1a1a1a;margin-top:6px;font-weight:600;">2026-09-27 ｜ BTC × 美股大盤 × 策略學習</div>
+  </div>
+
+  <!-- Disclaimer banner -->
+  <div style="background:#1a1a1a;border:1px solid #f59e0b;border-radius:10px;padding:12px 16px;margin-bottom:16px;text-align:center;">
+    <span style="color:#f59e0b;font-size:13px;font-weight:600;">⚠️ 本報純屬個人學習用途，所有內容為交易紀律與思維訓練，不構成投資建議</span>
+  </div>
+
+  <!-- 今日總覽 -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="font-size:17px;font-weight:700;color:#fff;margin-bottom:12px;">⚡ 今日總覽</div>
+    <ul style="margin:0;padding-left:20px;color:#d1d5db;font-size:15px;line-height:1.8;">
+      <li>BTC從本週<strong style="color:#fbbf24;font-weight:700">$87,265的軋空高點</strong>回落，週六(9/26)報價約<strong style="color:#fbbf24;font-weight:700">$84,000</strong>，在$83K-85K區間橫盤整理，24小時跌幅約0.5%。</li>
+      <li>現貨BTC ETF單週淨流入<strong style="color:#fbbf24;font-weight:700">$2.39B，創2026年最大單週紀錄</strong>，年初至今資金流由負轉正；但單日流入從9/21的$998.95M砍到9/25僅<strong style="color:#fbbf24;font-weight:700">$134.47M，急縮87%</strong>。</li>
+      <li>美股三大指數週五收漲，道瓊大漲478點<strong style="color:#fbbf24;font-weight:700">止住連3週下跌</strong>收51,828.62；同一天10年期公債殖利率飆破<strong style="color:#fbbf24;font-weight:700">5.23%，創2007年以來新高</strong>。</li>
+      <li>今日學習主題：<strong style="color:#fbbf24;font-weight:700">事件交易：FOMC/CPI的劇本化準備</strong>——搭配這週PMI數據瞬間把升息機率推升近10個百分點的真實案例，學會在數字公布「之前」就把劇本寫好。</li>
+    </ul>
+  </div>
+
+  <!-- ═══ BTC 區塊 ═══ -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;font-size:13px;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:14px;">₿ BTC 加密貨幣</div>
+
+    <table style="width:100%;border-collapse:collapse;margin:10px 0 16px;font-size:13px;color:#d1d5db;">
+      <tr style="background:#252525;">
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">週期</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">當前價</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">變動%</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">趨勢方向</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">關鍵點位</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">日線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">$84,000</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;color:#ef4444;">24小時約-0.5%</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">區間整理</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">支撐$83K / 壓力$85.5-86K</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">週線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">$84,000</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;color:#ef4444;">較本週高點$87,265約-3.7%</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">軋空衝高後高檔回落整理</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">支撐$83K / 壓力$87K（本週高點）</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">月線</td>
+        <td style="padding:8px;">$84,000</td>
+        <td style="padding:8px;color:#22c55e;">較月初約$77-78K 約+8%</td>
+        <td style="padding:8px;">月中殺至$74K後強力反彈整理</td>
+        <td style="padding:8px;">支撐$74K / 壓力$87-90K</td>
+      </tr>
+    </table>
+
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;">
+      BTC本週劇本延續前幾天的軋空行情：從$81K附近一路衝上<strong style="color:#fbbf24;font-weight:700">$87,265創波段新高</strong>後，隨10年期公債殖利率持續飆升，價格回落至週末的<strong style="color:#fbbf24;font-weight:700">$83K-85K區間</strong>整理，距ATH（歷史高點，2025年10月的$126,080）仍有約<strong style="color:#fbbf24;font-weight:700">33%的差距</strong>。資金面上，現貨BTC ETF本週寫下<strong style="color:#fbbf24;font-weight:700">2026年最大單週淨流入$2.39B</strong>，讓年初至今的累計資金流由虧轉盈，總資產規模來到$108.42B；但單日流入速度明顯降溫——從$998.95M（9/21，全年最大單日）驟降至僅$134.47M（9/25），跌幅高達<strong style="color:#fbbf24;font-weight:700">87%</strong>。
+    </p>
+
+    <div style="background:#252525;border-radius:8px;padding:14px;margin:14px 0;font-size:14px;color:#d1d5db;line-height:1.7;">
+      <div><strong style="color:#e2e8f0">順勢：</strong>只要不跌破$83K支撐，這波從$74K月中低點以來的多頭結構仍未被破壞。</div>
+      <div style="margin-top:6px;"><strong style="color:#e2e8f0">均值回歸：</strong>距本週$87,265高點回落近4%，均值回歸者會盯$83-84K有沒有守穩，作為短線止跌訊號。</div>
+      <div style="margin-top:6px;"><strong style="color:#e2e8f0">突破：</strong>若重新站上$85.5-86K，技術面打開再測$87K前高空間；跌破$83K則區間下緣測試恐指向$80K。</div>
+      <div style="margin-top:6px;"><strong style="color:#e2e8f0">宏觀：</strong>10年期殖利率飆破5.23%創2007年以來新高，實質利率走高仍是BTC逆風，但ETF資金流由負轉正提供一定緩衝。</div>
+    </div>
+
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;">
+      🔗 加密圈新聞：現貨BTC ETF單週<strong style="color:#fbbf24;font-weight:700">淨流入$2.39B</strong>創2026年最大週度紀錄，年初至今資金流轉正；同時SEC委員Hester Peirce宣布<strong style="color:#fbbf24;font-weight:700">10/2為最後上班日</strong>，加密貨幣監管高層迎來人事變動空窗期。
+    </p>
+
+    <div style="border-left:3px solid #f59e0b;background:#252525;border-radius:0 8px 8px 0;padding:14px 16px;margin-top:14px;">
+      <div style="font-weight:700;color:#fff;font-size:14px;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:14px;line-height:1.8;">
+        <li>單週流入創紀錄、單日流入卻砍87%，提醒你<strong style="color:#e2e8f0">「週度標題」與「日度動能」</strong>常常講不同的故事。</li>
+        <li>距ATH仍有33%差距，別讓短期軋空行情的$87K高點，讓你誤判<strong style="color:#e2e8f0">整體趨勢已經反轉</strong>。</li>
+        <li>殖利率飆破19年新高卻沒有立刻壓垮BTC，說明<strong style="color:#e2e8f0">總經逆風與資金面訊號</strong>會同時拉扯價格，不是單一變數說了算。</li>
+        <li>監管人事出現空窗期，屬於<strong style="color:#e2e8f0">低機率但影響不明</strong>的變數，值得記在觀察清單但不必立刻反應。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ═══ 美股大盤區塊 ═══ -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);color:#fff;font-size:13px;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:14px;">📊 美股大盤</div>
+
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;">
+      <strong style="color:#e2e8f0">SPY：</strong>週五(9/25)收<strong style="color:#fbbf24;font-weight:700">$772.04（+0.09%）</strong>，S&P 500指數收<strong style="color:#fbbf24;font-weight:700">7,743.41（+0.51%）</strong>，本週雖然歷經公債拋售潮衝擊，仍寫下週線收紅。
+    </p>
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;">
+      <strong style="color:#e2e8f0">QQQ：</strong>收<strong style="color:#fbbf24;font-weight:700">$744.50（+0.46%）</strong>，那斯達克綜合指數收<strong style="color:#fbbf24;font-weight:700">27,068.72（+0.5%）</strong>，本週稍早曾在AI晶片股帶動下創27,244的波段新高後回落整理。
+    </p>
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;">
+      <strong style="color:#e2e8f0">VIX：</strong>（波動率指數，選擇權市場對未來30天波動幅度的定價，數字越高代表市場預期震盪越劇烈）9/25收<strong style="color:#fbbf24;font-weight:700">14.87，單日下跌5.11%</strong>，持續維持在近一個月14-17的低檔區間，與同期殖利率、BTC的震盪幅度並不成比例。
+    </p>
+
+    <table style="width:100%;border-collapse:collapse;margin:10px 0 16px;font-size:13px;color:#d1d5db;">
+      <tr style="background:#252525;">
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">週期</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">S&P 500</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">那斯達克/QQQ</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">VIX</td>
+        <td style="padding:8px;border-bottom:1px solid #333;font-weight:700;color:#9ca3af;">趨勢與關鍵點位</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">日線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;color:#22c55e;">7,743.41 (+0.51%)</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;color:#22c55e;">$744.50 (+0.46%)</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;color:#ef4444;">14.87 (-5.11%)</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">三指數同步收漲、VIX回落</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">週線</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;color:#22c55e;">週線收紅</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;color:#22c55e;">週線收紅</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">14-17區間</td>
+        <td style="padding:8px;border-bottom:1px solid #2a2a2a;">道瓊止住連3週跌勢，支撐$7,650 / 壓力$7,800</td>
+      </tr>
+      <tr>
+        <td style="padding:8px;">月線</td>
+        <td style="padding:8px;color:#22c55e;">較9/11約7,657上漲約1.1%</td>
+        <td style="padding:8px;">月高27,244(9/22)後回落整理</td>
+        <td style="padding:8px;">全月大致14-17低檔</td>
+        <td style="padding:8px;">區間偏強，支撐$7,590 / 壓力$7,800</td>
+      </tr>
+    </table>
+
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;">
+      這週最大的變數仍是持續攀升的公債殖利率——10年期公債殖利率<strong style="color:#fbbf24;font-weight:700">週五飆破5.23%，創2007年以來新高</strong>，市場對Fed後續維持鷹派立場的疑慮不減。與此同時，油價因美伊局勢緩和（傳荷姆茲海峽有望重新開放）明顯回落，<strong style="color:#fbbf24;font-weight:700">WTI跌至$92.41（-2.33%）</strong>，緩解了輸入型通膨壓力，也是道瓊週五能大漲478點、止住連3週跌勢的重要背景。
+    </p>
+
+    <div style="background:#252525;border-radius:8px;padding:14px;margin:14px 0;font-size:14px;color:#d1d5db;line-height:1.7;">
+      <div><strong style="color:#e2e8f0">順勢：</strong>三大指數週線收紅，只要不跌破$7,650，多頭格局尚未被打破。</div>
+      <div style="margin-top:6px;"><strong style="color:#e2e8f0">均值回歸：</strong>VIX僅14-15低檔，均值回歸者會觀察殖利率若稍微降溫，指數是否加速修復向上。</div>
+      <div style="margin-top:6px;"><strong style="color:#e2e8f0">突破：</strong>若殖利率繼續衝向或突破5.3%，S&P跌破$7,650支撐，拉回空間可能擴大至$7,600以下。</div>
+      <div style="margin-top:6px;"><strong style="color:#e2e8f0">宏觀：</strong>10年期殖利率創19年新高與油價回落同時發生，凸顯利率風險與地緣風險正在互相拉鋸。</div>
+    </div>
+
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;">
+      🔗 美股新聞：道瓊週五<strong style="color:#fbbf24;font-weight:700">大漲478.64點</strong>止住連3週下跌，三大指數同步寫下週線收紅；同一天10年期公債殖利率<strong style="color:#fbbf24;font-weight:700">飆破5.23%創2007年以來新高</strong>，油價則因美伊局勢降溫、荷姆茲海峽有望重開而顯著回落。
+    </p>
+
+    <div style="border-left:3px solid #6366f1;background:#252525;border-radius:0 8px 8px 0;padding:14px 16px;margin-top:14px;">
+      <div style="font-weight:700;color:#fff;font-size:14px;margin-bottom:8px;">📌 學習重點</div>
+      <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:14px;line-height:1.8;">
+        <li>殖利率創19年新高同一天股市卻大漲，提醒你<strong style="color:#e2e8f0">「利率上升」不必然等於「股市下跌」</strong>，要看有沒有其他利多同時抵銷。</li>
+        <li>VIX僅14-15的低檔，跟本週殖利率、BTC實際的震盪幅度不成比例，<strong style="color:#e2e8f0">別只看單一恐慌指標</strong>判斷風險。</li>
+        <li>油價因地緣政治單日回落逾2%，說明<strong style="color:#e2e8f0">總經變數之間會互相抵銷</strong>，不是單一利空/利多能決定方向。</li>
+        <li>道瓊漲幅遠高於S&P、那斯達克，凸顯<strong style="color:#e2e8f0">類股輪動</strong>仍在持續，別用單一指數代表全市場。</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ═══ 今日策略學習 ═══ -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#8b5cf6,#6366f1);color:#fff;font-size:13px;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:14px;">📖 今日策略學習</div>
+
+    <div style="font-size:17px;font-weight:700;color:#fff;margin-bottom:6px;">事件交易：FOMC/CPI的劇本化準備</div>
+    <p style="color:#9ca3af;font-size:14px;line-height:1.6;margin-top:0;">為什麼今天學這個：這週PMI數據一公布，Fed 10月升息機率單日跳升近10個百分點，10年期殖利率也跟著飆破5.2%。下一個重量級數據——9月CPI要等到10/14才公布，正好趁現在還沒進入事件週，先把「劇本化準備」的方法學起來，而不是等數字出來當下才臨場反應。</p>
+
+    <div style="margin-top:12px;">
+      <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:14px;line-height:1.8;">
+        <li>事件前後的波動率變化是<strong style="color:#e2e8f0">機械式的</strong>：數據公布前IV（隱含波動率）墊高反映不確定性，公布後不確定性消失，IV隨即回落。</li>
+        <li>專業做法是先寫好<strong style="color:#e2e8f0">「高於/符合/低於預期」三套劇本</strong>，把對應動作寫進交易計畫，不是等數字出來才想。</li>
+        <li>多數專業交易者會<strong style="color:#e2e8f0">先讓市場消化15-30分鐘</strong>再進場，而不是在數字公布的瞬間就下注方向。</li>
+        <li>FOMC其實是<strong style="color:#e2e8f0">三個獨立事件</strong>（聲明稿、點陣圖、記者會問答），各自有不同的波動節奏，不能當成單一事件處理。</li>
+      </ul>
+    </div>
+
+    <div style="border-left:3px solid #8b5cf6;background:#252525;border-radius:0 8px 8px 0;padding:14px 16px;margin-top:14px;">
+      <div style="font-weight:700;color:#fff;font-size:14px;margin-bottom:8px;">🎯 情境演練</div>
+      <p style="margin:0;color:#d1d5db;font-size:14px;line-height:1.7;">
+        10/14即將公布9月CPI，現在就可以套用今天學的劇本化方法，先把三套劇本寫進日誌：若CPI年增高於8月的3.4%，比照這週PMI熱到58.4瞬間把升息機率推升近10個百分點、10年期殖利率跟著衝破5.2%的模式，BTC很可能重新測試這週$83K支撐、甚至下探$80K；若CPI符合預期，可以觀察BTC能否站回$85.5-86K壓力、S&P能否守穩$7,650；若CPI低於預期，殖利率若同步回落，留意BTC與S&P是否同步收復失土。三套劇本現在寫、10/14當天照著劇本執行，而不是看到數字才決定要不要追價。
+      </p>
+    </div>
+
+    <div style="margin-top:14px;padding:12px 14px;background:#252525;border-radius:8px;">
+      <p style="margin:0;color:#d1d5db;font-size:14px;line-height:1.7;">
+        <strong style="color:#e2e8f0">💡 今日研究速讀：</strong>arXiv論文〈Financial Language Models as Applied Artificial Intelligence Systems for News-Based Trading under Market Frictions〉提出MFAST框架，測試用語言模型把新聞轉換成交易訊號、並把交易成本與執行時機等真實市場摩擦力都納入計算。研究發現，decoder-only語言模型在預測報酬與扣除成本後的實際獲利表現上，明顯優於傳統情緒字典與較簡單的基準模型。白話說：新聞資訊有沒有用，不是看模型「讀得懂」多少，是看扣掉滑價與交易成本之後還有沒有淨利潤。
+      </p>
+      <p style="margin:8px 0 0;font-size:13px;"><a href="https://arxiv.org/abs/2609.23703" style="color:#a78bfa;">🔗 閱讀原文</a></p>
+    </div>
+  </div>
+
+  <!-- ═══ 交易紀律提醒 ═══ -->
+  <div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:16px;">
+    <div style="display:inline-block;background:linear-gradient(135deg,#10b981,#06b6d4);color:#fff;font-size:13px;font-weight:700;padding:5px 14px;border-radius:20px;margin-bottom:14px;">🎯 今日交易紀律提醒</div>
+    <div style="font-size:16px;font-weight:700;color:#fff;margin-bottom:8px;">週日主題：下週展望</div>
+    <p style="color:#d1d5db;font-size:15px;line-height:1.7;">
+      下週(9/28-10/4)沒有CPI也沒有FOMC，但SEC本身將出現人事真空——委員Hester Peirce將於10/2卸任，Bitget也會分階段恢復比特幣、以太幣、穩定幣提領。真正該準備的不是猜這些新聞會不會讓行情大動，是趁「沒有重量級數據」的空檔，先把10/14 CPI公布前的三套劇本寫好，別等到沒有新聞可看時，就放鬆了原本的紀律。
+    </p>
+    <p style="color:#9ca3af;font-size:13px;line-height:1.6;margin-top:8px;">
+      應用情境：下週一整理這個月的交易日誌做季度末總結，同時留意Bitget分階段恢復提領（9/28比特幣、9/29以太幣、9/30穩定幣、10/2其餘代幣）是否引發短暫流動性波動；並比照這週PMI瞬間推升升息機率的模式，把10/14 CPI「高於/符合/低於預期」三套劇本的部位上限先寫下來。
+    </p>
+  </div>
+
+  <!-- 💭 今日反思 -->
+  <div style="background:linear-gradient(135deg,#10b981,#06b6d4);padding:1px;border-radius:12px;margin-bottom:16px;">
+    <div style="background:#1a1a1a;border-radius:11px;padding:18px;">
+      <div style="font-size:16px;font-weight:700;color:#fff;margin-bottom:10px;">💭 今日反思</div>
+      <ul style="margin:0;padding-left:18px;color:#d1d5db;font-size:14px;line-height:1.8;">
+        <li>BTC ETF單週流入創紀錄、單日流入卻砍了87%，我會不會只被「創紀錄」這個標題吸引，而忽略了動能正在退潮的細節？</li>
+        <li>10年期公債殖利率創2007年以來新高，我有沒有先為「殖利率繼續走高」這個劇本，算過我的BTC與美股部位能承受多少回撤？</li>
+        <li>距離10/14 CPI公布還有兩週多，我現在就開始寫「高於/符合/低於預期」三套劇本，還是打算等數字出來當天再臨場反應？</li>
+      </ul>
+      <p style="margin:12px 0 0;color:#9ca3af;font-size:13px;">挑一題寫進交易日誌，這就是今天的功課。</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div style="text-align:center;padding:20px 10px;color:#6b7280;font-size:12px;line-height:1.8;">
+    <p style="margin:0 0 8px;">資料截止：BTC價格 — 2026/09/26（CoinDesk、Coinbase、news.bitcoin.com）；BTC ETF資金流 — 2026/09/26當週（The Block、Cryptonomist、GNCrypto News，含9/21-9/25歷史流入數據）；美股收盤 — 2026/09/25（Yahoo Finance、TheStreet）；VIX — 2026/09/25（Yahoo Finance歷史數據）；10年期公債殖利率 — 2026/09/26（CNBC）；8月CPI — BLS 8月CPI報告；研究文章 — arXiv q-fin.TR。</p>
+    <p style="margin:0 0 8px;">本報內容為交易紀律與市場思維訓練之用，所有情境演練皆為假設性教學範例，不構成任何投資建議，不代表買進、賣出或加減碼之建議。加密貨幣與股票市場均有高波動風險，請謹慎評估自身風險承受能力。</p>
+    <p style="margin:0 0 8px;">本報為 Darren 的個人學習報，僅供個人學習追蹤之用。</p>
+    <p style="margin:0;">本信件由 AI 自動生成。</p>
+  </div>
+
+</div>
+</body>
+</html>
