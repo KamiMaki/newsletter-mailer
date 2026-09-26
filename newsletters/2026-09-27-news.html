@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的 AI 每日電子報</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;">
+<tr>
+<td align="center" style="padding:16px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+
+<!-- ===== Header ===== -->
+<tr>
+<td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px 16px 0 0;padding:32px 28px;text-align:center;">
+<div style="font-size:26px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報 🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:8px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#c7d2fe;margin-top:6px;">2026-09-27 · 星期日</div>
+</td>
+</tr>
+
+<!-- ===== 30秒重點 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:24px 28px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;">
+<tr><td style="padding:16px 18px;">
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.9;">
+<li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>三家對手實驗室最新的模型——<strong style="color:#ffffff;">GPT-6 Sol／Luna、Claude Opus 5.5、Grok 4.7</strong>——本週在 48～72 小時內同時擠進 Codex、GitHub Copilot 與 Vercel AI SDK，還能對話中途直接換人。模型從「發表」到「進你的工具」的時差，塌縮到只剩幾天。</li>
+<li style="margin-bottom:10px;">同一週工具端補的不是模型能力，而是<strong style="color:#e2e8f0;">「換模型」與「管模型」的把手</strong>：Copilot 支援對話中途切模型，Claude Code 新增 <code style="color:#a5b4fc;">deniedModels</code> 讓管理者直接封鎖特定模型。當任何模型都是一行設定就能換，護城河就從模型本身，移到<strong style="color:#ffffff;">跑模型的那層工具（harness）</strong>。</li>
+<li style="margin-bottom:10px;">其他值得知道：Akamai 與 Anthropic 簽下 <strong style="color:#e2e8f0;">116 億美元、七年</strong>的雲端運算大單（主打 CPU 分散式推論）；阿里巴巴在雲棲大會端出 <strong style="color:#e2e8f0;">Qwen Book</strong> 代理式電腦與 Qwen 桌面 OS（據報導）；三大實驗室據傳正籌組民間的「前沿 AI 標準機構」（The Information 報導，官方未證實）。</li>
+<li style="margin-bottom:0;"><strong style="color:#67e8f9;">對半導體工作者最相關：</strong>「引擎可抽換、價值在流程」是你早就熟的道理——EDA 工具換 solver、晶圓廠換機台，都不會重寫整條 flow。今天的教訓是<strong style="color:#ffffff;">押注在工作流的位置，而不是某一家供應商</strong>；半導體專區就用「佈局繞線壅塞預測」示範這種 shift-left 思路。</li>
+</ul>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 今天的主軸 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:8px 28px 24px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:13px;">
+<tr><td style="padding:24px 22px;">
+
+<div style="display:inline-block;background:rgba(99,102,241,0.18);color:#a5b4fc;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;">🎯 今天的主軸</div>
+<div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-top:14px;">新模型「當週就上架」全部工具——模型的上架時差塌到幾天，真正的護城河搬去了「跑模型的那層工具」</div>
+
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:16px 0 0;">
+先說一個你熟悉的畫面。以前買一台新引擎，要等好幾個月，車廠才把它裝進你這款車；而且你只能用車廠指定的那顆。<strong style="color:#a5b4fc;">模型</strong>過去也是這樣：一家實驗室發表新模型，你得等自己在用的工具「支援」它，等待期常常是幾週到幾個月，而且你多半只能用工具廠商幫你選好的那一顆。本週 9/25～9/26 有一批看似零碎的 changelog，其實共同把這件事翻過來了——<strong style="color:#ffffff;">新引擎當週就裝進了每一台車，你還能開到一半換引擎</strong>。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:22px 0 8px;">▍共同變化</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0;">
+三家對手實驗室的最新模型，在同一個 48～72 小時視窗內湧進主流工具。<strong style="color:#e2e8f0;">OpenAI Codex CLI 0.157.0</strong>（9/25）加入 <strong style="color:#a5b4fc;">GPT-6 Sol 與 Luna</strong>（含經 Amazon Bedrock 存取）。<strong style="color:#e2e8f0;">GitHub Copilot</strong>（9/25 週更）一口氣把 <strong style="color:#a5b4fc;">Claude Opus 5.5、GPT-6 Sol、GPT-6 Luna、Grok 4.7</strong> 四顆模型鋪到各付費層，還在 Slack／Teams 支援「對話中途換模型」。<strong style="color:#e2e8f0;">Vercel AI SDK</strong> 同步跟上——<code style="color:#a5b4fc;">@ai-sdk/openai@4.0.78</code>（9/26）替 Sol／Luna 加了 <code style="color:#a5b4fc;">reasoningEffort:&nbsp;'none'</code>，<code style="color:#a5b4fc;">@ai-sdk/perplexity@5.0.0</code>（9/26）整包改接 Agent API。而 <strong style="color:#e2e8f0;">Claude Code 2.1.283</strong>（9/25）走的是另一面：新增 <code style="color:#a5b4fc;">deniedModels</code> 與 <code style="color:#a5b4fc;">availableModelsMatch</code>，讓管理者能<strong style="color:#ffffff;">直接封鎖或鎖定特定模型版本</strong>。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:22px 0 8px;">▍為什麼放在一起看</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0;">
+四則發布分屬 OpenAI、GitHub、Vercel、Anthropic，卻共同描出同一件事：<strong style="color:#e2e8f0;">模型正在變成「隨插即用、隨手可換」的零件。</strong>湧進（Codex／Copilot／Vercel 同週加同一批模型）＝上架時差沒了；中途換（Copilot）＝換模型不再是換工具，是換一個下拉選單；封鎖（Claude Code <code style="color:#a5b4fc;">deniedModels</code>）＝當任何模型都是一行設定就能進來，組織的新煩惱反而是「怎麼擋掉不該用的那些」。當「當週上架、中途可換、還要能被管控」三件事同時成立，模型就從你押注的<strong style="color:#ffffff;">主角</strong>，退位成一個插槽裡的<strong style="color:#ffffff;">耗材</strong>。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:22px 0 8px;">▍過去 vs. 現在</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0;">
+過去：新模型發表 → 你等工具支援（數週）→ 期間只能用工具幫你綁好的那顆 → 想換模型往往要換工具。<strong style="color:#e2e8f0;">你被綁在「模型 × 工具」的組合上。</strong><br>
+現在：新模型發表 → 幾天內就出現在 Codex／Copilot／Vercel 的模型清單裡 → 同一個對話裡下拉切換 → 管理者用一行設定決定誰能用。<strong style="color:#ffffff;">你被綁的不再是模型，而是那個裝著所有模型的殼。</strong>差別很實際：以前「押錯模型」代價很高，現在押錯模型只是換個選項；但「押錯工具」的代價，正悄悄變高。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:22px 0 8px;">▍背後邏輯</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0;">
+為什麼工具廠商樂意讓你隨手換掉模型、甚至用對手的模型？因為他們賣的早就不是模型，而是<strong style="color:#e2e8f0;">那層殼（harness）</strong>：管理上下文、記住你的專案、審批工具呼叫、串接你的儲存庫與 CI。這週的細節都在補這層殼——Copilot 把「代理記憶（Copilot Memory）」接進自動修復流程、Codex 0.157.0 讓互動階段<strong style="color:#a5b4fc;">自動啟動背景伺服器並支援對話分叉</strong>。模型可以三家輪流換，但你的記憶、你的審批規則、你的整合，全留在殼裡。<strong style="color:#ffffff;">當互補品（模型）被商品化，價值就流向握住你工作流的那一層。</strong>（編輯分析）
+</p>
+
+<div style="background:#252525;border-radius:8px;padding:12px 14px;margin:16px 0 0;">
+<div style="font-size:12px;font-weight:700;color:#a5b4fc;margin-bottom:6px;">👤 延伸解讀（編輯分析）</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0;">
+別把「能換模型」直接讀成「沒有鎖定」。鎖定沒消失，只是<strong style="color:#e2e8f0;">往上搬了一層</strong>：從「你用哪顆模型」變成「你活在哪個殼裡、資料與記憶留在誰家」。Vercel AI SDK 這類抽象層之所以有人用，正是想把這層鎖定也拆開——但它本身又成了另一個要押注的殼。這是今日概念要拆的「供應商鎖定 vs 可攜性」。
+</p>
+</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:22px 0 8px;">▍對你的工作</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0;">
+如果你在替團隊選 AI 工具，這週的訊號很直接：<strong style="color:#e2e8f0;">別把賭注全押在某一家模型上。</strong>模型幾天內就會在你的工具裡輪替，真正難換、真正該想清楚的是那層殼——它記了你多少東西、你的規則綁得多死、換掉它要付多少代價。實務上先做兩件事：一，確認你的工具能<strong style="color:#a5b4fc;">中途換模型、也能封鎖模型</strong>（像 Copilot 的切換、Claude Code 的 <code style="color:#a5b4fc;">deniedModels</code>），別讓「不能換」變成隱形鎖定；二，把「我的記憶／prompt／整合留在哪、能不能搬走」寫進選型清單，而不是只比模型跑分。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:22px 0 8px;">▍限制與待驗證</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0;">
+第一，「換模型」不是零成本——prompt 常常是為某一顆模型調過的，換一顆行為就變。這週 Claude Code 特地加了 <code style="color:#a5b4fc;">/doctor&nbsp;prompt-audit</code>，就是要幫你檢查「為舊模型寫的提示，換新模型還適不適用」，等於官方承認可攜性有隱藏成本。第二，「當週上架」目前只成立在<strong style="color:#e2e8f0;">三大實驗室 × 主流工具</strong>這個組合，小眾工具、企業內部平台仍有時差。第三，模型可換，不代表換了品質一樣——同一份工作，Sol、Opus 5.5、Grok 4.7 的表現與成本各不同，抽換之後仍要各自驗證。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:22px 0 8px;">▍重點一句話</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0;">
+模型正變成「當週上架、隨手可換」的耗材；你該問的不再是「哪顆模型最強」，而是<strong style="color:#ffffff;">「我被哪層殼綁住了、換得掉嗎」</strong>。
+</p>
+
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 主軸的衍生新聞 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:8px 28px 8px;">
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;margin-bottom:14px;">
+<tr><td style="padding:18px 20px;">
+<div style="display:inline-block;background:rgba(6,182,212,0.14);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">Copilot 加沙箱與「協助審批」、Codex 讓對話能分叉——殼開始替你顧安全與分身</div>
+<p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">
+既然任何模型都能一行設定進來、還會自己動手，殼就得補上「怎麼放心讓它跑」。GitHub Copilot 9/25 週更推出<strong style="color:#e2e8f0;">本機沙箱（公開預覽）</strong>限制代理對檔案／網路／憑證的存取，JetBrains 版新增<strong style="color:#a5b4fc;">「協助審批（assisted approvals）」自動放行低風險的工具呼叫</strong>；OpenAI Codex 0.157.0 則讓互動階段自動啟動背景伺服器、並能<strong style="color:#e2e8f0;">對話分叉（按 f）</strong>。這些都不是模型能力，是殼在長出「安全」與「分身」的肌肉——也正是它為什麼換不掉。
+</p>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;line-height:1.6;margin:10px 0 0;">💡 重點一句話：模型可換，但「誰幫你擋風險、幫你記住進度」這層本事，才是工具真正的黏著劑。</p>
+<div style="font-size:13px;color:#94a3b8;margin-top:8px;">🔗 <a href="https://github.blog/changelog/2026-09-25-github-copilot-weekly-releases-september-21/" style="color:#06b6d4;text-decoration:none;">GitHub Changelog（9/25）</a>｜<a href="https://learn.chatgpt.com/docs/changelog" style="color:#06b6d4;text-decoration:none;">OpenAI Codex Changelog</a></div>
+</td></tr>
+</table>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;margin-bottom:4px;">
+<tr><td style="padding:18px 20px;">
+<div style="display:inline-block;background:rgba(6,182,212,0.14);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">Vercel AI SDK 幫 Sol／Luna 加「不思考」檔位、Perplexity 改接 Agent API</div>
+<p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">
+<code style="color:#a5b4fc;">@ai-sdk/openai@4.0.78</code>（9/26）替 GPT-6 Sol／Luna 加入 <code style="color:#a5b4fc;">reasoningEffort:&nbsp;'none'</code>，讓開發者能把「要不要多想一下」當旋鈕轉到最低；同日 <code style="color:#a5b4fc;">@ai-sdk/perplexity@5.0.0</code> 是<strong style="color:#e2e8f0;">破壞性更新（breaking）</strong>，整包從 Chat Completions 改接 Agent API。這正是「殼＝可攜性層」的另一面：SDK 用一致介面把各家模型的差異抹平，你才可能「隨手換」——代價是你又押注了這個 SDK。
+</p>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;line-height:1.6;margin:10px 0 0;">💡 重點一句話：抽象層讓模型好換，但抽象層本身也是一個要押注的供應商。</p>
+<div style="font-size:13px;color:#94a3b8;margin-top:8px;">🔗 <a href="https://github.com/vercel/ai/releases" style="color:#06b6d4;text-decoration:none;">Vercel AI SDK Releases（GitHub）</a></div>
+</td></tr>
+</table>
+
+</td>
+</tr>
+
+<!-- ===== 其他快訊 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:16px 28px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:14.5px;line-height:1.75;">
+<li style="margin-bottom:14px;">
+<strong style="color:#e2e8f0;">Akamai 與 Anthropic 簽 116 億美元、七年雲端運算大單</strong>：9/24 Akamai 宣布這是公司史上最大合約，讓 Anthropic 用 Akamai Cloud 的<strong style="color:#a5b4fc;">分散式基礎設施承接快速成長的 CPU 工作負載</strong>，另附最多再加 90 億美元的擴充選項（總額上看約 200 億）、以及一張最多約 5% 股權的認股權證（現階段先歸屬約 2%）。訊號：AI 算力的胃口正從 GPU 溢出到 CPU 與分散式推論。
+<span style="color:#94a3b8;">🔗 <a href="https://www.akamai.com/newsroom/press-release/akamai-announces-11-6-billion-multi-year-agreement-with-anthropic-to-support-growing-demand" style="color:#06b6d4;text-decoration:none;">Akamai 新聞稿</a></span>
+</li>
+<li style="margin-bottom:14px;">
+<strong style="color:#e2e8f0;">阿里巴巴雲棲大會端出「Qwen Book」代理式電腦與 Qwen 桌面 OS（據報導）</strong>：9/24 阿里在 Apsara 大會展示一台以 Qwen 模型為核心的「AI 代理電腦」，搭配主打 AI 原生的 Qwen Desktop OS，另有 AI 眼鏡、耳機、錄音筆等硬體。方向是把代理直接做進裝置與作業系統，而非只當一個 App。（此為 TechNode 等產業媒體報導，阿里官方部落格暫時無法讀取確認，部分產品規格屬 9/22 發布。）
+<span style="color:#94a3b8;">🔗 <a href="https://technode.global/2026/09/24/alibaba-qwen-book-ai-wearables-apsara-2026/" style="color:#06b6d4;text-decoration:none;">TechNode（據報導）</a></span>
+</li>
+<li style="margin-bottom:0;">
+<strong style="color:#e2e8f0;">三大實驗室據傳籌組民間「前沿 AI 標準機構」</strong>：據 The Information 報導（9/24），Google、OpenAI 與 Anthropic 正討論成立一個自願性的產業標準組織，訂定第三方上線前測試、事故通報與稽核員資格等規則，最快 2026 年底至 2027 年初成形。OpenAI 的 Chris Lehane 先前已公開承認有在協調，但三家<strong style="color:#a5b4fc;">官方均未正式證實</strong>，請當成報導而非發布看待。
+<span style="color:#94a3b8;">🔗 <a href="https://www.pymnts.com/artificial-intelligence-2/2026/report-openai-google-anthropic-plan-frontier-ai-standards-group/" style="color:#06b6d4;text-decoration:none;">PYMNTS 轉述 The Information（據報導）</a></span>
+</li>
+</ul>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 今日概念 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:8px 28px 16px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">📖 今日概念｜供應商鎖定（Vendor Lock-in）與可攜性</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:4px 0 6px;">一句定義</div>
+<p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">
+<strong style="color:#e2e8f0;">供應商鎖定</strong>是指：你的工作流深度綁定某一家的產品、格式或介面後，「換掉它」的成本高到你幾乎換不動；<strong style="color:#e2e8f0;">可攜性（portability）</strong>則相反——讓你能用夠低的成本，把工作、資料與流程搬到別家。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">生活化比喻</div>
+<p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">
+像<strong style="color:#e2e8f0;">膠囊咖啡機</strong>：機器便宜賣你，但只吃自家膠囊，久了你被綁的其實是「膠囊供應」。把它對回技術——<strong style="color:#a5b4fc;">模型＝膠囊，工具（harness）＝咖啡機</strong>。本週的變化是：各家咖啡機開始「什麼牌子的膠囊都能塞」（任何模型隨手換），模型層的鎖定鬆了；但你可能因此更離不開那台咖啡機——鎖定沒消失，只是<strong style="color:#ffffff;">從膠囊搬到了機器本身</strong>。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">工作中的例子</div>
+<p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">
+本週正好有可攜性的「解鎖鍵」與「隱藏鎖」同框。<strong style="color:#e2e8f0;">解鎖：</strong>Copilot 支援對話中途換模型、Claude Code 用 <code style="color:#a5b4fc;">deniedModels</code>／<code style="color:#a5b4fc;">availableModelsMatch</code> 讓你自己決定用哪些模型；Vercel AI SDK 這類抽象層更是把「換供應商」做成改一行設定。<strong style="color:#e2e8f0;">隱藏鎖：</strong>你的 prompt 常是為某顆模型調過的，換一顆行為就跑掉——所以 Claude Code 才加 <code style="color:#a5b4fc;">/doctor&nbsp;prompt-audit</code> 幫你查「舊提示配新模型」的落差。能換≠沒代價。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">常見誤解</div>
+<p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">
+誤解一：「我能換模型，就沒被鎖定。」——鎖定往往只是<strong style="color:#e2e8f0;">上移了一層</strong>，跑去了殼、你的記憶與資料、以及調校過的 prompt。誤解二：「用開源／開放權重就一定沒鎖定。」——就算權重能拿，你的部署、監控、工具鏈仍可能綁死在某個平台。可攜性要看的是<strong style="color:#a5b4fc;">「搬家的總成本」</strong>，不是單一元件能不能替換。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px;">與今天主軸的關係</div>
+<p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">
+主軸說模型變成「當週上架、隨手可換」的耗材。這正是模型層可攜性大增的一刻——但也是鎖定悄悄搬去殼的一刻。看懂供應商鎖定，你選型時問的問題就會從「哪顆模型強」升級成<strong style="color:#ffffff;">「哪一層我換得掉、哪一層我一旦進去就出不來」</strong>。
+</p>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 半導體 AI 專區 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:8px 28px 16px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;border:1px solid #06b6d4;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:6px;">🏭 半導體 AI 專區｜用機器學習預測「佈局繞線壅塞」（Routing Congestion / Routability）</div>
+<div style="margin:10px 0 4px;">
+<span style="display:inline-block;background:rgba(103,232,249,0.14);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-right:6px;">EDA 工具</span>
+<span style="display:inline-block;background:rgba(148,163,184,0.18);color:#cbd5e1;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">背景知識</span>
+</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px;">▍問題與流程位置</div>
+<p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">
+在實體設計（physical design）裡，<strong style="color:#e2e8f0;">佈局（placement）</strong>先決定每個標準單元擺哪，接著<strong style="color:#e2e8f0;">繞線（routing）</strong>把它們用金屬線連起來。麻煩在於：如果佈局讓某塊區域「太多線想擠過同一條窄巷」，就會產生<strong style="color:#a5b4fc;">繞線壅塞（congestion）</strong>，引發 DRC 違規、繞不通、或時序變差——而這些通常要<strong style="color:#e2e8f0;">跑完一輪很慢的全域＋細節繞線</strong>才會發現。發現得晚，就得回頭改佈局、再繞一次，一輪動輒數小時到數天。壅塞預測要做的，就是在<strong style="color:#a5b4fc;">還沒真正繞線前</strong>，先預測「哪裡會塞、繞不繞得通」，把問題往前挪（shift-left）。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px;">▍AI 如何介入（與過去的差異）</div>
+<p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">
+過去要嘛<strong style="color:#e2e8f0;">真的跑一次（試）繞線</strong>來看哪裡塞——準但慢；要嘛用機率式/解析式的粗估（如 RUDY 這類線長密度指標）——快但抓不準熱點位置。改用機器學習後，做法是把「擺好位置的晶片」當成一張<strong style="color:#a5b4fc;">圖片或一張圖（graph）</strong>：用 CNN／GAN（例如把佈局畫成影像、用條件式 GAN 預測壅塞熱圖）或用<strong style="color:#a5b4fc;">圖神經網路 GNN</strong>（如 CongestionNet 直接吃網表連接關係），在<strong style="color:#e2e8f0;">幾秒內</strong>輸出一張壅塞熱圖，讓佈局階段就能反覆試、提早避開。核心差異：從「先繞再量」變成「不繞也能預判」。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px;">▍資料與產出</div>
+<p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">
+輸入：單元座標與佈局、網表連接、接腳密度、巨集（macro）擺放，有時再加上 RUDY／全域繞線的粗估特徵。輸出：<strong style="color:#e2e8f0;">分區的壅塞熱圖、可繞度分數、預測的 DRC 熱點位置</strong>。訓練資料多來自開源基準<strong style="color:#a5b4fc;">CircuitNet</strong>（含壅塞、DRV、時序、功耗等標註）。難點也在資料：正確答案（ground truth）得靠真的跑繞線器產生，很貴；模型<strong style="color:#e2e8f0;">綁製程、綁工具</strong>，換 PDK 或換一套 EDA 就常要重訓；熱點在版圖上本來就是少數，類別不平衡。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px;">▍如何驗證</div>
+<p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">
+把預測熱圖對「真的繞完後」的實際壅塞比對：看相關係數、影像相似度、逐格誤差，以及熱點的<strong style="color:#e2e8f0;">精確率／召回率</strong>；最終還要看整條流程是否<strong style="color:#a5b4fc;">真的更快收斂、少繞幾輪</strong>。評測通常留一批沒見過的設計做 holdout（如 CircuitNet 的跨設計測試）。要特別提醒：這些多是<strong style="color:#e2e8f0;">學術／基準數據，不是量產的 PPA 或良率保證</strong>，落地效果仍要在自家 PDK 上驗。
+</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px;">▍限制與風險</div>
+<p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">
+一，<strong style="color:#e2e8f0;">泛化差</strong>：在一種製程／工具上訓的模型，換一家常常不準。二，<strong style="color:#e2e8f0;">假樂觀最貴</strong>——模型說「看起來繞得通」卻其實會塞，比保守誤報還糟，會把問題流到下游。三，它只<strong style="color:#e2e8f0;">預測、不修</strong>：真正能不能繞通，最後仍要真繞線器當裁判。四，要好用得餵大量標註資料，而產生標註本身就得跑昂貴的繞線。
+</p>
+
+<p style="color:#67e8f9;font-weight:700;font-size:14.5px;line-height:1.7;margin:18px 0 0;">👷 對半導體工作者的意義：對實體設計／PD 與 CAD 工程師，壅塞預測是一種「shift-left」——把賭注押在<strong style="color:#ffffff;">工作流的位置（提早預判）</strong>，而不是某一顆 solver 或某一家工具，這跟今天主軸「押流程、別押供應商」完全同構。值得動手的下一步：檢查你現在的 P&R flow 有沒有早期可繞度預測，並把它的熱點預測拿去對「實際繞完」的結果——對得準不準，決定你敢不敢靠它省繞線輪次。</p>
+
+<div style="border-top:1px solid #333;margin-top:16px;padding-top:12px;font-size:13px;line-height:1.9;color:#94a3b8;">
+🔗 來源：
+<a href="https://arxiv.org/abs/1904.07077" style="color:#06b6d4;text-decoration:none;">arXiv 1904.07077（Painting on Placement，cGAN 壅塞預測）</a>｜
+<a href="https://arxiv.org/abs/2202.13564" style="color:#06b6d4;text-decoration:none;">arXiv 2202.13564（P&R 機器學習方法綜述）</a>｜
+<a href="https://circuitnet.github.io/" style="color:#06b6d4;text-decoration:none;">CircuitNet 開源資料集</a>
+</div>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 反思時間 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:8px 28px 24px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:13px;">
+<tr><td style="padding:22px 22px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.85;">
+<li style="margin-bottom:12px;">如果任何新模型幾天內就會出現在你的工具裡，「押注某一家模型」還有意義嗎？那你團隊真正該<strong style="color:#a5b4fc;">押注、也最難換掉</strong>的是哪一層——模型、工具（harness），還是留在裡面的資料與記憶？</li>
+<li style="margin-bottom:12px;">拿你團隊現在的 AI 或 EDA 工作流做實驗：如果明天供應商把價格翻倍，你<strong style="color:#a5b4fc;">一天之內能換掉的</strong>是哪些、要花好幾個月才搬得動的又是哪些？這條分界線，就是你真正的鎖定所在。</li>
+<li style="margin-bottom:0;">當「換模型」變得幾乎免費，差異化就往殼（上下文、記憶、審批、整合）集中。未來三年，你會把團隊的學習曲線投在<strong style="color:#a5b4fc;">追每一顆新模型</strong>，還是投在打磨那條「比任何單一模型活得更久」的工作流？</li>
+</ul>
+<div style="border-top:1px solid #333;margin-top:16px;padding-top:14px;">
+<p style="color:#a5b4fc;font-weight:700;font-size:15px;line-height:1.7;margin:0;">🎒 今日帶走：模型正變成當週上架、隨手可換的耗材；真正的護城河與鎖定，都搬去了「跑模型的那層殼」——所以要押注工作流的位置，而不是某一家供應商。</p>
+</div>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 歷史電子報入口 ===== -->
+<tr>
+<td style="background:#1a1a1a;padding:0 28px 16px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525;border-radius:10px;">
+<tr><td style="padding:18px 20px;text-align:center;">
+<div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.6;margin:0 0 12px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+<a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-size:14px;font-weight:600;">查看歷史電子報</a>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== Footer ===== -->
+<tr>
+<td style="background:#141414;border-radius:0 0 16px 16px;padding:24px 28px;text-align:center;">
+<p style="color:#cbd5e1;font-size:14px;margin:0 0 10px;">📬 覺得有用？分享給朋友，一起掌握 AI：<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">訂閱這份電子報</a></p>
+<p style="color:#64748b;font-size:13px;margin:0 0 14px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></p>
+<p style="color:#475569;font-size:12px;line-height:1.6;margin:0;">© 2026 企鵝的 AI 每日電子報 🐧<br>本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源</p>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

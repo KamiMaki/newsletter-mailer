@@ -805,3 +805,14 @@
 {"date": "2026-09-26", "title": "Google Gemini API 受管代理換上 Antigravity harness（Gemini 3.8 Flash），新增 Files API 與 Credentials API，輸出 token 少 40%、任務完成率高約 6%"}
 {"date": "2026-09-26", "title": "OpenAI 預告 GPT-6 Cyber 與第一個資安部署產品（9/29 DevDay），為今年第四個資安專用模型，資安成獨立產品線"}
 {"date": "2026-09-26", "title": "Google DeepMind：Gemini 4 已進後訓練、Kavukcuoglu 稱要盡快推出，追趕與 Opus 5.5／GPT-6 的前沿差距"}
+{"date": "2026-09-27", "title": "Codex CLI 0.157.0：加入 GPT-6 Sol／Luna（含經 Amazon Bedrock）、預設全螢幕逐字稿、自動啟動背景伺服器、對話分叉（按 f）"}
+{"date": "2026-09-27", "title": "GitHub Copilot 9/25 週更：Opus 5.5／GPT-6 Sol／Luna／Grok 4.7 鋪到各付費層、Slack/Teams 對話中途換模型、本機沙箱公開預覽、JetBrains 協助審批自動放行低風險工具呼叫、VS Code 1.139 Dev Containers 執行代理"}
+{"date": "2026-09-27", "title": "Claude Code 2.1.283：新增 deniedModels 封鎖特定模型、availableModelsMatch 精確鎖定版本、gateway hint headers、/doctor prompt-audit 檢查為舊模型寫的提示"}
+{"date": "2026-09-27", "title": "Claude Code 2.1.282：新增 maxProseWidth 限制寬終端正文寬度、allowClaudeInChromeWithManagedMcp、OTEL 工具輸出"}
+{"date": "2026-09-27", "title": "Vercel AI SDK @ai-sdk/openai@4.0.78：替 GPT-6 Sol／Luna 加入 reasoningEffort:none；@ai-sdk/perplexity@5.0.0 破壞性改接 Agent API；ai@7.0.116 改 ES2022"}
+{"date": "2026-09-27", "title": "Akamai 與 Anthropic 簽 116 億美元七年雲端運算大單（Akamai 史上最大）：承接 Anthropic 成長中的 CPU 分散式推論、附最多再加 90 億擴充選項（總額上看約 200 億）、最多約 5% 股權認股權證（先歸屬約 2%）"}
+{"date": "2026-09-27", "title": "阿里巴巴 Apsara 雲棲大會端出 Qwen Book 代理式電腦與 Qwen Desktop OS＋AI 眼鏡/耳機/錄音筆（據 TechNode 報導，官方部落格未確認、部分規格屬 9/22）"}
+{"date": "2026-09-27", "title": "據 The Information 報導：Google／OpenAI／Anthropic 討論籌組自願性「前沿 AI 標準機構」（第三方上線前測試/事故通報/稽核員資格，最快 2026 底–2027 初，官方未證實）"}
+{"date": "2026-09-27", "title": "主軸：新模型當週就上架全部工具——GPT-6 Sol/Luna、Opus 5.5、Grok 4.7 同週湧進 Codex/Copilot/Vercel 還能中途換，模型的上架時差塌到幾天、護城河搬去跑模型的那層 harness"}
+{"date": "2026-09-27", "title": "概念：供應商鎖定（Vendor Lock-in）與可攜性（Portability）"}
+{"date": "2026-09-27", "title": "半導體專區：EDA 工具｜佈局繞線壅塞/可繞度的機器學習預測（CongestionNet/CircuitNet/cGAN，shift-left）"}
