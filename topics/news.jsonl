@@ -816,3 +816,15 @@
 {"date": "2026-09-27", "title": "主軸：新模型當週就上架全部工具——GPT-6 Sol/Luna、Opus 5.5、Grok 4.7 同週湧進 Codex/Copilot/Vercel 還能中途換，模型的上架時差塌到幾天、護城河搬去跑模型的那層 harness"}
 {"date": "2026-09-27", "title": "概念：供應商鎖定（Vendor Lock-in）與可攜性（Portability）"}
 {"date": "2026-09-27", "title": "半導體專區：EDA 工具｜佈局繞線壅塞/可繞度的機器學習預測（CongestionNet/CircuitNet/cGAN，shift-left）"}
+{"date": "2026-09-28", "title": "OpenAI ChatGPT Ads 進東南亞與台灣七市場、開放自助買廣告，廣告業務不到200天衝上10億美元年化（9/23-24）"}
+{"date": "2026-09-28", "title": "Anthropic 對被拒絕請求恢復計費：bio／frontier_llm／reasoning_extraction 三類，反大規模探測/蒸餾，測試中99.7%帳號無感"}
+{"date": "2026-09-28", "title": "AI 代理付款軌道成形：OpenAI×Stripe ACP、Google×Shopify UCP、Visa/Mastercard AP4M 接入（背景）"}
+{"date": "2026-09-28", "title": "GPT-6 Cyber 傳將於 9/29 DevDay 預覽：今年第4個資安專用模型、Daybreak 身分驗證+FIDO2 硬體金鑰分級（據報導）"}
+{"date": "2026-09-28", "title": "MiniMax M3.1-Flash-Preview 悄悄上線 MiniMax Code：無定價/無 model card、1M 脈絡、五檔推理力道 low→max（9/27）"}
+{"date": "2026-09-28", "title": "Stanford/Caltech HomeBody：GPT-6 Astra 直連 Unitree G1、跳過 VLA 訓練控制層，Isaac Sim 建數位分身+空間記憶（9/26-27）"}
+{"date": "2026-09-28", "title": "Meta 修補 AI 代理 Muse 漏洞：專屬 VM 可被存取郵件/檔案、內部評 SEV-2、加強 App 警語（據 The Information，9/25-26）"}
+{"date": "2026-09-28", "title": "Manifold Security：349 個 AI agent skills 引用可被劫持佔位網域，被導向 ClickFix 詐騙、一 skill 被 fork 1089 次"}
+{"date": "2026-09-28", "title": "AI coding CLI 一輪更新（9/26）：Codex 0.157.1 含 GPT-6 Sol/Luna、Copilot CLI v1.0.89 路由分層建議、Gemini CLI v0.62、Qwen Code v0.24.6 Hosted Harness"}
+{"date": "2026-09-28", "title": "主軸：免費午餐吃到飽的日子在收尾——AI 大廠這週同時對免費用戶（ChatGPT 廣告變現）和白吃探測（Anthropic 計費拒絕）開始收錢"}
+{"date": "2026-09-28", "title": "概念：模型蒸餾（Knowledge Distillation）"}
+{"date": "2026-09-28", "title": "半導體專區：IC 製造｜微影疊對（Overlay）誤差的機器學習前饋控制"}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的 AI 每日電子報🐧</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;padding:20px 0;">
+<tr><td align="center">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+
+<!-- Header -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px 16px 0 0;padding:32px 28px;text-align:center;">
+<div style="font-size:26px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:8px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#c7d2fe;margin-top:10px;">2026 年 9 月 28 日（週一）</div>
+</td></tr>
+
+<!-- 30秒重點 -->
+<tr><td style="background:#1a1a1a;padding:24px 28px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+<li style="font-weight:700;color:#ffffff;">今日主軸：<strong style="color:#a5b4fc;">AI 的「免費午餐」開始收費</strong>——同一週 OpenAI 用廣告把免費 ChatGPT 用戶變現（廣告業務衝上 10 億美元年化、開放自助給含<strong style="color:#a5b4fc;">台灣</strong>在內的亞洲小商家），Anthropic 則把過去免費的「被模型拒絕的請求」改成計費。補貼期正在收尾。</li>
+<li>Anthropic 對 <strong style="color:#e2e8f0;">bio／frontier_llm／reasoning_extraction</strong> 三類拒絕請求恢復計費，官方說法是要讓「大規模探測、想偷走模型能力」的行為付出代價。</li>
+<li>其他值得知道：Stanford／Caltech 把 GPT-6 Astra <strong style="color:#e2e8f0;">直接接上人形機器人</strong>、跳過傳統訓練控制層；Meta 修補 AI 代理 Muse 可外洩郵件/檔案的漏洞；349 個 AI agent skills 因引用可被劫持的佔位網域，被導向詐騙頁。</li>
+<li><strong style="color:#67e8f9;">對半導體工作者最相關的一句：</strong>你天天用的 AI 工具正從「免費試用」轉向「按用量、按難度、甚至按被拒絕次數」計費——把 AI 成本當成一條真實的預算線，別再假設它永遠便宜。</li>
+</ul>
+</td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="padding:20px 0;background:#0f0f0f;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+<tr><td style="padding:28px;">
+<div style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);color:#fff;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;">🎯 今天的主軸</div>
+<div style="font-size:19px;font-weight:800;color:#ffffff;margin-top:14px;line-height:1.5;">免費午餐吃到飽的日子在收尾——AI 大廠這週同時對「免費用戶」和「白吃的探測」開始收錢</div>
+
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:18px;">
+過去三年，AI 產品像剛開幕的吃到飽餐廳：先免費請你吃，把人潮養起來再說。這一週，兩家最大的 AI 公司幾乎同時把帳單推到你面前——只是收錢的方式完全不同，卻指向同一個轉折。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:22px;">▍共同變化</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:6px;">
+<strong style="color:#a5b4fc;">OpenAI</strong> 把 ChatGPT Ads 開進印尼、馬來西亞、菲律賓、新加坡、泰國、越南與<strong style="color:#a5b4fc;">台灣</strong>七個亞洲市場，而且第一天就開放「自助買廣告（self-service Ads Manager）」給沒有大型代理商的小商家。官方數字是：廣告業務不到 200 天就衝上<strong style="color:#a5b4fc;">10 億美元年化營收（ARR）</strong>，服務範圍超過 60 國。翻成白話：免費的 ChatGPT 用戶，正式變成可以賣廣告的流量。<br><br>
+同一週，<strong style="color:#a5b4fc;">Anthropic</strong> 更新 Claude API 文件，宣布對「被安全分類器擋下、還沒生出任何文字的請求」<strong style="color:#a5b4fc;">恢復計費</strong>，適用於三類：<strong style="color:#e2e8f0;">bio（生物）、frontier_llm（前沿模型能力）、reasoning_extraction（推理萃取）</strong>。這種請求會回一個 <code style="background:#252525;padding:1px 5px;border-radius:4px;color:#67e8f9;">stop_reason: "refusal"</code>、內容是空的，但一樣照跑它的模型費率收錢。翻成白話：連「被拒絕」都要付費了。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:22px;">▍為什麼放在一起看</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:6px;">
+表面上一個是「賣廣告」、一個是「反濫用」，看似無關。但兩者都在做同一件事：<strong style="color:#a5b4fc;">把過去免費／補貼的縫隙補起來，讓每一次互動都能產生收入或成本</strong>。免費用戶的注意力，被廣告變現；免費的「被拒絕請求」，被拿來當成阻止有心人反覆探測、想偷走模型能力的收費關卡。這是 AI 商業模式從「搶用戶」進入「收現金」的分水嶺。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:22px;">▍過去 vs. 現在</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:6px;">
+<strong style="color:#e2e8f0;">過去：</strong>免費用 ChatGPT、被模型拒絕不用錢、失敗的呼叫不計費——公司靠融資燒錢養規模。<br>
+<strong style="color:#e2e8f0;">現在：</strong>免費用戶看廣告（你就是產品）、被拒絕的高風險請求照樣收費、API 每個 token 甚至每次「拒絕」都精算成本。營收與防禦，被綁進同一套計價邏輯。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:22px;">▍背後邏輯</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:6px;">
+Anthropic 給的理由很直白：一個「免費的拒絕」等於一次「免費的探測」。想用<strong style="color:#a5b4fc;">模型蒸餾</strong>（見今日概念）偷學能力、或想繞過安全防線的人，最愛的就是反覆丟請求、看模型在哪裡踩剎車，藉此摸出邊界。把這種請求變成要花錢，就能大幅提高「大規模自動化探測」的成本。官方也強調在測試中 99.7% 的 Claude Code／Claude.ai／Cowork 帳號一次都沒踩到這種收費區——換句話說，正常開發者幾乎無感，被針對的是想大量鑽漏洞的那群。而 OpenAI 這邊的邏輯更古老：當你有數億免費用戶，最快把他們變現的方法，就是廣告。
+</div>
+
+<div style="background:#252525;border-radius:8px;padding:14px;margin-top:20px;">
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;">👤 編輯分析／延伸解讀</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:6px;">
+把第三條線也放進來會更完整：AI「代理付款」的收費軌道正在成形——OpenAI 與 Stripe 的 ACP、Google 與 Shopify 的 UCP，加上 Visa、Mastercard（Agent Pay for Machines）等支付網路陸續接入，讓「AI 代理幫你下單結帳」變成可抽成的生意。三條線合起來看：<strong style="color:#a5b4fc;">免費用戶（廣告）、濫用探測（計費拒絕）、代理交易（支付軌道）</strong>——過去被當成「順便」的每個環節，現在都被裝上了收費表。這是編輯對趨勢的綜合判讀，非單一官方聲明。
+</div>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:22px;">▍對你的工作</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:6px;">
+對半導體團隊的實務意義：你導入的 AI coding／驗證／文件助手，成本結構正在快速變化——<strong style="color:#a5b4fc;">按 token、按推理難度、甚至按被拒絕次數</strong>計價都可能出現。如果你在 IT 或數位轉型崗位，該做的不是「賭它會一直便宜」，而是像管 EDA 授權席次一樣，替 AI 建立<strong style="color:#a5b4fc;">用量儀表板與成本上限</strong>；如果你評估把敏感的製程或設計資料丟進雲端 API，「被拒絕也要付費＋反蒸餾防線」正好提醒你：模型供應商正把「防止能力被偷」寫進商業條款，這對你評估資料落地與供應商鎖定，是新的變數。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:22px;">▍限制與待驗證</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:6px;">
+一，Anthropic 的計費只針對三個高風險類別、且據稱多數帳號無感，但「什麼算探測、什麼算正常研究」的界線仍待實務檢驗，生物／資安研究者可能誤傷。二，ChatGPT 廣告對回答中立性、隱私與「AI 推薦 vs 付費置入」的分界，長期影響還未知。三，「代理支付」規模目前多半是 agent 之間付 API 費用（平均每筆約 0.32 美元），距離真正的大額消費仍遠。這些都不是今天就有定論的事。
+</div>
+
+<div style="color:#94a3b8;font-style:italic;font-size:14px;margin-top:20px;border-top:1px solid #333;padding-top:14px;">
+▍重點一句話：AI 產業正從「先免費養用戶」轉向「每一次互動都要能計價」——免費用戶靠廣告變現、濫用探測靠計費防禦，補貼時代的縫隙正在被逐一補上。
+</div>
+
+<div style="margin-top:14px;font-size:13px;">
+🔗 <a href="https://platform.claude.com/docs/en/build-with-claude/refusals-and-fallback" style="color:#06b6d4;text-decoration:none;">Anthropic 官方文件：Refusals and fallback</a><br>
+🔗 <a href="https://openai.com/index/chatgpt-ads-expands-southeast-asia-taiwan/" style="color:#06b6d4;text-decoration:none;">OpenAI 官方：ChatGPT Ads 進東南亞與台灣</a>
+</div>
+
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 主軸的衍生新聞 -->
+<tr><td style="background:#0f0f0f;padding:8px 0 0;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;padding:12px 28px;">🔗 主軸的衍生新聞</div>
+</td></tr>
+
+<tr><td style="padding:0 0 12px;background:#0f0f0f;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:22px 28px;">
+<div style="display:inline-block;background:#252525;color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:12px;">AI 代理的「付款軌道」成形：把代理購物變成能抽成的生意</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:10px;">
+繼廣告與計費之後，AI 大廠瞄準的下一個收費點是「<strong style="color:#e2e8f0;">代理幫你花錢</strong>」。OpenAI×Stripe 的 <strong style="color:#e2e8f0;">ACP</strong>（代理商務協定）已在 ChatGPT 內跑結帳、擴及百萬級 Shopify 商家；Google×Shopify 的 <strong style="color:#e2e8f0;">UCP</strong> 涵蓋從探索到售後全流程，並獲 Visa、Mastercard、American Express、Adyen 等 20 多家背書；Mastercard 另推 Agent Pay for Machines 讓代理能自己發起與結算交易。<strong style="color:#a5b4fc;">和主軸的關係：</strong>這是「向代理交易收費」的基礎建設，補齊了廣告（免費用戶）與計費拒絕（濫用）之外的第三條變現線。（協定多為較早發布，此處為背景整理與編輯分析）
+</div>
+<div style="color:#94a3b8;font-style:italic;font-size:13px;margin-top:10px;">💡 重點一句話：AI 的變現不只賣訂閱，而是把「注意力、探測、交易」三個口子都裝上收費表。</div>
+<div style="font-size:13px;margin-top:8px;">🔗 <a href="https://blog.google/products/ads-commerce/agentic-commerce-ai-tools-protocol-retailers-platforms/" style="color:#06b6d4;text-decoration:none;">Google 官方部落格：agentic commerce 工具與協定</a> ｜ 來源：blog.google</div>
+</td></tr>
+</table>
+</td></tr>
+
+<tr><td style="padding:0 0 12px;background:#0f0f0f;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:22px 28px;">
+<div style="display:inline-block;background:#252525;color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:12px;">資安變成 AI 的第 4 條付費產品線：GPT-6 Cyber 傳將於 9/29 DevDay 預覽</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:10px;">
+據 Fortune 等媒體報導（<strong style="color:#e2e8f0;">據報導、官方尚未證實</strong>），OpenAI 將在 9 月 29 日舊金山 DevDay 預覽專攻滲透測試與漏洞研究的 <strong style="color:#e2e8f0;">GPT-6 Cyber</strong>，這會是今年第 4 個資安專用模型（前有 5.4／5.5／5.6 Cyber）。存取要走 Daybreak 計畫：需審核申請、身分驗證、持有 FIDO2 硬體金鑰，並分 Blue（防守）／Red（更嚴格）兩級。<strong style="color:#a5b4fc;">和主軸的關係：</strong>把最強的資安能力做成「要通過門檻＋付費」的獨立產品，正是「能力＝可計價商品」的另一種表現——連危險能力都被包成一條收費、可控管的產品線。
+</div>
+<div style="color:#94a3b8;font-style:italic;font-size:13px;margin-top:10px;">💡 重點一句話：AI 公司不再免費放出強能力，而是分級、驗身分、收費——安全與商業被綁在一起。</div>
+<div style="font-size:13px;margin-top:8px;">🔗 <a href="https://tech.yahoo.com/ai/chatgpt/articles/openai-reportedly-set-preview-gpt-180540929.html" style="color:#06b6d4;text-decoration:none;">報導：OpenAI 傳於 DevDay 預覽 GPT-6 Cyber</a> ｜ 來源：Fortune（轉載）</div>
+</td></tr>
+</table>
+</td></tr>
+
+<tr><td style="padding:0 0 12px;background:#0f0f0f;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:22px 28px;">
+<div style="display:inline-block;background:#252525;color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:12px;">MiniMax 悄悄上線 M3.1-Flash-Preview：無定價、無 model card，只在自家產品裡試</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:10px;">
+9 月 27 日，MiniMax 把新的程式碼模型 <strong style="color:#e2e8f0;">M3.1-Flash-Preview</strong> 直接塞進自家 MiniMax Code 代理工具，<strong style="color:#e2e8f0;">沒有 model card、沒有跑分報告、沒有公開定價</strong>，API 端點也上鎖，唯一試用管道就是它自己的產品。模型支援 100 萬 token 脈絡，並開出 low／medium／high／xhigh／max 五檔推理力道。<strong style="color:#a5b4fc;">和主軸的關係：</strong>「五檔推理」讓開發者能自己把成本、速度對難度做取捨（呼應本週的計價主題）；而「不透明定價＋只能在自家產品用」則是另一手——用產品綁定與資訊落差把用戶留住。
+</div>
+<div style="color:#94a3b8;font-style:italic;font-size:13px;margin-top:10px;">💡 重點一句話：連免費/透明的規格資訊都變少了，模型正被當成「產品內的黑盒零件」在賣。</div>
+<div style="font-size:13px;margin-top:8px;">🔗 <a href="https://www.minimax.io/blog/minimax-m3" style="color:#06b6d4;text-decoration:none;">MiniMax 官方部落格（M3 系列）</a> ｜ 來源：minimax.io（Flash-Preview 規格經第三方彙整）</div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="background:#0f0f0f;padding:8px 0 12px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:24px 28px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:16px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:14px;line-height:1.85;">
+<li style="margin-bottom:14px;">
+<strong style="color:#e2e8f0;">Stanford／Caltech 把 GPT-6 Astra 直接接上人形機器人、跳過訓練控制層。</strong>
+新專案 HomeBody 讓 Unitree G1 先探索陌生廚房、在 NVIDIA Isaac Sim 建數位分身與空間記憶，再由 Astra 直接呼叫「導航／抓取／開抽屜」等五個動作技能整理房間——中間<strong style="color:#e2e8f0;">沒有傳統 VLA（視覺-語言-動作）訓練出來的控制策略層</strong>。這挑戰了「機器人一定要先訓練動作策略」的主流做法，暗示前沿模型可能直接當機器人大腦。
+<span style="display:block;margin-top:4px;">🔗 <a href="https://tml.stanford.edu/homebody/" style="color:#06b6d4;text-decoration:none;">Stanford TML Lab：HomeBody</a></span>
+</li>
+<li style="margin-bottom:14px;">
+<strong style="color:#e2e8f0;">Meta 修補 AI 代理 Muse 可外洩郵件/檔案的漏洞（據 The Information 報導）。</strong>
+外部研究者透過 bug bounty 發現：Muse 給每位用戶的專屬安全 VM（放郵件、檔案等個資）可能被攻擊者存取，Meta 內部評為 SEV-2（五級中第三高）。Meta 已加強 App 內風險警語。這再次說明「給代理一個能存資料的環境」本身就是新的攻擊面。
+<span style="display:block;margin-top:4px;">🔗 <a href="https://www.thestar.com.my/tech/tech-news/2026/09/26/meta-bolsters-muse-safety-warning-after-security-vulnerability-found-the-information-reports" style="color:#06b6d4;text-decoration:none;">報導：Meta 強化 Muse 安全警語</a></span>
+</li>
+<li style="margin-bottom:14px;">
+<strong style="color:#e2e8f0;">349 個 AI agent skills 引用可被劫持的「佔位網域」，被導向詐騙頁。</strong>
+資安公司 Manifold Security 指出，眾多 agent skill 在程式碼裡寫死了像 third-party[.]com 這類佔位網域；這些休眠網域被人接手後，開始對 Windows 使用者投放偽裝成 Cloudflare 驗證的 ClickFix 詐騙——<strong style="color:#e2e8f0;">skill 本身一行程式都不用改</strong>，其中一個還被 fork 了 1,089 次。提醒：AI 供應鏈的每個外部連結都是風險。
+<span style="display:block;margin-top:4px;">🔗 <a href="https://hackread.com/placeholder-domains-ai-agent-skills-redirect-scams/" style="color:#06b6d4;text-decoration:none;">Hackread／Manifold Security 研究</a></span>
+</li>
+<li style="margin-bottom:0;">
+<strong style="color:#e2e8f0;">AI coding CLI 又一輪更新（9/26）。</strong>
+OpenAI Codex 發 0.157.1（含 GPT-6 Sol／Luna 支援）；GitHub Copilot CLI v1.0.89 加入路由分層的自動建議；Google Gemini CLI v0.62 nightly 改善 MCP 啟用設定；Alibaba Qwen Code v0.24.6 推「Hosted Harness」私有客戶端與受管執行時證明。工具層更新持續維持每週節奏。
+<span style="display:block;margin-top:4px;">🔗 <a href="https://releasebot.io/updates/github" style="color:#06b6d4;text-decoration:none;">GitHub / Copilot 更新彙整</a></span>
+</li>
+</ul>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="background:#0f0f0f;padding:0 0 12px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:24px 28px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:8px;">📖 今日概念｜模型蒸餾（Knowledge Distillation）</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:14px;">一句定義</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:4px;">模型蒸餾＝用一個「大而強的老師模型」的輸出，去教一個「小而便宜的學生模型」，讓小模型學到接近大模型的行為。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:16px;">生活化比喻</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:4px;">像考前抄學霸的完整筆記與詳解：你不用重讀整個學期，只要照著學霸「怎麼想、答案分布長怎樣」練，就能考出接近的成績。回到技術：學生模型不是背標準答案，而是模仿老師模型輸出的<strong style="color:#a5b4fc;">機率分布（soft labels）</strong>與推理痕跡，因此能用少得多的參數逼近大模型的表現。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:16px;">工作中的例子</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:4px;">合法版：公司把自家昂貴的大模型蒸餾成小模型，部署到邊緣裝置或降低推論成本。灰色版：有人不斷對別家封閉模型丟問題、蒐集大量回答，拿去訓練自己的模型——等於「隔空抄筆記」。這正是 Anthropic 對「被拒絕的請求」計費想擋的行為。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:16px;">常見誤解</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:4px;">誤解一：「蒸餾＝壓縮，會等比變笨。」其實好的蒸餾能在特定任務上保留大部分能力，只是泛化與長尾知識通常會流失。誤解二：「蒸餾一定違法。」用自己的模型蒸餾完全正常；問題出在<strong style="color:#a5b4fc;">未經授權、拿別人 API 輸出來訓練競品</strong>，這才是多數服務條款禁止的。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:16px;">與今天主軸的關係</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:4px;">理解蒸餾，就懂為什麼「免費的拒絕」對模型公司是風險：每一次免費探測，都可能是別人蒐集訓練資料、想蒸走你能力的一步。把拒絕變成要付費，就是提高這種大規模「隔空抄筆記」的門檻——這是本週計價轉向背後的技術動機。</div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 半導體 AI 專區 -->
+<tr><td style="background:#0f0f0f;padding:0 0 12px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:24px 28px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜微影疊對（Overlay）誤差的機器學習前饋控制</div>
+<div style="margin-bottom:14px;">
+<span style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);color:#fff;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">IC 製造</span>
+<span style="display:inline-block;background:#252525;color:#94a3b8;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;margin-left:6px;">背景知識</span>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:6px;">▍問題與流程位置</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:4px;">晶片是一層層堆疊出來的，每一層的圖案都必須精準對齊上一層。<strong style="color:#a5b4fc;">疊對（Overlay）</strong>就是量測「這一層相對於下一層，偏移了多少」。在先進節點與多重曝光、EUV 製程下，允許的疊對誤差已被壓到 <strong style="color:#e2e8f0;">2 奈米甚至以下</strong>；偏一點點就會造成接觸不良、良率下滑。位置在<strong style="color:#a5b4fc;">微影（曝光）</strong>這一站，是決定良率的關鍵旋鈕之一。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:16px;">▍AI 如何介入（對比過去）</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:4px;"><strong style="color:#e2e8f0;">過去（Run-to-Run 回饋控制）：</strong>量完這批的疊對誤差，再回頭修正「下一批」的掃描機參數（透鏡、晶圓載台、光罩台位置）——本質是「錯了才補、慢一拍」。<strong style="color:#e2e8f0;">現在（前饋＋機器學習）：</strong>把上游製程的量測資訊（例如晶圓形變、對準訊號、混合式量測）當輸入，用 ML 模型<strong style="color:#a5b4fc;">在曝光前就預測</strong>這片晶圓會有多少疊對偏移，逐片（甚至逐次曝光）提前補償。效率與品質的差別：從「批對批、事後補救」變成「片對片、事前預測」，殘餘疊對誤差可穩定壓到 <strong style="color:#e2e8f0;">1 奈米以下</strong>，減少重工、拉高良率。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:16px;">▍資料與產出</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:4px;">輸入：對準（alignment）訊號、疊對量測、CD/形貌量測、機台狀態與歷史修正量。產出：掃描機每片/每場的高階修正參數（higher-order corrections）。這是典型的「用感測資料預測製程輸出、再回饋成機台設定」的閉迴路。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:16px;">▍如何驗證</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:4px;">用獨立的疊對量測（scatterometry / 影像式）比對修正後的實際偏移，看殘餘誤差是否下降；以良率、重工率、on-product overlay 分布做長期監控，並保留「模型失準時退回傳統 R2R」的保底機制。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:16px;">▍限制與風險</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:4px;">量測本身有噪聲與延遲；模型在新製程、新機台上可能<strong style="color:#a5b4fc;">分布外失準（out-of-distribution）</strong>；過度依賴前饋可能掩蓋機台真正的漂移。多數方案仍是「ML 前饋＋傳統 R2R 保底」並行，而非全交給 AI。（本段為背景知識，取自公開的 SPIE 論文與製程控制文獻，非本週新聞）</div>
+
+<div style="color:#67e8f9;font-weight:700;font-size:14px;margin-top:18px;border-top:1px solid #333;padding-top:14px;">👷 對半導體工作者的意義：對微影、製程整合與良率工程師而言，最值得動手的下一步是把「事後 R2R」升級為「事前前饋預測」——先盤點手上已有的對準與量測資料是否足以訓練模型，並設計好模型失準時的保底回退，別讓 AI 修正變成無人監督的黑盒。</div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="background:#0f0f0f;padding:0 0 16px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:13px;">
+<tr><td style="padding:24px 28px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.85;">
+<li style="margin-bottom:10px;">當 AI 供應商開始對「免費用戶靠廣告、濫用探測靠計費」兩端收錢，你手上的 AI 工具三年後的真實單位成本，可能長什麼樣？你現在的預算假設撐得住嗎？</li>
+<li style="margin-bottom:10px;">如果連「被模型拒絕」都要付費，代表供應商正把「防止能力被偷」寫進條款——當你要把製程或設計資料交給雲端模型時，這對你的資料落地與供應商選擇，帶來哪些新的取捨？</li>
+<li style="margin-bottom:0;">Anthropic 用「計價」提高濫用門檻、Manifold 又揭露 agent skill 被劫持——當防禦手段從「技術過濾」轉向「經濟門檻」，你會怎麼判斷自己團隊的 AI 使用，哪些屬於「正常」、哪些可能被系統判為「探測」？</li>
+</ul>
+<div style="color:#a5b4fc;font-weight:700;font-size:15px;margin-top:16px;border-top:1px solid #333;padding-top:14px;">🎒 今日帶走：AI 的免費補貼期正在收尾——這一週，AI 大廠同時把「免費用戶」和「白吃的探測」裝上收費表，該把 AI 成本當成一條要管理的真實預算線了。</div>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 歷史電子報入口 -->
+<tr><td style="background:#0f0f0f;padding:0 0 16px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:22px 28px;text-align:center;">
+<div style="font-size:16px;font-weight:700;color:#ffffff;">📚 想回顧之前的內容？</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:8px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</div>
+<div style="margin-top:12px;"><a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-weight:600;">查看歷史電子報</a></div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- Footer -->
+<tr><td style="background:#141414;border-radius:0 0 16px 16px;padding:24px 28px;text-align:center;">
+<div style="color:#cbd5e1;font-size:14px;line-height:1.8;">📬 覺得有用？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">分享給朋友訂閱這份電子報</a></div>
+<div style="color:#64748b;font-size:13px;line-height:1.8;margin-top:8px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></div>
+<div style="color:#475569;font-size:12px;line-height:1.7;margin-top:14px;border-top:1px solid #2a2a2a;padding-top:14px;">© 2026 企鵝的 AI 每日電子報🐧<br>本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</div>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>
