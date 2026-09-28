@@ -828,3 +828,16 @@
 {"date": "2026-09-28", "title": "主軸：免費午餐吃到飽的日子在收尾——AI 大廠這週同時對免費用戶（ChatGPT 廣告變現）和白吃探測（Anthropic 計費拒絕）開始收錢"}
 {"date": "2026-09-28", "title": "概念：模型蒸餾（Knowledge Distillation）"}
 {"date": "2026-09-28", "title": "半導體專區：IC 製造｜微影疊對（Overlay）誤差的機器學習前饋控制"}
+{"date": "2026-09-29", "title": "NVIDIA Open Agent Safety Platform：OpenShell 執行環境＋Sentry 帶外監工進 BlueField-4 DPU，100+ 組織共建"}
+{"date": "2026-09-29", "title": "H Company 開源 Holo4 電腦操作代理（27B 密集／35B-A3B MoE），跨桌面/網頁/Android/程式沙盒"}
+{"date": "2026-09-29", "title": "Claude Sonnet 5.5 發表：每件工作快約30%省約30%、逼近 Opus 5.5，同日成 Claude Code 預設、進 GitHub Copilot GA 與 AWS Bedrock"}
+{"date": "2026-09-29", "title": "Vercel AI SDK ai@7.0.122 補供應商端工具執行錯誤處理與串流重連；CrewAI v1.15.23 強化 tracing span"}
+{"date": "2026-09-29", "title": "ToolSearcher：用強化學習做大規模工具選擇最佳化（arXiv 2609.30906，NeurIPS 2026）"}
+{"date": "2026-09-29", "title": "OpenAI DevDay 2026 今日於舊金山登場（截稿前無官方新發布，傳聞不採信）"}
+{"date": "2026-09-29", "title": "TSMC 北美 OIP 論壇：Synopsys/Cadence/Siemens 端出代理式 EDA 與 A14 設計流程（9/23）"}
+{"date": "2026-09-29", "title": "Kaggle Game Arena：用下棋/撲克/狼人殺對局評測 LLM（arXiv 2609.31473）"}
+{"date": "2026-09-29", "title": "AI coding 週更：OpenAI Codex CLI 0.158.0／Claude Code v2.1.284／LangChain 1.4.3"}
+{"date": "2026-09-29", "title": "NVIDIA 董事會追加 1,500 億美元股票回購授權（剩餘約 2,350 億美元）"}
+{"date": "2026-09-29", "title": "主軸：看管 AI 代理的鎖從軟體搬進晶片——NVIDIA 把監工做進獨立 DPU（Sentry/BlueField-4）與被監代理帶外分家"}
+{"date": "2026-09-29", "title": "概念：帶外監控與硬體信任根（Out-of-Band／Root of Trust）"}
+{"date": "2026-09-29", "title": "半導體專區：EDA 工具｜高階合成（HLS）的 AI QoR 最佳化（proxy 比較式獎勵＋選擇性真合成，HLS-Seek）"}
