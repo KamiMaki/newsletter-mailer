@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的 AI 每日電子報🐧</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;padding:20px 0;">
+<tr><td align="center">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+
+<!-- Header -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px 16px 0 0;padding:32px 28px;text-align:center;">
+<div style="font-size:26px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:8px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#c7d2fe;margin-top:10px;">2026 年 9 月 30 日（週三）</div>
+</td></tr>
+
+<!-- 30秒重點 -->
+<tr><td style="background:#1a1a1a;padding:24px 28px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.8;">
+<li style="font-weight:700;color:#ffffff;">今日主軸：<strong style="color:#a5b4fc;">AI 賣的東西，從「你問一次算一次」變成「一台替你不關機的雲端電腦」</strong>——OpenAI DevDay 2026 把「常駐算力」做成產品：常駐代理 Dots 各配一台雲端電腦全天候跑、Ultrafast 把「速度」變成可加價的資源階層，再用 GPT-6.1 Sol 砍價到約五分之一，讓「養一群長跑代理」第一次算得起帳。</li>
+<li>三塊拼圖一起看：<strong style="color:#e2e8f0;">Dots</strong>（跑在 GPT-6 Astra、每個代理獨佔一台雲端電腦、可接 4,000+ App）＋<strong style="color:#e2e8f0;">Ultrafast／Pro 500</strong>（速度最高 8 倍、月費 500 美元、額度 25 倍）＋<strong style="color:#e2e8f0;">GPT-6.1 Sol</strong>（每百萬 tokens 輸入 2 美元／輸出 10 美元／快取 0.1 美元）＋ Codex 全面上雲。</li>
+<li>其他值得知道：<strong style="color:#e2e8f0;">NVIDIA</strong> 在量子週推出 CUDA-Q Logical（號稱把費米實驗室的容錯架構開發從 5 個月縮到 3 週）；GitHub Copilot、Codex、Claude Code 同一兩天把 <strong style="color:#e2e8f0;">GPT-6.1 Sol／Sonnet 5.5</strong> 設為可選或預設；Windsurf 更名 Devin Desktop 並支援「用 ChatGPT 登入」。</li>
+<li><strong style="color:#67e8f9;">對半導體工作者最相關的一句：</strong>「常駐代理＝一台一直開著的機器」意味著資料中心要的是<strong style="color:#e2e8f0;">全天候、可預留的推論算力</strong>，不再只是尖峰時的爆量——這正是你熟悉的「產能利用率 vs 閒置成本」問題被搬到 GPU 機房，也把推論晶片、記憶體與電力的長期需求往上墊。</li>
+</ul>
+</td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="padding:20px 0;background:#0f0f0f;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+<tr><td style="padding:28px;">
+<div style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);color:#fff;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;">🎯 今天的主軸</div>
+<div style="font-size:19px;font-weight:800;color:#ffffff;margin-top:14px;line-height:1.5;">AI 的計價單位，正從「一次問答」變成「一台不關機的雲端電腦」——OpenAI DevDay 把常駐算力做成產品，再用便宜的 GPT-6.1 Sol 讓它算得起帳</div>
+
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:18px;">
+過去你用 AI，像去自助洗衣店：投一次幣、洗一桶、走人——不用時，機器是別人的。這兩天 OpenAI 在 DevDay 2026 端出的東西，等於改成<strong style="color:#a5b4fc;">「在你家擺一台一直運轉的洗衣機」</strong>：它替你把事情持續辦著，好處是隨時都在動，代價是<strong style="color:#a5b4fc;">電錶（帳單）也一直在跳</strong>。這個轉變的技術白話是——AI 賣的從「一次推論」變成「一份長期佔用的算力」。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:22px;">▍共同變化</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:6px;">
+9 月 29 日的 DevDay 2026 一口氣發布 20 多項，但把幾件主打拼起來，方向出奇一致——<strong style="color:#a5b4fc;">把「持續運轉的算力」包裝成可以賣的產品</strong>。第一塊是 <strong style="color:#e2e8f0;">Dots</strong>：一種「<strong style="color:#a5b4fc;">常駐代理（always-on agent）</strong>」，跑在 GPT-6 Astra 上，<strong style="color:#a5b4fc;">每一個 Dot 各配一台自己的雲端電腦</strong>（含瀏覽器），能接超過 4,000 個 App，全天候朝你設定的目標推進；Pro 與 Business Premium 用戶先送第一個 Dot。第二塊是 <strong style="color:#e2e8f0;">Ultrafast</strong> 與 <strong style="color:#e2e8f0;">Pro 500</strong>：把「速度」單獨拉出來賣——Ultrafast 讓 Astra 跑得更快（官方稱 Codex 內最高 8 倍、API 最高 6 倍），代價是約 6 倍價格；月費 500 美元的 Pro 500 方案，額度給到 Plus 的 25 倍。第三塊是 <strong style="color:#e2e8f0;">GPT-6.1 Sol</strong>：一顆便宜前沿模型，API 每百萬 tokens <strong style="color:#a5b4fc;">輸入 2 美元、輸出 10 美元、快取輸入僅 0.1 美元</strong>，官方定位為「接近 Astra 的能力、約五分之一的價」。再加上 <strong style="color:#e2e8f0;">Codex 全面上雲</strong>（可從手機等任何裝置啟動雲端任務）——四件事指向同一個底層動作：<strong style="color:#a5b4fc;">運算搬到雲端、而且開始「一直開著」</strong>。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:22px;">▍為什麼放在一起看</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:6px;">
+因為它們是同一筆帳的三隻腳。<strong style="color:#a5b4fc;">Dots 決定「要一直佔用算力」</strong>（常駐＝機器不關機）；<strong style="color:#a5b4fc;">Ultrafast 決定「佔多快的算力、願意加多少價」</strong>（速度變成可買的資源檔位）；<strong style="color:#a5b4fc;">GPT-6.1 Sol 決定「這樣佔算得算不起帳」</strong>——如果每個常駐代理都燒旗艦模型的錢，沒人養得起，所以必須先把單價砍到五分之一，常駐才成立。少了便宜模型，Dots 只是展示品；少了 Dots，砍價只是又一次降價。三者合起來，才是「把常駐算力做成一門生意」。這也解釋了為什麼 <strong style="color:#e2e8f0;">Codex 要上雲</strong>：常駐代理不能綁在你的筆電上（筆電會關機），運算得放在雲端那台永遠醒著的機器裡。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:22px;">▍過去 vs. 現在</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:6px;">
+<strong style="color:#e2e8f0;">過去：</strong>算力是「隨需（on-demand）」的——你送一個 prompt，雲端臨時撥一段 GPU 幫你算完就釋放，計費看「你算了多少 token」。不用，就不花錢。<br>
+<strong style="color:#e2e8f0;">現在：</strong>常駐代理是「預留（provisioned）」的——為了隨時能動，它需要一台幾乎一直待命的雲端電腦。計費從「用多少算多少」往「<strong style="color:#a5b4fc;">佔多久、佔多快</strong>」靠攏（Pro 500 這種高額度月費就是預留式定價的味道）。差別的關鍵字叫<strong style="color:#a5b4fc;">閒置成本</strong>：隨需模式沒人用就零成本，預留模式就算代理在發呆，那台機器的電還是照燒。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:22px;">▍背後邏輯</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:6px;">
+對 OpenAI，這是把收入從「波動的用量」變成「可預期的預留」——常駐代理與高階月費，都是把使用者綁進<strong style="color:#a5b4fc;">持續佔用</strong>的模式，營收更穩、也更黏。對整個產業，它把壓力往下傳到<strong style="color:#a5b4fc;">基礎建設</strong>：一億個常駐代理＝一億台一直開著的虛擬電腦，需要的是「全天候、可長期預留」的推論算力，而不是尖峰時擠一下就好。這正是為什麼近月一路傳出的 GPU、推論晶片、記憶體與電力議題，會被這種產品設計持續放大——<strong style="color:#a5b4fc;">常駐把「尖峰需求」拉平成「基載需求」</strong>。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:22px;">▍對你的工作</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:6px;">
+無論你是工程主管還是開發者，接下來評估 AI 工具，問題會從「這個模型多聰明」變成「<strong style="color:#a5b4fc;">我要不要為它一直開著付錢、值不值得</strong>」。一個常駐代理若每天替你顧著 CI、監看 log、跑回歸測試，它的價值要拿「省下的人時」去對比「它 24 小時佔算力的月費」；若它大半時間在發呆，你付的就是純閒置成本。實務上會出現新的成本治理題：哪些任務值得常駐（真的需要隨時反應）、哪些回到隨需就好（跑完即走）、Ultrafast 這種加速檔位只在哪些關鍵路徑上開。<strong style="color:#a5b4fc;">先想清楚利用率，再決定要不要常駐</strong>，會比一路開到底省很多。
+</div>
+
+<div style="background:#252525;border-radius:8px;padding:12px;margin-top:18px;">
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;">👤 編輯分析（非官方說法）</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:6px;">把「速度」單獨拆成 Ultrafast 加價檔、把「額度」堆成 Pro 500，其實是雲端產業成熟的訊號：當 AI 從「炫能力」走到「賣算力」，定價就會長得越來越像 AWS——按規格、按時長、按速度分級。<strong style="color:#a5b4fc;">這是「可能影響」而非官方承諾</strong>：真正決定常駐代理能不能普及的，是它閒置時的成本能不能壓到夠低，這點官方尚未給出明確數字。</div>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:22px;">▍限制與待驗證</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:6px;">
+一，官方公布的多是「上限」數字（最高 8 倍、25 倍額度、五分之一價），<strong style="color:#a5b4fc;">實際體感與帳單要落地才算數</strong>——尤其常駐代理閒置時到底怎麼計費、會不會偷跑成本，官方細節仍不明。二，Ultrafast 的「約 300 tokens／秒」等具體吞吐數字多見於媒體轉述，宜以官方頁面為準。三，Dots 目前先給 Pro／Business Premium，企業／教育／醫療仍是預設關閉的 beta，成熟度與安全邊界（一個能自己開瀏覽器、接 4,000 App 的常駐代理，權限怎麼收斂）都還要看。
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:22px;">▍重點一句話</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:6px;">
+DevDay 2026 真正的轉折不是又一顆更強的模型，而是<strong style="color:#a5b4fc;">把 AI 的販賣單位從「一次問答」推向「一份長期佔用的算力」</strong>——於是「利用率」與「閒置成本」，從此變成你評估 AI 的新座標。
+</div>
+
+<div style="font-size:13px;margin-top:20px;border-top:1px solid #333;padding-top:14px;">🔗 <a href="https://openai.com/index/devday-2026-recap/" style="color:#06b6d4;text-decoration:none;">OpenAI 官方：DevDay 2026 Recap</a> ｜ <a href="https://openai.com/index/introducing-gpt-6-1-sol/" style="color:#06b6d4;text-decoration:none;">GPT-6.1 Sol</a> ｜ 來源：openai.com</div>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 主軸的衍生新聞 -->
+<tr><td style="padding:0 0 12px;background:#0f0f0f;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:22px 28px;">
+<div style="display:inline-block;background:#252525;color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:12px;">Codex 全面上雲：coding agent 的運算離開你的筆電，搬進「一直醒著」的雲端</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:10px;">
+DevDay 同場，OpenAI 把 <strong style="color:#e2e8f0;">Codex 推上雲端</strong>——你可以從手機或任何裝置啟動一個編碼任務，讓它在雲端跑，人離線它照做；官方 Codex changelog 也在 9/28–9/29 連發 0.158～0.159.1，把 <strong style="color:#e2e8f0;">GPT-6.1 Sol 設為預設模型</strong>、加入回應中即時打斷（instant_interrupt）與 MCP 的 OAuth 驗證。<strong style="color:#a5b4fc;">和主軸的關係：</strong>常駐與雲端是一體兩面——代理要能「一直替你跑」，運算就不能綁在會關機的本機上，必須搬到那台永遠醒著的雲端機器。這是「把 coding 的算力預留在雲端」的具體落地。
+</div>
+<div style="color:#94a3b8;font-style:italic;font-size:13px;margin-top:10px;">💡 重點一句話：當運算搬上雲、還一直開著，你買的就從「跑一次的錢」變成「掛在雲上的月費」。</div>
+<div style="font-size:13px;margin-top:8px;">🔗 <a href="https://learn.chatgpt.com/docs/changelog" style="color:#06b6d4;text-decoration:none;">OpenAI Codex 官方 changelog</a> ｜ 來源：openai.com、learn.chatgpt.com</div>
+</td></tr>
+</table>
+</td></tr>
+
+<tr><td style="padding:0 0 12px;background:#0f0f0f;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:22px 28px;">
+<div style="display:inline-block;background:#252525;color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:12px;">便宜前沿是常駐代理的「燃料」：GPT-6.1 Sol／Sonnet 5.5 當天灌進各家編碼工具</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:10px;">
+就在 Sol 發表前後，<strong style="color:#e2e8f0;">GitHub Copilot</strong> 於 9/28 加入 Anthropic 的 <strong style="color:#e2e8f0;">Claude Sonnet 5.5</strong>（1M context）、9/29 加入 <strong style="color:#e2e8f0;">GPT-6.1 Sol</strong>；<strong style="color:#e2e8f0;">Claude Code</strong> 也把預設模型換成 Sonnet 5.5（$2／$10 per Mtok）。<strong style="color:#a5b4fc;">和主軸的關係：</strong>常駐代理要划算，靠的就是這批「又快又便宜的前沿模型」當燃料——單價越低，越多任務值得「一直開著跑」。工具端把便宜模型設為預設，等於替常駐化鋪好油管。（模型的即時到位本身近期已談過，此處只聚焦它如何餵養常駐算力這條線）
+</div>
+<div style="color:#94a3b8;font-style:italic;font-size:13px;margin-top:10px;">💡 重點一句話：常駐能不能普及，取決於燃料（模型單價）夠不夠便宜，而不是模型夠不夠聰明。</div>
+<div style="font-size:13px;margin-top:8px;">🔗 <a href="https://github.blog/changelog/2026-09-29-gpt-6-1-sol-in-github-copilot" style="color:#06b6d4;text-decoration:none;">GitHub Copilot changelog（GPT-6.1 Sol）</a> ｜ 來源：github.blog、code.claude.com</div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="background:#0f0f0f;padding:8px 0 12px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:24px 28px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:16px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:14px;line-height:1.85;">
+<li style="margin-bottom:14px;">
+<strong style="color:#e2e8f0;">NVIDIA 在量子週推出 CUDA-Q Logical，主攻容錯量子的「協同設計」瓶頸（9/28）。</strong>
+它是一層編排／編譯工具，把邏輯演算法、錯誤更正碼、即時解碼器與 QPU 微架構統一進同一條流程；NVIDIA 稱費米實驗室用它把容錯架構開發從 5 個月縮到約 3 週。這是量子軟體工具、非新 AI 模型，但反映「用軟體把難算的設計流程自動化」正往量子擴散。
+<span style="display:block;margin-top:4px;">🔗 <a href="https://nvidianews.nvidia.com/news/nvidia-expands-open-source-cuda-q-platform-for-fault-tolerant-quantum-computing" style="color:#06b6d4;text-decoration:none;">NVIDIA 官方新聞：CUDA-Q Logical</a></span>
+</li>
+<li style="margin-bottom:14px;">
+<strong style="color:#e2e8f0;">Claude Code 連更 v2.1.284／2.1.285，加入桌面開啟與「供應商白名單」（9/28–9/29）。</strong>
+2.1.284 把預設 Sonnet 升到 5.5、新增 /rate-limit-options 與 /mcp reconnect all；2.1.285 加入 claude --desktop、allowedProviders（限定只走 Anthropic／Bedrock／Vertex 等指定 API 供應商）與 CLAUDE_CODE_DISABLE_WEB_FETCH。對企業導入者，allowedProviders 這種「把資料出口收窄」的開關，正好呼應常駐代理時代的治理需求。
+<span style="display:block;margin-top:4px;">🔗 <a href="https://code.claude.com/docs/en/changelog" style="color:#06b6d4;text-decoration:none;">Claude Code 官方 changelog</a></span>
+</li>
+<li style="margin-bottom:14px;">
+<strong style="color:#e2e8f0;">Windsurf 更名 Devin Desktop，3.10.48 支援「用 ChatGPT 登入」（9/29）。</strong>
+更名後的 Devin Desktop 讓有 ChatGPT Plus／Pro 的使用者直接在編輯器內用 GPT 模型，並加入 language server 的記憶體／CPU 診斷工具。值得注意的是「Sign in with ChatGPT」正被多家工具採用——ChatGPT 帳號逐漸變成 AI 生態的登入與計費入口。
+<span style="display:block;margin-top:4px;">🔗 <a href="https://docs.devin.ai/desktop/changelog" style="color:#06b6d4;text-decoration:none;">Devin Desktop（前 Windsurf）changelog</a></span>
+</li>
+<li style="margin-bottom:0;">
+<strong style="color:#e2e8f0;">Vercel AI SDK 一批套件更新，主打「代理 harness」的穩定性（9/29）。</strong>
+包含 @ai-sdk/harness@1.0.133（修復 session 管理與 surface detach、新增工具生命週期事件與 sandbox 憑證解析輔助）與 @ai-sdk/openai@4.0.81。這類「讓代理長時間穩定跑」的底層補強，正是常駐代理要能 24 小時運轉的必要工程。
+<span style="display:block;margin-top:4px;">🔗 <a href="https://github.com/vercel/ai/releases" style="color:#06b6d4;text-decoration:none;">Vercel AI SDK Releases（GitHub）</a></span>
+</li>
+</ul>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="background:#0f0f0f;padding:0 0 12px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:24px 28px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:8px;">📖 今日概念｜預留式 vs. 隨需式運算（Provisioned vs. On-demand）與閒置成本</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:14px;">一句定義</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:4px;"><strong style="color:#a5b4fc;">隨需式</strong>＝要用才臨時撥算力、用完就還，沒用不花錢；<strong style="color:#a5b4fc;">預留式</strong>＝事先包下一段算力讓它隨時待命，換來「隨時能反應」，代價是<strong style="color:#a5b4fc;">閒置時也照付</strong>（這筆就叫閒置成本）。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:16px;">生活化比喻</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:4px;">隨需式像叫 Uber——要出門才叫車、下車就沒事；預留式像<strong style="color:#a5b4fc;">請一位待命司機整天守在門口</strong>，你隨時上車就走，但他坐在那裡發呆的每一小時，你都要付薪水。回到技術：常駐代理 Dots 就是那位待命司機，它「一直醒著」帶來的方便，本質是你替那台雲端電腦付了整天的待命費。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:16px;">工作中的例子</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:4px;">半導體與 IT 人其實天天在算這筆帳：<strong style="color:#a5b4fc;">機台／產能利用率</strong>就是同一個問題——一台曝光機買下來，開著不跑一樣折舊、一樣要人；雲端的 Reserved Instance（預留實例）vs Spot（隨需競價）、EDA 授權的固定席次 vs 按次雲端跑，全是「預留的穩定 vs 隨需的省錢」在拉扯。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:16px;">常見誤解</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:4px;">誤解一：「常駐（一直開）一定比較貴。」不一定——若利用率夠高（那台機器大部分時間都在真的幹活），預留反而比每次臨時撥更便宜、更快。誤解二：「隨需一定省。」當你頻繁、密集地用，隨需的單位成本與排隊延遲會反過來咬人。<strong style="color:#a5b4fc;">關鍵永遠是利用率</strong>，不是「開著」或「關著」本身。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:16px;">與今天主軸的關係</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.7;margin-top:4px;">DevDay 的常駐代理，等於把 AI 從「隨需」往「預留」推。懂了這組概念，你就懂為什麼該問的不是「Dot 聰不聰明」，而是「<strong style="color:#a5b4fc;">我這個任務的利用率夠不夠高，值不值得讓它一直開著</strong>」——這也是接下來 AI 成本治理的核心提問。</div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 半導體 AI 專區 -->
+<tr><td style="background:#0f0f0f;padding:0 0 12px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:24px 28px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜先進封裝的「熱翹曲」預測——用圖神經網路把幾天的模擬壓到幾秒</div>
+<div style="margin-bottom:14px;">
+<span style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);color:#fff;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">IC 製造</span>
+<span style="display:inline-block;background:#252525;color:#94a3b8;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;margin-left:6px;">背景知識</span>
+</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:6px;">▍問題與流程位置</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:4px;">當多顆 chiplet 疊在一起做 2.5D／3D 異質整合（HBM、SiP、先進封裝），不同材料的熱膨脹係數不一樣，受熱一冷一熱就會<strong style="color:#a5b4fc;">翹曲（warpage）</strong>——像三夾板受潮拱起來。翹曲太大會導致接點裂開、對位失準、良率崩掉，是封裝可靠度的頭號難題之一。它的流程位置在<strong style="color:#e2e8f0;">封裝設計與 floorplan 階段</strong>：工程師想在「還沒真的做出來」之前，就預測某種堆疊佈局會翹多少。<strong style="color:#a5b4fc;">（注意：這談的是機械變形，不是散熱）</strong></div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:16px;">▍AI 如何介入（對比過去）</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:4px;"><strong style="color:#e2e8f0;">過去：</strong>用<strong style="color:#a5b4fc;">有限元素法（FEM）</strong>做熱機械模擬（如 COMSOL），準是準，但一次要算幾小時到幾天，設計師想多試幾種佈局幾乎不可能——這使「翹曲」淪為事後驗證，而非設計時的即時參考。<strong style="color:#e2e8f0;">現在（以研究 WarPGNN 為例）：</strong>把多晶片 floorplan 編碼成精簡的圖（Transitive Closure Graph），用<strong style="color:#a5b4fc;">物理感知的圖神經網路</strong>擷取階層特徵，再用 U-Net 式解碼器直接「畫出」整片翹曲分布圖，跳過 FEM 的數值求解。效率與品質的差別：從「一種佈局等半天」變成「一秒內看結果」，於是翹曲第一次能<strong style="color:#a5b4fc;">在設計迴圈裡即時比較</strong>，設計師可以邊調 floorplan 邊看翹曲怎麼變。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:16px;">▍資料與產出</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:4px;">輸入：多晶片 floorplan 的圖表示；輸出：全片的<strong style="color:#a5b4fc;">翹曲分布圖</strong>（不只一個數字，而是整面的變形場）。訓練用 FEM／COMSOL 的模擬結果當標準答案（ground truth），並特別測「沒見過的新佈局」上還準不準（遷移能力）。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:16px;">▍如何驗證</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:4px;">論文回報：相較 2D FEM 快約 <strong style="color:#e2e8f0;">206 倍</strong>、相較 3D FEM（COMSOL）快約 <strong style="color:#e2e8f0;">十萬倍量級</strong>；全尺度正規化 RMSE 約 <strong style="color:#e2e8f0;">1.26%</strong>、翹曲值誤差約 <strong style="color:#e2e8f0;">2.21%</strong>；在沒見過的資料上正規化 RMSE 約 <strong style="color:#e2e8f0;">3.69%</strong>。最終仍以 FEM／實測為準，模型是「快篩」而非取代簽核。</div>
+
+<div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:16px;">▍限制與風險</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:4px;">這是<strong style="color:#a5b4fc;">學術研究成果（arXiv 2603.18581）</strong>，非量產落地的商用工具，數字取自論文、非產線實測；模型在訓練分布外（全新材料組合、極端堆疊）可能<strong style="color:#a5b4fc;">失準</strong>；且它預測的是「模擬會給的答案」，不等於真實矽的行為，仍需 FEM 與實測把關。切勿把研究數字當成任何廠商的量產成效。</div>
+
+<div style="color:#67e8f9;font-weight:700;font-size:14px;margin-top:18px;border-top:1px solid #333;padding-top:14px;">👷 對半導體工作者的意義：對做先進封裝、SiP／chiplet 佈局與可靠度的工程師，最值得借鏡的是「<strong style="color:#67e8f9;">用機器學習當 FEM 的快篩，把慢模擬留給最後驗證</strong>」這個分工——它讓翹曲從事後才發現的地雷，變成設計時就能反覆試的旋鈕；下一步可留意各家 EDA／封裝工具是否把這類代理模型（surrogate model）納入設計流程。</div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="background:#0f0f0f;padding:0 0 16px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:13px;">
+<tr><td style="padding:24px 28px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.85;">
+<li style="margin-bottom:10px;">當 AI 從「用一次算一次」變成「一直開著算」，你手上的工作裡，哪些任務的利用率高到值得養一個常駐代理、哪些其實回到隨需就好？你會用什麼指標（省下的人時？回應時效？）來畫這條線？</li>
+<li style="margin-bottom:10px;">你早就在用「產能利用率 vs 閒置成本」管機台與雲端資源——如果把同一套算盤搬去管 AI 代理，你的團隊現在有沒有人真的在盯「AI 算力的利用率」？還是只看月底帳單被嚇一跳？</li>
+<li style="margin-bottom:0;">如果「常駐代理」把推論需求從尖峰拉成基載，長期會把資料中心的電力、記憶體與推論晶片需求墊高一整層——身處半導體，你認為這對哪個環節（先進封裝？HBM？電源／散熱？）的機會最實在，又最可能被高估？</li>
+</ul>
+<div style="color:#a5b4fc;font-weight:700;font-size:15px;margin-top:16px;border-top:1px solid #333;padding-top:14px;">🎒 今日帶走：DevDay 2026 把 AI 的販賣單位從「一次問答」推向「一份長期佔用的算力」——從今天起，評估 AI 的關鍵字不再只是「多聰明」，而是「利用率夠不夠高、值不值得一直開著」。</div>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 歷史電子報入口 -->
+<tr><td style="background:#0f0f0f;padding:0 0 16px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:22px 28px;text-align:center;">
+<div style="font-size:16px;font-weight:700;color:#ffffff;">📚 想回顧之前的內容？</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;margin-top:8px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</div>
+<div style="margin-top:12px;"><a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-weight:600;">查看歷史電子報</a></div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- Footer -->
+<tr><td style="background:#141414;border-radius:0 0 16px 16px;padding:24px 28px;text-align:center;">
+<div style="color:#cbd5e1;font-size:14px;line-height:1.8;">📬 覺得有用？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">分享給朋友訂閱這份電子報</a></div>
+<div style="color:#64748b;font-size:13px;line-height:1.8;margin-top:8px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></div>
+<div style="color:#475569;font-size:12px;line-height:1.7;margin-top:14px;border-top:1px solid #2a2a2a;padding-top:14px;">© 2026 企鵝的 AI 每日電子報🐧<br>本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</div>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>

@@ -841,3 +841,14 @@
 {"date": "2026-09-29", "title": "主軸：看管 AI 代理的鎖從軟體搬進晶片——NVIDIA 把監工做進獨立 DPU（Sentry/BlueField-4）與被監代理帶外分家"}
 {"date": "2026-09-29", "title": "概念：帶外監控與硬體信任根（Out-of-Band／Root of Trust）"}
 {"date": "2026-09-29", "title": "半導體專區：EDA 工具｜高階合成（HLS）的 AI QoR 最佳化（proxy 比較式獎勵＋選擇性真合成，HLS-Seek）"}
+{"date": "2026-09-30", "title": "OpenAI DevDay 2026：發表常駐代理 Dots（各配一台雲端電腦）、Ultrafast 速度階層、Pro 500 方案、Codex 上雲"}
+{"date": "2026-09-30", "title": "OpenAI GPT-6.1 Sol：接近 Astra 能力、約五分之一價（輸入2/輸出10/快取0.1 美元 per Mtok），API 立即可用"}
+{"date": "2026-09-30", "title": "NVIDIA CUDA-Q Logical：容錯量子的協同設計編排層，稱費米實驗室架構開發 5 個月縮到 3 週"}
+{"date": "2026-09-30", "title": "GitHub Copilot 加入 Claude Sonnet 5.5（9/28）與 GPT-6.1 Sol（9/29）"}
+{"date": "2026-09-30", "title": "Claude Code v2.1.284／2.1.285：預設改 Sonnet 5.5、新增 claude --desktop 與 allowedProviders 供應商白名單"}
+{"date": "2026-09-30", "title": "OpenAI Codex 0.158～0.159.1：GPT-6.1 Sol 設為預設、instant_interrupt、MCP OAuth"}
+{"date": "2026-09-30", "title": "Windsurf 更名 Devin Desktop v3.10.48：新增用 ChatGPT 登入"}
+{"date": "2026-09-30", "title": "Vercel AI SDK 更新：@ai-sdk/harness@1.0.133 強化代理 harness 穩定性、@ai-sdk/openai@4.0.81"}
+{"date": "2026-09-30", "title": "主軸：AI 的計價單位從一次問答變成一台不關機的雲端電腦——OpenAI DevDay 把常駐算力做成產品（Dots＋Ultrafast/Pro500＋GPT-6.1 Sol＋Codex上雲）"}
+{"date": "2026-09-30", "title": "概念：預留式 vs 隨需式運算（Provisioned vs On-demand）與閒置成本"}
+{"date": "2026-09-30", "title": "半導體專區：IC 製造｜先進封裝熱致翹曲（Warpage）的物理感知圖神經網路預測（WarPGNN）"}
