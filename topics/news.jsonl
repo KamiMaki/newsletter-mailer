@@ -852,3 +852,17 @@
 {"date": "2026-09-30", "title": "主軸：AI 的計價單位從一次問答變成一台不關機的雲端電腦——OpenAI DevDay 把常駐算力做成產品（Dots＋Ultrafast/Pro500＋GPT-6.1 Sol＋Codex上雲）"}
 {"date": "2026-09-30", "title": "概念：預留式 vs 隨需式運算（Provisioned vs On-demand）與閒置成本"}
 {"date": "2026-09-30", "title": "半導體專區：IC 製造｜先進封裝熱致翹曲（Warpage）的物理感知圖神經網路預測（WarPGNN）"}
+{"date": "2026-10-01", "title": "NVIDIA Vera Rubin NVL72 在 CoreWeave 正式進入生產、Cognition 首發跑 SWE-2 推論每 GPU token 吞吐量 4.8 倍（相同互動性）、RL 輸出吞吐 3.8 倍"}
+{"date": "2026-10-01", "title": "OpenAI GPT-6.1 Sol 以 Astra 五分之一 token 價（約 $2 進／$10 出）上架 GitHub Copilot"}
+{"date": "2026-10-01", "title": "GitHub HydraFusion 多模型編排（Single/Cascade/Critique）從 CLI 擴張到 VS Code 與 Copilot app"}
+{"date": "2026-10-01", "title": "arXiv 9 月 agent 推論/KV 快取論文潮（ActKV 2609.31395、MemDecay、GraniKV，壓縮/驅逐/排程降記憶體）"}
+{"date": "2026-10-01", "title": "CoreWeave Vera CPU 與 Sandboxes：單機櫃 11,000+ 併發 agent 環境、沙箱啟動快 3 倍、Agent Lens 失敗偵測+20%/修復成本-50%"}
+{"date": "2026-10-01", "title": "OpenAI Codex CLI 0.159.x 將 GPT-6.1 Sol 設為預設、可經 Amazon Bedrock 存取"}
+{"date": "2026-10-01", "title": "Anthropic Claude Code v2.1.285：新增 CLAUDE_CODE_DISABLE_WEB_FETCH、claude --desktop、外掛設定指令"}
+{"date": "2026-10-01", "title": "Anthropic 自 9/30 起替 2026/8/2 前發布的模型輸出加內容浮水印"}
+{"date": "2026-10-01", "title": "Google Gemini Enterprise 代理拓撲 App Topology API 9/30 GA、推出 Live Avatar 即時虛擬人像對話"}
+{"date": "2026-10-01", "title": "Broadcom 上修 2027 財年 AI 半導體營收展望至約 1,150 億美元、傳北京審查其進中國國家級資料中心硬體（據報導）"}
+{"date": "2026-10-01", "title": "agentic 負載帶動通用運算需求：AMD 市值一度破兆美元、Intel 走強（據報導）"}
+{"date": "2026-10-01", "title": "主軸：跑得動 agent 的不是更聰明的模型、是每顆 GPU 每秒吐更多 token——Vera Rubin 進生產＋GPT-6.1 Sol 降價＋HydraFusion 編排同攻推論吞吐與成本這道牆"}
+{"date": "2026-10-01", "title": "概念：吞吐量 vs 延遲（Throughput vs Latency）與相同互動性下的有效吞吐（goodput）"}
+{"date": "2026-10-01", "title": "半導體專區：IC 設計｜LLM 直接生成 Verilog RTL 的真實能耐與坑（VerilogEval／CodeV／RTLCoder／ChipVerilog／ChipBench，驗證優先）"}
