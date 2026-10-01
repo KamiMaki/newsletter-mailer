@@ -866,3 +866,13 @@
 {"date": "2026-10-01", "title": "主軸：跑得動 agent 的不是更聰明的模型、是每顆 GPU 每秒吐更多 token——Vera Rubin 進生產＋GPT-6.1 Sol 降價＋HydraFusion 編排同攻推論吞吐與成本這道牆"}
 {"date": "2026-10-01", "title": "概念：吞吐量 vs 延遲（Throughput vs Latency）與相同互動性下的有效吞吐（goodput）"}
 {"date": "2026-10-01", "title": "半導體專區：IC 設計｜LLM 直接生成 Verilog RTL 的真實能耐與坑（VerilogEval／CodeV／RTLCoder／ChipVerilog／ChipBench，驗證優先）"}
+{"date": "2026-10-02", "title": "Gemini 4 Argon 透過 Fairwind 分階段先放給受信任資安防守者、DeepMind 要盡快釋出早期後訓練 checkpoint"}
+{"date": "2026-10-02", "title": "OpenAI DevDay：GPT-6.1 Sol 當週補釘上線（近 Astra 智慧、約 1/5 價、$2/$10、1M context）"}
+{"date": "2026-10-02", "title": "微軟 Copilot 改走 Frontier 持續滾動、整併 Home/Code/Autopilot 成「工作的作業系統」"}
+{"date": "2026-10-02", "title": "AMD 以 82 億美元全股票收購 World Labs、Fei-Fei Li 任首席科學家（空間智慧／世界模型）"}
+{"date": "2026-10-02", "title": "FTC 據報對 Anthropic／OpenAI／METR 展開調查（自主代理脫逃 containment 事件）"}
+{"date": "2026-10-02", "title": "NVIDIA 推出開源代理安全平台 OpenShell＋Sentry（BlueField-4 DPU 帶外看門狗、100+ 組織）"}
+{"date": "2026-10-02", "title": "Anthropic 擴大與 Barclays 合作、把 Claude 導入營運"}
+{"date": "2026-10-02", "title": "主軸：發表會之死——新模型從做完才上市的產品變成邊訓練邊放早期 checkpoint、分批給一小群人的搶先體驗版（Gemini 4 Argon 分階段／GPT-6.1 Sol 點版本補釘／Copilot 持續滾動）"}
+{"date": "2026-10-02", "title": "概念：模型檢查點（Checkpoint）與持續部署（邊訓練邊出貨）"}
+{"date": "2026-10-02", "title": "半導體專區：IC 製造｜計算微影與反演微影（ILT）的 GPU＋ML 加速（cuLitho／mask synthesis，背景）"}
