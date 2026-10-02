@@ -876,3 +876,15 @@
 {"date": "2026-10-02", "title": "主軸：發表會之死——新模型從做完才上市的產品變成邊訓練邊放早期 checkpoint、分批給一小群人的搶先體驗版（Gemini 4 Argon 分階段／GPT-6.1 Sol 點版本補釘／Copilot 持續滾動）"}
 {"date": "2026-10-02", "title": "概念：模型檢查點（Checkpoint）與持續部署（邊訓練邊出貨）"}
 {"date": "2026-10-02", "title": "半導體專區：IC 製造｜計算微影與反演微影（ILT）的 GPU＋ML 加速（cuLitho／mask synthesis，背景）"}
+{"date": "2026-10-03", "title": "OpenAI 與 Synopsys 合資打造 GPT-Synopsys：模型自主操作 EDA 工具做 PPA／時序／驗證收斂、營收分潤、客戶資料不訓練且加密、已與半導體客戶早期測試"}
+{"date": "2026-10-03", "title": "Cadence 推全自主虛擬工程師與 ChipStack／ViraStack／InnoStack（AgentStack 編排、NVIDIA 堆疊，ChipStack 稱 Level-5、驗證 5 週→<1 天）"}
+{"date": "2026-10-03", "title": "OpenAI DevDay 2026：Agents API 開放 computer use（操作 GUI 軟體）＋多代理／工具搜尋／脈絡壓縮、Codex 上雲、Decisions API（Luna）、GPT-6.1 Sol 價格為 Astra 五分之一"}
+{"date": "2026-10-03", "title": "Synopsys 自主設計驗證代理：稱「時間到已驗證 RTL」最多快 50 倍，建於 NVIDIA Nemotron＋OpenShell runtime"}
+{"date": "2026-10-03", "title": "Anthropic 推 Claude Code mods（v2.1.287）：TypeScript 改寫 prompt／攔截重試工具呼叫／核准拒絕權限／遮蔽機密，隨 plugin 分發，內建 diff／agents-md／sec-default／telemetry"}
+{"date": "2026-10-03", "title": "Barclays 擴大導入 Claude：預期 2026 年底 Claude Code 滲透達開發人員 50%、2027 年成多數軟體工程師工具"}
+{"date": "2026-10-03", "title": "NVIDIA 本機 AI：DGX Spark 64GB 與 RTX Spark Windows PC 本月登場、PAIR 個人 AI 路由器、GPT-6 Astra Ultrafast 上 Blackwell API"}
+{"date": "2026-10-03", "title": "據報導：OpenAI 與三名安全團隊研究員分手，稱其在既有程序外不當處理敏感資訊"}
+{"date": "2026-10-03", "title": "先進製程良率：台積電 2nm 量產良率逾 70%、Intel 18A 卡 50–55%；三星電機約 49 億美元擴充 AI 伺服器用 FCBGA 載板產能"}
+{"date": "2026-10-03", "title": "主軸：通用模型「入行」了——AI 大廠不再只賣 token，開始跟專業軟體商合資、做專門操作那套工具的垂直代理並拆分潤（OpenAI×Synopsys GPT-Synopsys＋Cadence/Synopsys 自主 EDA 代理＋Agents API computer use），晶片設計是第一個灘頭"}
+{"date": "2026-10-03", "title": "概念：垂直領域模型（Vertical／Domain-Specific Model）——通用基礎模型 + 領域資料與工具操作的後訓練／鷹架"}
+{"date": "2026-10-03", "title": "半導體專區：IC 設計｜AI／強化學習晶片佈局（floorplanning／macro placement，AlphaChip／circuit_training，背景）"}
