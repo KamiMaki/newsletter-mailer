@@ -888,3 +888,17 @@
 {"date": "2026-10-03", "title": "主軸：通用模型「入行」了——AI 大廠不再只賣 token，開始跟專業軟體商合資、做專門操作那套工具的垂直代理並拆分潤（OpenAI×Synopsys GPT-Synopsys＋Cadence/Synopsys 自主 EDA 代理＋Agents API computer use），晶片設計是第一個灘頭"}
 {"date": "2026-10-03", "title": "概念：垂直領域模型（Vertical／Domain-Specific Model）——通用基礎模型 + 領域資料與工具操作的後訓練／鷹架"}
 {"date": "2026-10-03", "title": "半導體專區：IC 設計｜AI／強化學習晶片佈局（floorplanning／macro placement，AlphaChip／circuit_training，背景）"}
+{"date": "2026-10-04", "title": "決策模型（decision model）品類 17 天內 4 家開打：只回傳決定＋機率、完全不寫字的專用模型"}
+{"date": "2026-10-04", "title": "Cloudflare 開源 Clef／Clef-flash 決策模型（Qwen 27B＋9B、Apache 2.0、64K、能看圖、Jev 決策指數第一）＋RL 微調平台"}
+{"date": "2026-10-04", "title": "Amazon 開源 Strands Decider 2B（1.9B、pointer head、JevBench 72%、RTX 3090 約 106ms）"}
+{"date": "2026-10-04", "title": "OpenAI Decisions API（底層 Luna，DevDay 限量預覽、約 150ms、回傳選擇＋信心）"}
+{"date": "2026-10-04", "title": "TypeSafe Jev（9/15 開創決策模型品類、前 OpenAI Diogo Almeida、估值 100 億美元）正被巨頭免費版商品化"}
+{"date": "2026-10-04", "title": "Meta 用 Muse Spark 1.1／1.2 發 6 篇數學論文、稱 5 篇解開放問題（人/AI 逐段標註、另組複審、坦承部分題有外部獨立解）"}
+{"date": "2026-10-04", "title": "Google Project Suncatcher MVP 把 4 顆 Trillium TPU 送上軌道（Falcon 9、約 15 分鐘熱限、太空算力首測）"}
+{"date": "2026-10-04", "title": "Microsoft MAI-Transcribe-2-Streaming（60 語、320ms、0.54 美元/音訊小時）＋MAI-Voice-2.1／Flash，即時語音全棧"}
+{"date": "2026-10-04", "title": "GitLab 修補 AI Gateway 重大漏洞 CVE-2026-90970（9.9 分、self-hosted、Duo Agent 逃沙箱 RCE）"}
+{"date": "2026-10-04", "title": "NVIDIA DGX Spark 64GB 本機 AI 主機（4,999 美元、10/23、可跑約 100B）＋加碼 1,500 億美元回購"}
+{"date": "2026-10-04", "title": "GitHub Copilot 下架部分舊模型、code review 開放 API 與預設 effort level 檔位"}
+{"date": "2026-10-04", "title": "主軸：AI 大廠開始賣「只做決定、不寫字」的模型——17 天內 4 家推決策模型，把 agent 最貴的判斷從生成式 LLM 換成又快又便宜的專用模型，Cloudflare／Amazon 還開源用補貼商品化"}
+{"date": "2026-10-04", "title": "概念：判別式 vs 生成式模型（Discriminative vs Generative）"}
+{"date": "2026-10-04", "title": "半導體專區：IC 製造｜線上良率預測與早期報廢決策（inline yield prediction＋early scrap/kill，背景）"}
