@@ -902,3 +902,13 @@
 {"date": "2026-10-04", "title": "主軸：AI 大廠開始賣「只做決定、不寫字」的模型——17 天內 4 家推決策模型，把 agent 最貴的判斷從生成式 LLM 換成又快又便宜的專用模型，Cloudflare／Amazon 還開源用補貼商品化"}
 {"date": "2026-10-04", "title": "概念：判別式 vs 生成式模型（Discriminative vs Generative）"}
 {"date": "2026-10-04", "title": "半導體專區：IC 製造｜線上良率預測與早期報廢決策（inline yield prediction＋early scrap/kill，背景）"}
+{"date": "2026-10-05", "title": "Anthropic Mythos 挖出 Rejetto HFS 身分驗證繞過漏洞（CVE-2026-61500），不到一天被中國主機 IP 利用；Mythos／Glasswing 累計揭露 286 個 CVE、僅此 1 個被實際攻擊"}
+{"date": "2026-10-05", "title": "Google 因 AI 假漏洞報告暴增，10/1 起暫停 OSS VRP 產品漏洞收件（供應鏈與既有案件照常），承諾 2027 Q1 更新"}
+{"date": "2026-10-05", "title": "NVIDIA 開放代理安全平台：OpenShell 開源沙箱＋Sentry（BlueField-4 DPU 帶外監控）毫秒級隔離越界代理（9/28 背景）"}
+{"date": "2026-10-05", "title": "美國財長 Bessent（10/3 Axios）稱 Amodei／Altman／Musk 放慢 AI 的呼籲是『有警報沒方案、不叫領導力』、政府會負責"}
+{"date": "2026-10-05", "title": "Gemini 4 Argon 定位浮現：法律/金融/長文強（輸出 1M token）、每任務約 1.99 美元、初期僅開放可信網路防禦者（Fairwind）"}
+{"date": "2026-10-05", "title": "Musk 將 SpaceXAI 改名 SpaceXSI，呼應川普 9/29 要求聯邦文件把『AI』改稱『SI／超級智慧』的行政命令"}
+{"date": "2026-10-05", "title": "Anthropic 員工慈善配股計畫半年（至 3 月）破 6.6 億美元、IPO 後上看數十億，引發股權稀釋討論"}
+{"date": "2026-10-05", "title": "主軸：找漏洞已自動化、修漏洞卻沒跟上——AI 把資安的『攻』加速到人類『守』追不上（Mythos 挖的 CVE 當天被打＋Google 因 AI 假報告暫停 OSS VRP 抓漏獎金）"}
+{"date": "2026-10-05", "title": "概念：協同揭露（Coordinated Vulnerability Disclosure）與修補時間差（patch gap，0-day vs n-day）"}
+{"date": "2026-10-05", "title": "半導體專區：EDA 工具｜IR drop／動態電壓降（power integrity）的 ML 快速預測（PowerNet／PDNNet／IREDGe，背景）"}
