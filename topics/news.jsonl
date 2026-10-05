@@ -912,3 +912,16 @@
 {"date": "2026-10-05", "title": "主軸：找漏洞已自動化、修漏洞卻沒跟上——AI 把資安的『攻』加速到人類『守』追不上（Mythos 挖的 CVE 當天被打＋Google 因 AI 假報告暫停 OSS VRP 抓漏獎金）"}
 {"date": "2026-10-05", "title": "概念：協同揭露（Coordinated Vulnerability Disclosure）與修補時間差（patch gap，0-day vs n-day）"}
 {"date": "2026-10-05", "title": "半導體專區：EDA 工具｜IR drop／動態電壓降（power integrity）的 ML 快速預測（PowerNet／PDNNet／IREDGe，背景）"}
+{"date": "2026-10-06", "title": "Cohere 發表企業版 North 2：主打可自架/模型可換/成本控管（North Admin flow control 盯 token 花費），SOC2 Type2/ISO27001/ISO42001，agent 編排 Skills/Memory/Automations/接 Slack/SharePoint/Jira"}
+{"date": "2026-10-06", "title": "Vercel AI SDK 7.0.128：新增可持久化非串流 WorkflowAgent.generate()（共用工具迴圈/預設20步/型別輸出）、evaluate 改名 decide、串流中斷恢復時保留工具授權狀態"}
+{"date": "2026-10-06", "title": "LangGraph 1.2.13：修 checkpoint 分叉重放錯誤（從執行緒已越過的更新存檔點 fork）與 DeltaChannel 計數器保留"}
+{"date": "2026-10-06", "title": "OpenAI Codex CLI 0.160.1：啟動遠端 stdio MCP 伺服器時保留 SYSTEMROOT/TEMP/TMP 環境變數"}
+{"date": "2026-10-06", "title": "GitHub Copilot 動態工作流（Dynamic workflows）登陸 CLI/App/SDK（10/1 背景）"}
+{"date": "2026-10-06", "title": "Cohere 與 PwC 結盟（先從加拿大）加速企業安全 AI 導入、把 AI 從 pilot 推進 production"}
+{"date": "2026-10-06", "title": "HyperThink：用 text-to-parameter hypernetwork 把推理攤銷成一次 query-conditioned 參數更新、不吐長思考鏈（arXiv 2610.03039，10/2 投稿 10/5 公開）"}
+{"date": "2026-10-06", "title": "HARPO：幻覺感知 RL，Selective Activation 只在輸出無幻覺時才給寫作品質獎勵、兼顧忠實與創意（arXiv 2610.03063）"}
+{"date": "2026-10-06", "title": "What Should World Models Forget：分層保留（不變物理定律永不改寫、個案事實即時更新）＋不做平均的新評估指標（arXiv 2610.03713）"}
+{"date": "2026-10-06", "title": "Vercel @ai-sdk/xai 5.0.15 新增 xAI grok-imagine-image-2.0 影像模型、auto 畫質與轉錄選項"}
+{"date": "2026-10-06", "title": "主軸：agent 的競賽從更聰明轉到跑得完接得回花得起——Cohere North 2 把治理當賣點＋Vercel AI SDK 可持久化 WorkflowAgent 與恢復保留工具授權＋LangGraph 修 checkpoint 分叉重放，生產級韌性成新戰線"}
+{"date": "2026-10-06", "title": "概念：持久化執行（Durable Execution，checkpoint/replay＋冪等性，斷點續跑而不重複副作用）"}
+{"date": "2026-10-06", "title": "半導體專區：IC 製造｜電漿蝕刻終點偵測（Endpoint Detection）的機器學習／多波長 OES（CNN 分類＋PCA 分群，低開口率難蝕，背景）"}

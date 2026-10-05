@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的 AI 每日電子報</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;">
+<tr><td align="center" style="padding:16px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+
+<!-- Header -->
+<tr><td style="padding:0 0 18px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+    <tr><td style="padding:28px 26px;">
+      <div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+      <div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+      <div style="font-size:13px;color:#c7d2fe;margin-top:10px;font-weight:600;">2026 年 10 月 06 日</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- 30秒重點 -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+      <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+        <li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>這週 agent 工具的更新，不約而同全砸在同一件不性感的事上——<strong style="color:#a5b4fc;">讓長時間跑的 agent 中斷後接得回、花費看得住、部署在自己地盤</strong>。比的不是誰更聰明，是誰先能交付。</li>
+        <li style="margin-bottom:10px;">Cohere 發表企業版 <strong style="color:#e2e8f0;">North 2</strong>（10/5）：主打可自架、成本控管、模型可換，把「治理」當賣點而不是模型能力。</li>
+        <li style="margin-bottom:10px;">Vercel AI SDK 同日推出<strong style="color:#a5b4fc;">「可持久化」的 WorkflowAgent</strong>，還補上「串流中斷恢復時保留工具授權狀態」；LangGraph 修的也是 checkpoint 分叉／重放的老毛病。</li>
+        <li style="margin-bottom:10px;">其他值得知道：研究圈這週把火力放在「<strong style="color:#e2e8f0;">讓思考更省、更不亂編</strong>」——HyperThink 把推理壓成一次參數更新、HARPO 只在不幻覺時才獎勵創意。</li>
+        <li style="margin-bottom:0;"><strong style="color:#67e8f9;">對半導體人最相關：</strong>「長流程中靠狀態判斷該不該停、能不能接回」這件事，製造端也天天在做——今天專區談電漿蝕刻的 AI 終點偵測。</li>
+      </ul>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+    <tr><td style="padding:1px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+        <tr><td style="padding:24px 24px 26px 24px;">
+          <div style="display:inline-block;background:rgba(99,102,241,0.2);color:#a5b4fc;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;margin-bottom:14px;">🎯 今天的主軸</div>
+          <div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-bottom:18px;">agent 的競賽從「更聰明」轉到「跑得完、接得回、花得起」——這週的更新全在補生產級韌性，而不是能力</div>
+
+          <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px 0;">▍共同變化</div>
+          <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 16px 0;">10 月 5 日這天，三家做 agent 工具的公司（Cohere、Vercel、LangChain）各自出了更新。乍看互不相關，但攤開來看版本說明，它們補的是<strong style="color:#a5b4fc;">同一類問題</strong>：一個會跑好幾步、花好幾分鐘、要動用外部工具的 agent，<strong style="color:#a5b4fc;">中途斷了怎麼無損接回、花了多少錢看不看得到、能不能跑在自己機房裡</strong>。沒有一個是「模型更聰明了」。agent 的競爭重心，正從「能力」悄悄移到「交付」。</p>
+
+          <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px 0;">▍為什麼放在一起看</div>
+          <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 14px 0;">把三件事並排，脈絡就出來了：</p>
+          <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 12px 0;"><strong style="color:#e2e8f0;">① Cohere North 2：把「治理」當產品賣。</strong>Cohere 的企業平台 North 2 幾乎不談模型多強，通篇在講<strong style="color:#a5b4fc;">可自架（on-prem／VPC／混合）、模型可換（model-agnostic，要用自家模型或自帶都行）、成本看得住</strong>——新的 North Admin 能做細緻權限、用 flow control 盯 token 花費、設定用量分級。它拿 SOC 2 Type 2、ISO 27001、ISO 42001 三張認證當門票，agent 編排（Skills／Memory／Automations／接 Slack、SharePoint、Jira）反而是配角。</p>
+          <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 12px 0;"><strong style="color:#e2e8f0;">② Vercel AI SDK 7.0.128：給 agent 補上「可持久化」。</strong>這版最大的改動，是新增<strong style="color:#a5b4fc;">非串流、可持久化的 <code style="background:#252525;padding:1px 5px;border-radius:4px;">WorkflowAgent.generate()</code></strong>（共用工具迴圈、預設跑 20 步、輸出帶型別），以及一句很關鍵的修正——「<strong style="color:#a5b4fc;">串流中斷恢復時，保留工具的授權狀態</strong>」。白話說：agent 跑到一半你關掉或斷線，再開回來時，它記得「哪些工具你已經按過同意」，不用從頭再問一次。</p>
+          <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 16px 0;"><strong style="color:#e2e8f0;">③ LangGraph 1.2.13：修的是 checkpoint 的老毛病。</strong>LangGraph 是跑 agent 工作流的框架，這版修掉兩個 <strong style="color:#a5b4fc;">checkpoint（存檔點）</strong>相關的 bug：從一個「執行緒已經跑過去的」存檔點分叉重放時會出錯、以及狀態更新計數器沒被正確保留。聽起來很細，但這正是「斷點續跑」能不能信得過的地基。</p>
+
+          <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px 0;">▍過去 vs. 現在</div>
+          <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 16px 0;">過去一年大家秀的是 demo：丟個任務，agent 噠噠噠跑完，驚豔全場。但 demo 和<strong style="color:#a5b4fc;">生產</strong>之間隔著一條河——demo 可以跑一次就好，生產要跑一千次、每次都可能在第 7 步因為網路、逾時、或人去睡覺而中斷。<strong style="color:#a5b4fc;">過去</strong>這些中斷幾乎等於「整個任務作廢、重跑」，既浪費錢又可能重複付款、重複寄信；<strong style="color:#a5b4fc;">現在</strong>這週的更新，全在把「中斷」從災難降級成「存檔、接回、繼續」。像遊戲從「一命通關」進化到「隨時存檔」——不是關卡變簡單，是你終於輸得起了。</p>
+
+          <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px 0;">▍背後邏輯：agent 的瓶頸換了一格</div>
+          <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 16px 0;">模型夠不夠聰明，這一年已經不太是 agent 落地的卡點了——卡點是<strong style="color:#a5b4fc;">可靠性與可控性</strong>。一個 agent 要進企業的真實流程，公司問的三個問題永遠是：它<strong style="color:#e2e8f0;">斷了會怎樣</strong>（韌性）、<strong style="color:#e2e8f0;">花了我多少</strong>（成本）、<strong style="color:#e2e8f0;">資料跑去哪</strong>（治理）。這週三家不約而同地回答的，正是這三題。這也解釋了為什麼產品的差異化越來越不在模型本身——模型大家都能接，真正難做、也最值錢的，是把它穩穩塞進生產環境的那層工程。</p>
+
+          <div style="background:#252525;border-radius:8px;padding:14px 16px;margin:0 0 16px 0;">
+            <div style="color:#c7d2fe;font-size:12px;font-weight:700;margin-bottom:6px;">👤 編輯分析：這是巧合，還是趨勢？</div>
+            <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0;">誠實說，這三則本身有大有小——North 2 是一次完整的產品發表，Vercel 和 LangGraph 嚴格講是版本更新裡的功能與修補。把它們串成「同一條線」是<strong style="color:#a5b4fc;">編輯的觀察</strong>，不是哪家公司喊出的口號。但這個觀察站得住腳：當三家做法完全不同的公司，在同一天各自往「可恢復、可控、可自架」補東西，背後反映的是整個 agent 工程社群的共同焦慮——demo 做完了，接下來要過生產這一關。（此段為編輯分析。）</p>
+          </div>
+
+          <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px 0;">▍對你的工作</div>
+          <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 16px 0;">如果你在評估要不要把 agent 放進團隊流程，這週的訊號是：<strong style="color:#a5b4fc;">選型時別只比模型分數，要比「斷點續跑、成本上限、部署位置」這些工程能力</strong>。尤其在半導體這種跑長流程（跑一次模擬／驗證／回歸可能幾小時）、又在意資料留在廠內的場景，一個「斷了要從頭來」的 agent 根本不能用。能不能 checkpoint、能不能自架、能不能卡住 token 預算，往往比「它多會寫程式」更決定你敢不敢上。</p>
+
+          <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px 0;">▍限制與待驗證</div>
+          <p style="color:#cbd5e1;font-size:15px;line-height:1.75;margin:0 0 16px 0;">別把這週讀成「agent 韌性已解決」。Vercel、LangGraph 的更新都還是<strong style="color:#a5b4fc;">框架層的零件</strong>，要真正做到「斷哪都接得回」，你的每一步工具呼叫還得自己設計成<strong style="color:#a5b4fc;">可重放而不重複副作用</strong>（見下方今日概念），框架不會自動幫你擦屁股。North 2 的成本與自架宣稱也要以實際部署為準，官方給的 token/node 數字是搭配 NVIDIA 硬體的情境值，非普遍保證。</p>
+
+          <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 6px 0;">▍重點一句話</div>
+          <p style="color:#ffffff;font-size:15px;line-height:1.75;margin:0 0 6px 0;font-weight:600;">agent 這一年要過的不是「更聰明」，是「跑得完、接得回、花得起、放得心」——這週的更新全在補這格。</p>
+
+          <div style="border-top:1px solid #333;margin-top:16px;padding-top:12px;">
+            <div style="color:#94a3b8;font-size:12px;line-height:1.8;">🔗 來源：<a href="https://cohere.com/blog/introducing-north-2" style="color:#06b6d4;text-decoration:none;">Cohere（North 2，10/5）</a>｜<a href="https://github.com/vercel/ai/releases" style="color:#06b6d4;text-decoration:none;">Vercel AI SDK Releases（ai@7.0.128，10/5）</a>｜<a href="https://github.com/langchain-ai/langgraph/releases" style="color:#06b6d4;text-decoration:none;">LangGraph Releases（1.2.13，10/5）</a></div>
+          </div>
+        </td></tr>
+      </table>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- 主軸的衍生新聞 -->
+<tr><td style="padding:0 0 10px 0;">
+  <div style="font-size:16px;font-weight:700;color:#ffffff;padding:4px 2px;">🔗 主軸的衍生新聞</div>
+</td></tr>
+
+<tr><td style="padding:0 0 12px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:20px 22px;">
+      <div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+      <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">連 Codex 都在補「斷線後別搞丟環境」</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 8px 0;">OpenAI 的 Codex CLI 0.160.1（10/5）只有一條修正，卻正好落在同一主題上：<strong style="color:#a5b4fc;">啟動遠端 MCP 伺服器時，保留 SYSTEMROOT、TEMP、TMP 環境變數</strong>。白話說，agent 去呼叫外部工具時，別把「它需要的系統環境」弄丟，否則工具一跑就掛。<strong style="color:#e2e8f0;">和主軸的關係：</strong>這是「可恢復」的另一個面向——不只狀態要留住，執行所需的上下文也不能在跨進程、跨工具的交接中蒸發掉。</p>
+      <p style="color:#94a3b8;font-size:13px;font-style:italic;margin:0 0 8px 0;">💡 記住這句：agent 的韌性，藏在這些「別在交接時掉東西」的小修補裡。</p>
+      <div style="color:#94a3b8;font-size:12px;">🔗 <a href="https://github.com/openai/codex/releases" style="color:#06b6d4;text-decoration:none;">閱讀原文</a>｜來源：OpenAI Codex Releases（0.160.1，10/5）</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:0 0 12px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:20px 22px;">
+      <div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞 · 背景</div>
+      <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">GitHub Copilot 的「動態工作流」鋪的也是同一條路</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 8px 0;">就在本週稍早（10/1），GitHub 在 Copilot CLI、App 與 SDK 同步推出「<strong style="color:#a5b4fc;">動態工作流（Dynamic workflows）</strong>」——讓你把多步驟的 agent 任務定義成可重複、可編排的流程，而不是每次手動下指令。<strong style="color:#e2e8f0;">和主軸的關係：</strong>當 agent 要被反覆、可靠地跑，業界的答案不約而同指向「把它變成可定義、可持久化的工作流」，而不是一次性對話。（此為 10/1 背景，非 48 小時內新聞。）</p>
+      <p style="color:#94a3b8;font-size:13px;font-style:italic;margin:0 0 8px 0;">💡 記住這句：agent 正在從「你問它答」長成「可重跑的工作流」。</p>
+      <div style="color:#94a3b8;font-size:12px;">🔗 <a href="https://github.blog/changelog/" style="color:#06b6d4;text-decoration:none;">閱讀原文</a>｜來源：GitHub Changelog（Dynamic workflows，10/1）</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:20px 22px;">
+      <div style="display:inline-block;background:rgba(6,182,212,0.15);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-bottom:10px;">🔗 衍生新聞</div>
+      <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">Cohere 同日找 PwC 當落地推手</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 8px 0;">North 2 發表同一天（10/5），Cohere 宣布與 <strong style="color:#a5b4fc;">PwC</strong> 結盟（先從加拿大起跑），用 PwC 的轉型、風險與法遵專業，幫企業把 AI 從 <strong style="color:#a5b4fc;">pilot 推進到 production</strong>。<strong style="color:#e2e8f0;">和主軸的關係：</strong>這補齊了另一塊「交付」拼圖——光有可治理的平台還不夠，大企業更缺的是「誰帶我上線、幫我扛風險」的服務。產品韌性 + 顧問服務，才是企業買單的完整方案。</p>
+      <p style="color:#94a3b8;font-size:13px;font-style:italic;margin:0 0 8px 0;">💡 記住這句：賣 agent 給企業，賣的從來不只是技術，是「幫你安全上線」的整套安排。</p>
+      <div style="color:#94a3b8;font-size:12px;">🔗 <a href="https://cohere.com/blog/cohere-and-pwc-partner-to-accelerate-secure-enterprise-ai-adoption" style="color:#06b6d4;text-decoration:none;">閱讀原文</a>｜來源：Cohere Blog（Cohere × PwC，10/5）</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+      <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:14.5px;line-height:1.7;">
+        <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">HyperThink：把「想一長串」壓成「改一次參數」。</strong>一篇新論文（10/2 投稿、10/5 公開）提出用一個輕量 hypernetwork 讀懂問題後，直接預測對基礎模型少量參數的更新，<strong style="color:#a5b4fc;">把推理運算攤銷成一次前向傳遞</strong>，不必吐出冗長的思考鏈。若成立，意味省掉大量推理 token 與延遲——對要大量跑 agent 的人是直接省錢。<span style="color:#94a3b8;">🔗 <a href="https://arxiv.org/abs/2610.03039" style="color:#06b6d4;text-decoration:none;">來源：arXiv 2610.03039</a>（研究，非產品）</span></li>
+        <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">HARPO：只在「沒亂編」時才獎勵創意。</strong>另一篇 RL 論文（10/2 投稿、10/5 公開）設計了一個「幻覺感知」的獎勵模型，<strong style="color:#a5b4fc;">只有當輸出被判定為無事實錯誤時，才給它寫作品質的獎勵</strong>，藉此同時拉高忠實度與創意。這是對「要麼死板、要麼亂掰」老矛盾的一個正面嘗試。<span style="color:#94a3b8;">🔗 <a href="https://arxiv.org/abs/2610.03063" style="color:#06b6d4;text-decoration:none;">來源：arXiv 2610.03063</a>（研究，非產品）</span></li>
+        <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">世界模型該「忘掉」什麼？</strong>一篇研究（10/2 投稿、10/5 公開）主張世界模型要做「<strong style="color:#a5b4fc;">分層保留</strong>」：不變的物理定律永不改寫，個案層級的事實則該即時更新，並提出不做平均的新評估指標。為「持續學習卻不崩壞」提供了一個更細緻的切法。<span style="color:#94a3b8;">🔗 <a href="https://arxiv.org/abs/2610.03713" style="color:#06b6d4;text-decoration:none;">來源：arXiv 2610.03713</a>（研究，非產品）</span></li>
+        <li style="margin-bottom:0;"><strong style="color:#e2e8f0;">Vercel 順手加了新圖像模型。</strong>隨這版 AI SDK，<strong style="color:#a5b4fc;">@ai-sdk/xai</strong> 套件（5.0.15）新增 xAI 的 <strong style="color:#a5b4fc;">grok-imagine-image-2.0</strong> 影像模型，支援自動畫質與轉錄選項。對已經用 Vercel SDK 的開發者，等於多一個可直接呼叫的生圖選項。<span style="color:#94a3b8;">🔗 <a href="https://github.com/vercel/ai/releases" style="color:#06b6d4;text-decoration:none;">來源：Vercel AI SDK Releases（10/5）</a></span></li>
+      </ul>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">📖 今日概念｜持久化執行（Durable Execution）</div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px 0;">一句定義</div>
+      <p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0 0 12px 0;"><strong style="color:#a5b4fc;">持久化執行</strong>是指一段長時間、多步驟的程式（例如一個 agent 工作流），把每一步的進度與狀態存下來，讓它在當機、逾時或重啟後，<strong style="color:#a5b4fc;">能從斷掉的地方接著跑，而不是從頭來過</strong>。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px 0;">生活化比喻</div>
+      <p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0 0 12px 0;">像打一款會自動存檔的遊戲：你打到第三關突然停電，重開機後不是回到片頭，而是回到第三關的存檔點。<strong style="color:#a5b4fc;">回到技術：</strong>那個「存檔點」就是 <em>checkpoint</em>，而「重開後照著紀錄把進度追回來」就是 <em>replay（重放）</em>——持久化執行就是把這套存檔／重放機制，套在一段隨時可能中斷的程式上。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px 0;">工作中的例子</div>
+      <p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0 0 12px 0;">一個採購 agent 要「查供應商 → 下單 → 寄確認信」三步，跑到第二步下完單後伺服器重啟。有持久化執行，它重開後知道「單已下，別再下一次」，直接跳到寄信；沒有的話，最糟是重跑整段、<strong style="color:#a5b4fc;">重複下單又重複付款</strong>。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px 0;">常見誤解</div>
+      <p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0 0 12px 0;">「有 checkpoint 就安全了」——不完全對。能接回的前提是每一步都要<strong style="color:#a5b4fc;">可重放而不產生重複副作用</strong>，也就是要有「<em>冪等性</em>」（同一步做一次和做兩次結果一樣）。框架幫你存檔，但「下單別下第二次」這種保護，多半得你自己在每步設計進去。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px 0;">與今天主軸的關係</div>
+      <p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0;">今天 Vercel 的「可持久化 WorkflowAgent」、「恢復時保留工具授權」，和 LangGraph 修的 checkpoint 分叉／重放問題，講的全是同一件事的不同零件。<strong style="color:#a5b4fc;">持久化執行，就是把 demo agent 變成生產 agent 的那道門檻。</strong></p>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- 半導體 AI 專區 -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜用機器學習決定「這一刻該停蝕刻」</div>
+      <div style="margin-bottom:14px;">
+        <span style="display:inline-block;background:rgba(99,102,241,0.2);color:#a5b4fc;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;margin-right:6px;">IC 製造</span>
+        <span style="display:inline-block;background:rgba(148,163,184,0.18);color:#94a3b8;font-size:11px;font-weight:700;padding:4px 10px;border-radius:14px;">背景知識</span>
+      </div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px 0;">▍問題與流程位置</div>
+      <p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0 0 12px 0;">電漿蝕刻（plasma etch）是把晶圓上不要的材料一層層「啃」掉的製程。最關鍵的一刻是<strong style="color:#a5b4fc;">「何時收手」——這叫終點偵測（Endpoint Detection, EPD）</strong>：停太早，該蝕的沒蝕乾淨；停太晚，會傷到下層、尺寸跑掉。傳統做法是盯著電漿發出的光（<strong style="color:#a5b4fc;">光學發射光譜，OES</strong>）——某個波長的強度在材料被蝕穿那瞬間會轉折，就以此判斷。它位在<strong style="color:#a5b4fc;">製程進行中的即時控制</strong>這一環。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px 0;">▍AI 如何介入</div>
+      <p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0 0 12px 0;">問題出在<strong style="color:#a5b4fc;">開口面積很小的圖案</strong>（例如僅 1% 開口率）：被蝕穿的訊號太微弱，淹沒在雜訊裡，盯單一波長根本看不出轉折。過去工程師靠經驗設固定門檻、單一波長，常常失準。<strong style="color:#a5b4fc;">AI 的做法是改看「整張光譜」</strong>：把 OES 幾百個波長一起餵進模型——用 CNN 這類分類器學會辨認「蝕穿前 vs. 蝕穿後」的整體模式，或用非監督式的 PCA＋分群，不靠人工標註就把終點那一刻分出來。<strong style="color:#a5b4fc;">和過去最大的差別</strong>：從「盯一條線的轉折」升級成「讀整片頻譜的指紋」，微弱訊號也救得回來。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px 0;">▍資料與產出</div>
+      <p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0 0 12px 0;">輸入是蝕刻過程中逐秒採集的多波長 OES 時間序列；輸出是「現在是否到達終點」的即時判斷（分類器）或「狀態已轉變」的訊號（分群）。訓練資料多半是過去跑過、已知終點時刻的批次。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px 0;">▍如何驗證</div>
+      <p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0 0 12px 0;">關鍵是別只看平均準確率，要看<strong style="color:#a5b4fc;">在最難的低開口率圖案上，模型抓終點的時間誤差有多小</strong>，以及換了圖案、換了機台還準不準（可遷移性）。實務上會先用事後的斷面量測（SEM）回頭對答案，確認模型判的終點和真實蝕穿時刻對得上，再逐步放進產線當輔助。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 14px 0;">▍限制與風險</div>
+      <p style="color:#cbd5e1;font-size:14.5px;line-height:1.7;margin:0 0 14px 0;">這仍以學界與設備商的研究為主，<strong style="color:#a5b4fc;">不代表已全面量產落地</strong>；模型最怕「只認得訓練過的製程」，換配方或換腔體條件就可能失準。而且蝕刻是不可逆的——判錯一刻就報廢一片，所以通常當<strong style="color:#a5b4fc;">輔助訊號</strong>，與既有物理模型並行，而非直接放手讓它一個人決定停手。（以上為背景知識與公開研究，非 48 小時內新聞，也非特定廠商量產數字。）</p>
+
+      <p style="color:#67e8f9;font-weight:700;font-size:14.5px;line-height:1.7;margin:0;">👷 對半導體工作者的意義：對製程整合與設備工程師，這和今天主軸其實是同一個母題——「在一段不可逆的長流程裡，靠即時狀態判斷『該不該停、停在哪一刻』」。值得留意的下一步，是把多波長 OES 的 ML 終點模型當輔助訊號接進低開口率的難蝕製程，先驗證時間誤差與跨機台穩定度，再談放進產線。</p>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+    <tr><td style="padding:1px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+        <tr><td style="padding:22px 24px;">
+          <div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+          <ul style="margin:0 0 14px 0;padding-left:20px;color:#cbd5e1;font-size:14.5px;line-height:1.75;">
+            <li style="margin-bottom:12px;">如果你要把一個 agent 放進真實流程，你會怎麼回答老闆的三連問——「它斷了會怎樣、花了我多少、資料跑去哪」？這三題裡，你現在最答不出來的是哪一個？</li>
+            <li style="margin-bottom:12px;">你團隊現有的自動化流程裡，有哪一段是「中途斷掉就得整個重來」的？把它改成「可存檔、可接回」要付出什麼代價，又能省下什麼？</li>
+            <li style="margin-bottom:0;">當模型能力逐漸商品化、差異化移到「交付工程」這層，你所在的角色（晶片、EDA、製造）裡，最難被取代的「把東西穩穩做出來」的工程能力是什麼？</li>
+          </ul>
+          <p style="color:#a5b4fc;font-weight:700;font-size:14.5px;line-height:1.7;margin:0;">🎒 今日帶走：agent 的下一哩路不是更聰明，是夠可靠——能存檔、能接回、花費看得住、部署在自己地盤。</p>
+        </td></tr>
+      </table>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- 歷史電子報入口 -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:20px 24px;">
+      <div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+      <p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 10px 0;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+      <a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-size:14px;font-weight:600;">查看歷史電子報</a>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- Footer -->
+<tr><td style="padding:0 0 24px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    <tr><td style="padding:18px 24px;text-align:center;">
+      <p style="color:#cbd5e1;font-size:13px;line-height:1.7;margin:0 0 8px 0;">📬 覺得有用？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">分享給朋友訂閱這份電子報</a></p>
+      <p style="color:#64748b;font-size:12px;line-height:1.7;margin:0 0 12px 0;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></p>
+      <p style="color:#475569;font-size:11px;line-height:1.6;margin:0;">© 2026 企鵝的 AI 每日電子報🐧 · 本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源</p>
+    </td></tr>
+  </table>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>
