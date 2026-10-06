@@ -925,3 +925,14 @@
 {"date": "2026-10-06", "title": "主軸：agent 的競賽從更聰明轉到跑得完接得回花得起——Cohere North 2 把治理當賣點＋Vercel AI SDK 可持久化 WorkflowAgent 與恢復保留工具授權＋LangGraph 修 checkpoint 分叉重放，生產級韌性成新戰線"}
 {"date": "2026-10-06", "title": "概念：持久化執行（Durable Execution，checkpoint/replay＋冪等性，斷點續跑而不重複副作用）"}
 {"date": "2026-10-06", "title": "半導體專區：IC 製造｜電漿蝕刻終點偵測（Endpoint Detection）的機器學習／多波長 OES（CNN 分類＋PCA 分群，低開口率難蝕，背景）"}
+{"date": "2026-10-07", "title": "蓋 AI 工廠的錢開始用借的——算力正在被金融化（Lambda 傳募 40 億美元拚 IPO）"}
+{"date": "2026-10-07", "title": "Anthropic IPO 文件：約 5,180 億美元基建承諾、約八成不可取消（Google／Amazon／Microsoft／Broadcom）"}
+{"date": "2026-10-07", "title": "Broadcom 傳替 Anthropic 安排最高 420 億美元可轉股融資"}
+{"date": "2026-10-07", "title": "Amazon 把約 80 億美元 NVIDIA Grace Blackwell 系統賣進 SPV 再租回（表外融資）"}
+{"date": "2026-10-07", "title": "四大 AI 公司赴紐約市議會宣誓作證（Anthropic／OpenAI／Google／Meta，罕見全院聽證）"}
+{"date": "2026-10-07", "title": "Anthropic 擴大新創方案：免費一年 Claude Team＋1,000 美元 API 額度＋Marketplace"}
+{"date": "2026-10-07", "title": "OpenAI Decisions API 進入公測（決策／路由專用端點，延遲約為標準呼叫 1/10）"}
+{"date": "2026-10-07", "title": "Lambda 完成約 10.08 億美元投資級延遲提取定期貸款（6.78%、2033 到期）"}
+{"date": "2026-10-07", "title": "主軸：蓋 AI 工廠的錢改用借的——算力被當能源基建金融化（IPO＋可轉股債＋SPV 把資本支出挪出資產負債表、用不可取消長約鎖死半導體需求）"}
+{"date": "2026-10-07", "title": "概念：照付不議／承購合約（Take-or-Pay，不管實際用多少都要付的最低付款義務）"}
+{"date": "2026-10-07", "title": "半導體專區：EDA 工具｜功能驗證的覆蓋率收斂（Coverage Closure）ML 自動補洞與回歸瘦身（VSO.ai／Verisium）"}
