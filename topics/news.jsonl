@@ -936,3 +936,15 @@
 {"date": "2026-10-07", "title": "主軸：蓋 AI 工廠的錢改用借的——算力被當能源基建金融化（IPO＋可轉股債＋SPV 把資本支出挪出資產負債表、用不可取消長約鎖死半導體需求）"}
 {"date": "2026-10-07", "title": "概念：照付不議／承購合約（Take-or-Pay，不管實際用多少都要付的最低付款義務）"}
 {"date": "2026-10-07", "title": "半導體專區：EDA 工具｜功能驗證的覆蓋率收斂（Coverage Closure）ML 自動補洞與回歸瘦身（VSO.ai／Verisium）"}
+{"date": "2026-10-08", "title": "微軟 Windows／Surface 發表會：Copilot Hybrid Intelligence 自動在本地/雲端模型間派工、能讀本機檔案代改檔、可整個關閉"}
+{"date": "2026-10-08", "title": "NVIDIA RTX Spark 本地 AI 電腦本月出貨：20核Grace＋RTX Blackwell、1 petaflop、最高128GB統一記憶體、可本機跑約120B模型、Lenovo/Acer先行"}
+{"date": "2026-10-08", "title": "Microsoft Surface Laptop Ultra 起價2,599美元、最高128GB統一記憶體、10/16出貨、設計來本機跑大模型"}
+{"date": "2026-10-08", "title": "GitHub Copilot 本地沙箱（local sandboxing）正式 GA＋CLI 新增探索本地模型（10/7）"}
+{"date": "2026-10-08", "title": "Claude Haiku 5.5 發表：最快最便宜最強小模型，≤10萬token輸入$0.10/輸出$0.50（比Haiku 4.5砍約10x），按提示長度計價、>10萬token漲$0.50/$2.50、不含1M脈絡，當天進GitHub Copilot"}
+{"date": "2026-10-08", "title": "DeepSeek 傳近120億美元新融資、拚2027 Q1港股掛牌（Tencent/CATL領投，7月才完成約74億美元首輪，據Bloomberg）"}
+{"date": "2026-10-08", "title": "Anthropic 擴大網路安全驗證計畫（Cyber Verification Program）（10/6）"}
+{"date": "2026-10-08", "title": "GitHub 推出專用外洩密鑰偵測模型（purpose-built leaked secret detection，10/7）"}
+{"date": "2026-10-08", "title": "GitHub 堆疊式 PR（Stacked Pull Requests）正式上線 GA（10/6）"}
+{"date": "2026-10-08", "title": "主軸：AI 的執行位置從雲端搬回本地——微軟 Hybrid Intelligence＋NVIDIA RTX Spark＋GitHub CLI 本地模型同週把「本地/雲端混合」做成 Windows 預設"}
+{"date": "2026-10-08", "title": "概念：量化（Quantization）"}
+{"date": "2026-10-08", "title": "半導體專區：IC 設計｜時脈樹合成（CTS）的 ML 預測與最佳化（GAN-CTS／SwiftCTS／RL skew，背景）"}
