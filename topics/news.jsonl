@@ -948,3 +948,15 @@
 {"date": "2026-10-08", "title": "主軸：AI 的執行位置從雲端搬回本地——微軟 Hybrid Intelligence＋NVIDIA RTX Spark＋GitHub CLI 本地模型同週把「本地/雲端混合」做成 Windows 預設"}
 {"date": "2026-10-08", "title": "概念：量化（Quantization）"}
 {"date": "2026-10-08", "title": "半導體專區：IC 設計｜時脈樹合成（CTS）的 ML 預測與最佳化（GAN-CTS／SwiftCTS／RL skew，背景）"}
+{"date": "2026-10-09", "title": "OpenAI 推出 Intelligent UI：ChatGPT 答案可直接變成計算機／表單／圖表／小工具，GPT-6 自選版面（10/7 付費、10/8 免費）"}
+{"date": "2026-10-09", "title": "GPT-6 登上所有 ChatGPT 層級（付費 Sol／免費 Luna），GPT-6 Instant 先答再想、網路搜尋快 44%"}
+{"date": "2026-10-09", "title": "Anthropic 發表 Claude Haiku 5.5：最便宜最快小模型、1M context、adaptive thinking（effort 參數）"}
+{"date": "2026-10-09", "title": "Google 生成式 UI（dynamic view／visual layout）已進 Gemini 與搜尋 AI Mode（2025/11 背景對照、論文 PAGEN 資料集）"}
+{"date": "2026-10-09", "title": "Microsoft Execution Containers（MXC）在 Windows 11 正式上線：OS 核心強制 agent 檔案／網路／UI 權限，Copilot CLI 本機沙箱同引擎"}
+{"date": "2026-10-09", "title": "GitHub 推出外洩密鑰偵測專用模型、Copilot 本機沙箱 GA、Copilot CLI 可探索本機模型（10/7）"}
+{"date": "2026-10-09", "title": "Docker Agent 1.149：可從公開 GitHub repo 載入 skills、新增 evaluator 後端（10/7）"}
+{"date": "2026-10-09", "title": "Anthropic：Max／Team 方案開始附贈每月 API credits、Claude Sonnet 5.5 快取讀取價 0.20→0.10 美元（10/7）"}
+{"date": "2026-10-09", "title": "GitHub Stacked Pull Requests 正式上線 GA（10/6）"}
+{"date": "2026-10-09", "title": "主軸：AI 的答案從一段文字變成當場生成、可操作的介面——OpenAI 把 Intelligent UI＋GPT-6 推給全體 ChatGPT 用戶，生成式 UI 從實驗變預設"}
+{"date": "2026-10-09", "title": "概念：生成式 UI（Generative UI）"}
+{"date": "2026-10-09", "title": "半導體專區：EDA 工具｜機器學習加速的寄生參數抽取（RC Extraction／StarRC，背景）"}
