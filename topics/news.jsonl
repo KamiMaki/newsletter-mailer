@@ -960,3 +960,13 @@
 {"date": "2026-10-09", "title": "主軸：AI 的答案從一段文字變成當場生成、可操作的介面——OpenAI 把 Intelligent UI＋GPT-6 推給全體 ChatGPT 用戶，生成式 UI 從實驗變預設"}
 {"date": "2026-10-09", "title": "概念：生成式 UI（Generative UI）"}
 {"date": "2026-10-09", "title": "半導體專區：EDA 工具｜機器學習加速的寄生參數抽取（RC Extraction／StarRC，背景）"}
+{"date": "2026-10-10", "title": "Anthropic Cyber Mission：拉 11 家資安大廠＋政府組防守聯盟，守電網/供水/交通 OT 與開源，核心為「不對稱釋出」（模型找到的漏洞給防守方、模型本身鎖住）"}
+{"date": "2026-10-10", "title": "Anthropic OSS Scanner（仿 OSS-Fuzz）：免費掃開源，半年掃出逾 2.9 萬候選漏洞、近 5,000 份未經人工審查直送維護者，驗證 97 筆 88% 達揭露門檻"}
+{"date": "2026-10-10", "title": "Anthropic 關鍵基礎設施防禦計畫：11 家創始夥伴（Accenture/Booz Allen/CrowdStrike/Deloitte/Dragos/Hitachi/Insane Cyber/Nozomi/Palo Alto/PwC/Rockwell），給前沿 Claude＋駐點工程師＋威脅研究"}
+{"date": "2026-10-10", "title": "Google 通用 Gemini 代理（Gemini at Work 2026）：自帶 Workspace 帳號/Gmail/行事曆/Drive 的常駐數位同事，多日任務、調度子代理、路由 Claude 與開源模型、加密身分＋Agent Gateway，私測"}
+{"date": "2026-10-10", "title": "台積電 9 月營收約新台幣 5,118.6 億元、年增 54.6%、月減 0.6%（8 月首破 5,000 億新高），前九月累計約 3.9 兆元、年增 41.1%（SEC 6-K 10/8 申報）"}
+{"date": "2026-10-10", "title": "GitHub CodeQL 2.27.2：強化 C++/Go/Rust/JavaScript 靜態分析（10/9）"}
+{"date": "2026-10-10", "title": "GitHub Copilot 程式碼審查新增組織層級計費選項與使用控管（10/8）"}
+{"date": "2026-10-10", "title": "主軸：AI 資安改打團體防守戰——前沿實驗室拉資安大廠與政府組聯盟、對防守方不對稱釋出能力（Anthropic Cyber Mission＋關鍵基礎設施防禦＋OSS Scanner）"}
+{"date": "2026-10-10", "title": "概念：防守者困境（Defender's Dilemma，攻擊者找一個破口即贏、防守者須守住每一個）"}
+{"date": "2026-10-10", "title": "半導體專區：IC 製造｜設備預測維護（Predictive Maintenance, PdM）——FDC 時序＋ML 估剩餘壽命 RUL，背景"}
