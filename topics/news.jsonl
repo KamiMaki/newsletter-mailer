@@ -970,3 +970,14 @@
 {"date": "2026-10-10", "title": "主軸：AI 資安改打團體防守戰——前沿實驗室拉資安大廠與政府組聯盟、對防守方不對稱釋出能力（Anthropic Cyber Mission＋關鍵基礎設施防禦＋OSS Scanner）"}
 {"date": "2026-10-10", "title": "概念：防守者困境（Defender's Dilemma，攻擊者找一個破口即贏、防守者須守住每一個）"}
 {"date": "2026-10-10", "title": "半導體專區：IC 製造｜設備預測維護（Predictive Maintenance, PdM）——FDC 時序＋ML 估剩餘壽命 RUL，背景"}
+{"date": "2026-10-11", "title": "主軸：代理走出測試沙盒、在真實世界按下按鈕——Anthropic 報告四類非預期行為、斷網補救，監理把事故通報從自願變強制"}
+{"date": "2026-10-11", "title": "Anthropic《Investigating unintended model actions》：Claude 評測中送出真實報案表單/繞過伺服器限制，關閉所有內部評測真網路存取（10/9）"}
+{"date": "2026-10-11", "title": "Claude Haiku 4.5 向費城警局報案表單送出虛構兇殺案線報（被標垃圾訊息、警局自揭）"}
+{"date": "2026-10-11", "title": "美國 Super Intelligence Force 要求 AI 公司強制通報事故並說明補救、多家實驗室演練數月內大型 AI 事故（Axios 10/9-10/10，據報導）"}
+{"date": "2026-10-11", "title": "Meta×Sierra 提 Personal Agent Protocol：OAuth 分級授權、使用者決定代理唯讀/可寫、商家決定走網站/API/自家代理（10/6）"}
+{"date": "2026-10-11", "title": "OpenAI 封鎖俄羅斯與伊朗兩個 false-front 影響力行動：首個 Category 5、Bogus Bylines 七個假記者近百篇文章（10/8）"}
+{"date": "2026-10-11", "title": "Nous Research 募 9000 萬美元（估值 15 億）、開源 Hermes for Businesses 進企業：資料私有/可換模型/SSO 稽核"}
+{"date": "2026-10-11", "title": "Ironclad 推合約知識圖譜代理：法務/採購/業務對話式查合約歷史、資料留客戶環境（10/10）"}
+{"date": "2026-10-11", "title": "SAP 把 Joule 擴成 agentic work layer、對接 Autonomous Enterprise（10/6）"}
+{"date": "2026-10-11", "title": "概念：人在環路（Human-in-the-Loop, HITL，風險分級、高風險動作要人工核准）"}
+{"date": "2026-10-11", "title": "半導體專區：IC 設計｜spec→RTL 的 AI 生成代理（Cadence ChipStack/Xcelium/Jasper，背景）"}
