@@ -981,3 +981,15 @@
 {"date": "2026-10-11", "title": "SAP 把 Joule 擴成 agentic work layer、對接 Autonomous Enterprise（10/6）"}
 {"date": "2026-10-11", "title": "概念：人在環路（Human-in-the-Loop, HITL，風險分級、高風險動作要人工核准）"}
 {"date": "2026-10-11", "title": "半導體專區：IC 設計｜spec→RTL 的 AI 生成代理（Cadence ChipStack/Xcelium/Jasper，背景）"}
+{"date": "2026-10-12", "title": "Vals AI 實測多代理團隊貴 1.8～5.1 倍、品質幾乎未變好——四組組隊比較僅一組顯著勝出（10/11）"}
+{"date": "2026-10-12", "title": "微軟 Work IQ 預覽：以語意模型把 Copilot/agent 接上 Dynamics 365／Power Platform 即時業務資料（10/11）"}
+{"date": "2026-10-12", "title": "Ironclad 推出 Ironclad Agent 與合約知識圖譜（Contract Knowledge Graph），讓 agent 判斷接地公司成交歷史（10/9）"}
+{"date": "2026-10-12", "title": "Nous Research 募 9,000 萬美元、把開源 Hermes agent 推進企業（Hermes for Businesses）（10/11）"}
+{"date": "2026-10-12", "title": "Claude Code 2.1.294～296：修 hook 被寫成指令可放行該擋動作、強化 Stop/SubagentStop 判斷、子代理 autoCompact（10/8～10/9）"}
+{"date": "2026-10-12", "title": "GitHub Copilot 為 JetBrains IDE 新增控制項與聊天改進（10/10）"}
+{"date": "2026-10-12", "title": "Sierra 的 Personal Agent 協定與多項 agent 商務標準截至 10/10 仍未出貨"}
+{"date": "2026-10-12", "title": "傳 Amazon 洽購影片模型新創 Decart、估值約 70 億美元（WSJ，據報導）（10/11）"}
+{"date": "2026-10-12", "title": "傳 Anthropic 簽 IREN 雲端合約、分析師估 245MW 站點月營收約 13 億美元（The Information，估算）（10/11）"}
+{"date": "2026-10-12", "title": "主軸：更多 agent 不是答案——多代理團隊性價比被戳破，產業槓桿轉向把單一 agent 接地到對的資料（grounding）"}
+{"date": "2026-10-12", "title": "概念：協調稅（Coordination Tax）"}
+{"date": "2026-10-12", "title": "半導體專區：IC 製造｜晶圓缺陷圖樣／空間特徵辨識（Wafer Map Pattern Recognition，WM-811K／CNN，背景）"}
