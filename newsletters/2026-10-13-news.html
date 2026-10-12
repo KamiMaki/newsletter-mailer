@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的 AI 每日電子報🐧</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;padding:16px;">
+<tr><td align="center">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+
+<!-- Header -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px 16px 0 0;padding:28px 24px;text-align:center;">
+<div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:13px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:12px;color:#c7d2fe;margin-top:10px;background:rgba(255,255,255,0.15);display:inline-block;padding:4px 12px;border-radius:12px;">2026 年 10 月 13 日 · 星期一</div>
+</td></tr>
+
+<!-- 30秒重點 -->
+<tr><td style="background:#1a1a1a;padding:24px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>OCP 全球高峰會上，NVIDIA 把自家最機密的 Vera Rubin 機櫃設計<strong style="color:#a5b4fc;">捐進開放標準</strong>，連 AMD、Google、Meta、Microsoft 等對手都一起簽署供電、冷卻、網路與電網韌性的共通規格——AI 工廠的「藍圖」正在被公開標準化。</li>
+<li style="margin-bottom:10px;">這張藍圖把幾個數字釘死：機櫃衝到 <strong style="color:#e2e8f0;">250kW</strong>、單櫃 <strong style="color:#e2e8f0;">5,000A 液冷匯流排</strong>、<strong style="color:#e2e8f0;">800V 直流配電</strong>、網路單 lane 達 <strong style="color:#e2e8f0;">400Gb/s</strong>。</li>
+<li style="margin-bottom:10px;">Meta 同日發表前沿新模型 <strong style="color:#e2e8f0;">Muse Wonder</strong>，主打長期記憶與自主收尾，走付費閉源路線。</li>
+<li style="margin-bottom:10px;">HCLTech 與 Anthropic 簽全球夥伴約、NVIDIA 傳洽購開源權重新創 Reflection AI——大廠的「卡位」動作沒停。</li>
+<li>👷 <strong style="color:#67e8f9;">對半導體工作者最相關的：</strong>這套標準把壓力往上游傳導到先進封裝供電、電源完整性、SerDes 訊號完整性與散熱設計——你負責的環節，規格正被這張藍圖逼著往前。</li>
+</ul>
+</td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="padding:20px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;padding:1px;">
+<tr><td style="background:#1a1a1a;border-radius:15px;padding:26px 24px;">
+<div style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);color:#fff;font-size:12px;font-weight:700;padding:5px 12px;border-radius:12px;margin-bottom:14px;">🎯 今天的主軸</div>
+<div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-bottom:18px;">競爭最兇的對手一起把 AI 工廠「外殼」開源了——這是資料中心的「ATX 時刻」</div>
+
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;margin-bottom:16px;">
+先用一句話說清楚今天的新聞共同指向什麼：<strong style="color:#a5b4fc;">蓋 AI 工廠的方法，正從「各家祕密手工打造」轉向「產業共用一張公開、可互換的藍圖」。</strong>而且推這件事的，正是最沒有理由分享的那一家。
+</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 8px;">▍共同變化</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">
+10 月 12–15 日在聖荷西舉行的 <strong style="color:#a5b4fc;">OCP 全球高峰會</strong>（Open Compute Project，一個由大廠共同制定資料中心開放規格的非營利組織）上，三件事一起發生：① NVIDIA 把原本是自家最高機密的 <strong style="color:#a5b4fc;">Vera Rubin 機櫃與運算托盤設計</strong>，透過 MGX 架構捐進 OCP；② 它和 <strong style="color:#a5b4fc;">AMD、Google、Meta</strong> 共同發表《開放資料中心規範 v0.7》，把供電、冷卻、實體佈局寫成共通規格；③ 又和 <strong style="color:#a5b4fc;">Google、Meta、Microsoft</strong> 一起訂《OCP 電網韌性規範》，要求 AI 機房在電網擾動時能自動反應、在 2 秒內回到接近滿載。一向各蓋各的對手，這週一起把「怎麼蓋 AI 工廠」攤開來寫。
+</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 8px;">▍為什麼放在一起看</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">
+單看任何一則，都像「又一個硬體發表」。但放在一起，方向出奇一致：<strong style="color:#a5b4fc;">競爭最激烈的幾家公司，正在把資料中心的「外殼」——機櫃、供電、散熱、網路——標準化、開放化。</strong>這不是客氣，是因為瓶頸換位置了。
+</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 8px;">▍過去 vs. 現在</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">
+過去，每家雲端巨頭＋NVIDIA 各自用祕密規格蓋資料中心，像手工訂製的大型主機；供應鏈得為每一家重新畫零件。現在他們把機櫃尺寸、<strong style="color:#a5b4fc;">800V 直流供電</strong>、液冷匯流排、網路介面寫成共通規格——就像當年個人電腦從「訂製整機」走到 <strong style="color:#a5b4fc;">ATX 標準</strong>：一旦機殼、電源供應器、匯流排變成公開規格，一整個「可互換零件」的生態系就爆發出來，組一台電腦變成誰都能快速做到的事。今天這些公司，等於在幫 AI 工廠做它的 ATX 時刻。
+</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 8px;">▍背後邏輯</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">
+這個比喻要說回技術本身：ATX 之所以重要，不是因為它「漂亮」，而是它讓零件可互換、供應商可競爭、整機可快速組裝。AI 工廠現在卡的，正是這個——<strong style="color:#a5b4fc;">瓶頸已經從「晶片夠不夠聰明」變成「世界能多快把 GW 級工廠實體蓋出來」。</strong>祕密規格沒辦法讓上百家機構件、電源、散熱、光模組廠同時高速量產；把外殼商品化、標準化，等於替整條供應鏈鬆綁。（<strong style="color:#a5b4fc;">編輯分析</strong>）而開放的只是「外殼」——NVIDIA 的 GPU、NVLink 與軟體棧仍然封閉。把外圍讓出去、把核心守得更緊，是這盤棋的真正算盤。
+</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 8px;">▍對你的工作</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">
+對半導體讀者，這張藍圖不是雲端的事，而是把幾個數字釘死後，<strong style="color:#a5b4fc;">往上游一路傳導壓力</strong>：機櫃衝到 250kW、單櫃 5,000A 液冷匯流排、800V 直流配電——先進封裝的供電（IVR／嵌入式深溝電容／背面供電）與熱設計被逼著往前；網路單 lane 衝到 200–400Gb/s——SerDes 訊號完整性、共封裝光學（CPO）成了繞不開的題目。你負責的環節，規格正被這張共通藍圖往前推。
+</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 8px;">▍限制與待驗證</div>
+<div style="color:#cbd5e1;font-size:15px;line-height:1.75;">
+別把草案當成既成事實：規範還是 <strong style="color:#a5b4fc;">v0.7（草案階段）</strong>，Vera Rubin 硬體要到 2026 年底才出貨；「開放」的是外殼，真正的可互換性要等多家做出相容產品才算數。這比較像「商品化你的互補品、守住核心」，而不是真把價值讓出去。（<strong style="color:#a5b4fc;">編輯分析</strong>）
+</div>
+
+<div style="background:#252525;border-radius:8px;padding:14px;margin:18px 0;">
+<div style="font-size:12px;font-weight:700;color:#818cf8;margin-bottom:6px;">👤 延伸解讀（媒體分析，非官方事實依據）</div>
+<div style="color:#94a3b8;font-size:14px;line-height:1.7;">科技媒體把 NVIDIA 這套動作稱為「grid-to-chip（從電網到晶片）」的垂直整合願景——從 800V 供電、液冷、網路一路標準化到機櫃，目的是讓 AI 工廠能像堆積木一樣規模化擴建。此為二手媒體觀點，供理解趨勢用。</div>
+</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 8px;">▍重點一句話</div>
+<div style="color:#f1f5f9;font-size:15px;line-height:1.75;font-weight:600;">
+AI 的競爭正從「誰的晶片強」往外擴到「誰能最快把工廠蓋起來」，於是連對手都先把資料中心的外殼標準化——把外圍開放、把核心守住。
+</div>
+
+<div style="margin-top:16px;font-size:13px;line-height:1.8;">
+🔗 <a href="https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/" style="color:#06b6d4;text-decoration:none;">NVIDIA 官方部落格：OCP 高峰會開放 Vera Rubin 架構</a><br>
+🔗 <a href="https://www.opencompute.org/news/explore-22-tracks-at-the-2026-ocp-global-summit/" style="color:#06b6d4;text-decoration:none;">OCP：2026 全球高峰會 22 個議程軌</a>
+</div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 主軸的衍生新聞 -->
+<tr><td style="padding:4px 0;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin:8px 4px 14px;">🔗 主軸的衍生新聞</div>
+</td></tr>
+
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:20px 22px;margin-bottom:12px;">
+<div style="display:inline-block;background:#312e81;color:#c7d2fe;font-size:11px;font-weight:700;padding:4px 10px;border-radius:10px;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">對手一起簽名：兩份開放規格把「電怎麼進、網怎麼接」寫成共識</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">
+NVIDIA 與 <strong style="color:#e2e8f0;">AMD、Google、Meta</strong> 共同發表《開放資料中心規範 v0.7》，統一 AI 工廠的供電架構、冷卻與實體佈局；另與 <strong style="color:#e2e8f0;">Google、Meta、Microsoft</strong> 發表《OCP 電網韌性規範》，定義機房在電網擾動時要「不斷線、自動反應、2 秒內回到接近滿載」。這正是主軸的核心證據：平常搶市占的對手，罕見地一起把基礎規格寫成公開標準。
+</div>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:10px 0 0;">💡 當對手都願意共寫規格，代表大家都認定「蓋得夠快」比「各藏一手」更值錢。</p>
+<div style="margin-top:8px;font-size:13px;">🔗 <a href="https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> ｜ 來源：NVIDIA Blog</div>
+</td></tr>
+
+<tr><td style="height:12px;"></td></tr>
+
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:20px 22px;">
+<div style="display:inline-block;background:#312e81;color:#c7d2fe;font-size:11px;font-weight:700;padding:4px 10px;border-radius:10px;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">Meta 採用 Spectrum-6：把網路堆到 10 萬顆 GPU 以上</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">
+Meta 宣布採用 NVIDIA <strong style="color:#e2e8f0;">Spectrum-6（102.4Tb/s）</strong>乙太網路交換器，裝進自家液冷機櫃 IcePack 的 N-IceCube 交換機，搭配 Spectrum-X Multiplane 把流量分散到最多 8 個獨立平面，目標是擴展到 <strong style="color:#e2e8f0;">超過 10 萬顆 GPU</strong>。當單一訓練叢集動輒十萬卡，網路頻寬與擁塞就成了和算力同等重要的瓶頸。
+</div>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:10px 0 0;">💡 AI 工廠能不能擴大，越來越取決於「網路接得上」而非只有「晶片夠不夠」。</p>
+<div style="margin-top:8px;font-size:13px;">🔗 <a href="https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> ｜ 來源：NVIDIA Blog</div>
+</td></tr>
+
+<tr><td style="height:12px;"></td></tr>
+
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:20px 22px;">
+<div style="display:inline-block;background:#312e81;color:#c7d2fe;font-size:11px;font-weight:700;padding:4px 10px;border-radius:10px;margin-bottom:10px;">🔗 衍生新聞</div>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">和 Cisco 推 USFP 光模組：單 lane 400Gb/s，把光學密度拉高 4 倍</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">
+NVIDIA 與 <strong style="color:#e2e8f0;">Cisco</strong> 提出新的可插拔光學規格 <strong style="color:#e2e8f0;">USFP</strong>，footprint 與現行 OSFP 接近，但提供每 lane <strong style="color:#e2e8f0;">400Gb/s</strong>（是 200Gb/s 光模組的 4 倍密度）、功耗效率約好 1.3 倍，從 16 lane 起步、規劃擴到 32 lane；TE Connectivity、Amphenol 為合作夥伴。這把壓力直接壓到光電整合與訊號完整性——也正好呼應今天的半導體專區。
+</div>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:10px 0 0;">💡 當資料在機房內的搬運量爆增，光學介面的標準化會跟機櫃一樣先被攤開來訂。</p>
+<div style="margin-top:8px;font-size:13px;">🔗 <a href="https://blogs.nvidia.com/blog/ocp-global-summit-vera-rubin-scale-ai-factories/" style="color:#06b6d4;text-decoration:none;">閱讀原文</a> ｜ 來源：NVIDIA Blog</div>
+</td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="padding:24px 0 4px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;padding:22px 24px;">
+<tr><td>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:16px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:14px;line-height:1.7;">
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Meta 發表前沿新模型 Muse Wonder／Muse Wonder Full（10/12）。</strong>主打跨對話的「Active Memory（主動記憶）」與自主收尾任務的「Active Focus（主動聚焦）」，鎖定法律、金融、醫療與程式等代理場景；Meta 稱是「至今最對齊」、對 CBRN 與資安誤用有「史上最強防護」。走閉源權重、付費路線，僅透過 Meta Model API 與 Muse Code 取用（部分第三方報導的定價 Meta 官方尚未證實）。<em style="color:#94a3b8;">為什麼重要：大型模型持續把「記憶」與「自主收尾」做成預設能力，付費牆則越築越高。</em> 🔗 <a href="https://www.unite.ai/meta-unveils-muse-wonder-series-its-most-capable-ai-models-yet/" style="color:#06b6d4;text-decoration:none;">來源報導</a></li>
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">HCLTech 與 Anthropic 簽全球夥伴協議（10/12）。</strong>HCLTech 將用 Claude、Claude Code、Cowork 打造產業別解決方案，並成立專屬 Anthropic 事業單位與卓越中心、提供企業部署的安全沙盒。<em style="color:#94a3b8;">為什麼重要：大型系統整合商成了把企業從「AI 試點」推進到「全面部署」的關鍵通路。</em> 🔗 <a href="https://www.anthropic.com/news/anthropic-infosys" style="color:#06b6d4;text-decoration:none;">Anthropic 企業夥伴頁</a></li>
+<li style="margin-bottom:0;"><strong style="color:#e2e8f0;">（傳）NVIDIA 洽購／加碼開源權重新創 Reflection AI。</strong>據《金融時報》10/10 報導，NVIDIA 正與 Reflection AI 洽談收購或加碼投資（NVIDIA 已持股約 8 億美元，該公司 3 月估值 250 億美元），結構可能是全面收購、acqui-hire 或擴大股權＋晶片供應。外界解讀為補強美國「開源權重」陣線、對抗中國 DeepSeek。<em style="color:#94a3b8;">為什麼重要：連硬體龍頭都想握住一條開源權重的模型線，開放與封閉的界線正被重新談判。（據報導，未成交）</em> 🔗 <a href="https://techstartups.com/2026/10/12/nvidia-in-talks-to-acquire-open-source-ai-startup-reflection-ai-to-challenge-chinas-deepseek/" style="color:#06b6d4;text-decoration:none;">來源報導（轉述 FT）</a></li>
+</ul>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="padding:12px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;padding:22px 24px;">
+<tr><td>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:16px;">📖 今日概念｜開放標準 vs. 事實標準</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.75;">
+<div style="margin-bottom:12px;"><strong style="color:#a5b4fc;">一句定義：</strong>「開放標準（Open Standard）」是由一個中立組織（如 OCP）公開制定、任何人都能依規格製造相容產品的共同規範；「事實標準（De Facto Standard）」則是某一家公司的設計因為太普及，大家只好跟著照抄，但規格的控制權仍握在那家手上。</div>
+<div style="margin-bottom:12px;"><strong style="color:#a5b4fc;">生活化比喻：</strong>USB-C 接頭是開放標準——規格公開，哪家都能做；而某家手機早年的專屬充電口是事實標準——你得用它家的線。差別不在「多少人用」，而在「規格的鑰匙在誰手上」。</div>
+<div style="margin-bottom:12px;"><strong style="color:#a5b4fc;">工作中的例子：</strong>在半導體與硬體圈，PCIe、DDR、UCIe（die-to-die 互連）都是開放標準，讓不同廠商的晶片、記憶體、chiplet 能互通；而某家 GPU 的專屬互連則偏事實標準——好用，但生態系的節奏由它定。</div>
+<div style="margin-bottom:12px;"><strong style="color:#a5b4fc;">常見誤解：</strong>「把技術開放＝把優勢讓出去」。不一定。一家主導者常刻意把「外圍／互補品」做成開放標準來擴大整個市場，同時把「核心」留成封閉——市場做大了，核心反而更值錢。</div>
+<div><strong style="color:#a5b4fc;">與今天主軸的關係：</strong>NVIDIA 把機櫃、供電、網路規格捐進 OCP（開放標準），卻把 GPU 與 NVLink 留成自家事實標準——正是「開放外殼、守住核心」的教科書操作。看懂這條線，就看懂了今天為什麼對手會一起簽名。</div>
+</div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 半導體 AI 專區 -->
+<tr><td style="padding:12px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;padding:22px 24px;">
+<tr><td>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜高速 SerDes／通道訊號完整性（SI）的機器學習建模</div>
+<div style="margin-bottom:16px;">
+<span style="display:inline-block;background:#164e63;color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:10px;margin-right:6px;">EDA 工具</span>
+<span style="display:inline-block;background:#3f3f46;color:#d4d4d8;font-size:11px;font-weight:700;padding:4px 10px;border-radius:10px;">背景知識</span>
+</div>
+
+<div style="font-size:13px;font-weight:700;color:#67e8f9;margin:14px 0 6px;">▍問題與流程位置</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">
+今天主軸裡的 400Gb/s 光模組、200G/lane 網路，背後都靠一樣東西撐著：<strong style="color:#e2e8f0;">SerDes（序列器／解序列器）</strong>——把晶片裡的平行資料「串成一條」高速送出去再還原回來。但訊號在 PCB、封裝、連接器裡跑這麼快，會衰減、反射、互相干擾（就是「訊號完整性 / SI」問題）。工程師要用<strong style="color:#e2e8f0;">眼圖（eye diagram）</strong>與誤碼率（BER）判斷這條鏈路到底通不通。這一關落在實體設計之後、簽核（signoff）之前。
+</div>
+
+<div style="font-size:13px;font-weight:700;color:#67e8f9;margin:14px 0 6px;">▍AI 如何介入（與過去流程的差異）</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">
+過去要算一條通道的眼圖，得跑非常耗時的 3D 電磁場與電路模擬，每改一個參數就重跑一次，動輒數小時到數天。<strong style="color:#e2e8f0;">改變在於：用機器學習建「代理模型（surrogate model）」</strong>——拿過去大量模擬／量測資料訓練，之後給它一組設計參數，就能在幾秒內直接預測眼高、眼寬與 BER，把「改參數→看結果」的迴圈從幾小時壓到接近即時。學界已有用高斯過程回歸對 HBM3E 鏈路預測眼高達 99.56% 準確度、用深度學習做 56／112Gb SerDes 等化器（CTLE）自動調校的研究。這讓 SI 分析能「左移（shift-left）」到早期，不必等到設計定案才發現通道不通。
+</div>
+
+<div style="font-size:13px;font-weight:700;color:#67e8f9;margin:14px 0 6px;">▍資料與產出</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">
+輸入是通道的幾何與材料參數、S 參數、收發器設定；輸出是眼圖指標、BER 浴缸曲線（bathtub curve）、最佳等化器設定。訓練資料來自過去專案的模擬與實測——這也是它最大的限制來源。
+</div>
+
+<div style="font-size:13px;font-weight:700;color:#67e8f9;margin:14px 0 6px;">▍如何驗證</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">
+ML 預測不能取代簽核：業界做法是用 ML 快速「篩掉」大量差的設計、鎖定少數候選，再對候選跑完整的電磁／電路模擬與實測眼圖做最終確認。另有研究用貝氏最佳化專找「最壞位元樣式」來加速最壞情況眼圖分析（報導約 14 倍加速）。ML 負責「快速探索」，確定性引擎負責「最後把關」。
+</div>
+
+<div style="font-size:13px;font-weight:700;color:#67e8f9;margin:14px 0 6px;">▍限制與風險</div>
+<div style="color:#cbd5e1;font-size:14px;line-height:1.7;">
+代理模型只在訓練資料涵蓋的範圍內可靠——遇到沒看過的新封裝、新材料、新速率（例如從 112G 跳到 200G/lane）就可能外插失準；它給的是機率性的近似，高風險鏈路仍須回到物理模擬與量測確認。這是「背景知識＋編輯分析」，非今日新聞，相關研究多為學界與 EDA 工具商的既有成果。
+</div>
+
+<div style="margin-top:14px;font-size:13px;">🔗 <a href="https://arxiv.org/pdf/2605.18170" style="color:#06b6d4;text-decoration:none;">arXiv：跨製程 SI 分析的 ML 代理模型</a></div>
+
+<p style="color:#67e8f9;font-weight:700;font-size:14px;line-height:1.7;margin:16px 0 0;">👷 對半導體工作者的意義：當資料中心的網路速率被今天這套開放標準一路推高，SI／SerDes 驗證會從「最後才做」的苦工，變成設計早期就要用 ML 快篩的常態環節——對做實體設計、封裝、驗證與簽核的團隊，值得開始評估把 ML 代理模型接進既有的 SI 流程。</p>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="padding:12px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;padding:1px;">
+<tr><td style="background:#1a1a1a;border-radius:15px;padding:24px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.75;">
+<li style="margin-bottom:12px;">如果 NVIDIA 願意把機櫃、供電、網路都開源，卻死守 GPU 與互連——你的公司在自己的產品線裡，哪一層是「該開放做大市場的外殼」、哪一層是「無論如何都要守住的核心」？你分得清楚嗎？</li>
+<li style="margin-bottom:12px;">當「蓋得多快」取代「晶片多強」成為新瓶頸，你負責的工作環節（封裝、供電、散熱、驗證、SI）裡，哪一項最可能成為整條產線的卡點？你手上有讓它加速的工具嗎？</li>
+<li>這套藍圖把機櫃推到 250kW、800V、400Gb/s。假設三年後這些數字再翻一倍，你今天做的設計決策裡，哪些會先撞牆、需要現在就預留餘裕？</li>
+</ul>
+<p style="color:#a5b4fc;font-weight:700;font-size:15px;line-height:1.7;margin:16px 0 0;">🎒 今日帶走：AI 的戰場正從「晶片有多聰明」擴大到「工廠能多快蓋起來」，於是連對手都先把資料中心的外殼標準化、開放化——而把最值錢的核心守得更緊。</p>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 歷史電子報入口 -->
+<tr><td style="padding:12px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:12px;padding:22px 24px;">
+<tr><td style="text-align:center;">
+<div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+<div style="color:#94a3b8;font-size:14px;line-height:1.6;margin-bottom:12px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</div>
+<a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-weight:600;font-size:15px;">查看歷史電子報</a>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- Footer -->
+<tr><td style="background:#1a1a1a;border-radius:0 0 16px 16px;padding:24px;text-align:center;border-top:1px solid #2d2d2d;">
+<div style="color:#cbd5e1;font-size:14px;margin-bottom:10px;">📬 覺得有幫助？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">分享給朋友訂閱這份電子報</a></div>
+<div style="color:#64748b;font-size:13px;margin-bottom:14px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></div>
+<div style="color:#475569;font-size:12px;line-height:1.6;">© 2026 企鵝的 AI 每日電子報🐧<br>本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源</div>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>

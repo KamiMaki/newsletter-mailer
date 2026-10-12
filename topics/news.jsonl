@@ -993,3 +993,13 @@
 {"date": "2026-10-12", "title": "主軸：更多 agent 不是答案——多代理團隊性價比被戳破，產業槓桿轉向把單一 agent 接地到對的資料（grounding）"}
 {"date": "2026-10-12", "title": "概念：協調稅（Coordination Tax）"}
 {"date": "2026-10-12", "title": "半導體專區：IC 製造｜晶圓缺陷圖樣／空間特徵辨識（Wafer Map Pattern Recognition，WM-811K／CNN，背景）"}
+{"date": "2026-10-13", "title": "主軸：對手一起把 AI 工廠「外殼」開源——NVIDIA 把 Vera Rubin 機櫃捐進 OCP、AMD/Google/Meta/Microsoft 共簽供電冷卻網路與電網韌性規格（開放標準 facet）"}
+{"date": "2026-10-13", "title": "概念：開放標準 vs 事實標準（Open Standard vs De Facto Standard）"}
+{"date": "2026-10-13", "title": "半導體專區：EDA 工具｜高速 SerDes／通道訊號完整性（SI）的機器學習代理模型（眼圖/BER/等化器預測，背景）"}
+{"date": "2026-10-13", "title": "NVIDIA 在 OCP 開放 Vera Rubin 機櫃與運算托盤設計（MGX 1.2：blind-mate 液冷、5000A 液冷匯流排、250kW、Vera CPU agentic 機櫃）"}
+{"date": "2026-10-13", "title": "《開放資料中心規範 v0.7》(NVIDIA+AMD+Google+Meta) ＋《OCP 電網韌性規範》(Google/Meta/Microsoft/NVIDIA，2 秒回到接近滿載)"}
+{"date": "2026-10-13", "title": "Meta 採用 NVIDIA Spectrum-6（102.4Tb/s）N-IceCube 交換機、Spectrum-X Multiplane 擴展至 10 萬顆 GPU 以上"}
+{"date": "2026-10-13", "title": "NVIDIA×Cisco 提出 USFP 可插拔光學規格（400Gb/s/lane、4 倍密度、TE/Amphenol 夥伴）"}
+{"date": "2026-10-13", "title": "Meta 發表 Muse Wonder／Muse Wonder Full（10/12）：Active Memory/Active Focus、閉源付費、Meta Model API/Muse Code、強化 CBRN/資安防護"}
+{"date": "2026-10-13", "title": "HCLTech 與 Anthropic 簽全球夥伴協議（10/12）：Claude/Claude Code/Cowork、成立專屬 Anthropic 事業單位與 CoE"}
+{"date": "2026-10-13", "title": "（傳）NVIDIA 洽談收購或加碼投資開源權重新創 Reflection AI（FT 10/10 報導、已持股約 8 億美元、對抗 DeepSeek）"}
