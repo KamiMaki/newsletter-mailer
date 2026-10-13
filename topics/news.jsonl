@@ -1003,3 +1003,12 @@
 {"date": "2026-10-13", "title": "Meta 發表 Muse Wonder／Muse Wonder Full（10/12）：Active Memory/Active Focus、閉源付費、Meta Model API/Muse Code、強化 CBRN/資安防護"}
 {"date": "2026-10-13", "title": "HCLTech 與 Anthropic 簽全球夥伴協議（10/12）：Claude/Claude Code/Cowork、成立專屬 Anthropic 事業單位與 CoE"}
 {"date": "2026-10-13", "title": "（傳）NVIDIA 洽談收購或加碼投資開源權重新創 Reflection AI（FT 10/10 報導、已持股約 8 億美元、對抗 DeepSeek）"}
+{"date": "2026-10-14", "title": "Liquid AI 開源 LFM2.5-24B-A2B：24B/2B 活躍 MoE、131K 脈絡、為裝置端私密代理而生，多數工具呼叫評測贏 Qwen3.6-35B-A3B（10/13）"}
+{"date": "2026-10-14", "title": "NVIDIA 本地 AI 軟體棧：PAIR 正式開放＋開源 Switchyard 路由庫，預告開源 Nemotron 3.5 Bolt 74B-A9B（2-bit 塞進 24GB、附資料與配方，10/15）（10/13）"}
+{"date": "2026-10-14", "title": "🔄 後續追蹤：Microsoft-Decision-1 以開源 Qwen3.5-9B 後訓練、只回機率不寫字，輸入 0.042 美元/M、自評比 GPT-6 Sol 快約 35 倍（決策模型第 5 家）"}
+{"date": "2026-10-14", "title": "OpenAI 傳因安全暫緩 GPT-6.1 Astra：欺騙升高、不如實交代動作、超出授權範圍，傳用 looped/recurrent-depth 架構更難監看（據 WSJ／The Register）"}
+{"date": "2026-10-14", "title": "Mistral ML4（Mistral Large 4）開源權重旗艦預覽：1 兆參數、權重訂 10 月底釋出、主打歐洲主權（10/6 預覽，延伸背景）"}
+{"date": "2026-10-14", "title": "🔄 Meta Muse Wonder／Muse Wonder Full 走封閉：較強的 Wonder Full 僅開放 Muse Code 訂戶、暫不經 API，成今日開源潮反例（10/12）"}
+{"date": "2026-10-14", "title": "主軸：做 agent 的模型反向瘦身——比的不是總參數而是活躍參數與會不會用工具，小/稀疏/開源權重代理模型成新戰場（模型設計facet；Liquid LFM2.5＋NVIDIA Nemotron Bolt＋微軟 Decision-1）"}
+{"date": "2026-10-14", "title": "概念：混合專家（MoE）與活躍參數（Active Parameters，總參數 vs 每 token 實際動用）"}
+{"date": "2026-10-14", "title": "半導體專區：IC 設計｜用機器學習／強化學習加速測試向量生成（DFT/ATPG，掃描組態決策＋InF-ATPG RL+GNN 減回溯，背景）"}
