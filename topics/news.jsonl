@@ -1012,3 +1012,15 @@
 {"date": "2026-10-14", "title": "主軸：做 agent 的模型反向瘦身——比的不是總參數而是活躍參數與會不會用工具，小/稀疏/開源權重代理模型成新戰場（模型設計facet；Liquid LFM2.5＋NVIDIA Nemotron Bolt＋微軟 Decision-1）"}
 {"date": "2026-10-14", "title": "概念：混合專家（MoE）與活躍參數（Active Parameters，總參數 vs 每 token 實際動用）"}
 {"date": "2026-10-14", "title": "半導體專區：IC 設計｜用機器學習／強化學習加速測試向量生成（DFT/ATPG，掃描組態決策＋InF-ATPG RL+GNN 減回溯，背景）"}
+{"date": "2026-10-15", "title": "NVIDIA 歐洲城市部署 AI 代理營運城市：橫跨英/法/義/比/瑞典等 9 國城市，Omniverse 數位分身＋Metropolis 影像代理＋Nemotron 推理代理、本地營運 AI 工廠（Côte-d'Or 500+ 公有建物文件搜尋週→分、營運成本-10%，廠商自述）"}
+{"date": "2026-10-15", "title": "NVIDIA 加碼英國 AI 生態：五年 2.5 億美元算力投入 agentic 安全研究、利物浦都會區蓋 City Brain 主權 AI、Starling 銀行基礎模型訓練於 Civo 英國主權雲"}
+{"date": "2026-10-15", "title": "Anthropic 開設新加坡辦公室並與新加坡政府簽 MOU、主攻金融與公部門（第 5 個亞太據點、ASEAN GM Dale Finlay）"}
+{"date": "2026-10-15", "title": "🔄 後續追蹤：Google Gemini 4 Argon 全球 GA——開發者/企業＋Gemini App Pro/Ultra＋GitHub Copilot，API $2/$10 每百萬 token（11/30 後翻倍），先經 Fairwind 計畫給政府與受信任夥伴"}
+{"date": "2026-10-15", "title": "NVIDIA RTX Spark 全球 PC 應用生態就緒：本地 AI 裝置、地端推論工具與模型可直接跑在桌機/筆電"}
+{"date": "2026-10-15", "title": "GitHub secret scanning 預設封鎖 Anthropic API 金鑰、新增 Salesforce 權杖偵測"}
+{"date": "2026-10-15", "title": "GitHub Actions 工作流 lockfiles 進公測：把工作流引用的 action 版本鎖成 lockfile、可重現"}
+{"date": "2026-10-15", "title": "Anthropic 公布 2026 美國期中選舉準備（選舉誠信與濫用防護措施）"}
+{"date": "2026-10-15", "title": "阿里雲 QwenWork 電商/辦公代理工具與 AgentCore 代理基礎設施陸續上線（Ant Group 以 QwenWork 建企業級 AI）"}
+{"date": "2026-10-15", "title": "主軸：AI 的部署單位從『一個雲端 API』變成『插進一國一城的主權基礎設施』——同日 NVIDIA 把代理與 AI 工廠種進 9 國歐洲城市＋英國主權雲、Anthropic 跟新加坡政府簽 MOU（地理/主權 facet）"}
+{"date": "2026-10-15", "title": "概念：資料主權與資料落地（Data Sovereignty / Data Residency，資料存在哪 vs 受哪一國法律管轄）"}
+{"date": "2026-10-15", "title": "半導體專區：IC 製造｜晶圓廠數位分身（Fab Digital Twin）——用即時產線資料建活的虛擬工廠做排程/派工 what-if＋RL 試錯，背景"}
