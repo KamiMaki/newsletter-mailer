@@ -1024,3 +1024,13 @@
 {"date": "2026-10-15", "title": "主軸：AI 的部署單位從『一個雲端 API』變成『插進一國一城的主權基礎設施』——同日 NVIDIA 把代理與 AI 工廠種進 9 國歐洲城市＋英國主權雲、Anthropic 跟新加坡政府簽 MOU（地理/主權 facet）"}
 {"date": "2026-10-15", "title": "概念：資料主權與資料落地（Data Sovereignty / Data Residency，資料存在哪 vs 受哪一國法律管轄）"}
 {"date": "2026-10-15", "title": "半導體專區：IC 製造｜晶圓廠數位分身（Fab Digital Twin）——用即時產線資料建活的虛擬工廠做排程/派工 what-if＋RL 試錯，背景"}
+{"date": "2026-10-16", "title": "NVIDIA SEMICON West 推 AI-defined fabs：cuPotential 等 CUDA-X 庫＋十餘家 EDA/設備大廠，把造晶片模擬從數天壓到數分鐘/毫秒（Advantest 時→分、Lam 電漿天→毫秒、imec 微影窗口+30%、KLA 50x）"}
+{"date": "2026-10-16", "title": "ASML Q3：上調2026展望、AI需求塞爆機台供給到2027-2028、2027起漲價、中國銷售今年大減、當日股價跌約4.2%"}
+{"date": "2026-10-16", "title": "TSMC Q3：營收US$46.72B年增約41%、淨利年增68.7%、六連季獲利新高、HPC占68%、毛利66.4%（2nm稀釋）、管理層稱供需缺口「很大」"}
+{"date": "2026-10-16", "title": "黃仁勳（Bloomberg）：會對開發「不安全AI」的客戶斷供晶片，但認為當前擔憂過頭、AI可被安全管理"}
+{"date": "2026-10-16", "title": "（傳）NVIDIA投資推論晶片新創d-Matrix：The Information報導、經NVLink Fusion納入、Raptor處理器主攻decode、條件未公開未證實"}
+{"date": "2026-10-16", "title": "Anthropic Claude Docs/Slides/Design脫離beta、10/15起全方案（含免費）預設開啟；Dashboards／Motion進beta"}
+{"date": "2026-10-16", "title": "微軟開源Agent Framework釋出python-1.22.0（10/15）/dotnet-1.25.0（10/14）：強化AG-UI信任邊界、未回覆的工具核准請求自動拒絕、持久化狀態相容性警示"}
+{"date": "2026-10-16", "title": "主軸：AI榮景從『買更多晶片』變成『重造整座晶圓廠』——NVIDIA把物理模擬鋪進每道製程、ASML/TSMC財報用「需求塞爆到2028、六連季新高」證實這波已改寫晶片景氣循環（製造/資本 facet）"}
+{"date": "2026-10-16", "title": "概念：替身模型（Surrogate Model）——用便宜的學習模型取代昂貴的物理模擬/實驗"}
+{"date": "2026-10-16", "title": "半導體專區：EDA 工具｜靜態時序分析（STA）與時序簽核的 ML 加速與 pre-route 延遲預測（shift-left，背景）"}
