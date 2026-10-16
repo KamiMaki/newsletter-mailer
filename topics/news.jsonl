@@ -1034,3 +1034,17 @@
 {"date": "2026-10-16", "title": "主軸：AI榮景從『買更多晶片』變成『重造整座晶圓廠』——NVIDIA把物理模擬鋪進每道製程、ASML/TSMC財報用「需求塞爆到2028、六連季新高」證實這波已改寫晶片景氣循環（製造/資本 facet）"}
 {"date": "2026-10-16", "title": "概念：替身模型（Surrogate Model）——用便宜的學習模型取代昂貴的物理模擬/實驗"}
 {"date": "2026-10-16", "title": "半導體專區：EDA 工具｜靜態時序分析（STA）與時序簽核的 ML 加速與 pre-route 延遲預測（shift-left，背景）"}
+{"date": "2026-10-17", "title": "Anthropic 讓外部評估機構 METR 六名成員取得近似員工的內部系統存取、立三層稽核框架（不得否決發表、可要求遮蔽客戶資料與模型架構）"}
+{"date": "2026-10-17", "title": "研究：搜尋增強 LLM「檢索了卻沒讀」常照抄摘要不開原文、答案更易過時與引用不忠實（arXiv 2610.21731，相關性非因果）"}
+{"date": "2026-10-17", "title": "研究：以下游問答評 agent 記憶會混淆記憶品質與檢索/生成補救，FEB-30 基準顯示代表性系統記憶操作僅約兩成正確（arXiv 2610.22209）"}
+{"date": "2026-10-17", "title": "研究：OmniVerifier-C1 以分級（非二元）驗證器在文字生圖等任務勝過二元與單點打分（arXiv 2610.22355）"}
+{"date": "2026-10-17", "title": "GitHub 把 AI Scan（PR 階段AI安全掃描）與 agentic autofix（自動修補程式掃描告警）正式 GA（2026-10-15）"}
+{"date": "2026-10-17", "title": "Meta 開源 Muse Spark：約 816B 參數（42B 活躍）MoE、1M 脈絡、多模態，可在兩台 Apple M5 Ultra Mac Studio 以 MLX 本地跑（Muse Model License）"}
+{"date": "2026-10-17", "title": "NVIDIA 發布 Nemotron 3.5 開放模型：Super VL 120B（12B 活躍）多模態 1M 脈絡、Bolt 74B-A9B 24GB 邊緣版、Bolt E4B 4GB（10/23）"}
+{"date": "2026-10-17", "title": "Mistral 推 Timestral：約 209M 機率式時序預測模型、可在 CPU 運行，用於金融/供應鏈/設備預測維護"}
+{"date": "2026-10-17", "title": "Cohere 簽意向書收購資安公司 AISLE（AI 找軟體漏洞、約 50 人加入），綁主權 AI 與歐洲擴張"}
+{"date": "2026-10-17", "title": "Claude Code 2.1.302（fork 子代理終端機外預設開啟）與 OpenAI Codex CLI 0.163.0（唯讀工具可平行、回覆中途即時插話導引）"}
+{"date": "2026-10-17", "title": "歐盟執委會在都柏林歐洲 AI in Science 峰會啟動 RAISE（Resource for AI Science in Europe）承諾倡議，為研究者集結運算與 AI 資源"}
+{"date": "2026-10-17", "title": "主軸：AI 的「評估」正在騙你——跑分/附來源/記得住都可能是表面功夫，研究戳破 RAG「檢索卻沒讀」與 agent 記憶評分、Anthropic 改讓第三方進系統稽核（評估/可信度 facet）"}
+{"date": "2026-10-17", "title": "概念：忠實度（Faithfulness）——答案是否真的根據其所引用的證據推出（相對於正確性）"}
+{"date": "2026-10-17", "title": "半導體專區：IC 設計｜標準單元（Standard Cell）佈局的 AI／強化學習自動生成（NVCell／DTCO，背景）"}

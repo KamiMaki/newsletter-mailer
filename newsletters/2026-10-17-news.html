@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的 AI 每日電子報🐧</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;">
+<tr><td align="center" style="padding:20px 12px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+
+<!-- ===== Header ===== -->
+<tr><td style="padding:0 0 18px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+    <tr><td style="padding:28px 26px;">
+      <div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+      <div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+      <div style="font-size:13px;color:#c7d2fe;margin-top:10px;font-weight:600;">2026 年 10 月 17 日（五）· 閱讀時間約 7 分鐘</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 1. 30 秒重點 ===== -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">⚡ 30 秒重點</div>
+      <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+        <li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>這 48 小時，AI 圈集體對「評估」動刀——我們一直用來判斷 AI 好不好的那些訊號（跑分高、它有附來源、它「記得住」）被接連戳破是假象，而 Anthropic 乾脆把外部評估員請進系統內部。</li>
+        <li style="margin-bottom:10px;">兩篇同日研究把刀捅進痛處：一篇證明 <strong style="color:#e2e8f0;">RAG 模型「檢索了卻沒讀」</strong>——照抄搜尋摘要、不打開原文，答案更容易過時、引用是掰的；一篇說 <strong style="color:#e2e8f0;">agent 記憶的評分方式</strong>本身在騙人。</li>
+        <li style="margin-bottom:10px;">其他值得知道：<strong style="color:#e2e8f0;">Meta</strong> 開源 816B 的 Muse Spark、<strong style="color:#e2e8f0;">NVIDIA</strong> 放出 Nemotron 3.5 開放模型、<strong style="color:#e2e8f0;">Mistral</strong> 推能跑在 CPU 的 209M 時序預測模型 Timestral。</li>
+        <li style="margin-bottom:10px;">還有：<strong style="color:#e2e8f0;">Cohere</strong> 要併資安公司 AISLE、GitHub 把「AI 自動掃描＋自動修補」正式 GA、歐盟啟動 AI 助科學的 RAISE 計畫。</li>
+        <li style="margin-bottom:0;"><strong style="color:#67e8f9;">對半導體工作者最相關：</strong>你正在導入的「設計／驗證 copilot」若用 RAG 翻 datasheet 與規格書，今天的研究等於提醒你：它可能引用了一份它根本沒讀的文件——別把「有附來源」當成「查證過」。</li>
+      </ul>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 2. 今天的主軸 ===== -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+    <tr><td style="padding:1px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+        <tr><td style="padding:24px 24px 26px 24px;">
+          <div style="display:inline-block;background:rgba(99,102,241,0.18);color:#a5b4fc;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;">🎯 今天的主軸</div>
+          <div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin-top:14px;">AI 的「評估」正在騙你——跑分高、有附來源、記得住，這些我們賴以判斷 AI 好不好的訊號，這週被接連證明是表面功夫；於是 Anthropic 把評估員請進門、研究圈動手重寫量尺</div>
+
+          <div style="font-size:15px;color:#cbd5e1;line-height:1.75;margin-top:18px;">過去我們判斷一個 AI 好不好，靠的是一張成績單：benchmark 分數、它回答時「有沒有附來源」、它在長對話裡「記不記得住」。這 48 小時最值得放在一起看的三則消息，共同指向一件讓人不安的事：<strong style="color:#a5b4fc;">這些訊號很多是假的——AI 看起來會，其實沒在用；而我們的量尺，量不到它真正的能力與風險。</strong></div>
+
+          <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍共同變化</div>
+          <div style="font-size:15px;color:#cbd5e1;line-height:1.75;margin-top:6px;">10/15 同一天，三股力量從不同方向承認「現有評估不夠看」。<strong style="color:#a5b4fc;">Anthropic</strong> 宣布讓外部評估機構 METR 的六名成員拿到「近似員工」的內部存取權，不再只能隔著 API 猜。<strong style="color:#a5b4fc;">一篇研究</strong>證明搜尋增強（RAG）模型常常「檢索了卻沒讀」——抓到網頁卻只看摘要、不打開原文。<strong style="color:#a5b4fc;">另一篇研究</strong>則說，我們評 agent「記性好不好」的標準做法本身就會誤導人。三件事，一個共同訊號：<strong style="color:#a5b4fc;">別再只看表面成績，要看它實際有沒有做到。</strong></div>
+
+          <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:18px;">▍為什麼放在一起看</div>
+          <div style="font-size:15px;color:#cbd5e1;line-height:1.75;margin-top:6px;">因為它們是同一道裂縫的三面。研究界在拆穿<strong style="color:#a5b4fc;">「能力評估」</strong>的假象——跑分和「有附來源」騙過了我們，模型其實沒讀、沒記、沒真的會。Anthropic 處理的是<strong style="color:#a5b4fc;">「風險評估」</strong>的盲區——想知道前沿模型危不危險，光從外面測不夠，得讓獨立第三方進到系統裡面看。能力與風險，是同一個問題的兩端：<strong style="color:#a5b4fc;">當 AI 越來越像、越來越會演，舊的「從外面打分」就越來越不可信。</strong></div>
+
+          <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:18px;">▍過去 vs. 現在</div>
+          <div style="font-size:15px;color:#cbd5e1;line-height:1.75;margin-top:6px;">過去，大家默認「它答對了＝它會」「它附了連結＝它查證過」「分數高＝能力強」。那篇《Retrieved but Not Read》把這個默認打破：在一組「訓練後才改變答案」的題目上，模型常常<strong style="color:#a5b4fc;">只讀搜尋結果的摘要片段、不點進原始網頁</strong>，結果就是答案更容易停在過時資訊、引用的來源其實沒被真正讀過（作者強調這是相關性、尚未證明因果）。另一篇關於記憶的研究更直接：用「下游問答答對率」來評 agent 記性，會把「記憶本身對不對」和「檢索、生成補救」混成一團——換個直接量法，一個代表性記憶系統對記憶操作的判斷正確率只有約兩成。<strong style="color:#a5b4fc;">同一個系統，換個誠實的量尺，分數就崩了。</strong></div>
+
+          <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:18px;">▍背後邏輯</div>
+          <div style="font-size:15px;color:#cbd5e1;line-height:1.75;margin-top:6px;">根源是「<strong style="color:#a5b4fc;">代理指標（proxy metric）</strong>」的老毛病：我們想量的是「真能力／真安全」，但那很難直接量，只好用好量的替代品（跑分、問答正確率、有沒有附連結）來代打。問題是，一旦這些替代品變成目標，系統就會學會<strong style="color:#a5b4fc;">優化那個表面訊號，而不是背後真正重要的東西</strong>——模型學會「附上看起來對的來源」，卻沒學會「真的去讀它」。Anthropic 的動作是從另一邊補破洞：與其相信外部跑分，不如給可信的第三方「進門看」的權限，還立了三層存取框架、承諾不能否決對方發表（但可要求遮蔽客戶資料、模型架構等）。這等於把「信任」從「看成績單」升級成「開放稽核」。</div>
+
+          <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:18px;">▍對你的工作</div>
+          <div style="font-size:15px;color:#cbd5e1;line-height:1.75;margin-top:6px;">如果你在團隊裡導入任何「<strong style="color:#a5b4fc;">查文件、答問題</strong>」的 AI 助理——翻規格書、查 datasheet、整理驗證報告、回覆客訴——今天的研究是一記警鐘。三件可以馬上做的事：(1) 把評估從「看它答得順不順」改成「<strong style="color:#a5b4fc;">抽查它引用的那段，原文裡真的有嗎</strong>」，揪出「引用幻覺」；(2) 對長流程的 agent，別只看最後答對沒，要單獨驗「它中間記住／更新的事實對不對」；(3) 採購或自建模型時，優先問供應商「有沒有第三方能進來稽核」，而不是只收下一張漂亮的 benchmark 表。</div>
+
+          <div style="background:#252525;border-radius:8px;padding:14px 16px;margin-top:18px;">
+            <div style="font-size:13px;color:#67e8f9;font-weight:700;margin-bottom:6px;">👤 人物觀點／延伸解讀</div>
+            <div style="font-size:14px;color:#cbd5e1;line-height:1.7;">評估機構 METR 過去一年其實已多次審閱 Anthropic 的風險報告；這次升級成「近似員工」的嵌入式存取，是把「偶爾看報告」變成「坐進公司裡看」。<span style="color:#94a3b8;">（編輯分析）</span>這對整個產業的潛台詞是：當監理與社會開始不信任「廠商自評」，願意主動開放稽核的公司，會把「可被檢驗」本身當成一種競爭優勢——但也要留意，給誰看、能遮蔽什麼，定義權仍在廠商手上。</div>
+          </div>
+
+          <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:18px;">▍限制與待驗證</div>
+          <div style="font-size:15px;color:#cbd5e1;line-height:1.75;margin-top:6px;">先潑三盆冷水：第一，《Retrieved but Not Read》自己就聲明結論是<strong style="color:#a5b4fc;">相關性、不是因果</strong>——「沒讀原文」和「答錯」同時出現，不等於前者造成後者，別過度解讀。第二，這些研究多在<strong style="color:#a5b4fc;">少數模型、特定題型</strong>上做（一個閉源模型＋六個開源權重設定），能不能推廣到你手上的系統要自己測。第三，Anthropic 的開放稽核雖是好事，但<strong style="color:#a5b4fc;">「給哪一層存取、能要求遮蔽什麼」的定義權仍在廠商</strong>，第三方也不是監理機關，別把它當成「已被政府認證安全」。評估在進步，但還遠沒到可以閉著眼睛信的程度。</div>
+
+          <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:18px;">▍重點一句話</div>
+          <div style="font-size:15px;color:#e2e8f0;line-height:1.75;margin-top:6px;font-weight:600;">AI 這週的大事不是又有誰更強，而是整個產業承認「我們量錯了」——跑分、附來源、記得住都可能是演的，真正的下一步是「打開來看它到底有沒有做到」。</div>
+        </td></tr>
+      </table>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 3. 主軸的衍生新聞 ===== -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:20px 24px 8px 24px;">
+      <div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:4px;">🔗 主軸的衍生新聞</div>
+    </td></tr>
+
+    <tr><td style="padding:0 24px 16px 24px;">
+      <div style="background:#252525;border-radius:10px;padding:16px 18px;">
+        <div style="display:inline-block;background:rgba(6,182,212,0.16);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">🔗 衍生新聞</div>
+        <div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:10px;">研究：評 agent「記性」的標準做法，把對的和錯的混成一團</div>
+        <div style="font-size:14px;color:#cbd5e1;line-height:1.7;margin-top:8px;">10/15 的論文《Beyond Downstream QA》指出，大家習慣用「下游問答答對率」來衡量 agent 的記憶好壞，但這會把<strong style="color:#a5b4fc;">「記得對不對」和「檢索、生成有沒有補救」</strong>攪在一起、看不清真相。作者做了一個叫 <strong style="color:#a5b4fc;">FEB-30</strong> 的基準（30 條「事實會隨時間演變」的軌跡、有確定的正確答案），直接量記憶操作本身，結果一個代表性系統只對約<strong style="color:#a5b4fc;">兩成</strong>的記憶操作判斷正確。這正是主軸「量尺不誠實」的教科書案例。</div>
+        <div style="font-size:13px;color:#94a3b8;font-style:italic;margin-top:10px;">💡 重點一句話：你以為 agent 記性不錯，可能只是它「後面補救得好」，不是真的記對了。</div>
+        <div style="font-size:13px;margin-top:8px;"><a href="https://arxiv.org/abs/2610.22209" style="color:#06b6d4;text-decoration:none;">🔗 來源：arXiv 2610.22209（2026/10/15）</a></div>
+      </div>
+    </td></tr>
+
+    <tr><td style="padding:0 24px 16px 24px;">
+      <div style="background:#252525;border-radius:10px;padding:16px 18px;">
+        <div style="display:inline-block;background:rgba(6,182,212,0.16);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">🔗 衍生新聞</div>
+        <div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:10px;">解方那一側：把「及格／不及格」換成「分級打分」的驗證器</div>
+        <div style="font-size:14px;color:#cbd5e1;line-height:1.7;margin-top:8px;">同日另一篇《OmniVerifier-C1》針對的是「怎麼評才對」。它做了一個會把複雜指令<strong style="color:#a5b4fc;">拆成細項、逐項給分（而非只回二元的對/錯）</strong>的驗證器，並用解耦的強化學習訓練；作者報告這種「分級評分」在文字生圖等任務上，比傳統的二元驗證器更能分辨好壞，兩兩比較也勝過單點打分。和主軸互補：前面幾則說「舊量尺會騙人」，這則在示範「新量尺長什麼樣」。</div>
+        <div style="font-size:13px;color:#94a3b8;font-style:italic;margin-top:10px;">💡 重點一句話：粗暴的及格線會藏住問題，細到「哪一項沒做到」的評分才攔得住錯誤。</div>
+        <div style="font-size:13px;margin-top:8px;"><a href="https://arxiv.org/abs/2610.22355" style="color:#06b6d4;text-decoration:none;">🔗 來源：arXiv 2610.22355（2026/10/15）</a></div>
+      </div>
+    </td></tr>
+
+    <tr><td style="padding:0 24px 20px 24px;">
+      <div style="background:#252525;border-radius:10px;padding:16px 18px;">
+        <div style="display:inline-block;background:rgba(6,182,212,0.16);color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">🔗 衍生新聞</div>
+        <div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:10px;">同一週，GitHub 把「AI 自動掃描＋自動修補」正式 GA</div>
+        <div style="font-size:14px;color:#cbd5e1;line-height:1.7;margin-top:8px;">10/15，GitHub 讓兩項功能一起進入正式版（GA）：<strong style="color:#a5b4fc;">AI Scan</strong>（在 PR 階段用 AI 掃應用安全問題）與 <strong style="color:#a5b4fc;">agentic autofix</strong>（讓 Copilot 自動對掃出的安全告警提修補）。和主軸的張力很直接：就在研究圈證明「AI 看起來做對、其實沒做」的同一週，業界把「信任 AI 自動掃、自動修」鋪成預設——它越主流，<strong style="color:#a5b4fc;">「驗證它真的修對了」就越是你不能省的一關</strong>。</div>
+        <div style="font-size:13px;color:#94a3b8;font-style:italic;margin-top:10px;">💡 重點一句話：AI 幫你修 code 很香，但「誰驗證這個修補」正在變成新的把關職責。</div>
+        <div style="font-size:13px;margin-top:8px;"><a href="https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability" style="color:#06b6d4;text-decoration:none;">🔗 來源：GitHub Changelog（2026/10/15）</a></div>
+      </div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 4. 其他快訊 ===== -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">📎 其他快訊</div>
+      <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+        <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Meta 開源 816B 的 Muse Spark，號稱「最強美國開放權重模型」。</strong>10/15 釋出開放權重，這是一個約 816B 參數、約 42B 活躍參數的 MoE 模型，100 萬 token 脈絡、支援多模態，Meta 說它在程式與代理任務上是目前最強的美國開放權重模型、能在兩台 Apple M5 Ultra Mac Studio 上用 MLX 本地跑（授權為限制商用的 Muse Model License，跑分為 Meta 自述）。為什麼重要：開放權重陣營把「大模型也能擺進你桌上」又往前推了一步。<a href="https://research.meta.ai/blog/muse-spark-open" style="color:#06b6d4;text-decoration:none;">🔗 來源：Meta Research</a></li>
+        <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">NVIDIA 放出 Nemotron 3.5 開放模型，一路鋪到邊緣裝置。</strong>10/15 發布三款開放模型：Super VL（120B、12B 活躍參數的多模態視覺語言推理模型，100 萬 token 脈絡，現已可用）、Bolt 74B-A9B（24GB 邊緣版，現已可用）、Bolt E4B（4GB 邊緣版，10/23 推出）。為什麼重要：主打「從資料中心到桌機都能跑代理」，延續小／稀疏開放模型的攻勢。<a href="https://blogs.nvidia.com/blog/nemotron-3-5/" style="color:#06b6d4;text-decoration:none;">🔗 來源：NVIDIA Blog</a></li>
+        <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Mistral 推 Timestral：209M、能跑在 CPU 的時序預測模型。</strong>10/15 發表，這是一個約 2.09 億參數的機率式時間序列預測模型，Mistral 說它表現勝過更大的模型、且可在 CPU 上運行，定位在金融預測、供應鏈與<strong style="color:#a5b4fc;">設備預測維護</strong>。為什麼重要（也跟半導體有關）：預測維護、良率趨勢這類時序問題，未來可能用這種小到能塞進產線端的模型來做。<a href="https://mistral.ai/news" style="color:#06b6d4;text-decoration:none;">🔗 來源：Mistral AI News</a></li>
+        <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Cohere 要併購資安公司 AISLE，綁上「主權 AI」。</strong>10/15 簽署意向書，收購專做「用 AI 找軟體漏洞」的 AISLE（約 50 名員工將加入），把這筆交易接到它的主權 AI 與歐洲擴張策略上（金額與完成時間未揭露）。為什麼重要：找漏洞的 AI 正在被整合進企業級、強調資料落地的資安產品線。<a href="https://cohere.com/blog" style="color:#06b6d4;text-decoration:none;">🔗 來源：Cohere Blog</a></li>
+        <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Coding agent 繼續把「背景跑、平行跑」做成預設。</strong>Claude Code 2.1.302（10/16）讓 fork 子代理在終端機以外預設開啟；OpenAI Codex CLI 0.163.0（10/15）新增可平行執行的唯讀工具、回覆中途即時插話導引。為什麼重要：寫程式的 AI 正從「一次做一件事」轉向「同時派好幾個分身去查、去跑」。<a href="https://code.claude.com/docs/en/changelog" style="color:#06b6d4;text-decoration:none;">🔗 來源：Claude Code Changelog</a></li>
+        <li style="margin-bottom:0;"><strong style="color:#e2e8f0;">歐盟啟動 RAISE 承諾計畫，推 AI 助科學研究。</strong>10/16 在都柏林的歐洲「AI in Science」高峰會上，歐盟執委會宣布 RAISE（Resource for AI Science in Europe）相關的承諾倡議，要替歐洲研究者集結運算與 AI 資源。為什麼重要：這是把 AI 當成「科研公共基礎設施」來投資的政策訊號，牽動學研界拿得到多少算力。<a href="https://digital-strategy.ec.europa.eu/en/news" style="color:#06b6d4;text-decoration:none;">🔗 來源：European Commission</a></li>
+      </ul>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 5. 今日概念 ===== -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">📖 今日概念｜忠實度（Faithfulness）</div>
+
+      <div style="font-size:14px;color:#a5b4fc;font-weight:700;margin-bottom:4px;">一句定義</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:14px;">忠實度，指的是 AI 的答案<strong style="color:#a5b4fc;">「有沒有真的根據它所引用的證據推出來」</strong>——注意，這跟「答案對不對（正確性）」是兩件事：一個答案可以剛好正確、卻是瞎猜的（不忠實），也可以忠實地照抄了一份錯的資料。</div>
+
+      <div style="font-size:14px;color:#a5b4fc;font-weight:700;margin-bottom:4px;">生活化比喻</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:14px;">像一個學生交報告，文末附了一長串參考文獻——「正確性」問的是「報告內容對不對」，「忠實度」問的是「這些參考文獻他真的讀過、而且內文真的是從裡面寫出來的嗎，還是只是貼上去充場面」。我們都遇過那種答案聽起來頭頭是道、引用也排得漂亮，一查原文根本沒那句話的情況——那就是高正確感、低忠實度。回到技術：RAG 模型「檢索了卻沒讀」，產生的正是這種不忠實的引用。</div>
+
+      <div style="font-size:14px;color:#a5b4fc;font-weight:700;margin-bottom:4px;">工作中的例子</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:14px;">你問內部 copilot「這顆元件的最大工作溫度是多少」，它回「依 datasheet 為 125°C」並附上連結。忠實度檢查不是去 Google「對不對」，而是<strong style="color:#a5b4fc;">點開它附的那份 datasheet、找出那一行</strong>——如果找不到、或那份文件根本沒提，哪怕 125°C 剛好是對的，這個回答也是不忠實、不能信的。</div>
+
+      <div style="font-size:14px;color:#a5b4fc;font-weight:700;margin-bottom:4px;">常見誤解</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;margin-bottom:14px;">最大的誤解是「<strong style="color:#a5b4fc;">有附來源＝可信</strong>」。附來源只解決了「看起來有根據」，不保證模型真的讀了、更不保證內文真的出自那裡。今天的研究正是打在這個點上：模型會自信地附上一份它沒打開過的網頁。所以評估 AI 時，正確性與忠實度要分開量——後者才是「引用幻覺」的照妖鏡。</div>
+
+      <div style="font-size:14px;color:#a5b4fc;font-weight:700;margin-bottom:4px;">與今天主軸的關係</div>
+      <div style="font-size:15px;color:#cbd5e1;line-height:1.7;">今天主軸說「評估在騙你」，忠實度就是最該補上的那把尺。只看正確性，你會被「剛好猜對」蒙混過關；加上忠實度，你才問得出「它是真懂，還是只是會演」——這也是為什麼下一個把關重點，是抽查引用、而不是只看答案。</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 6. 半導體 AI 專區 ===== -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:22px 24px;">
+      <div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜用 AI／強化學習自動生成「標準單元」佈局</div>
+      <div style="margin-bottom:14px;">
+        <span style="display:inline-block;background:rgba(99,102,241,0.18);color:#a5b4fc;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-right:6px;">分類：IC 設計</span>
+        <span style="display:inline-block;background:rgba(148,163,184,0.18);color:#cbd5e1;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">內容屬性：背景知識</span>
+      </div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-bottom:4px;">▍問題與流程位置</div>
+      <div style="font-size:14px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;">晶片不是一個電晶體一個電晶體擺出來的，而是用一組預先畫好的「<strong style="color:#a5b4fc;">標準單元（standard cell）</strong>」當樂高積木——反相器、NAND、正反器等，每種邏輯閘都是一塊畫好的小佈局，放在「單元庫（cell library）」裡供後面自動擺放繞線使用。痛點在於：<strong style="color:#a5b4fc;">這些積木本身得有人手工畫</strong>，而且每換一個新製程節點（例如進到先進節點或做 DTCO 設計-製程協同最佳化），上千個單元就得照新的、更刁鑽的設計規則重畫一遍。這一步靠的是少數資深佈局工程師，慢、貴、又卡住整個 PDK／單元庫的交期——它位在「有沒有積木可用」的最上游。</div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-bottom:4px;">▍AI 如何介入</div>
+      <div style="font-size:14px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;">代表性做法是 NVIDIA 研究團隊的 <strong style="color:#a5b4fc;">NVCell</strong>：把「畫一個單元」拆成電晶體擺位與單元內繞線兩步，用<strong style="color:#a5b4fc;">強化學習</strong>去自動擺位、並在繞線時自動修掉設計規則違規（DRC violations）。和過去最大的差別是：傳統是「資深工程師一格一格手刻、換節點就重刻」，而 RL 代理能<strong style="color:#a5b4fc;">在龐大的擺放可能性中自己試錯、收斂到合規又省面積的佈局</strong>，把大量重複勞力自動化。更前沿的方向還把它接上 DTCO，讓單元佈局能隨製程參數一起被最佳化。</div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-bottom:4px;">▍資料與產出</div>
+      <div style="font-size:14px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;">輸入是該製程的設計規則（design rules）與每個單元的電晶體電路網表；產出是一張張符合規則、可直接進單元庫的佈局（GDS 版圖）。NVCell 論文回報，在某先進節點的工業標準單元庫上，<strong style="color:#a5b4fc;">超過九成的單列（single-row）單元</strong>能做到與人工相等或更小的面積——也就是不只「自動化」，還可能「更省面積」。</div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-bottom:4px;">▍如何驗證</div>
+      <div style="font-size:14px;color:#cbd5e1;line-height:1.7;margin-bottom:12px;">關鍵心法呼應今天主軸：<strong style="color:#a5b4fc;">AI 生出來的佈局「過了繞線器的檢查」不等於「對」</strong>。它仍必須過完整的 DRC（設計規則）、LVS（佈局與電路一致性）比對，再做時序/功耗特性化（characterization）產生 .lib，才能放心放進庫裡給全晶片用。任何一個單元錯，會被成千上萬次例化放大——所以這裡的驗證門檻比一般設計更嚴。</div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-bottom:4px;">▍限制與風險</div>
+      <div style="font-size:14px;color:#cbd5e1;line-height:1.7;margin-bottom:16px;">換節點、換設計規則、換單元架構（如 FinFET 到 GAA／CFET），模型往往要重新訓練；複雜的多列單元與極密的繞線仍是難關；而且目前業界把它當「<strong style="color:#a5b4fc;">加速人工</strong>」的工具，最終簽核與責任仍在工程師身上，不是把人換掉。</div>
+
+      <div style="background:#252525;border-radius:8px;padding:12px 16px;margin-bottom:14px;">
+        <div style="font-size:14px;color:#67e8f9;font-weight:700;line-height:1.7;">👷 對半導體工作者的意義：對單元庫／PDK 與實體設計工程師，這條線最值得盯——當先進節點與 DTCO 讓單元變體爆量，手刻的工時會先撐不住。值得現在動手的，是把過去專案「人工最佳化過的單元佈局」整理成乾淨資料，未來不論自建或採購 AI 工具，你手上的標註資料就是議價與落地的籌碼。</div>
+      </div>
+
+      <div style="font-size:13px;color:#94a3b8;line-height:1.6;">🔗 背景來源：<a href="https://arxiv.org/abs/2107.07044" style="color:#06b6d4;text-decoration:none;">arXiv 2107.07044（NVCell：RL 標準單元佈局）</a>、<a href="https://arxiv.org/abs/2603.13665" style="color:#06b6d4;text-decoration:none;">arXiv 2603.13665（DTCO 感知標準單元佈局生成）</a></div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 7. 反思時間 ===== -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+    <tr><td style="padding:1px;">
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+        <tr><td style="padding:22px 24px;">
+          <div style="font-size:18px;font-weight:800;color:#ffffff;margin-bottom:14px;">🪞 反思時間</div>
+          <ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.75;">
+            <li style="margin-bottom:12px;">如果「有附來源」不再等於「查證過」，你團隊現在用來信任 AI 答案的那套標準，到底是在驗「它答對沒」還是「它真的讀了沒」？這兩者你分得開嗎？</li>
+            <li style="margin-bottom:12px;">你導入的設計／驗證 copilot，若它引用一份它其實沒讀的 datasheet，最可能在哪個環節讓你踩雷——而你現在的流程裡，有沒有任何一關會「抽查引用原文」把它攔下來？</li>
+            <li style="margin-bottom:0;">當越來越多供應商只端給你漂亮的 benchmark 成績單，你會開始把「願不願意讓第三方進來稽核」當成選型條件嗎？如果會，你要求的「進來看」具體該看到什麼？</li>
+          </ul>
+          <div style="font-size:15px;color:#a5b4fc;font-weight:700;line-height:1.7;margin-top:16px;">🎒 今日帶走：AI 最危險的不是答錯，而是「看起來很有根據地答錯」——這週產業集體承認舊量尺會騙人，你的下一步，是把「打開來看它有沒有真的做到」變成預設動作。</div>
+        </td></tr>
+      </table>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== 歷史電子報入口 ===== -->
+<tr><td style="padding:0 0 16px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+    <tr><td style="padding:20px 24px;">
+      <div style="font-size:16px;font-weight:800;color:#ffffff;margin-bottom:6px;">📚 想回顧之前的內容？</div>
+      <div style="font-size:14px;color:#cbd5e1;line-height:1.7;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</div>
+      <div style="margin-top:10px;font-size:14px;"><a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-weight:600;">查看歷史電子報</a></div>
+    </td></tr>
+  </table>
+</td></tr>
+
+<!-- ===== Footer ===== -->
+<tr><td style="padding:0 0 20px 0;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
+    <tr><td style="padding:16px 24px;text-align:center;">
+      <div style="font-size:14px;color:#cbd5e1;margin-bottom:10px;">📬 覺得有用？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">分享給朋友訂閱這份電子報</a></div>
+      <div style="font-size:13px;color:#64748b;margin-bottom:14px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></div>
+      <div style="font-size:12px;color:#475569;line-height:1.6;border-top:1px solid #252525;padding-top:14px;">© 2026 企鵝的 AI 每日電子報🐧<br>本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</div>
+    </td></tr>
+  </table>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>
