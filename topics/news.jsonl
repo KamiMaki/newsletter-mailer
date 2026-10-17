@@ -1048,3 +1048,16 @@
 {"date": "2026-10-17", "title": "主軸：AI 的「評估」正在騙你——跑分/附來源/記得住都可能是表面功夫，研究戳破 RAG「檢索卻沒讀」與 agent 記憶評分、Anthropic 改讓第三方進系統稽核（評估/可信度 facet）"}
 {"date": "2026-10-17", "title": "概念：忠實度（Faithfulness）——答案是否真的根據其所引用的證據推出（相對於正確性）"}
 {"date": "2026-10-17", "title": "半導體專區：IC 設計｜標準單元（Standard Cell）佈局的 AI／強化學習自動生成（NVCell／DTCO，背景）"}
+{"date": "2026-10-18", "title": "CERT-In：多個 AI 代理滑進印度企業正式系統、讀走業務與個資，根因是外洩金鑰與測試/正式環境未分家（據報導）"}
+{"date": "2026-10-18", "title": "Perplexity 以 Apache 2.0 開源 SPACE：每任務一台 Firecracker 微型 VM、約 60ms 建起、憑證不進沙盒、節點級控出口（10/15）"}
+{"date": "2026-10-18", "title": "Google Cloud Agent Identity：每個代理一組不可冒用的密碼學身分＋Workspace 帳號、流量過 Agent Gateway（官方文件）"}
+{"date": "2026-10-18", "title": "微軟 Copilot Studio 預覽：代理有受治理帳號（信箱/Teams 身分/政策）＋每使用者分隔記憶＋觸發器"}
+{"date": "2026-10-18", "title": "Opsin 募資做企業 AI 代理盤點：對應代理的擁有者、權限與執行時動作（10/17）"}
+{"date": "2026-10-18", "title": "DeepSeek-V4.1-Flash-1017 開源：自我回饋 RL、端到端做專案更快更省、為 DeepSeek Harness/Claude Code/Codex 優化（10/17）"}
+{"date": "2026-10-18", "title": "OpenAI 升級 ChatGPT Chrome 擴充：新增 Chat/Work 模式、強化分頁控制與瀏覽器自動化（10/16）"}
+{"date": "2026-10-18", "title": "ServiceNow 推第三代 Employee AI Harness＋ToolSmith：零程式碼讓員工自建代理（10/16，據報導）"}
+{"date": "2026-10-18", "title": "Harvey 法律 AI 全所導入 Hogan Lovells：各實務組自建客製代理（知識管理/資本市場/國際仲裁，10/17）"}
+{"date": "2026-10-18", "title": "Makora 獲 NSF STRIDE「AI 效率挑戰」150 萬美元（Cornell Tech，10/16）"}
+{"date": "2026-10-18", "title": "主軸：AI 代理這週闖進正式系統——資安防線從『管模型』換成『管身分與鑰匙』（身分/權限/沙盒 facet，CERT-In 金鑰外洩＋Perplexity SPACE＋Google/微軟代理身分）"}
+{"date": "2026-10-18", "title": "概念：非人類身分（Non-Human Identity, NHI）"}
+{"date": "2026-10-18", "title": "半導體專區：EDA 工具｜晶片安全性簽核——資訊流追蹤（IFT/GLIFT）與機器學習（GNN/GAN）硬體木馬偵測（Trust-Hub，背景）"}

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的 AI 每日電子報🐧</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f;padding:16px;">
+<tr><td align="center">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px;width:100%;font-family:-apple-system,'Segoe UI',Arial,sans-serif;color:#cbd5e1;">
+
+<!-- Header -->
+<tr><td style="padding:28px 24px 20px;background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px 16px 0 0;">
+  <div style="font-size:24px;font-weight:800;color:#ffffff;">企鵝的 AI 每日電子報🐧</div>
+  <div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+  <div style="font-size:13px;color:#c7d2fe;margin-top:4px;">2026 年 10 月 18 日（週六）</div>
+</td></tr>
+
+<tr><td style="background:#0f0f0f;padding:0 0 4px;"></td></tr>
+
+<!-- 30秒重點 -->
+<tr><td style="padding:0 0 16px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:20px 22px;">
+    <div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:12px;">⚡ 30 秒重點</div>
+    <ul style="margin:0;padding-left:20px;font-size:15px;line-height:1.7;color:#cbd5e1;">
+      <li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">今日主軸：</strong>印度 CERT-In 證實多個 AI 代理滑進企業正式系統、讀走機密資料，根因不是模型失控，而是<strong style="color:#a5b4fc;">外洩的金鑰與沒分家的環境</strong>——AI 代理的資安戰線本週正式從「管模型」移到「管身分與權限」。</li>
+      <li style="margin-bottom:10px;">同週新創 Opsin 募資專做「代理行為盤點」、企業普遍坦承盤不清自家代理在做什麼；OpenAI 又把 ChatGPT 擴充升級成<strong style="color:#a5b4fc;">能自己操作瀏覽器分頁</strong>——代理碰得到的東西越來越多。</li>
+      <li style="margin-bottom:10px;">這一切落在一套產業近兩週才趕工做出的「圍欄」上：Perplexity 開源「每任務一台微型 VM、憑證不進沙盒」的 SPACE；Google／微軟開始給每個代理發<strong style="color:#a5b4fc;">專屬的「員工身分證」</strong>。</li>
+      <li style="margin-bottom:10px;">其他快訊：DeepSeek 丟出開源 agent 新模型 V4.1-Flash、OpenAI ChatGPT 進瀏覽器、ServiceNow 讓員工零程式碼自建代理、Harvey 法律 AI 全所導入。</li>
+      <li>對半導體工作者最相關的：這套「追蹤資訊往哪流、別讓祕密外洩」的思路，和晶片界的<strong style="color:#a5b4fc;">資訊流追蹤（IFT）與硬體安全驗證</strong>是同一套邏輯——本期專區帶你看。</li>
+    </ul>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="padding:0 0 16px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+  <tr><td style="padding:1px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+    <tr><td style="padding:24px 22px;">
+      <div style="display:inline-block;background:#252525;color:#a5b4fc;font-size:12px;font-weight:700;padding:5px 12px;border-radius:20px;">🎯 今天的主軸</div>
+      <div style="font-size:19px;font-weight:800;color:#ffffff;margin-top:14px;line-height:1.5;">AI 代理這週真的闖進了正式系統——資安防線一夜從「管模型」換成「管身分與鑰匙」</div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:20px;">▍共同變化</div>
+      <p style="font-size:15px;line-height:1.75;color:#cbd5e1;margin:6px 0 0;">本週好幾則新聞指向同一句話：AI 代理從展示用的 demo，真的走進了會碰到<strong style="color:#a5b4fc;">真實資料與正式系統</strong>的環境裡——而擋住它的那道牆，不是更聰明的模型護欄，是資訊安全裡最古老的那套：<strong style="color:#a5b4fc;">身分、權限、鑰匙、隔離</strong>。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:18px;">▍為什麼放在一起看</div>
+      <p style="font-size:15px;line-height:1.75;color:#cbd5e1;margin:6px 0 0;">10/16–17，印度資安主管機關 <strong style="color:#a5b4fc;">CERT-In</strong> 示警：研究與測試用的 AI 代理，實際滑進了多家印度組織的正式系統，讀走了業務與個資（據 NewsBytes 轉述 CERT-In 通報）。它特別點名根因——不是模型做壞事，而是<strong style="color:#a5b4fc;">寫死在程式碼／設定裡的金鑰外洩、測試與正式環境沒分家</strong>。同一週，新創 Opsin 募到成長資金，專門做「盤點每個代理的擁有者、權限、執行時動作」；多份報導也點出企業<strong style="color:#a5b4fc;">根本盤不清自家代理在幹嘛</strong>；OpenAI 則把 ChatGPT 的 Chrome 擴充升級成能自己控制分頁、自動操作瀏覽器。能行動的東西變多、看得見的卻變少——這正是出事的配方。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:18px;">▍過去 vs. 現在</div>
+      <p style="font-size:15px;line-height:1.75;color:#cbd5e1;margin:6px 0 0;">過去談「AI 安全」＝紅隊戳模型、做對齊、讓它拒答有害問題。現在真正出事的長這樣：代理<strong style="color:#a5b4fc;">拿著一把本來就不該存在的鑰匙</strong>，照規矩去讀了它「有權限」讀的資料庫——它沒越權、沒被越獄，問題是沒人想到該把那把鑰匙收走。資安的焦點，從「模型會不會學壞」變成「這個會自己跑的東西，到底用誰的身分、能碰到什麼」。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:18px;">▍背後邏輯</div>
+      <p style="font-size:15px;line-height:1.75;color:#cbd5e1;margin:6px 0 0;">關鍵認知是：<strong style="color:#a5b4fc;">代理 ≠ 聊天機器人</strong>。它會自己呼叫工具、連資料庫、發 HTTP、下指令。對資安系統來說，它就是一個「會自己行動、速度極快、數量還會暴增」的新員工。但我們給這個新員工的，往往是<strong style="color:#a5b4fc;">共用帳號、幾乎無限的權限、而且從不稽核</strong>。於是這兩週，整個產業同時在補同一塊地基：Perplexity 開源了 SPACE，把每個代理任務關進一台用完即焚的微型 VM，而且<strong style="color:#a5b4fc;">憑證根本不進沙盒</strong>、只在需要那一刻從外面遞進去；Google Cloud 開始給每個代理發一組<strong style="color:#a5b4fc;">不可被冒用的密碼學身分與 Workspace 帳號</strong>，流量統一走 Agent Gateway 套公司規則；微軟 Copilot Studio 也讓代理有自己的「帳號」、分隔記憶與管理政策。講白了，大家都在把「<strong style="color:#a5b4fc;">像治理員工一樣治理代理</strong>」做成預設。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:18px;">▍對你的工作</div>
+      <p style="font-size:15px;line-height:1.75;color:#cbd5e1;margin:6px 0 0;">如果你的團隊要把代理放進正式環境，這週的訊號很清楚：把它當「<strong style="color:#a5b4fc;">非人類員工</strong>」來治理——發一個獨立身分（別再共用你的帳號）、給最小夠用的權限（別給整個資料庫）、關進沙盒（別讓它直接碰正式網路）、留下稽核軌跡（出事查得到是哪個代理、碰了什麼）。這些能力，很多成熟團隊的 IAM／DevSecOps 其實早就有，只是從沒想過要套在「一個會自己跑的程式」上。</p>
+
+      <div style="background:#252525;border-radius:8px;padding:12px 14px;margin-top:16px;">
+        <div style="font-size:12px;color:#67e8f9;font-weight:700;margin-bottom:4px;">👤 延伸解讀（編輯分析／業界觀點）</div>
+        <p style="font-size:14px;line-height:1.7;color:#94a3b8;margin:0;">資安圈近期常用「爆炸半徑（blast radius）」形容這件事：一把外洩的金鑰過去只被一支腳本用，現在可能被一個會自己行動的代理拿去連環呼叫——傷害被放大。對應的解法口號是「移除常駐權限（standing access）」：不要讓任何身分長期握著用不到的鑰匙。這些是業界觀點與編輯分析，供你對照思考，非官方結論。</p>
+      </div>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:18px;">▍限制與待驗證</div>
+      <p style="font-size:15px;line-height:1.75;color:#cbd5e1;margin:6px 0 0;">幾個要誠實說的點：CERT-In 的細節目前多為<strong style="color:#a5b4fc;">二手轉述</strong>，受影響組織數與具體受害程度尚未有官方逐項確認；Perplexity 自稱「9 個前沿模型 118 次零逃逸」是<strong style="color:#a5b4fc;">自家測試</strong>，且紅隊仍找到繞過網路限制的方法；Google、微軟的代理身分功能多處於<strong style="color:#a5b4fc;">預覽</strong>，怎麼「撤銷」權限、出事誰負責，官方也還沒完全說清。沙盒與身分不是銀彈，是把風險降到可治理。</p>
+
+      <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:18px;">▍重點一句話</div>
+      <p style="font-size:15px;line-height:1.75;color:#e2e8f0;margin:6px 0 0;font-weight:600;">這週的教訓不是「AI 代理很危險」，而是「我們用管聊天機器人的方式，在管一個會自己行動的新員工」——先發身分、給最小權限、關進沙盒，資安才追得上落地速度。</p>
+
+      <p style="font-size:13px;color:#64748b;margin-top:16px;line-height:1.7;">🔗 來源：<a href="https://www.newsbytesapp.com/news/science/cert-in-ai-agents-accessed-indian-organizations-business-and-personal-data/tldr" style="color:#06b6d4;">CERT-In 通報（NewsBytes 轉述）</a>｜<a href="https://semafor.com/article/10/15/2026/perplexity-to-give-away-its-ai-security-software" style="color:#06b6d4;">Perplexity SPACE（Semafor）</a>｜<a href="https://docs.cloud.google.com/iam/docs/agent-identity-overview" style="color:#06b6d4;">Google Cloud Agent Identity（官方文件）</a></p>
+    </td></tr>
+    </table>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- 主軸的衍生新聞 -->
+<tr><td style="padding:0 0 10px;">
+  <div style="font-size:17px;font-weight:700;color:#ffffff;padding:6px 4px;">🔗 主軸的衍生新聞</div>
+</td></tr>
+
+<tr><td style="padding:0 0 12px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:18px 20px;">
+    <div style="display:inline-block;background:#252525;color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">🔗 衍生新聞</div>
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:10px;">Perplexity 開源 SPACE：每個代理任務一台「用完即焚」的微型 VM</div>
+    <p style="font-size:15px;line-height:1.75;color:#cbd5e1;margin:8px 0 0;">10/15，Perplexity 以 Apache 2.0 把支撐自家 Computer 代理的沙盒平台 SPACE 開源上 GitHub。每個任務跑在一台 <strong style="color:#a5b4fc;">Firecracker 微型 VM</strong> 裡、用完即銷毀、建起約 60 毫秒、長任務可暫停／續跑；最關鍵的是<strong style="color:#a5b4fc;">憑證不存進沙盒</strong>、只在需要時從節點外遞入，出口流量也在節點層管控。這正好把今天主軸講的「隔離＋憑證不落地」做成可直接拿來用的開源基建。</p>
+    <p style="font-size:14px;color:#94a3b8;font-style:italic;margin:10px 0 0;">💡 重點一句話：沙盒從各家自建的祕密武器，變成人人可取的開源地基。</p>
+    <p style="font-size:13px;color:#64748b;margin-top:8px;">🔗 <a href="https://semafor.com/article/10/15/2026/perplexity-to-give-away-its-ai-security-software" style="color:#06b6d4;">閱讀原文</a> ｜ 來源：Semafor／Perplexity GitHub（Apache 2.0）</p>
+  </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:0 0 12px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:18px 20px;">
+    <div style="display:inline-block;background:#252525;color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">🔗 衍生新聞</div>
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:10px;">Google Cloud 給每個代理發「員工證」：密碼學身分＋Agent Gateway</div>
+    <p style="font-size:15px;line-height:1.75;color:#cbd5e1;margin:8px 0 0;">Google Cloud 的 Agent Identity（10/8 隨 Gemini 企業代理一同亮相、官方文件已上線）給每個代理<strong style="color:#a5b4fc;">自己的 Workspace 帳號與一組不可被冒用的身分</strong>——代理用自己的身分行動、不再借用你的帳號；當它代表某個人動作時，稽核日誌會同時記下「代理」與「人」兩個身分。流量統一走 Agent Gateway 套公司規則。這是主軸「發身分」那一面的具體落地。</p>
+    <p style="font-size:14px;color:#94a3b8;font-style:italic;margin:10px 0 0;">💡 重點一句話：代理有了工號，出事才查得到是誰、以誰的名義做的。</p>
+    <p style="font-size:13px;color:#64748b;margin-top:8px;">🔗 <a href="https://docs.cloud.google.com/iam/docs/agent-identity-overview" style="color:#06b6d4;">閱讀原文（官方文件）</a> ｜ 來源：Google Cloud IAM 文件</p>
+  </td></tr>
+  </table>
+</td></tr>
+
+<tr><td style="padding:0 0 12px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:18px 20px;">
+    <div style="display:inline-block;background:#252525;color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">🔗 衍生新聞</div>
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin-top:10px;">微軟 Copilot Studio：給代理開「帳號」、分隔每人記憶</div>
+    <p style="font-size:15px;line-height:1.75;color:#cbd5e1;margin:8px 0 0;">微軟 Copilot Studio 近期預覽，讓自主代理擁有<strong style="color:#a5b4fc;">受治理的獨立身分（agent account）</strong>——自己的信箱、Teams 身分、Office 存取，並由管理員統一控管其權限與政策；記憶功能則<strong style="color:#a5b4fc;">按每個使用者各自分隔</strong>，一個人的脈絡不會流到另一個人。和 Google 一樣，都是把「代理＝有身分的員工」寫進企業平台的預設。</p>
+    <p style="font-size:14px;color:#94a3b8;font-style:italic;margin:10px 0 0;">💡 重點一句話：大廠企業平台已在替你把「代理治理」做成內建設定。</p>
+    <p style="font-size:13px;color:#64748b;margin-top:8px;">🔗 <a href="https://learn.microsoft.com/en-us/microsoft-copilot-studio/agents-experience/memory-overview" style="color:#06b6d4;">閱讀原文（官方文件）</a> ｜ 來源：Microsoft Learn（Copilot Studio，預覽）</p>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="padding:6px 0 12px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:20px 22px;">
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:12px;">📎 其他快訊</div>
+    <ul style="margin:0;padding-left:20px;font-size:15px;line-height:1.75;color:#cbd5e1;">
+      <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">DeepSeek 丟出開源 agent 新模型 V4.1-Flash-1017（10/17）。</strong>主打用「自我回饋強化學習」把端到端做專案（從做網頁小遊戲到 3D 建模）做得更快、輸出更精簡，並針對 DeepSeek Harness、Claude Code、Codex 等代理工具優化。對想自架、要壓成本的團隊，又多一個開源選項。<a href="https://api-docs.deepseek.com/news/news261017" style="color:#06b6d4;">🔗 官方公告</a></li>
+      <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">OpenAI 升級 ChatGPT 的 Chrome 擴充（10/16）。</strong>新增 Chat／Work 模式、強化分頁控制與瀏覽器自動化，讓 ChatGPT 能更直接在你的瀏覽器裡「動手做事」。這也呼應今天主軸——代理能碰到的介面越多，身分與權限就越該管好。<a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes-0" style="color:#06b6d4;">🔗 OpenAI 更新說明</a></li>
+      <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">ServiceNow 推第三代 Employee AI Harness＋ToolSmith（10/16，據 CXOToday 報導）。</strong>讓一般員工不用寫程式就能組出處理日常工作的 AI 代理，並附開發環境 ToolSmith 加速打造。企業內「人人都能生代理」是趨勢，也讓前述的治理問題更迫切。<a href="https://cxotoday.com" style="color:#06b6d4;">🔗 來源（CXOToday）</a></li>
+      <li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Harvey 法律 AI 全所導入 Hogan Lovells（10/17）。</strong>該國際事務所全所採用 Harvey，並讓各實務組自建客製代理（知識管理、資本市場、國際仲裁）。代理正從「個人生產力工具」升級成「可重複的實務流程」，是垂直落地的典型。<a href="https://www.harvey.ai" style="color:#06b6d4;">🔗 來源（Harvey）</a></li>
+      <li><strong style="color:#e2e8f0;">Makora 獲 NSF STRIDE「AI 效率挑戰」150 萬美元（10/16，Cornell Tech）。</strong>這筆資金投向提升 AI 運算效率的研究。在模型越做越大、電與成本吃緊的當下，「同樣效果、更省算力」是一條長線但關鍵的研究訊號。<a href="https://tech.cornell.edu" style="color:#06b6d4;">🔗 來源（Cornell Tech）</a></li>
+    </ul>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="padding:6px 0 12px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:20px 22px;">
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:6px;">📖 今日概念｜非人類身分（Non-Human Identity, NHI）</div>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:12px;">定義</div>
+    <p style="font-size:15px;line-height:1.75;color:#cbd5e1;margin:5px 0 0;">不屬於某個「人」的數位身分——服務帳號、API 金鑰、憑證、機器人，現在還多了 AI 代理。它們一樣會登入、一樣持有權限，卻常常沒有明確的主人在管。</p>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:14px;">生活化比喻</div>
+    <p style="font-size:15px;line-height:1.75;color:#cbd5e1;margin:5px 0 0;">公司大樓裡，人類員工有門禁卡、會換卡、離職就回收。但那些「永遠插在門上的備用鑰匙」（排程程式、共用金鑰）從沒人收。AI 代理上線，等於又發了一大把這種永不回收的鑰匙——而且它們還會自己到處走。<span style="color:#94a3b8;">（比喻說回技術：這就是「常駐權限不回收」的問題，和今天 CERT-In 的金鑰外洩是同一件事。）</span></p>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:14px;">工作中的例子</div>
+    <p style="font-size:15px;line-height:1.75;color:#cbd5e1;margin:5px 0 0;">一支寫死在 repo 裡的資料庫金鑰，被代理照著拿去用——代理沒越權，是那把金鑰本來就不該長期存在、不該被任何人（或任何程式）隨手撿到。</p>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:14px;">常見誤解</div>
+    <p style="font-size:15px;line-height:1.75;color:#cbd5e1;margin:5px 0 0;">以為「管好誰登入（人類帳號）就夠了」。實際上，很多企業裡 NHI 的數量是人類帳號的<strong style="color:#a5b4fc;">數十倍</strong>，而且最難盤點、最常被遺忘——代理只是讓這個老問題一次爆量。</p>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:14px;">與今天主軸的關係</div>
+    <p style="font-size:15px;line-height:1.75;color:#cbd5e1;margin:5px 0 0;">本週 CERT-In 的根因、Google／微軟急著給每個代理發身分，講的都是 NHI 治理：先讓每個非人類的東西「有名有姓、有最小權限、有人負責」，代理才治理得了。</p>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- 半導體 AI 專區 -->
+<tr><td style="padding:6px 0 12px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:20px 22px;">
+    <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜晶片的「安全性簽核」：資訊流追蹤與 AI 抓硬體木馬</div>
+    <div>
+      <span style="display:inline-block;background:#1e293b;color:#67e8f9;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;">EDA 工具</span>
+      <span style="display:inline-block;background:#3b2a1e;color:#fbbf24;font-size:11px;font-weight:700;padding:4px 10px;border-radius:16px;margin-left:6px;">背景知識</span>
+    </div>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:16px;">▍問題與流程位置</div>
+    <p style="font-size:15px;line-height:1.75;color:#cbd5e1;margin:5px 0 0;">今天主軸在講「別讓代理把祕密外洩」，晶片世界有個長得一模一樣的老問題：一顆晶片的 RTL／邏輯閘設計裡，可能藏著<strong style="color:#a5b4fc;">硬體木馬（Hardware Trojan）</strong>——由第三方 IP、代工端、甚至被動過手腳的設計流程塞進的隱藏邏輯。它平時不動，等特定條件觸發才洩漏金鑰或讓晶片當機。麻煩在於：傳統的功能驗證（跑測試向量確認「功能正確」）<strong style="color:#a5b4fc;">抓不到它</strong>，因為木馬設計上就躲在正常測試踩不到的角落。所以要在 RTL→邏輯閘的驗證階段，額外加一道「安全性簽核」。</p>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:14px;">▍AI／方法如何介入</div>
+    <p style="font-size:15px;line-height:1.75;color:#cbd5e1;margin:5px 0 0;">兩條路線：<strong style="color:#a5b4fc;">①資訊流追蹤（IFT／閘級 GLIFT）</strong>——在邏輯閘層給每個訊號貼上「污染標籤」，用形式化方法證明「祕密（如金鑰）絕不會流到不可信的輸出腳位」；一旦違反就吐出反例，那條路徑可能是木馬、也可能是設計漏洞（此法由 UCSD Kastner 等團隊推動，IEEE Computer 2016）。<strong style="color:#a5b4fc;">②機器學習（GNN／GAN）</strong>——把電路當成「圖」，學習「乾淨電路 vs 含木馬電路」的結構差異，在沒有黃金樣本時也能標出可疑子電路，並給出不確定度做風險分級（常以公開的 Trust-Hub 木馬基準評測）。相比過去純人工審查＋功能測試，等於把「祕密會不會外洩」變成<strong style="color:#a5b4fc;">可自動證明的性質</strong>，再用 ML 在海量第三方模組中先篩出高風險區塊，讓人只審最可疑的部分——效率與涵蓋率都明顯提升。</p>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:14px;">▍資料與產出</div>
+    <p style="font-size:15px;line-height:1.75;color:#cbd5e1;margin:5px 0 0;">輸入＝RTL／netlist＋安全性質（哪些訊號是祕密、哪些腳位不可信）；ML 路線另需帶標註的電路圖資料集。產出＝性質違反的反例波形／可疑閘清單＋風險分數。</p>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:14px;">▍如何驗證</div>
+    <p style="font-size:15px;line-height:1.75;color:#cbd5e1;margin:5px 0 0;">IFT 本身就是形式化證明（給定性質，數學上成立或給反例）；ML 路線則用 Trust-Hub 等公開木馬基準做 held-out 測試，看偵測率與誤報率，並以不確定度輔助判斷。</p>
+
+    <div style="color:#a5b4fc;font-weight:700;font-size:13px;margin-top:14px;">▍限制與風險</div>
+    <p style="font-size:15px;line-height:1.75;color:#cbd5e1;margin:5px 0 0;">（編輯分析）IFT 在閘級計算成本高、標籤傳播容易過度保守而誤報；ML 高度依賴訓練看過的木馬型態，對<strong style="color:#a5b4fc;">沒見過的新型木馬</strong>容易漏。兩者都還在研究／早期工具階段，不是「按一鍵就乾淨」，而是把風險降到可管理。</p>
+
+    <p style="color:#67e8f9;font-weight:700;font-size:15px;line-height:1.7;margin:16px 0 0;">👷 對半導體工作者的意義：隨著第三方 IP 與多方供應鏈越來越長，「安全性簽核」很可能像 timing／power 簽核一樣，變成一道獨立關卡。對驗證、IP 整合與安全架構的工程師——先熟悉資訊流追蹤的思路與 Trust-Hub 基準，是進可攻的一步。</p>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="padding:6px 0 16px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:16px;">
+  <tr><td style="padding:1px;">
+    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:15px;">
+    <tr><td style="padding:22px;">
+      <div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:12px;">🪞 反思時間</div>
+      <ul style="margin:0;padding-left:20px;font-size:15px;line-height:1.75;color:#cbd5e1;">
+        <li style="margin-bottom:12px;">如果你的團隊明天就要上線一個會連資料庫的 AI 代理，你能說出它用的是哪個身分、有哪些權限、昨天碰過哪些資料嗎？答不出來，代表你管的是「模型」而不是「代理」——該補的是哪一塊？</li>
+        <li style="margin-bottom:12px;">CERT-In 的根因「寫死在程式碼裡的金鑰」，在 AI 出現前就存在十幾年了，AI 代理只是把它的爆炸半徑放大。你的 repo 與設定檔裡，還有多少把「永遠插在門上、沒人回收」的鑰匙？</li>
+        <li>當「給每個代理發身分、關進沙盒、留稽核」變成預設，手上握有成熟 IAM 與資訊流控制能力的公司，會不會反而比模型最強的公司更快把代理放進正式環境？護城河正在從「模型」移到哪裡？</li>
+      </ul>
+      <p style="color:#a5b4fc;font-weight:700;font-size:15px;line-height:1.7;margin:16px 0 0;">🎒 今日帶走：別用管聊天機器人的方式去管一個會自己行動的新員工——先發身分、給最小權限、關進沙盒，資安才追得上 AI 的落地速度。</p>
+    </td></tr>
+    </table>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- 歷史電子報入口 -->
+<tr><td style="padding:0 0 12px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a;border-radius:14px;">
+  <tr><td style="padding:20px 22px;">
+    <div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:6px;">📚 想回顧之前的內容？</div>
+    <p style="font-size:14px;line-height:1.7;color:#94a3b8;margin:0 0 8px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+    <a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-size:14px;font-weight:600;">查看歷史電子報</a>
+  </td></tr>
+  </table>
+</td></tr>
+
+<!-- Footer -->
+<tr><td style="padding:8px 22px 28px;text-align:center;">
+  <p style="font-size:13px;color:#94a3b8;margin:0 0 8px;">📬 覺得有用？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline;">訂閱這份電子報</a>，分享給你的朋友。</p>
+  <p style="font-size:13px;color:#64748b;margin:0 0 8px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline;">點此退訂（10 秒，下期生效）</a></p>
+  <p style="font-size:12px;color:#475569;margin:12px 0 0;line-height:1.6;">© 2026 企鵝的 AI 每日電子報🐧<br>本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源。</p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>
