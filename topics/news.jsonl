@@ -1061,3 +1061,14 @@
 {"date": "2026-10-18", "title": "主軸：AI 代理這週闖進正式系統——資安防線從『管模型』換成『管身分與鑰匙』（身分/權限/沙盒 facet，CERT-In 金鑰外洩＋Perplexity SPACE＋Google/微軟代理身分）"}
 {"date": "2026-10-18", "title": "概念：非人類身分（Non-Human Identity, NHI）"}
 {"date": "2026-10-18", "title": "半導體專區：EDA 工具｜晶片安全性簽核——資訊流追蹤（IFT/GLIFT）與機器學習（GNN/GAN）硬體木馬偵測（Trust-Hub，背景）"}
+{"date": "2026-10-19", "title": "Anthropic 設立公益基金：先投入約 5% 股權、估值每成長 50% 再加碼 2%，最終上看約 20% 股權投入公益（10/18）"}
+{"date": "2026-10-19", "title": "Anthropic 把原發給高管加薪的股權改撥公益、明令不得用於任何國家的政治遊說與獻金（10/18）"}
+{"date": "2026-10-19", "title": "Anthropic 公益基金為全資 LLC（非 501(c)(3)），IPO 前需股東批准、細節未來數月公布（10/18）"}
+{"date": "2026-10-19", "title": "DeepSeek 把 Search／Fetch API 對所有人開放：每端點每千次 0.75 美元，Harness/Claude Code/Codex server-side 工具呼叫 10/31 前免費（10/17）"}
+{"date": "2026-10-19", "title": "Reflection AI 開源 Beam 501B 開放權重模型（可自有/客製/擴展，對標 DeepSeek，NVIDIA 背景）（10/16）"}
+{"date": "2026-10-19", "title": "NVIDIA 開源 2.8 兆 token 印度語系預訓練資料與資料生成管線（10/16）"}
+{"date": "2026-10-19", "title": "IBM Granite Switch 4.1：聊天／決策／語音同一端點（10/15）"}
+{"date": "2026-10-19", "title": "GitHub 開源授權合規（license compliance）正式 GA（供應鏈安全，10/16）"}
+{"date": "2026-10-19", "title": "主軸：AI 大廠在 IPO 前立家訓——Anthropic 把最高 20% 股權綁進會自動加碼的公益基金，開始制度化回答『AI 賺到的錢歸誰』"}
+{"date": "2026-10-19", "title": "概念：公益公司（Public Benefit Corporation, PBC）與公益股權"}
+{"date": "2026-10-19", "title": "半導體專區：IC 製造｜電漿蝕刻的機器學習終點偵測（OES＋PCA/BIRCH/CNN/遷移學習，背景）"}
