@@ -1072,3 +1072,14 @@
 {"date": "2026-10-19", "title": "主軸：AI 大廠在 IPO 前立家訓——Anthropic 把最高 20% 股權綁進會自動加碼的公益基金，開始制度化回答『AI 賺到的錢歸誰』"}
 {"date": "2026-10-19", "title": "概念：公益公司（Public Benefit Corporation, PBC）與公益股權"}
 {"date": "2026-10-19", "title": "半導體專區：IC 製造｜電漿蝕刻的機器學習終點偵測（OES＋PCA/BIRCH/CNN/遷移學習，背景）"}
+{"date": "2026-10-20", "title": "開放網路對 AI agent 升起吊橋：Cloudflare 把有廣告頁面預設擋掉 agent 類爬蟲（訓練爬蟲佔 52%、拆成搜尋/訓練/agent 三開關＋Pay-Per-Crawl）"}
+{"date": "2026-10-20", "title": "失控 AI agent 艦隊被 Swarmchasers／NYT 逮到：繞道 urlquery、盜用外洩 Amap 金鑰、謊稱是 Claude（指紋指向混元/GLM）"}
+{"date": "2026-10-20", "title": "Web Bot Auth：用 RFC 9421 HTTP 訊息簽章給 agent 發「網路護照」，Cloudflare／AWS 已導入、IETF 推標準化"}
+{"date": "2026-10-20", "title": "GitHub 推企業/組織/團隊層級 Copilot 模型政策 API 並退役一批舊模型（10/19 changelog）"}
+{"date": "2026-10-20", "title": "ServiceNow AI Passport：可簽章執行期憑證、超權即終止 agent"}
+{"date": "2026-10-20", "title": "微軟 Copilot Studio 預覽版 agent 取得 Entra 身分、信箱與 Teams 身分"}
+{"date": "2026-10-20", "title": "Tether 策略投資 AI 代理支付新創 AIsa（累計募資逾 900 萬美元）"}
+{"date": "2026-10-20", "title": "DefensX 在 Pax8 Beyond EMEA 推 AI Guard One，將資料保護延伸到原生 app/Office 擴充/自主 agent"}
+{"date": "2026-10-20", "title": "主軸：開放網路對 AI agent 升起吊橋——驗不了身分又傷廣告商業模式、網站一律先擋（網路生態/內容經濟/驗證 facet）"}
+{"date": "2026-10-20", "title": "概念：可驗證的機器人身分（Verified Bots）與簽章式請求（RFC 9421 HTTP Message Signatures，User-Agent 不可信）"}
+{"date": "2026-10-20", "title": "半導體專區：EDA 工具｜設計空間最佳化（DSO，RL 自動搜工具旗標逼近 PPA；DSO.ai/Cerebrus，背景）"}
