@@ -1083,3 +1083,14 @@
 {"date": "2026-10-20", "title": "主軸：開放網路對 AI agent 升起吊橋——驗不了身分又傷廣告商業模式、網站一律先擋（網路生態/內容經濟/驗證 facet）"}
 {"date": "2026-10-20", "title": "概念：可驗證的機器人身分（Verified Bots）與簽章式請求（RFC 9421 HTTP Message Signatures，User-Agent 不可信）"}
 {"date": "2026-10-20", "title": "半導體專區：EDA 工具｜設計空間最佳化（DSO，RL 自動搜工具旗標逼近 PPA；DSO.ai/Cerebrus，背景）"}
+{"date": "2026-10-21", "title": "德國與 NVIDIA 簽《聯合意向宣言》共建開放工業 AI 模型、鎖定機器人/機械/汽車物理 AI（Invest in Germany 峰會，投資 4 家德國新創＋西門子）"}
+{"date": "2026-10-21", "title": "OpenAI（Altman）確認將打造人形機器人、最快 2027 展示，稱難點在 AI 大腦而非身體（Sources podcast，轉述）"}
+{"date": "2026-10-21", "title": "Laplace Intelligence 以模擬紅隊（建於 NVIDIA Cosmos）在上路前壓測機器人與自駕，客戶含 Bot Auto 與日系車廠、NVIDIA/T-Mobile 聖荷西試點"}
+{"date": "2026-10-21", "title": "NVIDIA 在 Jülich JUPITER 超算完成容錯量子運算（magic state cultivation）破紀錄模擬"}
+{"date": "2026-10-21", "title": "DeepSeek-V4.1-Flash-1017 上架阿里雲 Token Plan 每月 $6 起（MIT 開放權重、HLE 42.6/Terminal-Bench 4.0 42.3）"}
+{"date": "2026-10-21", "title": "GitHub package firewall 公開預覽（供應鏈安全）"}
+{"date": "2026-10-21", "title": "GitHub Dependabot 支援 npm 12、pnpm 11/12、Bun 1.4"}
+{"date": "2026-10-21", "title": "NVIDIA Cosmos 世界基礎模型／Cosmos-Transfer 合成資料與 sim-to-real（背景）"}
+{"date": "2026-10-21", "title": "主軸：AI 的主戰場從螢幕移到工廠與機器身體——物理 AI 拿到國家級工業背書（德國×NVIDIA 開放工業模型）＋前沿實驗室承諾（OpenAI 人形），瓶頸從造身體轉向造大腦與真實世界資料"}
+{"date": "2026-10-21", "title": "概念：Sim-to-Real（模擬到真實的落差／sim-to-real gap）"}
+{"date": "2026-10-21", "title": "半導體專區：IC 製造｜晶圓廠搬運機器人（OHT/AMHS）車隊的即時派工與防壅塞（多代理強化學習，背景）"}
