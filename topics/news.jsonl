@@ -1094,3 +1094,15 @@
 {"date": "2026-10-21", "title": "主軸：AI 的主戰場從螢幕移到工廠與機器身體——物理 AI 拿到國家級工業背書（德國×NVIDIA 開放工業模型）＋前沿實驗室承諾（OpenAI 人形），瓶頸從造身體轉向造大腦與真實世界資料"}
 {"date": "2026-10-21", "title": "概念：Sim-to-Real（模擬到真實的落差／sim-to-real gap）"}
 {"date": "2026-10-21", "title": "半導體專區：IC 製造｜晶圓廠搬運機器人（OHT/AMHS）車隊的即時派工與防壅塞（多代理強化學習，背景）"}
+{"date": "2026-10-22", "title": "NVIDIA GTC Berlin 對後段供應鏈砸預付款擴產：載板3年2.5倍、測試一年翻倍、Amkor中介層逾300%、SPIL光引擎15倍（Jensen：產能才是限制）"}
+{"date": "2026-10-22", "title": "NVIDIA×Google Cloud Vera Rubin 基礎設施（A5X）正式GA、約11月開放並擴展歐洲"}
+{"date": "2026-10-22", "title": "NVIDIA供應鏈擴產名單含SPIL光引擎15倍：共同封裝光學CPO成新擴產重點（Spectrum-X Photonics/Broadcom/台積電COUPE）"}
+{"date": "2026-10-22", "title": "台積電CoWoS 2026月產能上看12-14萬片、2027擴逾60%、朝2028倍增並推面板級CoPoS（據TrendForce背景）"}
+{"date": "2026-10-22", "title": "Meta 2026資本支出上調至約1,350-1,450億美元、通過無投票權Class C股為AI融資（2027初生效，據報導）"}
+{"date": "2026-10-22", "title": "DeepSeek開源生產級推論引擎DeepInfer（Apache 2.0，支援NVIDIA與華為昇騰，據報導）"}
+{"date": "2026-10-22", "title": "Anthropic推Claude Duet主動式代理研究預覽（Opus 5.5，據報導）＋哈佛物理學家Stubbs加入長期利益信託（官方）"}
+{"date": "2026-10-22", "title": "GitHub CLI可選會過期、自動更新的OAuth token；分支保護批次轉rulesets、Dependabot警示API回傳版本（10/20-21 changelog）"}
+{"date": "2026-10-22", "title": "法律AI新創Legora完成5.5億美元E輪、估值88億美元、ARR破2億美元（據報導）"}
+{"date": "2026-10-22", "title": "主軸：AI的牆從製程搬到後段——NVIDIA在GTC Berlin對封裝/載板/測試/光互連供應鏈砸預付款擴產，瓶頸從「晶片做更小」變「做好的晶片組起來、連起來、測出來」"}
+{"date": "2026-10-22", "title": "概念：先進封裝（Advanced Packaging，chiplet/2.5D·3D/中介層/載板，組裝與連接而非微縮）"}
+{"date": "2026-10-22", "title": "半導體專區：EDA 工具｜3D-IC/Chiplet 熱分析與熱感知設計（ML 熱替身模型 MFIT/Chiplet3D，背景）"}
