@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="x-apple-disable-message-reformatting">
+<title>企鵝的 AI 每日電子報</title>
+</head>
+<body style="margin:0; padding:0; background:#0f0f0f; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#0f0f0f; margin:0; padding:0;">
+<tr>
+<td align="center" style="padding:20px 12px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" style="max-width:650px; width:100%; font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+
+<!-- ===== Header ===== -->
+<tr>
+<td style="background:linear-gradient(135deg,#6366f1,#06b6d4); border-radius:16px 16px 0 0; padding:32px 28px; text-align:center;">
+<div style="font-size:26px; font-weight:800; color:#ffffff; letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px; color:#e0e7ff; margin-top:8px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px; color:#c7d2fe; margin-top:10px; font-weight:600;">2026 年 10 月 23 日（週五）</div>
+</td>
+</tr>
+
+<!-- ===== 1. 30 秒重點 ===== -->
+<tr>
+<td style="background:#1a1a1a; padding:24px 24px 8px 24px;">
+<div style="font-size:18px; font-weight:700; color:#ffffff; margin-bottom:14px;">⚡ 30 秒重點</div>
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525; border-radius:10px;">
+<tr><td style="padding:16px 18px;">
+<ul style="margin:0; padding-left:20px; color:#cbd5e1; font-size:15px; line-height:1.7;">
+<li style="margin-bottom:10px;"><strong style="color:#a5b4fc;">【今日主軸】</strong>代理的四塊地基——連工具的 <strong style="color:#e2e8f0;">MCP</strong>、連代理的 <strong style="color:#e2e8f0;">A2A</strong>、設定檔 <strong style="color:#e2e8f0;">AGENTS.md</strong>、隨身技能 <strong style="color:#e2e8f0;">Agent Skills</strong>——正搬進同一個中立的 Agentic AI Foundation；今天就是它北美旗艦大會 <strong style="color:#e2e8f0;">AGNTCon+MCPCon</strong> 開幕日。</li>
+<li style="margin-bottom:10px;">Anthropic 同日把 Agent Skills 標準整包（名稱／logo／GitHub／網域）<strong style="color:#e2e8f0;">捐給基金會</strong>；此標準已累積約 100 萬個技能、近 2.8 億次安裝、70+ 平台採用。</li>
+<li style="margin-bottom:10px;">Anthropic 另開放生命科學「<strong style="color:#e2e8f0;">客座研究員</strong>」招募；GitHub Copilot 把功能「全域預設值」推上 GA、走向企業治理。</li>
+<li style="margin-bottom:10px;">政策訊號：美國 DHS 把 <strong style="color:#e2e8f0;">DeepSeek</strong> 逐出聯邦民用 IT 與採購，連「用 DeepSeek 技術開發的第三方工具」一併移除（10/19–20 進聯邦公報）。</li>
+<li style="margin-bottom:0;"><strong style="color:#67e8f9;">對半導體工作者最相關：</strong>互通標準若進 EDA，「設計流程的 agent」未來可跨 Synopsys／Cadence／Siemens 搬動；今天半導體專區示範怎麼把驗證知識包成可攜技能。</li>
+</ul>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 2. 今天的主軸 ===== -->
+<tr>
+<td style="background:#1a1a1a; padding:20px 24px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4); border-radius:14px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a; border-radius:13px;">
+<tr><td style="padding:24px 22px;">
+
+<div style="display:inline-block; background:rgba(99,102,241,0.18); color:#a5b4fc; font-size:12px; font-weight:700; padding:5px 12px; border-radius:20px;">🎯 今天的主軸</div>
+<div style="font-size:19px; font-weight:800; color:#ffffff; line-height:1.5; margin-top:14px;">代理的「隨身技能」變成跨廠標準——四塊地基同搬進中立基金會，護城河從「我家的外掛格式」被抽走</div>
+
+<p style="color:#cbd5e1; font-size:15px; line-height:1.7; margin:16px 0 0 0;">今天代理圈的消息共同指向同一件事：讓 AI 代理「能幹活」的那幾塊底層規格，正在集體搬進一個<strong style="color:#a5b4fc;">中立的 Linux Foundation 基金會</strong>——Agentic AI Foundation（AAIF）。而今天（10/22–23，聖荷西）正是它的北美旗艦大會 AGNTCon + MCPCon 開幕日。</p>
+
+<div style="font-size:13px; font-weight:700; color:#a5b4fc; margin:20px 0 6px 0;">▍共同變化</div>
+<p style="color:#cbd5e1; font-size:15px; line-height:1.7; margin:0;">把「代理怎麼運作」拆開，其實是四塊地基：<strong style="color:#e2e8f0;">MCP</strong>（Model Context Protocol，代理怎麼連外部工具與資料）、<strong style="color:#e2e8f0;">A2A</strong>（Agent2Agent，代理之間怎麼互相呼叫協作）、<strong style="color:#e2e8f0;">AGENTS.md</strong>（給代理看的專案設定檔）、以及 <strong style="color:#e2e8f0;">Agent Skills</strong>（把一套專業知識＋腳本打包成代理可隨取的「技能」，核心是一個 SKILL.md 檔案）。到今天，這四塊加上 Block 的 goose，<strong style="color:#a5b4fc;">全部歸到同一個中立基金會 AAIF 底下</strong>。Anthropic 今天把最後一塊 Agent Skills 整包捐出：名稱、logo、GitHub 組織、agentskills.io 網域一併移交。</p>
+
+<div style="font-size:13px; font-weight:700; color:#a5b4fc; margin:20px 0 6px 0;">▍為什麼放在一起看</div>
+<p style="color:#cbd5e1; font-size:15px; line-height:1.7; margin:0;">單看一則「某標準捐給基金會」像行政新聞；四則擺在一起才看出趨勢：代理的擴充格式正在<strong style="color:#e2e8f0;">去私有化</strong>。MCP 是 Anthropic 去年捐的、A2A 是 Google 今年 8 月捐進來的、AGENTS.md 來自 OpenAI、goose 來自 Block——這些原本各家主推的格式，現在都交給一個誰都不獨佔的中立組織治理。AAIF 執行董事 Mazin Gilbert 把它定位成「代理式 AI 開放標準的中立之家」。</p>
+
+<div style="font-size:13px; font-weight:700; color:#a5b4fc; margin:20px 0 6px 0;">▍過去 vs. 現在</div>
+<p style="color:#cbd5e1; font-size:15px; line-height:1.7; margin:0;"><strong style="color:#e2e8f0;">過去</strong>：你想讓代理多一項能力（例如「會查公司內部 API」），得照某一家的私有外掛格式寫，換一個平台就得重寫一次——像每個品牌手機各有自己的充電孔。<strong style="color:#e2e8f0;">現在</strong>：同一個 SKILL.md 寫好的技能，理論上能在 ChatGPT、Cursor、GitHub Copilot、VS Code 等 70+ 平台通用；一次寫好、到處能用。這就是代理生態的「USB-C 時刻」。</p>
+
+<div style="font-size:13px; font-weight:700; color:#a5b4fc; margin:20px 0 6px 0;">▍背後邏輯</div>
+<p style="color:#cbd5e1; font-size:15px; line-height:1.7; margin:0;">當格式變成人人可用的中立標準，各家 AI 公司就<strong style="color:#e2e8f0;">無法再靠「我家獨有的外掛生態」綁住你</strong>。護城河被迫往兩層搬：一是<strong style="color:#a5b4fc;">模型本身</strong>（誰的推理更強），二是<strong style="color:#a5b4fc;">執行這些標準的平台體驗</strong>（誰把代理跑得更穩、更快、更好用）。對巨頭而言，捐出格式不是慈善——而是賭「標準通用後，真正的戰場在模型與體驗，而不是格式鎖定」，同時搶先把自家做法變成大家的預設。</p>
+
+<div style="font-size:13px; font-weight:700; color:#a5b4fc; margin:20px 0 6px 0;">▍對你的工作</div>
+<p style="color:#cbd5e1; font-size:15px; line-height:1.7; margin:0;">對工程團隊，最實際的一句：<strong style="color:#e2e8f0;">別把工作知識鎖在單一工具或某幾位資深同事腦中</strong>。當「技能」變成可攜的開放格式，你團隊的檢查清單、流程規範、腳本，都可以包成跨平台都能索引的技能。對半導體讀者尤其有感——若 EDA 工具鏈採同一套互通標準，未來「設計流程的 agent」就能跨 Synopsys／Cadence／Siemens 搬動，而不是被綁死在某一家的私有格式裡（今天半導體專區用形式驗證的例子具體化這點）。</p>
+
+<div style="font-size:13px; font-weight:700; color:#a5b4fc; margin:20px 0 6px 0;">▍限制與待驗證</div>
+<p style="color:#cbd5e1; font-size:15px; line-height:1.7; margin:0;">「標準」不等於「立刻好用」。各平台對同一份技能的解讀、權限與沙箱可能有差；把能力交給會自己執行腳本的代理，<strong style="color:#e2e8f0;">安全與供應鏈風險</strong>也隨之而來（AAIF 自己也把「技能作者與安裝者的安全指引」列進路線圖）。再者，捐出格式的同時各家仍以「個人身分」掌握維護權——Agent Skills 的 Lead Maintainer 是 David Soria Parra 與 Mahesh Murag，工程師來自 Anthropic／Google／OpenAI；中立治理能走多遠，仍待時間驗證。</p>
+
+<div style="background:#252525; border-radius:8px; padding:14px 16px; margin:18px 0 0 0;">
+<div style="font-size:12px; font-weight:700; color:#67e8f9; margin-bottom:6px;">👤 延伸解讀（編輯分析）</div>
+<p style="color:#cbd5e1; font-size:14px; line-height:1.7; margin:0;">可以把這波類比成網路早期的 TCP/IP 與 HTTP：真正賺到錢的，很少是「定義協定的人」，而是「在協定上做出最好服務的人」。代理標準大合流，等於宣告「靠鎖死格式收租」這條路要收尾了；接下來值得盯的是——當格式不再是護城河，各家會把差異化押在模型、還是押在平台體驗？</p>
+</div>
+
+<div style="font-size:13px; font-weight:700; color:#a5b4fc; margin:20px 0 6px 0;">▍重點一句話</div>
+<p style="color:#e2e8f0; font-size:15px; line-height:1.7; margin:0; font-weight:600;">代理的「隨身技能」正從「每家一套」變成「跨廠通用」——誰掌握標準不再靠鎖死格式賺錢，而是靠模型與體驗；把工作知識包成可攜技能，比綁在單一工具上更保值。</p>
+
+<div style="margin-top:18px; padding-top:14px; border-top:1px solid #333;">
+<div style="font-size:12px; color:#94a3b8; line-height:1.9;">
+🔗 來源：<a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" style="color:#06b6d4; text-decoration:none;">Anthropic — Donating Agent Skills to the Agentic AI Foundation</a><br>
+🔗 來源：<a href="https://www.linuxfoundation.org/press/agentic-ai-foundation-announces-global-2026-events-program-anchored-by-agntcon-mcpcon-north-america-and-europe" style="color:#06b6d4; text-decoration:none;">Linux Foundation — AAIF 2026 Events Program（AGNTCon+MCPCon）</a>
+</div>
+</div>
+
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 3. 主軸的衍生新聞 ===== -->
+<tr>
+<td style="background:#1a1a1a; padding:12px 24px 8px 24px;">
+<div style="font-size:18px; font-weight:700; color:#ffffff; margin:8px 0 14px 0;">🔗 主軸的衍生新聞</div>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525; border-radius:10px; margin-bottom:14px;">
+<tr><td style="padding:18px 20px;">
+<div style="display:inline-block; background:rgba(6,182,212,0.15); color:#67e8f9; font-size:11px; font-weight:700; padding:4px 10px; border-radius:16px;">🔗 衍生新聞</div>
+<div style="font-size:17px; font-weight:700; color:#ffffff; margin-top:10px;">AGNTCon + MCPCon 北美站今日開幕，成代理標準的「年度主場」</div>
+<p style="color:#cbd5e1; font-size:14px; line-height:1.7; margin:10px 0 0 0;">這場 10/22–23 在聖荷西舉行的大會，是 AAIF 的<strong style="color:#e2e8f0;">北美旗艦活動</strong>，議程明列「互通性、協定（MCP、A2A）與標準」專軌。它和主軸直接相關：Anthropic 選在同一天捐出 Agent Skills，等於讓「四塊地基歸位」在大會上一次說清楚。AAIF 今年還鋪了橫跨紐約、首爾、上海、東京、多倫多等地的系列活動。</p>
+<p style="color:#94a3b8; font-size:14px; font-style:italic; margin:10px 0 0 0;">💡 重點一句話：當一個領域開始有「年度大會」，代表它從實驗期進入了標準化的成熟期。</p>
+<div style="font-size:12px; color:#94a3b8; margin-top:8px;">🔗 <a href="https://www.linuxfoundation.org/press/agentic-ai-foundation-announces-global-2026-events-program-anchored-by-agntcon-mcpcon-north-america-and-europe" style="color:#06b6d4; text-decoration:none;">閱讀原文 ｜ 來源：Linux Foundation</a></div>
+</td></tr>
+</table>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525; border-radius:10px; margin-bottom:14px;">
+<tr><td style="padding:18px 20px;">
+<div style="display:inline-block; background:rgba(6,182,212,0.15); color:#67e8f9; font-size:11px; font-weight:700; padding:4px 10px; border-radius:16px;">🔗 衍生新聞</div>
+<div style="font-size:17px; font-weight:700; color:#ffffff; margin-top:10px;">Agent Skills 的規模數字：約 100 萬技能、近 2.8 億次安裝、70+ 平台</div>
+<p style="color:#cbd5e1; font-size:14px; line-height:1.7; margin:10px 0 0 0;">根據 Anthropic 官方，Agent Skills 自 2025 年 10 月隨 Claude Code 問世、同年 12 月公開為開放標準，至今已<strong style="color:#e2e8f0;">發布約 100 萬個技能、累計近 2.8 億次安裝</strong>，並被 ChatGPT、Cursor、GitHub Copilot、VS Code 等 70+ 代理平台整合。和主軸的關係：<strong style="color:#e2e8f0;">規模夠大，才有資格談「標準」</strong>——捐出一個已經被用爆的格式，比捐一個沒人用的規格有份量得多。</p>
+<p style="color:#94a3b8; font-size:14px; font-style:italic; margin:10px 0 0 0;">💡 重點一句話：標準的話語權來自採用率，不是來自發明者。</p>
+<div style="font-size:12px; color:#94a3b8; margin-top:8px;">🔗 <a href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" style="color:#06b6d4; text-decoration:none;">閱讀原文 ｜ 來源：Anthropic</a></div>
+</td></tr>
+</table>
+
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525; border-radius:10px; margin-bottom:6px;">
+<tr><td style="padding:18px 20px;">
+<div style="display:inline-block; background:rgba(6,182,212,0.15); color:#67e8f9; font-size:11px; font-weight:700; padding:4px 10px; border-radius:16px;">🔗 衍生新聞</div>
+<div style="font-size:17px; font-weight:700; color:#ffffff; margin-top:10px;">分工釐清：A2A 管「代理之間」，MCP 管「代理連工具」</div>
+<p style="color:#cbd5e1; font-size:14px; line-height:1.7; margin:10px 0 0 0;">Linux Foundation 把兩者定位為<strong style="color:#e2e8f0;">互補</strong>：<strong style="color:#e2e8f0;">A2A</strong> 定義代理彼此怎麼跨組織溝通協作，<strong style="color:#e2e8f0;">MCP</strong> 定義代理怎麼連內部工具與資料。A2A 由 Google 2025 年 4 月推出、6 月捐進 Linux Foundation，今年 4 月滿一年時已有 150+ 組織支持。和主軸的關係：四塊地基不是互搶，而是拼成一張完整的代理底層地圖——這也是它們能共處同一基金會的原因。</p>
+<p style="color:#94a3b8; font-size:14px; font-style:italic; margin:10px 0 0 0;">💡 重點一句話：好的標準彼此分工、不重疊，才拼得成一個生態。</p>
+<div style="font-size:12px; color:#94a3b8; margin-top:8px;">🔗 <a href="https://www.linuxfoundation.org/press/agentic-ai-foundation-announces-global-2026-events-program-anchored-by-agntcon-mcpcon-north-america-and-europe" style="color:#06b6d4; text-decoration:none;">閱讀原文 ｜ 來源：Linux Foundation / AAIF</a></div>
+</td></tr>
+</table>
+
+</td>
+</tr>
+
+<!-- ===== 4. 其他快訊 ===== -->
+<tr>
+<td style="background:#1a1a1a; padding:12px 24px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525; border-radius:10px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:18px; font-weight:700; color:#ffffff; margin-bottom:14px;">📎 其他快訊</div>
+<ul style="margin:0; padding-left:20px; color:#cbd5e1; font-size:15px; line-height:1.7;">
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">Anthropic 開放生命科學「客座研究員」招募。</strong>延續 Claude 自主做科學的路線，Anthropic 邀生命科學研究者申請合作專案。對產業的意義：前沿實驗室正把「AI 當研究員」從內部實驗往外開放給真實科學社群。<span style="color:#94a3b8; font-size:13px;">🔗 <a href="https://www.anthropic.com/news" style="color:#06b6d4; text-decoration:none;">來源：Anthropic（10/22）</a></span></li>
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">GitHub Copilot 功能「全域預設值」上 GA、影響力儀表板加產業對標。</strong>讓企業一處設定全組織的 Copilot 預設、並和同業比較採用成效。為什麼重要：工具競爭的戰線正從「功能」移到「企業治理與可衡量成效」。<span style="color:#94a3b8; font-size:13px;">🔗 <a href="https://github.blog/changelog/" style="color:#06b6d4; text-decoration:none;">來源：GitHub Changelog（10/22）</a></span></li>
+<li style="margin-bottom:14px;"><strong style="color:#e2e8f0;">政策訊號：美國把 DeepSeek 逐出聯邦民用系統。</strong>DHS 令民用聯邦機關移除 DeepSeek 產品、禁止採購，且<strong style="color:#e2e8f0;">連「用 DeepSeek 技術開發的第三方工具」一併移除</strong>；相關通知 10/19–20 進聯邦公報。為什麼重要：任何內嵌中國模型的企業軟體，都可能被供應鏈合規掃到。<span style="color:#94a3b8; font-size:13px;">🔗 <a href="https://www.federalregister.gov/" style="color:#06b6d4; text-decoration:none;">來源：US Federal Register（據報導，10/19–20）</a></span></li>
+<li style="margin-bottom:0;"><strong style="color:#e2e8f0;">即將看點：Mistral Large 4 開放權重傳定 10/27 釋出。</strong>這款約 1.05 兆參數（約 49–52B 活躍）、1M 脈絡的 MoE 旗艦，10/6 起先開 API 預覽，權重據報月底釋出（傳自訂授權、非 Apache 2.0）。為什麼重要：歐洲主權＋開放權重這條線仍在推進。<span style="color:#94a3b8; font-size:13px;">🔗 來源：Mistral AI（預覽 10/6，權重時程據報導）</span></li>
+</ul>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 5. 今日概念 ===== -->
+<tr>
+<td style="background:#1a1a1a; padding:12px 24px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525; border-radius:10px;">
+<tr><td style="padding:22px;">
+<div style="font-size:18px; font-weight:700; color:#ffffff; margin-bottom:16px;">📖 今日概念｜漸進式揭露（Progressive Disclosure）</div>
+
+<div style="font-size:13px; font-weight:700; color:#a5b4fc; margin-bottom:4px;">一句定義</div>
+<p style="color:#cbd5e1; font-size:15px; line-height:1.7; margin:0 0 14px 0;">系統先只給你「摘要／目錄」，等你真的需要時才載入完整內容；用在 AI 代理上，就是先讓模型看到「有哪些技能、各一句話」，只有被叫用的那個技能，才把完整指令與腳本塞進脈絡。</p>
+
+<div style="font-size:13px; font-weight:700; color:#a5b4fc; margin-bottom:4px;">生活化比喻</div>
+<p style="color:#cbd5e1; font-size:15px; line-height:1.7; margin:0 0 14px 0;">像一本厚工具書——你不會把整本背進腦袋，而是先看目錄（一行行標題），要用哪章才翻哪章。<strong style="color:#e2e8f0;">Agent Skills 的 SKILL.md 檔頭（名稱＋一句描述）就是目錄，正文與附帶腳本是內頁。</strong>（說回技術：這其實是在管理模型有限的「脈絡視窗／token 預算」，避免一次塞爆。）</p>
+
+<div style="font-size:13px; font-weight:700; color:#a5b4fc; margin-bottom:4px;">工作中的例子</div>
+<p style="color:#cbd5e1; font-size:15px; line-height:1.7; margin:0 0 14px 0;">把「公司驗證簽核流程」包成一個 skill：平常只占模型脈絡<strong style="color:#e2e8f0;">一行描述</strong>；當工程師真的要跑驗證時，代理才載入完整 checklist＋腳本去執行。模型「知道有這項能力」，但不必時時背著它的全文。</p>
+
+<div style="font-size:13px; font-weight:700; color:#a5b4fc; margin-bottom:4px;">常見誤解</div>
+<p style="color:#cbd5e1; font-size:15px; line-height:1.7; margin:0 0 14px 0;">以為「給模型愈多資料＝愈強」。實際上脈絡塞太滿，會<strong style="color:#e2e8f0;">稀釋注意力、變慢變貴、也更容易出錯</strong>。漸進式揭露反其道而行——少即是多，按需取用。</p>
+
+<div style="font-size:13px; font-weight:700; color:#a5b4fc; margin-bottom:4px;">與今天主軸的關係</div>
+<p style="color:#cbd5e1; font-size:15px; line-height:1.7; margin:0;">Agent Skills 能成為跨廠標準、一次寫好到處能用，正因為它用「SKILL.md 一行描述＋按需載入」這種<strong style="color:#e2e8f0;">輕量格式</strong>——這個設計讓技能可攜、可被任何相容平台索引。標準能不能通用，往往取決於它夠不夠輕、夠不夠好接。</p>
+
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 6. 半導體 AI 專區 ===== -->
+<tr>
+<td style="background:#1a1a1a; padding:12px 24px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525; border-radius:10px;">
+<tr><td style="padding:22px;">
+<div style="font-size:18px; font-weight:700; color:#ffffff; margin-bottom:12px;">🏭 半導體 AI 專區｜形式驗證的 LLM 斷言生成</div>
+<div style="margin-bottom:16px;">
+<span style="display:inline-block; background:rgba(99,102,241,0.18); color:#a5b4fc; font-size:11px; font-weight:700; padding:4px 10px; border-radius:16px; margin-right:6px;">IC 設計</span>
+<span style="display:inline-block; background:rgba(148,163,184,0.18); color:#cbd5e1; font-size:11px; font-weight:700; padding:4px 10px; border-radius:16px;">背景知識</span>
+</div>
+
+<div style="font-size:13px; font-weight:700; color:#a5b4fc; margin-bottom:4px;">▍問題與流程位置</div>
+<p style="color:#cbd5e1; font-size:15px; line-height:1.7; margin:0 0 14px 0;">形式驗證（formal verification）是用<strong style="color:#e2e8f0;">數學證明</strong>電路在「所有可能輸入」下都符合規格，不像模擬只能跑有限測資。但它要工程師手寫大量<strong style="color:#e2e8f0;">斷言（assertion／SVA）</strong>——形式化的規則，例如「這兩個訊號永遠不能同時為 1」。寫斷言又慢又吃經驗，是驗證流程最耗人的瓶頸之一。位置：RTL 設計完成後、進入形式簽核時。</p>
+
+<div style="font-size:13px; font-weight:700; color:#a5b4fc; margin-bottom:4px;">▍AI 如何介入</div>
+<p style="color:#cbd5e1; font-size:15px; line-height:1.7; margin:0 0 14px 0;"><strong style="color:#e2e8f0;">過去</strong>＝資深驗證工程師逐條手寫 SVA、再拿 JasperGold 等形式工具跑證明，失敗再回頭改。<strong style="color:#e2e8f0;">現在</strong>＝LLM 讀規格與 RTL 自動生成候選斷言，再把形式工具當成「<strong style="color:#67e8f9;">迴圈裡的裁判</strong>」自我修正（例如把 Cadence JasperGold 當 solver-in-the-loop 的代理）。差異：把「寫斷言」從數天壓到數小時，並自動篩掉無效斷言。<span style="color:#94a3b8;">（編輯分析：這正是今日主軸的代理模式——代理在迴圈中呼叫外部工具，恰是 MCP／工具呼叫標準要處理的事。）</span></p>
+
+<div style="font-size:13px; font-weight:700; color:#a5b4fc; margin-bottom:4px;">▍資料與產出</div>
+<p style="color:#cbd5e1; font-size:15px; line-height:1.7; margin:0 0 14px 0;">輸入＝設計規格（自然語言／文件）＋ RTL（Verilog／SystemVerilog）＋<strong style="color:#e2e8f0;">結構性中繼資料</strong>（flip-flop 時脈、reset 值、fanin／fanout、FSM 狀態編碼——這些正是 LLM 最缺、卻是驗證工程師仰賴的資訊）。產出＝可直接餵形式工具的 SVA 斷言集。</p>
+
+<div style="font-size:13px; font-weight:700; color:#a5b4fc; margin-bottom:4px;">▍如何驗證</div>
+<p style="color:#cbd5e1; font-size:15px; line-height:1.7; margin:0 0 14px 0;">關鍵是避免「<strong style="color:#e2e8f0;">空洞斷言（vacuous assertion）</strong>」——永遠為真、卻沒抓到任何東西。學界做法：<strong style="color:#e2e8f0;">突變導引精煉</strong>（故意在設計裡種 bug，看斷言抓不抓得到，抓不到就淘汰）＋依 RTL 結構選最合適的 SMT 求解器＋把失敗反例轉成人看得懂的因果解釋（見 arXiv 2606.21451「Closing the Loop」）。</p>
+
+<div style="font-size:13px; font-weight:700; color:#a5b4fc; margin-bottom:4px;">▍限制與風險</div>
+<p style="color:#cbd5e1; font-size:15px; line-height:1.7; margin:0 0 14px 0;">LLM 缺乏設計的結構性知識，易生出「過得了、但過錯原因」的斷言；證明成本在不同設計間差異巨大；目前多為<strong style="color:#e2e8f0;">學術框架與開源工具，尚非大規模量產簽核流程</strong>，不能當成已全面落地。</p>
+
+<div style="border-top:1px solid #333; padding-top:12px; margin-top:4px;">
+<div style="font-size:12px; color:#94a3b8; margin-bottom:10px;">🔗 來源：<a href="https://arxiv.org/abs/2606.21451" style="color:#06b6d4; text-decoration:none;">arXiv 2606.21451（Closing the Loop on LLM-Generated RTL Assertions）</a> ｜ <a href="https://arxiv.org/pdf/2604.23100" style="color:#06b6d4; text-decoration:none;">arXiv 2604.23100（ProofLoop）</a></div>
+<p style="color:#67e8f9; font-size:14px; font-weight:700; line-height:1.7; margin:0;">👷 對半導體工作者的意義：最該關注的是驗證工程師——斷言生成從「手藝」變「審稿」，你的價值移到「判斷 AI 生的斷言夠不夠、有沒有漏」與維護結構化知識庫。可嘗試的下一步：把團隊既有的 SVA／驗證規範包成可被代理索引的「技能」（呼應今日主軸），而不是鎖在個人經驗裡。</p>
+</div>
+
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 7. 反思時間 ===== -->
+<tr>
+<td style="background:#1a1a1a; padding:12px 24px 24px 24px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4); border-radius:14px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#1a1a1a; border-radius:13px;">
+<tr><td style="padding:24px 22px;">
+<div style="font-size:18px; font-weight:700; color:#ffffff; margin-bottom:14px;">🪞 反思時間</div>
+<ul style="margin:0; padding-left:20px; color:#cbd5e1; font-size:15px; line-height:1.8;">
+<li style="margin-bottom:12px;"><strong style="color:#a5b4fc;">趨勢反思：</strong>當 MCP、A2A、Agent Skills 都搬進同一個中立基金會，代理的「私有擴充格式」護城河正在消失——那麼各家 AI 公司接下來真正能收費、能綁住你的，會是哪一層？模型、執行體驗，還是資料？</li>
+<li style="margin-bottom:12px;"><strong style="color:#a5b4fc;">工作連結：</strong>你團隊現在的工具知識（驗證規範、設計檢查清單、EDA 腳本）是鎖在幾位資深工程師腦中，還是已經封裝成「一次寫好、代理到處能用」的技能？如果明天換一套工具鏈，這些知識搬得走嗎？</li>
+<li style="margin-bottom:0;"><strong style="color:#a5b4fc;">未來判斷：</strong>當 AI 把「寫斷言」的成本壓到趨近零，形式驗證的瓶頸會從「產出」移到哪裡（判斷完整性？覆蓋決策？）——你會怎麼重新分配團隊的時間？</li>
+</ul>
+<div style="background:#252525; border-radius:8px; padding:14px 16px; margin-top:16px;">
+<p style="color:#a5b4fc; font-size:15px; font-weight:700; line-height:1.7; margin:0;">🎒 今日帶走：代理的隨身技能正從「每家一套」變成「跨廠通用」；誰掌握標準不再靠鎖死格式賺錢，而是靠模型與體驗——把你的工作知識包成可攜技能，比綁在單一工具上更保值。</p>
+</div>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== 歷史電子報入口 ===== -->
+<tr>
+<td style="background:#1a1a1a; padding:4px 24px 20px 24px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background:#252525; border-radius:10px;">
+<tr><td style="padding:20px 22px; text-align:center;">
+<div style="font-size:16px; font-weight:700; color:#ffffff; margin-bottom:8px;">📚 想回顧之前的內容？</div>
+<p style="color:#cbd5e1; font-size:14px; line-height:1.7; margin:0 0 12px 0;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+<a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4; text-decoration:underline; font-size:15px; font-weight:600;">查看歷史電子報</a>
+</td></tr>
+</table>
+</td>
+</tr>
+
+<!-- ===== Footer ===== -->
+<tr>
+<td style="background:#141414; border-radius:0 0 16px 16px; padding:24px; text-align:center;">
+<p style="color:#cbd5e1; font-size:14px; margin:0 0 8px 0;">📬 覺得有用嗎？<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4; text-decoration:underline;">訂閱這份電子報</a>，分享給朋友。</p>
+<p style="color:#64748b; font-size:13px; margin:0 0 14px 0;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b; text-decoration:underline;">點此退訂（10 秒，下期生效）</a></p>
+<p style="color:#475569; font-size:12px; line-height:1.6; margin:0;">© 2026 企鵝的 AI 每日電子報🐧<br>本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源</p>
+</td>
+</tr>
+
+</table>
+</td>
+</tr>
+</table>
+</body>
+</html>

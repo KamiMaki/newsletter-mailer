@@ -1106,3 +1106,13 @@
 {"date": "2026-10-22", "title": "主軸：AI的牆從製程搬到後段——NVIDIA在GTC Berlin對封裝/載板/測試/光互連供應鏈砸預付款擴產，瓶頸從「晶片做更小」變「做好的晶片組起來、連起來、測出來」"}
 {"date": "2026-10-22", "title": "概念：先進封裝（Advanced Packaging，chiplet/2.5D·3D/中介層/載板，組裝與連接而非微縮）"}
 {"date": "2026-10-22", "title": "半導體專區：EDA 工具｜3D-IC/Chiplet 熱分析與熱感知設計（ML 熱替身模型 MFIT/Chiplet3D，背景）"}
+{"date": "2026-10-23", "title": "Anthropic 把 Agent Skills 標準整包捐給 Agentic AI Foundation（名稱/logo/GitHub/agentskills.io 網域；約100萬技能/近2.8億安裝/70+平台；Lead Maintainer David Soria Parra 與 Mahesh Murag）"}
+{"date": "2026-10-23", "title": "AGNTCon + MCPCon North America 10/22-23 聖荷西開幕——AAIF 北美旗艦大會，互通性/協定(MCP,A2A)/標準專軌（執行董事 Mazin Gilbert）"}
+{"date": "2026-10-23", "title": "AAIF 代理地基歸位：MCP+goose+AGENTS.md 創始，A2A（Google，2026/8 加入）＋Agent Skills 全入同一中立基金會；A2A 滿一年 150+ 組織、與 MCP 互補"}
+{"date": "2026-10-23", "title": "Anthropic 開放生命科學「客座研究員」招募（Open call for guest investigators in life sciences，10/22）"}
+{"date": "2026-10-23", "title": "GitHub Copilot 功能全域預設值 GA＋影響力儀表板加產業對標（10/22 changelog）"}
+{"date": "2026-10-23", "title": "政策訊號：美國 DHS 把 DeepSeek 逐出聯邦民用 IT 與採購、連用 DeepSeek 技術開發的第三方工具一併移除（10/19-20 進聯邦公報）"}
+{"date": "2026-10-23", "title": "即將看點：Mistral Large 4 開放權重傳定 10/27 釋出（約1.05兆參數/49-52B活躍/1M脈絡 MoE，10/6 起 API 預覽，傳自訂授權）"}
+{"date": "2026-10-23", "title": "主軸：代理的隨身技能變成跨廠標準——MCP/A2A/AGENTS.md/Agent Skills 四塊代理地基同搬進中立 Agentic AI Foundation，Anthropic 捐 Agent Skills＋AGNTCon+MCPCon 開幕，護城河從私有外掛格式移到模型與平台體驗"}
+{"date": "2026-10-23", "title": "概念：漸進式揭露（Progressive Disclosure，SKILL.md 檔頭一行索引＋按需載入正文/腳本以管理脈絡視窗）"}
+{"date": "2026-10-23", "title": "半導體專區：IC 設計｜形式驗證的 LLM 斷言/屬性生成與品質感知收斂（ProofLoop/JasperGold solver-in-the-loop、mutation-guided refinement、vacuous assertion，arXiv 2606.21451/2604.23100，背景）"}
