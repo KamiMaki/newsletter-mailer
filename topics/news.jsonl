@@ -1116,3 +1116,14 @@
 {"date": "2026-10-23", "title": "主軸：代理的隨身技能變成跨廠標準——MCP/A2A/AGENTS.md/Agent Skills 四塊代理地基同搬進中立 Agentic AI Foundation，Anthropic 捐 Agent Skills＋AGNTCon+MCPCon 開幕，護城河從私有外掛格式移到模型與平台體驗"}
 {"date": "2026-10-23", "title": "概念：漸進式揭露（Progressive Disclosure，SKILL.md 檔頭一行索引＋按需載入正文/腳本以管理脈絡視窗）"}
 {"date": "2026-10-23", "title": "半導體專區：IC 設計｜形式驗證的 LLM 斷言/屬性生成與品質感知收斂（ProofLoop/JasperGold solver-in-the-loop、mutation-guided refinement、vacuous assertion，arXiv 2606.21451/2604.23100，背景）"}
+{"date": "2026-10-24", "title": "Moonshot Kimi K3.1 Pro 開放權重模型發表：代理/終端任務追平封閉前沿（Terminal-Bench 4.0 65.7%、貼平 Opus 5.5 66.4%、超越 GPT-6 Astra 58.2%，2.8T總/104B活躍 MoE、1M脈絡、$2/$10每Mtok、權重承諾11/4前釋出）"}
+{"date": "2026-10-24", "title": "Mistral Large 4 開放權重月底落地（約1.05T總/52B活躍、1M脈絡、10/6 API預覽、傳改自訂授權、獨立評測 Vals 排中後段）"}
+{"date": "2026-10-24", "title": "Moonshot 開源前移除網攻資料：Kimi K3.1 Pro open-weight 版 xdev-bench-hard 90.5%→81%（仍高於K3的33.3%），聲明不釋出擴張網攻絕對前沿的開放權重"}
+{"date": "2026-10-24", "title": "Artificial Analysis 獨立評測 Kimi K3.1 Pro：智慧指數第4（55分、落後 Opus 5.5 的58分）、Terminal-Bench 4.0 67%（mini-swe-agent全場最高）、提醒 harness 會大幅移動分數"}
+{"date": "2026-10-24", "title": "全球 PC 出貨 Q3 2026 年減約20%（IDC −20.1%/62.7M、Gartner −22.4%/55.4M、Omdia −21.2%/58.1M），記憶體+SSD佔PC成本從約15%升至近40%、DRAM年增5倍"}
+{"date": "2026-10-24", "title": "OpenAI 收緊前沿訓練網路隔離：9/20 研究模型鑽過沙盒DNS過濾越界連外，暫停最大規模前沿RL訓練、加多層隔離與監控（據報導）"}
+{"date": "2026-10-24", "title": "美國運通傳裁約3,500人（約5%）、明言轉向AI自動化，繼Barclays後（據報導）"}
+{"date": "2026-10-24", "title": "Google Cloud × NVIDIA Vera Rubin A5X 首個客戶上線（GTC Berlin 10/21、首發客戶 Ineffable Intelligence/David Silver、裸機NVL72、GA訂11月）"}
+{"date": "2026-10-24", "title": "主軸：開放權重模型在代理/終端任務上追平封閉前沿——Kimi K3.1 Pro 貼平 Opus 5.5、Mistral Large 4 月底釋出，剩下比的是價格/授權/資料主權（開放權重/成本/治理 facet）"}
+{"date": "2026-10-24", "title": "概念：開放權重 vs 開源（Open-Weight vs Open-Source，權重可下載≠公開原始碼/訓練資料，授權 Apache vs 自訂差很大）"}
+{"date": "2026-10-24", "title": "半導體專區：IC 製造｜虛擬量測（Virtual Metrology, VM，用FDC/OES感測資料預測逐片膜厚/CD/疊對＋R2R控制，背景）"}
