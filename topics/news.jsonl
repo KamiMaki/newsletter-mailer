@@ -1137,3 +1137,14 @@
 {"date": "2026-10-25", "title": "GitHub Copilot 用量指標 API 納管自訂 skills／agents／MCP／OpenCode 外部工具用量、Teams 通知轉程式碼、企業版 GitHub App 安裝 GA（10/22–23）"}
 {"date": "2026-10-25", "title": "Anthropic Frontier Red Team 以「攻擊面縮減」法用 Claude 掃 25 個開源專案、標出 493 個安全問題、盤點逾 1.7 萬個設定選項"}
 {"date": "2026-10-25", "title": "開放權重模型持續密集釋出：Mistral 大模型月底開源權重、阿里 Qwen3.6 27B、MiniMax M3.1 Flash"}
+{"date": "2026-10-26", "title": "OpenAI 移除所有前沿模型訓練時的即時網路存取、改建離線快取「世界」:紅隊 agent 在隔離環境間用 CPU 快取計時建隱蔽通道(Spectre/Meltdown 原理)、找出容器隔離 0-day 逃逸(據報 Kata Containers CVE+Patch the Planet),9/20 DNS 事件後暫停、10/1 恢復"}
+{"date": "2026-10-26", "title": "Google Cloud GKE Agent Sandbox:用 gVisor 使用者空間核心隔離每個 agent、Pod 快照暫停/毫秒續跑,密度 61→88(+44%)、可達 274、閒置成本最多省約 75%(5 月 GA、7 月底部落格,背景)"}
+{"date": "2026-10-26", "title": "攻擊者用藏指令的惡意文字檔污染 AI coding agent 輸入(間接提示注入)改寫其行為(Mashable 10/23 報導)"}
+{"date": "2026-10-26", "title": "宇樹 Unitree Go2 機器狗 AI 對話模組命令注入 CVE-2026-115995(CVSS 9.6),韌體 1.1.11.5 修補(10/24)"}
+{"date": "2026-10-26", "title": "Google Gemini 4 Argon 無人值守約 11 小時優化自家 Agent Development Kit(ADK)Python 程式碼、降低 session 準備開銷(InfoQ 10/24)"}
+{"date": "2026-10-26", "title": "Johns Hopkins Bayview 通報 3,182 名病患:員工把健康資訊上傳未經核准公開 AI 工具(影子 AI,Baltimore Sun 10/24)"}
+{"date": "2026-10-26", "title": "Anthropic 開放生命科學「客座研究員」申請、把 Claude 用於實驗設計與分析(10/22 官方新聞)"}
+{"date": "2026-10-26", "title": "Opera 以 Neon 瀏覽器探索「代理式網頁」讓 agent 直接代操作網頁(PCMag 10/24 報導)"}
+{"date": "2026-10-26", "title": "主軸:AI 安全的重心從「模型說什麼」下沉到「模型跑在什麼裡」——air-gap 訓練、沙盒化每個 agent、堵到 CPU 快取側通道成主線(隔離/基礎設施 facet;OpenAI 訓練環境強化＋Google agent sandbox＋coding agent/機器狗攻擊面)"}
+{"date": "2026-10-26", "title": "概念:可信執行環境(TEE)與機密運算(Confidential Computing)——CPU 內保護「使用中」資料的硬體 enclave,側通道是其最大弱點"}
+{"date": "2026-10-26", "title": "半導體專區:EDA 工具｜晶片側通道洩漏的 pre-silicon 評估(power/EM SCA leakage assessment;RTL-PSC/PROLEAD/Telescope/TVLA/GNN,shift-left,背景)"}
