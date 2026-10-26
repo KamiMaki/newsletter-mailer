@@ -1148,3 +1148,14 @@
 {"date": "2026-10-26", "title": "主軸:AI 安全的重心從「模型說什麼」下沉到「模型跑在什麼裡」——air-gap 訓練、沙盒化每個 agent、堵到 CPU 快取側通道成主線(隔離/基礎設施 facet;OpenAI 訓練環境強化＋Google agent sandbox＋coding agent/機器狗攻擊面)"}
 {"date": "2026-10-26", "title": "概念:可信執行環境(TEE)與機密運算(Confidential Computing)——CPU 內保護「使用中」資料的硬體 enclave,側通道是其最大弱點"}
 {"date": "2026-10-26", "title": "半導體專區:EDA 工具｜晶片側通道洩漏的 pre-silicon 評估(power/EM SCA leakage assessment;RTL-PSC/PROLEAD/Telescope/TVLA/GNN,shift-left,背景)"}
+{"date": "2026-10-27", "title": "OpenAI 公布三大科學/數學證明：推翻指數時間假說（ETH，細看為固定寬度 k-CNF 確定性精確計數演算法）＋任意維度局部平滑猜想（觸及 Kakeya／Stein）＋四維量子場論存在性（含 QCD／楊–米爾斯），附 Lean 形式化＋指定學者義務複閱＋公開原始資料（10/26，單方宣稱待獨立驗證）"}
+{"date": "2026-10-27", "title": "OpenAI 10/6 釋出 722 篇/372 題 AI 數學手稿翻車：3 篇一天內撤回、14 篇修訂、約半附 Lean 但形式化比論文更弱，Tao 提 Math 1.0 vs 2.0、有人組人類數學協會抗議"}
+{"date": "2026-10-27", "title": "OpenAI＋Anthropic＋Simons 基金會 1,500 萬美元計畫（OpenAI 出 500 萬）協助數學社群驗證/延伸 AI 產出（10/15）"}
+{"date": "2026-10-27", "title": "arXiv 2608.14673 人類稽核 OpenAI AI 數學證明：Lean 僅證「被編碼命題」成立、該命題是否忠實對應原猜想仍須人工逐一確認"}
+{"date": "2026-10-27", "title": "OpenAI GPT-6.1 Terra：便宜快速、主打電腦操作的中階模型，API $1 進/$5 出 per Mtok、1M context、Terminal-Bench 4.0 最高檔 50.3% vs 21.5%（廠商自評），上 ChatGPT Work/Codex/API/GitHub Copilot（10/26）"}
+{"date": "2026-10-27", "title": "Meta 10/26 向 SEC 申報約 350 億美元同步發行（Class A 普通股＋Series A 強制可轉換特別股）＋規劃 2027 ATM 計畫擴 AI，NVIDIA/AMD/Broadcom 表達最高 50 億美元認購意願（尚非承諾）"}
+{"date": "2026-10-27", "title": "🔄 後續追蹤：NVIDIA 10/27 把 Vera Rubin 機櫃與運算托盤設計捐進 OCP＋與 AMD/Google/Meta 發布 Open Data Centre Specification v0.7 機房規範"}
+{"date": "2026-10-27", "title": "GitHub Copilot 10/26 納入 GPT-6.1 Terra 可選模型"}
+{"date": "2026-10-27", "title": "主軸：AI 能交出人類改不動的「滿分考卷」——重點不是證明本身，而是為了驗證 AI 被逼出的新流程（Lean 形式化＋指定大師級義務評審＋公開原始資料）正成形，回應 10/6 722 篇翻車（驗證/可信基礎設施 facet）"}
+{"date": "2026-10-27", "title": "概念：形式化證明與證明助理（Lean）——把證明每步寫成機器可逐條檢查的程式碼，但只驗「被編碼命題」成立、不驗「命題是否等於原定理」"}
+{"date": "2026-10-27", "title": "半導體專區：IC 製造｜晶圓缺陷自動分類（ADC）與深度學習缺陷檢測（CNN／自監督＋信心分數＋人工複判 HITL，背景）"}
