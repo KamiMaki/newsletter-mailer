@@ -1159,3 +1159,16 @@
 {"date": "2026-10-27", "title": "主軸：AI 能交出人類改不動的「滿分考卷」——重點不是證明本身，而是為了驗證 AI 被逼出的新流程（Lean 形式化＋指定大師級義務評審＋公開原始資料）正成形，回應 10/6 722 篇翻車（驗證/可信基礎設施 facet）"}
 {"date": "2026-10-27", "title": "概念：形式化證明與證明助理（Lean）——把證明每步寫成機器可逐條檢查的程式碼，但只驗「被編碼命題」成立、不驗「命題是否等於原定理」"}
 {"date": "2026-10-27", "title": "半導體專區：IC 製造｜晶圓缺陷自動分類（ADC）與深度學習缺陷檢測（CNN／自監督＋信心分數＋人工複判 HITL，背景）"}
+{"date": "2026-10-28", "title": "Anthropic 10/27 公布與 6 家藥廠／生技夥伴的 Claude 藥物開發早期成果（Divergence 3.5 萬抗體設計、Enveda 文件審閱降 89%、BigHat 中途改指標；前臨床）"}
+{"date": "2026-10-28", "title": "NVIDIA C-BRAIN 開源 AI 共同科學家 OpenScientist／InsightEngine（10/27，案例自述分鐘級、每次不到 10 美元）"}
+{"date": "2026-10-28", "title": "Anthropic 10/26 遞交 IPO 的 S-1（Nasdaq：ANT，Goldman Sachs／Morgan Stanley，尚未生效）"}
+{"date": "2026-10-28", "title": "GitHub Copilot 輔助權限（Assisted permissions）10/26 GA：LLM 初篩請求、其餘人工核准"}
+{"date": "2026-10-28", "title": "GitHub Copilot 10/27 支援 server-to-server 驗證（公開預覽）"}
+{"date": "2026-10-28", "title": "Alibaba Cloud AgentRun MCP Tool Hooks 900 次測試：提示詞規則 vs 工具層程式碼檢查（10/25）"}
+{"date": "2026-10-28", "title": "Claude Code v2.1.312（oidc.user_id_claim 等）與 OpenAI Codex 0.165.0（內建 Vertex AI 供應商、memory v2）"}
+{"date": "2026-10-28", "title": "Alibaba Qwen-Image-2.1 Pro／Turbo API（RGBA、Turbo 約 0.016 美元／張）"}
+{"date": "2026-10-28", "title": "Alibaba AgentTeams Dashboard 1.3.1 開源多 agent 控制台（10/27）"}
+{"date": "2026-10-28", "title": "arXiv 2610.28246 DiffRMST 可微分 RMST 線長（全域擺置，GPU 快 14.7 倍）與 2610.33099 EGGPlacer 擴散式晶片擺置"}
+{"date": "2026-10-28", "title": "主軸：AI 開始指揮實驗——候選方案變便宜，真正的功夫是選對指標、再讓實驗打臉（Anthropic 藥物開發成果＋NVIDIA 開源共同科學家；指標/ground truth 切面）"}
+{"date": "2026-10-28", "title": "概念：古德哈特定律（Goodhart's Law）——指標一旦變成目標就失真，需回頭用真實結果校準"}
+{"date": "2026-10-28", "title": "半導體專區：EDA 工具｜可微分線長（DiffRMST）與 GPU 全域擺置（背景，近期論文）"}
