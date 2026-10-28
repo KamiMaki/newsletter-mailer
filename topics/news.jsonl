@@ -1172,3 +1172,18 @@
 {"date": "2026-10-28", "title": "主軸：AI 開始指揮實驗——候選方案變便宜，真正的功夫是選對指標、再讓實驗打臉（Anthropic 藥物開發成果＋NVIDIA 開源共同科學家；指標/ground truth 切面）"}
 {"date": "2026-10-28", "title": "概念：古德哈特定律（Goodhart's Law）——指標一旦變成目標就失真，需回頭用真實結果校準"}
 {"date": "2026-10-28", "title": "半導體專區：EDA 工具｜可微分線長（DiffRMST）與 GPU 全域擺置（背景，近期論文）"}
+{"date": "2026-10-29", "title": "GitHub 10/28 宣布 GitHub Enterprise 可內含 Copilot（無每座位月度額度、用量計入企業預算）"}
+{"date": "2026-10-29", "title": "GitHub Copilot Automations 新增單次／每日／每週／每月 AI credit 上限與 24 個新觸發"}
+{"date": "2026-10-29", "title": "GitHub Copilot Fusion 正式可選（Single/Cascade/Critique，限時 30% 折扣；自報成本約一半）"}
+{"date": "2026-10-29", "title": "Anthropic 10/27 與美國 GSA 擴大合作：政府夥伴 40% 折扣、無最低消費"}
+{"date": "2026-10-29", "title": "NVIDIA RTX Spark 筆電新增本地 agent GPU 資源管理與 Nemotron 3.5 Bolt（10/28）"}
+{"date": "2026-10-29", "title": "Google Agents CLI eval 爬坡評測示範（10/28）"}
+{"date": "2026-10-29", "title": "GitHub Agent Merge：Copilot 在雲端盯 PR 並修 CI 失敗與合併衝突"}
+{"date": "2026-10-29", "title": "Anthropic AI for Science 擴至 20 個夥伴（10/28）"}
+{"date": "2026-10-29", "title": "GitHub Copilot SDK 將更名 Microsoft Copilot SDK（10/28）"}
+{"date": "2026-10-29", "title": "GitHub Actions 工作流 lockfile 正式推出（10/28）"}
+{"date": "2026-10-29", "title": "Alibaba Cloud Agent as a Service：推理與執行分離架構（10/28）"}
+{"date": "2026-10-29", "title": "arXiv 2610.32597 以 model checker 輔助 LLM 修復多行 RTL 錯誤（BRISC-V）"}
+{"date": "2026-10-29", "title": "主軸：AI 的標價單位從「一個座位」變成「一張預算」——Copilot 內含企業版、自動化用量上限、Fusion 路由、政府 40% 折扣"}
+{"date": "2026-10-29", "title": "概念：模型路由與級聯（Model Routing & Cascade）——依難度分派模型、檢查通過才放行"}
+{"date": "2026-10-29", "title": "半導體專區：IC 設計｜RTL 除錯與自動修復（斷言引導的 LLM 補丁＋model checker 閉環驗證，背景）"}
