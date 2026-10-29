@@ -1187,3 +1187,16 @@
 {"date": "2026-10-29", "title": "主軸：AI 的標價單位從「一個座位」變成「一張預算」——Copilot 內含企業版、自動化用量上限、Fusion 路由、政府 40% 折扣"}
 {"date": "2026-10-29", "title": "概念：模型路由與級聯（Model Routing & Cascade）——依難度分派模型、檢查通過才放行"}
 {"date": "2026-10-29", "title": "半導體專區：IC 設計｜RTL 除錯與自動修復（斷言引導的 LLM 補丁＋model checker 閉環驗證，背景）"}
+{"date": "2026-10-30", "title": "GitHub Octoverse：9月超過40% PR由agent起草（3月17%，TNW轉述）"}
+{"date": "2026-10-30", "title": "GitHub Copilot Code Review Max（多供應商審查agent）與Copilot核准GA"}
+{"date": "2026-10-30", "title": "GitHub Agent Merge：雲端監看並修復PR的Actions失敗與合併衝突"}
+{"date": "2026-10-30", "title": "GitHub Actions 工作流程鎖定檔（lockfile）GA"}
+{"date": "2026-10-30", "title": "GitHub Copilot Automations 從結果自我改進（需人核准）"}
+{"date": "2026-10-30", "title": "GitHub Copilot SDK 將更名為 Microsoft Copilot SDK"}
+{"date": "2026-10-30", "title": "Google Gemini 4 Carbon 資安導向模型（CWE-bench 71.0%、Fairwind 限量、$2/$10）"}
+{"date": "2026-10-30", "title": "Anthropic 與 GSA 擴大合作：政府 Claude 40% 折扣"}
+{"date": "2026-10-30", "title": "LlamaIndex Document Parsing Protocol 草案 0.1（140條規則）"}
+{"date": "2026-10-30", "title": "Anthropic AI for Science 擴大至資助機構與研究機構"}
+{"date": "2026-10-30", "title": "主軸：寫程式變便宜了、卡關的是『誰來審、誰來合』——agent起草過四成PR，GitHub補上審查與合併自動化（瓶頸：審查/合併 facet）"}
+{"date": "2026-10-30", "title": "概念：相關性失誤（Correlated Errors）——多個審查者同時犯同一種錯，人數多不等於獨立"}
+{"date": "2026-10-30", "title": "半導體專區：EDA 工具｜微影熱點（Lithography Hotspot）偵測與DFM修復：先快篩再精確模擬（arXiv:1402.3150，背景）"}
