@@ -1200,3 +1200,14 @@
 {"date": "2026-10-30", "title": "主軸：寫程式變便宜了、卡關的是『誰來審、誰來合』——agent起草過四成PR，GitHub補上審查與合併自動化（瓶頸：審查/合併 facet）"}
 {"date": "2026-10-30", "title": "概念：相關性失誤（Correlated Errors）——多個審查者同時犯同一種錯，人數多不等於獨立"}
 {"date": "2026-10-30", "title": "半導體專區：EDA 工具｜微影熱點（Lithography Hotspot）偵測與DFM修復：先快篩再精確模擬（arXiv:1402.3150，背景）"}
+{"date": "2026-11-01", "title": "Anthropic 平台：Opus 4.8 fast mode 將於 11/30 移除，需改用 Opus 5.5（10/30）"}
+{"date": "2026-11-01", "title": "Anthropic 用量與成本分析 API（beta）上線，舊版 Usage and Cost API 轉 legacy（10/29）"}
+{"date": "2026-11-01", "title": "IBM Granite Switch 4.1.1：只更新 adapter、向後相容的 patch 式模型更新（10/29）"}
+{"date": "2026-11-01", "title": "Mistral Large 4（Le Chonk）開放權重釋出：約 1T MoE、修改版 MIT 授權（10/29）"}
+{"date": "2026-11-01", "title": "NVIDIA × SETI：agent 指揮 Allen Telescope Array，2.4 Tbps 即時偵測脈衝星（10/30）"}
+{"date": "2026-11-01", "title": "Hugging Face Project ProtoStar：公費科學資料 AI-ready 計畫（10/29）"}
+{"date": "2026-11-01", "title": "Alibaba Cloud 稱資料庫新用戶多為 agent，推 Agent Data Gateway／DataGuard for Agent（10/30）"}
+{"date": "2026-11-01", "title": "arXiv 類比電路 LLM 論文 LAMP／OPERA（2610.39882／2610.39395）"}
+{"date": "2026-11-01", "title": "主軸：模型不再是買斷的產品，而是會過期、要維護的相依套件——Anthropic 退場日、IBM patch 式更新、DeepSeek 別名漂移、Mistral 開放權重可釘版本（生命週期管理 facet）"}
+{"date": "2026-11-01", "title": "概念：版本釘選（Version Pinning）與浮動別名（Floating Alias）"}
+{"date": "2026-11-01", "title": "半導體專區：IC 製造｜製程配方（Recipe）的貝氏最佳化與 DoE（RODEo／CF4-Ar SiO2 蝕刻，背景）"}
