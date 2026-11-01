@@ -1211,3 +1211,16 @@
 {"date": "2026-11-01", "title": "主軸：模型不再是買斷的產品，而是會過期、要維護的相依套件——Anthropic 退場日、IBM patch 式更新、DeepSeek 別名漂移、Mistral 開放權重可釘版本（生命週期管理 facet）"}
 {"date": "2026-11-01", "title": "概念：版本釘選（Version Pinning）與浮動別名（Floating Alias）"}
 {"date": "2026-11-01", "title": "半導體專區：IC 製造｜製程配方（Recipe）的貝氏最佳化與 DoE（RODEo／CF4-Ar SiO2 蝕刻，背景）"}
+{"date": "2026-11-02", "title": "arXiv 2610.38426：AI agent 改寫類比版圖生成器（gLayout／SKY130，生成器優於直接畫圖）"}
+{"date": "2026-11-02", "title": "arXiv 2610.38329：多 agent 迴圈為 FuriosaAI RNGD NPU 最佳化 decode kernel（幾何平均 9.293 倍）"}
+{"date": "2026-11-02", "title": "arXiv 2610.39570：LLM agent 以 FPGA-in-the-loop 設計 RISC-V 亂序 CPU（比 RTL 模擬快 9.6 倍）"}
+{"date": "2026-11-02", "title": "Alibaba Sentinel：無 shell、195 個預定義工具、驗證引擎把關的鑑識 agent（10/30）"}
+{"date": "2026-11-02", "title": "Alibaba Tarmac：五個談判 agent＋Ed25519 簽章仲裁者（10/30）"}
+{"date": "2026-11-02", "title": "Claude Code v2.1.316：SUBAGENT_EFFORT 與 layered policy_mode（10/31）"}
+{"date": "2026-11-02", "title": "Google Project Suncatcher 衛星回傳第一則在軌 TPU 的 Gemma 4 回應（10/30）"}
+{"date": "2026-11-02", "title": "NVIDIA MonsterHouse：Nemotron 小模型語音 agent 車庫門（HF，10/30）"}
+{"date": "2026-11-02", "title": "arXiv 2610.38037／2610.38015：平均分數與基準排名不可靠"}
+{"date": "2026-11-02", "title": "arXiv 2610.37903：Metis-1.6 混合 Mamba／注意力 MoE 技術報告"}
+{"date": "2026-11-02", "title": "主軸：AI 做設計的產出單位，從「一次性的答案」變成「可重用、可批量驗證的積木」——類比版圖生成器、NPU kernel 迴圈、FPGA-in-the-loop CPU 與 Alibaba 鑑識 agent 共同指向『受限工具箱＋便宜裁判』"}
+{"date": "2026-11-02", "title": "概念：知識蒸餾（Knowledge Distillation）——大模型示範、小模型學判斷"}
+{"date": "2026-11-02", "title": "半導體專區：IC 設計｜類比版圖生成器（PCell／gLayout）與 LLM 改寫生成器程式（arXiv 2610.38426，背景＋近期研究）"}
