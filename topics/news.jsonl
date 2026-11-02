@@ -1224,3 +1224,14 @@
 {"date": "2026-11-02", "title": "主軸：AI 做設計的產出單位，從「一次性的答案」變成「可重用、可批量驗證的積木」——類比版圖生成器、NPU kernel 迴圈、FPGA-in-the-loop CPU 與 Alibaba 鑑識 agent 共同指向『受限工具箱＋便宜裁判』"}
 {"date": "2026-11-02", "title": "概念：知識蒸餾（Knowledge Distillation）——大模型示範、小模型學判斷"}
 {"date": "2026-11-02", "title": "半導體專區：IC 設計｜類比版圖生成器（PCell／gLayout）與 LLM 改寫生成器程式（arXiv 2610.38426，背景＋近期研究）"}
+{"date": "2026-11-03", "title": "Anthropic Message threads（beta）：對話存伺服器、後續請求只送新訊息，閒置 5 分鐘過期（11/2）"}
+{"date": "2026-11-03", "title": "Alibaba Qoder〈Making Fast Mode Faster〉：改外層 harness 降低等待，未知結果呼叫不自動重放（11/2）"}
+{"date": "2026-11-03", "title": "Alibaba Qoder Cloud Agents：agent 持續評估迴圈與基線回歸（11/2）"}
+{"date": "2026-11-03", "title": "Claude Code v2.1.314：idle compaction 閒置對話自動壓縮（10/30，背景）"}
+{"date": "2026-11-03", "title": "GitHub Actions 12/2 起公開 repo 預設封鎖 pull_request_target，11/9、11/16 演練（11/2）"}
+{"date": "2026-11-03", "title": "GitHub 程式碼／密鑰風險評估加入 repo 保護狀態（11/2）"}
+{"date": "2026-11-03", "title": "SemiEngineering：Putting AI To The Test（11/2 評論）"}
+{"date": "2026-11-03", "title": "SemiEngineering：Shift Left Is Becoming A System-Level Problem（11/2）"}
+{"date": "2026-11-03", "title": "主軸：AI agent 變快、變省，靠的不是更強的模型，而是外層「少做重工」——不重送整段對話、不重啟程序、中斷後不重放副作用"}
+{"date": "2026-11-03", "title": "概念：前綴快取（Prompt／Prefix Caching）與 KV Cache"}
+{"date": "2026-11-03", "title": "半導體專區：EDA 工具｜繞線擁塞預測與設計建議（MLLM 多模態 LLM 助理，arXiv 2510.15872，背景）"}
