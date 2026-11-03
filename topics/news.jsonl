@@ -1235,3 +1235,17 @@
 {"date": "2026-11-03", "title": "主軸：AI agent 變快、變省，靠的不是更強的模型，而是外層「少做重工」——不重送整段對話、不重啟程序、中斷後不重放副作用"}
 {"date": "2026-11-03", "title": "概念：前綴快取（Prompt／Prefix Caching）與 KV Cache"}
 {"date": "2026-11-03", "title": "半導體專區：EDA 工具｜繞線擁塞預測與設計建議（MLLM 多模態 LLM 助理，arXiv 2510.15872，背景）"}
+{"date": "2026-11-04", "title": "GitHub：pull_request_target 12/2 起公開 repo 預設封鎖（11/9、11/16 停電演練）"}
+{"date": "2026-11-04", "title": "GitHub Desktop 對符合資格帳號發短命自動刷新 token"}
+{"date": "2026-11-04", "title": "Claude Mythos 5／Opus 4.7／Sonnet 4.6 文字預設帶浮水印（歐盟 AI Act 透明度）"}
+{"date": "2026-11-04", "title": "Dependabot 版本更新支援 Agent Package Manager（apm.yml／apm.lock.yaml）"}
+{"date": "2026-11-04", "title": "JetBrains Air 接上 GitHub Copilot：雲端任務全新 VM、無跨任務狀態"}
+{"date": "2026-11-04", "title": "Hugging Face Transformers Model Integration Contracts（MIC，CI 目前不阻擋）"}
+{"date": "2026-11-04", "title": "Google Physical-Engineering's Last Exam（PLE）：全過硬性檢查僅 41.3%"}
+{"date": "2026-11-04", "title": "Collinear CWE-bench v2：100 題 91 種 CWE，最強模型約 19% 題目全失敗"}
+{"date": "2026-11-04", "title": "Ai2 StateBench：長文件狀態追蹤隨長度崩盤"}
+{"date": "2026-11-04", "title": "GitHub 資安風險評估新增儲存庫保護狀態"}
+{"date": "2026-11-04", "title": "NVIDIA：AI 定義晶圓廠（Lam 電漿毫秒預測、Siemens Calibre×cuLitho、Applied ACE+、Advantest 代理）"}
+{"date": "2026-11-04", "title": "主軸：信任的預設值翻面了——平台把安全從選配改成預設（GitHub pull_request_target 預設封鎖＋短命 token＋Claude 預設浮水印；預設值/例外管理 facet）"}
+{"date": "2026-11-04", "title": "概念：鎖定檔（Lockfile）與可重現性——把實際安裝版本與雜湊寫死，讓更新成為可審查差異"}
+{"date": "2026-11-04", "title": "半導體專區：IC 製造｜GPU 加速的計算微影與電漿模擬（物理代理模型，NVIDIA 11/3：Siemens Calibre×cuLitho／Lam PhysicsNeMo／Applied ACE+）"}
