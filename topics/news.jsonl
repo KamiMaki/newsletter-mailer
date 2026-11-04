@@ -1249,3 +1249,16 @@
 {"date": "2026-11-04", "title": "主軸：信任的預設值翻面了——平台把安全從選配改成預設（GitHub pull_request_target 預設封鎖＋短命 token＋Claude 預設浮水印；預設值/例外管理 facet）"}
 {"date": "2026-11-04", "title": "概念：鎖定檔（Lockfile）與可重現性——把實際安裝版本與雜湊寫死，讓更新成為可審查差異"}
 {"date": "2026-11-04", "title": "半導體專區：IC 製造｜GPU 加速的計算微影與電漿模擬（物理代理模型，NVIDIA 11/3：Siemens Calibre×cuLitho／Lam PhysicsNeMo／Applied ACE+）"}
+{"date": "2026-11-05", "title": "GitHub Copilot 進入 Xcode 27.3 beta 內建編碼助理（公開預覽，11/4）"}
+{"date": "2026-11-05", "title": "GitHub Copilot 用量 API 獨立列帳本地 BYOK 與企業自訂模型（11/3）"}
+{"date": "2026-11-05", "title": "微軟 Foundry 指南：Claude Code 經 Azure API Management 的企業閘道（11/3）"}
+{"date": "2026-11-05", "title": "Google Antigravity Cheminformatics Skills：語言模型調度＋確定性工具（11/3）"}
+{"date": "2026-11-05", "title": "Microsoft-Decision-1 套件升級顧問教學（Foundry，11/3）"}
+{"date": "2026-11-05", "title": "GitHub REST API 可查資源所屬 cost center（11/3）"}
+{"date": "2026-11-05", "title": "IBM Research Palette：20B 開放權重簡報生成小模型（HF，11/3）"}
+{"date": "2026-11-05", "title": "CodeQL 2.27.4 改善準確度與查詢中繼資料（11/4）"}
+{"date": "2026-11-05", "title": "arXiv 2611.01473：時脈網格變異感知 GNN 代理模型"}
+{"date": "2026-11-05", "title": "arXiv 2611.00187：CAPER 類比電路驗證的電路感知參數高效推理"}
+{"date": "2026-11-05", "title": "主軸：AI 寫程式的「窗口」和「帳房」分家了：同一個 Copilot 同時住進 Xcode 與 JetBrains Air，企業則在後端用閘道與用量 API 管帳（介面/協定/計量 facet）"}
+{"date": "2026-11-05", "title": "概念：編輯器—引擎協定（LSP／ACP，讓編輯器與 agent 可各自替換的訊息規格）"}
+{"date": "2026-11-05", "title": "半導體專區：IC 設計｜LLM 生成類比電路的 PVT 隱性失敗與驗證助理（CAPER，arXiv 2611.00187，背景）"}
