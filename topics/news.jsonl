@@ -1262,3 +1262,13 @@
 {"date": "2026-11-05", "title": "主軸：AI 寫程式的「窗口」和「帳房」分家了：同一個 Copilot 同時住進 Xcode 與 JetBrains Air，企業則在後端用閘道與用量 API 管帳（介面/協定/計量 facet）"}
 {"date": "2026-11-05", "title": "概念：編輯器—引擎協定（LSP／ACP，讓編輯器與 agent 可各自替換的訊息規格）"}
 {"date": "2026-11-05", "title": "半導體專區：IC 設計｜LLM 生成類比電路的 PVT 隱性失敗與驗證助理（CAPER，arXiv 2611.00187，背景）"}
+{"date": "2026-11-06", "title": "主軸：AI 變貴不只是缺算力，而是缺「放得下上下文的記憶體」——NVIDIA 的解法不是多塞 HBM，而是把記憶體分層"}
+{"date": "2026-11-06", "title": "NVIDIA 11/5：Vera Rubin HBM 僅增約3%但 agent 吞吐／美元最高30倍，靠記憶體分層（LPDDR／CMX）與 NVFP4"}
+{"date": "2026-11-06", "title": "NVIDIA Vera CPU：每瓦 agent 數為 x86 1.6 倍、Daytona 1,000 沙盒 10.8 秒 vs 88.4 秒"}
+{"date": "2026-11-06", "title": "NVFP4 檢查點生態與把 RAG 索引移出 HBM（NVIDIA 記憶體協同設計）"}
+{"date": "2026-11-06", "title": "GitHub 新 Pull Request Overview 頁公開預覽（11/5）"}
+{"date": "2026-11-06", "title": "GitHub 密鑰掃描升級：SpaceX 加入夥伴計畫、多家偵測器降誤報（11/5）"}
+{"date": "2026-11-06", "title": "Claude Platform 加入 IP 白名單與成員強制登出（beta，11/5）"}
+{"date": "2026-11-06", "title": "Hugging Face 刊出 NVIDIA Cosmos 3 開放模型：互動式世界模擬（11/5）"}
+{"date": "2026-11-06", "title": "概念：屋頂線模型（Roofline Model）——算術強度判斷算力受限或頻寬受限"}
+{"date": "2026-11-06", "title": "半導體專區：EDA 工具｜架構層早期估算：TADA 把記憶體技術當一級變數（arXiv 2611.00292，ASP-DAC 27，背景）"}
