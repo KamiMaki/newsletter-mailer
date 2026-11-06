@@ -1272,3 +1272,17 @@
 {"date": "2026-11-06", "title": "Hugging Face 刊出 NVIDIA Cosmos 3 開放模型：互動式世界模擬（11/5）"}
 {"date": "2026-11-06", "title": "概念：屋頂線模型（Roofline Model）——算術強度判斷算力受限或頻寬受限"}
 {"date": "2026-11-06", "title": "半導體專區：EDA 工具｜架構層早期估算：TADA 把記憶體技術當一級變數（arXiv 2611.00292，ASP-DAC 27，背景）"}
+{"date": "2026-11-07", "title": "阿里雲 Durable Agent：agent 斷點續跑，狀態外置、原子提交、不確定動作標 interrupted（11/5）"}
+{"date": "2026-11-07", "title": "阿里雲 SLS SessionStore／DataAgent／MCP Server：以 session 重建 agent 軌跡（11/6）"}
+{"date": "2026-11-07", "title": "阿里雲 AI Gateway FinOps Session Observability：Session→Turn→Model Call 拆 token 與成本（11/5）"}
+{"date": "2026-11-07", "title": "Anthropic message threads（beta）：伺服器端保存對話、只送新訊息（11/2 更新）"}
+{"date": "2026-11-07", "title": "GitHub usage metrics API 新增 Copilot code review 建議採納率（11/5）"}
+{"date": "2026-11-07", "title": "Microsoft Durable Task for AI agents：自動 checkpoint 與續跑（2026/5 文件，背景）"}
+{"date": "2026-11-07", "title": "GitHub usage metrics API 標出缺遙測與版本過舊使用者（11/5）"}
+{"date": "2026-11-07", "title": "NVIDIA 開源 5G/6G 工具採用 10 倍、下載破百萬（11/6）"}
+{"date": "2026-11-07", "title": "Ai2 ToyBlocks：機器人學習可控模擬環境與 85,336 筆示範（11/6）"}
+{"date": "2026-11-07", "title": "Gradium Phonon：65–75 MB 端側 TTS（HF，11/5）"}
+{"date": "2026-11-07", "title": "arXiv 2611.07324 MementoHLS：LLM 生成 HLS-C 的規則導引與軌跡感知修復（11/5）"}
+{"date": "2026-11-07", "title": "主軸：agent 的運行單位從「一次呼叫」變成「一個 session」——續跑、追蹤、計費三件事（阿里雲 Durable Agent／SLS SessionStore／AI Gateway session 成本）"}
+{"date": "2026-11-07", "title": "概念：Trace 與 Span（追蹤樹）"}
+{"date": "2026-11-07", "title": "半導體專區：IC 設計｜LLM 生成 HLS-C 的修復迴圈：修復合約庫＋失敗帳本（MementoHLS，arXiv 2611.07324）"}
