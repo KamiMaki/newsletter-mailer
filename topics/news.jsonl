@@ -1286,3 +1286,15 @@
 {"date": "2026-11-07", "title": "主軸：agent 的運行單位從「一次呼叫」變成「一個 session」——續跑、追蹤、計費三件事（阿里雲 Durable Agent／SLS SessionStore／AI Gateway session 成本）"}
 {"date": "2026-11-07", "title": "概念：Trace 與 Span（追蹤樹）"}
 {"date": "2026-11-07", "title": "半導體專區：IC 設計｜LLM 生成 HLS-C 的修復迴圈：修復合約庫＋失敗帳本（MementoHLS，arXiv 2611.07324）"}
+{"date": "2026-11-08", "title": "Google「Agent Distraction」：13% session 碰到帶 bug 編號的 TODO，agent 繞路多 70% 步驟、77% token（11/6）"}
+{"date": "2026-11-08", "title": "阿里雲 Kitta：內核審查 agent，備份一致性意見採納率 70.4%（廠商自報，11/6）"}
+{"date": "2026-11-08", "title": "阿里雲 15 個 agent 組成研發小隊：寫碼僅占約 2／20 工作天（11/6）"}
+{"date": "2026-11-08", "title": "GitHub Copilot code review 支援 REST／GraphQL API 管理並可列出引用來源（11/6）"}
+{"date": "2026-11-08", "title": "AWS Amazon Quick 的 agentic primitives 分類（觸發／agent／能力／學習到的上下文，11/6）"}
+{"date": "2026-11-08", "title": "GitHub @GitHub 在 Slack 與 Teams 正式 GA（11/6）"}
+{"date": "2026-11-08", "title": "GitHub Copilot impact dashboard 納入 Chat 與 VS Code Agents（11/6）"}
+{"date": "2026-11-08", "title": "AWS SageMaker Inference 支援 Multi-Instance GPU（11/6）"}
+{"date": "2026-11-08", "title": "Hugging Face Open ASR Leaderboard 加入埃及與奈及利亞英語口音（11/6）"}
+{"date": "2026-11-08", "title": "主軸：agent 的表現取決於它讀到的環境——程式庫與知識庫的衛生（過期 TODO、領域知識蒸餾、引用來源稽核）成為要維運的資產（環境衛生 facet）"}
+{"date": "2026-11-08", "title": "概念：過期上下文（Stale Context）與上下文衛生"}
+{"date": "2026-11-08", "title": "半導體專區：IC 製造｜良率偏移根因追查：設備共同性分析（Commonality Analysis，背景）"}
