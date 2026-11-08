@@ -1298,3 +1298,13 @@
 {"date": "2026-11-08", "title": "主軸：agent 的表現取決於它讀到的環境——程式庫與知識庫的衛生（過期 TODO、領域知識蒸餾、引用來源稽核）成為要維運的資產（環境衛生 facet）"}
 {"date": "2026-11-08", "title": "概念：過期上下文（Stale Context）與上下文衛生"}
 {"date": "2026-11-08", "title": "半導體專區：IC 製造｜良率偏移根因追查：設備共同性分析（Commonality Analysis，背景）"}
+{"date": "2026-11-09", "title": "主軸：AI 的成績單也會過期——Terminal-Bench 約30%題目有瑕疵、MCPHallu 總分藏住子項、PCB 佈線 agent 分題組差異大（評測量尺維護 facet）"}
+{"date": "2026-11-09", "title": "概念：排名相關係數（Spearman ρ）"}
+{"date": "2026-11-09", "title": "半導體專區：EDA 工具｜PCB 佈線代理：全域規劃＋KiCad 原生繞線器＋失敗回饋（PCBRouteAgent，arXiv 2611.08175，背景）"}
+{"date": "2026-11-09", "title": "Terminal-Bench 2.1：稽核 2.0 約30%題目有瑕疵、準確率升逾10點、Spearman 0.958（arXiv 2611.08417，11/5）"}
+{"date": "2026-11-09", "title": "MCPHallu：358 題／36 MCP 伺服器／14 agent，Unreachable Goal 僅 23.2% 通過（arXiv 2611.07689，11/5）"}
+{"date": "2026-11-09", "title": "Who Should Know What：資訊揭露對多代理市場的效果因模型而異（arXiv 2611.07667，11/5）"}
+{"date": "2026-11-09", "title": "Skillware：型別化、帶測試的 agent 能力包（作者自報，arXiv 2611.07652，11/5）"}
+{"date": "2026-11-09", "title": "Synopsys 透過 European Chips Design Platform 開放 EDA 給歐洲新創與中小企業（11/4）"}
+{"date": "2026-11-09", "title": "Mistral Studio 讓企業自控模型與資料建構 agent（11/5，據官方列表）"}
+{"date": "2026-11-09", "title": "Google DeepMind 列出 Gemini Omni 1.2 Flash（11 月，據官方列表）"}
