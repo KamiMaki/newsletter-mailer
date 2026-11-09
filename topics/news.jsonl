@@ -1308,3 +1308,13 @@
 {"date": "2026-11-09", "title": "Synopsys 透過 European Chips Design Platform 開放 EDA 給歐洲新創與中小企業（11/4）"}
 {"date": "2026-11-09", "title": "Mistral Studio 讓企業自控模型與資料建構 agent（11/5，據官方列表）"}
 {"date": "2026-11-09", "title": "Google DeepMind 列出 Gemini Omni 1.2 Flash（11 月，據官方列表）"}
+{"date": "2026-11-10", "title": "主軸：最強模型不再「賣給所有人」——Anthropic 同一模型兩個版本（Fable 5.2 大眾／Mythos 5.2 需驗證），能力開多大改看「你是誰、肯不肯被監看」（身分分層 facet）"}
+{"date": "2026-11-10", "title": "概念：偽陽性與偽陰性（False Positive / False Negative）"}
+{"date": "2026-11-10", "title": "半導體專區：IC 製造｜Run-to-Run（R2R）製程控制：EWMA 與量測延遲（arXiv 1510.08946，背景）"}
+{"date": "2026-11-10", "title": "Anthropic 推出 Claude Fable 5.2／Mythos 5.2：同模型兩版本、$8/$40、FrontierSWE v2 69.9%（自報）、分類器少擋約 55%、驗證計畫（11/9）"}
+{"date": "2026-11-10", "title": "Claude 新模型條款：30 天資料保留、ZDR 需授權、思考區塊綁帳號、Enterprise Frontier Safeguards 私測（11/9）"}
+{"date": "2026-11-10", "title": "阿里雲「AI 護欄 7 項清單」：誤擋 2% 示意每月 2 萬筆（廠商文章，11/9）"}
+{"date": "2026-11-10", "title": "GitHub 機密掃描延伸到 Actions 工作流程日誌（公開預覽，11/9）"}
+{"date": "2026-11-10", "title": "Amazon HOPE：MoE 成對專家免訓練剪枝，Qwen3.5-35B-A3B 剪 50% 仍 SWE-Bench Pro 42.3（HF，11/9）"}
+{"date": "2026-11-10", "title": "NVIDIA CoRL：GR00T 2、Isaac Lab 3.0（Newton，吞吐最高 2.5 倍）、DexBench／VABAR（11/9）"}
+{"date": "2026-11-10", "title": "NVIDIA AI Day 首爾：與韓國科技部擴大合作、四個韓國開放模型 Dynamo 配方（11/8–9）"}
