@@ -1318,3 +1318,16 @@
 {"date": "2026-11-10", "title": "Amazon HOPE：MoE 成對專家免訓練剪枝，Qwen3.5-35B-A3B 剪 50% 仍 SWE-Bench Pro 42.3（HF，11/9）"}
 {"date": "2026-11-10", "title": "NVIDIA CoRL：GR00T 2、Isaac Lab 3.0（Newton，吞吐最高 2.5 倍）、DexBench／VABAR（11/9）"}
 {"date": "2026-11-10", "title": "NVIDIA AI Day 首爾：與韓國科技部擴大合作、四個韓國開放模型 Dynamo 配方（11/8–9）"}
+{"date": "2026-11-11", "title": "Google DeepMind AlphaProof Code：Gemini Carbon 代理寫逾 600 萬行 Lean，形式化驗證 Signal 協定編譯後實作，人審約 1%、4 週（11/10）"}
+{"date": "2026-11-11", "title": "🔄 Gemini 4 Carbon 全面開放：長驗證迴圈、/swarm 稽核角色、$2/$10 優惠至 11/30 後 $4/$20（11/10）"}
+{"date": "2026-11-11", "title": "NVIDIA 把 OpenShell（agent 確定性政策 runtime）捐給 CNCF Sandbox，另推 NVKE/NVKR、NVIDIA Snapshot（11/10 KubeCon）"}
+{"date": "2026-11-11", "title": "🔄 Gemini 4 Carbon 上架 GitHub Copilot（Pro+/Max/Business/Enterprise，11/10）"}
+{"date": "2026-11-11", "title": "Gemini Robotics 2.5：200+ 靈巧任務、賓士產線試點 96%、ASIMOV-Jailbreak 抗越獄 99.5%（11/10）"}
+{"date": "2026-11-11", "title": "CNCF KubeCon NA 新增 12 家 Silver 會員：在開放主權基礎設施上跑 agent（11/10）"}
+{"date": "2026-11-11", "title": "台積電 10 月營收約新台幣 5,868.9 億元，月增 14.7%、年增 59.7%，前 10 月 4.486 兆、年增 43.3%（11/10）"}
+{"date": "2026-11-11", "title": "🔄 Anthropic 啟動 IPO 路演：8.25 億股、每股 $70–78、Nasdaq: ANT（11/10）"}
+{"date": "2026-11-11", "title": "Dependabot 12/8 起暫停閒置一年 repo 的警示（11/10）"}
+{"date": "2026-11-11", "title": "Copilot CLI C++ Language Server 自動設定 MSBuild 編譯資料庫（11/10）"}
+{"date": "2026-11-11", "title": "主軸：最強模型的賣點從「答得多好」變成「能交出多少機器可核對的保證」——機率式 AI 外面套確定性檢查器、人退到審規格（AlphaProof Code＋Gemini 4 Carbon 長驗證迴圈＋OpenShell 確定性政策；保證/裁判 facet）"}
+{"date": "2026-11-11", "title": "概念：可信計算基（Trusted Computing Base, TCB）——系統中必須相信的最小那一塊"}
+{"date": "2026-11-11", "title": "半導體專區：EDA 工具｜靜態簽核違規（CDC／低功耗 UPF）的 ML 分群與根因分析（Synopsys 專利 US10586001／VC SpyGlass ML-RCA，背景）"}
