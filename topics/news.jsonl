@@ -1331,3 +1331,15 @@
 {"date": "2026-11-11", "title": "主軸：最強模型的賣點從「答得多好」變成「能交出多少機器可核對的保證」——機率式 AI 外面套確定性檢查器、人退到審規格（AlphaProof Code＋Gemini 4 Carbon 長驗證迴圈＋OpenShell 確定性政策；保證/裁判 facet）"}
 {"date": "2026-11-11", "title": "概念：可信計算基（Trusted Computing Base, TCB）——系統中必須相信的最小那一塊"}
 {"date": "2026-11-11", "title": "半導體專區：EDA 工具｜靜態簽核違規（CDC／低功耗 UPF）的 ML 分群與根因分析（Synopsys 專利 US10586001／VC SpyGlass ML-RCA，背景）"}
+{"date": "2026-11-12", "title": "OpenAI Businesses in ChatGPT beta：Business Hub 認領檔案＋Business Agents 商家自營 agent（美國電商先行，11/10）"}
+{"date": "2026-11-12", "title": "Anthropic 推出 Claude Sheets／Whiteboards、Claude Data GA、互動式連接器，Claude Meetings 官方列即將推出（TechCrunch 稱 beta，11/10）"}
+{"date": "2026-11-12", "title": "OpenAI 收購 AI 旅遊代理 Odessia 並當天關站（創辦人 X 宣布、TechCrunch 證實，11/10）"}
+{"date": "2026-11-12", "title": "GitHub App 支援企業 Copilot 席位管理 API（Enterprise Copilot license management 權限，11/10）"}
+{"date": "2026-11-12", "title": "台積電董事會核准投資 Anthropic（IPO 價）與 OpenAI 特別股各至多 5 億美元、資本預算約 409.27 億美元、5 億美元策略投資公司（11/10）"}
+{"date": "2026-11-12", "title": "阿里巴巴 Qwen4-Max 預覽開放（Token Plan／QwenWork／Qoder，未釋權重，11/11）"}
+{"date": "2026-11-12", "title": "NVIDIA 獨立董事委任 Joon H. Kim 與 Wachtell 進行獨立調查（11/10）"}
+{"date": "2026-11-12", "title": "Hugging Face Hub 可透過 Google Cloud Marketplace 帳單付款（11/10）"}
+{"date": "2026-11-12", "title": "Tether BotPsy：0.8B 端側工具呼叫助理，BFCL v4 23.4→44.0（作者自報，11/11）"}
+{"date": "2026-11-12", "title": "主軸：AI 在多人場合拿到掛名牌的座位——從一對一私人助理變成代表某方的與會者，關鍵變成「我是 AI、我代表誰、我看得到什麼」（OpenAI Business Agents＋Claude Sheets/Whiteboards/Meetings；多方代表/揭露 facet）"}
+{"date": "2026-11-12", "title": "概念：委託—代理問題（Principal–Agent Problem）"}
+{"date": "2026-11-12", "title": "半導體專區：IC 設計｜RTL 訊號 ML 逐週期功耗預測與片上功耗計（APOLLO，Arm/Duke MICRO 2021，背景）"}
