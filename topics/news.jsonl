@@ -1343,3 +1343,17 @@
 {"date": "2026-11-12", "title": "主軸：AI 在多人場合拿到掛名牌的座位——從一對一私人助理變成代表某方的與會者，關鍵變成「我是 AI、我代表誰、我看得到什麼」（OpenAI Business Agents＋Claude Sheets/Whiteboards/Meetings；多方代表/揭露 facet）"}
 {"date": "2026-11-12", "title": "概念：委託—代理問題（Principal–Agent Problem）"}
 {"date": "2026-11-12", "title": "半導體專區：IC 設計｜RTL 訊號 ML 逐週期功耗預測與片上功耗計（APOLLO，Arm/Duke MICRO 2021，背景）"}
+{"date": "2026-11-13", "title": "Anthropic 推出 Claude for Manufacturing：17 技能＋4 連接器（Fusion/Infor/M365/NetSuite），不操作設備、不寫入記錄系統（11/12）"}
+{"date": "2026-11-13", "title": "Databricks 新 Genie：常駐自主企業同事，排程/觸發、核准規則、Unity Gateway 治理，自報 91%/1.6 倍（11/11）"}
+{"date": "2026-11-13", "title": "Google 開源部落格：MCP 無狀態化、Agent Plugins 打包 MCP 工具＋Agent Skills、技能打包/發現/版本標準化（11/11）"}
+{"date": "2026-11-13", "title": "Genpact 調查：79% 企業有 agent 上線、20% 廣泛使用、15% 連到損益、49% 專案達預期（11/12）"}
+{"date": "2026-11-13", "title": "Siemens EDA 白皮書〈The Semiconductor Singularity〉：可稽核代理式 AI、Calibre AI（11/12）"}
+{"date": "2026-11-13", "title": "AWS Emulator：數百 agent 依 438 API 模型寫 fidelity 測試＋合併閘門，人類不寫不審程式碼（11/11）"}
+{"date": "2026-11-13", "title": "Google Gemini 4 Hydrogen：取代 Flash、$1.50/$7.50、1M context、較 3.8 Flash 快約 2.5 倍、Terminal-Bench 4.1 57%（11/12）"}
+{"date": "2026-11-13", "title": "🔄 NVIDIA CEO 交接：黃仁勳即刻卸任，CFO Colette Kress 暫代、Harvey C. Jones 首任董事長，11/17 財報（11/12）"}
+{"date": "2026-11-13", "title": "OpenAI ChatGPT 廣告透過 Aleph 擴及 44 國（11/12）"}
+{"date": "2026-11-13", "title": "Anthropic 新版使用政策 11/12 生效：禁假冒獨立來源網站網路操弄 AI 答案、禁辱罵模型"}
+{"date": "2026-11-13", "title": "GitHub Actions 退場 ARM32 Linux/Windows＋secret scanning 偵測 Cloudflare service token（11/12）"}
+{"date": "2026-11-13", "title": "主軸：AI 代理開始「按產業裝箱出貨」——賣的不是模型而是寫好 SOP、接好系統、留好簽核點的工作包，考題變成對到損益（Claude for Manufacturing＋Databricks Genie＋Google Agent Plugins＋Genpact；產業套件化/落地 ROI facet）"}
+{"date": "2026-11-13", "title": "概念：記錄系統（System of Record, SoR）——以它為準的權威系統，AI 可讀可起草、改動須寫回並簽核"}
+{"date": "2026-11-13", "title": "半導體專區：IC 製造｜設備預測維護（PdM：多預測窗分類器＋成本決策、運轉指紋異常偵測、LLM 排查；Susto 2015 IEEE TII／Siemens Senseye，背景）"}
