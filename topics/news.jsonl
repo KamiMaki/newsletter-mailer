@@ -1357,3 +1357,21 @@
 {"date": "2026-11-13", "title": "主軸：AI 代理開始「按產業裝箱出貨」——賣的不是模型而是寫好 SOP、接好系統、留好簽核點的工作包，考題變成對到損益（Claude for Manufacturing＋Databricks Genie＋Google Agent Plugins＋Genpact；產業套件化/落地 ROI facet）"}
 {"date": "2026-11-13", "title": "概念：記錄系統（System of Record, SoR）——以它為準的權威系統，AI 可讀可起草、改動須寫回並簽核"}
 {"date": "2026-11-13", "title": "半導體專區：IC 製造｜設備預測維護（PdM：多預測窗分類器＋成本決策、運轉指紋異常偵測、LLM 排查；Susto 2015 IEEE TII／Siemens Senseye，背景）"}
+{"date": "2026-11-14", "title": "Anthropic Self-hosted Claude Managed Agents 私測：伺服器/資料庫/沙箱/憑證/session 紀錄全在客戶雲或地端，模型請求可走 Anthropic/Bedrock/Google/Foundry/自家閘道（11/12）"}
+{"date": "2026-11-14", "title": "GitHub Copilot app 支援 GitHub Enterprise Server 正式 GA（需 1.2.0+，GHES 不支援雲端 session，11/13）"}
+{"date": "2026-11-14", "title": "llama.cpp v1.0.0：libllama/libggml 進入語意化版本、C API/ABI 破壞性變更走主版號、支援逾 150 架構變體（11/13）"}
+{"date": "2026-11-14", "title": "AWS Kiro 在 GovCloud（US）上架 Grok 4.7（實驗性、500K 脈絡、管理者控管可用模型，11/13）"}
+{"date": "2026-11-14", "title": "Anthropic〈Building always-on agents〉：事件收件匣/計時器/記憶/權限（憑證代理）/寄件匣五零件（11/13）"}
+{"date": "2026-11-14", "title": "Amazon Cognito 支援 OAuth 2.0 權杖交換（RFC 8693）：窄權限單一受眾無 refresh token＋act 標示中間人（11/12）"}
+{"date": "2026-11-14", "title": "AWS Bedrock AgentCore 新一代 runtime 成預設：session 啟動 P75 29.7 秒→2 秒內、閒置縮到零、記憶體計費最多少 68%（11/12）"}
+{"date": "2026-11-14", "title": "DeepSeek 全套 App 能力 API 化：V4.1-Flash 內建搜尋/深度搜尋/檔案/讀網址＋Search/Fetch/OCR/ASR/TTS，公開應用須開安全檢查（11/13）"}
+{"date": "2026-11-14", "title": "OpenAI 推出 ChatGPT Wallet：ChatGPT Work/Codex/dots agent 經同意代為購買（據報導限美國 Pro、付款權杖，11/13）"}
+{"date": "2026-11-14", "title": "Applied Materials FY2026 Q4 營收 104.1 億美元創新高、年增 53%，FY27 Q1 財測 111 億美元（11/12）"}
+{"date": "2026-11-14", "title": "GitHub Copilot 12/14 下架 Claude Fable 5/Haiku 4.5/Gemini 3.8 Flash/Gemini 4 Argon/Grok 4.6/Kimi K3（11/13）"}
+{"date": "2026-11-14", "title": "AI2 XYBench：8,115 題測 XY 問題，模型解表面問題 75–86%、解真正目標僅 59–71%（11/13）"}
+{"date": "2026-11-14", "title": "IBM Granite LLMON 預覽：特殊 token 結構標記語言，自報 OPI 提示注入多擋 47%（實驗性，11/12）"}
+{"date": "2026-11-14", "title": "研究：LLM 代理以 JSON 驗證清單＋編譯器/覆蓋雙迴圈生成 UVM 平台，AHB-APB 覆蓋 96.8%、4.7 倍（arXiv 2611.16202，作者自報）"}
+{"date": "2026-11-14", "title": "研究：SVApshot 以 LLM 生成形式斷言快照驗證 AI 改寫的 RTL（arXiv 2611.12712）"}
+{"date": "2026-11-14", "title": "主軸：AI agent 開始「到府服務」——拆成腦/手/帳本，執行沙箱與憑證紀錄搬進客戶圍牆、模型另選路線（Anthropic 自架 Managed Agents＋Copilot app×GHES＋llama.cpp 1.0＋Grok GovCloud；部署邊界/駐地 facet）"}
+{"date": "2026-11-14", "title": "概念：共擔責任模型（Shared Responsibility Model）——供應商與客戶各負責哪幾層，自架=責任移到客戶側"}
+{"date": "2026-11-14", "title": "半導體專區：EDA 工具｜LLM 代理自動生成 UVM 驗證平台（協定橋接器，驗證清單＋編譯器回饋＋覆蓋缺口雙迴圈；arXiv 2611.16202，今日研究）"}
