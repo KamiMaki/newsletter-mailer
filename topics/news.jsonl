@@ -1375,3 +1375,18 @@
 {"date": "2026-11-14", "title": "主軸：AI agent 開始「到府服務」——拆成腦/手/帳本，執行沙箱與憑證紀錄搬進客戶圍牆、模型另選路線（Anthropic 自架 Managed Agents＋Copilot app×GHES＋llama.cpp 1.0＋Grok GovCloud；部署邊界/駐地 facet）"}
 {"date": "2026-11-14", "title": "概念：共擔責任模型（Shared Responsibility Model）——供應商與客戶各負責哪幾層，自架=責任移到客戶側"}
 {"date": "2026-11-14", "title": "半導體專區：EDA 工具｜LLM 代理自動生成 UVM 驗證平台（協定橋接器，驗證清單＋編譯器回饋＋覆蓋缺口雙迴圈；arXiv 2611.16202，今日研究）"}
+{"date": "2026-11-15", "title": "AWS×NVIDIA NeMo Switchyard：Bedrock 上逐請求路由 coding agent（Stage 路由讀最近3筆工具結果、不呼叫裁判模型、Opus 5.5／Nemotron 3 Super，每解決一題成本，11/13）"}
+{"date": "2026-11-15", "title": "阿里雲 AI Gateway 智慧路由上線：auto/balanced｜cheap｜fast｜quality 四種 Profile、六步流程、軟黏著、ModelCard（11/12）"}
+{"date": "2026-11-15", "title": "阿里雲〈Inference Is Now Most of the AI Cloud Bill〉：VPM 量×價×組合預算模型，示意算例 18,000 vs 4,492 美元差 4 倍、引 Gartner 推論占 55%（11/13）"}
+{"date": "2026-11-15", "title": "阿里雲〈Batch vs. Real-Time Inference〉：批次半價、24–336 小時完成視窗、不可與快取折扣疊加（11/13）"}
+{"date": "2026-11-15", "title": "🔄 Gemini 4 Hydrogen 上架 GitHub Copilot：按供應商牌價計費、預設啟用政策（11/13）"}
+{"date": "2026-11-15", "title": "Vercel Token Pass：月付 30 美元額度由 80 提高到 150 美元，開放權重模型（Kimi K3／K3.1 Pro、GLM 5.3、DeepSeek V4.1 Flash，11/13）"}
+{"date": "2026-11-15", "title": "Claude Code 2.1.325：沙箱 Bash 預設走權限詢問；2.1.323 實驗性 Code Mode（11/12–13）"}
+{"date": "2026-11-15", "title": "GitHub AI Scan 可用 REST API 管理 repository_scan 開關（公開預覽，11/13）"}
+{"date": "2026-11-15", "title": "Google Agent Anomaly Detection：五個外部基準 1,774 session，已執行攻擊標記 87%、誤報 2–4%（私測，11/12）"}
+{"date": "2026-11-15", "title": "AWS×GS Caltex：SageMaker Canvas 無程式碼模型接 Pipelines，部署約一週縮到數小時（11/13）"}
+{"date": "2026-11-15", "title": "LangChain 宣布 C 輪募資 3 億美元、估值 30 億美元（11/13）"}
+{"date": "2026-11-15", "title": "arXiv 2611.17097 Optical Broadcast Memory：光纖廣播權重省去權重 HBM（11/12）"}
+{"date": "2026-11-15", "title": "主軸：模型不再一個用到底——每個請求現場派工（模型路由），成績單改看每解決一題的成本（AWS×NeMo Switchyard＋阿里雲 AI Gateway 智慧路由＋VPM 預算；模型組合/派工 facet）"}
+{"date": "2026-11-15", "title": "概念：模型級聯（Cascade）與模型路由（Routing）"}
+{"date": "2026-11-15", "title": "半導體專區：IC 製造｜虛擬量測（Virtual Metrology）與信心指標 RI／GSI 的智慧抽樣（鄭芳田 IEEE TSM 2008／US9829415，背景）"}

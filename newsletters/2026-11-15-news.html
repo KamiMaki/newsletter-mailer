@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的 AI 每日電子報🐧 2026-11-15</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0f0f0f;">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:650px;width:100%;">
+
+<!-- Header -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;padding:28px 24px;text-align:center;">
+<p style="margin:0;font-size:24px;font-weight:800;color:#ffffff;">企鵝的 AI 每日電子報🐧</p>
+<p style="margin:8px 0 0;font-size:14px;color:#e0e7ff;">每日精選 AI 動態 · 讓你掌握未來</p>
+<p style="margin:10px 0 0;font-size:13px;color:#ffffff;font-weight:600;">2026-11-15（日）</p>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 30 秒重點 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 22px;">
+<p style="margin:0 0 12px;font-size:17px;font-weight:800;color:#ffffff;">⚡ 30 秒重點</p>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:8px;"><strong style="color:#ffffff;">今日主軸：模型開始被「派工」。</strong>AWS 教你在 Bedrock 上用 NVIDIA NeMo Switchyard 幫 coding agent 逐請求選模型，阿里雲 AI Gateway 的「智慧路由」正式上線——你不再選一個模型用到底，而是讓路由器看題目決定叫誰。</li>
+<li style="margin-bottom:8px;">考核單位跟著換：AWS 直接說，別看每百萬 token 多少錢，要看<strong style="color:#a5b4fc">「每解決一題的成本」＝總花費 ÷ 測試通過的次數</strong>。便宜模型做不完反而更貴。</li>
+<li style="margin-bottom:8px;">阿里雲同日提醒：推論已是 AI 雲端帳單的大宗（引用 Gartner 預測 2026 年占 55%），預算要拆成<strong style="color:#a5b4fc">量、價、組合</strong>三個旋鈕；示範案例中只調「組合」，月帳單差 4 倍。</li>
+<li style="margin-bottom:8px;">其他訊號：Claude Code 把沙箱內的 Bash 改回走正常權限詢問；Google 公布 agent 異常偵測在五個外部基準抓到 87% 已執行的攻擊；LangChain 宣布 C 輪募資 3 億美元。</li>
+<li style="margin-bottom:8px;">🏭 對半導體人最相關：晶圓廠早就在做同一件事——<strong style="color:#a5b4fc">不是每片晶圓都送去實際量測</strong>。專區看「虛擬量測」如何用信心指標決定哪一片該升級到真量測，這正是模型路由的老前輩。</li>
+</ul>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:#1a1a1a;border-radius:13px;padding:24px 22px;">
+<span style="display:inline-block;background:#312e81;color:#c7d2fe;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">🎯 今天的主軸</span>
+<p style="margin:12px 0 16px;font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;">模型不再「一個用到底」：每個請求現場派工，成績單改看「每解決一題花多少錢」</p>
+<p style="margin:14px 0 4px;font-size:13px;font-weight:700;color:#a5b4fc;">▍共同變化</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">先想像廠裡的缺陷檢驗：每片晶圓先過便宜又快的光學掃描，有疑慮的才送 review SEM，極少數才值得切片做 TEM。沒有人會把每片都送 TEM——不是 TEM 不好，而是不划算。說回 AI：過去兩天，兩家雲端廠商把同一套「分級檢驗」邏輯搬到模型上，讓<strong style="color:#a5b4fc">每一個請求都先被看一眼，再決定派給哪個模型</strong>。</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">AWS 11/13 的教學文示範在 Bedrock 上接 NVIDIA 開源的 <strong style="color:#a5b4fc">NeMo Switchyard</strong>：coding agent 的每個請求，由路由器在「能力強的」Claude Opus 5.5 與「省錢的」Nemotron 3 Super 120B 之間二選一。阿里雲 11/12 則宣布 AI Gateway <strong style="color:#a5b4fc">智慧路由</strong>上線：呼叫端把 model 寫成 auto/balanced、auto/cheap、auto/fast 或 auto/quality，閘道代選模型。</p>
+<p style="margin:6px 0 14px;font-size:13px;">🔗 <a href="https://aws.amazon.com/blogs/machine-learning/route-coding-agent-requests-to-the-right-model-on-amazon-bedrock-with-nvidia-nemo-switchyard/" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> <span style="color:#64748b;">｜ 來源：AWS Machine Learning Blog（11/13）</span></p>
+<p style="margin:6px 0 14px;font-size:13px;">🔗 <a href="https://www.alibabacloud.com/blog/alibaba-cloud-ai-gateway-intelligent-routing-is-now-live_603770" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> <span style="color:#64748b;">｜ 來源：Alibaba Cloud Community（11/12）</span></p>
+<p style="margin:14px 0 4px;font-size:13px;font-weight:700;color:#a5b4fc;">▍為什麼放在一起看</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">單看都只是產品功能，放在一起才看得出方向：<strong style="color:#a5b4fc">「用哪個模型」從設計階段的一次性決定，變成執行階段的逐筆決定</strong>。同一天阿里雲還發了一篇預算文，主張推論費用該拆成量（Volume）× 價（Price）× 組合（Mix）來編——路由器正是轉動「組合」那顆旋鈕的機構。技術、產品、財務三條線在同一週對上了。</p>
+<p style="margin:14px 0 4px;font-size:13px;font-weight:700;color:#a5b4fc;">▍過去 vs. 現在</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;"><strong style="color:#a5b4fc">過去</strong>：團隊開會選一個模型，寫進設定檔，所有請求一視同仁；想省錢就整批換便宜模型，品質跟著掉。<strong style="color:#a5b4fc">現在</strong>：設定檔裡寫的是「候選名單＋目標」，由路由器逐請求派工。兩家的派工方式很不一樣，值得細看：</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">・<strong style="color:#a5b4fc">Switchyard 的 Stage 路由不呼叫任何裁判模型</strong>。它只讀對話歷史裡最近 3 筆工具結果，判斷任務目前在哪個階段；訊號不明確時預設先給便宜模型（efficient_first），沒有工具結果的新請求也先給便宜的。好處是路由本身幾乎零成本。</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">・<strong style="color:#a5b4fc">阿里雲走六步流程</strong>：先分類請求、剔除硬條件不合者（協定、模態、工具、脈絡長度、授權、可用性），再評估任務難度，形成「能力足夠」的候選集，最後才套用你選的偏好。官方原則是「能力足夠是前提，優化目標由你定」——便宜不能抵銷缺少的硬能力。</p>
+<p style="margin:14px 0 4px;font-size:13px;font-weight:700;color:#a5b4fc;">▍背後邏輯</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">為什麼不乾脆每次都重選最划算的模型？因為<strong style="color:#a5b4fc">切換有代價</strong>。對話中途換模型，前面累積的快取失效、工具呼叫的上下文可能接不起來。所以阿里雲設計了「軟黏著」：多輪對話預設沿用上一輪的模型，agent 的工具呼叫鏈在任務開始時決定一次、之後不換，只有高信心判定是新任務才重選。延遲與健康度訊號也要累積到最低樣本數才納入評分，避免看一兩次就貼標籤。</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">成本這邊，阿里雲的示範算式很直觀（新加坡牌價、假設用量）：每月 60 億輸入＋10 億輸出 token，全用旗艦模型是 18,000 美元；改成 20% 旗艦、60% 輕量、20% 批次，是 4,492 美元，<strong style="color:#a5b4fc">差 4.0 倍</strong>。同一篇引用 Gartner 預測，AI 優化 IaaS 支出中推論占比 2026 年 55%、2027 年 59%——這是預測，不是實測。</p>
+<p style="margin:6px 0 14px;font-size:13px;">🔗 <a href="https://www.alibabacloud.com/blog/inference-is-now-most-of-the-ai-cloud-bill--plan-for-it-_603774" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> <span style="color:#64748b;">｜ 來源：Alibaba Cloud Community（11/13）</span></p>
+<div style="background:#252525;border-radius:8px;padding:12px;margin:0 0 12px;"><p style="margin:0 0 6px;font-size:13px;font-weight:700;color:#67e8f9;">👤 人物觀點／廠商觀點</p><p style="margin:0 0 6px;font-size:14px;line-height:1.7;color:#cbd5e1;">Johnny Mai（阿里雲 Qwen 的 Gen AI 產品策略與 GTM 總監）在預算文中主張：把 2026 年 12 月的用量當成 2027 年的「地板」來編預算，價格一律用現行牌價、不預設未來降價；新工作負載在累積約三個月歷史前，先留在隨用隨付。這是廠商立場的建議（文中附有業務洽詢連結），但「不要把降價寫進預算」這一條，對任何供應商都適用。</p><p style="margin:0;font-size:13px;">🔗 <a href="https://www.alibabacloud.com/blog/inference-is-now-most-of-the-ai-cloud-bill--plan-for-it-_603774" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> <span style="color:#64748b;">｜ 來源：Alibaba Cloud Community（11/13）</span></p></div>
+<p style="margin:14px 0 4px;font-size:13px;font-weight:700;color:#a5b4fc;">▍對你的工作</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">第一，<strong style="color:#a5b4fc">換一把尺</strong>。AWS 文中的定義是：每解決一題的成本＝所有執行的總花費 ÷ 測試通過的執行次數。這把尺的前提是你有「測試通過」的客觀判定——對工程團隊來說，就是迴歸測試、lint、模擬 pass/fail。沒有驗收條件，就沒辦法評估路由。</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">第二，<strong style="color:#a5b4fc">設定檔的寫法變了</strong>。以後要維護的不是一個模型名稱，而是候選名單、每個候選的能力卡（阿里雲稱 ModelCard）、以及各類工作的偏好。這是一份需要有人負責、定期重測的資產。</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">第三，<strong style="color:#a5b4fc">誰管哪顆旋鈕要講清楚</strong>。阿里雲建議：業務單位管量、FinOps 管價、工程管組合。組合是工程團隊唯一能直接動、而且影響最大的一顆。</p>
+<p style="margin:14px 0 4px;font-size:13px;font-weight:700;color:#a5b4fc;">▍限制與待驗證</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">・<strong style="color:#a5b4fc">都還很早期</strong>。AWS 文明說這是範例程式、非正式環境用途，所用的 Switchyard LiteLLM 整合屬實驗性，NVIDIA 把 switchyard-server 0.3.0 定位為展示與評估元件；Stage 路由只支援剛好兩個候選。</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">・<strong style="color:#a5b4fc">偏好不是保證</strong>。阿里雲寫明 Profile「是優化偏好，不是 SLA」，不保證每次都選到最便宜、最快或最強，也不保證答案正確；每次決策只產生一個主模型，不會自動重試或 fallback。首波只在專屬型實例提供。</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">・<strong style="color:#a5b4fc">省多少要自己量</strong>。本文不引用任何「路由後省 X%」的數字：實際結果取決於你的任務分布與候選模型，兩篇文章都要你用自己的任務重跑。4 倍差距是示意算例，不是客戶成果。</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">・<strong style="color:#a5b4fc">編輯分析</strong>：路由器派錯工的代價是不對稱的——難題給了小模型，可能安靜地交出看似合理的錯答案。沒有獨立驗收的流程，風險比「貴一點」更大。</p>
+<p style="margin:14px 0 4px;font-size:13px;font-weight:700;color:#a5b4fc;">▍重點一句話</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;"><strong style="color:#a5b4fc">別再問「哪個模型最好」，改問「這類工作最低要用到哪一級，以及我怎麼知道它做對了」。</strong></p>
+</td></tr></table>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 主軸的衍生新聞 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 22px;">
+<span style="display:inline-block;background:#164e63;color:#a5f3fc;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<p style="margin:10px 0 10px;font-size:17px;font-weight:800;color:#ffffff;line-height:1.5;">阿里雲：能等的工作，等一下就半價（但不能和快取折扣疊加）</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">阿里雲 11/13 另一篇文章整理批次推論的取捨：Model Studio 批次價是即時價的 <strong style="color:#a5b4fc">50%</strong>，代價是結果在 24–336 小時的完成視窗內才回來，且<strong style="color:#a5b4fc">批次與脈絡快取折扣不能同時適用</strong>。示範算例的月費因此降 42%（假設用量）。和主軸的關係：路由不只選「哪個模型」，也選「現在做還是晚點做」。</p>
+<p style="margin:0 0 8px;font-size:14px;color:#94a3b8;font-style:italic">💡 重點一句話：省多少取決於有多少工作真的能等，而不是牌價。</p>
+<p style="margin:0;font-size:13px;">🔗 <a href="https://www.alibabacloud.com/blog/batch-vs--real-time-inference-which-workloads-should-wait-for-half-price_603775" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> <span style="color:#64748b;">｜ 來源：Alibaba Cloud Community（11/13）</span></p>
+</td></tr>
+<tr><td style="height:14px;"></td></tr>
+
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 22px;">
+<span style="display:inline-block;background:#164e63;color:#a5f3fc;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<p style="margin:10px 0 10px;font-size:17px;font-weight:800;color:#ffffff;line-height:1.5;">🔄 後續追蹤：Gemini 4 Hydrogen 上架 GitHub Copilot，按供應商牌價計費</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">Google 的新一代 Flash 級模型 11/13 進入 Copilot 的模型選單（Pro 至 Enterprise 各方案），涵蓋 VS Code、CLI、coding agent、JetBrains、Xcode 等。公告寫明它在用量計費下<strong style="color:#a5b4fc">「按供應商牌價計費」</strong>；企業若維持預設啟用政策，新模型會自動開放。和主軸的關係：選單裡的模型按牌價各自計費，選哪一個就直接反映在帳單上。</p>
+<p style="margin:0 0 8px;font-size:14px;color:#94a3b8;font-style:italic">💡 重點一句話：模型選單變長、又按牌價算錢，「預設選哪個」就成了成本政策。</p>
+<p style="margin:0;font-size:13px;">🔗 <a href="https://github.blog/changelog/2026-11-13-gemini-4-hydrogen-in-github-copilot" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> <span style="color:#64748b;">｜ 來源：GitHub Changelog（11/13）</span></p>
+</td></tr>
+<tr><td style="height:14px;"></td></tr>
+
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 22px;">
+<span style="display:inline-block;background:#164e63;color:#a5f3fc;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<p style="margin:10px 0 10px;font-size:17px;font-weight:800;color:#ffffff;line-height:1.5;">Vercel Token Pass：月付 30 美元換 150 美元開放權重模型額度</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">Vercel 11/13 把 Token Pass（Pro 團隊的早期體驗加購）每月額度從 80 美元提高到 <strong style="color:#a5b4fc">150 美元</strong>，價格維持 30 美元，適用 Kimi K3／K3.1 Pro、GLM 5.3 系列與 DeepSeek V4.1 Flash；額度不累計，用專屬金鑰時額度用完即停、不會超收。和主軸的關係：平台用補貼把「例行工作交給開放權重模型」變成預設的省錢路線。</p>
+<p style="margin:0 0 8px;font-size:14px;color:#94a3b8;font-style:italic">💡 重點一句話：便宜那一級的模型，正在被平台用訂閱額度推到你面前。</p>
+<p style="margin:0;font-size:13px;">🔗 <a href="https://vercel.com/changelog/vercel-token-pass-now-includes-one-hundred-fifty-dollars-of-monthly-tokens" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> <span style="color:#64748b;">｜ 來源：Vercel Changelog（11/13）</span></p>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 22px;">
+<p style="margin:0 0 12px;font-size:17px;font-weight:800;color:#ffffff;">📎 其他快訊</p>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:12px;"><strong style="color:#e2e8f0">Claude Code 2.1.325：沙箱內的 Bash 改回走權限詢問</strong>：11/13 版起，沙箱中的 Bash 指令預設依正常權限流程詢問，要維持免詢問須自行設定 sandbox.autoAllowBashIfSandboxed；前一版（11/12）另加入實驗性的 Code Mode，讓模型寫 JavaScript 呼叫工具。升級後自動化腳本可能卡在權限提示，CI 中使用者請先檢查設定。 🔗 <a href="https://code.claude.com/docs/en/changelog" style="color:#06b6d4;text-decoration:underline">Claude Code Changelog（11/12–13）</a></li>
+<li style="margin-bottom:12px;"><strong style="color:#e2e8f0">GitHub AI Scan 可用 REST API 管理 repo 層級開關</strong>：11/13 公開預覽：code scanning 的 AI Scan 新增 repository_scan 設定，可在組織與儲存庫層級以 API 開關；每次掃描會消耗 Code Security AI 點數，且不支援 Enterprise Server。對要批次治理上百個 repo 的團隊，這讓「誰能花 AI 掃描額度」可以寫成程式管理。 🔗 <a href="https://github.blog/changelog/2026-11-13-manage-ai-scan-for-repositories-using-the-rest-api" style="color:#06b6d4;text-decoration:underline">GitHub Changelog（11/13）</a></li>
+<li style="margin-bottom:12px;"><strong style="color:#e2e8f0">Google：Agent 異常偵測在五個外部基準抓到 87% 已執行的攻擊</strong>：Google 11/12 公布 Agent Anomaly Detection（私測）在 1,774 個 session 的結果：agent 真的照做的惡意指令中 87% 被標記，良性 session 誤報 2–4%（AgentHarm 為 16%）。它是事後讀追蹤紀錄、不攔截動作，且只測了一個模型與模擬應用——適合當多層防線的一層，不是閘門。 🔗 <a href="https://developers.googleblog.com/how-agent-anomaly-detection-scores-on-benchmarks-we-didnt-write/" style="color:#06b6d4;text-decoration:underline">Google for Developers Blog（11/12）</a></li>
+<li style="margin-bottom:12px;"><strong style="color:#e2e8f0">GS Caltex：製程工程師的無程式碼模型，部署從約一週縮到數小時</strong>：AWS 11/13 案例：韓國能源化工業者 GS Caltex 讓製程工程師在 SageMaker Canvas 建模，ML 工程師審核後由管線重用同一份前處理與模型，每 30 分鐘批次推論。這不是半導體案例，但「領域工程師建模、ML 工程師把關上線」的分工，與廠內良率／製程團隊的處境很像。 🔗 <a href="https://aws.amazon.com/blogs/machine-learning/production-mlops-at-gs-caltex-with-amazon-sagemaker-canvas-part-1/" style="color:#06b6d4;text-decoration:underline">AWS Machine Learning Blog（11/13）</a></li>
+<li style="margin-bottom:12px;"><strong style="color:#e2e8f0">LangChain 宣布 C 輪募資 3 億美元</strong>：LangChain 11/13 於官方部落格宣布完成 3 億美元 C 輪（頁面標示估值 30 億美元），主打「讓每家公司擁有自己的智慧」。agent 框架與可觀測性工具商拿到大筆資金，代表「模型之外那一層」仍被視為獨立的生意。 🔗 <a href="https://www.langchain.com/blog/series-c" style="color:#06b6d4;text-decoration:underline">LangChain Blog（11/13）</a></li>
+<li style="margin-bottom:12px;"><strong style="color:#e2e8f0">研究：用光纖「廣播」模型權重，省掉每顆加速器上的權重 HBM</strong>：arXiv 11/12 論文提出 Optical Broadcast Memory：由中央記憶體伺服器持續廣播唯讀權重，推論節點以僅接收的共封裝光學（CPO）接聽；作者稱在 8 萬顆加速器規模可省下 PB 級 HBM、吞吐與每 token 能耗持平或更佳。這是架構模擬研究、尚無實作，但對關心 HBM 與 CPO 需求的人是值得記下的方向。 🔗 <a href="https://arxiv.org/abs/2611.17097" style="color:#06b6d4;text-decoration:underline">arXiv 2611.17097（11/12）</a></li>
+</ul>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 22px;">
+<p style="margin:0 0 12px;font-size:17px;font-weight:800;color:#ffffff;">📖 今日概念｜模型級聯（Cascade）與模型路由（Routing）</p>
+<p style="margin:14px 0 4px;font-size:13px;font-weight:700;color:#a5b4fc;">▍定義</p><p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">兩種「不必每題都用最貴模型」的做法：<strong style="color:#a5b4fc">路由</strong>是先看題目、直接派給一個模型；<strong style="color:#a5b4fc">級聯</strong>是先讓便宜模型作答，檢查後不滿意才升級到更貴的模型。</p>
+<p style="margin:14px 0 4px;font-size:13px;font-weight:700;color:#a5b4fc;">▍生活化比喻</p><p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">路由像醫院掛號櫃台，問兩句就決定你去家醫科還是心臟科；級聯像先看家醫科，醫師覺得不對勁再轉診。前者快但可能掛錯科，後者穩但轉診的人要付兩次掛號費。說回技術：路由的風險在「分錯」，級聯的成本在「重做」，而且級聯需要一個可靠的檢查器判斷答案夠不夠好。</p>
+<p style="margin:14px 0 4px;font-size:13px;font-weight:700;color:#a5b4fc;">▍工作中的例子</p><p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">讓 agent 整理迴歸測試 log：格式化、摘要這類步驟派給輕量模型（路由）；而「這個 fail 是不是已知問題」先由輕量模型判斷，信心不足或找不到對應記錄時才交給旗艦模型（級聯）。</p>
+<p style="margin:14px 0 4px;font-size:13px;font-weight:700;color:#a5b4fc;">▍常見誤解</p><p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">「路由一定省錢。」不一定。分類本身若要多呼叫一次模型就是成本；派錯導致重做更貴；中途換模型還會讓快取失效。所以今天兩個方案一個完全不用裁判模型、另一個強調對話中盡量不換。背景：2023 年的 FrugalGPT 論文在其實驗資料上報告級聯可在匹配最佳單一模型表現下最多降 98% 成本——那是特定資料集的研究結果，不是你的任務的保證。</p>
+<p style="margin:14px 0 4px;font-size:13px;font-weight:700;color:#a5b4fc;">▍與今天主軸的關係</p><p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">Switchyard 的 Stage 與阿里雲智慧路由都屬於「路由」；兩者都刻意不做自動升級重試。若你要級聯，檢查器得自己準備——通常就是你的測試。</p>
+<p style="margin:0;font-size:13px;">🔗 <a href="https://arxiv.org/abs/2305.05176" style="color:#06b6d4;text-decoration:underline">背景文獻</a> <span style="color:#64748b;">｜ 來源：arXiv 2305.05176〈FrugalGPT〉（2023，背景）</span></p>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 半導體 AI 專區 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 22px;">
+<p style="margin:0 0 10px;font-size:17px;font-weight:800;color:#ffffff;line-height:1.5;">🏭 半導體 AI 專區｜虛擬量測（Virtual Metrology）與信心指標：哪一片晶圓該送去實測？</p>
+<span style="display:inline-block;background:#164e63;color:#a5f3fc;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">IC 製造</span> <span style="display:inline-block;background:#3f3f46;color:#e4e4e7;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">背景知識</span>
+<p style="margin:14px 0 4px;font-size:13px;font-weight:700;color:#a5b4fc;">▍問題與流程位置</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;"><strong style="color:#a5b4fc">背景知識</strong>：蝕刻、CVD、CMP 之後要確認膜厚或線寬，得把晶圓送進量測機台。量測拉長 cycle time，所以傳統做法是固定抽樣，例如每 25 片量 1 片；沒量到的 24 片只能假設正常，機台若在兩次抽樣之間漂移，要到下次抽樣才會發現。</p>
+<p style="margin:14px 0 4px;font-size:13px;font-weight:700;color:#a5b4fc;">▍AI 如何介入</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;"><strong style="color:#a5b4fc">背景知識</strong>：虛擬量測（VM）用加工當下的機台感測資料訓練模型，為<strong style="color:#a5b4fc">每一片</strong>推估量測值——從「抽樣只看到 4%」變成「全數都有估計值」。估計可能出錯，所以成功大學鄭芳田教授團隊 2008 年提出兩個配套指標：<strong style="color:#a5b4fc">信心指標 RI</strong>（0 到 1，由神經網路模型與複迴歸參考模型結果的重疊程度算出，兩者越一致越可信）與<strong style="color:#a5b4fc">整體相似度指標 GSI</strong>（這片的製程資料與歷史資料有多像）。</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">其後的抽樣專利（US 9,829,415）把指標接上決策：GSI 過高或 RI 過低、機台剛保養或改配方、閒置過久，就把該片送實測，其餘以推估值代替。</p>
+<p style="margin:14px 0 4px;font-size:13px;font-weight:700;color:#a5b4fc;">▍資料與產出</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">輸入是機台感測資料與少量實測值；產出是每片的推估值、RI／GSI 兩個「能不能信」的旗標，以及「這片要不要實測」的決定。</p>
+<p style="margin:14px 0 4px;font-size:13px;font-weight:700;color:#a5b4fc;">▍如何驗證</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">以抽樣片的實測值對照推估值並持續更新模型；專利另以資料品質指標先濾掉異常的製程與量測資料。</p>
+<p style="margin:14px 0 4px;font-size:13px;font-weight:700;color:#a5b4fc;">▍限制與風險</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">模型只認得訓練過的機台狀態，保養或改配方後需重新校正；同一團隊 2013 年論文指出，把不可靠的 VM 值餵給 Run-to-Run 控制，結果可能比不用 VM 更差。<strong style="color:#a5b4fc">編輯分析</strong>：這是今天主軸的製造版——便宜模型處理多數，信心不足才升級到昂貴的實測。LLM 路由最缺的，正是像 RI／GSI 這樣成熟的「我不確定」訊號。本段未引用任何導入成效數字。</p>
+<p style="margin:4px 0;font-size:13px;">🔗 <a href="https://doi.org/10.1109/TSM.2007.914373" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> <span style="color:#64748b;">｜ 來源：IEEE Trans. Semiconductor Manufacturing 2008〈Evaluating Reliance Level of a Virtual Metrology System〉（背景）</span></p>
+<p style="margin:4px 0;font-size:13px;">🔗 <a href="https://patents.google.com/patent/US9829415" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> <span style="color:#64748b;">｜ 來源：US 9,829,415 抽樣方法專利，成功大學（背景）</span></p>
+<p style="margin:4px 0;font-size:13px;">🔗 <a href="https://doi.org/10.1109/TSM.2012.2228243" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> <span style="color:#64748b;">｜ 來源：IEEE TSM 2013，VM 用於 R2R 控制（背景）</span></p>
+<p style="margin:12px 0 0;font-size:15px;line-height:1.7;color:#67e8f9;font-weight:700">👷 對半導體工作者的意義：製程整合、量測與 APC 工程師可以盤點：廠內哪些量測站仍是固定抽樣率？導入任何預測模型（不限 VM）之前，先定義「信心不足時怎麼辦」——升級路徑比模型準確率更早決定它能不能上線。</p>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:#1a1a1a;border-radius:13px;padding:22px 22px;">
+<p style="margin:0 0 12px;font-size:17px;font-weight:800;color:#ffffff;">🪞 反思時間</p>
+<ul style="margin:0 0 14px;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:8px;">你的團隊現在是怎麼決定「這件事用哪個模型」的——是當初選定後就沒再動過，還是有人定期重測？如果把決定權交給路由器，你需要先準備好什麼樣的驗收條件，才敢相信它的派工？</li>
+<li style="margin-bottom:8px;">在你負責的流程裡（模擬、驗證、量測、報表），哪些工作其實「能等」或「不必用最強的工具」，卻因為流程慣性一律走最貴的路徑？如果只能挑一項改成分級處理，你會挑哪一項，風險在哪裡？</li>
+<li>虛擬量測花了十多年才發展出業界願意信任的信心指標。你認為 LLM 的「我不確定」訊號要成熟到什麼程度，才會有人敢讓路由器自動決定設計或製程相關的工作？什麼事件會讓這件事加速或倒退？</li>
+</ul>
+<p style="margin:0;color:#a5b4fc;font-weight:700;font-size:15px;">🎒 今日帶走：模型會越來越多，真正稀缺的不是選擇，而是一把能判斷「做對了沒」的尺——有了它，才談得上派工。</p>
+</td></tr></table>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 歷史電子報入口 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:20px 22px;">
+<p style="margin:0 0 8px;font-size:16px;font-weight:800;color:#ffffff;">📚 想回顧之前的內容？</p>
+<p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#cbd5e1;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+<p style="margin:0;font-size:15px;"><a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline">查看歷史電子報</a></p>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- Footer -->
+<tr><td style="padding:12px 22px 24px;text-align:center;">
+<p style="margin:0 0 8px;font-size:14px;color:#94a3b8;">📬 分享給朋友：<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline">訂閱這份電子報</a></p>
+<p style="margin:0 0 8px;font-size:13px;color:#64748b;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline">點此退訂（10 秒，下期生效）</a></p>
+<p style="margin:0;font-size:12px;color:#475569;">© 2026 企鵝的 AI 每日電子報🐧 · 本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源</p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>
