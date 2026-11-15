@@ -1390,3 +1390,18 @@
 {"date": "2026-11-15", "title": "主軸：模型不再一個用到底——每個請求現場派工（模型路由），成績單改看每解決一題的成本（AWS×NeMo Switchyard＋阿里雲 AI Gateway 智慧路由＋VPM 預算；模型組合/派工 facet）"}
 {"date": "2026-11-15", "title": "概念：模型級聯（Cascade）與模型路由（Routing）"}
 {"date": "2026-11-15", "title": "半導體專區：IC 製造｜虛擬量測（Virtual Metrology）與信心指標 RI／GSI 的智慧抽樣（鄭芳田 IEEE TSM 2008／US9829415，背景）"}
+{"date": "2026-11-16", "title": "OpenAI 解散獨立機器人團隊：研究併入 Mark Chen 主研究、應用與硬體併入 Applied，稱通用模型 GPT-6 Astra 可直接用於機器人（Fortune 11/13，據報導）"}
+{"date": "2026-11-16", "title": "Google Research 公開 Antigravity /teamwork 多代理：脈絡分割、乾淨脈絡審查、Lean/測試/模擬器驗證，NMR 95%/100%、libgav1 Rust 快 20–30%（11/13）"}
+{"date": "2026-11-16", "title": "Google Cloud SC26：HPC agent 技能包（基礎設施/工作負載/Day-2）、AlphaEvolve on Cloud Batch、A5X Vera Rubin 裸機（11/14）"}
+{"date": "2026-11-16", "title": "Runway Praxis-1 開放權重：27B 世界動作模型、Apache 2.0、RoboLab-120 自報 46.2%（11/11，主軸反例）"}
+{"date": "2026-11-16", "title": "🔄 Synopsys 產品長 Shankar Krishnamoorthy 談與 OpenAI 的半導體專用模型（DIGITIMES 11/15，付費牆，據報導）"}
+{"date": "2026-11-16", "title": "Stanford Memorilla 開源：1.94 億參數記憶模組、16 記憶 token 給凍結 Qwen3-8B，FactKG 84.33%（arXiv 2610.21375，11/14 報導）"}
+{"date": "2026-11-16", "title": "AT&T 近 500 個 agent 流程上線：每日約 450 億 token、每月逾 100 萬筆交易、商業邏輯存在脈絡/記憶（SiliconANGLE 11/14）"}
+{"date": "2026-11-16", "title": "Crissy Field×Handelsblatt：159,041 個 Lovable 專案中 24,664 個網站免登入外洩 Supabase 資料（11/15 轉述）"}
+{"date": "2026-11-16", "title": "Pax Silica 舊金山宣言：美國與 8 夥伴簽署 AI 供應鏈保護清單（FT 11/15，據報導，國務院未公布全文）"}
+{"date": "2026-11-16", "title": "三星德州兩廠分工：Taylor 先進 AI 晶片（2nm Tesla AI5）、Austin 航太/工業 18nm FD-SOI（Seoul Economic Daily 11/15，據報導）"}
+{"date": "2026-11-16", "title": "🔄 NVIDIA 交接風波：財長 Bessent 要求外部 CEO、10 天內回覆對中銷售問題（Bloomberg 11/15，據報導）"}
+{"date": "2026-11-16", "title": "本週看點：SC26（11/15–20，Ian Buck 11/16 特別演說）、Microsoft Ignite 11/17、Anthropic 預計 11/18 定價"}
+{"date": "2026-11-16", "title": "主軸：專業知識在搬家——通才模型接手專才團隊的工作，專業改住進技能包、工具與檢查關卡（OpenAI 解散機器人團隊＋Google /teamwork＋Google Cloud HPC 技能包；通才 vs 專才模型／領域知識放權重還是放外面 facet）"}
+{"date": "2026-11-16", "title": "概念：苦澀的教訓（The Bitter Lesson，Sutton 2019）——吃算力的通用方法長期勝過寫死的專家知識"}
+{"date": "2026-11-16", "title": "半導體專區：EDA 工具｜邏輯合成配方的強化學習搜尋與泛化問題（DRiLLS／Rethinking RL Logic Synthesis／ABC-RL，背景）"}
