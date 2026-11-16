@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的 AI 每日電子報🐧 2026-11-17</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0f0f0f;">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:650px;width:100%;">
+
+<!-- Header -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;padding:28px 24px;text-align:center;">
+<p style="margin:0;font-size:24px;font-weight:800;color:#ffffff;">企鵝的 AI 每日電子報🐧</p>
+<p style="margin:8px 0 0;font-size:14px;color:#e0e7ff;">每日精選 AI 動態 · 讓你掌握未來</p>
+<p style="margin:10px 0 0;font-size:13px;color:#ffffff;font-weight:600;">2026-11-17（二）</p>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+<!-- 30 秒重點 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 22px;">
+<p style="margin:0 0 12px;font-size:17px;font-weight:800;color:#ffffff;">⚡ 30 秒重點</p>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:8px;"><strong style="color:#ffffff">今日主軸：超級電腦的工作單換了。</strong>SC26 首日，NVIDIA、AMD 與橡樹嶺實驗室的發表指向同一件事——超算不再只跑「人送出去的一批模擬」，而是讓 AI agent 自己提案、叫模擬器來算、再由模擬器打分數，AI 與科學計算開始同機共跑。</li>
+<li style="margin-bottom:8px;">NVIDIA 推出 Nemotron for Science（開放模型＋近 5 萬題化學資料集＋後訓練配方）；瑞典 KTH 用它做的 agent 一個晚上修好 81% 的壞掉分子動力學設定，而且每個修法都由模擬軟體 GROMACS 自己複驗。</li>
+<li style="margin-bottom:8px;">硬體跟著改規格：NVIDIA 把 Vera CPU 做成 192 顆一櫃的科學計算機櫃（2027 年初出貨）；AMD 的 Lux 超算在橡樹嶺開放使用，同時支援 Slurm 與 Kubernetes，一台機器排模擬也排 agent。</li>
+<li style="margin-bottom:8px;">其他訊號：TOP500 新榜由深圳 LineShine 居首；Hugging Face 把語言模型推論改交 OpenRouter 逐請求挑供應商；Anthropic 為部分 Claude 模型的文字輸出加上浮水印；GitHub Copilot 下架 Claude Opus 4.8／Opus 5／GPT-5.6 Terra。</li>
+<li style="margin-bottom:8px;">🏭 對半導體人最相關：你們每天都在跑模擬（SPICE、TCAD、時序、熱）。專區看 TCAD 元件模擬的神經網路求解器——同一套「AI 先猜、傳統求解器複驗」的分工，正從藥物與材料走向元件開發。</li>
+</ul>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+<!-- 今天的主軸 -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:#1a1a1a;border-radius:13px;padding:24px 22px;">
+<span style="display:inline-block;background:#312e81;color:#c7d2fe;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">🎯 今天的主軸</span>
+<p style="margin:12px 0 16px;font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;">超級電腦的工作單換了：從「人送出一批模擬」變成「agent 提案、模擬器打分」，AI 與科學計算開始同機共跑</p>
+<p style="margin:16px 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍共同變化</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">先想像公司裡的共用量測儀器室。過去的規矩是：工程師填單、排隊、送樣品，隔天拿報告，看完再決定下一輪要量什麼。慢的不是儀器，是「人看報告、想下一步、再填單」這一圈。現在儀器室來了一位不睡覺的助理：他自己讀報告、自己排下一輪，而且<strong style="color:#a5b4fc">儀器同時是他的工具，也是他的考官</strong>——量出來不對，他的提案就不算數。</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">這正是 SC26（全球最大的超級運算年會，11/15–20 在芝加哥）第一天幾則發表共同描繪的畫面。說回技術：儀器就是模擬軟體，助理就是 AI agent，而超級電腦得同時伺候這兩種工作。</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;"><strong style="color:#a5b4fc">NVIDIA Nemotron for Science（11/16）</strong>：把開放多模態模型 Nemotron 3.5 Super VL、近 5 萬題化學推理題的開放資料集 LitmusBench v0.2，以及「後訓練配方」（post-training，指拿自家領域資料再訓練一輪）包成一組，讓研究單位自己做科學 agent。最有代表性的案例來自瑞典 KTH：agent 負責修復壞掉的 GROMACS（分子動力學模擬軟體）設定，在單台 DGX Spark 桌上型主機跑一晚，開啟推理時修好 81% 的測試案例，<strong style="color:#a5b4fc">每個修法都由 GROMACS 獨立檢查</strong>。 🔗 <a href="https://nvidianews.nvidia.com/news/nvidia-introduces-nemotron-for-science-to-accelerate-discoveries-with-agents" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> ｜ 來源：NVIDIA Newsroom</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;"><strong style="color:#a5b4fc">NVIDIA Vera CPU 科學計算機櫃（11/16）</strong>：192 顆 Vera CPU 以 Quantum-X800 InfiniBand 相連，整櫃記憶體頻寬峰值超過 200TB/s，官方把用途寫成氣候、分子模擬與「agentic science」。NVIDIA 自測 OpenFOAM 流體模擬效能為 x86 系統的 1.9 倍、每瓦效能 2.4 倍；氣象模式 WRF 的 1.6 倍則是<strong style="color:#a5b4fc">推估值</strong>。預計 2027 年初由 Dell、HPE、Lenovo、Supermicro 出貨。 🔗 <a href="https://nvidianews.nvidia.com/news/nvidia-expands-vera-cpu-platform-to-accelerate-scientific-discovery" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> ｜ 來源：NVIDIA Newsroom</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;"><strong style="color:#a5b4fc">AMD × 橡樹嶺 Lux 開放使用（11/16）</strong>：這台由 HPE 建造、採用 EPYC 與 Instinct MI355X 的系統以 220.79 petaflops 首度進榜 TOP500 第 14 名。橡樹嶺的說明裡有兩個關鍵字：它同時支援 <strong style="color:#a5b4fc">Slurm（傳統超算排程器）與 Kubernetes（雲端容器排程）</strong>，工作內容是「模擬＋AI 訓練推論＋agent 工作流編排」綁在一起。每年 350 萬節點小時中，約一半給美國能源部的 Genesis Mission，另一半歸 AMD。 🔗 <a href="https://www.olcf.ornl.gov/2026/11/16/lux-genesis-mission/" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> ｜ 來源：Oak Ridge Leadership Computing Facility</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;"><strong style="color:#a5b4fc">🔄 後續追蹤：阿里巴巴 Qwen4-Max 正式發表（11/16）</strong>：上週還是預覽，這次官方文章補上科學案例——模型連續 48 小時的 agent 執行，產出一個「經實驗驗證」的冷卻液分子；另一個阿茲海默症研究實驗中，執行 454 次工具呼叫與 3,239 次指標評估，設計並最佳化 24 個候選分子。 🔗 <a href="https://www.alibabacloud.com/blog/alibaba-unveils-qwen4-max-new-ai-teammate-for-work-creativity-and-discovery_603783" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> ｜ 來源：Alibaba Cloud Community</p>
+<p style="margin:16px 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍為什麼放在一起看</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">四則分屬模型、CPU、整機與雲端模型，但它們回答的是同一個問題：<strong style="color:#a5b4fc">當下指令的不再是人，而是一個會連續嘗試幾千次的 agent，計算資源該長什麼樣子？</strong> 模型端要懂領域語言（Nemotron 的後訓練配方）；軟體端要能被程式呼叫並回傳可判定的結果（GROMACS 複驗）；硬體端要同時撐住「吃記憶體頻寬的模擬」與「吃 GPU 的推論」（Vera 機櫃、Lux）；排程端要讓兩種工作排在同一張表上（Slurm＋Kubernetes）。</p>
+<p style="margin:16px 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍過去 vs. 現在</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;"><strong style="color:#a5b4fc">過去</strong>：研究員寫好輸入檔 → 送進佇列 → 等幾小時到幾天 → 人看結果 → 改參數再送。超算的績效看「一次算多大」（TOP500 的 HPL 成績就是這個邏輯）。</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;"><strong style="color:#a5b4fc">現在</strong>：agent 一口氣產生一批候選 → 自動呼叫模擬工具 → 依結果篩選、修改、再跑。瓶頸從「單次算多快」移到「一圈迴路多短、一個晚上能轉幾圈」。Qwen4-Max 那個例子的單位已經不是「跑了幾個模擬」，而是「454 次工具呼叫、3,239 次評估」。</p>
+<p style="margin:16px 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍背後邏輯</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;"><strong style="color:#a5b4fc">一、模擬器是現成的裁判。</strong> 語言模型最大的毛病是講得頭頭是道卻可能是錯的。科學計算剛好有一批幾十年累積、行為確定的程式（GROMACS、OpenFOAM、WRF），能直接回答「這組設定跑不跑得起來、能量有沒有守恆」。把它接在 agent 後面，錯誤就會被擋下來。這跟你們用 DRC／LVS 把關 AI 產生的版圖是同一個道理。</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;"><strong style="color:#a5b4fc">二、小而專的模型變得划算。</strong> Lila Sciences 的案例（NVIDIA 新聞稿轉述）是：後訓練後製作量子點的實驗流程正確率達 61%，高於 GPT-6 Astra 的 54%，推論成本宣稱低 10–20 倍。當 agent 一晚要問上千次，每次便宜十倍就決定了這件事做不做得起。</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;"><strong style="color:#a5b4fc">三、CPU 重新變重要。</strong> agent 的工具呼叫、傳統 Fortran 模擬程式都在 CPU 上跑，而且吃的是記憶體頻寬而非浮點峰值。NVIDIA 同步讓新一代 Fortran 編譯器進入公開測試，目標是<strong style="color:#a5b4fc">舊程式不重寫</strong>就能加速——這句話對任何手上有二十年老程式碼的團隊都很實際。</p>
+<div style="background:#252525;border-radius:8px;padding:12px;margin:0 0 12px;font-size:14px;line-height:1.7;color:#cbd5e1;">👤 人物觀點｜Ian Buck（NVIDIA 超大規模與高效能運算副總裁，官方新聞稿引言）：「Scientific simulations need CPUs that can keep large datasets moving and sustain performance as applications scale.」（科學模擬需要能讓大型資料持續流動、並在規模放大時維持效能的 CPU。）延伸解讀：這是供應商立場的說法，但點出一個容易忽略的事實——AI 熱潮下大家盯著 GPU，agent 與傳統模擬卻有很大一部分卡在 CPU 與記憶體頻寬。 🔗 <a href="https://nvidianews.nvidia.com/news/nvidia-expands-vera-cpu-platform-to-accelerate-scientific-discovery" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> ｜ 來源：NVIDIA Newsroom</div>
+<p style="margin:16px 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍對你的工作</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">半導體工程師其實是全世界最重度的模擬使用者之一：SPICE、TCAD、時序、IR、熱、微影。今天的訊號可以直接翻成三個自問：<strong style="color:#a5b4fc">（1）我的模擬工具能不能不靠 GUI、被腳本呼叫並回傳「過／不過」？（2）一圈「改參數→跑→判讀」現在要多久，人工判讀占幾成？（3）算力排程裡，推論工作與模擬工作是不是還分住兩個叢集、互相等？</strong> 第一題答不出來的流程，agent 進不來；第二題的人工比例，就是最先能省下的時間。</p>
+<p style="margin:16px 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍限制與待驗證</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;"><strong style="color:#a5b4fc">數字多為自報。</strong> Vera 的 1.9 倍是 NVIDIA 自測、WRF 是推估，機櫃 2027 年初才出貨；Lila、Terray、Therna 的比較都由 NVIDIA 新聞稿轉述，沒有第三方複現。</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;"><strong style="color:#a5b4fc">修好設定不等於科學發現。</strong> KTH 的 81% 是「讓壞掉的模擬設定能跑」，另外 19% 沒修好；能跑也不代表物理上問對了問題。</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;"><strong style="color:#a5b4fc">裁判只和模擬器一樣準。</strong> 模擬本身有模型誤差，agent 會很有效率地往模擬器的盲點鑽——通過模擬的候選，仍要回到實驗或矽驗證。Qwen4-Max 的「經實驗驗證」目前只有阿里巴巴官方說法。</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;"><strong style="color:#a5b4fc">資源分配未明。</strong> Lux 一半節點小時歸 AMD，公共研究實際能排到多少、agent 工作會不會擠壓傳統模擬，都還沒有數據。</p>
+<p style="margin:16px 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍重點一句話</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;"><strong style="color:#a5b4fc">超算的價值正從「一次算多大」轉向「一晚能讓 agent 與模擬器對答幾輪」——誰的模擬工具能被程式呼叫、能自動判對錯，誰就先接得上這一波。</strong></p>
+</td></tr></table>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+<!-- 衍生新聞 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 22px;">
+<span style="display:inline-block;background:#164e63;color:#a5f3fc;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<p style="margin:12px 0 10px;font-size:17px;font-weight:800;color:#ffffff;line-height:1.5;">AMD 在 SC26：為「模擬與 AI 合流」設計的 GPU，以及開源的 HPC 助理</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">AMD 表示新榜 TOP500 中有 202 套系統採用其晶片（逾 40%）。更值得看的是兩件事：Instinct MI430X 被定位為第一款從設計之初就同時考慮高精度模擬與 AI 的 GPU，AMD 並公布涵蓋 <strong style="color:#a5b4fc">11 種應用、47 個工作負載配置</strong>的研究，檢視哪些地方能用軟體模擬雙精度、哪些非得原生雙精度不可；另外與芬蘭 CSC 開發開源的 <strong style="color:#a5b4fc">AMD HPC Assistant</strong>，用 agent 引導作業提交、GPU 剖析與能耗檢視。和主軸的關係：硬體與使用介面都在為「同一台機器跑兩種工作」重新設計。</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#94a3b8;font-style:italic">💡 重點一句話：超算的使用門檻正被 agent 降低，但「精度夠不夠」仍是硬體層的硬問題。</p>
+<p style="margin:0;font-size:14px;color:#cbd5e1;">🔗 <a href="https://newsroom.amd.com/news/sc26-amd-expands-frontier-scientific-computing/" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> ｜ 來源：AMD Newsroom</p>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 22px;">
+<span style="display:inline-block;background:#164e63;color:#a5f3fc;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<p style="margin:12px 0 10px;font-size:17px;font-weight:800;color:#ffffff;line-height:1.5;">NVIDIA、IBM 與費米實驗室：量子處理器也要排進同一張工作表</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">三方宣布規劃共建量子—古典協同設計平台（把 NVIDIA DGX B200 與 IBM 量子電腦放在一起），目前屬<strong style="color:#a5b4fc">計畫階段</strong>。已經能用的是 CUDA-Q QEC 0.9.0 內的 TCBP-JOBS 解碼演算法，NVIDIA 稱可把量子糾錯研究中最吃運算的部分加速最高 13,000 倍、把新設計的運算時間從 12 週縮到 45 分鐘（廠商自報）。NVIDIA 也在擴充開源排程器 Slurm，讓量子處理器能和 CPU、GPU 一起排程。和主軸的關係：又一種運算資源被接進同一個排程器。</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#94a3b8;font-style:italic">💡 重點一句話：先落地的不是量子電腦本身，而是「用 GPU 模擬並設計量子電腦」。</p>
+<p style="margin:0;font-size:14px;color:#cbd5e1;">🔗 <a href="https://nvidianews.nvidia.com/news/nvidia-announces-collaboration-with-ibm-and-fermi-national-accelerator-laboratory-to-launch-quantum-classical-codesign-platform-plus-error-correction-breakthrough-to-advance-practical-quantum-computing" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> ｜ 來源：NVIDIA Newsroom</p>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 22px;">
+<span style="display:inline-block;background:#164e63;color:#a5f3fc;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<p style="margin:12px 0 10px;font-size:17px;font-weight:800;color:#ffffff;line-height:1.5;">OpenAI 開設科學部落格：把 AI 輔助研究的方法攤開來寫（11/15）</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">OpenAI 推出給科學家與學術研究者的新部落格，內容分三類：研究成果、實務方法、研究者第一手經驗。據官方文章，一項與 PerturbAI、Scripps Research 的合作中，數千個由 GPT-Rosalind 驅動的 agent 在 <strong style="color:#a5b4fc">32 分鐘內</strong>分析了數百萬個小鼠腦細胞的既有實驗資料。和主軸的關係：同一週，模型公司也開始把「agent 大量平行跑分析」當成科學工作的標準做法來宣傳。（openai.com 無法直接擷取，內容依搜尋摘要整理，數字待讀者自行核對原文。）</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#94a3b8;font-style:italic">💡 重點一句話：方法公開比成果宣稱更有價值——可以照著做，才知道是不是真的。</p>
+<p style="margin:0;font-size:14px;color:#cbd5e1;">🔗 <a href="https://openai.com/index/our-new-blog-for-science/" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> ｜ 來源：OpenAI</p>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+<!-- 其他快訊 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 22px;">
+<p style="margin:0 0 12px;font-size:17px;font-weight:800;color:#ffffff;">📎 其他快訊</p>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0">TOP500 2026 年 11 月榜</strong>：官方榜單頁顯示，深圳國家超算中心的 LineShine 以 2,198.40 petaflops 居首，是 2017 年神威太湖之光以來首度由中國系統領先；El Capitan、Frontier、Aurora、JUPITER Booster 依序為第 2–5 名。前五名全數為 exascale 等級，代表頂級算力的競賽已是多國並行。 🔗 <a href="https://top500.org/lists/top500/2026/11/" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> ｜ 來源：TOP500</li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0">NVIDIA 公布 MLPerf Training v6.1 與 Endpoints v1.0 成績</strong>：NVIDIA 稱 Vera Rubin NVL72 的每顆 GPU 訓練效能最高為 GB300 的 2 倍；衡量 agent 工作負載的新測試 Endpoints 中，每瓦吞吐量超過 10 倍。後者是<strong style="color:#a5b4fc">暫定結果、尚待 MLCommons 審核</strong>，採購評估時應等正式版。 🔗 <a href="https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> ｜ 來源：NVIDIA Blog</li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0">Hugging Face 與 OpenRouter 合作</strong>：Hugging Face 的語言模型推論改由 OpenRouter 逐請求依價格、速度與可靠度挑選供應商，按供應商原價計費、不加價。注意破壞性變更：呼叫語言模型時不能再帶自己的供應商 API key；文中並指出開放權重模型占 OpenRouter token 量從 26.8% 升到 71.7%。 🔗 <a href="https://huggingface.co/blog/openrouter" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> ｜ 來源：Hugging Face Blog</li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0">Anthropic 文字浮水印上線（11/16）</strong>：Claude Opus 4.6、Opus 4.5、Sonnet 4.5、Haiku 4.5 在支援平台上產生的文字會帶有浮水印，官方說明不改變內容、不加隱藏字元、也不含使用者資訊。若請求把 temperature、top_p 或 top_k 設成非預設值，輸出可能不帶浮水印——依賴它做內容標示的團隊要檢查框架是否偷偷設了這些參數。 🔗 <a href="https://platform.claude.com/docs/en/build-with-claude/text-watermark" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> ｜ 來源：Claude Platform Docs</li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0">GitHub Copilot 下架三個模型、AI Scan 可批次啟動（11/16）</strong>：Claude Opus 4.8、Claude Opus 5 與 GPT-5.6 Terra 自 11/16 起停用，建議改用 Claude Opus 5.5 或 GPT-6.1 Sol／GPT-6 Luna。另外 AI Scan（公開預覽）可一次對最多 20 個 repo 啟動安全掃描；把模型名稱寫死在流程裡的團隊請檢查設定。 🔗 <a href="https://github.blog/changelog/2026-11-16-bulk-start-ai-scan-for-repositories" style="color:#06b6d4;text-decoration:underline">AI Scan 公告</a> 🔗 <a href="https://github.blog/changelog/2026-11-16-github-copilot-models-deprecated-on-november-16-2026" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> ｜ 來源：GitHub Changelog</li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0">Amazon WorkSpaces for AI agents 新增治理功能（11/16）</strong>：agent 可用任何 OIDC 身分供應商登入、以「代表某位使用者」的身分繼承其權限與群組原則，操作過程會錄成影片加文字紀錄，存進客戶自己的 S3。這讓「讓 agent 操作沒有 API 的桌面軟體」有了可稽核的做法，對仍靠 GUI 的工程工具是個參考。 🔗 <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-workspaces-AI-agents-connect-govern" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> ｜ 來源：AWS What's New</li>
+</ul>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+<!-- 今日概念 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 22px;">
+<p style="margin:0 0 12px;font-size:17px;font-weight:800;color:#ffffff;">📖 今日概念｜雙精度浮點數（FP64）與混合精度</p>
+<p style="margin:12px 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍定義</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">FP64 是用 64 個位元表示一個實數的格式，約有 15–16 位有效十進位數字；FP32 約 7 位，AI 常用的 FP16 更少。<strong style="color:#a5b4fc">混合精度</strong>則是大部分運算用低精度省時間與記憶體，只在關鍵步驟用高精度。</p>
+<p style="margin:12px 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍生活化比喻</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">像量測工具：捲尺量房間夠用，量晶圓厚度就得換千分尺。捲尺快又便宜，但你不會拿它驗收機械加工件。說回技術：AI 訓練容忍雜訊，低精度反而算得快；科學模擬要把很多小誤差累加幾百萬步，位數不夠，誤差會滾成錯誤答案。</p>
+<p style="margin:12px 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍工作中的例子</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">SPICE 與 TCAD 求解時要解大型、條件數很差的矩陣（電流可以差十幾個數量級），用單精度很容易不收斂或算出錯的漏電流；這就是電路模擬長期依賴 FP64 的原因。反過來，神經網路推論用 FP16 甚至更低位元，幾乎不掉準確率。</p>
+<p style="margin:12px 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍常見誤解</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">「位元越多越好」或「AI 晶片不需要雙精度」。前者忽略成本——FP64 的運算與記憶體用量都更高；後者忽略用途——為 AI 最佳化、弱化雙精度的硬體，拿來跑傳統模擬可能不划算。</p>
+<p style="margin:12px 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍與今天主軸的關係</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">當 AI 與模擬要在同一台機器上跑，硬體就得兩種精度都顧。AMD 今天公布的研究正是在問這題：11 種應用、47 個配置裡，哪些能用軟體模擬雙精度、哪些一定要原生雙精度。 🔗 <a href="https://newsroom.amd.com/news/sc26-amd-expands-frontier-scientific-computing/" style="color:#06b6d4;text-decoration:underline">閱讀原文</a> ｜ 來源：AMD Newsroom</p>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+<!-- 半導體 AI 專區 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 22px;">
+<p style="margin:0 0 12px;font-size:17px;font-weight:800;color:#ffffff;">🏭 半導體 AI 專區｜TCAD 元件模擬的神經網路求解器：正向加速與逆向設計</p>
+<span style="display:inline-block;background:#164e63;color:#a5f3fc;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">IC 製造</span> <span style="display:inline-block;background:#3f3f46;color:#e4e4e7;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">背景知識</span>
+<p style="margin:16px 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍問題與流程位置</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;"><strong style="color:#a5b4fc">（背景知識）</strong> TCAD（Technology CAD）是在矽還沒流片前，用數值方法解「漂移—擴散方程式」，預測元件的電位、載子分布與 I-V 曲線，位在製程整合與元件開發的前段。痛點有兩個：每個偏壓點都要做牛頓迭代，收不收斂很看網格與初始猜測；而工程師真正想問的常是<strong style="color:#a5b4fc">逆向問題</strong>——「要什麼摻雜分布才能得到目標 Vt 與漏電？」——傳統作法只能反覆跑正向模擬去試。</p>
+<p style="margin:16px 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍AI 如何介入</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;"><strong style="color:#a5b4fc">（背景知識）</strong> 過去的流程是：人建網格、一步步掃偏壓、不收斂就調參數重跑；逆向問題靠 DoE 分批試。新作法有兩條路。其一是物理資訊神經網路：Riganti 等人提出的 DDNet（arXiv 2509.08073） 把漂移—擴散方程式直接寫進損失函數，<strong style="color:#a5b4fc">不需要網格</strong>，而且同一個框架既能解正向、也能解逆向問題（例如反推摻雜或幾何參數）。其二是神經算子：SISPAD 2024 論文〈Neural Drift-Diffusion Model Based on Operator Learning in Fourier Space〉用傅立葉空間的算子學習來近似漂移—擴散方程式的解。差異在於：傳統是「每個新條件都從頭解一次」，神經網路是「學一次、之後近乎即時地給出解或好的起點」。 🔗 <a href="https://arxiv.org/abs/2509.08073" style="color:#06b6d4;text-decoration:underline">DDNet 論文</a> ｜ 來源：arXiv 2509.08073 ｜ <a href="https://doi.org/10.1109/SISPAD62626.2024.10733127" style="color:#06b6d4;text-decoration:underline">SISPAD 2024 論文</a></p>
+<p style="margin:16px 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍資料與產出</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">輸入是元件幾何、摻雜分布、材料參數與偏壓；輸出是電位、電子／電洞濃度與電流。訓練訊號可以來自既有 TCAD 結果，也可以只靠方程式殘差（物理資訊法）。</p>
+<p style="margin:16px 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍如何驗證</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">與傳統求解器逐點比對。DDNet 摘要稱在一維與二維的典型元件上，相對傳統模擬軟體達到低的絕對與相對誤差（摘要未給具體數字）。最終仍須以矽上的電性量測校正。</p>
+<p style="margin:16px 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍限制與風險</p>
+<p style="margin:0 0 12px;font-size:15px;line-height:1.7;color:#cbd5e1;">目前公開結果限於一維、二維的典型結構，三維 GAA、量子修正與應力效應尚未驗證；訓練成本與超出訓練範圍時的行為也不明。<strong style="color:#a5b4fc">（編輯分析）</strong> 近期最務實的用法，可能不是取代求解器，而是當「快篩器」或提供好的初始猜測，再由傳統 TCAD 做最後複驗——正是今天主軸「AI 提案、模擬器打分」的分工。這是推論，並非任何廠商已宣布的量產流程。</p>
+<p style="margin:4px 0 0;font-size:15px;line-height:1.7;color:#67e8f9;font-weight:700">👷 對半導體工作者的意義：元件、TCAD 與製程整合工程師最該關注。可嘗試的下一步：挑一個最常重跑的二維結構，把歷史模擬整理成「輸入參數 → I-V」資料集，先評估「神經網路快篩＋傳統求解器複驗」能省下多少輪 DoE。</p>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+<!-- 反思時間 -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:#1a1a1a;border-radius:13px;padding:22px 22px;">
+<p style="margin:0 0 12px;font-size:17px;font-weight:800;color:#ffffff;">🪞 反思時間</p>
+<ul style="margin:0 0 12px;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:8px;">你的團隊裡，哪一種模擬最常被「人看結果、改參數、再送出」的迴圈拖慢？如果這一圈交給 agent，你會要求它通過哪些自動檢查才算數，哪些判斷你仍堅持由人來做？</li>
+<li style="margin-bottom:8px;">當模擬器變成 AI 的裁判，模擬器本身的誤差就成了天花板。在你的領域，模擬與矽量測之間最大的落差在哪裡？agent 高效地「討好模擬器」時，最可能在哪裡把你帶偏？</li>
+<li style="margin-bottom:8px;">如果三年後算力的衡量單位從「一次算多大」變成「一晚能轉幾圈設計迴路」，你們現有的授權模式、排程規則與機房配置，哪一項會最先撐不住？</li>
+</ul>
+<p style="margin:0;color:#a5b4fc;font-weight:700;font-size:15px;line-height:1.7;">🎒 今日帶走：模擬不再只是人送出去等結果的批次作業，而是 AI 的工具兼考官——能被程式呼叫、能自動判對錯的模擬流程，才接得上下一波效率。</p>
+</td></tr></table>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+<!-- 歷史電子報入口 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:20px 22px;">
+<p style="margin:0 0 8px;font-size:16px;font-weight:800;color:#ffffff;">📚 想回顧之前的內容？</p>
+<p style="margin:0 0 10px;font-size:14px;line-height:1.7;color:#cbd5e1;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+<p style="margin:0;font-size:15px;"><a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline">查看歷史電子報</a></p>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- Footer -->
+<tr><td style="padding:12px 22px 24px;text-align:center;">
+<p style="margin:0 0 8px;font-size:14px;color:#94a3b8;">📬 分享給朋友：<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline">訂閱這份電子報</a></p>
+<p style="margin:0 0 8px;font-size:13px;color:#64748b;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline">點此退訂（10 秒，下期生效）</a></p>
+<p style="margin:0;font-size:12px;color:#475569;">© 2026 企鵝的 AI 每日電子報🐧 · 本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源</p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>

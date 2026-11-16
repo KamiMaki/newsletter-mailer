@@ -1405,3 +1405,20 @@
 {"date": "2026-11-16", "title": "主軸：專業知識在搬家——通才模型接手專才團隊的工作，專業改住進技能包、工具與檢查關卡（OpenAI 解散機器人團隊＋Google /teamwork＋Google Cloud HPC 技能包；通才 vs 專才模型／領域知識放權重還是放外面 facet）"}
 {"date": "2026-11-16", "title": "概念：苦澀的教訓（The Bitter Lesson，Sutton 2019）——吃算力的通用方法長期勝過寫死的專家知識"}
 {"date": "2026-11-16", "title": "半導體專區：EDA 工具｜邏輯合成配方的強化學習搜尋與泛化問題（DRiLLS／Rethinking RL Logic Synthesis／ABC-RL，背景）"}
+{"date": "2026-11-17", "title": "NVIDIA Nemotron for Science：Nemotron 3.5 Super VL 開放模型＋LitmusBench v0.2 近 5 萬題化學資料集＋後訓練配方，KTH agent 修復 GROMACS 設定 81%（11/16）"}
+{"date": "2026-11-17", "title": "NVIDIA Vera CPU 科學計算機櫃：192 顆 Vera＋Quantum-X800、>200TB/s，OpenFOAM 1.9 倍（自測）、2027 年初出貨、Fortran 編譯器公測（11/16）"}
+{"date": "2026-11-17", "title": "AMD×橡樹嶺 Lux SI+HPC 超算開放使用：TOP500 第 14、220.79 PF、Slurm＋Kubernetes、Genesis Mission 首座 AI Factory（11/16）"}
+{"date": "2026-11-17", "title": "🔄 阿里巴巴 Qwen4-Max 正式發表：2.4 兆參數 MoE、1M context、48 小時 agent 產出經實驗驗證冷卻液分子（11/16）"}
+{"date": "2026-11-17", "title": "AMD SC26：TOP500 202 套系統、MI430X 與 FP64 研究（11 應用 47 配置）、開源 AMD HPC Assistant、AI NIC 支援 HPC（11/16）"}
+{"date": "2026-11-17", "title": "NVIDIA×IBM×費米實驗室量子—古典協同設計平台（計畫）、TCBP-JOBS 解碼最高 13,000 倍、Slurm 量子介面（11/16）"}
+{"date": "2026-11-17", "title": "OpenAI 開設科學部落格：數千 GPT-Rosalind agent 32 分鐘分析數百萬小鼠腦細胞（11/15）"}
+{"date": "2026-11-17", "title": "TOP500 2026 年 11 月榜：深圳 LineShine 2,198.40 PF 居首，前五名皆 exascale"}
+{"date": "2026-11-17", "title": "NVIDIA MLPerf Training v6.1／Endpoints v1.0：Vera Rubin 每 GPU 最高 2 倍、Endpoints 每瓦吞吐逾 10 倍（暫定，11/16）"}
+{"date": "2026-11-17", "title": "Hugging Face×OpenRouter：語言模型推論改由 OpenRouter 逐請求路由、不加價、不可再帶自有供應商 key（11/16）"}
+{"date": "2026-11-17", "title": "Anthropic 文字浮水印：Opus 4.6／4.5、Sonnet 4.5、Haiku 4.5 輸出帶浮水印，非預設取樣參數可能失效（11/16）"}
+{"date": "2026-11-17", "title": "GitHub Copilot 11/16 下架 Claude Opus 4.8／Opus 5／GPT-5.6 Terra；AI Scan 可批次啟動最多 20 個 repo（公開預覽）"}
+{"date": "2026-11-17", "title": "Amazon WorkSpaces for AI agents：OIDC 登入、代表使用者登入、session 回放存客戶 S3（11/16）"}
+{"date": "2026-11-17", "title": "DDNet：物理資訊神經網路解漂移—擴散方程式正/逆問題（arXiv 2509.08073，背景）"}
+{"date": "2026-11-17", "title": "主軸：超級電腦的工作單換了——從「人送出一批模擬」變成「agent 提案、模擬器打分」，AI 與科學計算同機共跑（SC26：Nemotron for Science＋Vera CPU 機櫃＋AMD/ORNL Lux＋Qwen4-Max；科學計算/模擬工作負載 facet）"}
+{"date": "2026-11-17", "title": "概念：雙精度浮點數（FP64）與混合精度"}
+{"date": "2026-11-17", "title": "半導體專區：IC 製造｜TCAD 元件模擬的神經網路求解器：正向加速與逆向設計（DDNet arXiv 2509.08073／SISPAD 2024 神經算子，背景）"}
