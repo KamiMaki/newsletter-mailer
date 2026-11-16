@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>【策略學習報】2026-11-17 — BTC × 美股大盤</title></head>
+<body style="margin:0;padding:0;background:#0f0f0f;font-family:-apple-system,'Segoe UI',Arial,sans-serif;font-size:15px;line-height:1.7;color:#d4d4d8">
+<div style="max-width:650px;margin:0 auto;padding:16px">
+
+<!-- Header -->
+<div style="background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:14px;padding:28px 24px;text-align:center">
+  <div style="font-size:13px;color:#fff7ed;letter-spacing:2px">企鵝的AI交易策略學習報</div>
+  <h1 style="margin:6px 0 4px;font-size:26px;color:#ffffff">BTC × 美股大盤 每日學習</h1>
+  <div style="font-size:15px;color:#fff7ed">2026-11-17（週二）｜今日課綱：部位調整：固定比例與 Kelly 的直覺</div>
+</div>
+
+<!-- Disclaimer banner -->
+<div style="margin:14px 0;padding:10px 14px;border:1px solid #f59e0b;border-radius:10px;background:#1a1a1a;color:#f59e0b;font-size:13px">
+⚠️ 本報為純學習用途，所有情境演練皆為教學假設，<strong>不構成任何投資建議</strong>。
+</div>
+
+<!-- Overview -->
+<div style="background:#1a1a1a;border-radius:12px;padding:18px 20px;margin-bottom:18px">
+  <h2 style="margin:0 0 8px;font-size:19px;color:#ffffff">⚡ 今日總覽</h2>
+  <ul style="margin:0;padding-left:20px">
+    <li>美股週一重挫：S&amp;P 500 收 <strong style="color:#fbbf24;font-weight:700">7,416.59（-1.92%）</strong>、Nasdaq 收 <strong style="color:#fbbf24;font-weight:700">24,509.76（-2.49%）</strong>，Nvidia <strong style="color:#fbbf24;font-weight:700">-4.01%</strong>、Intel <strong style="color:#fbbf24;font-weight:700">-10.07%</strong>；VIX <strong style="color:#fbbf24;font-weight:700">跳升 18.7% 至 22.91</strong>。</li>
+    <li>BTC 約 <strong style="color:#fbbf24;font-weight:700">$65,447</strong>、24 小時 <strong style="color:#fbbf24;font-weight:700">+0.43%</strong>，在股市大跌日<strong style="color:#fbbf24;font-weight:700">守住週末低點</strong>，但七日仍 <strong style="color:#fbbf24;font-weight:700">-12.67%</strong>、<strong style="color:#fbbf24;font-weight:700">低於 200 週線（約 $67,850）</strong>。</li>
+    <li>現貨 BTC ETF 自 10/30 至 11/13 累計流出<strong style="color:#fbbf24;font-weight:700">近 $30 億</strong>，穩定幣供給一個月縮減 <strong style="color:#fbbf24;font-weight:700">$170 億</strong>；今晚 Nvidia 盤後財報。</li>
+    <li>📖 今日學習：<strong style="color:#e2e8f0">部位調整：固定比例與 Kelly 的直覺</strong>——波動一天放大近兩成，同一筆單該下多大？</li>
+  </ul>
+</div>
+
+<!-- ===== BTC ===== -->
+<div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:18px">
+  <span style="display:inline-block;background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;font-weight:700;padding:5px 14px;border-radius:999px;font-size:14px">₿ BTC 區塊</span>
+
+  <table style="width:100%;border-collapse:collapse;margin:14px 0;font-size:14px">
+    <tr style="background:#252525;color:#a1a1aa">
+      <th style="padding:8px;text-align:left">區間</th><th style="padding:8px;text-align:left">當前價</th><th style="padding:8px;text-align:left">變動%</th><th style="padding:8px;text-align:left">趨勢方向</th><th style="padding:8px;text-align:left">關鍵點位</th>
+    </tr>
+    <tr style="border-bottom:1px solid #2e2e2e">
+      <td style="padding:8px">日線</td><td style="padding:8px">約 $65,447</td><td style="padding:8px;color:#34d399">+0.43%（24h）</td><td style="padding:8px">低檔橫盤，區間 $63,879–$65,502</td><td style="padding:8px">撐 $64K／壓 $66K</td>
+    </tr>
+    <tr style="border-bottom:1px solid #2e2e2e">
+      <td style="padding:8px">週線</td><td style="padding:8px">約 $65,447</td><td style="padding:8px;color:#f87171">-12.67%（7 日）</td><td style="padding:8px">仍在 200 週線之下，下行未止</td><td style="padding:8px">撐 $62K／壓 $68K</td>
+    </tr>
+    <tr>
+      <td style="padding:8px">月線</td><td style="padding:8px">約 $65,447</td><td style="padding:8px;color:#f87171">-19.26%（30 日）</td><td style="padding:8px">低於 200 日線（約 $73K）</td><td style="padding:8px">撐 $60K／壓 $73K</td>
+    </tr>
+  </table>
+  <div style="font-size:12px;color:#71717a;margin-top:-6px">報價為 CoinGecko 2026-11-16 22:12 UTC 數字。200 週線、200 日線沿用前幾日來源的數值；7 日均線與 50 日均線今日無新數據：資料不足，今日略過。</div>
+
+  <p style="margin:14px 0 6px">BTC 過去 24 小時在 <strong style="color:#fbbf24;font-weight:700">$63,879–$65,502</strong> 之間盤整，目前約 <strong style="color:#fbbf24;font-weight:700">$65,447</strong>，比昨天<strong style="color:#fbbf24;font-weight:700">小漲 0.43%</strong>。值得注意的是：同一天 Nasdaq 跌了 2.49%，BTC 卻<strong style="color:#fbbf24;font-weight:700">沒有再破週末低點 $62,006</strong>。不過結構沒有改變——價格仍<strong style="color:#fbbf24;font-weight:700">低於 200 週線（約 $67,850）</strong>約 3.5%。200 週線像是「過去近四年買家的平均成本」，在線下代表多數長期持有者帳面虧損。恐懼貪婪指數 <strong style="color:#fbbf24;font-weight:700">11</strong>（0 到 100 的情緒溫度計，越低越恐慌），屬於極度恐懼。</p>
+
+  <h3 style="margin:16px 0 6px;font-size:16px;color:#ffffff">四策略視角</h3>
+  <ul style="margin:0;padding-left:20px">
+    <li><strong style="color:#e2e8f0">順勢：</strong>日、週、月三個區間都在長期均線之下，方向<strong style="color:#fbbf24;font-weight:700">仍然偏空</strong>；橫盤一天不等於止跌。</li>
+    <li><strong style="color:#e2e8f0">均值回歸：</strong>股市大跌而 BTC 不破低是相對強勢的線索；若再回測 $62K 不破並出現更高的低點，才是均值回歸者的觀察訊號。</li>
+    <li><strong style="color:#e2e8f0">突破：</strong>若收盤站回 $67,850，技術面打開向 $73K（200 日線）區間的空間；若跌破 $62K，下方 $59,500–$62,600 是 Glassnode 標示的清算密集區。</li>
+    <li><strong style="color:#e2e8f0">宏觀：</strong>ETF 連續流出、穩定幣供給收縮，代表場內資金在變少；資金面<strong style="color:#fbbf24;font-weight:700">尚未轉向</strong>。</li>
+  </ul>
+
+  <h3 style="margin:16px 0 6px;font-size:16px;color:#ffffff">加密圈新聞</h3>
+  <ul style="margin:0;padding-left:20px">
+    <li>美國現貨 BTC ETF 在 10/30 至 11/13 之間累計淨流出近 $30 億，上週約 $10.7 億；穩定幣供給過去一個月縮減 $170 億。Xapo Bank 執行長認為部分賣壓來自資金轉向 Anthropic IPO 的認購。🔗 <a href="https://finance.yahoo.com/markets/crypto/articles/bitcoin-slides-toward-60-000-061035049.html" style="color:#60a5fa">Yahoo Finance／Investing.com：Bitcoin slides toward $60,000</a></li>
+    <li>Strategy 持有 850,364 顆 BTC，以上週六價格計約 $548 億，低於其取得成本 $641.6 億，帳面轉為虧損；Coinbase、Circle、Strategy 週一盤前下跌 7%–8%。（同上來源與 Yahoo Finance 美股直播）</li>
+  </ul>
+
+  <div style="background:#252525;border-left:3px solid #f59e0b;border-radius:8px;padding:12px 16px;margin-top:16px">
+    <div style="font-weight:700;color:#f59e0b;margin-bottom:4px">📌 學習重點</div>
+    <ul style="margin:0;padding-left:20px">
+      <li>股跌幣不跌是<strong style="color:#e2e8f0">線索</strong>，不是結論；一天的資料不足以改劇本。</li>
+      <li><strong style="color:#e2e8f0">極度恐懼</strong>時最想重押抄底，偏偏是波動最大的時候。</li>
+      <li>連最大的企業持有者都會帳面虧損，<strong style="color:#e2e8f0">均價不是護身符</strong>。</li>
+      <li>資金面收縮時，<strong style="color:#e2e8f0">部位大小</strong>比進場點更決定存活。</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===== US Equities ===== -->
+<div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:18px">
+  <span style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);color:#fff;font-weight:700;padding:5px 14px;border-radius:999px;font-size:14px">📊 美股大盤區塊</span>
+
+  <table style="width:100%;border-collapse:collapse;margin:14px 0;font-size:14px">
+    <tr style="background:#252525;color:#a1a1aa">
+      <th style="padding:8px;text-align:left">區間</th><th style="padding:8px;text-align:left">S&amp;P 500</th><th style="padding:8px;text-align:left">變動%</th><th style="padding:8px;text-align:left">趨勢方向</th><th style="padding:8px;text-align:left">關鍵點位</th>
+    </tr>
+    <tr style="border-bottom:1px solid #2e2e2e">
+      <td style="padding:8px">日線</td><td style="padding:8px">7,416.59</td><td style="padding:8px;color:#f87171">-1.92%（11/16）</td><td style="padding:8px">長黑，吃掉上週大半漲幅</td><td style="padding:8px">壓 7,561.67（上週五收盤）</td>
+    </tr>
+    <tr style="border-bottom:1px solid #2e2e2e">
+      <td style="padding:8px">週線</td><td style="padding:8px">7,416.59</td><td style="padding:8px;color:#f87171">-1.92%（本週至今）</td><td style="padding:8px">上週漲 2.51% 後回吐，仍在 52 週均線上</td><td style="padding:8px">撐 7,313.92／52 週均線 7,235.44</td>
+    </tr>
+    <tr>
+      <td style="padding:8px">月線</td><td style="padding:8px">7,416.59</td><td style="padding:8px;color:#f87171">約 -3.2%（vs 10/16 收 7,659.44）</td><td style="padding:8px">修正格局延續，反彈未過前高</td><td style="padding:8px">壓 7,652.76／7,844.52</td>
+    </tr>
+  </table>
+  <div style="font-size:12px;color:#71717a;margin-top:-6px">以上為 11/16（一）收盤。SPY、QQQ 的 ETF 報價與 50／200 日均線：資料不足，今日略過，以指數與 52 週均線代替（均線數值為 11/15 來源）。</div>
+
+  <p style="margin:14px 0 6px"><strong style="color:#e2e8f0">S&amp;P 500（SPY 追蹤的指數）：</strong>週一收 <strong style="color:#fbbf24;font-weight:700">7,416.59</strong>，<strong style="color:#fbbf24;font-weight:700">下跌 1.92%</strong>（145 點），一天吃掉上週 2.51% 漲幅的大半。指數仍比 52 週均線（7,235.44，過去一年的平均收盤，可當成長線多空分界）高約 <strong style="color:#fbbf24;font-weight:700">2.5%</strong>，距上週低點 7,313.92 只剩約 1.4%。</p>
+  <p style="margin:6px 0"><strong style="color:#e2e8f0">Nasdaq（QQQ 的近似參考）：</strong>Nasdaq 綜合指數收 <strong style="color:#fbbf24;font-weight:700">24,509.76</strong>，<strong style="color:#fbbf24;font-weight:700">重挫 2.49%</strong>，已<strong style="color:#fbbf24;font-weight:700">跌破 52 週均線 24,722.05</strong> 約 0.9%。昨天提到它的緩衝比 S&amp;P 500 薄，一天就被打穿。Nvidia 收 $156.32（<strong style="color:#fbbf24;font-weight:700">-4.01%</strong>），今晚盤後財報是這條線的直接考驗。</p>
+  <p style="margin:6px 0"><strong style="color:#e2e8f0">VIX：</strong>收 <strong style="color:#fbbf24;font-weight:700">22.91</strong>，單日<strong style="color:#fbbf24;font-weight:700">上升 18.7%</strong>（另有來源記為 23.56，數字略有出入）。VIX 是市場替未來 30 天買保險的價格，保費一天貴了近兩成，代表市場預期的日常震幅變大。10 年期殖利率 <strong style="color:#fbbf24;font-weight:700">5.12%</strong>（-0.03），原油 $85.06（<strong style="color:#fbbf24;font-weight:700">-3.95%</strong>）。股、油同跌而殖利率小降，是偏向<strong style="color:#fbbf24;font-weight:700">避險</strong>的組合。</p>
+
+  <h3 style="margin:16px 0 6px;font-size:16px;color:#ffffff">四策略視角</h3>
+  <ul style="margin:0;padding-left:20px">
+    <li><strong style="color:#e2e8f0">順勢：</strong>S&amp;P 500 仍在 52 週均線之上，但 Nasdaq 已<strong style="color:#fbbf24;font-weight:700">跌破</strong>；兩個指數給出不同答案時，順勢者通常降低把握度。</li>
+    <li><strong style="color:#e2e8f0">均值回歸：</strong>若指數回測 7,313.92 不破且 VIX 回落，是均值回歸者留意的情境；財報前則多一層跳空風險。</li>
+    <li><strong style="color:#e2e8f0">突破：</strong>若收盤跌破 7,313.92，上週的反彈就被否定，技術面打開向 52 週均線 7,235 區間的空間。</li>
+    <li><strong style="color:#e2e8f0">宏觀：</strong>今晚 Nvidia 財報、週三 FOMC 紀要、週四 Anthropic 掛牌，AI 與利率兩條主線同週重新定價。</li>
+  </ul>
+
+  <h3 style="margin:16px 0 6px;font-size:16px;color:#ffffff">美股新聞</h3>
+  <ul style="margin:0;padding-left:20px">
+    <li>Nvidia 領跌 AI 族群：報導指董事會並未考慮讓黃仁勳回任執行長，加上美國收緊海外先進晶片取得限制，股價收跌 4.01%；Alphabet 跌逾 3%、Amazon 跌約 3%。🔗 <a href="https://finance.yahoo.com/markets/live/stock-market-today-monday-november-16-dow-sp-500-nasdaq-nvidia-oil-091631084.html" style="color:#60a5fa">Yahoo Finance：Stock market today（11/16）</a></li>
+    <li>Intel 因投資人集體訴訟重挫 10.07%；多家大型銀行 App 傳出當機，BAC、C、WFC、JPM 下跌約 2%；Dow 收 51,608.17（-1.41%）。（同上來源）</li>
+  </ul>
+
+  <div style="background:#252525;border-left:3px solid #6366f1;border-radius:8px;padding:12px 16px;margin-top:16px">
+    <div style="font-weight:700;color:#818cf8;margin-bottom:4px">📌 學習重點</div>
+    <ul style="margin:0;padding-left:20px">
+      <li>VIX 升兩成，同樣股數的<strong style="color:#e2e8f0">實際風險</strong>也跟著放大。</li>
+      <li>緩衝薄的指數先破線，<strong style="color:#e2e8f0">離均線的距離</strong>就是容錯空間。</li>
+      <li>財報是跳空事件，<strong style="color:#e2e8f0">停損擋不住跳空</strong>，只有部位擋得住。</li>
+      <li>上週漲、本週跌，別讓<strong style="color:#e2e8f0">最近一根 K 線</strong>決定你的下單量。</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ===== Strategy Learning ===== -->
+<div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:18px">
+  <span style="display:inline-block;background:linear-gradient(135deg,#8b5cf6,#6366f1);color:#fff;font-weight:700;padding:5px 14px;border-radius:999px;font-size:14px">📖 今日策略學習</span>
+  <h2 style="margin:12px 0 6px;font-size:20px;color:#ffffff">部位調整：固定比例與 Kelly 的直覺</h2>
+  <p style="margin:0 0 10px"><strong style="color:#e2e8f0">為什麼今天學這個：</strong>VIX 一天<strong style="color:#fbbf24;font-weight:700">上升 18.7%</strong>、S&amp;P 500 單日 <strong style="color:#fbbf24;font-weight:700">-1.92%</strong>，BTC 七日 <strong style="color:#fbbf24;font-weight:700">-12.67%</strong>。當市場的「每日正常震幅」變大，同樣的股數、同樣的顆數，承擔的風險已經不是上週那一份。進場點決定你對不對，部位大小決定你錯的時候還剩多少——今天正好談「一筆單該下多大」。</p>
+
+  <h3 style="margin:14px 0 6px;font-size:16px;color:#ffffff">核心概念</h3>
+  <ul style="margin:0;padding-left:20px">
+    <li><strong style="color:#e2e8f0">固定比例：</strong>每筆只冒帳戶的固定百分比（如 1%），由停損距離反推部位。</li>
+    <li><strong style="color:#e2e8f0">Kelly 公式：</strong>最佳下注比例＝勝率 −（敗率 ÷ 賠率），優勢越大押越多。</li>
+    <li><strong style="color:#e2e8f0">Kelly 很敏感：</strong>勝率估錯幾個百分點，算出的比例會差好幾倍。</li>
+    <li><strong style="color:#e2e8f0">打折使用：</strong>實務多用半 Kelly 以下；押過頭的代價遠大於押太少。</li>
+  </ul>
+
+  <div style="background:#252525;border-left:3px solid #8b5cf6;border-radius:8px;padding:12px 16px;margin-top:16px">
+    <div style="font-weight:700;color:#a78bfa;margin-bottom:4px">🎯 情境演練（教學假設）</div>
+    <p style="margin:0 0 8px">假設一個 $10,000 的練習帳戶、每筆願意冒 1%（$100）。用今天的 BTC 真實點位走一遍：</p>
+    <ul style="margin:0;padding-left:20px">
+      <li><strong style="color:#e2e8f0">情境 A｜失效點放在週末低點：</strong>進場 $65,447、失效點 $62,006，距離 <strong style="color:#fbbf24;font-weight:700">$3,441（約 5.3%）</strong>。部位＝$100 ÷ $3,441 ≈ <strong style="color:#fbbf24;font-weight:700">0.029 顆（約 $1,900）</strong>。</li>
+      <li><strong style="color:#e2e8f0">情境 B｜失效點放在 24 小時低點：</strong>進場 $65,447、失效點 $63,879，距離 <strong style="color:#fbbf24;font-weight:700">$1,568（約 2.4%）</strong>。部位＝$100 ÷ $1,568 ≈ <strong style="color:#fbbf24;font-weight:700">0.064 顆（約 $4,170）</strong>。</li>
+      <li><strong style="color:#e2e8f0">判讀：</strong>兩種寫法的最大虧損<strong style="color:#fbbf24;font-weight:700">都是 $100</strong>，但部位差了 2.2 倍。停損越遠、部位越小——這就是固定比例的全部精神：先決定「這個想法在哪裡失效」，部位只是算出來的結果，不是憑感覺填的數字。</li>
+      <li><strong style="color:#e2e8f0">Kelly 對照：</strong>假設某策略勝率 40%、賺賠比 2:1，Kelly＝0.40 −（0.60 ÷ 2）＝<strong style="color:#fbbf24;font-weight:700">10%</strong>。但若真實勝率其實是 35%，Kelly 變成 0.35 −（0.65 ÷ 2）＝<strong style="color:#fbbf24;font-weight:700">2.5%</strong>；勝率降到約 33% 就歸零。估錯 5 個百分點，「最佳」押注<strong style="color:#fbbf24;font-weight:700">縮水四分之三</strong>。</li>
+      <li><strong style="color:#e2e8f0">波動調整：</strong>VIX 從 19.30 升到 22.91，若想讓每天承受的震盪金額不變，部位大約要乘上 19.30 ÷ 22.91 ≈ <strong style="color:#fbbf24;font-weight:700">0.84</strong>，也就是縮小約 16%。</li>
+    </ul>
+    <p style="margin:8px 0 0;font-size:13px;color:#a1a1aa">Kelly 的直覺價值不在算出精確數字，而在提醒兩件事：優勢不明確時應該押得很小；而我們對自己勝率的估計，幾乎一定比實際樂觀。所以多數人用固定 1% 這類保守比例，本質上就是「打了很多折的 Kelly」。</p>
+  </div>
+
+  <div style="background:#252525;border-radius:8px;padding:12px 16px;margin-top:14px">
+    <div style="font-weight:700;color:#e2e8f0;margin-bottom:4px">💡 今日研究速讀</div>
+    <p style="margin:0">Handelsmeisterei（Dr. Sebastian Schmidt，11/11）處理一個很實際的部位問題：模型算出「理想部位是 0.03 口期貨」，但券商只收整數口。小帳戶若逐一四捨五入，大部分部位會直接變成零，組合就不再是原本設計的那一個。作者比較兩種把理想權重換成整數口的方法（逐口加碼的貪婪法 vs 整體最佳化），以 1975–2026 年、50 到 301 個商品、$10 萬到 $100 萬資金回測：整體最佳化在 <strong style="color:#fbbf24;font-weight:700">9 組實驗中追蹤誤差全數較低</strong>，且<strong style="color:#fbbf24;font-weight:700">資金越小、失真越嚴重</strong>（$10 萬帳戶的 Sharpe 損失最大）。給我們的提醒：算出來的理想部位和實際下得了的部位之間有落差，帳戶越小落差越大——部位公式要連「最小下單單位」一起考慮。<br>🔗 <a href="https://www.handelsmeisterei.de/papers/06-portfolio-construction/" style="color:#60a5fa">Advances in Portfolio Construction（Handelsmeisterei）</a></p>
+  </div>
+</div>
+
+<!-- ===== Discipline ===== -->
+<div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:18px">
+  <span style="display:inline-block;background:linear-gradient(135deg,#10b981,#06b6d4);color:#fff;font-weight:700;padding:5px 14px;border-radius:999px;font-size:14px">🧭 今日交易紀律提醒｜週二：部位控管</span>
+  <p style="margin:14px 0 8px;font-size:17px;color:#ffffff;font-weight:700">「部位要用停損距離算，不要用信心算。信心最滿的那一筆，通常也是算錯時最貴的那一筆。」</p>
+  <p style="margin:0"><strong style="color:#e2e8f0">應用情境：</strong>今晚 Nvidia 盤後公布財報，股價週一已先跌 <strong style="color:#fbbf24;font-weight:700">4.01%</strong> 至 $156.32。假設有人「很有把握」會反彈而想放大部位——財報是跳空事件，隔天開盤價可能直接越過停損，實際虧損會<strong style="color:#fbbf24;font-weight:700">大於帳面上算好的 1%</strong>。紀律的寫法是反過來問：「如果開盤直接跳空到我的停損之外，這個部位的虧損我還能照常交易嗎？」答案是否定的，部位就太大了。今天每筆單下單前多寫一行：<strong style="color:#fbbf24;font-weight:700">「這筆的部位是算出來的，還是感覺出來的」</strong>。</p>
+</div>
+
+<!-- Reflection -->
+<div style="background:linear-gradient(135deg,#10b981,#06b6d4);padding:1px;border-radius:12px;margin-bottom:18px">
+  <div style="background:#1a1a1a;border-radius:11px;padding:18px">
+    <h2 style="margin:0 0 8px;font-size:19px;color:#ffffff">💭 今日反思</h2>
+    <ul style="margin:0;padding-left:20px">
+      <li>我最近三筆單的部位大小，是先定停損再算出來的，還是先決定金額再找停損？</li>
+      <li>VIX 一天升了近兩成，我的下單量有跟著調整嗎？還是和上週一模一樣？</li>
+      <li>我說得出自己策略的勝率與賺賠比嗎？如果勝率比我以為的低 5 個百分點，我現在的部位還合理嗎？</li>
+    </ul>
+    <div style="margin-top:10px;font-size:13px;color:#a1a1aa">挑一題寫進交易日誌，這就是今天的功課。</div>
+  </div>
+</div>
+
+<!-- Footer -->
+<div style="text-align:center;font-size:12px;color:#71717a;padding:10px 6px 24px;line-height:1.8">
+  <div><strong style="color:#a1a1aa">資料截止：</strong>BTC 價格／24 小時區間／7 日與 30 日變動（CoinGecko，2026-11-16 22:12 UTC）；恐懼貪婪指數 11（Coinglass，2026-11-16）；ETF 流出、穩定幣供給、Strategy 持倉、Glassnode 清算區（Yahoo Finance／Investing.com，2026-11-15）；200 週線約 $67,850（BigGo Finance，2026-11-15）、200 日線約 $73K（CryptoTicker，2026-11-14）；S&amp;P 500、Nasdaq、Dow、VIX、10 年期殖利率、原油、個股漲跌（Yahoo Finance，2026-11-16 收盤）；52 週均線與上週高低點（FXEmpire，2026-11-15）。</div>
+  <div style="margin-top:8px">免責聲明：本電子報內容僅供個人學習與研究交易紀律之用，不構成任何形式的投資建議、要約或招攬。加密貨幣與股票交易具高度風險，可能損失全部本金；過去表現不代表未來結果。所有情境演練皆為教學假設，任何交易決策請自行判斷並自負盈虧。</div>
+  <div style="margin-top:8px">本報為 Darren 的個人學習報｜本信件由 AI 自動生成</div>
+</div>
+
+</div>
+</body>
+</html>
