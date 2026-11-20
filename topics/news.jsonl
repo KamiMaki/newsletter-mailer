@@ -1422,3 +1422,22 @@
 {"date": "2026-11-17", "title": "主軸：超級電腦的工作單換了——從「人送出一批模擬」變成「agent 提案、模擬器打分」，AI 與科學計算同機共跑（SC26：Nemotron for Science＋Vera CPU 機櫃＋AMD/ORNL Lux＋Qwen4-Max；科學計算/模擬工作負載 facet）"}
 {"date": "2026-11-17", "title": "概念：雙精度浮點數（FP64）與混合精度"}
 {"date": "2026-11-17", "title": "半導體專區：IC 製造｜TCAD 元件模擬的神經網路求解器：正向加速與逆向設計（DDNet arXiv 2509.08073／SISPAD 2024 神經算子，背景）"}
+{"date": "2026-11-20", "title": "Microsoft Agent 365 成本管理（預覽：支出政策/上限/警示/Fabric 分攤）＋商業分析（Frontier：成功率/滿意度/協助工時，12 月擴及非 Microsoft agent，Ignite 11/17）"}
+{"date": "2026-11-20", "title": "GitHub Copilot 活動（提示/回應/工具呼叫）串流進 Microsoft Agent 365 稽核（需 GHEC＋EMU，11/17）"}
+{"date": "2026-11-20", "title": "GitHub Repository insights 追蹤 Copilot 程式碼審查成果：處理率/高嚴重度處理率/未被人類退回 PR/未經 AI 審查即合併 PR（11/17）"}
+{"date": "2026-11-20", "title": "GitHub Copilot Evals 公開預覽：為技能/自訂 agent/MCP 工具寫評測、前後對比（Vally 引擎，11/17）"}
+{"date": "2026-11-20", "title": "Anthropic IPO 定價每股 83 美元、9.8 億股、11/19 Nasdaq: ANT 掛牌、承銷商 1.47 億股加購權（11/18）"}
+{"date": "2026-11-20", "title": "NVIDIA FY27 Q3 營收 1,158 億美元（年增 103%）、資料中心 1,076 億、Vera Rubin NVL72 出貨、Q4 財測 1,300 億±3% 不含中國資料中心運算（11/17）"}
+{"date": "2026-11-20", "title": "Gemini 4 Neon 上架 GitHub Copilot：Google 稱品質近 Gemini 4 Carbon、每任務 token 成本更低（11/18）"}
+{"date": "2026-11-20", "title": "OpenAI GPT-6.2 Astra／Sol 上架 GitHub Copilot：早期測試 token 更省、審查問題近兩倍（Astra API 降價約 20%，據報導，11/17）"}
+{"date": "2026-11-20", "title": "Microsoft MAI-Code-2／MAI-Code-2-Flash 於 GitHub Copilot 正式推出（Flash 含 Free 方案、Foundry 私人預覽、MAI-Code-1.1-Flash 12 月下架，11/17）"}
+{"date": "2026-11-20", "title": "NVIDIA RTX Spark 小型桌機開賣（ASUS/Dell/MSI，20 核 Grace＋Blackwell RTX、128GB 統一記憶體、本地全天候 agent，11/18）"}
+{"date": "2026-11-20", "title": "Hugging Face MoE 專家串流：32GB MacBook M5 跑 180B Qwen3.8-Flash-Next、約 13.9 tok/s（11/18）"}
+{"date": "2026-11-20", "title": "Google Workspace Studio 流程協作步驟管理者開關（預設開啟，11/19）"}
+{"date": "2026-11-20", "title": "Microsoft-Decision-1.1 GA：基於 Gemma 4 26B A4B、AA Decision Index v2.1 68 分（Ignite）"}
+{"date": "2026-11-20", "title": "Microsoft Maia 300 發表（官方稱每瓦 token 多 40%）＋Cobalt 200 VM GA（Ignite 11/17）"}
+{"date": "2026-11-20", "title": "Copilot security review 加入 secret scanning：500+ 偵測器＋微調模型、agent 可叫用、公開預覽預設關閉（11/17）"}
+{"date": "2026-11-20", "title": "研究背景：Synthesis-in-the-Loop 以合成後 HQI 評 32 模型 RTL（arXiv 2603.11287）／COEVO 正確性＋PPA 四維 Pareto（arXiv 2604.15001）"}
+{"date": "2026-11-20", "title": "主軸：AI 進入對帳期——試用期結束，花費要對到成效：企業後台（Agent 365 成本/價值分析）＋工程團隊（GitHub 審查成果指標/Copilot Evals）＋資本市場（Anthropic IPO/NVIDIA 季報）（成效量測/問責 facet）"}
+{"date": "2026-11-20", "title": "概念：領先指標與落後指標（Leading vs. Lagging Indicators）"}
+{"date": "2026-11-20", "title": "半導體專區：IC 設計｜LLM 生成 RTL 的合成後品質評量：從模擬通過率到 PPA（Synthesis-in-the-Loop HQI／COEVO，背景）"}
