@@ -1441,3 +1441,16 @@
 {"date": "2026-11-20", "title": "主軸：AI 進入對帳期——試用期結束，花費要對到成效：企業後台（Agent 365 成本/價值分析）＋工程團隊（GitHub 審查成果指標/Copilot Evals）＋資本市場（Anthropic IPO/NVIDIA 季報）（成效量測/問責 facet）"}
 {"date": "2026-11-20", "title": "概念：領先指標與落後指標（Leading vs. Lagging Indicators）"}
 {"date": "2026-11-20", "title": "半導體專區：IC 設計｜LLM 生成 RTL 的合成後品質評量：從模擬通過率到 PPA（Synthesis-in-the-Loop HQI／COEVO，背景）"}
+{"date": "2026-11-21", "title": "Hugging Face harness adapters：Qwen3.8-27B 凍結權重、在 pi/OpenCode/Hermes 外殼內 RL 訓練 LoRA，SWE-bench Pro 難題 pi 40%→64%、工具呼叫少 56–72%、AutomationBench 跨域多在誤差內（11/20）"}
+{"date": "2026-11-21", "title": "阿里雲 AgentLoop 評測 DeepSeek Harness vs Codex：Terminal-Bench 2.1 子集同為 8/10 通過、失敗題目不同，結果/合規/過程三評估器（11/18）"}
+{"date": "2026-11-21", "title": "阿里雲 AgentLoop 技能評測：安全技能單獨使安全分 0.57→0.49，外殼約束＋安全技能 0.78（11/19）"}
+{"date": "2026-11-21", "title": "阿里雲 ACK One Fleet 跨叢集 Agent Sandbox：MicroVM、暫停/恢復、每分鐘最多 15,000 沙箱（11/20）"}
+{"date": "2026-11-21", "title": "Thinking Machines Inkling 2 Mini：26B 總/3B 活躍多模態 MoE、迴圈 Transformer、1M 上下文、本地部署（11/20）"}
+{"date": "2026-11-21", "title": "Anthropic 研究員 Levent Alpöge 宣稱與 Claude 證明（廣義）黎曼猜想，Lean 程式碼公開、Sutherland 獨立編譯、尚未證實（11/20）"}
+{"date": "2026-11-21", "title": "🔄 Anthropic IPO 交割：11.27 億股×83 美元約 935 億＋私募 260 億（AMD/Broadcom/Google/Micron/Microsoft/NVIDIA/TSMC Partners），合計約 1,195 億美元（11/20）"}
+{"date": "2026-11-21", "title": "GitHub Enterprise Server 3.23 RC：CPU 執行的 AI 密鑰偵測（離線可用）、Dependabot 三天冷卻、惡意套件偵測擴語言（11/20）"}
+{"date": "2026-11-21", "title": "ChatGPT dots 開始對少數 Plus 用戶測試並全面開放 Business Standard（11/19）"}
+{"date": "2026-11-21", "title": "阿里雲 Model Studio Token Plan 個人訂閱：首月 3 美元起、點數制、按並行 agent 數分級（11/20）"}
+{"date": "2026-11-21", "title": "主軸：模型和外殼（harness）成對調校——同模型換外殼換成績，HF harness adapter 為外殼量身練 LoRA＋阿里雲評測同通過率不同錯法、安全靠外殼約束（模型—外殼適配 facet）"}
+{"date": "2026-11-21", "title": "概念：LoRA（低秩適配，Low-Rank Adaptation）"}
+{"date": "2026-11-21", "title": "半導體專區：EDA 工具｜IR Drop 電源壓降的 ML 快速預測（CFIRSTNET ICCAD'24／GNN 比較 arXiv 2502.05345／PhysEDA，背景）"}

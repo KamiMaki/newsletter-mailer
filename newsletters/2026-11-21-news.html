@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的 AI 每日電子報🐧 2026-11-21</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0f0f0f;">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:650px;width:100%;">
+
+<!-- Header -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;padding:28px 24px;text-align:center;">
+<div style="font-size:24px;font-weight:800;color:#ffffff;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#ffffff;margin-top:10px;opacity:0.9;">2026-11-21（六）</div>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 30 秒重點 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 24px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:10px;">⚡ 30 秒重點</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:8px;"><strong style="color:#ffffff;">今日主軸：模型和外殼（harness）開始成對調校。同一顆模型換一套外殼就換一張成績單，所以有人乾脆把模型「量身改」給外殼用。</strong></li>
+<li style="margin-bottom:8px;">Hugging Face 在 Qwen3.8-27B 上替三種 agent 外殼各訓練一個小外掛（LoRA）。在 pi 外殼裡，難題通過率約從 40% 拉到 64%，工具呼叫還少了一半以上。</li>
+<li style="margin-bottom:8px;">阿里雲兩篇評測實錄指出同一件事：兩套系統通過率同為 80%，失敗的地方卻完全不同；要提升安全分數，加外殼層的約束比改提示詞有效。</li>
+<li style="margin-bottom:8px;">其他訊號：Anthropic 研究員宣稱與 Claude 證明黎曼猜想（Lean 程式碼已公開，正確性還沒有定論）。Anthropic IPO 完成交割，加上私募合計約 1,195 億美元，TSMC Partners 也在私募名單裡。另外 GHES 3.23 RC 推出不需 GPU、可在離線環境跑的 AI 密鑰偵測。</li>
+<li>對半導體人最相關的一點：你們的 EDA 流程（Tcl 腳本、run 目錄、license 佇列、簽核報告）本身就是一套 harness。以後評估 AI 工具，要在自己的流程裡測，別只看公開排行榜。</li>
+</ul>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:#1a1a1a;border-radius:13px;padding:24px;">
+<span style="display:inline-block;background:#312e81;color:#c7d2fe;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">🎯 今天的主軸</span>
+<div style="font-size:19px;font-weight:800;color:#ffffff;margin:12px 0 14px;line-height:1.5;">名廚也怕換廚房：模型開始配合「外殼」量身調校</div>
+<div style="font-size:15px;line-height:1.7;color:#cbd5e1;">
+
+<p style="margin:0 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍共同變化</p>
+<p style="margin:0 0 14px;">先講一個詞。<strong style="color:#a5b4fc">Harness（外殼）</strong>指的是包在模型外面的那層軟體：它決定模型拿得到哪些工具、怎麼讀寫檔案、要不要保留上一輪的思考、權限怎麼管、失敗了怎麼重試。阿里雲的文章用一條公式概括：<strong style="color:#a5b4fc">Agent = 模型 + Harness</strong>。這兩三天有三份第一手資料從不同方向得出同一個結論：<strong style="color:#a5b4fc">外殼不是中性的容器，它和模型是一對，必須一起調、一起測。</strong></p>
+
+<p style="margin:0 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍為什麼放在一起看</p>
+<p style="margin:0 0 10px;">打個比方：模型是廚師，harness 是廚房。名廚走進陌生的廚房，刀不知道放哪、爐火習慣不同，菜一樣做得出來，但會變慢、出錯更多。三份資料剛好分別處理這件事的三個環節：</p>
+<p style="margin:0 0 10px;"><strong style="color:#e2e8f0">① 讓廚師適應廚房（訓練）</strong>：Hugging Face 11/20 發表 <strong style="color:#a5b4fc">harness adapters</strong>。做法是把開放模型 Qwen3.8-27B 的權重凍結，在 pi、OpenCode、Hermes Agent 三種外殼裡，各用強化學習訓練一個 LoRA 小外掛。題目約 871 題，取自 35 個真實程式庫，並且只留下「模型有時會、有時不會」的 171 題，因為永遠會或永遠不會的題目都提供不了學習訊號。結果是在 SWE-bench Pro 最難的 51 題上，pi 從約 40% 升到 64%，Hermes 從 29.4% 升到 43.1%，OpenCode 從 35.3% 升到 51.0%。在兩邊都解得出來的題目上，工具呼叫少了 56–72%。<br>🔗 <a href="https://huggingface.co/blog/harness-adapters-at-scale" style="color:#06b6d4;">閱讀原文</a>｜來源：Hugging Face Blog</p>
+<p style="margin:0 0 10px;"><strong style="color:#e2e8f0">② 同一份考卷，不同的錯法（評測）</strong>：阿里雲 11/18 的實錄在 Terminal-Bench 2.1 選了 10 題，比較 DeepSeek Harness（搭配 Qwen3.7-Plus）和 Codex。兩邊通過率都是 <strong style="color:#a5b4fc">8/10</strong>，但錯的題目不一樣：DeepSeek Harness 在 extract-elf 只寫出 6 個產出檔中的 2 個；Codex 則在 qemu-startup 撞上 900 秒時限，得 0 分。只看二元的通過率，會把這些差異全部藏起來。<br>🔗 <a href="https://www.alibabacloud.com/blog/deepseek-harness-evaluation-practice-based-on-alibaba-cloud-agentloop_603790" style="color:#06b6d4;">閱讀原文</a>｜來源：Alibaba Cloud Blog</p>
+<p style="margin:0 0 14px;"><strong style="color:#e2e8f0">③ 規矩寫在廚房比寫在食譜有效（約束）</strong>：阿里雲 11/19 另一篇做技能（Skill）評測。光加一份「安全技能」說明，安全分數反而從 0.57 掉到 0.49。改在外殼層加約束（例如丟棄 stderr 輸出）之後，用原版技能就到 0.68，搭配安全技能升到 0.78。文章自訂的發布門檻是各項都達 0.8，所以 0.78 嚴格說還差一點。<br>🔗 <a href="https://www.alibabacloud.com/blog/best-practices-for-skill-evaluation-and-optimization-based-on-alibaba-cloud-agentloop_603791" style="color:#06b6d4;">閱讀原文</a>｜來源：Alibaba Cloud Blog</p>
+
+<p style="margin:0 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍過去 vs. 現在</p>
+<p style="margin:0 0 14px;"><strong style="color:#e2e8f0">過去</strong>：挑模型看排行榜，外殼被當成可以隨便替換的管線，大家假設「強模型放到哪裡都強」。<strong style="color:#e2e8f0">現在</strong>：成績要和「哪一套外殼、哪一批任務」一起報。Hugging Face 自己也提醒，結果只能在同一個外殼內比較，例如 pi 不保留前幾輪的推理內容，OpenCode 和 Hermes 會保留，條件本來就不同。</p>
+
+<p style="margin:0 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍背後邏輯</p>
+<p style="margin:0 0 14px;">通用模型的訓練要兼顧上千種用法，不可能為「你的」工具格式、目錄結構和逾時設定特別最佳化。LoRA 外掛很小、權重凍結、訓練成本低，每個 adapter 只用 2 張 B200，一張推論、一張訓練。所以「替自己的外殼練一個外掛」第一次變得划算。獎勵設計也值得一看：通過驗證得基本分，工具用得省另外加 0.1 分，所以模型同時學到做對和少繞路。這就是那 56–72% 工具呼叫降幅的來源。對企業來說，比較的單位正在從「哪顆模型最強」變成「哪一組模型加外殼的配對，在我的任務上最穩、最省」。</p>
+
+<p style="margin:0 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍對你的工作</p>
+<p style="margin:0 0 14px;">半導體團隊其實天天在維護 harness：EDA 流程的 Tcl／Python 腳本、run 目錄規範、license 排隊、log 格式、簽核報告，就是 AI 要進駐的那間廚房。（<strong style="color:#e2e8f0">編輯分析</strong>）有三件事可以先做：<strong style="color:#a5b4fc">(1)</strong> 評估 AI 助理時，用自家流程的 20–50 個真實小任務（例如修 lint、解讀 timing report、改 SDC）建立內部題庫，別只看公開 benchmark；<strong style="color:#a5b4fc">(2)</strong> 分數要分項記，像阿里雲那樣拆成結果、合規、過程，才看得出模型是錯在理解，還是錯在「不會用你的工具」；<strong style="color:#a5b4fc">(3)</strong> 安全與權限規則優先寫進外殼，例如唯讀目錄、禁止碰 golden netlist，而不是只寫在提示詞裡。另外，Synopsys 11 月中表示平台不會綁定單一模型供應商（DIGITIMES 報導，<strong style="color:#e2e8f0">背景</strong>），意思是 EDA 平台會變成外殼，模型則可以抽換。</p>
+
+<div style="background:#252525;border-radius:8px;padding:12px;margin:0 0 14px;">
+<p style="margin:0 0 4px;font-size:13px;font-weight:700;color:#a5b4fc;">👤 延伸解讀</p>
+<p style="margin:0;font-size:14px;color:#cbd5e1;">阿里雲的文章坦白寫道，第三方測試指出 DeepSeek Harness 執行時間長、token 用量高，「架構成熟度領先產品體驗」。可見好外殼和好模型一樣需要時間打磨，而評測框架本身也是同一家廠商推出的產品，讀數據時要記得這一點。🔗 <a href="https://www.alibabacloud.com/blog/deepseek-harness-evaluation-practice-based-on-alibaba-cloud-agentloop_603790" style="color:#06b6d4;">來源</a></p>
+</div>
+
+<p style="margin:0 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍限制與待驗證</p>
+<p style="margin:0 0 14px;">第一，<strong style="color:#a5b4fc">換了領域就未必有效</strong>：在 300 題的跨領域測試 AutomationBench 上，各 adapter 的差異多半落在誤差範圍內，Hermes 版甚至低於原模型（17.7% 對 23.0%）。第二，把三個外掛合併成「超級外掛」，在關閉思考模式時會流失部分專長；合併權重是在 Terminal-Bench 上挑的，作者也承認數字「略為樂觀」。第三，Hugging Face 沒有公布總訓練時數與金額。第四，阿里雲的評測只有 10 題、一個模型，比較適合用來說明方法，不足以當排名依據。</p>
+
+<p style="margin:0 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍重點一句話</p>
+<p style="margin:0;color:#ffffff;font-weight:700;">選 AI 不再只是選廚師，而是選「廚師加廚房」這一對。最可靠的成績，要在你自己的廚房裡量。</p>
+</div>
+</td></tr></table>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 衍生新聞 1 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 24px;">
+<span style="display:inline-block;background:#164e63;color:#a5f3fc;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin:10px 0 8px;">阿里雲 ACK One Fleet：agent 沙箱從單一叢集擴到跨叢集</div>
+<p style="margin:0 0 8px;font-size:15px;line-height:1.7;color:#cbd5e1;">阿里雲 11/20 推出跨叢集的 <strong style="color:#a5b4fc">Agent Sandbox</strong>：多個 Kubernetes 叢集和區域共用一個入口，每個任務跑在獨立的 MicroVM 裡，支援暫停／恢復與 checkpoint 複製，官方稱每分鐘最多可建立 15,000 個沙箱。和主軸的關係是：外殼不只是一段程式，它還包括「agent 在哪裡動手」這層執行環境。沙箱要是排不進去、冷啟動太慢，模型再聰明也只能等。</p>
+<p style="margin:0 0 8px;font-size:14px;color:#94a3b8;font-style:italic;">💡 重點一句話：外殼也包括執行環境，沙箱的容量和調度，直接決定 agent 跑起來順不順。</p>
+<p style="margin:0;font-size:13px;">🔗 <a href="https://www.alibabacloud.com/blog/ack-one-fleet-scaling-agent-sandboxes-from-single-cluster-to-multi-cluster_603797" style="color:#06b6d4;">閱讀原文</a>｜來源：Alibaba Cloud Blog</p>
+</td></tr>
+<tr><td style="height:12px;"></td></tr>
+
+<!-- 衍生新聞 2 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 24px;">
+<span style="display:inline-block;background:#164e63;color:#a5f3fc;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin:10px 0 8px;">Thinking Machines 發表 Inkling 2 Mini：26B 總參數、每個 token 只動用 3B</div>
+<p style="margin:0 0 8px;font-size:15px;line-height:1.7;color:#cbd5e1;">Thinking Machines Lab 11/20 和 Hugging Face 一起發表這款<strong style="color:#a5b4fc">為本地部署設計</strong>的多模態 MoE 模型。它採用「迴圈 Transformer」，部分層用同一組權重重複跑三次；支援 1M token 上下文，可以用 llama.cpp 和 MLX 執行。官方稱在 48 項評測中有 32 項領先同級模型，但也承認還需要更多驗證。和主軸的關係是：這類能放進自家機房的開放模型，正是可以替內部外殼量身訓練 adapter 的底座。</p>
+<p style="margin:0 0 8px;font-size:14px;color:#94a3b8;font-style:italic;">💡 重點一句話：開放、小巧、能在本地跑的模型，才讓「替自家流程練外掛」變得可行。</p>
+<p style="margin:0;font-size:13px;">🔗 <a href="https://huggingface.co/blog/inkling2mini" style="color:#06b6d4;">閱讀原文</a>｜來源：Hugging Face Blog</p>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 24px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:10px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:12px;"><strong style="color:#e2e8f0">Anthropic 數學家宣稱與 Claude 證明黎曼猜想（尚未證實）</strong>：Levent Alpöge 11/20 在個人網站貼出短文，稱和 Claude 合作證明了（廣義）黎曼猜想，證明以 Lean 程式碼形式發布；MIT 的 Andrew Sutherland 已獨立編譯成功，但同行還沒完成審查。重點在於，就算機器檢查通過，仍要有人確認寫進程式碼的命題確實等於原猜想。<br>🔗 <a href="https://alpo.ge/remark.pdf" style="color:#06b6d4;">作者原文</a>｜<a href="https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/" style="color:#06b6d4;">Scientific American 報導</a></li>
+<li style="margin-bottom:12px;"><strong style="color:#e2e8f0">🔄 後續追蹤：Anthropic IPO 完成交割</strong>：IPO 共賣出 11.27 億股（含承銷商全額行使的 1.47 億股超額配售），每股 83 美元，募得約 935 億美元；同步私募約 260 億美元，買方是 AMD、Broadcom、Google、Micron、Microsoft、NVIDIA 和 TSMC Partners，兩者合計約 1,195 億美元。晶片與記憶體廠一起入股模型公司，說明上下游的綁定越來越深。<br>🔗 <a href="https://www.anthropic.com/news/ipo-close" style="color:#06b6d4;">Anthropic 官方公告</a></li>
+<li style="margin-bottom:12px;"><strong style="color:#e2e8f0">GitHub Enterprise Server 3.23 RC：AI 密鑰偵測不用 GPU，離線也能跑</strong>：新的 AI 密鑰偵測（公開預覽）用微調模型在設備的 CPU 上找出非結構化的密鑰，不需要外連，也不需要雲端 LLM。另外 Dependabot 預設會等新版本發布三天後才發更新 PR。對網路隔離的晶圓廠和設計中心來說，這是少數能直接用上的 AI 安全功能。<br>🔗 <a href="https://github.blog/changelog/2026-11-20-github-enterprise-server-3-23-release-candidate" style="color:#06b6d4;">GitHub Changelog</a></li>
+<li style="margin-bottom:12px;"><strong style="color:#e2e8f0">ChatGPT dots 開始對 Plus 用戶小規模測試</strong>：OpenAI 的常駐型主動助理 dots 有自己的雲端電腦，可以透過外掛連接 4,000 多個應用、在背景持續處理任務；11/19 起開始對少數 Plus 用戶測試，並全面開放給 Business Standard。主動型 agent 正從高價方案往一般訂閱擴散，額度怎麼給目前還不清楚。<br>🔗 <a href="https://chatgpt.com/features/dots/" style="color:#06b6d4;">OpenAI 產品頁</a>｜<a href="https://9to5mac.com/2026/11/19/openai-begins-testing-dots-with-chatgpt-plus-users-expands-business-access" style="color:#06b6d4;">9to5Mac 報導</a></li>
+<li><strong style="color:#e2e8f0">阿里雲 Token Plan：一份訂閱用多家模型，首月 3 美元起</strong>：Model Studio 推出個人訂閱，一個 API、一張帳單，每月配發點數，Lite 方案首月 3 美元、可同時跑 1–2 個 agent，Pro 方案每月 43 美元、可跑 6–8 個。計價單位開始從「token 數」轉向「同時能跑幾個 agent」。<br>🔗 <a href="https://www.alibabacloud.com/blog/the-easiest-way-to-try-the-latest-models-in-one-place-token-plan-starting-at-%243-for-the-first-month_603799" style="color:#06b6d4;">Alibaba Cloud Blog</a></li>
+</ul>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 24px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:12px;">📖 今日概念｜LoRA（低秩適配，Low-Rank Adaptation）</div>
+<div style="font-size:15px;line-height:1.7;color:#cbd5e1;">
+<p style="margin:0 0 10px;"><strong style="color:#a5b4fc">定義：</strong>大模型的原始權重不動，旁邊加上兩個很小的矩陣，只訓練這兩個矩陣，就能讓模型學會新任務或新習慣。</p>
+<p style="margin:0 0 10px;"><strong style="color:#a5b4fc">生活化比喻：</strong>就像在一本厚厚的原文書上貼便利貼。書不用重印，換一疊便利貼就換一種讀法，不需要了也可以整疊撕掉。技術上，那疊便利貼就是低秩矩陣，參數量通常只有原模型的千分之一到百分之一，所以訓練和保存都很便宜，一個底座模型可以掛很多套 LoRA。</p>
+<p style="margin:0 0 10px;"><strong style="color:#a5b4fc">工作中的例子：</strong>同一顆開放模型，可以替「解讀 STA 報告」「改 UVM testbench」「整理良率週報」各練一套 LoRA，依任務切換，不必維護三顆完整模型。</p>
+<p style="margin:0 0 10px;"><strong style="color:#a5b4fc">常見誤解：</strong>「LoRA 會讓模型變聰明。」其實它比較像教模型適應某種格式、工具或流程，很難無中生有地加進大量新知識。換到不同領域，效果也可能消失，主軸裡 AutomationBench 的結果就是例子。</p>
+<p style="margin:0;"><strong style="color:#a5b4fc">與今天主軸的關係：</strong>Hugging Face 的 harness adapter 就是「用強化學習在外殼裡練出來的 LoRA」。正因為 LoRA 便宜又可以抽換，「一套外殼配一個外掛」才划算。</p>
+</div>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 半導體 AI 專區 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 24px;">
+<span style="display:inline-block;background:#064e3b;color:#6ee7b7;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">EDA 工具</span>
+<span style="display:inline-block;background:#3f3f46;color:#e4e4e7;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;margin-left:6px;">背景知識</span>
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin:12px 0 12px;">🏭 半導體 AI 專區｜IR Drop（電源壓降）的 ML 快速預測</div>
+<div style="font-size:15px;line-height:1.7;color:#cbd5e1;">
+<p style="margin:0 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍問題與流程位置</p>
+<p style="margin:0 0 12px;">晶片上的電要經過一張金屬網格（電源分配網路，PDN）送到每顆電晶體，沿路因為電阻會掉一點電壓，這就是 <strong style="color:#a5b4fc">IR drop</strong>。掉太多，電路就會變慢甚至出錯。它屬於實體設計後段的電源完整性簽核，問題在於精確分析要跑大規模的電路求解，大設計動輒數小時；每次 ECO 改完都要重跑，往往是 timing closure 尾聲的瓶頸。</p>
+<p style="margin:0 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍AI 如何介入</p>
+<p style="margin:0 0 12px;"><strong style="color:#e2e8f0">過去</strong>：改一次 power grid 或擺置，就排隊等一次完整模擬，工程師只能少改幾輪、多留裕度。<strong style="color:#e2e8f0">現在的研究方向</strong>：把功耗分布、PDN 結構、電流熱點轉成「影像」或「圖」，交給神經網路，幾秒內產出一張壓降熱圖，用來快速篩掉明顯不行的方案，只有最後候選才送精確工具簽核。CFIRSTNET 結合影像與 netlist 特徵、用客製化 CNN 預測靜態 IR drop，作者表示在 ICCAD 2023 CAD Contest 的 IR drop 題目上拿到最佳品質（ICCAD '24）。另一篇比較 XGBoost、CNN、GNN 的研究發現，GNN 的準確度最有潛力，速度也勝過商用工具。</p>
+<p style="margin:0 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍資料與產出</p>
+<p style="margin:0 0 12px;">輸入是電流／功耗圖、PDN 拓樸、電阻與擺置資訊，標註來自既有簽核工具的模擬結果；產出是逐區域的壓降熱圖與熱點清單。2026 年 5 月的 PhysEDA 加入「影響隨曼哈頓距離衰減」這個物理先驗，作者稱在 100×100 網格上推論加速 14 倍、記憶體省 98.5%。</p>
+<p style="margin:0 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍如何驗證</p>
+<p style="margin:0 0 12px;">用沒看過的設計測誤差與熱點命中率，特別要看最差點有沒有漏抓（漏報比誤報危險）；最終簽核仍由精確求解器負責。</p>
+<p style="margin:0 0 6px;font-size:13px;font-weight:700;color:#a5b4fc;">▍限制與風險</p>
+<p style="margin:0 0 12px;">多數成果建立在公開競賽資料上，換製程、換設計風格後準確度可能下滑；動態 IR drop 和向量相依性更難處理；論文數字無法直接推論到任何公司的量產流程。</p>
+<p style="margin:0 0 4px;font-size:13px;">🔗 <a href="https://arxiv.org/abs/2502.12168" style="color:#06b6d4;">CFIRSTNET（arXiv 2502.12168）</a>｜<a href="https://arxiv.org/abs/2502.05345" style="color:#06b6d4;">XGBoost/CNN/GNN 比較（arXiv 2502.05345）</a>｜<a href="https://arxiv.org/abs/2605.10547" style="color:#06b6d4;">PhysEDA（arXiv 2605.10547）</a></p>
+<p style="margin:12px 0 0;color:#67e8f9;font-weight:700;">👷 對半導體工作者的意義：實體設計和電源完整性工程師可以先把 ML 預測當成「ECO 前的快篩」，而不是簽核的替代品。最實際的第一步，是把過去專案的簽核結果整理成帶標註的資料集；同時呼應今天的主軸，用自家設計做驗證，別只信公開競賽分數。</p>
+</div>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:#1a1a1a;border-radius:13px;padding:22px 24px;">
+<div style="font-size:18px;font-weight:700;color:#ffffff;margin-bottom:10px;">🪞 反思時間</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:8px;">如果「模型加外殼」才是真正的比較單位，你們現在評估 AI 工具的方式裡，有哪一步其實默默假設了外殼不重要？</li>
+<li style="margin-bottom:8px;">在你負責的流程裡（驗證、實體設計、良率分析……），哪 20 個真實小任務最適合當內部題庫？要怎麼自動判斷「做對了」？</li>
+<li>當模型可以為特定外殼量身微調，團隊未來要守住的資產會更偏向模型、外殼，還是任務資料與評測題庫？為什麼？</li>
+</ul>
+<p style="margin:14px 0 0;color:#a5b4fc;font-weight:700;">🎒 今日帶走：模型不是在真空中工作。替它準備好的那間「廚房」，以及在廚房裡量出來的成績，才是你真正握在手上的競爭力。</p>
+</td></tr></table>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 歷史電子報 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:20px 24px;">
+<div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:6px;">📚 想回顧之前的內容？</div>
+<p style="margin:0 0 8px;font-size:14px;line-height:1.7;color:#cbd5e1;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+<p style="margin:0;font-size:14px;"><a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&amp;source=copy_link" style="color:#06b6d4;text-decoration:underline">查看歷史電子報</a></p>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- Footer -->
+<tr><td style="padding:10px 24px 24px;text-align:center;font-size:13px;line-height:1.8;color:#64748b;">
+<p style="margin:0 0 6px;">📬 分享給朋友：<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline">訂閱這份電子報</a></p>
+<p style="margin:0 0 6px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline">點此退訂（10 秒，下期生效）</a></p>
+<p style="margin:0;">© 2026 企鵝的 AI 每日電子報🐧 · 本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源</p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>
