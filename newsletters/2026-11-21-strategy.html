@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>【策略學習報】2026-11-21 — BTC × 美股大盤</title></head>
+<body style="margin:0;padding:0;background:#0f0f0f;font-family:-apple-system,'Segoe UI',Arial,sans-serif;font-size:15px;line-height:1.7;color:#d4d4d8">
+<div style="max-width:650px;margin:0 auto;padding:16px">
+
+<!-- Header -->
+<div style="background:linear-gradient(135deg,#f59e0b,#ef4444);border-radius:14px;padding:28px 24px;text-align:center">
+  <div style="font-size:13px;color:#fff7ed;letter-spacing:2px">企鵝的AI交易策略學習報</div>
+  <h1 style="margin:6px 0 4px;font-size:26px;color:#ffffff">BTC × 美股大盤 每日學習</h1>
+  <div style="font-size:15px;color:#fff7ed">2026-11-21（週六）｜今日課綱：順勢 vs 均值回歸：怎麼判斷現在是哪種市場</div>
+</div>
+
+<!-- Disclaimer banner -->
+<div style="margin:14px 0;padding:10px 14px;border:1px solid #f59e0b;border-radius:10px;background:#1a1a1a;color:#f59e0b;font-size:13px">
+⚠️ 本報為純學習用途，所有情境演練皆為教學假設，<strong>不構成任何投資建議</strong>。
+</div>
+
+<!-- Overview -->
+<div style="background:#1a1a1a;border-radius:12px;padding:18px 20px;margin-bottom:18px">
+  <h2 style="margin:0 0 8px;font-size:19px;color:#ffffff">⚡ 今日總覽</h2>
+  <ul style="margin:0;padding-left:20px">
+    <li>美股 11/20 重挫：S&amp;P 500 收 <strong style="color:#fbbf24;font-weight:700">6,910.39（-3.70%）</strong>、<strong style="color:#fbbf24;font-weight:700">連七黑</strong>並<strong style="color:#fbbf24;font-weight:700">正式進入修正</strong>（距 10/6 高點逾 10%）；Nasdaq 收 <strong style="color:#fbbf24;font-weight:700">22,617.73（-5.3%）</strong>，<strong style="color:#fbbf24;font-weight:700">今年轉為下跌</strong>。</li>
+    <li>VIX 收 <strong style="color:#fbbf24;font-weight:700">35.89</strong>、單週 <strong style="color:#fbbf24;font-weight:700">+86%</strong>，為 19 個月新高；費城半導體指數 <strong style="color:#fbbf24;font-weight:700">-10.7%</strong>、Nvidia <strong style="color:#fbbf24;font-weight:700">-13.8%</strong>。</li>
+    <li>BTC <strong style="color:#fbbf24;font-weight:700">跌破 $60K</strong>（7 月以來首次），Reuters 報約 <strong style="color:#fbbf24;font-weight:700">$59,381（-3.45%）</strong>，盤中低點約 <strong style="color:#fbbf24;font-weight:700">$57,716</strong>；24 小時清算約 <strong style="color:#fbbf24;font-weight:700">$11.5 億</strong>，現貨 ETF 11/19 流出 <strong style="color:#fbbf24;font-weight:700">$5.823 億</strong>。</li>
+    <li>📖 今日學習：<strong style="color:#fbbf24;font-weight:700">順勢 vs 均值回歸</strong>——兩個市場同時「超賣」，但超賣不等於該反彈，先判斷市場制度再選工具。</li>
+  </ul>
+</div>
+
+<!-- ═══ BTC ═══ -->
+<div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:18px">
+  <span style="display:inline-block;background:linear-gradient(135deg,#f59e0b,#ef4444);color:#fff;font-weight:700;font-size:14px;padding:5px 14px;border-radius:999px">₿ BTC 比特幣</span>
+
+  <h3 style="margin:16px 0 8px;font-size:17px;color:#ffffff">多時間區間趨勢</h3>
+  <table style="width:100%;border-collapse:collapse;font-size:13.5px;background:#252525;border-radius:8px">
+    <tr style="color:#a1a1aa;text-align:left">
+      <th style="padding:8px;border-bottom:1px solid #3f3f46">區間</th><th style="padding:8px;border-bottom:1px solid #3f3f46">當前價</th><th style="padding:8px;border-bottom:1px solid #3f3f46">變動%</th><th style="padding:8px;border-bottom:1px solid #3f3f46">趨勢方向</th><th style="padding:8px;border-bottom:1px solid #3f3f46">關鍵點位</th>
+    </tr>
+    <tr>
+      <td style="padding:8px;border-bottom:1px solid #333">日線</td><td style="padding:8px;border-bottom:1px solid #333">約 $59.4K</td><td style="padding:8px;border-bottom:1px solid #333;color:#f87171">-3.45%</td><td style="padding:8px;border-bottom:1px solid #333">↓ 跌破前低</td><td style="padding:8px;border-bottom:1px solid #333">撐 $58K／$57.7K；壓 $62K</td>
+    </tr>
+    <tr>
+      <td style="padding:8px;border-bottom:1px solid #333">週線</td><td style="padding:8px;border-bottom:1px solid #333">約 $59.4K</td><td style="padding:8px;border-bottom:1px solid #333;color:#f87171">7 日約 -13.8%</td><td style="padding:8px;border-bottom:1px solid #333">↓ 加速下跌</td><td style="padding:8px;border-bottom:1px solid #333">壓 $65K；200 週線約 $67.8K</td>
+    </tr>
+    <tr>
+      <td style="padding:8px">月線</td><td style="padding:8px">約 $59.4K</td><td style="padding:8px;color:#f87171">月比約 -30%</td><td style="padding:8px">↓ 空頭結構</td><td style="padding:8px">200 日線約 $73.1K（11/13 數據）</td>
+    </tr>
+  </table>
+  <p style="margin:12px 0 0">日線上，BTC 從 Fortune 11/20 早盤報價 <strong style="color:#fbbf24;font-weight:700">$61,321.59</strong> 一路<strong style="color:#fbbf24;font-weight:700">跌破 $60K</strong>，也跌破了 11/15 的週末低點 $62,006，價格明顯低於近 7 日均價。週線上 7 日跌約 <strong style="color:#fbbf24;font-weight:700">13.8%</strong>，已在 200 週均線（約 $67.8K，一條「四年景氣循環的平均成本線」）之下。月線上距 10 月高點約 <strong style="color:#fbbf24;font-weight:700">-50%</strong>，距 200 日線超過 <strong style="color:#fbbf24;font-weight:700">$13K</strong>——三個時間框架<strong style="color:#fbbf24;font-weight:700">全部同向轉弱</strong>。</p>
+
+  <h3 style="margin:18px 0 8px;font-size:17px;color:#ffffff">四策略視角</h3>
+  <ul style="margin:0;padding-left:20px">
+    <li><strong style="color:#e2e8f0">順勢：</strong>日、週、月<strong style="color:#fbbf24;font-weight:700">三框架同向向下</strong>，順勢者關心的是反彈到 $62K 前低是否「由撐轉壓」。</li>
+    <li><strong style="color:#e2e8f0">均值回歸：</strong>乖離已極大，但在強趨勢中「超賣可以更超賣」；需等波動收斂、連續破底停止再談回歸。</li>
+    <li><strong style="color:#e2e8f0">突破：</strong>向下<strong style="color:#fbbf24;font-weight:700">有效跌破 $62,006</strong>；若快速收回 $62K 上方，才要懷疑是假跌破。</li>
+    <li><strong style="color:#e2e8f0">宏觀：</strong>ETF 連日流出、Polymarket 顯示 12/9 前再升息機率約 <strong style="color:#fbbf24;font-weight:700">94%</strong>，加上美股 AI 拋售，風險資產同步承壓。</li>
+  </ul>
+
+  <h3 style="margin:18px 0 8px;font-size:17px;color:#ffffff">加密圈新聞</h3>
+  <div style="background:#252525;border-radius:8px;padding:12px 14px;margin-bottom:8px">
+    <strong style="color:#ffffff">BTC 跌破 $60,000 引發連環清算</strong><br>
+    CoinGlass 數據顯示 24 小時清算約 <strong style="color:#fbbf24;font-weight:700">$11.5 億</strong>，其中多單約 <strong style="color:#fbbf24;font-weight:700">$10.2 億</strong>、波及約 22.5 萬名交易者；BTC 單一幣種清算約 $3.4 億。<br>
+    <a href="https://www.cointribune.com/en/bitcoin-collapses-below-60000-and-causes-a-cascade-of-liquidations" style="color:#60a5fa">🔗 Cointribune</a>
+  </div>
+  <div style="background:#252525;border-radius:8px;padding:12px 14px">
+    <strong style="color:#ffffff">現貨 BTC ETF 11/19 流出 $5.823 億，IBIT 占 $5.411 億</strong><br>
+    流出規模較 11/18 的 $3.065 億擴大，11 月累計流出約 <strong style="color:#fbbf24;font-weight:700">$34.7 億</strong>；市場關注下週一資料是否再出現 $5 億級流出。<br>
+    <a href="https://startupfortune.com/bitcoin-falls-below-60000-as-the-nasdaqs-ai-selloff-drags-crypto-down" style="color:#60a5fa">🔗 Startup Fortune（引 Reuters／Cointelegraph）</a>
+  </div>
+
+  <div style="margin-top:16px;background:#252525;border-left:3px solid #f59e0b;border-radius:6px;padding:12px 16px">
+    <div style="font-weight:700;color:#f59e0b;margin-bottom:6px">📌 學習重點</div>
+    <ul style="margin:0;padding-left:20px">
+      <li><strong style="color:#e2e8f0">三框架同向</strong>時，逆勢單的勝率與賠率都會被壓縮。</li>
+      <li><strong style="color:#e2e8f0">前低被跌破</strong>後，原本的支撐常變成反彈壓力。</li>
+      <li><strong style="color:#e2e8f0">清算潮</strong>是槓桿被迫出場，不代表賣壓已經結束。</li>
+      <li>週末流動性薄，<strong style="color:#e2e8f0">部位大小</strong>要先承受得起插針。</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══ US ═══ -->
+<div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:18px">
+  <span style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);color:#fff;font-weight:700;font-size:14px;padding:5px 14px;border-radius:999px">🇺🇸 美股大盤</span>
+
+  <h3 style="margin:16px 0 8px;font-size:17px;color:#ffffff">多時間區間趨勢</h3>
+  <table style="width:100%;border-collapse:collapse;font-size:13.5px;background:#252525;border-radius:8px">
+    <tr style="color:#a1a1aa;text-align:left">
+      <th style="padding:8px;border-bottom:1px solid #3f3f46">指標／區間</th><th style="padding:8px;border-bottom:1px solid #3f3f46">當前</th><th style="padding:8px;border-bottom:1px solid #3f3f46">變動%</th><th style="padding:8px;border-bottom:1px solid #3f3f46">趨勢</th><th style="padding:8px;border-bottom:1px solid #3f3f46">關鍵點位</th>
+    </tr>
+    <tr><td style="padding:8px;border-bottom:1px solid #333">S&amp;P 500 日</td><td style="padding:8px;border-bottom:1px solid #333">6,910.39</td><td style="padding:8px;border-bottom:1px solid #333;color:#f87171">-3.70%</td><td style="padding:8px;border-bottom:1px solid #333">↓ 連七黑</td><td style="padding:8px;border-bottom:1px solid #333">撐 6,900／6,800；壓 7,000</td></tr>
+    <tr><td style="padding:8px;border-bottom:1px solid #333">S&amp;P 500 週</td><td style="padding:8px;border-bottom:1px solid #333">6,910.39</td><td style="padding:8px;border-bottom:1px solid #333;color:#f87171">-8.6%</td><td style="padding:8px;border-bottom:1px solid #333">↓ 2025/4 以來最差週</td><td style="padding:8px;border-bottom:1px solid #333">壓 7,175（11/19 收盤）</td></tr>
+    <tr><td style="padding:8px;border-bottom:1px solid #333">S&amp;P 500 月</td><td style="padding:8px;border-bottom:1px solid #333">6,910.39</td><td style="padding:8px;border-bottom:1px solid #333;color:#f87171">11 月以來約 -8.8%</td><td style="padding:8px;border-bottom:1px solid #333">↓ 跌破 200 日線</td><td style="padding:8px;border-bottom:1px solid #333">200 日線約 7,345</td></tr>
+    <tr><td style="padding:8px;border-bottom:1px solid #333">Nasdaq 日／週</td><td style="padding:8px;border-bottom:1px solid #333">22,617.73</td><td style="padding:8px;border-bottom:1px solid #333;color:#f87171">-5.3%／-10%</td><td style="padding:8px;border-bottom:1px solid #333">↓ 年初至今 -2.7%</td><td style="padding:8px;border-bottom:1px solid #333">撐 22,000；壓 23,879</td></tr>
+    <tr><td style="padding:8px">VIX</td><td style="padding:8px">35.89</td><td style="padding:8px;color:#f87171">週 +86%</td><td style="padding:8px">↑ 19 個月新高</td><td style="padding:8px">盤中一度近 40；30 為警戒線</td></tr>
+  </table>
+  <p style="margin:8px 0 0;font-size:12.5px;color:#a1a1aa">註：今日未取得 SPY／QQQ ETF 個別報價，以其追蹤的 S&amp;P 500 與 Nasdaq 指數代替；11 月變動以 10/30 收盤（S&amp;P 7,580.07、Nasdaq 25,437）計算。</p>
+
+  <p style="margin:12px 0 0"><strong style="color:#e2e8f0">S&amp;P 500（SPY）：</strong>11/17 才首度<strong style="color:#fbbf24;font-weight:700">跌破 200 日均線</strong>（約 7,345，可想成「過去 10 個月的平均成本」），三個交易日後已落在均線下方約 <strong style="color:#fbbf24;font-weight:700">5.9%</strong>；週跌 <strong style="color:#fbbf24;font-weight:700">8.6%</strong>，日、週、月全部向下。</p>
+  <p style="margin:10px 0 0"><strong style="color:#e2e8f0">Nasdaq（QQQ）：</strong>單日 <strong style="color:#fbbf24;font-weight:700">-5.3%</strong>、單週 <strong style="color:#fbbf24;font-weight:700">-10%</strong>，年初至今<strong style="color:#fbbf24;font-weight:700">轉為 -2.7%</strong>。半導體是重災區：Nvidia -13.8%、Micron -13.9%、AMD -13.3%、Broadcom -12.1%；Anthropic 收 $88.30（-9.1%），仍高於 $83 承銷價。</p>
+  <p style="margin:10px 0 0"><strong style="color:#e2e8f0">VIX：</strong>收 <strong style="color:#fbbf24;font-weight:700">35.89</strong>。VIX 是「市場替未來 30 天買保險的價格」，超過 30 代表保費大漲、日內大幅震盪會變常態。同時 10 年期殖利率由 5.04% <strong style="color:#fbbf24;font-weight:700">降至 4.93%</strong>，資金轉向債市避險。</p>
+
+  <h3 style="margin:18px 0 8px;font-size:17px;color:#ffffff">四策略視角</h3>
+  <ul style="margin:0;padding-left:20px">
+    <li><strong style="color:#e2e8f0">順勢：</strong>指數在 20／50／100／200 日線<strong style="color:#fbbf24;font-weight:700">全部之下</strong>，趨勢訊號明確偏空。</li>
+    <li><strong style="color:#e2e8f0">均值回歸：</strong>連七黑＋VIX 逾 35 是極端值，但高波動下反彈與再跌的幅度都會放大。</li>
+    <li><strong style="color:#e2e8f0">突破：</strong>若 S&amp;P 收復 7,000 整數關卡並站穩，才算出現「假跌破」的線索。</li>
+    <li><strong style="color:#e2e8f0">宏觀：</strong>AI 資本支出回報疑慮＋升息預期，殖利率回落顯示避險需求升溫。</li>
+  </ul>
+
+  <h3 style="margin:18px 0 8px;font-size:17px;color:#ffffff">美股新聞</h3>
+  <div style="background:#252525;border-radius:8px;padding:12px 14px;margin-bottom:8px">
+    <strong style="color:#ffffff">S&amp;P 500 進入修正、Nasdaq 年內翻黑，費半單日 -10.7%</strong><br>
+    AI 估值與資本支出疑慮擴大，加上 Nvidia 黃仁勳離任後的不確定性；Baird 策略師認為市場在定價「AI 支出到頂」，但不認為 2022 年 10 月以來的多頭已結束。<br>
+    <a href="https://www.bnnbloomberg.ca/markets/2026/11/20/us-stocks-tumble-and-the-sp-500-drops-as-the-sell-off-for-ai-stocks-accelerates/" style="color:#60a5fa">🔗 BNN Bloomberg（AP）</a>
+  </div>
+  <div style="background:#252525;border-radius:8px;padding:12px 14px">
+    <strong style="color:#ffffff">恐慌指數 VIX 收 35.89，單週大漲 86%</strong><br>
+    盤中一度接近 40，為 2025 年 4 月以來最高；日經、KOSPI 前一晚皆跌逾 5%，AI 晶片股拋售擴散全球。<br>
+    <a href="https://cnn.com/2026/11/20/investing/us-stocks-anthropic-ai" style="color:#60a5fa">🔗 CNN</a>
+  </div>
+
+  <div style="margin-top:16px;background:#252525;border-left:3px solid #6366f1;border-radius:6px;padding:12px 16px">
+    <div style="font-weight:700;color:#818cf8;margin-bottom:6px">📌 學習重點</div>
+    <ul style="margin:0;padding-left:20px">
+      <li><strong style="color:#e2e8f0">200 日線</strong>失守後的頭幾天，常是波動最大的時段。</li>
+      <li><strong style="color:#e2e8f0">VIX &gt; 30</strong> 時，同樣停損距離要配更小的部位。</li>
+      <li><strong style="color:#e2e8f0">產業集中</strong>的跌勢，指數跌 3.7% 個股可能跌 13%。</li>
+      <li><strong style="color:#e2e8f0">殖利率下跌</strong>是避險訊號，不等於股市馬上止跌。</li>
+    </ul>
+  </div>
+</div>
+
+<!-- ═══ Strategy Learning ═══ -->
+<div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:18px">
+  <span style="display:inline-block;background:linear-gradient(135deg,#8b5cf6,#6366f1);color:#fff;font-weight:700;font-size:14px;padding:5px 14px;border-radius:999px">📖 今日策略學習</span>
+  <h3 style="margin:14px 0 6px;font-size:18px;color:#ffffff">順勢 vs 均值回歸：怎麼判斷現在是哪種市場</h3>
+  <p style="margin:0"><strong style="color:#e2e8f0">為什麼今天學這個：</strong>BTC 與 S&amp;P 500 同時出現「看起來很超賣」的畫面，最容易誘發「跌這麼多該反彈了」的念頭。但「超賣」只在<strong style="color:#fbbf24;font-weight:700">均值回歸市場</strong>裡有意義；在<strong style="color:#fbbf24;font-weight:700">順勢市場</strong>裡，超賣往往是趨勢強的證據。先分類，再選工具。</p>
+
+  <h4 style="margin:14px 0 6px;font-size:15px;color:#c4b5fd">核心概念</h4>
+  <ul style="margin:0;padding-left:20px">
+    <li><strong style="color:#e2e8f0">效率比（ER）</strong>＝淨位移 ÷ 每日漲跌絕對值總和，越近 1 越像趨勢。</li>
+    <li><strong style="color:#e2e8f0">變異數比（VR）</strong>&gt; 1 偏趨勢、&lt; 1 偏回歸；Hurst 指數以 0.5 為界。</li>
+    <li>多數商品多數時候<strong style="color:#e2e8f0">接近隨機漫步</strong>，制度判斷要保留「看不出來」選項。</li>
+    <li>研究發現趨勢多存在<strong style="color:#e2e8f0">數小時到數年</strong>尺度，更短或更長則偏向回歸。</li>
+  </ul>
+  <p style="margin:8px 0 0;font-size:13px;color:#a1a1aa">補充：VR、ER 的閱讀規則來自社群指標說明，屬經驗法則；趨勢時間尺度出自 Schmidhuber 的期貨研究（<a href="https://arxiv.org/pdf/2501.16772v2" style="color:#60a5fa">arXiv 2501.16772</a>）。</p>
+
+  <div style="margin-top:14px;background:#252525;border-left:3px solid #8b5cf6;border-radius:6px;padding:14px 16px">
+    <div style="font-weight:700;color:#c4b5fd;margin-bottom:6px">🎯 情境演練：用今天的真實點位算一次效率比</div>
+    <p style="margin:0 0 8px"><strong style="color:#e2e8f0">BTC（Fortune 每日早盤報價）：</strong>11/17 $65,017 → 11/18 $64,146 → 11/19 $63,748 → 11/20 $61,322。三天每天都跌，淨位移 <strong style="color:#fbbf24;font-weight:700">-$3,695</strong>、路徑總長也是 $3,695，<strong style="color:#fbbf24;font-weight:700">ER = 1.0</strong>——教科書級的單向趨勢。</p>
+    <p style="margin:0 0 8px"><strong style="color:#e2e8f0">S&amp;P 500 收盤：</strong>11/18 7,323.63 → 11/19 7,175.83 → 11/20 6,910.39，同樣<strong style="color:#fbbf24;font-weight:700">ER = 1.0</strong>。</p>
+    <p style="margin:0 0 8px"><strong style="color:#e2e8f0">推演：</strong>在 ER 接近 1 的環境，「BTC 跌到 $58K 就是超賣、可以接」屬於拿均值回歸工具打趨勢市場。比較一致的寫法是：「若 BTC 接下來 5–10 天在 $58K–$62K 區間來回、ER 降到 0.3 以下，市場才轉為均值回歸制度，屆時區間下緣附近的超賣訊號才有參考價值。」</p>
+    <p style="margin:0"><strong style="color:#e2e8f0">順勢版本：</strong>「若 BTC 反彈至 $62K 前低附近卻無法收復，對順勢系統而言是趨勢延續的觀察點。」兩種劇本都先寫好，行情來時只核對屬於哪一種。</p>
+  </div>
+
+  <div style="margin-top:14px;background:#252525;border-radius:8px;padding:14px 16px">
+    <div style="font-weight:700;color:#c4b5fd;margin-bottom:6px">🔬 今日研究速讀</div>
+    <p style="margin:0"><strong style="color:#e2e8f0">Trading Before a Committed Rebalance</strong>（Khizar Qureshi，arXiv 2611.25762，11/20）：大型機構必須執行一筆已知的再平衡時，其他交易者會提前布局。論文發現：參與者固定時，更準的預測能降低機構成本；但若交易者可自由選擇是否進場，<strong style="color:#fbbf24;font-weight:700">公開更多資訊有時反而推高成本</strong>，因為會吸引更多人搶跑。白話啟示：當 ETF 大額流出這類「人人都看得到的資金流」成為頭條，價格可能早已提前反映。</p>
+    <p style="margin:8px 0 0"><a href="https://arxiv.org/abs/2611.25762" style="color:#60a5fa">🔗 arXiv 原文</a></p>
+  </div>
+</div>
+
+<!-- ═══ Discipline ═══ -->
+<div style="background:#1a1a1a;border-radius:12px;padding:20px;margin-bottom:18px">
+  <span style="display:inline-block;background:linear-gradient(135deg,#10b981,#06b6d4);color:#fff;font-weight:700;font-size:14px;padding:5px 14px;border-radius:999px">🧭 今日交易紀律提醒｜週六・復盤方法</span>
+  <blockquote style="margin:14px 0 10px;padding:10px 16px;border-left:3px solid #10b981;background:#252525;color:#ffffff;font-size:16px">「復盤先替這一週貼標籤——趨勢市還是震盪市；再檢查每筆單用的工具，有沒有對上那張標籤。」</blockquote>
+  <p style="margin:0"><strong style="color:#e2e8f0">應用情境：</strong>這週 BTC 與 S&amp;P 500 都是 <strong style="color:#fbbf24;font-weight:700">ER≈1</strong> 的單向市場。翻開本週日誌，把每筆單分成「順勢工具」與「回歸工具」兩欄：若虧損集中在「跌深接刀」那一欄，問題不在停損設太近，而在<strong style="color:#fbbf24;font-weight:700">工具與市場制度錯配</strong>。下週規則可以加一行：ER 高於門檻時，回歸型訊號一律不執行。</p>
+</div>
+
+<!-- Reflection -->
+<div style="background:linear-gradient(135deg,#10b981,#06b6d4);padding:1px;border-radius:12px;margin-bottom:18px">
+  <div style="background:#1a1a1a;border-radius:11px;padding:18px">
+    <h2 style="margin:0 0 8px;font-size:19px;color:#ffffff">💭 今日反思</h2>
+    <ul style="margin:0;padding-left:20px">
+      <li>這週我有沒有因為「跌很多了」而想進場？當時我判斷的是市場制度，還是只看了跌幅？</li>
+      <li>我的系統裡，有沒有一條明確規則告訴我「現在是趨勢市，不准用回歸工具」？</li>
+      <li>VIX 35.89 的環境下，我的部位大小有沒有跟著波動率縮小？</li>
+    </ul>
+    <p style="margin:12px 0 0;font-size:12.5px;color:#a1a1aa">挑一題寫進交易日誌，這就是今天的功課。</p>
+  </div>
+</div>
+
+<!-- Data cutoff -->
+<div style="background:#1a1a1a;border-radius:12px;padding:14px 18px;margin-bottom:18px;font-size:12.5px;color:#a1a1aa">
+  <strong style="color:#d4d4d8">資料截止（台北時間 2026-11-21）：</strong>美股收盤 11/20（AP／BNN Bloomberg、CNN）；BTC：Fortune 11/20 07:15 ET $61,321.59、Reuters 11/20 盤中 $59,381、Bloomberg 盤中低點 $57,716（經 Startup Fortune／搜尋摘要）；清算：CoinGlass（Cointribune）；ETF 流量 11/19（Startup Fortune）；200 日線：S&amp;P 約 7,345（11/17 報導）、BTC 約 $73.1K（11/13 報導）；Fed 升息機率：Polymarket。週末 BTC 價格可能已有變動。
+</div>
+
+<!-- Footer -->
+<div style="text-align:center;font-size:12px;color:#71717a;padding:10px 6px 24px;line-height:1.6">
+  免責聲明：本電子報內容僅供個人學習與研究，所有點位與情境演練皆為教學示範，不構成任何投資建議、要約或招攬。加密貨幣與股票交易具高度風險，可能損失全部本金，請自行判斷並承擔風險。<br>
+  本報為 Darren 的個人學習報｜本信件由 AI 自動生成
+</div>
+
+</div>
+</body>
+</html>
