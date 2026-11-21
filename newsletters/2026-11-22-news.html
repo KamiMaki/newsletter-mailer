@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的 AI 每日電子報🐧 2026-11-22</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0f0f0f;">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:650px;width:100%;">
+
+<!-- Header -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;">
+<tr><td style="padding:28px 24px;text-align:center;">
+<div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px;color:#e0f2fe;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#ffffff;margin-top:10px;opacity:0.9;">2026-11-22（週日）</div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 30 秒重點 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">⚡ 30 秒重點</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:8px;"><strong style="color:#ffffff;">今日主軸：agent 要上線，難的不再是「會不會做」，而是「它代表誰、拿誰的權限」。</strong>Google 一天連發三篇工程文，把 agent 的身分拆成三層授權、兩道驗證關卡，外加一台跨雲監視器。</li>
+<li style="margin-bottom:8px;">阿里雲用「一個閘道、一把金鑰、資料列級權限放進資料庫」收斂 agent 的資料存取；GitHub 把安全公告權限細分成四種、可逐個 repo 授予。共同方向：<strong style="color:#a5b4fc;">權限切得更細，而且跟著「人」走</strong>。</li>
+<li style="margin-bottom:8px;">驗證圈兩篇新論文提醒大家要保持謙虛：最強的 UVM 驗證 agent 在端到端基準上只有 <strong style="color:#a5b4fc;">21.05%</strong> 成功率；另一篇用 LLM 交叉檢查，抓出 41 個「scoreboard 漏看、測試照樣過」的 bug。</li>
+<li style="margin-bottom:8px;">阿里雲 PolarDB-X 把 RAG 的六個元件收進一個資料庫；Vercel Functions 請求上限從 4.5MB 拉到 20MiB。</li>
+<li>對半導體人最相關的是：agent 只要碰到 MES、良率資料庫、客戶 IP，「拿誰的身分去查」就決定了它會不會看到不該看的資料。這得在導入前就設計好，不能等出事再補。</li>
+</ul>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:13px;">
+<tr><td style="padding:24px 22px;">
+<span style="display:inline-block;background:#252525;color:#a5b4fc;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">🎯 今天的主軸</span>
+<div style="font-size:19px;font-weight:800;color:#ffffff;margin:12px 0 4px 0;line-height:1.5;">Agent 的上線考題換了：不是「它會不會做」，而是「它代表誰、能開哪幾扇門」</div>
+
+<p style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px 0;">▍共同變化</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0;">想像你請了一位代辦員，幫你跑銀行、郵局和公司檔案室。他能力再好，真正讓你睡不著的問題是：<strong style="color:#a5b4fc">他手上拿的是誰的授權書？每扇門都用同一張萬能卡，還是到哪扇門才拿哪把鑰匙？</strong>過去 48 小時，Google、阿里雲、GitHub 不約而同在處理同一件事：把 agent 的「授權書」從一張萬能卡，拆成跟著「使用者本人」走、按工具逐一發放、而且全程有人看的權限管線。</p>
+
+<p style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px 0;">▍為什麼放在一起看</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0;">11/20 這天，Google 前線部署工程師 Neeraj Agrawal 連發兩篇實作文。第一篇講企業自己做 agent 介面、直接呼叫 Gemini Enterprise 的 StreamAssist API 時，<strong style="color:#a5b4fc">必須自己扛起三層認證</strong>：<br>① <strong style="color:#a5b4fc">誰在問</strong>：員工用 Google 帳號，或用 Entra ID／Okta 登入後，到 Google STS 換一張短效 token；只有不分人的後台機器人，才用工作負載身分。<br>② <strong style="color:#a5b4fc">連接器授權</strong>：每位員工對 Drive、SharePoint、Jira 各授權一次，refresh token 存在託管的 Keystore。<br>③ <strong style="color:#a5b4fc">逐工具授權</strong>：自訂 ADK agent 的受保護工具被呼叫時，才跳出同意視窗。<br>第二篇講把企業內網的 MCP 伺服器接給 agent：每次工具呼叫要過<strong style="color:#a5b4fc">兩道身分檢查</strong>，一個 header 驗「是不是 Gemini Enterprise 這個服務在叫」，另一個 header 帶「使用者本人的 OAuth token」。<br>同一天，阿里雲用「一個閘道、一把 API 金鑰、資料列級安全（RLS）寫在資料庫裡」收斂 agent 的資料存取。三篇放在一起看，答案都是：<strong style="color:#a5b4fc">服務身分和使用者身分要分開，兩個都要驗。</strong></p>
+<p style="font-size:13px;margin:8px 0 0 0;">🔗 <a href="https://developers.googleblog.com/how-to-handle-user-connector-and-agent-auth-in-gemini-enterprise-with-a-custom-ui/" style="color:#06b6d4;">Google Developers Blog：自訂 UI 的三層認證</a>　🔗 <a href="https://developers.googleblog.com/how-to-securely-connect-internal-cloud-run-mcp-servers-to-gemini-enterprise/" style="color:#06b6d4;">Google Developers Blog：私有 MCP 伺服器連線</a>　🔗 <a href="https://www.alibabacloud.com/blog/with-postgresql-firmly-in-place-as-the-data-foundation-what-else-do-agents-need-to-truly-run_603796" style="color:#06b6d4;">Alibaba Cloud Blog</a></p>
+
+<p style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px 0;">▍過去 vs. 現在</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0;"><strong style="color:#a5b4fc">過去</strong>：做聊天機器人最省事的做法，是開一個服務帳號，給它讀全部資料的權限，誰來問都用它去查。<strong style="color:#a5b4fc">現在</strong>：Google 的文章直接點名這是錯誤用法。如果拿「工作負載身分」去處理個人化資料，系統會把所有請求都當成同一個身分，<strong style="color:#a5b4fc">逐人的文件存取控制（ACL）就整個失效</strong>，實習生問得到只有處長能看的檔案。反方向的錯誤也被點出來：把 OAuth 設在 agent 根層，使用者在問任何問題前，就得先把所有連接系統登入一輪。正解是「用到哪個工具，才拿那把鑰匙」。</p>
+
+<p style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px 0;">▍背後邏輯</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0;">回到代辦員的比喻：門禁卡證明「這人是物業派來的」，對應服務身分；住戶簽的授權書證明「他代表 302 室」，對應使用者 token。兩張缺一張，門都不該開。技術上，這就是 <strong style="color:#a5b4fc">委派授權（delegated authorization）</strong>：agent 不擁有權限，它只是暫時借用使用者的權限，而且只借到這次任務需要的範圍。Google 的私有 MCP 做法把這件事落實到 header 層級：<code style="color:#67e8f9;">X-Serverless-Authorization</code> 由 Cloud Run IAM 驗完就剝掉，<code style="color:#67e8f9;">Authorization: Bearer</code> 則交給 MCP 應用自己驗。網路也一起收緊：DNS 只覆寫該 MCP 服務的精確主機名稱。文中提醒，若覆寫整個 <code style="color:#67e8f9;">*.run.app</code>，可能劫持同一共享 VPC 內其他服務的名稱解析。<em style="color:#94a3b8;">（編輯分析）</em>商業邏輯很直白：企業採購 agent 的最後一關不是準確率，而是資安稽核。誰能把權限管線講清楚，誰就能過關。</p>
+
+<p style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px 0;">▍對你的工作</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0;">如果你在 IT／數位轉型單位規劃內部 agent，例如查 MES 批次紀錄、良率報表、設計文件庫，<strong style="color:#a5b4fc">第一份設計文件該寫的是身分流，不是 prompt</strong>：哪些查詢必須帶工程師本人的身分？哪些只是不分人的公開查詢？跨客戶的產品資料靠什麼隔開？<em style="color:#94a3b8;">（編輯分析）</em>在晶圓廠與 IC 設計公司，「同一個資料庫裡放著 A 客戶和 B 客戶的產品」是常態。用共用服務帳號去查，等於讓 agent 成為繞過 need-to-know 原則的後門。</p>
+
+<p style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px 0;">▍限制與待驗證</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0;">這三篇都是<strong style="color:#a5b4fc">廠商教學與架構文</strong>，綁定各自的產品（Gemini Enterprise、Agent Gateway、阿里雲 RDS），換平台就要重做。Google 私有 MCP 那篇沒有談效能、成本與故障處理；阿里雲提到的 AGE 圖查詢「100 倍」是廠商自報，沒有獨立驗證。更根本的問題還沒解：<strong style="color:#a5b4fc">委派授權只保證 agent「不會越權」，不保證它「在權限內不亂來」</strong>。後者得靠下一節的行為監測，而那還在私人預覽階段。</p>
+
+<div style="background:#252525;border-radius:8px;padding:12px;margin-top:16px;">
+<div style="font-size:12px;font-weight:700;color:#a5b4fc;margin-bottom:4px;">👤 人物觀點／延伸解讀</div>
+<div style="font-size:14px;line-height:1.7;color:#cbd5e1;">Google 前線部署工程師 Neeraj Agrawal 在文中點出分水嶺：只要應用程式改用自訂介面、直接呼叫 StreamAssist API，原本內建網頁幫你做好的登入、ACL 與連接器授權，責任就轉到客戶自己的前後端身上。<em style="color:#94a3b8;">（延伸解讀：「自己做介面」的隱藏成本，就是自己扛身分。）</em></div>
+</div>
+
+<p style="font-size:13px;font-weight:700;color:#a5b4fc;margin:18px 0 6px 0;">▍重點一句話</p>
+<p style="font-size:15px;line-height:1.7;color:#ffffff;font-weight:700;margin:0;">agent 不該有自己的萬能卡。它該拿著「你」的授權書，到哪扇門才拿哪把鑰匙，而且門口要有人看。</p>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 衍生新聞 1 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<span style="display:inline-block;background:#252525;color:#67e8f9;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin:10px 0 8px 0;">Google Agent Anomaly Detection 跨雲監看：AWS Lambda、Microsoft Foundry 上的 agent 也能看</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0;">11/20 宣布，<strong style="color:#a5b4fc">私人預覽</strong>中的 Agent Anomaly Detection 支援範圍擴大到 <strong style="color:#a5b4fc">AWS Lambda 與 Microsoft Foundry</strong>。agent 透過 OpenTelemetry 把追蹤與日誌送進 Telemetry API，系統再偵測行為漂移、迴圈連鎖失敗、token／工具呼叫失控、工具濫用與<strong style="color:#a5b4fc">身分／權限濫用</strong>。官方測試中，Foundry 客服 agent 的 4 個越權 session（含未授權退款）全數被標記，2 個正常 session 沒有誤報。限制是目前只支援 Python 版 ADK。和主軸的關係：委派授權管的是「能不能進門」，這個工具管的是「進門後在做什麼」。</p>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:10px 0 0 0;">💡 重點一句話：權限是事前的鎖，行為監測是事後的監視器，兩者都要有。</p>
+<p style="font-size:13px;margin:8px 0 0 0;">🔗 <a href="https://developers.googleblog.com/agent-anomaly-detection-safeguarding-agents-across-other-clouds/" style="color:#06b6d4;">閱讀原文</a>｜來源：Google Developers Blog</p>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 衍生新聞 2 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<span style="display:inline-block;background:#252525;color:#67e8f9;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin:10px 0 8px 0;">阿里雲「一個閘道、一個資料庫」：agent 只拿一把金鑰，權限寫在資料列上</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0;">11/20 的架構文主張：agent 需要資料介面、知識庫和執行沙箱，若分成多套服務，就會有多套認證、SDK 和憑證要管。解法是以一個 RDS PostgreSQL 為核心，前面放<strong style="color:#a5b4fc">單一 Kong 閘道、單一 API 金鑰</strong>，由 Supabase 依資料表自動產生 API，並用<strong style="color:#a5b4fc">資料列級安全（RLS）</strong>在資料庫內強制隔離，全部跑在客戶 VPC 內，資料庫不開公網端點。和主軸的關係：把「誰能看哪幾列」交給資料庫判斷，而不是信任 agent 自己守規矩。</p>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:10px 0 0 0;">💡 重點一句話：權限離資料越近，agent 越難繞過去。</p>
+<p style="font-size:13px;margin:8px 0 0 0;">🔗 <a href="https://www.alibabacloud.com/blog/with-postgresql-firmly-in-place-as-the-data-foundation-what-else-do-agents-need-to-truly-run_603796" style="color:#06b6d4;">閱讀原文</a>｜來源：Alibaba Cloud Blog</p>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 衍生新聞 3 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<span style="display:inline-block;background:#252525;color:#67e8f9;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin:10px 0 8px 0;">GitHub 安全公告權限正式上線：不必當 repo 管理員，也能處理漏洞通報</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0;">11/20 正式推出（GA）。組織擁有者可在自訂 repository 角色中，授予<strong style="color:#a5b4fc">四種細分權限</strong>：檢視公告；建立、編輯與管理公告；接受私下漏洞通報並關閉或重開公告；發布公告與申請 CVE。過去處理這些事得是 repo 管理員或全組織的安全管理者，現在可以逐個 repo 交給負責團隊。不過合併臨時私有分支仍須管理員出手。和主軸的關係：同一股「最小權限、按職責切」的潮流，也正在吹向人類的協作權限。</p>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:10px 0 0 0;">💡 重點一句話：權限從「全有或全無」變成「做這件事剛好夠用」。</p>
+<p style="font-size:13px;margin:8px 0 0 0;">🔗 <a href="https://github.blog/changelog/2026-11-20-security-advisory-permissions-are-now-generally-available" style="color:#06b6d4;">閱讀原文</a>｜來源：GitHub Changelog</p>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0;">DVBench：端到端 UVM 驗證 agent 基準。</strong>95 道題、9 個功能領域、5 個難度，要求 agent 從功能清單、測試計畫做到測試平台，並以編譯、覆蓋率與抓 bug 評分；最佳組合 Codex＋GPT-6 Astra 成功率只有 21.05%（arXiv 11/20 上架）。這提醒驗證主管：agent 現在適合當助手，還不能直接接手整條驗證流程。🔗 <a href="https://arxiv.org/abs/2611.25066" style="color:#06b6d4;">arXiv 2611.25066</a></li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0;">Verify the Verifier：用 LLM 揪出 scoreboard 漏看的 bug。</strong>研究者在 4 個 OpenTitan IP 中植入 564 個 bug，其中 68 個「被測試執行到、卻照樣通過」；LLM 交叉檢查器以規格為依據，確認其中 41 個是 scoreboard 漏網之魚，並產出在錯誤設計上失敗、在原設計上可證明成立的斷言（arXiv 11/20 上架）。重點是：測試全綠不等於驗證完整，檢查器本身也需要被檢查。🔗 <a href="https://arxiv.org/abs/2611.26588" style="color:#06b6d4;">arXiv 2611.26588</a></li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0;">阿里雲 PolarDB-X：RAG 六個元件收進一個資料庫。</strong>以 VECTOR 型別、HNSW 索引，加上 AI_EMBEDDING、AI_RANK、AI_PROMPT 等 SQL 函式，取代原本的嵌入服務、向量庫、同步任務、重排服務等外掛（11/20）。少了三份資料副本，就少了同步不一致的麻煩；但文中「延遲與專用向量引擎同量級」的說法沒有附基準數據。🔗 <a href="https://www.alibabacloud.com/blog/the-6-components-of-rag-actually-just-need-1-database_603795" style="color:#06b6d4;">Alibaba Cloud Blog</a></li>
+<li><strong style="color:#e2e8f0;">Vercel Functions 請求本文上限拉到 20MiB。</strong>從 4.5MB 提高到 20MiB，目前為公開測試版（11/20）。要讓 agent 或前端直接上傳截圖、PDF、音檔的應用，可以少繞一層物件儲存。🔗 <a href="https://vercel.com/changelog/vercel-functions-now-support-request-bodies-up-to-20mib" style="color:#06b6d4;">Vercel Changelog</a></li>
+</ul>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">📖 今日概念｜三方 OAuth（3-Legged OAuth）與委派授權</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 10px 0;"><strong style="color:#a5b4fc">定義：</strong>由「資源擁有者（你）」親自同意，讓「第三方應用（agent）」在限定範圍內代你存取「資源伺服器（例如 SharePoint）」的授權流程；應用拿到的是有期限、有範圍的 token，不是你的密碼。</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 10px 0;"><strong style="color:#a5b4fc">生活化比喻：</strong>飯店房卡。櫃檯（授權伺服器）確認你是房客後，發一張只開 1205 房、退房日就失效的卡。你把卡借給送洗衣服的服務生，他能進你的房間，但開不了隔壁房，也拿不到你的身分證。對應到技術：房卡就是 access token，「只開 1205」就是 scope，「退房失效」就是到期時間。</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 10px 0;"><strong style="color:#a5b4fc">工作中的例子：</strong>你讓內部 agent 讀 Jira 工單。第一次使用時會跳出 Jira 的同意視窗，你按下允許，agent 之後就用你的身分查工單：你看得到的它才看得到，你看不到的專案它也碰不到。</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 10px 0;"><strong style="color:#a5b4fc">常見誤解：</strong>「有 OAuth 就安全了。」OAuth 只確保 agent 拿到的是你的權限、而不是更多；如果你本人的權限本來就開得太大，或 agent 在權限內做了蠢事（例如刪錯工單），OAuth 一樣攔不住。所以還需要最小權限和行為監測。</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0;"><strong style="color:#a5b4fc">與今天主軸的關係：</strong>Google 文中的第二層「Federated Connectors（3LO）」就是三方 OAuth；第三層「逐工具授權」則是把同意的時機延後到真正用到工具的那一刻。</p>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 半導體 AI 專區 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">🏭 半導體 AI 專區｜Chiplet 配對最佳化：讓「有瑕疵但可修」的晶粒湊成能用的系統</div>
+<div style="margin-bottom:12px;"><span style="display:inline-block;background:#252525;color:#67e8f9;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">IC 製造｜先進封裝</span> <span style="display:inline-block;background:#252525;color:#fbbf24;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">背景知識（近期論文）</span></div>
+
+<p style="font-size:13px;font-weight:700;color:#a5b4fc;margin:12px 0 6px 0;">▍問題與流程位置</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0;"><strong style="color:#a5b4fc">背景知識：</strong>一顆 chiplet 系統由多顆晶粒透過 die-to-die（D2D）介面接在一起。每條介面有多條 lane，也預留了少量備援 lane。晶粒測試後常見的狀況是：某幾條 lane 壞了，但用備援可以修。麻煩在於，能不能修取決於「它跟誰配對」：A 晶粒壞左邊的 lane、B 晶粒壞右邊的 lane，兩顆配在一起，備援可能不夠用；換個搭檔卻剛好都能修。這一步發生在晶圓測試之後、組裝之前的<strong style="color:#a5b4fc">晶粒分配（die matching）</strong>環節。</p>
+
+<p style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px 0;">▍AI 如何介入</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0;"><strong style="color:#a5b4fc">過去</strong>：常見做法是只用通過測試的晶粒（known-good die），或依分級（bin）粗略配對，可修但有瑕疵的晶粒容易被報廢。<strong style="color:#a5b4fc">現在</strong>：亞利桑那州立大學與 Ampere Computing 的 DT-MATCH（arXiv 2611.19544，11/14 投稿）把配對寫成最佳化問題，同時考慮 lane 級缺陷位置、備援數量與結構相容規則，目標是<strong style="color:#a5b4fc">讓能正常運作的 SoC 數量最大化</strong>。它提供兩種解法：整數線性規劃（ILP）搭配分批近似，解的品質較好；GRASP（貪婪隨機自適應搜尋）快得多，但不保證最佳。兩者共用一段前處理來縮小問題規模。<em style="color:#94a3b8;">（編輯分析）</em>這裡的「AI」是廣義的最佳化與搜尋，不是深度學習；它的價值在於把原本靠經驗分配的流程，變成可以計算、可以比較的決策。</p>
+
+<p style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px 0;">▍資料與產出</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0;">輸入是每顆晶粒的 lane 級測試結果（哪幾條壞、備援剩多少）和系統拓撲規則；產出是「哪顆配哪顆」的組裝清單，以及預估可組成的良品數。</p>
+
+<p style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px 0;">▍如何驗證</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0;">論文在<strong style="color:#a5b4fc">工業設計</strong>上比較兩種方法：ILP 品質較佳，GRASP 執行時間較短、品質相近。摘要沒有公布良率提升百分比或執行時間的具體數字，要看全文才能確認。導入產線前，應以歷史批次回測：同一批晶粒，用新配對法和現行規則各算一次良品數，並追蹤組裝後的最終測試結果。</p>
+
+<p style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px 0;">▍限制與風險</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0;">這是研究成果，不代表已在任何產線量產落地。配對最佳化有個前提：晶粒的測試資料必須準確，而且能追溯到每一顆晶粒。此外，配對結果會影響晶圓庫存、批次排程和出貨順序，最佳解在物流上不一定可行。</p>
+<p style="font-size:13px;margin:10px 0 0 0;">🔗 <a href="https://arxiv.org/abs/2611.19544" style="color:#06b6d4;">arXiv 2611.19544（DT-MATCH）</a>　🔗 <a href="https://semiengineering.com/defect-aware-chiplet-matching-for-heterogeneous-integration-yield-asu-ampere/" style="color:#06b6d4;">Semiconductor Engineering 論文摘要頁</a></p>
+<p style="color:#67e8f9;font-weight:700;font-size:15px;line-height:1.7;margin:14px 0 0 0;">👷 對半導體工作者的意義：負責先進封裝良率、測試與 MES 整合的工程師，可以先盤點一件事：我們的 lane 級測試資料有沒有保存，並能追溯到每顆晶粒？有了這份資料，「報廢還是配對」才有被最佳化的空間。</p>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:13px;">
+<tr><td style="padding:22px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">🪞 反思時間</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:8px;">當 agent 一律用「使用者本人的權限」辦事，它的能力就被你自己的權限框住了。哪些跨部門任務會因此卡住？這時該放寬權限，還是改由人來接力？</li>
+<li style="margin-bottom:8px;">如果明天要讓 agent 查你們的良率或批次資料庫，你能在一頁紙內畫出「誰的身分、經過哪道閘道、看得到哪些資料列」嗎？畫不出來的那一塊，最可能藏著什麼風險？</li>
+<li>驗證 agent 在端到端基準上只有約兩成成功率，LLM 卻能幫忙抓出 scoreboard 漏看的 bug。你認為 AI 在驗證流程中，最先站穩的會是「主力」還是「稽核員」？為什麼？</li>
+</ul>
+<p style="color:#a5b4fc;font-weight:700;font-size:15px;line-height:1.7;margin:14px 0 0 0;">🎒 今日帶走：agent 上線前，先回答「它代表誰、能開哪幾扇門、誰在看門」，再談它有多聰明。</p>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 歷史電子報入口 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 8px 0;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+<p style="margin:0;font-size:15px;"><a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&amp;source=copy_link" style="color:#06b6d4;text-decoration:underline">查看歷史電子報</a></p>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- Footer -->
+<tr><td style="padding:8px 12px 24px 12px;text-align:center;">
+<p style="font-size:13px;color:#94a3b8;margin:0 0 8px 0;">📬 分享給朋友：<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline">訂閱這份電子報</a></p>
+<p style="font-size:13px;color:#64748b;margin:0 0 8px 0;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline">點此退訂（10 秒，下期生效）</a></p>
+<p style="font-size:12px;color:#64748b;margin:0;">© 2026 企鵝的 AI 每日電子報🐧 · 本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源</p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>

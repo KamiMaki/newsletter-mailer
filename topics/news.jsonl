@@ -1454,3 +1454,16 @@
 {"date": "2026-11-21", "title": "主軸：模型和外殼（harness）成對調校——同模型換外殼換成績，HF harness adapter 為外殼量身練 LoRA＋阿里雲評測同通過率不同錯法、安全靠外殼約束（模型—外殼適配 facet）"}
 {"date": "2026-11-21", "title": "概念：LoRA（低秩適配，Low-Rank Adaptation）"}
 {"date": "2026-11-21", "title": "半導體專區：EDA 工具｜IR Drop 電源壓降的 ML 快速預測（CFIRSTNET ICCAD'24／GNN 比較 arXiv 2502.05345／PhysEDA，背景）"}
+{"date": "2026-11-22", "title": "Google Gemini Enterprise 自訂 UI 三層認證：使用者身分（Google／Workforce／Workload Identity Federation）＋Federated Connectors 3LO（Keystore）＋ADK 逐工具 OAuth（11/20）"}
+{"date": "2026-11-22", "title": "Google 私有 Cloud Run MCP 伺服器接 Gemini Enterprise：Egress Agent Gateway＋PSC＋精確主機名私有 DNS＋雙 header 身分（服務 OIDC＋使用者 OAuth）（11/20）"}
+{"date": "2026-11-22", "title": "Google Agent Anomaly Detection 擴及 AWS Lambda／Microsoft Foundry agent（私人預覽、OTel、Foundry 4 個越權 session 全標記，11/20）"}
+{"date": "2026-11-22", "title": "阿里雲 RDS PostgreSQL「一個閘道一個資料庫」agent 架構：Kong 單一金鑰＋Supabase RLS＋知識圖譜＋庫內 agent runtime、VPC 內（11/20）"}
+{"date": "2026-11-22", "title": "GitHub 安全公告權限 GA：自訂 repo 角色四種細分權限，無需 repo admin／security manager（11/20）"}
+{"date": "2026-11-22", "title": "DVBench 端到端 UVM 驗證 agent 基準：95 題、最佳 Codex＋GPT-6 Astra 成功率 21.05%（arXiv 2611.25066，11/20 上架）"}
+{"date": "2026-11-22", "title": "Verify the Verifier：LLM 規格交叉檢查，OpenTitan 564 植入 bug 中 68 個 scoreboard 候選漏網、確認 41 個（arXiv 2611.26588）"}
+{"date": "2026-11-22", "title": "阿里雲 PolarDB-X：RAG 六元件收進一個資料庫（VECTOR／HNSW／AI_EMBEDDING 等 SQL 函式，11/20）"}
+{"date": "2026-11-22", "title": "Vercel Functions 請求本文上限 4.5MB→20MiB（公開測試，11/20）"}
+{"date": "2026-11-22", "title": "DT-MATCH：缺陷與拓撲感知 chiplet 配對最佳化（ILP／GRASP，ASU＋Ampere，arXiv 2611.19544，背景）"}
+{"date": "2026-11-22", "title": "主軸：Agent 的上線考題換成「它代表誰、能開哪幾扇門」——委派授權管線：Google 三層認證＋私有 MCP 雙重身分＋跨雲異常偵測、阿里雲單一閘道＋RLS、GitHub 細分權限（身分/委派授權 facet）"}
+{"date": "2026-11-22", "title": "概念：三方 OAuth（3-Legged OAuth）與委派授權（Delegated Authorization）"}
+{"date": "2026-11-22", "title": "半導體專區：IC 製造｜先進封裝 chiplet 缺陷感知配對最佳化：可修晶粒湊成良品 SoC（DT-MATCH arXiv 2611.19544，背景）"}
