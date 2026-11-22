@@ -1467,3 +1467,20 @@
 {"date": "2026-11-22", "title": "主軸：Agent 的上線考題換成「它代表誰、能開哪幾扇門」——委派授權管線：Google 三層認證＋私有 MCP 雙重身分＋跨雲異常偵測、阿里雲單一閘道＋RLS、GitHub 細分權限（身分/委派授權 facet）"}
 {"date": "2026-11-22", "title": "概念：三方 OAuth（3-Legged OAuth）與委派授權（Delegated Authorization）"}
 {"date": "2026-11-22", "title": "半導體專區：IC 製造｜先進封裝 chiplet 缺陷感知配對最佳化：可修晶粒湊成良品 SoC（DT-MATCH arXiv 2611.19544，背景）"}
+{"date": "2026-11-23", "title": "LOCA：邏輯錐切分＋平行 LLM agent 還原網表為 RTL，21 組還原 17 組（整份 6 組）、單次成功率 5%→74%、等價性證明（arXiv 2611.25324）"}
+{"date": "2026-11-23", "title": "GRODE-RTL：扇入錐依賴視圖引導 LLM RTL 除錯，30 個非局部故障 pass@1 提升 16.7%–26.7%（arXiv 2611.25661）"}
+{"date": "2026-11-23", "title": "From FIPS to FPGA：LLM agent 移植 ML-KEM/ML-DSA 加速器，模組範圍審查 54/54 抓到缺陷、模擬關卡僅殺 76% 突變（arXiv 2611.25339）"}
+{"date": "2026-11-23", "title": "NVIDIA〈You don't need long context〉：頻繁壓縮短上下文幾乎不掉準確率、後段 token 成本可達 7 倍（arXiv 2611.05306，11/3，背景）"}
+{"date": "2026-11-23", "title": "SWE-CoWork：26 位模擬同事職場基準，領先模型通過約 63% 測試但完整交付率不到 8%（arXiv 2611.20218，背景）"}
+{"date": "2026-11-23", "title": "ReLay：類比版圖反推生成器程式＋函式庫演化，1,050 張版圖基準、API 成本低 64–77%（arXiv 2611.25328）"}
+{"date": "2026-11-23", "title": "Meta-RTL：演化 RTL 最佳化 agent 外殼，對 Dr. RTL WNS/TNS −7.8%/−11.0%、未見設計面積 −12.6%（arXiv 2611.25891）"}
+{"date": "2026-11-23", "title": "AidaChip AI 原生晶片開發平台：意圖/知識/執行三引擎，2027 年 1 月商用；引用 Wilson 2026 首矽成功率約 5%（11/20）"}
+{"date": "2026-11-23", "title": "OpenRouter 下架 3 家推論供應商、125 個端點撤銷 ZDR（Dragos 誘餌憑證研究，11/22）"}
+{"date": "2026-11-23", "title": "🔄 Lean／Mathlib 社群確認 Alpöge 黎曼猜想形式化證明正確（約 1,700 萬行，11/21）"}
+{"date": "2026-11-23", "title": "METR Q4 2026 能力更新：50% 任務時長約每 3.61 個月翻倍、外推 2027 年 7 月達 200 小時（11/20）"}
+{"date": "2026-11-23", "title": "美國 BIS 遠端存取出口新規上路，據報三星停止對百度崑崙芯/字節出貨、台積電暫停部分出貨（FT 轉述，11/21）"}
+{"date": "2026-11-23", "title": "Claude Code v2.1.330：支援登入企業管理主控台、自動套用組織設定與閘道（11/20）"}
+{"date": "2026-11-23", "title": "BOOMerang：RTL↔gem5 雙向翻譯 agent 迴圈，2 天 IPC 誤差 3% 內、72 項功能回譯、SPECint 2017 +25%（arXiv 2611.25438）"}
+{"date": "2026-11-23", "title": "主軸：AI 啃得動整顆晶片，靠的不是更長的記憶而是切對範圍——邏輯錐/扇入錐/模組範圍切分（LOCA＋GRODE-RTL＋FIPS-to-FPGA＋NVIDIA 短上下文；範圍切分/分解 facet）"}
+{"date": "2026-11-23", "title": "概念：突變測試（Mutation Testing）與擊殺率——植入小錯檢驗測試本身夠不夠嚴"}
+{"date": "2026-11-23", "title": "半導體專區：IC 設計｜微架構效能模型與 RTL 的雙向翻譯（BOOMerang gem5↔BOOM RTL，arXiv 2611.25438，今日研究）"}
