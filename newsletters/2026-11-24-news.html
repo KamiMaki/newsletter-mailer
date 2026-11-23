@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的 AI 每日電子報🐧 2026-11-24</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0f0f0f;">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:650px;width:100%;">
+
+<!-- Header -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;">
+<tr><td style="padding:28px 24px;text-align:center;">
+<div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#ffffff;margin-top:10px;background:rgba(15,15,15,0.25);display:inline-block;padding:4px 12px;border-radius:999px;">2026-11-24（週二）</div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 30 秒重點 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">⚡ 30 秒重點</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:8px;"><strong style="color:#ffffff;">今日主軸：AI 供應商說「我不留你的資料」，現在開始能被你自己檢查。</strong>資料保護正從「合約上的一句承諾」，變成客戶看得到、可以抽查、可以自己設定的系統行為。</li>
+<li style="margin-bottom:8px;">同一天出現三個例子：Anthropic 的 <strong style="color:#a5b4fc;">EFS 進入公開測試</strong>，加密副本只放在客戶自己的雲端儲存桶；Vercel AI Gateway 開始用<strong style="color:#a5b4fc;">「金絲雀網址」抽查</strong>供應商有沒有偷看提示詞；另外也能<strong style="color:#a5b4fc;">按供應商總部所在國家</strong>決定請求可以送給誰。</li>
+<li style="margin-bottom:8px;">反向訊號：Anthropic 新推出的 PR 代理套件 Claude Ship，<strong style="color:#a5b4fc;">不開放給</strong>啟用零資料保留、HIPAA 或客戶自管金鑰的組織。隱私開得越嚴，能用的新功能就越少。</li>
+<li style="margin-bottom:8px;">其他訊號：NVIDIA 董事會讓黃仁勳復任執行長；DeepMind 用 Gemini 4 agent 加速量子演算法，每個結果都經 Lean 驗證；Hugging Face 指出光是換掉 agent 外殼，準確率就能差到 29.9 個百分點；Claude Opus 4.5 宣布 2027/1/22 退役。</li>
+<li>對半導體工作者最相關的：這套做法跟你們熟悉的<strong style="color:#a5b4fc;">供應商進料檢驗（IQC）</strong>一模一樣，只是檢驗對象換成 AI 供應商。半導體專區則介紹一篇新論文：用形式化證明取代 LLM 猜測，自動排除驗證覆蓋率中不可能觸及的死角。</li>
+</ul>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:13px;">
+<tr><td style="padding:22px 22px;">
+<span style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);color:#ffffff;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">🎯 今天的主軸</span>
+<div style="font-size:19px;font-weight:700;color:#ffffff;line-height:1.5;margin:12px 0 14px 0;">「我們不會留你的資料」：從出廠證明，變成進料抽驗</div>
+
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 14px 0;">在晶圓廠，化學品或零件供應商出貨時都會附一張 <strong style="color:#a5b4fc">CoA（出廠檢驗證明）</strong>。但沒有一家廠只看 CoA 就上線。進料要抽驗（IQC），關鍵物料要留樣，供應商還得先進合格供應商名單（AVL）。用 AI 也是一樣：過去企業拿到的只有「零資料保留（ZDR）」這張合約，等於只有 CoA。這週一，三條產品線不約而同補上了 IQC、留樣和 AVL。</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px 0;">▍共同變化</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 12px 0;">AI 供應商的資料承諾，正從<strong style="color:#a5b4fc">「請相信我們」</strong>變成<strong style="color:#a5b4fc">「你可以自己確認」</strong>。</p>
+<ul style="margin:0 0 12px 0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:8px;"><strong style="color:#e2e8f0;">🔄 後續追蹤：Anthropic Enterprise Frontier Safeguards（EFS）公開測試（等於「留樣放你家」）</strong>：11/23 起在 Claude Platform、Claude Platform on AWS 與 Google Cloud 開放 beta。Anthropic 不保留提示詞和回應，加密副本（稱為 Sealed Safety Data）寫進<strong style="color:#a5b4fc">客戶自己雲端帳號裡的儲存桶</strong>。被自動安全監控標記的案例，改由客戶自己的團隊審查，Anthropic 的人工審查一律關閉。平台每天檢查一次儲存桶，失效或恢復時都會用 webhook 通知。EFS 本身不另外收費，儲存費用照雲端帳單計算。🔗 <a href="https://platform.claude.com/docs/en/release-notes/overview" style="color:#06b6d4;">Claude 平台發行說明</a>｜<a href="https://platform.claude.com/docs/en/manage-claude/enterprise-frontier-safeguards/overview" style="color:#06b6d4;">EFS 文件</a></li>
+<li style="margin-bottom:8px;"><strong style="color:#e2e8f0;">Vercel AI Gateway 金絲雀 ZDR 稽核（等於「進料抽驗」）</strong>：每次稽核都產生一組獨一無二、只對應「某供應商＋某模型＋某次稽核」的網址，藏在提示詞裡走正常推論路徑送出。號稱零資料保留的供應商如果真的沒留存、沒檢視、也沒爬取內容，<strong style="color:#a5b4fc">這些網址就永遠不該被造訪</strong>。只要有人連上，系統就記下是哪一家、哪個模型。非 ZDR 的供應商則當作陽性對照組，用來證明這套偵測真的有效。🔗 <a href="https://vercel.com/changelog/ai-gateway-now-runs-canary-zdr-audits" style="color:#06b6d4;">Vercel Changelog</a></li>
+<li style="margin-bottom:8px;"><strong style="color:#e2e8f0;">Vercel 依供應商總部國家選路由（等於「合格供應商名單」）</strong>：可以設白名單或黑名單，例如 <code style="color:#e2e8f0;">['!US']</code> 就是排除總部在美國的供應商。團隊層級的設定只能被單次請求再收窄，不能放寬。找不到合格供應商時，<strong style="color:#a5b4fc">請求直接失敗，不會偷偷改送別處</strong>。🔗 <a href="https://vercel.com/changelog/choose-ai-gateway-providers-by-headquarters-country" style="color:#06b6d4;">Vercel Changelog</a></li>
+</ul>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px 0;">▍為什麼放在一起看</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 12px 0;">三件事分別出自模型商和中間閘道，處理的卻是同一個問題：<strong style="color:#a5b4fc">客戶怎麼知道承諾有被遵守？</strong>上週日（11/22）我們報過 OpenRouter 因為一份誘餌憑證研究，下架 3 家推論供應商、撤銷 125 個端點的 ZDR 資格。那件事證明「合約寫了 ZDR」和「實際做到 ZDR」之間真的有落差。這週的三個產品，就是把這個落差變成能持續監測的東西。</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px 0;">▍過去 vs. 現在</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 12px 0;"><strong style="color:#e2e8f0;">過去</strong>：法務簽 ZDR 附約，資安看一份年度 SOC 2 報告，接著就只能相信。<strong style="color:#e2e8f0;">現在</strong>：留樣放在你自己的儲存桶，失效有每日告警；供應商會被不定期抽驗；送不送、送給誰，寫成可以審查的設定檔。Vercel 自己也說得很清楚：合約和定期稽核只能證明「當下應該怎麼做」，但<strong style="color:#a5b4fc">正式環境的基礎設施每天都在變</strong>，所以需要持續偵測。</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px 0;">▍背後邏輯</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 12px 0;">最強的模型需要安全監控（例如偵測濫用），監控就得看資料，而企業要的偏偏是誰都不留資料。EFS 的解法是把「保存」和「讀取」拆開：<strong style="color:#a5b4fc">資料放在客戶那裡，但用 Anthropic 的格式加密，連客戶自己都讀不了</strong>，標記出來的案例則交給客戶審查。對 Vercel 這類閘道來說，「幫你稽核下游供應商」本身就是賣點：當模型越來越像大宗商品，信任就成了中間商能收費的服務。<span style="color:#94a3b8;">（編輯分析）</span></p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px 0;">▍對你的工作</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 12px 0;">對 IT 和數位轉型團隊來說，評估 AI 供應商時可以多問三題：<strong style="color:#a5b4fc">資料副本放在哪裡、由誰持有？有沒有持續驗證的機制，還是只有一份年度報告？供應商不合格時，系統會失敗還是悄悄改送？</strong>對想把 RTL、版圖片段或製程參數丟給 AI 的工程團隊來說，這代表「機敏資料能不能上雲」這題，從「法務說不行」慢慢變成「可以用可驗證的設定檔回答」。但前提是內部也得把資料分級做好。</p>
+
+<div style="background:#252525;border-radius:8px;padding:12px;margin:0 0 12px 0;">
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin-bottom:4px;">👤 延伸解讀（Vercel 官方說法）</div>
+<p style="font-size:14px;line-height:1.7;color:#cbd5e1;margin:0;">Vercel 強調，金絲雀稽核是用來「補充」而非「取代」合約上的 ZDR 協議與獨立稽核。換句話說，抽驗沒辦法取代 CoA，兩者缺一不可。🔗 <a href="https://vercel.com/changelog/ai-gateway-now-runs-canary-zdr-audits" style="color:#06b6d4;">原文</a></p>
+</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px 0;">▍限制與待驗證</div>
+<ul style="margin:0 0 12px 0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:6px;"><strong style="color:#e2e8f0;">金絲雀只抓得到「有人去碰」</strong>：如果供應商默默把資料存下來，卻從不打開裡面的網址，就不會觸發。Vercel 也沒公開稽核頻率，也沒公開抓到過幾次。</li>
+<li style="margin-bottom:6px;"><strong style="color:#e2e8f0;">總部 ≠ 資料所在地</strong>：Vercel 自己把「總部國家」、「在哪裡收請求」、「在哪裡跑推論」列成三個不同的控制項，合規時要分開設定。</li>
+<li style="margin-bottom:6px;"><strong style="color:#e2e8f0;">EFS 只涵蓋 Messages API</strong>：程式碼執行容器、Files API 上傳、Batch 結果與 Managed Agents session 都不在範圍內，而且還是 beta，規格可能改。</li>
+<li><strong style="color:#e2e8f0;">隱私與新功能互相拉扯</strong>：同一天推出的 Claude Ship 就不開放給 ZDR 組織（見衍生新聞）。</li>
+</ul>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px 0;">▍重點一句話</div>
+<p style="font-size:15px;line-height:1.7;color:#ffffff;font-weight:700;margin:0;">用 AI 也要做進料檢驗：合約是 CoA，留樣、抽驗、合格名單才是讓你睡得著的那一半。</p>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 衍生新聞 1 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<span style="display:inline-block;background:#252525;color:#a5b4fc;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin:10px 0 8px 0;">Claude Ship 上線，但最在乎隱私的客戶暫時不能用</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 8px 0;">Anthropic 11/23 推出 GitHub PR 代理套件 <strong style="color:#a5b4fc">Claude Ship</strong>，由三個 agent 組成：Code Review（正式版）負責找問題，PR Steward（beta）修 CI 失敗和合併衝突，但<strong style="color:#a5b4fc">設計上不會核准也不會合併</strong>；Claude Approvals（beta）依照 repo 裡的 <code style="color:#e2e8f0;">.claude/approvals.yml</code> 判斷還差誰核准。不過這套服務<strong style="color:#a5b4fc">不開放給啟用 ZDR、HIPAA 設定或客戶自管金鑰的組織</strong>。和主軸放在一起看就很清楚：最嚴格的資料設定和最新的 agent 功能，目前還沒辦法同時擁有。</p>
+<p style="font-size:14px;line-height:1.7;color:#94a3b8;font-style:italic;margin:0 0 8px 0;">💡 重點一句話：選 AI 功能前，先看它支援你的資料等級。新功能常常最晚才開放給最嚴格的設定。</p>
+<p style="font-size:13px;margin:0;">🔗 <a href="https://code.claude.com/docs/en/claude-ship" style="color:#06b6d4;">閱讀原文</a>｜來源：Claude Code Docs</p>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 衍生新聞 2 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<span style="display:inline-block;background:#252525;color:#a5b4fc;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin:10px 0 8px 0;">Google 搜尋接上錢包，並承諾用一個圖示告訴你「我參考了什麼」</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 8px 0;">Google 11/23 宣布，搜尋 AI Mode 的 Personal Intelligence 開始可以連接 <strong style="color:#a5b4fc">Google Wallet</strong>（可讀取，但不能動用或管理資金），Drive 與 Gemini app 的連結也會在幾週內推出。所有連結都要使用者自己選擇開啟。Google 也預告會在個人化回答下方加上<strong style="color:#a5b4fc">「Personalization」圖示</strong>，讓你看到這次回答用了哪些背景資料。這是主軸的消費端版本：資料用得越深入，就越需要讓使用者看得到用了什麼。</p>
+<p style="font-size:14px;line-height:1.7;color:#94a3b8;font-style:italic;margin:0 0 8px 0;">💡 重點一句話：「看得到用了什麼資料」正在變成 AI 產品的基本配備，企業內部的 AI 工具也該跟上。</p>
+<p style="font-size:13px;margin:0;">🔗 <a href="https://blog.google/products-and-platforms/products/search/google-search-personal-intelligence-apps/" style="color:#06b6d4;">閱讀原文</a>｜來源：Google Blog</p>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 衍生新聞 3 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<span style="display:inline-block;background:#252525;color:#a5b4fc;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin:10px 0 8px 0;">Gemini API 檔案切片：只讓模型讀你指定的那幾頁</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 8px 0;">Google 11/23 在 Gemini API 推出 <strong style="color:#a5b4fc">file slicing</strong>，所有 Gemini 4 模型都支援。開發者可以指定只載入某些頁面、某個工作表的儲存格範圍，或影音的某段時間，切片在伺服器端完成，<strong style="color:#a5b4fc">只依模型實際讀到的 token 計費</strong>。合作夥伴的數據是：Vercel 只抽一頁文字時，token 比渲染整份 PDF 少 14 倍；LiteLLM 測試 PDF 省下 67%、試算表省下 33%。官方主打的是省錢，從主軸角度看則是另一個好處：<strong style="color:#a5b4fc">送得越少，外洩面就越小</strong>。<span style="color:#94a3b8;">（後者為編輯分析）</span></p>
+<p style="font-size:14px;line-height:1.7;color:#94a3b8;font-style:italic;margin:0 0 8px 0;">💡 重點一句話：只送模型需要看的部分，既是省錢技巧，也是最便宜的資料保護。</p>
+<p style="font-size:13px;margin:0;">🔗 <a href="https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/" style="color:#06b6d4;">閱讀原文</a>｜來源：Google Blog</p>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0;">NVIDIA 董事會讓黃仁勳復任總裁兼執行長</strong>：董事會一致通過、即日生效，並表示決定參考了美國政府高層意見，認定沒有國安風險；代理執行長 Colette Kress 回任 CFO，獨立董事的調查會繼續進行，公司也正在招募首席合規長。對依賴 NVIDIA 供貨與路線圖的半導體客戶來說，領導層不確定性暫時解除，但出口管制合規會被盯得更緊。🔗 <a href="https://nvidianews.nvidia.com/news/nvidia-board-reinstates-jensen-huang-as-president-ceo-and-board-director" style="color:#06b6d4;">NVIDIA Newsroom</a></li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0;">DeepMind 用 agent 加 Lean 驗證找到更快的量子演算法</strong>：Gemini 4 agent 團隊改良多個量子演算法，每個結果都經 Lean 形式化驗證，例如慣性約束核融合模擬成本降 11.8 倍，arcsin 子程序快 290 倍，程式庫也一併開源。這又是一次「AI 提案、機器驗證」的例子，不過作者也承認，所需資源仍超出早期糾錯量子電腦的能力。🔗 <a href="https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/" style="color:#06b6d4;">Google DeepMind</a></li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0;">Hugging Face：只換 agent 外殼，準確率最多差 29.9 分</strong>：官方部落格整理建立與維護 agent 評測的方法，指出 98.2% 的模型評測分數只來自單一回報方，Hub 上的評測資料集一年成長約 16 倍。看廠商分數前，先問清楚是在哪個外殼、由誰跑出來的。🔗 <a href="https://huggingface.co/blog/agentic-evals" style="color:#06b6d4;">Hugging Face Blog</a></li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0;">OpenAI Agents SDK 1.0.0-alpha.2</strong>：新增 ResumableSession，讓對話和待核准的動作可以換到另一台 worker 繼續跑，並加上 OpenTelemetry 匯出與選用的文字遮罩（redact）。注意新的 RunState 格式舊版讀不了，升級時要先升讀取端、再升寫入端。🔗 <a href="https://github.com/openai/openai-agents-python/releases/tag/v1.0.0-alpha.2" style="color:#06b6d4;">GitHub Release</a></li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0;">GitHub Issue 原生狀態與看板公開預覽</strong>：Issue 新增 7 種內建狀態與 6 種自動化，其中一種是指派給 agent 時自動轉成「In progress」，狀態也能透過 REST、GraphQL 與 MCP 讀寫。agent 開始被當成看板上的正式成員，專案管理工具也照這個方向改。🔗 <a href="https://github.blog/changelog/2026-11-23-issue-statuses-and-repository-boards-are-in-public-preview" style="color:#06b6d4;">GitHub Changelog</a></li>
+<li><strong style="color:#e2e8f0;">Claude Opus 4.5 宣布退役</strong>：Claude API 上的 Opus 4.5 將在 2027/1/22 退役，官方建議遷移到 Opus 5.5。還把模型版本寫死在流程裡的團隊，大約有兩個月可以重跑回歸測試。🔗 <a href="https://platform.claude.com/docs/en/release-notes/overview" style="color:#06b6d4;">Claude 平台發行說明</a></li>
+</ul>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">📖 今日概念｜金絲雀標記（Canary Token）</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 10px 0;"><strong style="color:#a5b4fc">定義：</strong>刻意放進系統、正常情況下永遠不該被碰到的獨特誘餌（一個網址、一組假帳密、一份檔案）。只要它被觸發，就代表有人越界了。</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 10px 0;"><strong style="color:#a5b4fc">生活化比喻：</strong>名稱來自礦工帶進坑道的金絲雀，鳥一倒下就知道有毒氣。更貼近的例子是銀行在鈔票捆裡夾的染色包：平常沒事，一旦被拿走打開就會留下痕跡。技術上的關鍵是<strong style="color:#a5b4fc">「獨一無二」</strong>，每個標記只對應一個位置，被觸發時就能精準知道是哪條管道漏的。</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 10px 0;"><strong style="color:#a5b4fc">工作中的例子：</strong>資安團隊在檔案伺服器放一份假的「薪資表」，只要被開啟就告警；Vercel 則把只對應「某供應商＋某模型」的網址藏在提示詞裡，有人造訪就代表那家供應商讀過內容。</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 10px 0;"><strong style="color:#a5b4fc">常見誤解：</strong>「沒觸發就代表安全。」錯。金絲雀只能證明「有人碰過」，不能證明「沒人存過」。對方如果只是默默保存、從不打開，就不會觸發。所以它要搭配對照組（確認偵測有效）和其他控制一起用。</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0;"><strong style="color:#a5b4fc">與今天主軸的關係：</strong>它就是把「ZDR 承諾」變成可抽驗的那把工具，也解釋了為什麼抽驗只能補充合約、不能取代合約。</p>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 半導體 AI 專區 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">🏭 半導體 AI 專區｜覆蓋率收斂的最後一哩：用形式化證明排除「不可能觸及」的死角</div>
+<div style="margin-bottom:12px;"><span style="display:inline-block;background:#252525;color:#67e8f9;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;margin-right:6px;">EDA 工具</span><span style="display:inline-block;background:#252525;color:#a5b4fc;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;">近期研究（11/23 arXiv 上架）</span></div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:12px 0 6px 0;">▍問題與流程位置</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 10px 0;"><span style="color:#94a3b8;">【背景知識】</span>功能驗證到後期，覆蓋率常卡在 95% 上下。剩下的洞分兩種：一種是測試還沒打到，要補 directed test；另一種是設計上<strong style="color:#a5b4fc">根本不可能觸及</strong>的程式碼（被參數關掉的分支、互斥條件），只能申請「排除」（exclusion）。排除審查通常靠資深驗證工程師逐條判斷，排錯了，真正的 bug 就會從簽核的縫隙溜出去。</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:12px 0 6px 0;">▍AI 如何介入</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 10px 0;"><span style="color:#94a3b8;">【今日研究事實】</span>ARGUS（arXiv 2611.26815，11/19 投稿）指出，直接讓 LLM 跑覆蓋率收斂迴圈有三個毛病：成千上萬個相關的洞會撐爆上下文、產生違法激勵造成「髒覆蓋率」，以及<strong style="color:#a5b4fc">幻覺式地把可達的程式碼判成死碼</strong>。它的做法是先從微架構規格和 SVA 斷言建立每個區塊的「Block Contract」，再依每個模組的洞密度選策略：洞多的模組先把相關的洞分群、找共同根因；洞少的模組逐一做可達性分析。判定不可達的部分，會<strong style="color:#a5b4fc">附上形式化證明，再輸出成工具原生的排除檔</strong>，補洞用的 directed test 則要先對過 golden scoreboard。過去是「人判斷、人簽名」，現在是「AI 提案、證明器背書、人看證明」。</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:12px 0 6px 0;">▍資料與產出</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 10px 0;">輸入是規格、SVA 與覆蓋率資料庫；產出是根因分群、附證明的排除清單和 directed test。測試標的包括 3 個 OpenTitan IP（uart、i2c、aes）與 2 個商用 AI 加速器資料路徑，共 53 個模組、376,127 個覆蓋點，另外還有一個 2,626 模組的工業互連子系統。</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:12px 0 6px 0;">▍如何驗證</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 10px 0;">論文報告的成果：2,626 個模組分流只花 0.265 秒；token 用量減少 27.2 倍到 180 倍以上；有效覆蓋率 99.32%–100%；超過 21,071 條經證明的排除中<strong style="color:#a5b4fc">誤排除為 0</strong>；三步驟合併檢查讓髒合併數為 0。🔗 <a href="https://arxiv.org/abs/2611.26815" style="color:#06b6d4;">arXiv 2611.26815</a></p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:12px 0 6px 0;">▍限制與風險</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 10px 0;"><span style="color:#94a3b8;">【編輯分析】</span>這是一篇 6 頁的單一作者論文，尚未經同行審查，商用設計細節也沒有公開。形式化證明只能保證「在 Block Contract 的假設下不可達」，<strong style="color:#a5b4fc">假設本身寫錯，證明一樣成立</strong>，所以 SVA 與規格的品質就成了新的關鍵。大型設計上形式化工具的收斂時間與授權成本，論文也沒有充分討論。</p>
+
+<p style="font-size:15px;line-height:1.7;color:#67e8f9;font-weight:700;margin:12px 0 0 0;">👷 對半導體工作者的意義：驗證主管可以先檢查自己團隊的排除清單，有幾成附了證明、幾成只寫著「人工判定」。下一步可以試著讓形式化工具先跑一輪不可達分析，把人力留給真正需要判斷的灰色地帶。</p>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:13px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">🪞 反思時間</div>
+<ul style="margin:0 0 12px 0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:8px;">如果把你們評估 AI 供應商的流程，拿去和評估化學品供應商的 IQC 流程並排比較，最明顯缺了哪一個環節？由誰負責補上？</li>
+<li style="margin-bottom:8px;">當最嚴格的資料設定意味著拿不到最新的 agent 功能時，你們會依什麼標準決定哪些專案走嚴格通道、哪些走一般通道？</li>
+<li>AI 越來越常「附證明」交件（Lean 證明、形式化排除），三年後驗證工程師最核心的技能，會從找 bug 變成寫對假設嗎？你現在會開始培養什麼能力？</li>
+</ul>
+<p style="font-size:15px;line-height:1.7;color:#a5b4fc;font-weight:700;margin:0;">🎒 今日帶走：別只收 CoA。不管是 AI 供應商的資料承諾，還是 AI 交出的驗證結論，真正的信任都來自你自己留得住的證據。</p>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 歷史電子報 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 8px 0;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+<a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-size:15px;font-weight:700;">查看歷史電子報</a>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- Footer -->
+<tr><td style="padding:8px 0 0 0;text-align:center;">
+<p style="font-size:14px;line-height:1.7;color:#94a3b8;margin:0 0 6px 0;">📬 分享給朋友：<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline">訂閱這份電子報</a></p>
+<p style="font-size:13px;line-height:1.7;color:#64748b;margin:0 0 6px 0;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline">點此退訂（10 秒，下期生效）</a></p>
+<p style="font-size:12px;line-height:1.7;color:#475569;margin:0;">© 2026 企鵝的 AI 每日電子報🐧 · 本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源</p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>

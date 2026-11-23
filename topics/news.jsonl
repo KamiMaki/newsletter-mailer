@@ -1484,3 +1484,19 @@
 {"date": "2026-11-23", "title": "主軸：AI 啃得動整顆晶片，靠的不是更長的記憶而是切對範圍——邏輯錐/扇入錐/模組範圍切分（LOCA＋GRODE-RTL＋FIPS-to-FPGA＋NVIDIA 短上下文；範圍切分/分解 facet）"}
 {"date": "2026-11-23", "title": "概念：突變測試（Mutation Testing）與擊殺率——植入小錯檢驗測試本身夠不夠嚴"}
 {"date": "2026-11-23", "title": "半導體專區：IC 設計｜微架構效能模型與 RTL 的雙向翻譯（BOOMerang gem5↔BOOM RTL，arXiv 2611.25438，今日研究）"}
+{"date": "2026-11-24", "title": "🔄 Anthropic Enterprise Frontier Safeguards（EFS）公開測試：ZDR＋Sealed Safety Data 存客戶自有儲存桶、客戶自審 Safety Cases、每日儲存桶檢查 webhook（11/23）"}
+{"date": "2026-11-24", "title": "Vercel AI Gateway 金絲雀 ZDR 稽核：唯一網址藏進提示詞偵測供應商讀取內容、非 ZDR 供應商作陽性對照（11/23）"}
+{"date": "2026-11-24", "title": "Vercel AI Gateway 依供應商總部國家白/黑名單路由，無合格供應商則請求失敗（11/23）"}
+{"date": "2026-11-24", "title": "Anthropic Claude Ship：Code Review GA＋PR Steward／Claude Approvals beta，不開放 ZDR／HIPAA／CMEK 組織（11/23）"}
+{"date": "2026-11-24", "title": "Google 搜尋 AI Mode Personal Intelligence 連接 Google Wallet、Drive／Gemini app 將至、Personalization 圖示顯示所用背景（11/23）"}
+{"date": "2026-11-24", "title": "Gemini API file slicing：只載入指定頁/儲存格/片段並按讀取 token 計費，Vercel 少 14 倍、LiteLLM PDF −67%（11/23）"}
+{"date": "2026-11-24", "title": "NVIDIA 董事會讓黃仁勳復任總裁兼執行長，Kress 回任 CFO、調查續行、招募首席合規長（11/23）"}
+{"date": "2026-11-24", "title": "DeepMind Gemini 4 agent＋Lean 驗證改良量子演算法：核融合模擬成本 −11.8 倍、arcsin 快 290 倍（11/23）"}
+{"date": "2026-11-24", "title": "Hugging Face agentic evals：換外殼準確率差最多 29.9 分、98.2% 分數來自單一回報方（11/23）"}
+{"date": "2026-11-24", "title": "OpenAI Agents SDK 1.0.0-alpha.2：ResumableSession 跨 worker 續跑、OTel 匯出、RunState 1.24 不相容舊版（11/23）"}
+{"date": "2026-11-24", "title": "GitHub Issue 原生狀態（7 種）與 repo 看板公開預覽，指派 agent 自動轉 In progress（11/23）"}
+{"date": "2026-11-24", "title": "Claude Opus 4.5 宣布棄用，2027/1/22 自 Claude API 退役（11/23）"}
+{"date": "2026-11-24", "title": "ARGUS：規格/SVA Block Contract＋形式化證明排除不可達覆蓋點，21,071+ 排除零誤排、token −27.2~180 倍（arXiv 2611.26815）"}
+{"date": "2026-11-24", "title": "主軸：AI 供應商的資料承諾從「相信合約」變成「可抽驗」——留樣放你家（Anthropic EFS）＋金絲雀抽驗（Vercel canary ZDR audit）＋合格供應商名單（Vercel 總部國家路由）（供應商驗證/可稽核 facet）"}
+{"date": "2026-11-24", "title": "概念：金絲雀標記（Canary Token）——永遠不該被碰的獨特誘餌，觸發即代表越界，只證明被碰過、不證明沒被存"}
+{"date": "2026-11-24", "title": "半導體專區：EDA 工具｜覆蓋率收斂中不可達覆蓋點的形式化排除（ARGUS Block Contract，arXiv 2611.26815，近期研究）"}
