@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的 AI 每日電子報🐧 2026-11-25</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0f0f0f;">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="max-width:650px;width:100%;">
+
+<!-- Header -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;">
+<tr><td style="padding:28px 24px;text-align:center;">
+<div style="font-size:24px;font-weight:800;color:#ffffff;letter-spacing:0.5px;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#ffffff;margin-top:10px;background:rgba(15,15,15,0.25);display:inline-block;padding:4px 12px;border-radius:999px;">2026-11-25（週三）</div>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 30 秒重點 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">⚡ 30 秒重點</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:8px;"><strong style="color:#ffffff;">今日主軸：AI agent 用工具的方式換了，從「按一顆、回報一次、再按下一顆」，變成「寫一段小程式一次跑完」。</strong>中間結果不必再一筆筆送回模型，省下的是來回次數和 token。</li>
+<li style="margin-bottom:8px;">同一週三個例子：Claude Code 把實驗性的 <strong style="color:#a5b4fc;">Code Mode</strong> 開放到 Bedrock、Google Cloud、Microsoft Foundry 上；Codex 0.172 讓 MCP 工具伺服器<strong style="color:#a5b4fc;">用到才啟動</strong>；阿里雲 Qoder 公布 CodeMode 加上<strong style="color:#a5b4fc;">工具說明按需載入</strong>，每個任務的點數用量從 4.43 降到 2.6（約 −41%）。</li>
+<li style="margin-bottom:8px;">配套跟上：agent 寫的程式要有地方跑、有人把關。OpenAI Agents SDK 0.26 收緊 Docker 掛載，Vercel 沙箱預裝 Claude Code，iFood 在 1.5 萬個程式庫上跑 coding agent，平均每次約 0.04 美元。</li>
+<li style="margin-bottom:8px;">其他訊號：GPT-6.2 進入 ChatGPT 對話分頁；Qwen4-Max 每百萬輸入 token 1.5 美元；OpenAI 與 Cisco 開源 Shirudo「補丁前的臨時盾牌」；Microsoft 開始驗證 AMD Helios 機櫃；AWS 開放跨機型、跨區域搜尋 GPU 容量。</li>
+<li>對半導體工作者最相關的：這就是從「站在機台前手動操作」換成「寫 recipe 批次跑」，你們早就熟悉。半導體專區介紹一篇 ASP-DAC 2027 論文：讓 LLM 改寫 RTL 的時脈閘控，每次修改都必須過等價性檢查與合成後功耗檢查才算數。</li>
+</ul>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:13px;">
+<tr><td style="padding:22px 22px;">
+<span style="display:inline-block;background:linear-gradient(135deg,#6366f1,#06b6d4);color:#ffffff;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">🎯 今天的主軸</span>
+<div style="font-size:19px;font-weight:700;color:#ffffff;line-height:1.5;margin:12px 0 14px 0;">agent 不再一顆一顆按按鈕：寫一段小程式，一次把工具用完</div>
+
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 14px 0;">想像一位新進工程師在機台前作業：按一個鍵，把讀值抄下來拿給主管看；主管說「再按下一個」，他又跑回機台。一個早上來回二十趟，主管的桌上堆滿了不需要看的中間數字。老手的做法是寫好 <strong style="color:#a5b4fc">recipe</strong>，讓機台自己跑完，再把需要判斷的那幾個數字交上去。過去的 AI agent 就像那位新人，每用一次工具，結果就整份送回模型，模型再決定下一步。這週有三家工具同時往「寫 recipe」的方向走。</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px 0;">▍共同變化</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 12px 0;">agent 呼叫工具的基本單位，從「一次一個工具呼叫」變成<strong style="color:#a5b4fc">「一段會呼叫多個工具的程式」</strong>。同時，工具的完整說明書不再一開始就全塞給模型，而是<strong style="color:#a5b4fc">先給目錄、用到才載入</strong>。</p>
+<ul style="margin:0 0 12px 0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:6px;"><strong style="color:#e2e8f0;">Claude Code v2.1.331（11/23）</strong>：Code Mode 開放到 Amazon Bedrock、Google Cloud Agent Platform、Microsoft Foundry 與 Claude Platform on AWS 的終端機工作階段。依官方文件，Code Mode 是讓 Claude <strong style="color:#a5b4fc">寫一段 JavaScript 來呼叫工具</strong>，由 Claude Code 在你的工作階段裡執行。目前仍是實驗功能、預設關閉。<br><a href="https://github.com/anthropics/claude-code/releases/tag/v2.1.331" style="color:#06b6d4;text-decoration:none;">🔗 Release notes</a> · <a href="https://code.claude.com/docs/en/code-mode" style="color:#06b6d4;text-decoration:none;">🔗 Code Mode 文件</a></li>
+<li style="margin-bottom:6px;"><strong style="color:#e2e8f0;">OpenAI Codex 0.172.0（11/24）</strong>：已快取工具清單的選用 stdio MCP 伺服器，改成<strong style="color:#a5b4fc">第一次被呼叫時才啟動</strong>；Code Mode 的主機連線全面改走 gRPC。<br><a href="https://github.com/openai/codex/releases/tag/rust-v0.172.0" style="color:#06b6d4;text-decoration:none;">🔗 Release notes</a></li>
+<li><strong style="color:#e2e8f0;">阿里雲 Qoder Auto（11/23）</strong>：官方公布兩項做法各自的效果。CodeMode 在適合的內部評測情境中，模型呼叫次數與 token <strong style="color:#a5b4fc">約減 30%</strong>；MCP 先給工具摘要、需要時才取完整定義，每輪點數<strong style="color:#a5b4fc">約減 19%</strong>。加上共用快取等其他手段，每個任務的點數從 4.43 降到 2.6，每輪耗時從 118 秒降到 86 秒。官方也特別說明：各項效果<strong style="color:#a5b4fc">彼此重疊，不能直接相加</strong>。<br><a href="https://www.alibabacloud.com/blog/your-credits-go-further-qoder-auto-cuts-per-task-usage-by-41%25_603807" style="color:#06b6d4;text-decoration:none;">🔗 Alibaba Cloud Blog</a></li>
+</ul>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px 0;">▍為什麼放在一起看</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 12px 0;">三家公司、三種產品，卻在同一週調整同一個環節：<strong style="color:#a5b4fc">模型和工具之間的那條線</strong>。這不是模型變聰明，而是外層的「工作方式」換了，而且已經從單一工具的實驗，擴散到雲端平台的正式版本路徑上。</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px 0;">▍過去 vs. 現在</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 12px 0;"><strong style="color:#a5b4fc">過去</strong>：要查 50 筆工單、篩出異常、再對每筆異常查細節，agent 得呼叫幾十次工具，每次的原始結果都整份塞回模型的上下文，模型邊讀邊決定下一步。<strong style="color:#a5b4fc">現在</strong>：模型寫一段程式，裡面有迴圈、篩選和後續查詢，程式在本機一次跑完，只把最後的摘要交回模型。中間的大量資料<strong style="color:#a5b4fc">從頭到尾沒有經過模型</strong>。Anthropic 2025 年 11 月的工程文章舉過一個例子：同一個任務的 token 用量從約 15 萬降到約 2 千。那是單一示範案例，不是通用基準。<a href="https://www.anthropic.com/engineering/code-execution-with-mcp" style="color:#06b6d4;text-decoration:none;">🔗 背景：Code execution with MCP</a></p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px 0;">▍背後邏輯</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 12px 0;">兩個原因。第一，<strong style="color:#a5b4fc">每一次來回都要付錢、付時間</strong>：模型得重新讀一遍越來越長的上下文，才能決定下一步。第二，<strong style="color:#a5b4fc">程式本來就是模型最熟的語言</strong>：迴圈、條件判斷、錯誤處理，用程式表達比用幾十次 JSON 工具呼叫更精準。「按需載入」則解決另一個問題：接了上百個工具，光是說明書就會吃掉一大塊上下文，先給目錄、需要時才翻那一頁就好。</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px 0;">▍對你的工作</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 12px 0;">如果你正在把 agent 接上內部系統（MES 查詢、良率資料庫、EDA log 解析、license server），<strong style="color:#a5b4fc">工具的設計方式要跟著改</strong>：與其開一個「回傳整張表」的大工具，不如提供可程式化組合的小函式，再讓 agent 在沙箱裡自己組裝。對 IT 主管而言，評估 agent 成本時別只看單價，還要看<strong style="color:#a5b4fc">每個任務往返幾次、讀了多少中間資料</strong>。</p>
+
+<div style="background:#252525;border-radius:8px;padding:12px;margin:0 0 12px 0;">
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin-bottom:4px;">👤 人物觀點／延伸解讀</div>
+<p style="font-size:14px;line-height:1.7;color:#cbd5e1;margin:0;">AWS 執行長 Matt Garman 在 11/23 的專文中主張，agent 需要自己的身分類型，權限要在基礎設施層強制限縮，並指出一般容器與主機共用核心，所以 AWS 用 Firecracker 輕量 VM 做硬體級隔離。這是他對產業的主張，不是 Code Mode 的官方規格。但放在今天的脈絡裡正好提醒一件事：<strong style="color:#a5b4fc">agent 一旦開始自己寫程式並執行，執行環境就成了安全的第一線。</strong><a href="https://www.aboutamazon.com/news/aws/aws-ceo-ai-safety-engineering" style="color:#06b6d4;text-decoration:none;"> 🔗 About Amazon</a></p>
+</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px 0;">▍限制與待驗證</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 12px 0;">一、Claude Code 的 Code Mode 仍是<strong style="color:#a5b4fc">實驗、預設關閉</strong>，只支援互動式終端機，不支援 VS Code 面板、閘道或雲端工作階段。二、Qoder 的 30%／19% 是自家內部評測，而且只適用於「適合這種做法的情境」。三、程式一次跑完，代表<strong style="color:#a5b4fc">模型看不到中間過程</strong>：程式在第 30 筆悄悄出錯時，可能沒人察覺，可觀察性和錯誤回報要另外補上。四、讓模型產生的程式直接執行，沙箱隔離與權限把關變得更關鍵（見衍生新聞）。</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:16px 0 6px 0;">▍重點一句話</div>
+<p style="font-size:15px;line-height:1.7;color:#ffffff;font-weight:700;margin:0;">agent 的效率瓶頸從「模型夠不夠聰明」移到「要來回幾趟」：讓它寫 recipe，而不是一顆一顆按按鈕。</p>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 衍生新聞 1 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<span style="display:inline-block;background:#252525;color:#a5b4fc;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<div style="font-size:17px;font-weight:700;color:#ffffff;line-height:1.5;margin:10px 0 8px 0;">OpenAI 收緊 agent 執行邊界：Docker 掛載改規則，模型給的路徑不再等於授權</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 8px 0;">OpenAI Agents SDK（Python）v0.26.0 於 11/24 發布，<strong style="color:#a5b4fc">Docker 沙箱不再接受 InContainerMountStrategy</strong>（含唯讀掛載），必須改用 DockerVolumeMountStrategy，舊的 RunState 也要丟棄重來。Codex 工具讀取本機圖片時改成需要具名參照，<strong style="color:#a5b4fc">模型自己給的檔案路徑不再自動取得存取權</strong>。同週的 Codex 0.172 也新增了在 config.toml 為個別工具指定審核者的功能。和主軸的關係：agent 越常自己寫、自己跑，邊界就越要從「信任模型」改成「由環境決定」。</p>
+<p style="font-size:14px;line-height:1.7;color:#94a3b8;font-style:italic;margin:0 0 8px 0;">💡 重點一句話：讓 agent 寫程式之前，先決定它能碰哪些檔案、哪些工具要有人看過。</p>
+<a href="https://github.com/openai/openai-agents-python/releases/tag/v0.26.0" style="color:#06b6d4;text-decoration:none;font-size:14px;">🔗 閱讀原文｜GitHub openai-agents-python</a>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 衍生新聞 2 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<span style="display:inline-block;background:#252525;color:#a5b4fc;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<div style="font-size:17px;font-weight:700;color:#ffffff;line-height:1.5;margin:10px 0 8px 0;">Vercel 沙箱預設映像預裝 Claude Code，另把工作區硬碟拆成獨立服務</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 8px 0;">Vercel 11/24 宣布，JS Sandbox SDK v3 起預設使用 <strong style="color:#a5b4fc">vercel/sandbox/universal:latest</strong>，內含 Node.js、Python 與 Claude Code、Pi 等 coding agent，每晚重建；需要可重現時可釘選映像 digest。11/23 另推出 Vercel Drives 的 CLI、npm／pip SDK 與 REST API，讓 agent 的持久工作區<strong style="color:#a5b4fc">可以脫離沙箱單獨建立、列出和分叉</strong>。和主軸的關係：agent 寫的程式需要一個隨手可開、用完即丟的執行環境，雲端平台正在把它做成標準零件。</p>
+<p style="font-size:14px;line-height:1.7;color:#94a3b8;font-style:italic;margin:0 0 8px 0;">💡 重點一句話：「可拋棄的執行環境＋可保留的工作區」正變成 agent 基礎設施的標準組合。</p>
+<a href="https://vercel.com/changelog/all-sandbox-runtimes-now-use-vercel-managed-images" style="color:#06b6d4;text-decoration:none;font-size:14px;">🔗 閱讀原文｜Vercel Changelog</a> · <a href="https://vercel.com/changelog/vercel-drives-adds-cli-commands-and-standalone-sdks" style="color:#06b6d4;text-decoration:none;font-size:14px;">Drives</a>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 衍生新聞 3 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<span style="display:inline-block;background:#252525;color:#a5b4fc;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<div style="font-size:17px;font-weight:700;color:#ffffff;line-height:1.5;margin:10px 0 8px 0;">iFood 在 1.5 萬個程式庫跑 coding agent：每次約 0.04 美元</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 8px 0;">OpenAI 11/24 刊出拉美外送平台 iFood 的案例：內部的 Remote Agents Platform 以 REST API 接收任務，在<strong style="color:#a5b4fc">隔離的 Ubuntu 沙箱</strong>中執行，<strong style="color:#a5b4fc">clone 程式庫、發 merge request 這些固定步驟用確定性程式處理</strong>，中間才交給模型。累計超過 2.5 萬次執行、270 億 token，平均推論成本約每次 0.04 美元，安全團隊修掉的漏洞數量也翻倍以上。和主軸的關係：固定流程寫死在程式裡、只把需要判斷的部分交給模型，正是「寫 recipe」的思路放大到企業規模。</p>
+<p style="font-size:14px;line-height:1.7;color:#94a3b8;font-style:italic;margin:0 0 8px 0;">💡 重點一句話：便宜的 agent 不是靠便宜的模型，而是靠讓模型少做不需要它的事。</p>
+<a href="https://openai.com/business/customer-stories/ifood" style="color:#06b6d4;text-decoration:none;font-size:14px;">🔗 閱讀原文｜OpenAI 客戶案例</a>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0;">GPT-6.2 進入 ChatGPT 對話分頁</strong>：11/23 起對 Plus、Pro、Business、Enterprise 逐步推出，官方稱圖像理解從 47.4% 升到 71.7%、困難指令遵循從 62.5% 升到 78.1%，Work 與 Codex 模型不變。日常聊天和工作模式的模型開始分軌更新，團隊比較結果時要先確認用的是哪一條。<a href="https://help.openai.com/en/articles/6825453-chatgpt-release-notes" style="color:#06b6d4;text-decoration:none;"> 🔗 OpenAI Help</a></li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0;">Qwen4-Max 上線</strong>：阿里雲 11/23 公布定價為每百萬 token 輸入 1.5 美元、輸出 4.5 美元，1M 上下文，Terminal-Bench 4.0 得 48.5，官方稱每任務平均成本比前代低 62%。API 相容 OpenAI 與 Anthropic 介面，換模型的門檻更低，但只提供託管、不開放權重。<a href="https://www.alibabacloud.com/blog/qwen4-max-one-flagship-for-complex-work-at-a-price-that-scales_603806" style="color:#06b6d4;text-decoration:none;"> 🔗 Alibaba Cloud Blog</a></li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0;">OpenAI × Cisco 開源 Shirudo</strong>：11/23 發表的 Linux 執行期工具，用經簽章、TPM 留痕的 eBPF「盾牌」在正式補丁上線前，暫時擋住有漏洞的程式路徑；受控測試中，Codex 產生的盾牌在 Elasticsearch 不重啟的情況下擋下 Java4Shell 攻擊。對不能隨便停機的產線與 IT 系統，「先擋、再修」多了一個開源選項。<a href="https://openai.com/index/introducing-shirudo" style="color:#06b6d4;text-decoration:none;"> 🔗 OpenAI</a></li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0;">Microsoft 開始驗證 AMD Helios 機櫃</strong>：AMD 11/23 表示，Microsoft 已在研究實驗室啟用第一座 Helios 機櫃（Instinct MI455X＋第 6 代 EPYC＋Pensando＋ROCm），正跑早期工作負載驗證，計畫大規模部署做推論。雲端 AI 機櫃的供應選項正在從單一陣營變成多陣營。<a href="https://newsroom.amd.com/news/microsoft-running-workload-validation-amd-helios-rackscale-solution/" style="color:#06b6d4;text-decoration:none;"> 🔗 AMD Newsroom</a></li>
+<li><strong style="color:#e2e8f0;">AWS GPU 容量預訂可跨機型、跨區域搜尋</strong>：11/23 起，EC2 Capacity Blocks for ML 可一次搜尋多種加速器機型（含 P6-B300、P6-B200、Trn2）與多個區域，預訂最長 6 個月。要排大型訓練或模擬工作的團隊，比較容易湊到檔期。<a href="https://aws.amazon.com/about-aws/whats-new/2026/11/ec2-capacity-blocks-ml-flex-search/" style="color:#06b6d4;text-decoration:none;"> 🔗 AWS What's New</a></li>
+</ul>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">📖 今日概念｜往返成本（Round Trip）與批次化（Batching）</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 10px 0;"><strong style="color:#a5b4fc">定義：</strong>每做一次「送出請求、等回應」都有一筆固定成本，跟這次做了多少事無關；把多件事打包成一次送出，就能把固定成本攤薄，這就是批次化。</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 10px 0;"><strong style="color:#a5b4fc">生活化比喻：</strong>去大賣場買十樣東西，一次推車買齊，和每想到一樣就開車跑一趟，差的不是商品錢，而是九趟的油錢和停車時間。對 LLM agent 來說，「油錢」就是每一輪都要重讀的上下文 token，加上等模型回應的時間。</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 10px 0;"><strong style="color:#a5b4fc">工作中的例子：</strong>ATE 測試採 multi-site 同時測多顆晶粒，爐管一次放一整批晶圓，都是在攤薄裝載、升溫、對位這些固定成本。agent 的 Code Mode 是同一套邏輯：把幾十次工具呼叫寫進一段程式，模型只需要「出門一趟」。</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 10px 0;"><strong style="color:#a5b4fc">常見誤解：</strong>「批次越大越好」。批次越大，單次失敗的代價越高，中間的可觀察性也越差，就像爐管一整批出事，損失比單片大得多。所以批次化通常要搭配中間檢查點與清楚的錯誤回報。</p>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0;"><strong style="color:#a5b4fc">與今天主軸的關係：</strong>Code Mode 減的是模型往返的次數，按需載入減的是每趟的行李量。兩者加起來，就是 Qoder 每任務點數 −41% 背後的機制。</p>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 半導體 AI 專區 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">🏭 半導體 AI 專區｜LLM 改寫 RTL 時脈閘控：每一刀都要過等價性與功耗檢查</div>
+<div style="margin-bottom:12px;">
+<span style="display:inline-block;background:#252525;color:#67e8f9;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;margin-right:6px;">IC 設計</span>
+<span style="display:inline-block;background:#252525;color:#fbbf24;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;">背景知識（近期研究，11/22 上架）</span>
+</div>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:12px 0 6px 0;">▍問題與流程位置</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 10px 0;"><strong style="color:#a5b4fc">背景知識：</strong>時脈閘控（clock gating）是在暫存器不需要更新時把時脈關掉，省下動態功耗。合成工具會自動插入一部分，但能插多少，取決於 RTL 怎麼寫：條件寫得太粗，工具就找不到可以關的時機。所以在 RTL 階段手動「改寫成好閘控的樣子」一直是功耗工程師的苦工。常用的指標是 flop-gating efficiency（FGE），白話說就是暫存器在不需要更新的週期裡，時脈真的被關掉的比例。</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:12px 0 6px 0;">▍AI 如何介入</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 10px 0;"><strong style="color:#a5b4fc">研究內容：</strong>Geuna Chang、Seohyun Kim、Youngsoo Shin 的論文已獲 ASP-DAC 2027 接受。做法是先讓 LLM 產生 Idle、Typical、Peak 三種工作負載，由使用者挑一種當最佳化目標；再由<strong style="color:#a5b4fc">四個 LLM agent 各負責一種時脈閘控技巧</strong>，依序改寫 Verilog，專挑 FGE 偏低的暫存器下手。和過去的差別在於：以前是工程師看功耗報告、猜哪裡能改、手改、重跑合成；現在由 agent 大量提案，工程師把關規則。</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:12px 0 6px 0;">▍資料與產出</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 10px 0;">輸入是原始 RTL 和工作負載，產出是改寫後的 Verilog。論文在 5 個 RTL 設計上報告：FGE 平均提升 12.1 個百分點，所選工作負載下的功耗平均降低 23.6%、最高 59.3%；同條件下，某商用工具平均只降 4.1%，純 LLM 基準降 8.6%。</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:12px 0 6px 0;">▍如何驗證</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 10px 0;">關鍵在把關規則：每一次修改都必須同時滿足三個條件才會保留，否則退回。一、<strong style="color:#a5b4fc">功能等價</strong>；二、<strong style="color:#a5b4fc">合成後功耗確實下降</strong>；三、<strong style="color:#a5b4fc">不違反面積與時序限制</strong>。LLM 負責提案，裁判是等價性檢查與合成工具。</p>
+
+<div style="font-size:13px;font-weight:700;color:#a5b4fc;margin:12px 0 6px 0;">▍限制與風險</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 10px 0;">只測了 5 個設計，商用工具沒有具名；功耗改善是針對「所選的那一種」工作負載，換一種負載未必成立。這是研究成果，沒有任何量產導入的報告。<strong style="color:#a5b4fc">編輯分析：</strong>實務上還要考慮閘控單元對時脈樹與 DFT（掃描鏈）的影響，論文摘要沒有涵蓋。</p>
+
+<p style="font-size:14px;line-height:1.7;color:#94a3b8;margin:0 0 10px 0;"><a href="https://arxiv.org/abs/2611.29461" style="color:#06b6d4;text-decoration:none;">🔗 arXiv 2611.29461（ASP-DAC 2027）</a></p>
+<p style="font-size:15px;line-height:1.7;color:#67e8f9;font-weight:700;margin:0;">👷 對半導體工作者的意義：低功耗設計與 RTL 工程師最值得試的，不是讓 LLM 直接寫功耗最佳化，而是先把「等價性＋合成後功耗＋時序」做成自動裁判，再讓 agent 在裁判底下大量嘗試。可以從你手上 FGE 最低的幾個模組開始。</p>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;">
+<tr><td style="padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:13px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">🪞 反思時間</div>
+<ul style="margin:0 0 12px 0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:8px;">當 agent 開始「寫一段程式一次跑完」，中間過程模型不再逐步看到。你會在哪些環節堅持保留逐步回報，又在哪些環節願意放手讓它批次執行？</li>
+<li style="margin-bottom:8px;">你部門最常被 agent 呼叫的內部系統（MES、良率資料庫、EDA log、license server），目前提供的是「回傳整張表」的大介面，還是可組合的小函式？要改成後者，第一步會是什麼？</li>
+<li>如果未來 agent 成本主要看「往返次數」而非「模型單價」，你會怎麼重新設計評估 agent 方案的指標，才不會被單價表誤導？</li>
+</ul>
+<p style="font-size:15px;line-height:1.7;color:#a5b4fc;font-weight:700;margin:0;">🎒 今日帶走：agent 變省不一定要換模型，讓它寫 recipe、少跑幾趟，再把裁判放在每一趟的終點。</p>
+</td></tr>
+</table>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- 歷史電子報 -->
+<tr><td style="padding:0 0 16px 0;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#1a1a1a;border-radius:12px;">
+<tr><td style="padding:20px 22px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:8px;">📚 想回顧之前的內容？</div>
+<p style="font-size:15px;line-height:1.7;color:#cbd5e1;margin:0 0 8px 0;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+<a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline;font-size:15px;font-weight:700;">查看歷史電子報</a>
+</td></tr>
+</table>
+</td></tr>
+
+<!-- Footer -->
+<tr><td style="padding:8px 0 0 0;text-align:center;">
+<p style="font-size:14px;line-height:1.7;color:#94a3b8;margin:0 0 6px 0;">📬 分享給朋友：<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline">訂閱這份電子報</a></p>
+<p style="font-size:13px;line-height:1.7;color:#64748b;margin:0 0 6px 0;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline">點此退訂（10 秒，下期生效）</a></p>
+<p style="font-size:12px;line-height:1.7;color:#475569;margin:0;">© 2026 企鵝的 AI 每日電子報🐧 · 本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源</p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>

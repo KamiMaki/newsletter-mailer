@@ -1500,3 +1500,19 @@
 {"date": "2026-11-24", "title": "主軸：AI 供應商的資料承諾從「相信合約」變成「可抽驗」——留樣放你家（Anthropic EFS）＋金絲雀抽驗（Vercel canary ZDR audit）＋合格供應商名單（Vercel 總部國家路由）（供應商驗證/可稽核 facet）"}
 {"date": "2026-11-24", "title": "概念：金絲雀標記（Canary Token）——永遠不該被碰的獨特誘餌，觸發即代表越界，只證明被碰過、不證明沒被存"}
 {"date": "2026-11-24", "title": "半導體專區：EDA 工具｜覆蓋率收斂中不可達覆蓋點的形式化排除（ARGUS Block Contract，arXiv 2611.26815，近期研究）"}
+{"date": "2026-11-25", "title": "🔄 Claude Code v2.1.331：實驗性 Code Mode 開放至 Bedrock／Google Cloud Agent Platform／Microsoft Foundry／Claude Platform on AWS，claude doctor 連線檢查、11/30 起受管 marketplace 預設自動更新（11/23）"}
+{"date": "2026-11-25", "title": "OpenAI Codex 0.172.0：選用 stdio MCP 伺服器首次呼叫才啟動、Code Mode 全面 gRPC、逐工具審核者、Bedrock 後端（11/24）"}
+{"date": "2026-11-25", "title": "阿里雲 Qoder Auto 每任務點數 4.43→2.6（−41.3%）、每輪 118s→86s：CodeMode 約 −30%、MCP 工具按需載入每輪 −19%（效果重疊，11/23）"}
+{"date": "2026-11-25", "title": "AWS 執行長 Matt Garman 專文：agent 需獨立身分類型、基礎設施層最小權限、Firecracker/Nitro 隔離、自動推理（11/23）"}
+{"date": "2026-11-25", "title": "OpenAI Agents SDK Python v0.26.0：Docker 拒絕 InContainerMountStrategy、模型給的本機圖片路徑不再授權、輸入護欄拒絕停止排隊工具（11/24）"}
+{"date": "2026-11-25", "title": "Vercel Sandbox 全面改用 Vercel Managed Images：預設 universal 映像預裝 Claude Code／Pi、每晚重建（11/24）＋Vercel Drives CLI/SDK/REST（11/23）"}
+{"date": "2026-11-25", "title": "OpenAI 客戶案例 iFood Remote Agents Platform：1.5 萬程式庫、2.5 萬+ 次執行、270 億 token、每次約 0.04 美元（11/24）"}
+{"date": "2026-11-25", "title": "GPT-6.2 進入 ChatGPT 對話分頁：圖像理解 47.4%→71.7%、困難指令遵循 62.5%→78.1%（11/23）"}
+{"date": "2026-11-25", "title": "Qwen4-Max：每百萬 token 1.5/4.5 美元、1M 上下文、Terminal-Bench 4.0 48.5、每任務成本 −62%、相容 OpenAI/Anthropic API（11/23）"}
+{"date": "2026-11-25", "title": "OpenAI × Cisco 開源 Shirudo：簽章＋TPM 留痕 eBPF 臨時盾牌，受控測試擋下 Java4Shell 不重啟 Elasticsearch（11/23）"}
+{"date": "2026-11-25", "title": "Microsoft 驗證 AMD Helios 機櫃（MI455X＋EPYC 第 6 代＋Pensando＋ROCm），計畫大規模推論部署（11/23）"}
+{"date": "2026-11-25", "title": "AWS EC2 Capacity Blocks for ML 跨機型（P6-B300/P6-B200/Trn2）跨區域搜尋、最長 6 個月（11/23）"}
+{"date": "2026-11-25", "title": "LLM 輔助 RTL 時脈閘控改寫：四 agent＋等價性/合成後功耗/面積時序把關，5 設計 FGE +12.1pp、功耗平均 −23.6%（最高 59.3%）（arXiv 2611.29461，ASP-DAC 2027）"}
+{"date": "2026-11-25", "title": "主軸：agent 不再一顆一顆按按鈕——寫一段程式一次調度多個工具＋工具說明按需載入（Claude Code Code Mode 上雲＋Codex MCP 延遲啟動＋Qoder CodeMode −41%；工具調度介面/往返次數 facet）"}
+{"date": "2026-11-25", "title": "概念：往返成本（Round Trip）與批次化（Batching）——攤薄每次來回的固定成本，但批次越大失敗代價與可觀察性問題越大"}
+{"date": "2026-11-25", "title": "半導體專區：IC 設計｜LLM 改寫 RTL 時脈閘控（Clock Gating）與等價性＋合成後功耗把關（arXiv 2611.29461，近期研究）"}
