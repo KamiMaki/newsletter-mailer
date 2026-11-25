@@ -1516,3 +1516,17 @@
 {"date": "2026-11-25", "title": "主軸：agent 不再一顆一顆按按鈕——寫一段程式一次調度多個工具＋工具說明按需載入（Claude Code Code Mode 上雲＋Codex MCP 延遲啟動＋Qoder CodeMode −41%；工具調度介面/往返次數 facet）"}
 {"date": "2026-11-25", "title": "概念：往返成本（Round Trip）與批次化（Batching）——攤薄每次來回的固定成本，但批次越大失敗代價與可觀察性問題越大"}
 {"date": "2026-11-25", "title": "半導體專區：IC 設計｜LLM 改寫 RTL 時脈閘控（Clock Gating）與等價性＋合成後功耗把關（arXiv 2611.29461，近期研究）"}
+{"date": "2026-11-26", "title": "Anthropic Messages API 從 Python 改寫成 Rust：Claude 一週寫初版、影子流量比對吻合率 24%→99.6%、CPU −70%／記憶體 −80%+（11/25）"}
+{"date": "2026-11-26", "title": "Hugging Face coding agent 調 Inkling 2 Mini 推論：單張 RTX PRO 6000 單用戶解碼 136→190.6 tok/s（+40%），對照組夾測＋逐字元輸出比對（11/25）"}
+{"date": "2026-11-26", "title": "Ai2 訪談 17 位科學家：agent 科學信任五要素（驗證／隱私／客觀／問責／透明）（11/25）"}
+{"date": "2026-11-26", "title": "AgentDRC 多 agent DRC 違規修正：pass@1 30.4%、pass@5 55.7%（+13.8%）（arXiv 2611.31876）"}
+{"date": "2026-11-26", "title": "Vercel Workflow SDK 5.8 新執行引擎＋推測執行：p75 步驟開銷 85→7 ms、WORKFLOW_SPEC_VERSION=8 保留舊引擎（11/25）"}
+{"date": "2026-11-26", "title": "CPU-Eval：六顆 CPU 339 題 HDL 生成，平均 pass@1 比 VerilogEval v2 低 45.14 分（arXiv 2611.32405）"}
+{"date": "2026-11-26", "title": "Microsoft Agent Framework PyPI agent-framework 1.26.1／1.26.2 遭植入竊密程式碼（PYSEC-2026-4388），repo 暫時關閉、建議釘選 1.26.0（11/25）"}
+{"date": "2026-11-26", "title": "Claude Code v2.1.332：MCP 伺服器技能（beta）、PreSkillShellCommand hook、Foundry 預設 Sonnet 5.5（11/25）"}
+{"date": "2026-11-26", "title": "OpenAI：GPT-6 模型具內在蛋白質設計能力，五個標靶有結合跡象（11/24）"}
+{"date": "2026-11-26", "title": "DeepMind Humanity's First Exam：544 題基礎能力一致性評測＋Kaggle 黑客松至 12/15（11/24）"}
+{"date": "2026-11-26", "title": "AWS Nitro Isolation Engine 以 Isabelle/HOL 形式化驗證、Graviton5 預設啟用（11/25）"}
+{"date": "2026-11-26", "title": "主軸：AI 寫得出整套新系統，真正的功夫變成讓舊系統當標準答案——影子流量差分比對＋對照組夾測（Anthropic Rust 遷移＋HF 推論 hill-climb＋AgentDRC；遷移驗證/差分比對 facet）"}
+{"date": "2026-11-26", "title": "概念：測試預言（Test Oracle）與差分測試（Differential Testing）——拿舊實作當答案逐筆比對，只證明一樣不證明對"}
+{"date": "2026-11-26", "title": "半導體專區：IC 製造｜晶圓圖缺陷樣態分類（WM-811K／MixedWM38／多模態模型零樣本規則提示 arXiv 2610.35080，背景）"}

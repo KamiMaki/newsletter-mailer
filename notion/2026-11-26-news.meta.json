@@ -1,0 +1,1 @@
+{"type":"AI新聞報","date":"2026-11-26","title":"2026-11-26 ｜ AI改寫靠舊系統對答案","summary":"AI 能接手大改寫，難的是證明新舊一致：Anthropic Messages API 改寫成 Rust，吻合率 24%→99.6%、CPU −70% ・ HF agent 調推論 +40%（對照組夾測＋逐字元比對）・ AgentDRC 以 DRC 當裁判、CPU-Eval 比 VerilogEval 低 45 分 ・ Microsoft Agent Framework PyPI 遭植入竊密碼、Claude Code 從 MCP 載入技能、GPT-6 蛋白質設計、DeepMind Humanity's First Exam ・ 半導體專區：晶圓圖缺陷樣態分類","icon":"📰"}
