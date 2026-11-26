@@ -1530,3 +1530,19 @@
 {"date": "2026-11-26", "title": "主軸：AI 寫得出整套新系統，真正的功夫變成讓舊系統當標準答案——影子流量差分比對＋對照組夾測（Anthropic Rust 遷移＋HF 推論 hill-climb＋AgentDRC；遷移驗證/差分比對 facet）"}
 {"date": "2026-11-26", "title": "概念：測試預言（Test Oracle）與差分測試（Differential Testing）——拿舊實作當答案逐筆比對，只證明一樣不證明對"}
 {"date": "2026-11-26", "title": "半導體專區：IC 製造｜晶圓圖缺陷樣態分類（WM-811K／MixedWM38／多模態模型零樣本規則提示 arXiv 2610.35080，背景）"}
+{"date": "2026-11-27", "title": "HF〈Swarms, Flocks, Gangs〉：4 個共用 Qwen3-0.6B 的 agent 以懲罰 token 的團隊獎勵訓練，成功率 6.6%→82.3%、token −37.4%，強調同預算比較（11/26）"}
+{"date": "2026-11-27", "title": "阿里雲 AgenticOps 決策模型評測：9B Clef Pilot 82.81% vs Qwen3.8 Flash 80.29%、P95 延遲 5.8s→1.15s，放任務分派站 +6.4 分（11/26）"}
+{"date": "2026-11-27", "title": "阿里雲 AI 原生研發組織七案例：agent 執行、人訂目標與驗收，資安依可逆性三級分工（11/26）"}
+{"date": "2026-11-27", "title": "AWS Lambda durable functions 調度 Lambda MicroVM（開發者預覽，11/25）"}
+{"date": "2026-11-27", "title": "GitHub Copilot 程式碼審查 12/30 起預設由 repo 所屬組織付費（11/25）"}
+{"date": "2026-11-27", "title": "阿里雲開源 AgentTeams 1.2.8：Manager/Leader/Worker 分層、驗收看板、6 種 harness（11/26）"}
+{"date": "2026-11-27", "title": "ChatGPT Chat 與 Work 合用單一用量額度，先少數 Pro、12 月擴大（據報導，11/25）"}
+{"date": "2026-11-27", "title": "NVIDIA Nemotron 3.5 Parse 開放合成資料（圖表 998 萬/表格 100 萬/OCR 790 萬）與微調配方、DFlash2 推測解碼（11/26）"}
+{"date": "2026-11-27", "title": "Amazon Transcribe Turbo 公開預覽：語意式輪替約 615ms、執行期 ASR 提示（11/25）"}
+{"date": "2026-11-27", "title": "llama.cpp AMD Ryzen/Radeon 每週效能儀表板（11/26）"}
+{"date": "2026-11-27", "title": "Vercel 既有 Pro 團隊 Standard build 改按分鐘計費 0.014 美元（11/25）"}
+{"date": "2026-11-27", "title": "Kolpona：免梯度神經元編輯＋agent 生成 RTL，Qwen3.8-27B VerilogEval v2 73.1%→94.9%（arXiv 2611.33973）"}
+{"date": "2026-11-27", "title": "DiversePlace：多樣性導向課程式 RL 巨集擺放，ISPD2005 八設計（arXiv 2611.34472）"}
+{"date": "2026-11-27", "title": "主軸：多 agent 比的是排班不是人頭——同 token 預算比較、瓶頸站放專用角色、人守驗收（HF Swarms＋阿里雲決策模型＋阿里雲七案例；多 agent 編制/協作成本 facet）"}
+{"date": "2026-11-27", "title": "概念：阿姆達爾定律（Amdahl's Law）——加速上限由無法平行的循序段決定"}
+{"date": "2026-11-27", "title": "半導體專區：EDA 工具｜巨集擺放的多樣性強化學習：交出多個 HPWL 相近但不同的候選（DiversePlace arXiv 2611.34472，近期研究＋AlphaChip 背景）"}

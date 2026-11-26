@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的 AI 每日電子報🐧｜2026-11-27</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0f0f0f;">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" border="0" style="max-width:650px;width:100%;">
+
+<!-- Header -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;padding:28px 24px;text-align:center;">
+<div style="font-size:24px;font-weight:800;color:#ffffff;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#e0f2fe;margin-top:10px;">2026-11-27（五）</div>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 30 秒重點 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 24px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">⚡ 30 秒重點</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:8px;"><strong style="color:#ffffff;">今日主軸：多 agent 系統開始像產線一樣「排班」——比的不是開了幾個 agent，而是同樣的 token 預算下誰分工得好、瓶頸站放了誰、最後由誰驗收。</strong></li>
+<li style="margin-bottom:8px;">Hugging Face 實驗：同一個小模型組成的 4 人 agent 團隊，<strong style="color:#a5b4fc">練過合作</strong>後成功率 6.6%→82.3%、每次少用約 37% token；阿里雲則發現 9B 小「決策模型」放在對的位置，比通用模型更準、延遲少約 80%。</li>
+<li style="margin-bottom:8px;">配套陸續到位：AWS Lambda 能一次調度多台隔離 MicroVM 跑 agent 產出的程式碼；GitHub 宣布 Copilot 程式碼審查預設<strong style="color:#a5b4fc">記在 repo 所屬組織的帳上</strong>。</li>
+<li style="margin-bottom:8px;">其他訊號：據報導 ChatGPT 的 Chat 與 Work 改用同一個用量額度；NVIDIA 為文件解析模型 Nemotron 3.5 Parse 釋出約 1,900 萬筆合成資料；Amazon Transcribe Turbo 為語音 agent 加入「語意式輪替」。</li>
+<li>半導體工作者最相關：新論文 DiversePlace 讓強化學習做巨集擺放時，<strong style="color:#a5b4fc">一次交出多個「一樣好但長得不同」的擺法</strong>，把最後挑選權留給下游時序與繞線。</li>
+</ul>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:#1a1a1a;border-radius:13px;padding:24px;">
+<span style="display:inline-block;background:#312e81;color:#c7d2fe;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">🎯 今天的主軸</span>
+<div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin:12px 0 4px;">多 agent 不是「人多好辦事」：先找瓶頸站、用同一份預算比，人守在驗收口</div>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 4px;">▍共同變化</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0;">過去一年，「多開幾個 agent 一起做」幾乎成了直覺：一個寫、一個審、一個查資料，好像人手越多越強。這兩天三份來自不同團隊的材料，不約而同地把這個直覺拆開來算帳——<strong style="color:#a5b4fc">多 agent 的價值不在數量，而在編制</strong>：誰負責哪一站、站與站之間怎麼溝通、整體花了多少 token，以及最後由誰拍板。</p>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 4px;">▍為什麼放在一起看</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;">用晶圓廠的語言最好懂：產線加機台，產能不一定上升，<strong style="color:#a5b4fc">瓶頸站</strong>決定整條線的速度；換到 agent 系統，「機台」就是 agent，「瓶頸站」就是最常出錯、最花時間的那一步。三則消息剛好分別回答三個排班問題：</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;"><strong style="color:#e2e8f0">① 合作要練，而且要用同一份預算比。</strong>Hugging Face 11/26 的教學文用 4 個共用同一個 Qwen3-0.6B 權重的 agent，玩「各自拿一個 1–99 的私有數字、合力排出順序」的遊戲，並用一個<strong style="color:#a5b4fc">會懲罰 token 用量的團隊獎勵</strong>去訓練。75 步內，成功率從 6.6% 升到 82.3%，每次嘗試的 token 從約 13k 降到 8k（−37.4%）；有趣的是互相廣播的次數反而從 2.38 增加到 5.73——<strong style="color:#a5b4fc">話變多、但每句更精簡</strong>。作者特別強調，要拿「同樣 token 預算」跟單打獨鬥比：未訓練團隊用 best-of-8 硬撐，每題約 103k token 也只有 37.5%（作者標明為估算）。<br>🔗 <a href="https://huggingface.co/blog/training-swarms" style="color:#06b6d4;">閱讀原文</a> ｜ 來源：Hugging Face Blog</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;"><strong style="color:#e2e8f0">② 瓶頸站該放專用角色。</strong>阿里雲 11/26 公布 AgenticOps（自動化維運）的實測：在 1,745 題單一判斷上，9B 的「決策模型」Clef Pilot 準確率 82.81%，略勝通用模型 Qwen3.8 Flash 的 80.29%，P95 延遲則從 5.8 秒降到 1.15 秒。更關鍵的是<strong style="color:#a5b4fc">放在哪一站</strong>：在完整根因分析流程中，放在「任務分派」站加 6.4 分、放在「進度評估」站加 7.2 分、放在「根因驗證」站只加 2.4 分；而原本流程有 54.7% 的模型呼叫時間花在「挑要看哪些物件與資料」。注意：完整流程只測 10 題，且是阿里雲評自家模型。<br>🔗 <a href="https://www.alibabacloud.com/blog/from-generation-to-decision-an-empirical-evaluation-of-decision-models-for-agenticops_603817" style="color:#06b6d4;">閱讀原文</a> ｜ 來源：Alibaba Cloud Blog</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0;"><strong style="color:#e2e8f0">③ 人留在設定目標與驗收的位置。</strong>阿里雲同日整理的 7 個內部「AI 原生研發組織」案例，分工幾乎一致：agent 做執行、分析、重複工作；人訂目標、品質標準、權限、停止條件與驗收。其中資安團隊依風險分三級——<strong style="color:#a5b4fc">標準清楚、可逆的事交給 agent 再由人核准；高風險、模糊或不可逆的留給專家</strong>；行銷案例則是「2 個人＋1 個 Leader Agent＋6 個 Worker Agent」的編制。以上數字均為阿里雲自述。<br>🔗 <a href="https://www.alibabacloud.com/blog/seven-showcases-at-alibaba-cloud-exploring-ai-native-r%26d-organization-in-practice_603815" style="color:#06b6d4;">閱讀原文</a> ｜ 來源：Alibaba Cloud Blog</p>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 4px;">▍過去 vs. 現在</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0;"><strong style="color:#e2e8f0">過去</strong>：多 agent 像臨時拉來的專案小組——每個角色用同一個大模型、靠一段角色提示詞區分，效果好不好看 demo。<strong style="color:#e2e8f0">現在</strong>：開始像排產線——先量出哪一站最慢、最常錯，再決定那站放專用模型還是加人審；比較基準從「有沒有比單一 agent 強」變成「<strong style="color:#a5b4fc">同樣 token 預算下有沒有比較強</strong>」；而合作本身是可以訓練、可以量測的能力，不是把 agent 放進同一個聊天室就會自然發生。</p>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 4px;">▍背後邏輯</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0;">多 agent 有兩筆隱形成本：<strong style="color:#a5b4fc">溝通成本</strong>（每多一個成員，要傳的上下文與訊息就變多）與<strong style="color:#a5b4fc">相關性成本</strong>（大家用同一個模型，容易一起犯同樣的錯）。所以單純加人，常常只是用更多算力換來同一個答案。真正的收益來自兩件事：把不同性質的工作切開，讓每站用「夠用就好」的模型（小模型便宜又快）；以及讓 agent 學會只傳必要資訊。這也是為什麼 Hugging Face 的獎勵設計要同時看「成功」與「token 用量」——<strong style="color:#a5b4fc">沒有把成本寫進目標，團隊就會學會用話量換成績</strong>。</p>
+<div style="background:#252525;border-radius:8px;padding:12px;margin-top:12px;">
+<p style="color:#94a3b8;font-size:13px;margin:0 0 4px;font-weight:700;">👤 人物觀點／延伸解讀</p>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0;">Hugging Face 文中引用 OpenAI 研究員 Noam Brown 的估計：OpenAI 那項 Navier-Stokes 成果中，來自多 agent 合作的貢獻不到一成。這是人物估計、不是量測結果，但提醒我們：<strong style="color:#a5b4fc">看到「蜂群」大成果時，先問有多少功勞真的來自合作</strong>，而不是來自更多算力或更強的單一模型。🔗 <a href="https://huggingface.co/blog/training-swarms" style="color:#06b6d4;">來源（Hugging Face 引述）</a></p>
+</div>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 4px;">▍對你的工作</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0;">如果你的團隊正在試「多 agent 跑驗證回歸」或「多 agent 整理良率報告」，先做三件事：一，<strong style="color:#a5b4fc">畫出流程站點並量時間與錯誤分布</strong>，找出真正的瓶頸站（阿里雲案例中是「挑資料」，不是「寫結論」）；二，評估時把 token 或 GPU 時數一起記下，跟「單一 agent 多試幾次」放在同一預算下比較；三，依可逆性分級——改 testbench 註解可以讓 agent 自己來，改簽核用的 constraint 必須有人核准。</p>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 4px;">▍限制與待驗證</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0;">Hugging Face 的實驗是玩具任務（排序整數），能否推到寫程式或除錯仍未知；阿里雲的數字多為自家模型、自家案例自述，完整流程樣本只有 10 題，且作者自己承認部分組合會退步、排名受輸入整理方式影響。換句話說，「多 agent 有沒有用」目前<strong style="color:#a5b4fc">高度依任務而定</strong>，沒有放諸四海的編制表。</p>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 4px;">▍重點一句話</p>
+<p style="color:#ffffff;font-size:15px;line-height:1.7;margin:0;font-weight:700;">加 agent 跟加機台一樣：先找瓶頸站、用同一份預算算產出，驗收口永遠要有人。</p>
+</td></tr></table>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 衍生新聞 1 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:20px 24px;">
+<span style="display:inline-block;background:#164e63;color:#a5f3fc;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin:10px 0 8px;">AWS Lambda 可一次調度多台 MicroVM，專跑 agent 產出的程式碼</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0;">AWS 11/25 推出開發者預覽：<strong style="color:#a5b4fc">durable functions</strong>（可跑長達一年、自動存檔與重試的工作流程）能直接管理多台 <strong style="color:#a5b4fc">MicroVM</strong>（具虛擬機等級隔離的輕量沙箱），每個任務都會存檔、失敗重試，也能讓多個任務共用同一台的檔案與記憶體。和主軸的關係：多 agent 的「工人」需要彼此隔離的工作檯，這就是平台把「一個指揮、多個隔離工位」做成基礎設施。官方標明預覽版勿用於正式環境。</p>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:10px 0 6px;">💡 重點一句話：agent 團隊的工位開始標準化，一個指揮可以同時調度多個互相隔離的沙箱。</p>
+<p style="margin:0;font-size:14px;">🔗 <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/lambda-durable-microvm/" style="color:#06b6d4;">閱讀原文</a> <span style="color:#64748b;">｜ 來源：AWS What's New</span></p>
+</td></tr>
+<tr><td style="height:12px;"></td></tr>
+
+<!-- 衍生新聞 2 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:20px 24px;">
+<span style="display:inline-block;background:#164e63;color:#a5f3fc;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin:10px 0 8px;">GitHub：Copilot 程式碼審查 12/30 起預設由 repo 所屬組織付費</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0;">GitHub 11/25 公告，Copilot Business／Enterprise 組織若沒有主動設定，從 12/30 起，持有付費授權成員的 Copilot 審查費用改<strong style="color:#a5b4fc">記到 repo 擁有者組織</strong>，不再扣個人額度；想維持原狀，要在期限前改回 Member。和主軸的關係：當「審查員」是一個 agent，它的工時算誰的帳，就是編制問題——審查成了組織層級的工作站。官方也提醒，改由組織付費可能增加支出。</p>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:10px 0 6px;">💡 重點一句話：AI 審查從個人工具變成組織工位，管理者要在 12/30 前決定這筆帳由誰付。</p>
+<p style="margin:0;font-size:14px;">🔗 <a href="https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization" style="color:#06b6d4;">閱讀原文</a> <span style="color:#64748b;">｜ 來源：GitHub Changelog</span></p>
+</td></tr>
+<tr><td style="height:12px;"></td></tr>
+
+<!-- 衍生新聞 3 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:20px 24px;">
+<span style="display:inline-block;background:#164e63;color:#a5f3fc;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin:10px 0 8px;">阿里雲開源 AgentTeams 1.2.8：Manager／Leader／Worker 分層加驗收看板</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0;">阿里雲 11/26 發布開源多 agent 協作系統新版：<strong style="color:#a5b4fc">Manager</strong> 釐清需求並挑團隊、<strong style="color:#a5b4fc">Leader</strong> 拆任務並做驗收、<strong style="color:#a5b4fc">Worker</strong> 執行後送審；任務板把「卡住／需修改／失敗」集中顯示，需要人確認的問題統一進收件匣，可接 6 種不同外殼（harness）。和主軸的關係：它把「排班表」做成了產品介面。但官方未提供任何成效數據，跨外殼切換也坦承尚未無損。</p>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:10px 0 6px;">💡 重點一句話：多 agent 工具的賣點，正從「能開多少個」轉向「卡住、退件、等人確認看得多清楚」。</p>
+<p style="margin:0;font-size:14px;">🔗 <a href="https://www.alibabacloud.com/blog/agentteams-1-2-8-a-brand-new-workbench-and-website%E2%80%94start-team-collaboration-with-one-click_603818" style="color:#06b6d4;">閱讀原文</a> <span style="color:#64748b;">｜ 來源：Alibaba Cloud Blog</span></p>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 24px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0">ChatGPT 的 Chat 與 Work 合用同一個額度（據報導）</strong>：據 OpenAI 產品負責人 X 貼文與發言人對 TechCrunch 的說明，整合版先開放少數 Pro 用戶，12 月擴大，Instant 模型對話不計入額度。最重度的用戶可能更快碰到上限，訂閱方案「買到多少用量」需要重新估算。🔗 <a href="https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/" style="color:#06b6d4;">來源（TechCrunch 轉述）</a></li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0">NVIDIA 公開 Nemotron 3.5 Parse 訓練資料與配方</strong>：釋出合成圖表 998 萬、表格 100 萬、多語 OCR 790 萬筆資料，以及 SFT＋強化學習的微調配方，搭配可一次猜 32 個 token 的推測解碼器，單張 H200 低並行吞吐約 7.6 倍。對要從 datasheet、規格書抽表格的團隊，這是可以自己微調的起點。🔗 <a href="https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin" style="color:#06b6d4;">來源</a></li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0">Amazon Transcribe Turbo 預覽：語音 agent 的「語意式輪替」</strong>：用語意與語調判斷對方是否講完，約 615 毫秒回應、5% 打斷率；英語串流字錯率相對降約 14%。客服、產線語音指令這類語音 agent，最惱人的「搶話」問題有了現成元件。🔗 <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/transcribe-turbo-preview/" style="color:#06b6d4;">來源</a></li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0">llama.cpp 推出 AMD Ryzen／Radeon 效能儀表板</strong>：每週自動在 Radeon 8060S 與 AI Pro R9700S 上跑多種模型與量化的吞吐測試，公開原始資料。想在地端（不上雲）跑模型的團隊，有了可追蹤版本差異的公開基準。🔗 <a href="https://huggingface.co/blog/ggml-org/llamacpp-amd-bench" style="color:#06b6d4;">來源</a></li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0">Vercel Pro 團隊 Standard build 改按分鐘計費</strong>：既有 Pro 團隊不再附送 Standard build 名額，改為每分鐘 0.014 美元、可用月度額度折抵。agent 大量觸發預覽建置的團隊，CI 帳單會更直接反映用量。🔗 <a href="https://vercel.com/changelog/standard-builds-for-existing-pro-teams-have-moved-to-usage-based-billing" style="color:#06b6d4;">來源</a></li>
+<li><strong style="color:#e2e8f0">Kolpona：不做梯度訓練、直接改寫神經元提升 RTL 生成</strong>：論文自報 Qwen3.8-27B 在 VerilogEval v2 的 pass@1 從 73.1% 升到 94.9%，且只需一張 32GB GPU；修改只有在新題目 testbench 變好時才保留。若能複現，地端小模型寫 Verilog 的門檻會再降低。🔗 <a href="https://arxiv.org/abs/2611.33973" style="color:#06b6d4;">來源（arXiv 2611.33973）</a></li>
+</ul>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 24px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:12px;">📖 今日概念｜阿姆達爾定律（Amdahl's Law）</div>
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px;">定義</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;">一件工作能加速多少，上限由「無法平行的那一段」決定：若 20% 只能循序做，就算其餘部分無限平行，整體最多只快 5 倍。</p>
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px;">生活化比喻</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;">十個人一起搬家，打包可以分工，但只有一台電梯；人再多，電梯那段的時間一秒都省不了。技術上，「電梯」就是必須循序執行的步驟——例如等待共享資源、彙整結果或人工核准。</p>
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px;">工作中的例子</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;">把回歸測試分到 100 台機器跑，模擬時間大幅下降，但 license 排隊、結果彙整與 waiver 審查仍是循序的；最後整體 turnaround 可能只快 3 倍，而不是 100 倍。</p>
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px;">常見誤解</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;">「資源加倍、速度就加倍。」實際上平行部分越快，循序部分占的比例越大；再加上溝通與協調開銷，加太多人甚至可能變慢。</p>
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px;">與今天主軸的關係</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0;">多 agent 系統裡，「挑資料」「人工驗收」「彙整結論」就是那台電梯。與其多開 agent，不如先縮短循序段——這正是阿里雲把小模型放在「任務分派」這類關鍵站、以及 Hugging Face 訓練 agent 少說廢話的原因。</p>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 半導體 AI 專區 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 24px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜巨集擺放的強化學習：從「找一個最佳解」到「交一批夠好又不同的候選」</div>
+<div style="margin-bottom:12px;">
+<span style="display:inline-block;background:#312e81;color:#c7d2fe;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;">EDA 工具</span>
+<span style="display:inline-block;background:#164e63;color:#a5f3fc;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;">近期研究（11/25）＋背景知識</span>
+</div>
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px;">▍問題與流程位置</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;"><strong style="color:#e2e8f0">背景知識：</strong>巨集擺放（macro placement）是實體設計很早的一步：先決定 SRAM、IP 這些大方塊放在晶片哪裡，再讓標準元件填進剩下空間。它像先擺好家裡的大型家具——一旦冰箱擋住走道，後面怎麼收納都彆扭；在晶片上，就是後段的繞線擁塞與時序收斂。麻煩在於，訓練時無法每試一次就跑完整流程，只能看「半周長線長」（HPWL，用每條線端點框起來的矩形周長估線長）這類快速近似指標，而它和最終 PPA 並不完全一致。</p>
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px;">▍AI 如何介入</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;"><strong style="color:#e2e8f0">背景知識：</strong>傳統做法靠工程師經驗加上解析式擺放工具反覆調整；Google 的 AlphaChip 等研究則把擺放當成下棋，讓強化學習一步一步放方塊。但多數 RL 擺放器只追求「HPWL 最低的那一個解」，若那個解到了繞線階段才發現擁塞，就得重來。<strong style="color:#e2e8f0">今日研究：</strong>11/25 上架的 DiversePlace 把「多樣性」寫進目標——維護一個小型候選庫，只收 HPWL 有競爭力、但彼此擺法明顯不同的解，用「品質門檻內才給多樣性獎勵」的 PPO 課程式訓練，從零開始學，不需要專家資料。</p>
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px;">▍資料與產出</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;">輸入是 netlist 與巨集尺寸，產出不是單一擺法，而是 top-5／10／20 個 HPWL 相近但布局不同的候選，讓下游時序、繞線、IR 分析去挑。</p>
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px;">▍如何驗證</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;">作者在公開基準 ISPD2005 的 8 個設計上，報告候選庫多樣性提升，HPWL 在全部設計上更低或幾乎相同、效率也更好（摘要未給具體數值）。</p>
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px;">▍限制與風險</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;">ISPD2005 是近二十年前的學術基準，規模與先進製程的約束（多電壓域、密集 SRAM、chiplet 介面）差很多；論文只用 HPWL 評估，尚未證明候選在實際繞線與時序上真的更好。<strong style="color:#e2e8f0">編輯分析：</strong>它的價值在思路——當近似指標不可靠，與其押注一個最佳解，不如交出一組「一樣好但不同」的選項，把決定延後到資訊更多的階段。</p>
+<p style="margin:0 0 10px;font-size:14px;">🔗 <a href="https://arxiv.org/abs/2611.34472" style="color:#06b6d4;">DiversePlace（arXiv 2611.34472）</a> ｜ 🔗 <a href="https://deepmind.google/discover/blog/how-alphachip-transformed-computer-chip-design/" style="color:#06b6d4;">AlphaChip 背景（Google DeepMind）</a></p>
+<p style="color:#67e8f9;font-weight:700;font-size:15px;line-height:1.7;margin:0;">👷 對半導體工作者的意義：實體設計與 CAD 團隊評估 AI 擺放工具時，別只看它交出的「最佳 HPWL」，要問能不能一次給多個候選、並接上自家的繞線與時序流程做二次篩選——這比單一分數更接近真實的 floorplan 決策。</p>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:#1a1a1a;border-radius:13px;padding:22px 24px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">🪞 反思時間</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:8px;">如果多 agent 的優勢要在「同樣 token 預算」下才算數，你們現在評估 AI 工具時，記錄了哪些成本？少了哪一項會讓結論失真？</li>
+<li style="margin-bottom:8px;">在你負責的流程（驗證、良率分析、設備維護…）裡，哪一步是那台「電梯」？若只能放一個專用 AI 角色，你會放在哪裡，理由是什麼？</li>
+<li>當 agent 能一次交出多個「一樣好」的候選，人的工作會從「做出答案」變成「挑答案」。你的團隊要具備什麼判斷標準或工具，才挑得又快又對？</li>
+</ul>
+<p style="color:#a5b4fc;font-weight:700;font-size:15px;margin:14px 0 0;">🎒 今日帶走：AI 團隊比的是排班，不是人頭——先找瓶頸站、用同一份預算比、驗收留給人。</p>
+</td></tr></table>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 歷史電子報 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:20px 24px;">
+<div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:6px;">📚 想回顧之前的內容？</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 8px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+<p style="margin:0;font-size:14px;"><a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline">查看歷史電子報</a></p>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- Footer -->
+<tr><td style="padding:10px 24px 24px;text-align:center;">
+<p style="color:#94a3b8;font-size:13px;line-height:1.7;margin:0 0 6px;">📬 分享給朋友：<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline">訂閱這份電子報</a></p>
+<p style="color:#64748b;font-size:12px;line-height:1.7;margin:0 0 6px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline">點此退訂（10 秒，下期生效）</a></p>
+<p style="color:#475569;font-size:12px;line-height:1.7;margin:0;">© 2026 企鵝的 AI 每日電子報🐧 · 本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源</p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>
