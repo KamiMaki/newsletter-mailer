@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>企鵝的 AI 每日電子報🐧｜2026-11-28</title>
+</head>
+<body style="margin:0;padding:0;background:#0f0f0f;font-family:-apple-system,'Segoe UI',Arial,sans-serif;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0" style="background:#0f0f0f;">
+<tr><td align="center" style="padding:24px 12px;">
+<table role="presentation" width="650" cellpadding="0" cellspacing="0" border="0" style="max-width:650px;width:100%;">
+
+<!-- Header -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;padding:28px 24px;text-align:center;">
+<div style="font-size:24px;font-weight:800;color:#ffffff;">企鵝的 AI 每日電子報🐧</div>
+<div style="font-size:14px;color:#e0e7ff;margin-top:6px;">每日精選 AI 動態 · 讓你掌握未來</div>
+<div style="font-size:13px;color:#e0f2fe;margin-top:10px;">2026-11-28（六）</div>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 30 秒重點 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 24px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">⚡ 30 秒重點</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:8px;"><strong style="color:#ffffff;">今日主軸：雲端的底層開始照 agent 的「作息」改尺寸——作業系統、資料庫、防火牆都把 agent 當成主要客人，也當成主要攻擊者。</strong></li>
+<li style="margin-bottom:8px;">阿里雲 Alibaba Cloud Linux 4 專為「一台機器塞 96 個 agent 沙箱」調記憶體，批次快 10.71%、記憶體峰值少 21.60%；AWS Neptune 推出<strong style="color:#a5b4fc">一個 agent 一張小圖、閒置 15 分鐘縮到零</strong>的圖資料庫模式；阿里雲同時上線專門對付「會自己變招的 AI 攻擊」的 Agentic WAF。</li>
+<li style="margin-bottom:8px;">配套：GitHub Copilot CLI 讓沙箱能在企業 TLS 代理後面工作並收緊權限；n8n 為 agent 工具呼叫加入「可中斷續等」的人工審核。需求端，阿里雲 AI 雲端營收年增 53%。</li>
+<li style="margin-bottom:8px;">其他訊號：Hugging Face 在 AWS Trainium3 上 22 秒生成 10 秒影片；llama.cpp 支援 FP8／NVFP4 的量化縮放並可把對話分享成 agent 軌跡；Vercel AI SDK 把串流單一事件上限放寬到 512 MiB。</li>
+<li>半導體工作者最相關：DFT 測試向量生成（ATPG）也在換腦袋——可微分 ATPG 研究對比商用工具，向量數平均少 27.3%，直接關係到測試機台時間與成本。</li>
+</ul>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 今天的主軸 -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:#1a1a1a;border-radius:13px;padding:24px;">
+<span style="display:inline-block;background:#312e81;color:#c7d2fe;font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px;">🎯 今天的主軸</span>
+<div style="font-size:19px;font-weight:800;color:#ffffff;line-height:1.5;margin:12px 0 4px;">雲端從「少量大批」改成「多樣少量」：OS、資料庫、防火牆開始照 agent 的作息改尺寸</div>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 4px;">▍共同變化</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0;">感恩節週末的新聞不多，但有三則不起眼的更新剛好拼出同一張圖：雲端業者不再只是「讓 agent 也能跑」，而是<strong style="color:#a5b4fc">把 agent 當成主要工作負載，回頭改作業系統、資料庫和資安的預設尺寸</strong>。一則改 Linux 的記憶體管理，一則改資料庫的計費與啟停單位，一則改防火牆的偵測邏輯——三層都在回答同一個問題：當主要客人從「長時間跑的人類服務」變成「成千上萬個短命、忽大忽小的 agent」，底層該長什麼樣？</p>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 4px;">▍為什麼放在一起看</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;">用晶圓廠的語言最好懂。傳統網站服務像<strong style="color:#a5b4fc">少量大批的成熟製程</strong>：同一批貨一路跑到底，機台參數調一次就穩。agent 工作負載則像<strong style="color:#a5b4fc">多樣少量加急單</strong>的研發線：每張單要的東西不一樣、隨時插進來、做完就走，換線成本與等待時間反而成了主角。三則消息分別在三個工站處理換線問題：</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;"><strong style="color:#e2e8f0">① 作業系統：記憶體要能「切碎了也好用」。</strong>阿里雲 11/27 介紹 Alibaba Cloud Linux 4 時，直接點名 agent 負載的特徵：不是一個穩定運轉的長程序，而是<strong style="color:#a5b4fc">反覆開子程序、直譯器堆積記憶體一直配置又釋放、跑編譯和測試</strong>；每個沙箱配額固定，實際用量卻隨工具呼叫起伏，高併發時少數慢實例就會拖住整批。它的解法是自適應多尺寸大頁（mTHP）：連續記憶體夠就用大頁，不夠就逐級退到中等大小，而不是一下摔回最小頁。在 192 核主機上塞滿 96 個 2 核 2GB 沙箱的合成測試中，對比預設設定的 Ubuntu 24.04，批次完成時間 136.2 秒→121.6 秒（<strong style="color:#a5b4fc">−10.71%</strong>），主機記憶體峰值 41.15 GB→32.26 GB（<strong style="color:#a5b4fc">−21.60%</strong>）。<br>🔗 <a href="https://www.alibabacloud.com/blog/agent-tasks-10-71%25-faster-memory-footprint-21-60%25-lower-%7C-introducing-alibaba-cloud-linux-4_603827" style="color:#06b6d4;">Alibaba Cloud Linux 4（阿里雲官方部落格）</a></p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;"><strong style="color:#e2e8f0">② 資料庫：計費單位從「一套系統」變成「一個任務」。</strong>AWS 11/27 推出 Amazon Neptune Graph Sessions，官方自己的形容是「為 agent 設計的運算模式」：每個 agent、使用者或任務都能有<strong style="color:#a5b4fc">自己的一張圖</strong>，不必付佈建型圖資料庫 16 m-NCU 的最低門檻；起始只要 4 或 8 個 s-NCU，可長到兩倍，閒置 15 分鐘縮到零、資料保留，下一個查詢來時「數秒內」恢復，按實際用到的記憶體計費。<br>🔗 <a href="https://aws.amazon.com/about-aws/whats-new/2026/11/amazon-neptune-graph-sessions-generally-available" style="color:#06b6d4;">Amazon Neptune Graph Sessions（AWS What's New）</a></p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;"><strong style="color:#e2e8f0">③ 資安：攻擊者也換成 agent 了。</strong>同一天阿里雲宣布正式推出 Agentic WAF（網頁應用防火牆）。文章指出 AI 攻擊者和照腳本打的人類不同：會<strong style="color:#a5b4fc">看伺服器回應改編碼、換入口、被擋就除錯重試</strong>，還會把一次攻擊拆成多個請求，讓單條規則看不出全貌。架構因此分兩層：線上串接的小模型即時判斷可疑請求；旁路的 AI 引擎以 IP 為起點串起連續嘗試，重建攻擊鏈，再把找到的繞過手法回灌偵測規則。文中引用「高風險漏洞年增 314%、利用時間中位數從 8 小時降到 22 秒」，但<strong style="color:#a5b4fc">未註明數據出處</strong>，也沒有公布偵測率或誤擋率。<br>🔗 <a href="https://www.alibabacloud.com/blog/your-waf-is-being-bypassed-how-to-handle-continuous-mutated-attacks-from-ai-agents_603824" style="color:#06b6d4;">Agentic WAF（阿里雲官方部落格）</a></p>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 4px;">▍過去 vs. 現在</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0;"><strong style="color:#e2e8f0">過去</strong>：底層為「少數長壽服務」最佳化——開一台資料庫給整個應用、作業系統假設程序穩定、防火牆假設攻擊者照固定腳本。<strong style="color:#e2e8f0">現在</strong>：底層開始為「大量短命、彼此隔離、用量忽大忽小」的 agent 調尺寸——<strong style="color:#a5b4fc">隔離單位變小、閒置成本趨近零、偵測對象從單一請求變成一串會學習的嘗試</strong>。</p>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 4px;">▍背後邏輯</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0;">商業面很直接：同週阿里雲公布 AI 雲端營收年增 53%，客人在變，貨架就得跟著改。技術面則是<strong style="color:#a5b4fc">密度經濟</strong>——一個 agent 的價值可能只有幾分錢，要讓它划算，只能在同一台機器塞更多沙箱、讓閒置的資源不收錢。<strong style="color:#e2e8f0">編輯分析：</strong>這也是為什麼記憶體（而不是 CPU）先成為被改的對象：沙箱一多，誰的記憶體碎片拖慢誰，就決定了整批的尾端延遲。</p>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 4px;">▍對你的工作</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0;">如果你的 IT 或 CAD 團隊正在規劃內部 agent 平台（例如讓 coding agent 跑回歸測試、讓分析 agent 查製程資料），評估重點要從「單一 agent 跑得多快」改成三個量產問題：<strong style="color:#a5b4fc">一台主機能穩定塞幾個沙箱、尾端最慢的那幾個拖多久</strong>；每個任務的資料（例如一份專屬知識圖）能否獨立建立、閒置時不付錢；以及資安是否假設對手也是會自動試錯的 agent。半導體廠的 EDA 授權與運算農場本來就熟悉「排隊與利用率」，這套語言可以直接搬過來。</p>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 4px;">▍限制與待驗證</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0;">Alinux 4 的主要數字來自<strong style="color:#a5b4fc">合成測試</strong>，對照組核心版本不同（6.8 vs. 6.6），無法把效益全歸功於 mTHP；文章也提醒記憶體省下來不等於能多開同規格機器。Neptune 縮到零後「數秒恢復」沒有更精確數字，對互動式 agent 可能仍算慢。Agentic WAF 沒有任何偵測成效數據，引用的攻擊統計也無出處。三則都是單一廠商自述，尚待第三方實測。</p>
+
+<div style="background:#252525;border-radius:8px;padding:12px;margin:14px 0 0;">
+<p style="color:#94a3b8;font-size:13px;font-weight:700;margin:0 0 4px;">👤 延伸解讀（編輯分析）</p>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0;">這條線和 11/25 AWS 執行長 Matt Garman 專文主張「agent 需要獨立身分類型與基礎設施層隔離」是同一方向的不同層次：當時談的是身分與隔離，今天看到的是隔離之後的<strong style="color:#a5b4fc">密度與成本</strong>——隔得越細，底層就越要為「很多小房間」而不是「幾棟大樓」設計。</p>
+</div>
+
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:18px 0 4px;">▍重點一句話</p>
+<p style="color:#ffffff;font-size:15px;line-height:1.7;margin:0;font-weight:700;">agent 讓雲端從量產線變成研發線：贏家是換線最快、閒置最便宜、而且預設對手也會自己試錯的那一家。</p>
+</td></tr></table>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 衍生新聞 1 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:20px 24px;">
+<span style="display:inline-block;background:#164e63;color:#a5f3fc;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin:10px 0 8px;">GitHub Copilot CLI 1.0.117：沙箱學會在企業代理後面工作，權限邊界也收緊</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 8px;">11/27 發布的版本新增 <strong style="color:#a5b4fc">extraCaCertificates</strong> 設定，讓沙箱內的指令信任企業 TLS 攔截代理的憑證；同時，核准某個 MCP 伺服器的工具<strong style="color:#a5b4fc">不再順帶核准</strong>同名的內建權限（如 shell 指令），自訂 agent 必須明確宣告可用工具，背景 agent 重啟後可續跑。和主軸的關係：agent 搬進企業網路後，沙箱要跟真實的公司網路規則相處，而不是假設一條乾淨的網路。</p>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:0 0 8px;">💡 重點一句話：企業導入 agent 的卡點常在代理伺服器和權限繼承，這版正是補這兩處。</p>
+<p style="margin:0;font-size:14px;">🔗 <a href="https://github.com/github/copilot-cli/releases/tag/v1.0.117" style="color:#06b6d4;">閱讀原文 ｜ 來源：GitHub Releases</a></p>
+</td></tr>
+<tr><td style="height:14px;"></td></tr>
+
+<!-- 衍生新聞 2 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:20px 24px;">
+<span style="display:inline-block;background:#164e63;color:#a5f3fc;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin:10px 0 8px;">n8n 3.4.1 預覽版：agent 的工具呼叫可以「停下來等人」，等多久都不會丟</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 8px;">11/26 的預覽版加入 <strong style="color:#a5b4fc">durable（持久）人工審核</strong>：agent 要呼叫工具時可暫停等人核准，狀態保存下來而不是佔著程序空等；另把工作流程檢查納入工具護欄、失敗的 agent run 會取消其工具呼叫，並擴大對外請求的預設封鎖 IP 範圍。和主軸的關係：短命 agent 的另一面是「等人」——把等待變成不佔資源的暫停，正是縮到零思維在工作流層的版本。</p>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:0 0 8px;">💡 重點一句話：人工簽核不該讓機器空轉，可暫停、可續跑才是能規模化的審核。</p>
+<p style="margin:0;font-size:14px;">🔗 <a href="https://github.com/n8n-io/n8n/releases/tag/n8n@3.4.1" style="color:#06b6d4;">閱讀原文 ｜ 來源：n8n GitHub Releases</a></p>
+</td></tr>
+<tr><td style="height:14px;"></td></tr>
+
+<!-- 衍生新聞 3 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:20px 24px;">
+<span style="display:inline-block;background:#164e63;color:#a5f3fc;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;">🔗 衍生新聞</span>
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin:10px 0 8px;">阿里雲季報：AI 雲端營收年增 53%，AI 相關產品連續 13 季三位數成長</div>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 8px;">阿里雲 11/27 整理截至 9/30 的季度成績：AI 雲端與運算服務營收年增 <strong style="color:#a5b4fc">53%</strong> 至人民幣 609.73 億元，外部客戶營收年增 64%，AI 相關產品營收連續 13 季三位數成長，雲端調整後 EBITA 年增 121%。和主軸的關係：這是「為什麼要改底層」的需求面證據——工作負載結構變了，而且規模大到值得重寫作業系統與資料庫的預設。</p>
+<p style="color:#94a3b8;font-style:italic;font-size:14px;margin:0 0 8px;">💡 重點一句話：基礎設施跟著錢走，AI 負載已大到能改寫雲端的產品設計。</p>
+<p style="margin:0;font-size:14px;">🔗 <a href="https://www.alibabacloud.com/blog/alibabas-full-stack-ai-drives-continued-cloud-growth-acceleration-as-adoption-deepens_603826" style="color:#06b6d4;">閱讀原文 ｜ 來源：阿里雲官方部落格</a></p>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 其他快訊 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 24px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">📎 其他快訊</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0">Hugging Face 在 AWS Trainium3 跑影片生成：</strong>用 32 個 NeuronCore 讓 Lightricks LTX-2.5 在約 22–23 秒生成 10 秒、2048×1024 含音訊影片，比第一次嘗試快約 14 倍、與官方 API 相當。非 NVIDIA 加速器在生成式影片上的可用性又多一筆實測。 🔗 <a href="https://huggingface.co/blog/video-trainium3" style="color:#06b6d4;">Hugging Face Blog</a></li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0">llama.cpp 支援 FP8／NVFP4 量化縮放：</strong>b12818 加入逐張量、逐通道、逐專家的縮放係數，CPU、Metal、CUDA 後端皆適用。本地端可直接跑原生 FP8／NVFP4 發布的模型，少一道轉檔。 🔗 <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b12818" style="color:#06b6d4;">llama.cpp Releases</a></li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0">llama.cpp 網頁介面可把對話分享成 agent 軌跡：</strong>b12811 能把整段對話以 JSONL 上傳到 Hugging Face 資料集，用 Hub 的軌跡檢視器瀏覽。注意新資料集<strong style="color:#a5b4fc">預設公開</strong>，企業內部使用要先勾選私有。 🔗 <a href="https://github.com/ggml-org/llama.cpp/releases/tag/b12811" style="color:#06b6d4;">llama.cpp Releases</a></li>
+<li style="margin-bottom:10px;"><strong style="color:#e2e8f0">Vercel AI SDK 修正多圖串流斷線：</strong>OpenAI／xAI Responses 的完成事件會重複夾帶所有 base64 圖片，單一事件過大導致串流失敗，新增 maxEventSize 選項最高可達 512 MiB。做多圖生成應用的團隊應升級。 🔗 <a href="https://github.com/vercel/ai/releases" style="color:#06b6d4;">Vercel AI GitHub Releases</a></li>
+<li><strong style="color:#e2e8f0">阿里巴巴簽署 COP31「Antalya AI Pledge」：</strong>由 ITU 與 COP31 土耳其主席國發起的自願承諾，涵蓋以 AI 支援氣候方案與讓 AI 基礎設施更永續。頁面未列量化目標，屬方向性訊號。 🔗 <a href="https://www.alibabacloud.com/blog/alibaba-joins-antalya-ai-pledge-at-cop31-to-support-sustainable-ai_603822" style="color:#06b6d4;">阿里雲官方部落格</a></li>
+</ul>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 今日概念 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 24px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:12px;">📖 今日概念｜吵鬧的鄰居（Noisy Neighbor）</div>
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px;">定義</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;">多個租戶共用同一台實體機器時，某一個租戶突然大量使用記憶體、快取、磁碟或網路，拖慢其他租戶效能的現象。</p>
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px;">生活化比喻</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;">像公寓共用一條水管：隔壁同時開洗衣機和淋浴，你家的水壓就掉了。你沒做錯什麼，但你的「尾端體驗」被鄰居決定。換回技術：每個沙箱有自己的 CPU 配額，但記憶體頻寬、快取與實體記憶體碎片是共用的，這就是那條水管。</p>
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px;">工作中的例子</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;">EDA 運算農場上，一個大型實體設計工作吃滿記憶體頻寬，同機的模擬回歸就一起變慢；今天的 Alinux 4 文章也提到，記憶體碎片化被刻意製造時，未最佳化版本的 p99 執行時間會升到原本三倍以上。</p>
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px;">常見誤解</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;">「有配額就有隔離」。配額只限制你能用多少，不保證共用資源不被別人擠壓；看平均值也會漏掉問題，吵鬧鄰居的傷害主要出現在<strong style="color:#a5b4fc">尾端延遲（p95／p99）</strong>。</p>
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px;">與今天主軸的關係</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0;">agent 讓一台主機上的鄰居從幾個變成幾十個，而且每個都忽大忽小。改作業系統記憶體管理、把資料庫切成每任務一張小圖，本質上都是在處理越來越多的吵鬧鄰居。</p>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 半導體 AI 專區 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:22px 24px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">🏭 半導體 AI 專區｜ATPG 測試向量生成：從「搜尋加回溯」到「梯度下降」</div>
+<p style="margin:0 0 12px;"><span style="display:inline-block;background:#312e81;color:#c7d2fe;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;">IC 設計｜DFT</span> <span style="display:inline-block;background:#3f3f46;color:#e4e4e7;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;">背景知識</span></p>
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px;">▍問題與流程位置</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;">晶片出廠前要在測試機上灌入一組輸入向量，看輸出對不對，抓出製造缺陷。ATPG（自動測試向量生成）就是在 DFT 階段產生這組向量的工具。痛點是：<strong style="color:#a5b4fc">大部分向量其實是為了少數「難偵測故障」而生</strong>，向量越多，測試機時間越長、每顆晶片的測試成本越高。傳統 ATPG 用 D 演算法、PODEM 這類搜尋法，逐一設定輸入值、走不通就回溯（backtrack），難故障上常耗在大量回溯。</p>
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px;">▍AI 如何介入</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;">兩條研究路線。<strong style="color:#e2e8f0">一是把離散題目變連續題目</strong>：Wei Li、Shawn Blanton 等作者的 DEFT（arXiv 2512.23746，2026/5 更新至 v3）把每個輸入位元改成可微分的機率值，用重新參數化讓連續目標對齊實際的故障偵測，再用梯度下降直接「推」出向量；為了在很深的電路圖上穩定訓練，作者寫了自訂 CUDA 前向／反向傳播核心並做梯度正規化。過去是一步一步試、錯了退回；現在是同時調整所有輸入、沿著梯度往「抓得到故障」的方向走。<strong style="color:#e2e8f0">二是讓 AI 指揮傳統搜尋</strong>：InF-ATPG（arXiv 2512.00079）把電路切成無扇出區域（FFR），用圖神經網路表示電路，再以強化學習決定搜尋方向，減少走錯路。</p>
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px;">▍資料與產出</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;">輸入是閘級網表與故障清單（如 stuck-at 故障）；產出是測試向量集。DEFT 也支援「部分指定」向量：只指定必要的 0/1 位元，其餘留給壓縮器填，對測試資料壓縮有利。</p>
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px;">▍如何驗證</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;">論文報告：對比一套領先商用工具，DEFT 向量數<strong style="color:#a5b4fc">平均少 27.3%、最多少 75.9%</strong>；部分指定模式下 0/1 位元少 19.3%、偵測到的故障多 35%。InF-ATPG 回溯次數比傳統方法平均少 55.06%、比先前 ML 方法少 38.31%，故障覆蓋率也提升（摘要未給數字）。驗證關鍵仍是傳統故障模擬：向量是否真的偵測到聲稱的故障，可由故障模擬器逐一確認。</p>
+<p style="color:#a5b4fc;font-weight:700;font-size:13px;margin:0 0 4px;">▍限制與風險</p>
+<p style="color:#cbd5e1;font-size:15px;line-height:1.7;margin:0 0 10px;">兩篇皆為預印本，摘要未列具體基準電路，商用工具也未具名；DEFT 作者自己定位為「補充既有 ATPG 啟發式」而非取代。<strong style="color:#e2e8f0">編輯分析：</strong>實務上更可能的用法是專攻傳統工具最頭痛的難偵測故障，與既有壓縮架構、時序感知測試、低功耗測試限制的整合仍待驗證。</p>
+<p style="margin:0 0 10px;font-size:14px;">🔗 <a href="https://arxiv.org/abs/2512.23746" style="color:#06b6d4;">DEFT（arXiv 2512.23746）</a> ｜ 🔗 <a href="https://arxiv.org/abs/2512.00079" style="color:#06b6d4;">InF-ATPG（arXiv 2512.00079）</a></p>
+<p style="color:#67e8f9;font-weight:700;font-size:15px;line-height:1.7;margin:0;">👷 對半導體工作者的意義：DFT 與測試工程師可以先盤點「哪些故障吃掉最多向量」，那就是 AI 型 ATPG 最可能先發揮的地方；向量數直接換算測試機秒數，是少數能清楚算出 ROI 的 AI 應用。</p>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 反思時間 -->
+<tr><td style="background:linear-gradient(135deg,#6366f1,#06b6d4);border-radius:14px;padding:1px;">
+<table role="presentation" width="100%" cellpadding="0" cellspacing="0" border="0"><tr><td style="background:#1a1a1a;border-radius:13px;padding:22px 24px;">
+<div style="font-size:17px;font-weight:700;color:#ffffff;margin-bottom:10px;">🪞 反思時間</div>
+<ul style="margin:0;padding-left:20px;color:#cbd5e1;font-size:15px;line-height:1.7;">
+<li style="margin-bottom:8px;">如果你們內部的 agent 數量一年內成長十倍，現有的運算農場或雲端架構，最先撐不住的會是 CPU、記憶體、授權數，還是資安監控？你怎麼知道？</li>
+<li style="margin-bottom:8px;">「縮到零、按用量計費」讓每個任務都能有專屬資源，但也讓成本變得難預測。在你的部門，你會怎麼設計預算與上限，讓工程師敢用又不失控？</li>
+<li>當攻擊者是會自己試錯的 agent，靠人工判讀告警的防守節奏還來得及嗎？晶圓廠或設計中心的哪些系統最需要先換成「自動串攻擊鏈」的防禦思維？</li>
+</ul>
+<p style="color:#a5b4fc;font-weight:700;font-size:15px;margin:14px 0 0;">🎒 今日帶走：agent 把雲端從量產線變成研發線——底層比的是換線速度、閒置成本，和防得住會自己變招的對手。</p>
+</td></tr></table>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- 歷史電子報 -->
+<tr><td style="background:#1a1a1a;border-radius:12px;padding:20px 24px;">
+<div style="font-size:16px;font-weight:700;color:#ffffff;margin-bottom:6px;">📚 想回顧之前的內容？</div>
+<p style="color:#cbd5e1;font-size:14px;line-height:1.7;margin:0 0 8px;">所有歷史電子報都整理在 Notion，你可以回頭複習主題、概念與反思題。</p>
+<p style="margin:0;font-size:14px;"><a href="https://app.notion.com/p/penguin-ai-newsletter/23f4347deda7421789bbc1a268641b6a?v=bf5682be5903477c8af499c20f1e7312&source=copy_link" style="color:#06b6d4;text-decoration:underline">查看歷史電子報</a></p>
+</td></tr>
+<tr><td style="height:18px;"></td></tr>
+
+<!-- Footer -->
+<tr><td style="padding:10px 24px 24px;text-align:center;">
+<p style="color:#94a3b8;font-size:13px;line-height:1.7;margin:0 0 6px;">📬 分享給朋友：<a href="https://docs.google.com/forms/d/e/1FAIpQLSdlEPKY-WVX04AwPuY-HLF3JCW3Nu3x_dbDnivVlvtxrBNKCw/viewform" style="color:#06b6d4;text-decoration:underline">訂閱這份電子報</a></p>
+<p style="color:#64748b;font-size:12px;line-height:1.7;margin:0 0 6px;">不想再收到？<a href="https://docs.google.com/forms/d/e/1FAIpQLSfpyCEqZ0ls8fPpJBMI96RuDxkrPI6hO-1ryiOYXN9hfRXuUQ/viewform" style="color:#64748b;text-decoration:underline">點此退訂（10 秒，下期生效）</a></p>
+<p style="color:#475569;font-size:12px;line-height:1.7;margin:0;">© 2026 企鵝的 AI 每日電子報🐧 · 本信件由 AI 自動生成，所有正式資訊均來自第一手官方來源</p>
+</td></tr>
+
+</table>
+</td></tr>
+</table>
+</body>
+</html>

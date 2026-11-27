@@ -1546,3 +1546,19 @@
 {"date": "2026-11-27", "title": "主軸：多 agent 比的是排班不是人頭——同 token 預算比較、瓶頸站放專用角色、人守驗收（HF Swarms＋阿里雲決策模型＋阿里雲七案例；多 agent 編制/協作成本 facet）"}
 {"date": "2026-11-27", "title": "概念：阿姆達爾定律（Amdahl's Law）——加速上限由無法平行的循序段決定"}
 {"date": "2026-11-27", "title": "半導體專區：EDA 工具｜巨集擺放的多樣性強化學習：交出多個 HPWL 相近但不同的候選（DiversePlace arXiv 2611.34472，近期研究＋AlphaChip 背景）"}
+{"date": "2026-11-28", "title": "Alibaba Cloud Linux 4：為 agent 沙箱負載調 mTHP，96 沙箱合成測試批次 −10.71%、記憶體峰值 −21.60%（11/27）"}
+{"date": "2026-11-28", "title": "Amazon Neptune Graph Sessions：每 agent 一張圖、4/8 s-NCU 起、閒置 15 分鐘縮到零（11/27）"}
+{"date": "2026-11-28", "title": "阿里雲 Agentic WAF 正式推出：線上小模型＋旁路 AI 引擎重建攻擊鏈（引用 314%／8 小時→22 秒，無出處，11/27）"}
+{"date": "2026-11-28", "title": "GitHub Copilot CLI v1.0.117：沙箱 extraCaCertificates 支援企業 TLS 代理、MCP 核准不再涵蓋同名內建權限（11/27）"}
+{"date": "2026-11-28", "title": "n8n 3.4.1 預覽版：agent 工具呼叫持久人工審核、工具護欄工作流程檢查、擴大對外封鎖 IP（11/26）"}
+{"date": "2026-11-28", "title": "阿里雲季報：AI 雲端營收年增 53% 至 609.73 億人民幣、AI 產品連續 13 季三位數成長（11/27）"}
+{"date": "2026-11-28", "title": "Hugging Face × AWS Trainium3：LTX-2.5 約 22–23 秒生成 10 秒 2048×1024 影片（11/27）"}
+{"date": "2026-11-28", "title": "llama.cpp b12818：FP8／NVFP4 量化縮放（逐張量/通道/專家，11/27）"}
+{"date": "2026-11-28", "title": "llama.cpp b12811：網頁介面對話分享為 Hugging Face agent 軌跡資料集（預設公開，11/27）"}
+{"date": "2026-11-28", "title": "Vercel AI SDK maxEventSize：修正 OpenAI/xAI Responses 多圖串流事件過大，上限 512 MiB（11/26）"}
+{"date": "2026-11-28", "title": "阿里巴巴簽署 COP31 Antalya AI Pledge（11/26）"}
+{"date": "2026-11-28", "title": "DEFT 可微分 ATPG：對比商用工具向量數平均 −27.3%、最多 −75.9%（arXiv 2512.23746，背景）"}
+{"date": "2026-11-28", "title": "InF-ATPG：FFR＋QGNN 引導 RL，回溯 −55.06%（arXiv 2512.00079，背景）"}
+{"date": "2026-11-28", "title": "主軸：雲端從「少量大批」改成「多樣少量」——OS、資料庫、防火牆照 agent 作息改尺寸（Alinux 4 mTHP＋Neptune Graph Sessions 縮到零＋Agentic WAF；基礎設施工作負載型態/密度 facet）"}
+{"date": "2026-11-28", "title": "概念：吵鬧的鄰居（Noisy Neighbor）——共用主機時某租戶拖慢他人，傷害在尾端延遲"}
+{"date": "2026-11-28", "title": "半導體專區：IC 設計｜ATPG 測試向量生成：可微分 ATPG 與 RL 引導搜尋（DFT；DEFT arXiv 2512.23746／InF-ATPG arXiv 2512.00079，背景）"}
